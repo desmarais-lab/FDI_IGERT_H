@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=red,
+}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{courier}
+\begin{document}
+
+\title{FDI Project Notes}
+\author{IGERT}
+\date{Fall 2016}
+\maketitle
+
+\section{Data Collection}
+
+
+
+\begin{enumerate}
+	\item {FDI Data}
+		\begin{itemize}
+			\item{Downloaded from UNCTAD}
+			\item{Cleaned and appended into panel format}
+		\end{itemize}
+	\item {GDP}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Distance}
+		\begin{itemize}
+			\item{Downloaded from CEPII}
+			\item{Mayer, T. \& Zignago, S. (2011) Notes on CEPII?s distances measures: the GeoDist Database
+					CEPII Working Paper 2011-25}
+		\end{itemize}
+		
+\end{enumerate}
+
+\section{Data Cleaning}
+\begin{enumerate}
+	\item Downloading Data: \texttt{FDI\_UNCTAD.R}
+		\begin{itemize}
+			\item{STP and CIV cannot be scraped due to Uni-code issues}
+			\item{Downloaded and formatted manually}
+		\end{itemize}
+	\item Cleaning Data: \texttt{clean\_UNCTAD.R}
+		\begin{itemize}
+			\item{Gets rid of empty columns and empty rows, then appends all countries to together}
+			\item{Issues; Had to rewrite ``Sao Tao and Principe'' in its file; Changed ``Cote d?Voire'' to ``Ivory Coast''}
+			\item{Need to check on merging for codes and names, lost data?}
+			\item File output \texttt{appended\_fdi.csv}
+		\end{itemize}
+	\item Cleaning Data: \texttt{clean2\_UNCTAD.R}
+		\begin{itemize}
+			\item{Gets rid of aggregates and adds country codes}
+			\item File output \texttt{appended\_fdi.csv}
+		\end{itemize}
+	\item Adding data: \texttt{FDI\_merge.R}
+		\begin{itemize}
+			\item{Adds gravity variables}
+			\item File output: replaces \texttt{fdi\_panel.csv} 
+		\end{itemize}
+		
+\end{enumerate}
+
+
+
+\end{document}
