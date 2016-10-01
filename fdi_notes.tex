@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=red,
+}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{courier}
+\begin{document}
+
+\title{FDI Project Notes}
+\author{IGERT}
+\date{Fall 2016}
+\maketitle
+
+\singlespacing
+\begin{abstract} 
+    \noindent The study of FDI flows has largely overlooked the dependencies between observations. This has resulted in misspecified models. We use generalized exponential graph models to account for these dependencies.
+
+\end{abstract}
+
+\doublespacing
+
+\section{Data Collection}
+
+
+
+\begin{enumerate}
+	\item {FDI Data}
+		\begin{itemize}
+			\item{Downloaded from UNCTAD}
+			\item{Cleaned and appended into panel format}
+		\end{itemize}
+	\item {GDP}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Distance}
+		\begin{itemize}
+			\item{Downloaded from CEPII}
+			\item{Mayer, T. \& Zignago, S. (2011) Notes on CEPII?s distances measures: the GeoDist Database
+					CEPII Working Paper 2011-25}
+		\end{itemize}
+	\item {Alliances}
+		\begin{itemize}
+			\item{Downloaded from COW}
+			\item{Gibler, Douglas M. 2009. International military alliances, 1648-2008. CQ Press}
+		\end{itemize}
+	\item {Regime Type}
+		\begin{itemize}
+			\item{Downloaded from Center for Systemic Peace}
+			\item{http://www.systemicpeace.org/inscrdata.html}
+		\end{itemize}
+	\item {GDP growth rate}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Trade Openness}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Population}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Transparency}
+		\begin{itemize}
+			\item{Downloaded from Transparency International}
+		\end{itemize}
+		
+\end{enumerate}
+
+\section{Data Preparation}
+\begin{enumerate}
+	\item Downloading Data: \texttt{FDI\_download.R}
+		\begin{itemize}
+			\item{STP and CIV cannot be scraped due to Uni-code issues:Downloaded and formatted manually}
+			\item{Had to rewrite ``Sao Tao and Principe'' in its file; Changed ``Cote d?Voire'' to ``Ivory Coast''}
+			\item{Does not run from makefile due to these manual changes}
+		\end{itemize}
+	\item Cleaning Data: \texttt{FDI\_clean.R}
+		\begin{itemize}
+			\item{Gets rid of empty columns and empty rows, then appends all countries to together}
+			\item{Gets rid of aggregates and adds country codes}
+			\item File output \texttt{fdi\_clean.csv}
+		\end{itemize}
+	\item Adding data: \texttt{FDI\_merge.R}
+		\begin{itemize}
+			\item{Adds control variables}
+			\item File output: replaces \texttt{fdi\_merge.csv} 
+		\end{itemize}
+		
+\end{enumerate}
+
+
+
+\end{document}
