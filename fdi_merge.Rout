@@ -19,10 +19,9 @@ Type 'q()' to quit R.
 
 > #=============================================================#
 > # John Schoeneman
-> # Work Done For: FDI Network AnalysisRA-IGERT
+> # Work Done For: FDI Network Analysis RA-IGERT
 > # Date: FAll 2016
 > # Work Done: Merge Other Variables
-> # Project: 
 > # Machine: MacPro OSX Yosemite
 > #=============================================================#
 > 
@@ -36,15 +35,47 @@ Type 'q()' to quit R.
 > setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
 > 
 > #load in data
-> fdi <- read.csv("fdi_clean.csv", stringsAsFactors=FALSE)
-> distance <- read.csv("dist.csv", stringsAsFactors=FALSE)
-> GDP <- read.csv("WB_GDP.csv", stringsAsFactors=FALSE)
-> violence <- read.csv("pv_total.csv", stringsAsFactors=FALSE)
-> WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)
-> polity <- read.csv("PolityIV.csv", stringsAsFactors=FALSE)
-> alliance <- read.csv("alliance.csv", stringsAsFactors=FALSE)
-> transparency <- read.csv("cpi.csv", stringsAsFactors=FALSE)
+> fdi <- read.csv("fdi_clean.csv", stringsAsFactors=FALSE)        #FDI
+> #destination has 201 countries, #Origin has 161
 > 
+> #create full panel
+> library(gtools)
+> id1 <- unique(fdi$Dest.Code)
+> years <- seq(2001, 2012)
+> panel <- data.frame(permutations(n=201,r=2,v=c(id1),repeats.allowed=F)) # 40200
+> panel$dyadid <- seq(1:40200)
+> panel <- do.call("rbind", replicate(12, panel, simplify = FALSE)) # 482400
+> yearid <- data.frame()
+> for(i in years){
++   year <- data.frame(rep(i, 40200))
++   yearid <- rbind(yearid,year)
++ }
+> panel$Year <- yearid[,1]
+> names(panel) <- c("Dest.Code", "Origin.Code", "dyadid", "Year")
+> rm(i, id1, years, yearid, year)
+> 
+> #merge fdi data to panel
+> dest_name <- data.frame(unique(fdi$Dest.Code), unique(fdi$Destination))
+> panel <- merge(panel, dest_name, by.x =c("Dest.Code"), by.y = c("unique.fdi.Dest.Code."))
+> origin_name <- data.frame(unique(fdi$Dest.Code), unique(fdi$Destination))
+> panel <- merge(panel, origin_name, by.x =c("Origin.Code"), by.y = c("unique.fdi.Dest.Code."))
+> names(panel) <- c("Dest.Code", "Origin.Code", "dyadid", "Year", "Destination", "Origin")
+> fdi_value <- fdi[3:7]
+> fdi_value <- fdi_value[,-2]
+> panel <- merge(panel, fdi_value, by =c("Dest.Code", "Origin.Code", "Year"), all.x =TRUE)
+> rm(dest_name, origin_name, fdi_value)
+> 
+> 
+> # control variable datasets
+> distance <- read.csv("dist.csv", stringsAsFactors=FALSE)        #Distance, etc.
+> GDP <- read.csv("WB_GDP.csv", stringsAsFactors=FALSE)           #GDP
+> violence <- read.csv("pv_total.csv", stringsAsFactors=FALSE)    #Political Violence
+> WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, Pop., growth
+> polity <- read.csv("PolityIV.csv", stringsAsFactors=FALSE)      #Polity Score
+> alliance <- read.csv("alliance.csv", stringsAsFactors=FALSE)    #Security Alliances
+> transparency <- read.csv("cpi.csv", stringsAsFactors=FALSE)     #Transparency Score
+> PTA_s <- read.csv("PTA_sign.csv", stringsAsFactors=FALSE)       #PTA signed
+> PTA_w <- read.csv("PTA_withdrawal.csv", stringsAsFactors=FALSE) #PTA withdrew
 > 
 > # add distance data
 > fdi <- merge(fdi, distance, by.x =c("Dest.Code", "Origin.Code"), by.y = c("iso_d", "iso_o"))
@@ -65,17 +96,17 @@ Type 'q()' to quit R.
 > 
 > # WB: Population, trade openness, and growth rate
 > 
-> # Supply Chains
-> 
 > # Political Violence
 > 
 > # PTA network
 > 
+> # Supply Chains
+> 
 > # Diaspora Network
 > 
-> # Transparency
-> 
 > # Resource Endowment
+> 
+> # Transparency
 > 
 > #write csv
 > write.csv(fdi, file = "fdi_edge.csv")
@@ -85,4 +116,4 @@ Type 'q()' to quit R.
 > 
 > proc.time()
    user  system elapsed 
-  3.427   0.098   3.569 
+  9.959   0.437  10.531 
