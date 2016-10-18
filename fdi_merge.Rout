@@ -63,42 +63,62 @@ Type 'q()' to quit R.
 > fdi_value <- fdi[3:7]
 > fdi_value <- fdi_value[,-2]
 > panel <- merge(panel, fdi_value, by =c("Dest.Code", "Origin.Code", "Year"), all.x =TRUE)
-> rm(dest_name, origin_name, fdi_value)
+> rm(dest_name, origin_name, fdi_value, fdi)
 > 
 > 
 > # control variable datasets
-> distance <- read.csv("dist.csv", stringsAsFactors=FALSE)        #Distance, etc.
-> GDP <- read.csv("WB_GDP.csv", stringsAsFactors=FALSE)           #GDP
-> violence <- read.csv("pv_total.csv", stringsAsFactors=FALSE)    #Political Violence
-> WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, Pop., growth
-> polity <- read.csv("PolityIV.csv", stringsAsFactors=FALSE)      #Polity Score
-> alliance <- read.csv("alliance.csv", stringsAsFactors=FALSE)    #Security Alliances
-> transparency <- read.csv("cpi.csv", stringsAsFactors=FALSE)     #Transparency Score
-> PTA_s <- read.csv("PTA_sign.csv", stringsAsFactors=FALSE)       #PTA signed
-> PTA_w <- read.csv("PTA_withdrawal.csv", stringsAsFactors=FALSE) #PTA withdrew
+> 
+> 
+> 
 > 
 > # add distance data
-> fdi <- merge(fdi, distance, by.x =c("Dest.Code", "Origin.Code"), by.y = c("iso_d", "iso_o"))
-> fdi <- fdi[order(fdi$Destination, fdi$Year),]
+> distance <- read.csv("dist.csv", stringsAsFactors=FALSE)        #Distance, etc.
+> panel <- merge(panel, distance, by.x =c("Dest.Code", "Origin.Code"), 
++              by.y = c("iso_d", "iso_o"), all.x=TRUE)
+> rm(distance)
 > 
 > # GDP data
-> fdi <- merge(fdi, GDP, by.x = c("Dest.Code", "Year"), by.y = c("Country.Code", "Year"))
-> colnames(fdi)[20] <- "Dest.GDP"
-> fdi <- merge(fdi, GDP, by.x = c("Origin.Code", "Year"), by.y = c("Country.Code", "Year"))
-> colnames(fdi)[21] <- "Origin.GDP"
-> 
+> GDP <- read.csv("WB_GDP.csv", stringsAsFactors=FALSE)           #GDP
+> panel <- merge(panel, GDP, by.x = c("Dest.Code", "Year"), by.y = c("Country.Code", "Year"), all.x =TRUE)
+> colnames(panel)[20] <- "Dest.GDP"
+> panel <- merge(panel, GDP, by.x = c("Origin.Code", "Year"), by.y = c("Country.Code", "Year"), all.x =TRUE)
+> colnames(panel)[21] <- "Origin.GDP"
+> rm(GDP)
 > 
 > # Alliances
+> alliance <- read.csv("alliance.csv", stringsAsFactors=FALSE)    #Security Alliances
+> alliance <- subset(alliance, alliance$year>=2000) # only 126 countries
+> library(countrycode)
+> panel$Origin.cown <- countrycode(panel$Origin.Code, "wb", "cown") # create COW numeric codes
+> panel$Dest.cown <- countrycode(panel$Dest.Code, "wb", "cown")
+> alliance <- alliance[,-2]
+> alliance <- alliance[,-3]
+> panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"),
++                by.y = c("ccode1", "ccode2", "year"), all.x =TRUE)
+> panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"), 
++                by.y = c("ccode2", "ccode1", "year"), all.x =TRUE)
+> panel$defense.x <- ifelse(is.na(panel$defense.x ), panel$defense.y ,panel$defense.x )
+> panel$neutrality.x <- ifelse(is.na(panel$neutrality.x), panel$neutrality.y,panel$neutrality.x)
+> panel$nonaggression.x <- ifelse(is.na(panel$nonaggression.x), panel$nonaggression.y,panel$nonaggression.x)
+> panel$entente.x <- ifelse(is.na(panel$entente.x), panel$entente.y,panel$entente.x)
+> panel <- panel[,1:27]
+> rm(alliance)
+> 
 > 
 > # Transparency
+> transparency <- read.csv("cpi.csv", stringsAsFactors=FALSE)     #Transparency Score
 > 
 > # PolityIV
+> polity <- read.csv("PolityIV.csv", stringsAsFactors=FALSE)      #Polity Score
 > 
 > # WB: Population, trade openness, and growth rate
-> 
+> WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, Pop., growth
 > # Political Violence
+> violence <- read.csv("pv_total.csv", stringsAsFactors=FALSE)    #Political Violence
 > 
 > # PTA network
+> PTA_s <- read.csv("PTA_sign.csv", stringsAsFactors=FALSE)       #PTA signed
+> PTA_w <- read.csv("PTA_withdrawal.csv", stringsAsFactors=FALSE) #PTA withdrew
 > 
 > # Supply Chains
 > 
@@ -109,11 +129,11 @@ Type 'q()' to quit R.
 > # Transparency
 > 
 > #write csv
-> write.csv(fdi, file = "fdi_edge.csv")
+> #write.csv(fdi, file = "fdi_edge.csv")
 > 
 > 
 > 
 > 
 > proc.time()
    user  system elapsed 
-  9.959   0.437  10.531 
+ 14.891   1.034  15.981 
