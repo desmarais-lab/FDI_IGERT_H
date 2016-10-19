@@ -1,5 +1,5 @@
 #list all steps
-all: clean merge notes
+all: clean merge analysis notes
 clean: fdi_clean.Rout
 merge: fdi_merge.Rout
 analysis: fdi_gergm.Rout

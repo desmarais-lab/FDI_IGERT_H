@@ -1,0 +1,42 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #=============================================================#
+> # John Schoeneman
+> # Work Done For: FDI Network Analysis RA-IGERT
+> # Date: Fall 2016
+> # Work Done: Perform GERGM analysis
+> # Machine: MacPro OSX Yosemite
+> #=============================================================#
+> 
+> 
+> # clear workspace
+> rm(list=ls())
+> 
+> 
+> 
+> setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
+> 
+> #load in data
+> fdi <- read.csv("fdi_panel.csv", stringsAsFactors=FALSE)        #FDI
+> #201 countries, 12 years (2000-2012), 
+> 
+> proc.time()
+   user  system elapsed 
+  9.248   0.223   9.624 
