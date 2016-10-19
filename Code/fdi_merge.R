@@ -74,14 +74,23 @@ panel$Origin.cown <- countrycode(panel$Origin.Code, "wb", "cown") # create COW n
 panel$Dest.cown <- countrycode(panel$Dest.Code, "wb", "cown")
 alliance <- alliance[,-2]
 alliance <- alliance[,-3]
+# only 16,146 unique obsevations. need to collapse
+library(doBy)
+alliance <- summaryBy(defense+nonaggression+neutrality+entente ~ ccode1+ccode2+year, 
+                       data=alliance, FUN=max)
+#merge with panel
 panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"),
                by.y = c("ccode1", "ccode2", "year"), all.x =TRUE)
 panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"), 
                by.y = c("ccode2", "ccode1", "year"), all.x =TRUE)
-panel$defense.x <- ifelse(is.na(panel$defense.x ), panel$defense.y ,panel$defense.x )
-panel$neutrality.x <- ifelse(is.na(panel$neutrality.x), panel$neutrality.y,panel$neutrality.x)
-panel$nonaggression.x <- ifelse(is.na(panel$nonaggression.x), panel$nonaggression.y,panel$nonaggression.x)
-panel$entente.x <- ifelse(is.na(panel$entente.x), panel$entente.y,panel$entente.x)
+panel$defense.x <- ifelse(is.na(panel$defense.max.x ), 
+                          panel$defense.max.y ,panel$defense.max.x )
+panel$neutrality.x <- ifelse(is.na(panel$neutrality.max.x), 
+                             panel$neutrality.max.y,panel$neutrality.max.x)
+panel$nonaggression.x <- ifelse(is.na(panel$nonaggression.max.x), 
+                                panel$nonaggression.max.y,panel$nonaggression.max.x)
+panel$entente.x <- ifelse(is.na(panel$entente.max.x), 
+                          panel$entente.max.y,panel$entente.max.x)
 panel <- panel[,1:27]
 rm(alliance)
 
@@ -89,17 +98,28 @@ rm(alliance)
 # Transparency
 transparency <- read.csv("cpi.csv", stringsAsFactors=FALSE)     #Transparency Score
 
+rm(transparency)
+
 # PolityIV
 polity <- read.csv("PolityIV.csv", stringsAsFactors=FALSE)      #Polity Score
 
+rm(polity)
+
 # WB: Population, trade openness, and growth rate
 WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, Pop., growth
+
+rm(WB)
+
 # Political Violence
 violence <- read.csv("pv_total.csv", stringsAsFactors=FALSE)    #Political Violence
+
+rm(violence)
 
 # PTA network
 PTA_s <- read.csv("PTA_sign.csv", stringsAsFactors=FALSE)       #PTA signed
 PTA_w <- read.csv("PTA_withdrawal.csv", stringsAsFactors=FALSE) #PTA withdrew
+
+rm(PTA_s, PTA_w)
 
 # Supply Chains
 
@@ -110,7 +130,7 @@ PTA_w <- read.csv("PTA_withdrawal.csv", stringsAsFactors=FALSE) #PTA withdrew
 # Transparency
 
 #write csv
-#write.csv(fdi, file = "fdi_edge.csv")
+write.csv(panel, file = "fdi_panel.csv")
 
 
 

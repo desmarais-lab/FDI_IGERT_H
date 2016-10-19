@@ -2,6 +2,7 @@
 all: clean merge notes
 clean: fdi_clean.Rout
 merge: fdi_merge.Rout
+analysis: fdi_gergm.Rout
 notes: fdi_notes.pdf
 
 #run cleaning Code
@@ -11,6 +12,10 @@ fdi_clean.Rout: Code/fdi_clean.R
 #merge other variables
 fdi_merge.Rout: Code/fdi_merge.R
 	R CMD BATCH Code/fdi_merge.R
+
+#run analysis
+fdi_gergm.Rout: Code/fdi_gergm.R
+	R CMD BATCH Code/fdi_gergm.R
 
 #create latex doc
 FDI_Project.pdf: fdi_notes.tex
