@@ -38,28 +38,32 @@ Type 'q()' to quit R.
 > fdi <- read.csv("fdi_clean.csv", stringsAsFactors=FALSE)        #FDI
 > #destination has 201 countries, #Origin has 161
 > 
+> fdi <- na.omit(fdi)
+> 
 > #create full panel
 > library(gtools)
-> id1 <- unique(fdi$Dest.Code)
+> id1 <- unique(fdi$Origin.Code) # 186
 > years <- seq(2001, 2012)
-> panel <- data.frame(permutations(n=201,r=2,v=c(id1),repeats.allowed=F)) # 40200
-> panel$dyadid <- seq(1:40200)
-> panel <- do.call("rbind", replicate(12, panel, simplify = FALSE)) # 482400
+> panel <- data.frame(permutations(n=184,r=2,v=c(id1),repeats.allowed=F)) # 33672
+> panel$dyadid <- seq(1:33672)
+> panel <- do.call("rbind", replicate(12, panel, simplify = FALSE)) # 408480
 > yearid <- data.frame()
 > for(i in years){
-+   year <- data.frame(rep(i, 40200))
++   year <- data.frame(rep(i, 33672))
 +   yearid <- rbind(yearid,year)
 + }
 > panel$Year <- yearid[,1]
 > names(panel) <- c("Dest.Code", "Origin.Code", "dyadid", "Year")
 > rm(i, id1, years, yearid, year)
 > 
+> 
+> 
 > #merge fdi data to panel
 > dest_name <- data.frame(unique(fdi$Dest.Code), unique(fdi$Destination))
 > panel <- merge(panel, dest_name, by.x =c("Dest.Code"), by.y = c("unique.fdi.Dest.Code."))
 > origin_name <- data.frame(unique(fdi$Dest.Code), unique(fdi$Destination))
 > panel <- merge(panel, origin_name, by.x =c("Origin.Code"), by.y = c("unique.fdi.Dest.Code."))
-> names(panel) <- c("Dest.Code", "Origin.Code", "dyadid", "Year", "Destination", "Origin")
+> names(panel) <- c("Origin.Code","Dest.Code",  "dyadid", "Year", "Destination", "Origin")
 > fdi_value <- fdi[3:7]
 > fdi_value <- fdi_value[,-2]
 > panel <- merge(panel, fdi_value, by =c("Dest.Code", "Origin.Code", "Year"), all.x =TRUE)
@@ -156,4 +160,4 @@ Type 'q()' to quit R.
 > 
 > proc.time()
    user  system elapsed 
- 20.637   1.162  22.514 
+ 17.683   0.931  19.065 

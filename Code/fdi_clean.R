@@ -233,7 +233,13 @@ appended_fdi <- subset(appended_fdi,
                          Origin != ".." &
                          Origin != "Transition economies"&
                          Origin != "International organizations"&
-                         Origin != "Other Africa")
+                         Origin != "Other Africa" &
+                         Origin != "Latin America and the Caribbean"&
+                         Origin != "North Africa" &
+                         Origin != "South-East Europe" &
+                         Origin != "Oceania" &
+                         Origin != "Central America"
+                       )
 
 
 #rehape data
@@ -265,8 +271,8 @@ ccodes <- ccodes[,-2]
 
 
 # merge to get Destination names
-fdi <- merge(fdi, ccodes, by.x = "Origin", by.y = "V1")
-fdi <- merge(fdi, ccodes, by.x = "destination", by.y = "V3")
+fdi <- merge(fdi, ccodes, by.x = "Origin", by.y = "V1", all.x =TRUE)
+fdi <- merge(fdi, ccodes, by.x = "destination", by.y = "V3", all.x =TRUE)
 
 
 #reorder and name variables
@@ -274,8 +280,33 @@ fdi <- fdi[,c(6, 1,2,5,3,4)]
 names(fdi) <- c("Destination","Dest.Code","Origin", "Origin.Code","Year","Value") 
 fdi <- fdi[order(fdi$Destination, fdi$Year),] 
 
+fdi$Origin.Code <- ifelse(fdi$Origin=="United States" , "USA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Hong Kong, China" , "HKG"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Syrian Arab Republic" , "SYR"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Venezuela, Bolivarian Rep. of" , "VEN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Taiwan Province of China" , "TWN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Monaco" , "MCO"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Andorra" , "AND"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Netherlands Antilles " , "ANT"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Gibraltar" , "GIB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Liechtenstein" , "LIE"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Bolivia, Plurinational State of" , "BOL"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Jersey" , "JEY"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="US Virgin Islands" , "VIR"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="United Rep. of Tanzania" , "TZA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="The FYR of Macedonia" , "MKD"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Isle of Man" , "IMN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Guam" , "GUM"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Congo" , "COG"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Congo, Democratic Rep. of" , "COD"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="C\xf4te d' Ivoire" , "CIV"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Serbia and Montenegro" , "SRB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Guernsey" , "GGY"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Macao, China" , "MAC"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Moldova, Republic of" , "MDA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Uzbekistan" , "UZB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Lao People's Dem. Rep." , "LAO"  ,fdi$Origin.Code)
 
 #write csv
 write.csv(fdi, file = "fdi_clean.csv")
-
 

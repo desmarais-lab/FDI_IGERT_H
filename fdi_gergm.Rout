@@ -29,6 +29,50 @@ Type 'q()' to quit R.
 > # clear workspace
 > rm(list=ls())
 > 
+> set.seed(19)
+> 
+> # libraries
+> library(GERGM)
+GERGM: Generalized Exponential Random Graph Models
+Version 0.10.0 created on 2016-08-06.
+Advanced Development Version: Correlation Networks
+copyright (c) 2016, Matthew J. Denny, Penn State University
+                    James D. Wilson, University of San Francisco
+                    Skyler Cranmer, Ohio State University
+                    Bruce A. Desmarais, Penn State University
+                    Shankar Bhamidi, University of North Carolina
+Type help('gergm') to get started.
+Development website: https://github.com/matthewjdenny/GERGM
+> library(network)
+network: Classes for Relational Data
+Version 1.13.0 created on 2015-08-31.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+> library(igraph)
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:network’:
+
+    %c%, %s%, add.edges, add.vertices, delete.edges, delete.vertices,
+    get.edge.attribute, get.edges, get.vertex.attribute, is.bipartite,
+    is.directed, list.edge.attributes, list.vertex.attributes,
+    set.edge.attribute, set.vertex.attribute
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
 > 
 > 
 > setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
@@ -37,6 +81,14 @@ Type 'q()' to quit R.
 > fdi <- read.csv("fdi_panel.csv", stringsAsFactors=FALSE)        #FDI
 > #201 countries, 12 years (2000-2012), 
 > 
-> proc.time()
-   user  system elapsed 
-  9.248   0.223   9.624 
+> #extract one year
+> fdi01 <- subset(fdi, fdi$Year ==2001)
+> fdi01$Value <- ifelse(is.na(fdi01$Value), 0, fdi01$Value)
+> #keep gravity variables
+> fdi01 <- fdi01[c('dyadid','Destination','Origin','Value', 'dist')]
+> 
+> #create vertex dataset
+> vertex_attr <- na.omit(summaryBy(as.numeric(Origin.GDP) ~ Origin, data=fdi))
+Error in na.omit(summaryBy(as.numeric(Origin.GDP) ~ Origin, data = fdi)) : 
+  could not find function "summaryBy"
+Execution halted
