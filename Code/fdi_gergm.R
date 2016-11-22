@@ -16,6 +16,7 @@ set.seed(19)
 library(GERGM)
 library(network)
 library(igraph)
+library(doBy)
 
 
 setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
