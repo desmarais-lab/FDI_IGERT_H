@@ -116,7 +116,7 @@ WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, 
 WB <- WB[,-2]
 panel <- merge(panel, WB, by.x = c("Dest.Code", "Year"), by.y = c("ccode", "Year"), all.x =TRUE)
 colnames(panel)[30] <- "Dest.pop"
-colnames(panel)[30] <- "Dest.TO"
+colnames(panel)[31] <- "Dest.TO"
 colnames(panel)[32] <- "Dest.GDP.g"
 panel <- merge(panel, WB, by.x = c("Origin.Code", "Year"), by.y = c("ccode", "Year"), all.x =TRUE)
 colnames(panel)[33] <- "Origin.pop"
@@ -257,7 +257,7 @@ panel <- merge(panel, transparency, by.x = c("Destination", "Year"),
 colnames(panel)[44] <- "t.score_Dest"
 panel <- merge(panel, transparency, by.x = c("Origin", "Year"), 
                by.y = c("Jurisdiction","year"), all.x =TRUE)
-colnames(panel)[44] <- "t.score_Origin"
+colnames(panel)[45] <- "t.score_Origin"
 rm(transparency, years)
 
 # Diaspora Network

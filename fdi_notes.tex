@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{longtable}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -21,7 +22,7 @@
 
 \singlespacing
 \begin{abstract} 
-    \noindent The study of FDI flows has largely overlooked the dependencies between observations. This has resulted in misspecified models. We use generalized exponential graph models to account for these dependencies.
+    \noindent Our paper examines the determinants of foreign direct investment (FDI) inflows within a network structure. The political economy of FDI literature has shown that a number of political and economic variables such as security alliances, preferential trade agreements, migration networks, and colonial history shape the patterns of FDI flows. However, most existing studies based on monadic or dyadic models overlook the complex dependencies in the network. Global FDI flows operate as a network and therefore the independence assumptions of generalized linear models are not met and network dependencies such as reciprocity and transitivity are not controlled for. In this paper, we utilize bilateral FDI inflow data from UNCTAD and examine the political and economic networks of FDI flows using generalized exponential random graph models (GERGM). These models allow researchers to control for higher order dependencies as well as node and edge variables within the same model. The GERGM uses Markov Chain Monte Carlo algorithms to simulate weighted graphs from which the likelihood of coefficients can be estimated.
 
 \end{abstract}
 
@@ -46,6 +47,7 @@
 			\item{Downloaded from CEPII}
 			\item{Mayer, T. \& Zignago, S. (2011) Notes on CEPII?s distances measures: the GeoDist Database
 					CEPII Working Paper 2011-25}
+			\item{Includes Common Language, Contiguity, Ethnolinguistic similarity, and Colonial ties}
 		\end{itemize}
 	\item {Alliances}
 		\begin{itemize}
@@ -72,6 +74,18 @@
 	\item {Transparency}
 		\begin{itemize}
 			\item{Downloaded from Transparency International}
+			\item{Not included in preliminary results, subsets countries to 75}
+		\end{itemize}
+	\item {PTA Depth}
+		\begin{itemize}
+			\item{Downloaded from DESTA}
+			\item{http://www.designoftradeagreements.org}
+		\end{itemize}
+	\item {Trade}
+		\begin{itemize}
+			\item{Downloaded from OECD.stat}
+			\item{http://stats.oecd.org/}
+			\item{includes trade in household consumption items, intermediate goods, capital goods, and mixed end-use goods}
 		\end{itemize}
 		
 \end{enumerate}
@@ -95,9 +109,129 @@
 			\item{Adds control variables}
 			\item File output: replaces \texttt{fdi\_merge.csv} 
 		\end{itemize}
+	\item Subset data: \texttt{FDI\_subset.R}
+		\begin{itemize}
+			\item{Subsets data to create full edge list for all variables}
+		\end{itemize}
+	\item Preliminary Results: \texttt{fdi\_MRQAP.R}
+		\begin{itemize}
+			\item{Runs OLS models}
+			\item Output: FE and MRQAP results 
+		\end{itemize}
+
 		
 \end{enumerate}
 
+\section{Preliminary Results}
 
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Mon, Dec 12, 2016 - 09:16:44
+\begin{longtable}{lr}
+  \caption{IM/EX FE effects}\\
+  \hline
+  IV&Dependent Variable: FDI\\
+  \hline
+  \endhead
+Contiguity & 174.960$^{***}$ \\ 
+  & (8.220) \\ 
+
+Common Language\_off & 7.157 \\ 
+  & (6.776) \\ 
+
+Common Ethnoliguisitics & $-$7.846 \\ 
+  & (6.869) \\ 
+
+Past Colony & 142.077$^{***}$ \\ 
+  & (10.464) \\ 
+
+Common Colonizer & 41.110$^{***}$ \\ 
+  & (5.583) \\ 
+
+Common Currency & 121.027$^{*}$ \\ 
+  & (73.033) \\ 
+
+Distance & $-$0.005$^{***}$ \\ 
+  & (0.0004) \\ 
+
+ Destination GDP & 0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+ Origin GDP & 0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+Defense Alliance & 12.256 \\ 
+  & (13.213) \\ 
+
+Non-agression Treaty & 154.289$^{***}$ \\ 
+  & (18.991) \\ 
+
+Neutrality Treaty & $-$247.209$^{***}$ \\ 
+  & (28.128) \\ 
+
+Entente & 131.783$^{***}$ \\ 
+  & (20.122) \\ 
+
+ Destination Polity & $-$3.083$^{***}$ \\ 
+  & (0.784) \\ 
+
+ Origin Polity & $-$2.265$^{***}$ \\ 
+  & (0.785) \\ 
+
+ Destination Trade Opennes & 0.633$^{***}$ \\ 
+  & (0.081) \\ 
+
+ Destination GDP growth (\%) & $-$0.682$^{***}$ \\ 
+  & (0.245) \\ 
+
+ Origin Trade Opennes & 0.790$^{***}$ \\ 
+  & (0.081) \\ 
+
+ Origin GDP growth (\%) & $-$0.876$^{***}$ \\ 
+  & (0.245) \\ 
+
+ Origin Population & $-$0.00000$^{***}$ \\ 
+  & (0.00000) \\ 
+
+ Destination Political Violence & 0.401 \\ 
+  & (2.016) \\ 
+ 
+Origin Political Violence & 6.296$^{***}$ \\ 
+  & (2.016) \\ 
+
+PTA depth & 2.615 \\ 
+  & (1.692) \\ 
+
+Trade in Household Consumption Goods & $-$0.00004$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Intermediate Goods & 0.0001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Intermediate Goods Sq. & $-$0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+Trade in Capital Goods & 0.00001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Mixed End-use Goods & 0.0001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+ Constant & $-$136.288$^{***}$ \\ 
+  & (21.681) \\ 
+
+\hline \\[-1.8ex] 
+Observations & 189,000 (126 Countries, 12 years)\\ 
+R$^{2}$ & 0.317 \\ 
+Adjusted R$^{2}$ & 0.316 \\ 
+Residual Std. Error & 494.613 (df = 188710) \\ 
+F Statistic & 303.323$^{***}$ (df = 289; 188710) \\ 
+\end{longtable} 
+
+\section{To-do List}
+\begin{enumerate}
+	\item Add Immigration Networks
+	\item Add Resource Endownments
+	\item Get GERGM results	
+\end{enumerate}
 
 \end{document}

@@ -52,7 +52,11 @@ fdi_dist <- get.adjacency(fdi_graph,attr='dist', sparse=FALSE)
 
 
 #plot
-plot_network(fdi_y)
+#plot_network(fdi_y)
+
+
+#MRQAP
+
 
 # create forumla
 formula <- fdi_y ~ edges + mutual(alpha = 0.8)+ netcov(fdi_dist) +
