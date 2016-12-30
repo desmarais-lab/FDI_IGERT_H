@@ -19,7 +19,7 @@ library(igraph)
 library(doBy)
 
 
-setwd("/Users/johnpschoeneman/Documents/school/Penn State/Methods/504 - Multivariate Analysis II/504 Project")
+setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
 
 #load in data
 fdi <- read.csv("fdi_panel.csv", stringsAsFactors=FALSE)        #FDI
