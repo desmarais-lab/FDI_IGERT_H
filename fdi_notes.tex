@@ -36,35 +36,39 @@ Research examining foreign direct investment (FDI) and its relationship with eco
 
 \begin{enumerate}
 \item Model 1: Only fit with network terms
-\item Model 2: Add gravity variables	
+\item Model 2: Add gravity variables\item Model 3: Add Trade  in Intermediate goods and PTA Depth	
 \end{enumerate}
 
 
 
 \begin{table}[!htb]
 \begin{center}
-\begin{tabular}{l c c }
+\begin{tabular}{l c c c }
 \hline
- & Model 1 & Model 2 \\
+ & Model 1 & Model 2 & Model 3 \\
 \hline
-sum                           & $2.83^{***}$  & $-0.14^{***}$ \\
-                              & $(0.04)$      & $(0.01)$      \\
-sum(1/2)                        & $-7.41^{***}$ & $-3.44^{***}$ \\
-                              & $(0.15)$      & $(0.02)$      \\
-nonzero                       & $2.25^{***}$  & $-0.13^{***}$ \\
-                              & $(0.13)$      & $(0.02)$      \\
-mutual, geometric              & $0.69^{***}$  & $0.27^{***}$  \\
-                              & $(0.02)$      & $(0.03)$      \\
-GDP product, logged     &               & $0.01^{***}$  \\
-                              &               & $(0.00)$      \\
-Distance, logged &               & $-0.19^{***}$ \\
-                              &               & $(0.01)$      \\
+sum                             & $2.83^{***}$  & $-0.14^{***}$ & $0.31^{***}$  \\
+                                & $(0.04)$      & $(0.01)$      & $(0.01)$      \\
+sum0.5                          & $-7.41^{***}$ & $-3.44^{***}$ & $-3.60^{***}$ \\
+                                & $(0.15)$      & $(0.02)$      & $(0.02)$      \\
+nonzero                         & $2.25^{***}$  & $-0.13^{***}$ & $0.12^{***}$  \\
+                                & $(0.13)$      & $(0.02)$      & $(0.02)$      \\
+mutual.geom.mean                & $0.69^{***}$  & $0.27^{***}$  & $0.23^{***}$  \\
+                                & $(0.02)$      & $(0.03)$      & $(0.02)$      \\
+edgecov.fdi\_net.mass.sum       &               & $0.01^{***}$  & $0.00^{***}$  \\
+                                &               & $(0.00)$      & $(0.00)$      \\
+edgecov.fdi\_net.distance.sum   &               & $-0.19^{***}$ & $-0.09^{***}$ \\
+                                &               & $(0.01)$      & $(0.01)$      \\
+edgecov.fdi\_net.trade\_int.sum &               &               & $0.07^{***}$  \\
+                                &               &               & $(0.00)$      \\
+edgecov.fdi\_net.depth.sum      &               &               & $0.03^{***}$  \\
+                                &               &               & $(0.01)$      \\
 \hline
-AIC                           & -16240.55     & -21673.28     \\
-BIC                           & -16209.90     & -21627.29     \\
-Log Likelihood                & 8124.28       & 10842.64      \\
+AIC                             & -16240.55     & -21673.28     & -22166.65     \\
+BIC                             & -16209.90     & -21627.29     & -22105.33     \\
+Log Likelihood                  & 8124.28       & 10842.64      & 11091.32      \\
 \hline
-\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\multicolumn{4}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
 \end{tabular}
 \caption{Statistical models}
 \label{table:coefficients}
