@@ -26,8 +26,83 @@
 
 \end{abstract}
 
+\section{Introduction}
+
+Research examining foreign direct investment (FDI) and its relationship with economic and political determinants is expansive. Much of this work is conducted using the gravity model, which was originally developed to predict trade flows. This framework models FDI flows using dyadic data and the product of partner GDPs as mass and some variant of distance as an independent variable. Our work highlights a key weakness of these models that rely on standard panel regression models. There has been a growing body of literature that brings into question the way we estimate models for dyadic data (add list of papers). The primary challenge is that dyadic data is an edge-list and therefore represents a network. Ignoring this unmodeled network structure violates assumptions within a generalized linear model, potentially leading to biased estimates.
+\newpage
+
+
+\section{Preliminary Valued ERGM Results}
+
+\begin{enumerate}
+\item Model 1: Only fit with network terms
+\item Model 2: Add gravity variables	
+\end{enumerate}
+
+
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{l c c }
+\hline
+ & Model 1 & Model 2 \\
+\hline
+sum                           & $2.83^{***}$  & $-0.14^{***}$ \\
+                              & $(0.04)$      & $(0.01)$      \\
+sum(1/2)                        & $-7.41^{***}$ & $-3.44^{***}$ \\
+                              & $(0.15)$      & $(0.02)$      \\
+nonzero                       & $2.25^{***}$  & $-0.13^{***}$ \\
+                              & $(0.13)$      & $(0.02)$      \\
+mutual, geometric              & $0.69^{***}$  & $0.27^{***}$  \\
+                              & $(0.02)$      & $(0.03)$      \\
+GDP product, logged     &               & $0.01^{***}$  \\
+                              &               & $(0.00)$      \\
+Distance, logged &               & $-0.19^{***}$ \\
+                              &               & $(0.01)$      \\
+\hline
+AIC                           & -16240.55     & -21673.28     \\
+BIC                           & -16209.90     & -21627.29     \\
+Log Likelihood                & 8124.28       & 10842.64      \\
+\hline
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{Statistical models}
+\label{table:coefficients}
+\end{center}
+\end{table}
 \doublespacing
 
+\newpage
+
+\section{Outline}
+\begin{itemize}
+  \item{Intro}
+    \begin{itemize}
+      \item{Paragraph about the background on networks in polisci}
+     	 \begin{itemize}
+      	\item{Recent discussion in ISQ (Vol 2, issue 60) and other work}
+      	\item{Mention that there is even less work on FDI network}
+      	\end{itemize}
+	\item{Outline of Paper}
+    \end{itemize}
+  \item{Methods background}
+   \begin{itemize}
+      	\item{Discussion of the possible approaches OLS with FE, Latent, ERGM}
+      	\item{Explanation of what is ERGM and why it is preferable}
+      	\end{itemize}
+  \item{Discussion of theoretical expectations}
+  \begin{itemize}
+      	\item{Explanation of substantive reasons for network terms}
+      	\item{Explanation of covariates}
+      	\end{itemize}
+   \item{Discussion of data sources and model}
+     \item{Results}
+     \item{Conclusion and future work}
+\end{itemize}
+
+
+
+\newpage
 \section{Data Collection}
 
 
@@ -122,7 +197,7 @@
 		
 \end{enumerate}
 
-\section{Preliminary Results}
+\section{Preliminary Panel Regression Results}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
 % Date and time: Mon, Dec 12, 2016 - 09:16:44
@@ -227,11 +302,10 @@ Residual Std. Error & 494.613 (df = 188710) \\
 F Statistic & 303.323$^{***}$ (df = 289; 188710) \\ 
 \end{longtable} 
 
-\section{To-do List}
+\section{Model changes to make}
 \begin{enumerate}
-	\item Add Immigration Networks
-	\item Add Resource Endownments
-	\item Get GERGM results	
+\item \item Compare panel vs. regression models vs. latent-space\item Model security-alliance variables\item Follow Polity explanations like Mansfield et. al. \item Is there a trade network paper to model?\item Limit categories in valued ERGM counts
+\item Use cubic root of DV for robustness	
 \end{enumerate}
 
 \end{document}
