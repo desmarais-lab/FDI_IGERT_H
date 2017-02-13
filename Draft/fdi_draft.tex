@@ -4,9 +4,10 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=red,
+    linkcolor=black,
     filecolor=magenta,      
     urlcolor=red,
+    citecolor=cyan
 }
 \usepackage{graphicx}
 \usepackage{setspace}
@@ -31,6 +32,55 @@ bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsy
 \section{Introduction}
 
 Research examining foreign direct investment (FDI) and its relationship with economic and political determinants is expansive. Much of this work is conducted using the gravity model, which was originally developed to predict trade flows. This framework models FDI flows using dyadic data and the product of partner GDPs as mass and some variant of distance as an independent variable. Our work highlights a key weakness of these models that rely on standard panel regression models. There has been a growing body of literature that brings into question the way we estimate models for dyadic data (add list of papers). The primary challenge is that dyadic data is an edge-list and therefore represents a network. Ignoring this unmodeled network structure violates assumptions within a generalized linear model, potentially leading to biased estimates.
+
+\section{Methods Background}
+
+\section{Theory}
+
+\section{Data and Research Design}
+
+\subsection{FDI inflows}
+
+For the dependent variable we are using bilateral FDI inflows. These are from the United Nations Conference on Trade and Development (UNCTAD) and were first made available in 2014 \cite{UNCTAD}. We use the entire time-period available, which is 2001-2012. Past work that has looked at country-year FDI relationships relied on monadic data. The advantage of using dyadic data is that it not only lets us model network relationships, but the disaggregation allows us to measure changes in FDI inflows related to covariates that are at the dyad level, such as PTAs. Because FDI flows tend to be highly dispersed we use the natural log of the values. 
+
+\subsection{Network Statistics}
+
+\subsection{Covariates}
+
+We control for both economic and political variables. For economic drivers of FDI we include standard gravity variables that are commonly used in trade and FDI models\cite{MZ2011,WB1}. \footnote{Gravity is the log product of the dyad's GDP and logged euclidean distance. Larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI.} The other key economic variable that is included trade in intermediate goods\cite{OECD}. Past research has shown that FDI and trade are compliments \cite{AN} and the advantage of using trade in intermediate goods is that it proxies specifically for production supply chains. A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health market in country \cite{WB2}.
+
+Alliances
+
+Polity
+
+Political Violence
+
+PTAs
+
+\section{Results}
+
+\section{Conclusion}
+
+
+\newpage
+\begin{thebibliography}{9}
+
+
+\bibitem[1]{UNCTAD} UNCTAD (2014) "Bilateral FDI Statistics"
+
+\bibitem[2]{MZ2011} Mayer, T. \& Zignago, S. (2011) Notes on CEPII's distances measures: the GeoDist Database CEPII Working Paper 2011-25
+
+\bibitem[3]{WB1} The World Bank, World Development Indicators (2012). GDP
+
+\bibitem[4]{OECD} OECD (2016) "Bilateral Trade in Goods by Industry and End-use (BTDIxE), ISIC Rev.4"
+
+\bibitem[5]{AN} Aizenman, J., \& Noy, I. (2005). ``FDI and trade--Two way linkages?'' (No. w11403). \emph{National Bureau of Economic Research.}
+
+\bibitem[6]{WB2} The World Bank, World Development Indicators (2012). GDP growth rate
+
+\end{thebibliography}
+
+
 
 
 \end{document}
