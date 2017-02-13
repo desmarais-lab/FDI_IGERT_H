@@ -1,0 +1,331 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=red,
+}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{courier}
+\begin{document}
+
+\title{The Network of Foreign Direct Investment Flows: \\Theory and Empirical Analysis}
+\author{John  Schoeneman\thanks{\footnotesize{
+jbs5686@psu.edu, PhD Student, Pennsylvania State University.}} \and Boliang Zhu\thanks{\footnotesize{bxz14@psu.edu, Assistant Professor, Department of Political Science, Pennsylvania State University. }} \and Bruce A. Desmarais\thanks{\footnotesize{
+bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsylvania State University.}}}
+\date{}
+\maketitle
+
+\singlespacing
+\begin{abstract} 
+    \noindent We study the structure of the international network of foreign direct investment (FDI) flows. The political economy of FDI literature has established several theoretical claims and empirical regularities regarding exogenous political and economic determinants of FDI inflows. These include security alliances, preferential trade agreements, migration networks, and colonial history. However, existing studies---based on monadic and to a lesser degree, dyadic regression models---overlook the complex dependencies that are likely to characterize the network. Recent developments in methodology for studying international relations show that the regression framework is typically inadequate for quantitatively modeling dyadic relational data, such as FDI flows. In this paper, we integrate hypotheses regarding exogenous determinants and novel hypotheses regarding structural dependencies into a comprehensive exponential random graph model (ERGM) for weighted networks. Our findings reveal that the FDI flow network  exhibits a number of complex dependencies, such as reciprocity, that have been omitted from previous empirical models of FDI flows.
+
+\end{abstract}
+
+\section{Introduction}
+
+Research examining foreign direct investment (FDI) and its relationship with economic and political determinants is expansive. Much of this work is conducted using the gravity model, which was originally developed to predict trade flows. This framework models FDI flows using dyadic data and the product of partner GDPs as mass and some variant of distance as an independent variable. Our work highlights a key weakness of these models that rely on standard panel regression models. There has been a growing body of literature that brings into question the way we estimate models for dyadic data (add list of papers). The primary challenge is that dyadic data is an edge-list and therefore represents a network. Ignoring this unmodeled network structure violates assumptions within a generalized linear model, potentially leading to biased estimates.
+\newpage
+
+
+\section{Preliminary Valued ERGM Results}
+
+\begin{enumerate}
+\item Model 1: Only fit with network terms
+\item Model 2: Add gravity variables
+\item Model 3: Add Trade  in Intermediate goods and PTA Depth	
+\end{enumerate}
+
+
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{l c c c }
+\hline
+ & Model 1 & Model 2 & Model 3 \\
+\hline
+sum                             & $2.83^{***}$  & $-0.14^{***}$ & $0.31^{***}$  \\
+                                & $(0.04)$      & $(0.01)$      & $(0.01)$      \\
+sum0.5                          & $-7.41^{***}$ & $-3.44^{***}$ & $-3.60^{***}$ \\
+                                & $(0.15)$      & $(0.02)$      & $(0.02)$      \\
+nonzero                         & $2.25^{***}$  & $-0.13^{***}$ & $0.12^{***}$  \\
+                                & $(0.13)$      & $(0.02)$      & $(0.02)$      \\
+mutual.geom.mean                & $0.69^{***}$  & $0.27^{***}$  & $0.23^{***}$  \\
+                                & $(0.02)$      & $(0.03)$      & $(0.02)$      \\
+edgecov.fdi\_net.mass.sum       &               & $0.01^{***}$  & $0.00^{***}$  \\
+                                &               & $(0.00)$      & $(0.00)$      \\
+edgecov.fdi\_net.distance.sum   &               & $-0.19^{***}$ & $-0.09^{***}$ \\
+                                &               & $(0.01)$      & $(0.01)$      \\
+edgecov.fdi\_net.trade\_int.sum &               &               & $0.07^{***}$  \\
+                                &               &               & $(0.00)$      \\
+edgecov.fdi\_net.depth.sum      &               &               & $0.03^{***}$  \\
+                                &               &               & $(0.01)$      \\
+\hline
+AIC                             & -16240.55     & -21673.28     & -22166.65     \\
+BIC                             & -16209.90     & -21627.29     & -22105.33     \\
+Log Likelihood                  & 8124.28       & 10842.64      & 11091.32      \\
+\hline
+\multicolumn{4}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{Statistical models}
+\label{table:coefficients}
+\end{center}
+\end{table}
+\doublespacing
+
+\newpage
+
+%% John, there's no need to put text following \item in curly braces.
+\section{Outline}
+\begin{itemize}
+  \item Intro
+    \begin{itemize}
+    \item Paragraph providing an overview of the ways folks have used FDI data to study FDI in the past, and statement of our overall research question. {\bf BZ}
+      \item Paragraph about the background on networks in polisci 
+     	 \begin{itemize}
+      	\item Recent discussion in ISQ (Vol 2, issue 60) and other work {\bf JS}
+      	\item Mention that there is even less work on FDI network 
+      	\end{itemize}
+    \end{itemize}
+  \item Methods background 
+   \begin{itemize}
+      	\item Discussion of the possible approaches OLS with FE, Latent, ERGM {\bf JS}
+      	\item Explanation of what is ERGM and why it is preferable {\bf BD}
+      	\end{itemize}
+  \item{Discussion of theoretical expectations}
+  \begin{itemize}
+      	\item{Explanation of substantive reasons for network terms}
+      	\item{Explanation of covariates}
+      	\end{itemize}
+   \item{Discussion of data sources and model}
+   \begin{itemize}
+   \item For each variable that may be included in the model, we should have a short paragraph description of the variable, a citation of the source where we got the data, and a statement regarding how we expect it to be related to FDI flows. {\bf JS}
+   \item Add in descriptive statistics for each variable---a table of min, max, mean, quartiles, sd, and number of cases covered; a histogram for each quantitative variable, possibly on the log scale, and a bar chart for qualitative variables, network plots for the FDI network. We will probably cut lots of this, but its necessary for us to take a look at it, and we'll definitely include some. {\bf JS}
+   \end{itemize}
+     \item{Results}
+     \item{Conclusion and future work}
+\end{itemize}
+
+
+
+
+
+\newpage
+\section{Data Collection}
+
+
+
+\begin{enumerate}
+	\item {FDI Data}
+		\begin{itemize}
+			\item{Downloaded from UNCTAD}
+			\item{Cleaned and appended into panel format}
+		\end{itemize}
+	\item {GDP}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Distance}
+		\begin{itemize}
+			\item{Downloaded from CEPII}
+			\item{Mayer, T. \& Zignago, S. (2011) Notes on CEPII?s distances measures: the GeoDist Database
+					CEPII Working Paper 2011-25}
+			\item{Includes Common Language, Contiguity, Ethnolinguistic similarity, and Colonial ties}
+		\end{itemize}
+	\item {Alliances}
+		\begin{itemize}
+			\item{Downloaded from COW}
+			\item{Gibler, Douglas M. 2009. International military alliances, 1648-2008. CQ Press}
+		\end{itemize}
+	\item {Regime Type}
+		\begin{itemize}
+			\item{Downloaded from Center for Systemic Peace}
+			\item{http://www.systemicpeace.org/inscrdata.html}
+		\end{itemize}
+	\item {GDP growth rate}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Trade Openness}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Population}
+		\begin{itemize}
+			\item{Downloaded from WB WDI}
+		\end{itemize}
+	\item {Transparency}
+		\begin{itemize}
+			\item{Downloaded from Transparency International}
+			\item{Not included in preliminary results, subsets countries to 75}
+		\end{itemize}
+	\item {PTA Depth}
+		\begin{itemize}
+			\item{Downloaded from DESTA}
+			\item{http://www.designoftradeagreements.org}
+		\end{itemize}
+	\item {Trade}
+		\begin{itemize}
+			\item{Downloaded from OECD.stat}
+			\item{http://stats.oecd.org/}
+			\item{includes trade in household consumption items, intermediate goods, capital goods, and mixed end-use goods}
+		\end{itemize}
+		
+\end{enumerate}
+
+\section{Data Preparation}
+\begin{enumerate}
+	\item Downloading Data: \texttt{FDI\_download.R}
+		\begin{itemize}
+			\item{STP and CIV cannot be scraped due to Uni-code issues:Downloaded and formatted manually}
+			\item{Had to rewrite ``Sao Tao and Principe'' in its file; Changed ``Cote d?Voire'' to ``Ivory Coast''}
+			\item{Does not run from makefile due to these manual changes}
+		\end{itemize}
+	\item Cleaning Data: \texttt{FDI\_clean.R}
+		\begin{itemize}
+			\item{Gets rid of empty columns and empty rows, then appends all countries to together}
+			\item{Gets rid of aggregates and adds country codes}
+			\item File output \texttt{fdi\_clean.csv}
+		\end{itemize}
+	\item Adding data: \texttt{FDI\_merge.R}
+		\begin{itemize}
+			\item{Adds control variables}
+			\item File output: replaces \texttt{fdi\_merge.csv} 
+		\end{itemize}
+	\item Subset data: \texttt{FDI\_subset.R}
+		\begin{itemize}
+			\item{Subsets data to create full edge list for all variables}
+		\end{itemize}
+	\item Preliminary Results: \texttt{fdi\_MRQAP.R}
+		\begin{itemize}
+			\item{Runs OLS models}
+			\item Output: FE and MRQAP results 
+		\end{itemize}
+
+		
+\end{enumerate}
+
+\section{Preliminary Panel Regression Results}
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Mon, Dec 12, 2016 - 09:16:44
+\begin{longtable}{lr}
+  \caption{IM/EX FE effects}\\
+  \hline
+  IV&Dependent Variable: FDI\\
+  \hline
+  \endhead
+Contiguity & 174.960$^{***}$ \\ 
+  & (8.220) \\ 
+
+Common Language\_off & 7.157 \\ 
+  & (6.776) \\ 
+
+Common Ethnoliguisitics & $-$7.846 \\ 
+  & (6.869) \\ 
+
+Past Colony & 142.077$^{***}$ \\ 
+  & (10.464) \\ 
+
+Common Colonizer & 41.110$^{***}$ \\ 
+  & (5.583) \\ 
+
+Common Currency & 121.027$^{*}$ \\ 
+  & (73.033) \\ 
+
+Distance & $-$0.005$^{***}$ \\ 
+  & (0.0004) \\ 
+
+ Destination GDP & 0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+ Origin GDP & 0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+Defense Alliance & 12.256 \\ 
+  & (13.213) \\ 
+
+Non-agression Treaty & 154.289$^{***}$ \\ 
+  & (18.991) \\ 
+
+Neutrality Treaty & $-$247.209$^{***}$ \\ 
+  & (28.128) \\ 
+
+Entente & 131.783$^{***}$ \\ 
+  & (20.122) \\ 
+
+ Destination Polity & $-$3.083$^{***}$ \\ 
+  & (0.784) \\ 
+
+ Origin Polity & $-$2.265$^{***}$ \\ 
+  & (0.785) \\ 
+
+ Destination Trade Opennes & 0.633$^{***}$ \\ 
+  & (0.081) \\ 
+
+ Destination GDP growth (\%) & $-$0.682$^{***}$ \\ 
+  & (0.245) \\ 
+
+ Origin Trade Opennes & 0.790$^{***}$ \\ 
+  & (0.081) \\ 
+
+ Origin GDP growth (\%) & $-$0.876$^{***}$ \\ 
+  & (0.245) \\ 
+
+ Origin Population & $-$0.00000$^{***}$ \\ 
+  & (0.00000) \\ 
+
+ Destination Political Violence & 0.401 \\ 
+  & (2.016) \\ 
+ 
+Origin Political Violence & 6.296$^{***}$ \\ 
+  & (2.016) \\ 
+
+PTA depth & 2.615 \\ 
+  & (1.692) \\ 
+
+Trade in Household Consumption Goods & $-$0.00004$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Intermediate Goods & 0.0001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Intermediate Goods Sq. & $-$0.000$^{***}$ \\ 
+  & (0.000) \\ 
+
+Trade in Capital Goods & 0.00001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+Trade in Mixed End-use Goods & 0.0001$^{***}$ \\ 
+  & (0.00000) \\ 
+
+ Constant & $-$136.288$^{***}$ \\ 
+  & (21.681) \\ 
+
+\hline \\[-1.8ex] 
+Observations & 189,000 (126 Countries, 12 years)\\ 
+R$^{2}$ & 0.317 \\ 
+Adjusted R$^{2}$ & 0.316 \\ 
+Residual Std. Error & 494.613 (df = 188710) \\ 
+F Statistic & 303.323$^{***}$ (df = 289; 188710) \\ 
+\end{longtable} 
+
+\section{Model changes to make}
+\begin{enumerate}
+\item 
+\item Compare panel vs. regression models vs. latent-space
+\item Model security-alliance variables
+\item Follow Polity explanations like Mansfield et. al. 
+\item Is there a trade network paper to model?
+\item Limit categories in valued ERGM counts
+\item Use cubic root of DV for robustness
+	
+\end{enumerate}
+
+\end{document}
