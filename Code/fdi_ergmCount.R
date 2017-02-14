@@ -46,6 +46,11 @@ vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GD
 #rename vertex dataset
 names(vertex_attr) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g", "PV")
 
+#create alliance transitivity measure
+
+
+
+
 #create network object 
 detach("package:igraph", unload=TRUE)
 fdi_net <- network(fdi01, matrix.type="edgelist", directed=TRUE)
