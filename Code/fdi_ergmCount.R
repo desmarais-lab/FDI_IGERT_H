@@ -19,7 +19,7 @@ library(network)
 library(igraph)
 library(doBy)
 
-setwd("/Users/johnpschoeneman/Desktop/ACI")
+setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
 
 
 #load in data
@@ -46,7 +46,17 @@ vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GD
 #rename vertex dataset
 names(vertex_attr) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g", "PV")
 
-#create alliance transitivity measure
+
+#create alliance transivity dummy
+def <- fdi01[,c(1,2,3,14)]
+def1 <- subset(def, def$defense.max.x==1)
+def <- merge(def, def1, by.x = c("Destination", "Year"), 
+             by.y = c("Origin", "Year"), all.x =TRUE)
+colnames(def)[5] <- "dest"
+def <- merge(def, def1, by.x = c("Origin", "Year"), 
+             by.y = c("Destination", "Year"), all.x =TRUE)
+def$def_share <- ifelse(def$defense.max.x.y==1 & def$defense.max.x==1 & def$defense.max.x.x==0, 1, 0)
+
 
 
 

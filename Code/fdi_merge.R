@@ -88,14 +88,39 @@ panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"),
                by.y = c("ccode1", "ccode2", "year"), all.x =TRUE)
 panel <- merge(panel, alliance, by.x = c("Origin.cown", "Dest.cown", "Year"), 
                by.y = c("ccode2", "ccode1", "year"), all.x =TRUE)
-panel$defense.x <- ifelse(is.na(panel$defense.max.x ), 
+panel$defense.max.x <- ifelse(is.na(panel$defense.max.x ), 
                           panel$defense.max.y ,panel$defense.max.x )
-panel$neutrality.x <- ifelse(is.na(panel$neutrality.max.x), 
+panel$neutrality.max.x <- ifelse(is.na(panel$neutrality.max.x), 
                              panel$neutrality.max.y,panel$neutrality.max.x)
-panel$nonaggression.x <- ifelse(is.na(panel$nonaggression.max.x), 
+panel$nonaggression.max.x <- ifelse(is.na(panel$nonaggression.max.x), 
                                 panel$nonaggression.max.y,panel$nonaggression.max.x)
-panel$entente.x <- ifelse(is.na(panel$entente.max.x), 
+panel$entente.max.x <- ifelse(is.na(panel$entente.max.x), 
                           panel$entente.max.y,panel$entente.max.x)
+panel <- panel[,1:27]
+panel <- merge(panel, alliance, by.x = c("Dest.cown","Origin.cown", "Year"),
+               by.y = c("ccode1", "ccode2", "year"), all.x =TRUE)
+colnames(panel)[28] <- "defense"
+colnames(panel)[29] <- "non_aggression"
+colnames(panel)[30] <- "neutrality"
+colnames(panel)[31] <- "entente"
+panel <- merge(panel, alliance, by.x = c("Dest.cown","Origin.cown",  "Year"), 
+               by.y = c("ccode2", "ccode1", "year"), all.x =TRUE)
+panel$defense.max.x <- ifelse(is.na(panel$defense.max.x ), 
+                          panel$defense.max ,panel$defense.max.x )
+panel$neutrality.max.x <- ifelse(is.na(panel$neutrality.max.x), 
+                             panel$neutrality.max,panel$neutrality.max.x)
+panel$nonaggression.max.x <- ifelse(is.na(panel$nonaggression.max.x), 
+                                panel$nonaggression.max,panel$nonaggression.max.x)
+panel$entente.max.x <- ifelse(is.na(panel$entente.max.x), 
+                          panel$entente.max,panel$entente.max.x)
+panel$defense.max.x <- ifelse(is.na(panel$defense.max.x ), 
+                          panel$defense ,panel$defense.max.x )
+panel$neutrality.max.x <- ifelse(is.na(panel$neutrality.max.x), 
+                             panel$neutrality,panel$neutrality.max.x)
+panel$nonaggression.max.x <- ifelse(is.na(panel$nonaggression.max.x), 
+                                panel$non_aggression,panel$nonaggression.max.x)
+panel$entente.max.x <- ifelse(is.na(panel$entente.max.x), 
+                          panel$entente,panel$entente.max.x)
 panel <- panel[,1:27]
 rm(alliance)
 
