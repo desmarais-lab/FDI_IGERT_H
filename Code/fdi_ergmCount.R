@@ -79,11 +79,11 @@ rm(def, def1, def2, a, b, fit, i, match, pair_length)
 
 #quick OLS check
 fdi01_sub <- subset(fdi01, fdi01$defense.max.x==0)
-fit <- lm(Value ~ share_partner , data=fdi01_sub)
+fit <- lm(Value ~ share_partner + mass + dist, data=fdi01_sub)
 summary(fit)
 rm(fit, fdi01_sub)
 
-#create network object 
+#create network object
 detach("package:igraph", unload=TRUE)
 fdi_net <- network(fdi01, matrix.type="edgelist", directed=TRUE)
 
@@ -101,6 +101,8 @@ set.edge.attribute(fdi_net, attrname="entente_t", value=fdi01$entente.max.x)
 set.edge.attribute(fdi_net, attrname="depth", value=fdi01$depth_latent)
 set.edge.attribute(fdi_net, attrname="trade_int", value=fdi01$trade_int)
 set.edge.attribute(fdi_net, attrname="mass", value=fdi01$mass)
+set.edge.attribute(fdi_net, attrname="shared_alliance", value=fdi01$share_partner)
+
 
 #set vertex attributes
 set.vertex.attribute(fdi_net, attrname="GDP", value=vertex_attr$GDP)
@@ -145,9 +147,10 @@ mcmc.diagnostics(fit.01.1, vars.per.page=2)
 #extended model
 formula <- fdi_net ~ sum + sum(pow=1/2)+ mutual(form="geometric") + nonzero + 
   edgecov(fdi_net, "mass", form="sum")+ 
-  edgecov(fdi_net, "distance", form="sum")
-#+edgecov(fdi_net, "trade_int", form="sum")
-#+edgecov(fdi_net, "depth", form="sum")
+  edgecov(fdi_net, "distance", form="sum")+
+  edgecov(fdi_net, "trade_int", form="sum")+
+  edgecov(fdi_net, "depth", form="sum")+
+  edgecov(fdi_net, "shared_alliance", form="sum")
 
 # count model
 fit.01.2 <- ergm(formula,

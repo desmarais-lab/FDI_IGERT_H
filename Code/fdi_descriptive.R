@@ -27,12 +27,12 @@ library(igraph)
 
 #no_cores <- detectCores()
 #registerDoMC(no_cores)  #change the 2 to your number of CPU cores  
+setwd("/Users/johnpschoeneman/Desktop/ACI")
 
 
 #load in data
 fdi <- read.csv("fdi_sub.csv", stringsAsFactors=FALSE)        #FDI
-oecd <- read.csv("OECD_list.csv", stringsAsFactors=FALSE)        #FDI
-oecd <- oecd[,1:2]
+
 
 fdi <- fdi[,-1]
 
@@ -55,25 +55,12 @@ rm(gdppc)
 fdi <- fdi[,c(1,3,2,4:36)]
 
 
-#split by OECD
+#log FDI
+fdi$ln_Value <- log(fdi$Value+1)
 
-
-
-#descriptive stats by whole network#######################
-#extract one year
-fdi01 <- subset(fdi, fdi$Year ==2001)
-fdi01$ln_Value <- log(fdi01$Value+1)
-
-
-# create graph object
-fdi_graph <- graph.data.frame(fdi01)
-fdi_y <- get.adjacency(fdi_graph, attr='ln_Value', sparse=FALSE)
-
-
-
-
-# create rho function from class example
+# create rho function
 r <- function(g){
+  diag(g) <- 0
   stat<- sum(g*t(g))/sum(g)
   stat
   # g is an adjacency matrix
@@ -91,29 +78,76 @@ rho <- function(g){
 }
 
 
-rho_fdi <- rho(fdi_y)
-rho_fdi
+#descriptive stats by whole network#######################
 
+descriptive_stats <- matrix(nrow=12, ncol=6)
+
+for(i in 1:12){
+
+descriptive_stats[i,1] <- i +2000  
+
+#extract one year
+fdi_yr <- subset(fdi, fdi$Year ==i +2000)
+# create graph object
+fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
+fdi_y <- get.adjacency(fdi_graph, attr='ln_Value', names=TRUE, sparse=FALSE)
+
+#measure reciprocity
+descriptive_stats[i,2] <- rho(fdi_y)
 
 # Transitivity
 fdi_g <- graph.adjacency(fdi_y, mode="directed")
 t <- transitivity(fdi_g, type="weighted", vids=NULL,isolates="NaN")
 t <- na.omit(t)
-mean(t)
-range(t)
-
-
-
+descriptive_stats[i,3] <- mean(t)
+descriptive_stats[i,4] <- max(t)
+descriptive_stats[i,5] <- min(t)
 
 # assortativity by Polity
 library(doBy)
-agg<-summaryBy(Dest.polity~ Destination, fdi01)
+agg<-summaryBy(Dest.polity~ Destination, fdi_yr)
 # Attach attribute Polity to each vertex
 fdi_g<-set_vertex_attr(fdi_g,"Polity",value=agg$Dest.polity.mean)
 list.vertex.attributes(fdi_g)
 # Calculate the assortativity coefficient for polity
-a.polity <- assortativity(fdi_g,types1=V(fdi_g)$Polity,directed=T)
-a.polity
+descriptive_stats[i,6] <- assortativity(fdi_g,types1=V(fdi_g)$Polity,directed=T)
 
+}
+
+
+# plot stats
+library(plotly)
+
+data <- data.frame(descriptive_stats)
+
+plot_ly(data, x = ~X1, y = ~X2, type = 'scatter', mode = 'lines') %>%
+layout(title = "FDI Network Reciprocity",
+       xaxis = list(title = "Year"),
+       yaxis = list (title = "Reciprocity"))
+
+plot_ly(data, x = ~X1, y = ~X3, type = 'scatter', mode = 'lines') %>%
+  layout(title = "FDI Network Transitivity",
+         xaxis = list(title = "Year"),
+         yaxis = list (title = "Transitivity"))
+
+plot_ly(data, x = ~X1, y = ~X6, type = 'scatter', mode = 'lines') %>%
+  layout(title = "Assortativity for Polity",
+         xaxis = list(title = "Year"),
+         yaxis = list (title = "Assortativity"))
 
 #descriptive stats by OECD or not#######################
+# load OECD list
+oecd <- read.csv("OECD_list.csv", stringsAsFactors=FALSE)        #FDI
+oecd <- oecd[,1:2]
+#Split by OECD
+
+#Merge on dest and year, equal to one, sort, carryforward, turn to zeros
+
+#Repeat for Origin
+
+#Split by OECD status
+
+
+
+
+
