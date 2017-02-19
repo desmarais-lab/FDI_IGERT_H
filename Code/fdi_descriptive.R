@@ -27,7 +27,7 @@ library(igraph)
 
 #no_cores <- detectCores()
 #registerDoMC(no_cores)  #change the 2 to your number of CPU cores  
-setwd("/Users/johnpschoeneman/Desktop/ACI")
+#setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
 
 
 #load in data
@@ -146,6 +146,17 @@ oecd <- oecd[,1:2]
 #Repeat for Origin
 
 #Split by OECD status
+
+
+#descriptive of covariates#######################
+
+# summary stats
+
+# distribution plots
+
+# scatter plots
+
+
 
 
 
