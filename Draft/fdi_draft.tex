@@ -47,15 +47,17 @@ For the dependent variable we are using bilateral FDI inflows. These are from th
 
 \subsection{Covariates}
 
-We control for both economic and political variables. For economic drivers of FDI we include standard gravity variables that are commonly used in trade and FDI models\cite{MZ2011, WB1}. \footnote{Gravity is the log product of the dyad's GDP and logged euclidean distance. Larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI.} The other key economic variable that is included trade in intermediate goods\cite{OECD}. Past research has shown that FDI and trade are compliments \cite{AN} and the advantage of using trade in intermediate goods is that it proxies specifically for production supply chains. A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health market in country \cite{WB2}.
+We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's GDP and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \cite{MZ2011, WB1}. \\
 
-Alliances
+The other key economic variable that is included trade in intermediate goods\cite{OECD}. This is constructed according to the UN Broad Economic Category classification definitions that separates goods by end-use category. Intermediate goods include unprocessed and partially processed agricultural goods and industrial goods. Past research has shown that FDI and trade are compliments \cite{AN} and the advantage of using trade in intermediate goods is that it proxies for production supply chains, which we expect to be strongly positively associated with FDI inflows.\\
 
-Polity
+A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health of a country's economy \cite{WB2}.\\
 
-Political Violence
+We include two categories of international agreement variables. The first is dummy variables for defense agreements \cite{Gibler09}. This includes defense, entente, non-aggression, and neutrality treaties. We expect these variables to positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and a lower risk of expropriation. The second international agreement variable is preferential trade agreement (PTA) depth \cite{dur2014design}. Past work has argued that PTAs represent a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \cite{BM14}. However, this study used monadic data and only a count PTAs signed. Our work takes this further since we are using network data and increases in PTA depth and FDI inflows is measured at the dyadic level and the PTA variable we use is built using latent trait analysis with 48 different variables.\\
 
-PTAs
+There is substantial amount of work that explores the relationship between regime type and FDI inflows. The work is inconclusive, but include controls for it nonetheless using the Polity IV score \cite{polity2012polity}. We also include political violence to proxy for state stability, which expect to be negatively correlated with FDI inflows \cite{marshall2005major}.
+
+\subsection{Covariate Summary Statistics}
 
 \section{Results}
 
