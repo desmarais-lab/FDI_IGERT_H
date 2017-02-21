@@ -27,7 +27,7 @@ library(igraph)
 
 #no_cores <- detectCores()
 #registerDoMC(no_cores)  #change the 2 to your number of CPU cores  
-#setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
+setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
 
 
 #load in data
@@ -76,6 +76,10 @@ rho <- function(g){
   ## g has no self-loops
   # calculate rho
 }
+# rho as reciprocity for weighted adjacency matrix
+rho <- function(e){
+  (((sum(e))/(length(e)*(length(e)-1)))^2)/((sum(e^2))/(length(e)*(length(e)-1)))
+}
 
 
 #descriptive stats by whole network#######################
@@ -93,7 +97,7 @@ fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
 fdi_y <- get.adjacency(fdi_graph, attr='ln_Value', names=TRUE, sparse=FALSE)
 
 #measure reciprocity
-descriptive_stats[i,2] <- rho(fdi_y)
+descriptive_stats[i,2] <- rho(fdi_yr$ln_Value)
 
 # Transitivity
 fdi_g <- graph.adjacency(fdi_y, mode="directed")
@@ -135,6 +139,49 @@ plot_ly(data, x = ~X1, y = ~X6, type = 'scatter', mode = 'lines') %>%
          xaxis = list(title = "Year"),
          yaxis = list (title = "Assortativity"))
 
+
+
+
+#descriptive of covariates#######################
+agg<-summaryBy(Dest.GDP + Dest.polity+ Dest.TO+Dest.GDP.g + Dest.pv ~Destination+Year, fdi)
+
+
+# summary stats
+summary(fdi)
+stargazer(fdi)
+
+# distribution plots
+par(mfrow=c(3,3))
+plot(density(log(agg$Dest.GDP.mean+1)))
+plot(density(agg$Dest.polity.mean))
+plot(density(agg$Dest.TO.mean))
+plot(density(agg$Dest.GDP.g.mean))
+plot(density(agg$Dest.pv.mean))
+plot(density(fdi$Value))
+plot(density(fdi$ln_Value))
+plot(density(log(fdi$trade_int+1)))
+plot(density(fdi$depth_latent))
+
+# scatter plots
+
+par(mfrow=c(2,2))
+plot(fdi$Dest.polity, log(fdi$Value+1))
+abline(lm(fdi$Dest.polity~log(fdi$trade_int+1)), col="red") # regression line (y~x) 
+lines(lowess(fdi$Dest.polity,log(fdi$Value+1)), col="blue") # lowess line (x,y)
+
+plot(fdi$Dest.TO, log(fdi$Value+1))
+abline(lm(fdi$Dest.TO~log(fdi$trade_int+1)), col="red") # regression line (y~x) 
+lines(lowess(fdi$Dest.TO,log(fdi$Value+1)), col="blue") # lowess line (x,y)
+
+plot(log(fdi$trade_int+1), log(fdi$Value+1))
+abline(lm(log(fdi$Value+1)~log(fdi$trade_int+1)), col="red") # regression line (y~x) 
+lines(lowess(log(fdi$trade_int+1),log(fdi$Value+1)), col="blue") # lowess line (x,y)
+
+plot(fdi$depth_latent, log(fdi$Value+1))
+abline(lm(log(fdi$Value+1)~fdi$depth_latent), col="red") # regression line (y~x) 
+lines(lowess(fdi$depth_latent,log(fdi$Value+1)), col="blue") # lowess line (x,y)
+
+
 #descriptive stats by OECD or not#######################
 # load OECD list
 oecd <- read.csv("OECD_list.csv", stringsAsFactors=FALSE)        #FDI
@@ -146,19 +193,6 @@ oecd <- oecd[,1:2]
 #Repeat for Origin
 
 #Split by OECD status
-
-
-#descriptive of covariates#######################
-
-# summary stats
-
-# distribution plots
-
-# scatter plots
-
-
-
-
 
 
 
