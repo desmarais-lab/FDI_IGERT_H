@@ -138,6 +138,10 @@ plot_ly(data, x = ~X1, y = ~X6, type = 'scatter', mode = 'lines') %>%
          margin = m)
 
 # plot network
+plot.igraph(fdi_g,vertex.label=V(fdi_g)$name,layout=layout.fruchterman.reingold, 
+            edge.color="light grey",edge.width=((E(fdi_g)$ln_Value)/100), edge.arrow.size=.2,
+            vertex.size=3, vertex.label.cex=.4, vertex.label.color="black", 
+            vertex.color="yellow")
 
 
 #descriptive of covariates#######################
