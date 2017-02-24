@@ -248,21 +248,11 @@ fdi <- reshape(appended_fdi, direction="long", varying=list(names(appended_fdi)[
                idvar=c("Origin","destination"), timevar="Year", times=2001:2012)
 fdi <- fdi[order(fdi$destination, fdi$Year),] 
 
-
-
-# .. is equal to not available or reported
-fdi$Value <- ifelse(fdi$Value =="..", NA, fdi$Value)
-
-#  - create negative numbers
-fdi$Value  <- gsub("- -", "-", fdi$Value)
-fdi$Value  <- gsub("--", "-", fdi$Value)
+#convert strings to values
 fdi$Value  <- gsub(" ", "", fdi$Value)
-fdi$Value  <- gsub("-0", "0", fdi$Value)
-fdi$Value <- ifelse(fdi$Value =="-", 0, fdi$Value)
-
-# Turn data back to numeric
+fdi$Value  <- gsub("--", "-", fdi$Value)
 fdi$Value <- as.numeric(fdi$Value)
-
+fdi$Value <- ifelse(is.na(fdi$Value), 0 , fdi$Value)
 
 # Country Codes
 ccodes <- read.csv("country_codes.csv", stringsAsFactors=FALSE, header=FALSE)
