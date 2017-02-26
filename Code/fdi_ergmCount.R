@@ -36,8 +36,8 @@ fdi$Origin.GDP <- fdi$Origin.GDP/1000000
 fdi$trade_ln <- log(fdi$trade_int+1) 
 fdi$dyad <- paste(fdi$Destination, fdi$Origin, sep = "")
 fdi$Value_of_gdp <- fdi$Value/fdi$Dest.GDP
-fdi$Value_cu <- round(sign(fdi$Value) * abs(fdi$Value)^(1/3),0) 
-fdi$Value_cu <- fdi$Value_cu + abs(min(fdi$Value_cu))
+fdi$Value_ln <- round(log(ifelse(fdi$Value<0, 0, fdi$Value)+1)) 
+
 
 
 #extract one year
@@ -100,7 +100,7 @@ fdi_net <- network(fdi01, matrix.type="edgelist", directed=TRUE)
 
 
 #set edge attributes
-set.edge.attribute(fdi_net, attrname="Value_cu", value=fdi01$Value_cu)
+set.edge.attribute(fdi_net, attrname="Value_ln", value=fdi01$Value_ln)
 set.edge.attribute(fdi_net, attrname="distance", value=fdi01$dist)
 set.edge.attribute(fdi_net, attrname="contig", value=fdi01$contig)
 set.edge.attribute(fdi_net, attrname="colony", value=fdi01$colony)
@@ -132,13 +132,13 @@ row.names(vertex_attr) <- vertex_attr[,1]
 
 
 #base formula for only network measures
-formula <- fdi_net ~ sum + sum(pow=1/2)+ mutual(form="geometric")
+formula <- fdi_net ~ sum + sum(pow=1/2)+ nonzero + mutual(form="geometric")
 
 
 # count model
 fit.01.1 <- ergm(formula,
                  #estimate='MLE',
-                 response="Value_cu",
+                 response="Value_ln",
                  reference=~Poisson,
                  #verbose=TRUE,
                  control=control.ergm(MCMLE.trustregion=100,
@@ -156,14 +156,14 @@ mcmc.diagnostics(fit.01.1, vars.per.page=2)
 
 
 #Model 2: add exogenous variables
-formula <- fdi_net ~ sum + sum(pow=1/2)+  mutual(form="geometric") + 
+formula <- fdi_net ~ sum + sum(pow=1/2)+  nonzero+ mutual(form="geometric") + 
   edgecov(fdi_net, "mass", form="sum")+ 
   edgecov(fdi_net, "distance", form="sum")
 
 # count model
 fit.01.2 <- ergm(formula,
                  #estimate='MLE',
-                 response="Value_cu",
+                 response="Value_ln",
                  reference=~Poisson,
                  #verbose=TRUE,
                  control=control.ergm(MCMLE.trustregion=100,
@@ -187,7 +187,7 @@ formula <- fdi_net ~ sum + sum(pow=1/2)+ mutual(form="geometric") + nonzero +
 # count model
 fit.01.3 <- ergm(formula,
                  #estimate='MLE',
-                 response="Value_cu",
+                 response="Value_ln",
                  reference=~Poisson,
                  #verbose=TRUE,
                  control=control.ergm(MCMLE.trustregion=100,

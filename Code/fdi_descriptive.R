@@ -42,18 +42,11 @@ fdi <- fdi[,-1]
 fdi$Origin.GDPpc <- fdi$Origin.GDP/fdi$Origin.pop
 gdppc <- summaryBy(Origin.GDPpc ~ Origin + Year, data=fdi)
 
-#create GDP pc by Destination
-fdi <- merge(fdi, gdppc, by.x = c("Destination", "Year"), by.y = c("Origin", "Year"), all.x =TRUE)
-colnames(fdi)[36] <- "Dest.GDPpc"
-rm(gdppc)
 
-
-fdi <- fdi[,c(1,3,2,4:36)]
 
 
 #log FDI
-fdi$Value_cu <- round(sign(fdi$Value) * abs(fdi$Value)^(1/3),0) 
-fdi$Value_cu <- fdi$Value_cu + abs(min(fdi$Value_cu))
+fdi$Value_ln <- round(log(ifelse(fdi$Value<0, 0, fdi$Value)+1)) 
 
 
 # rho as reciprocity
@@ -79,7 +72,7 @@ for(i in 1:12){
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
-  fdi_y <- get.adjacency(fdi_graph, attr='Value_cu', names=TRUE, sparse=FALSE)
+  fdi_y <- get.adjacency(fdi_graph, attr='Value_ln', names=TRUE, sparse=FALSE)
   
   #measure reciprocity
   descriptive_stats[i,2] <- rho(fdi_y)
