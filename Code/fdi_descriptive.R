@@ -36,10 +36,6 @@ fdi <- read.csv("fdi_sub.csv", stringsAsFactors=FALSE)        #FDI
 
 fdi <- fdi[,-1]
 
-fdi$trade_int_sq = fdi$trade_int^2
-
-fdi$dyad <- paste(fdi$Destination, fdi$Origin, sep = "")
-
 
 
 #Create GDP pc by origin
@@ -56,7 +52,8 @@ fdi <- fdi[,c(1,3,2,4:36)]
 
 
 #log FDI
-fdi$ln_Value <- log(fdi$Value+1)
+fdi$Value_cu <- round(sign(fdi$Value) * abs(fdi$Value)^(1/3),0) 
+fdi$Value_cu <- fdi$Value_cu + abs(min(fdi$Value_cu))
 
 
 # rho as reciprocity
@@ -82,7 +79,7 @@ for(i in 1:12){
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
-  fdi_y <- get.adjacency(fdi_graph, attr='ln_Value', names=TRUE, sparse=FALSE)
+  fdi_y <- get.adjacency(fdi_graph, attr='Value_cu', names=TRUE, sparse=FALSE)
   
   #measure reciprocity
   descriptive_stats[i,2] <- rho(fdi_y)
