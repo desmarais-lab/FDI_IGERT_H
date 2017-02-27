@@ -20,7 +20,7 @@ library(igraph)
 library(doBy)
 library(plyr)
 
-setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 
 #load in data
