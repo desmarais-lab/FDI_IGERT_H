@@ -85,7 +85,7 @@ def2[i,8] <- ifelse(match==TRUE, 1, 0)
 def <- def2[,c(1,2,3,8)]
 fdi01 <- merge(fdi01, def, by = c("Destination", "Origin", "Year"), all.x =TRUE)
 fdi01$share_partner <- ifelse(is.na(fdi01$share_partner), 0, fdi01$share_partner)
-rm(def, def1, def2, a, b, fit, i, match, pair_length)
+rm(def, def1, def2, a, b, i, match, pair_length)
 
 
 #quick OLS check
@@ -204,7 +204,7 @@ iteration = 0
 while(keepRunning){
   fit.01.3  <- ergm(formula,
                     #estimate='MLE', 
-                    response="Value",
+                    response="Value_ln",
                     reference=~Poisson,
                     control=control.ergm(MCMLE.trustregion=100,
                                          MCMLE.maxit=50, 
