@@ -94,7 +94,7 @@ Entente Treaty & 189,000 & 0.066 & 0.248 & 0 & 1 \\
 
 \newpage
 \section{Results}
-\begin{table}
+\begin{table}[!htbp] 
 \begin{center}
 \begin{tabular}{l c c }
 \hline
@@ -119,10 +119,48 @@ Log Likelihood                & 12373.69      & 13676.17      \\
 \hline
 \multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
 \end{tabular}
-\caption{Statistical models}
+\caption{Statistical models for FDI Inflows}
 \label{table:coefficients}
 \end{center}
 \end{table}
+
+\begin{table}[!htbp] 
+\begin{center}
+\begin{tabular}{l c c }
+\hline
+ & Model 1 & Model 2 \\
+\hline
+sum                           & $2.37^{***}$  & $0.04$        \\
+                              & $(0.05)$      & $(0.12)$      \\
+sum0.5                        & $-4.14^{***}$ & $-0.67^{**}$  \\
+                              & $(0.21)$      & $(0.25)$      \\
+nonzero                       & $-2.55^{***}$ & $-6.17^{***}$ \\
+                              & $(0.21)$      & $(0.27)$      \\
+mutual.geom.mean              & $0.50^{***}$  & $0.02$        \\
+                              & $(0.02)$      & $(0.02)$      \\
+transitiveties                &               & $1.48^{***}$  \\
+                              &               & $(0.16)$      \\
+edgecov.fdi\_net.mass.sum     &               & $0.13^{***}$  \\
+                              &               & $(0.00)$      \\
+edgecov.fdi\_net.distance.sum &               & $-0.19^{***}$ \\
+                              &               & $(0.01)$      \\
+\hline
+AIC                           & -29303.05     & -32432.34     \\
+BIC                           & -29272.39     & -32378.69     \\
+Log Likelihood                & 14655.53      & 16223.17      \\
+\hline
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{Statistical models For FDI Stock}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
+
+
+
+
+
 \section{Conclusion}
 
 
