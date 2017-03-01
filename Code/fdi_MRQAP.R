@@ -25,7 +25,7 @@ library(stargazer)
 no_cores <- detectCores()
 registerDoMC(no_cores)  #change the 2 to your number of CPU cores  
 
-setwd("/Users/johnpschoeneman/Desktop/ACI")
+#setwd("/Users/johnpschoeneman/Desktop/ACI")
 
 #load in data
 fdi <- read.csv("fdi_sub.csv", stringsAsFactors=FALSE)        #FDI

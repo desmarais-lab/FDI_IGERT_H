@@ -11,7 +11,7 @@
 rm(list=ls())
 
 
-setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 
 #strip off top and bottom rows and first column
@@ -299,4 +299,147 @@ fdi$Origin.Code <- ifelse(fdi$Origin=="Lao People's Dem. Rep." , "LAO"  ,fdi$Ori
 
 #write csv
 write.csv(fdi, file = "fdi_clean.csv")
+
+
+##############################################################################################
+
+# loop for stocks
+
+# read in list to loop over
+list_code <- read.csv("country_codes.csv", stringsAsFactors=FALSE)
+
+
+appended_m <- data.frame("Origin", "2001", "2002", "2003", "2004", 
+                         "2005", "2006", "2007", "2008", "2009", "2010", 
+                         "2011", "2012", "destination")
+
+names(appended_m) <- c("Origin", "X2001", "X2002", "X2003", "X2004", "X2005", 
+                       "X2006", "X2007", "X2008", "X2009", "X2010", "X2011", "X2012"
+                       , "destination")
+
+#names(debug_list) <- c()
+
+#debug_list <- matrix(nrow=205,ncol=2)
+n=0
+for(code in list_code[,3]){
+  #create file name
+  n = n+1
+  folder = "Stock_Raw/"
+  file_1 <- paste(folder, code, ".csv", sep = "")
+  #read in file and clean it
+  a <- read.csv(file_1, stringsAsFactors=FALSE)
+  c <- clean10(a)
+  c <- clean11(c)
+  c <- clean11(c)
+  c <- clean11(c)
+  c <- clean11(c) 
+  for(i in 2:13){
+    c[,i] <-as.character(c[,i])
+  }
+  #rename variables
+  names(c) <- c("Origin", "X2001", "X2002", "X2003", "X2004", "X2005", 
+                "X2006", "X2007", "X2008", "X2009", "X2010", "X2011", "X2012")
+  #List destination
+  c$destination = code
+  #Append together
+  appended_m = rbind(appended_m, c, stringsAsFactors=FALSE)
+}
+
+
+appended_fdi = appended_m
+
+
+#get rid of empty rows and duplicate years
+appended_fdi <- subset(appended_fdi, X2001 != "")
+appended_fdi <- subset(appended_fdi, X2001 != "2001")
+
+# get rid of aggregates
+appended_fdi <- subset(appended_fdi, 
+                       Origin != "World" &                                   
+                         Origin != "Europe"&                             
+                         Origin != "North America"&                 
+                         Origin != "Other developed countries"&               
+                         Origin != "Developing economies" &              
+                         Origin != "South Asia"            &                            
+                         Origin != "West Asia"              &            
+                         Origin != "Other developed Europe"  &       
+                         Origin != "Asia"              &
+                         Origin != "Caribbean"          &            
+                         Origin != "European Union"      &     
+                         Origin != "Developed economies"  &
+                         Origin != "Africa"&
+                         Origin != "East Asia" &
+                         Origin != "South-East Asia" &
+                         Origin != "South America"&
+                         Origin != "Unspecified" &
+                         Origin != ".." &
+                         Origin != "Transition economies"&
+                         Origin != "International organizations"&
+                         Origin != "Other Africa" &
+                         Origin != "Latin America and the Caribbean"&
+                         Origin != "North Africa" &
+                         Origin != "South-East Europe" &
+                         Origin != "Oceania" &
+                         Origin != "Central America"
+)
+
+
+#rehape data
+library(reshape2)
+appended_fdi <- unique(appended_fdi)
+fdi <- reshape(appended_fdi, direction="long", varying=list(names(appended_fdi)[2:13]), v.names="Value", 
+               idvar=c("Origin","destination"), timevar="Year", times=2001:2012)
+fdi <- fdi[order(fdi$destination, fdi$Year),] 
+
+#convert strings to values
+fdi$Value  <- gsub(" ", "", fdi$Value)
+fdi$Value  <- gsub("--", "-", fdi$Value)
+fdi$Value <- as.numeric(fdi$Value)
+fdi$Value <- ifelse(is.na(fdi$Value), 0 , fdi$Value)
+
+# Country Codes
+ccodes <- read.csv("country_codes.csv", stringsAsFactors=FALSE, header=FALSE)
+ccodes <- ccodes[,-4]
+ccodes <- ccodes[,-2]
+
+
+# merge to get Destination names
+fdi <- merge(fdi, ccodes, by.x = "Origin", by.y = "V1", all.x =TRUE)
+fdi <- merge(fdi, ccodes, by.x = "destination", by.y = "V3", all.x =TRUE)
+
+
+#reorder and name variables
+fdi <- fdi[,c(6, 1,2,5,3,4)]
+names(fdi) <- c("Destination","Dest.Code","Origin", "Origin.Code","Year","Value") 
+fdi <- fdi[order(fdi$Destination, fdi$Year),] 
+
+fdi$Origin.Code <- ifelse(fdi$Origin=="United States" , "USA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Hong Kong, China" , "HKG"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Syrian Arab Republic" , "SYR"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Venezuela, Bolivarian Rep. of" , "VEN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Taiwan Province of China" , "TWN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Monaco" , "MCO"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Andorra" , "AND"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Netherlands Antilles " , "ANT"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Gibraltar" , "GIB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Liechtenstein" , "LIE"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Bolivia, Plurinational State of" , "BOL"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Jersey" , "JEY"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="US Virgin Islands" , "VIR"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="United Rep. of Tanzania" , "TZA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="The FYR of Macedonia" , "MKD"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Isle of Man" , "IMN"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Guam" , "GUM"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Congo" , "COG"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Congo, Democratic Rep. of" , "COD"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="C\xf4te d' Ivoire" , "CIV"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Serbia and Montenegro" , "SRB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Guernsey" , "GGY"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Macao, China" , "MAC"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Moldova, Republic of" , "MDA"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Uzbekistan" , "UZB"  ,fdi$Origin.Code)
+fdi$Origin.Code <- ifelse(fdi$Origin=="Lao People's Dem. Rep." , "LAO"  ,fdi$Origin.Code)
+
+#write csv
+write.csv(fdi, file = "fdi_stock.csv")
 

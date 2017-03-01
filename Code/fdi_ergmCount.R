@@ -20,11 +20,11 @@ library(igraph)
 library(doBy)
 library(plyr)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #load in data
-fdi <- read.csv("fdi_sub.csv", stringsAsFactors=FALSE)        #FDI
+fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
 #201 countries, 12 years (2000-2012),
 
@@ -58,41 +58,6 @@ vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GD
 #rename vertex dataset
 names(vertex_attr) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g", "PV")
 
-
-#create defense alliance transivity dummy
-def <- fdi01[,c(1,2,3,4,14)] 
-def1 <- subset(def, def$defense.max.x==1) # subset for if has alliance
-def1 <- aggregate(def1$Origin, list(def1$Destination), paste, collapse=",") #partner list 
-names(def1) <- c("Country", "Partners")
-def <- merge(def, def1, by.x = c("Destination"), 
-             by.y = c("Country"), all.x =TRUE)
-colnames(def)[6] <- "dest_part"
-def <- merge(def, def1, by.x = c("Origin"), 
-             by.y = c("Country"), all.x =TRUE)
-colnames(def)[7] <- "orig_part"
-def2 <- na.omit(def) # list of potential partner matches
-def2 <- subset(def2, def2$defense.max.x==0) # drop allied pairs
-
-pair_length <- length(def2[,1])
-def2$share_partner <- NA
-
-for(i in 1:pair_length){
-a <- strsplit(def2[i,6], ",")
-b <- strsplit(def2[i,7], ",")
-match <- a %in% b
-def2[i,8] <- ifelse(match==TRUE, 1, 0)
-}
-def <- def2[,c(1,2,3,8)]
-fdi01 <- merge(fdi01, def, by = c("Destination", "Origin", "Year"), all.x =TRUE)
-fdi01$share_partner <- ifelse(is.na(fdi01$share_partner), 0, fdi01$share_partner)
-rm(def, def1, def2, a, b, i, match, pair_length)
-
-
-#quick OLS check
-fdi01_sub <- subset(fdi01, fdi01$defense.max.x==0)
-fit <- lm(Value ~ share_partner + mass + dist, data=fdi01_sub)
-summary(fit)
-rm(fit, fdi01_sub)
 
 #create network object
 detach("package:igraph", unload=TRUE)
@@ -182,8 +147,9 @@ mcmc.diagnostics(fit.01.2, vars.per.page=2)
 
 #Model 3, add transitivity
 formula <- fdi_net ~ sum + sum(pow=1/2)+ mutual(form="geometric") + nonzero + 
-  transitiveweights("min", "max", "min") + 
-  cyclicalweights("min","max", "min")
+  transitiveties   + edgecov(fdi_net, "mass", form="sum")+ 
+  edgecov(fdi_net, "distance", form="sum")
+
 # count model
 fit.01.3 <- ergm(formula,
                  #estimate='MLE',
@@ -227,6 +193,6 @@ mcmc.diagnostics(fit.01.3, vars.per.page=2)
 
 
 library(texreg)
-texreg(l = list(fit.01.1, fit.01.2))
+texreg(l = list(fit.01.1, fit.01.3))
 
 

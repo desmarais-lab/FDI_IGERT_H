@@ -19,7 +19,7 @@ library(igraph)
 library(doBy)
 
 
-setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FDI_IGERT_H/Code")
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #load in data
 fdi <- read.csv("fdi_panel.csv", stringsAsFactors=FALSE)        #FDI

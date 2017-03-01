@@ -14,7 +14,7 @@ rm(list=ls())
 library(gdata)
 
 
-setwd("/Users/johnpschoeneman/Documents/school/Penn State/RA:TA/FA16 - RA - ZHU")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 #create function to create API
 
 get.FDI <- function(url="http://unctad.org/Sections/dite_fdistat/docs/webdiaeia2014d3_"
@@ -23,9 +23,9 @@ get.FDI <- function(url="http://unctad.org/Sections/dite_fdistat/docs/webdiaeia2
   #create address
   string <- paste(url,code,file_ext, sep = "")
   #read in file
-  fdi_file <- read.xls(string,header=TRUE, sheet=1)
+  fdi_file <- read.xls(string,header=TRUE, sheet=3)
   #write file to folder
-  folder = "/FDI Raw Data/FDI_in_"
+  folder = "/Stock_Raw/FDI_in_"
   file_1 <- paste(code, ".csv", sep = "")
   write.csv(fdi_file, file = file_1)
 }
@@ -34,7 +34,7 @@ get.FDI <- function(url="http://unctad.org/Sections/dite_fdistat/docs/webdiaeia2
 
 # Read in country list
 codes <- read.csv("country_codes.csv",header=TRUE, sep=",")
-#codes <- codes[162:206,]
+codes <- codes[170:205,]
 
 #loop downloading data into folder
 for(ab in codes[,3]){
