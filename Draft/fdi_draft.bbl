@@ -13,11 +13,48 @@ Bank, The~World. 2012{\em a}.
 Bank, The~World. 2012{\em b}.
 \newblock ``World Development Indicators, GDP Growth Rate.''.
 
-\harvarditem{B{\"u}the \harvardand\ Milner}{2014}{BM14}
+\harvarditem{B{\"u}the \harvardand\ Milner}{2014}{buthe2014foreign}
 B{\"u}the, Tim \harvardand\ Helen~V Milner. 2014.
 \newblock ``Foreign direct investment and institutional diversity in trade
   agreements: Credibility, commitment, and economic flows in the developing
   world, 1971--2007.'' {\em World Politics} 66(01):88--122.
+
+\harvarditem{Camber~Warren}{2010}{camber2010geometry}
+Camber~Warren, T. 2010.
+\newblock ``The geometry of security: Modeling interstate alliances as evolving
+  networks.'' {\em Journal of Peace Research} 47(6):697--709.
+
+\harvarditem{Chu-Shore}{2010}{chu2010homogenization}
+Chu-Shore, Jesse. 2010.
+\newblock ``Homogenization and Specialization Effects of International Trade:
+  Are Cultural Goods Exceptional?'' {\em World Development} 38(1):37--47.
+
+\harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
+\newblock ``A critique of dyadic design.'' {\em International Studies
+  Quarterly} 60(2):355--362.
+
+\harvarditem[Cranmer, Desmarais \harvardand\ Menninga]{Cranmer, Desmarais
+  \harvardand\ Menninga}{2012}{cranmer2012complex}
+Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Elizabeth~J Menninga. 2012.
+\newblock ``Complex dependencies in the alliance network.'' {\em Conflict
+  Management and Peace Science} 29(3):279--313.
+
+\harvarditem[Cranmer, Desmarais \harvardand\ Kirkland]{Cranmer, Desmarais
+  \harvardand\ Kirkland}{2012}{cranmer2012toward}
+Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Justin~H Kirkland. 2012.
+\newblock ``Toward a network theory of alliance formation.'' {\em International
+  Interactions} 38(3):295--324.
+
+\harvarditem{Diehl \harvardand\ Wright}{2016}{diehl2016conditional}
+Diehl, Paul~F \harvardand\ Thorin~M Wright. 2016.
+\newblock ``A Conditional Defense of the Dyadic Approach.'' {\em International
+  Studies Quarterly} 60(2):363--368.
+
+\harvarditem{Dorff \harvardand\ Ward}{2013}{dorff2013networks}
+Dorff, Cassy \harvardand\ Michael~D Ward. 2013.
+\newblock ``Networks, dyads, and the social relations model.'' {\em Political
+  Science Research and Methods} 1(02):159--178.
 
 \harvarditem[D{\"u}r, Baccini \harvardand\ Elsig]{D{\"u}r, Baccini \harvardand\
   Elsig}{2014}{dur2014design}
@@ -30,15 +67,49 @@ Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
 \newblock CQ Press.
 
+\harvarditem{Howell}{2013}{howell2013geography}
+Howell, Anthony. 2013.
+\newblock ``Is geography ?dead?or ?destiny?in a globalizing World? a network
+  analysis and latent space modeling approach of the World trade network.''
+  {\em Journal of Globalization Studies} 4(2).
+
+\harvarditem{Kinne}{2013}{kinne2013network}
+Kinne, Brandon~J. 2013.
+\newblock ``Network dynamics and the evolution of international cooperation.''
+  {\em American Political Science Review} pp.~766--785.
+
+\harvarditem{Kinne}{2014}{kinne2014dependent}
+Kinne, Brandon~J. 2014.
+\newblock ``Dependent diplomacy: Signaling, strategy, and prestige in the
+  diplomatic network.'' {\em International Studies Quarterly} 58(2):247--259.
+
+\harvarditem{Kinne}{2016}{kinne2016agreeing}
+Kinne, Brandon~J. 2016.
+\newblock ``Agreeing to arm: Bilateral weapons agreements and the global arms
+  trade.'' {\em Journal of Peace Research} 53(3):359--377.
+
+\harvarditem{Lee \harvardand\ Bai}{2013}{lee2013network}
+Lee, Taedong \harvardand\ Byoung-Inn Bai. 2013.
+\newblock ``Network Analysis of Free Trade Agreements: Homophily and
+  Transitivity.'' {\em The Korean Journal of International Studies}
+  11(2):263--293.
+
 \harvarditem{Marshall}{2005}{marshall2005major}
 Marshall, Monty~G. 2005.
 \newblock ``Major episodes of political violence 1946--2004.'' {\em Center for
   Systemic Peace, Severn, Md.[http://members. aol. com/cspmgm/warlist. htm]} .
 
-\harvarditem{Mayer}{2011}{MZ2011}
-Mayer, T. \&~Zignago, S. 2011.
-\newblock ``Notes on CEPII's distances measures: the GeoDist Database.'' {\em
-  Working Paper} pp.~2011--25.
+\harvarditem{Mayer \harvardand\ Zignago}{2011}{mayer2011notes}
+Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
+\newblock ``Notes on CEPII?s distances measures: The GeoDist database.''.
+
+\harvarditem[Metternich et~al.]{Metternich, Dorff, Gallop, Weschle \harvardand\
+  Ward}{2013}{metternich2013antigovernment}
+Metternich, Nils~W, Cassy Dorff, Max Gallop, Simon Weschle \harvardand\
+  Michael~D Ward. 2013.
+\newblock ``Antigovernment networks in civil conflicts: How network structures
+  affect conflictual behavior.'' {\em American Journal of Political Science}
+  57(4):892--911.
 
 \harvarditem{OECD}{2016}{OECD}
 OECD. 2016.
@@ -51,8 +122,37 @@ Polity, IV. 2012.
   transitions, 1800-2012.'' {\em On-line (http://www. systemicpeace.
   org/polity/polity4. htm)} .
 
+\harvarditem{Raeymaeckers \harvardand\ Kenis}{2016}{raeymaeckers2016influence}
+Raeymaeckers, Peter \harvardand\ Patrick Kenis. 2016.
+\newblock ``The influence of shared participant governance on the integration
+  of service networks: A comparative social network analysis.'' {\em
+  International Public Management Journal} 19(3):397--426.
+
 \harvarditem{UNCTAD}{2014}{UNCTAD}
 UNCTAD. 2014.
 \newblock ``Bilateral FDI Statistics.''.
+
+\harvarditem[Ward, Ahlquist \harvardand\ Rozenas]{Ward, Ahlquist \harvardand\
+  Rozenas}{2013}{ward2013gravity}
+Ward, Michael~D, John~S Ahlquist \harvardand\ Arturas Rozenas. 2013.
+\newblock ``Gravity's Rainbow: A dynamic latent space model for the world trade
+  network.'' {\em Network Science} 1(1):95--118.
+
+\harvarditem{Ward \harvardand\ Hoff}{2007}{ward2007persistent}
+Ward, Michael~D \harvardand\ Peter~D Hoff. 2007.
+\newblock ``Persistent patterns of international commerce.'' {\em Journal of
+  Peace Research} 44(2):157--175.
+
+\harvarditem[Ward, Siverson \harvardand\ Cao]{Ward, Siverson \harvardand\
+  Cao}{2007}{ward2007disputes}
+Ward, Michael~D, Randolph~M Siverson \harvardand\ Xun Cao. 2007.
+\newblock ``Disputes, democracies, and dependencies: A reexamination of the
+  Kantian peace.'' {\em American Journal of Political Science} 51(3):583--601.
+
+\harvarditem{Warren}{2016}{warren2016modeling}
+Warren, T~Camber. 2016.
+\newblock ``Modeling the coevolution of international and domestic
+  institutions: Alliances, democracy, and the complex path to peace.'' {\em
+  Journal of Peace Research} 53(3):424--441.
 
 \end{thebibliography}
