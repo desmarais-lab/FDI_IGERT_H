@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 MAR 2017 05:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  12 MAR 2017 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -398,21 +398,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<draft_figures/reciprocity.png, id=104, 497.86pt x 379.4175pt>
+<draft_figures/reciprocity.png, id=108, 497.86pt x 379.4175pt>
 File: draft_figures/reciprocity.png Graphic file (type png)
 
 <use draft_figures/reciprocity.png>
 Package pdftex.def Info: draft_figures/reciprocity.png used on input line 59.
 (pdftex.def)             Requested size: 284.53522pt x 227.6233pt.
 
-<draft_figures/transitivity.png, id=106, 497.86pt x 379.4175pt>
+<draft_figures/transitivity.png, id=110, 497.86pt x 379.4175pt>
 File: draft_figures/transitivity.png Graphic file (type png)
 
 <use draft_figures/transitivity.png>
 Package pdftex.def Info: draft_figures/transitivity.png used on input line 60.
 (pdftex.def)             Requested size: 284.53522pt x 227.6233pt.
 
-<draft_figures/assortativity.png, id=107, 497.86pt x 379.4175pt>
+<draft_figures/assortativity.png, id=111, 497.86pt x 379.4175pt>
 File: draft_figures/assortativity.png Graphic file (type png)
 
 <use draft_figures/assortativity.png>
@@ -443,7 +443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 82.
 
-<draft_figures/Density_plots.pdf, id=171, 614.295pt x 794.97pt>
+<draft_figures/Density_plots.pdf, id=172, 614.295pt x 794.97pt>
 File: draft_figures/Density_plots.pdf Graphic file (type pdf)
 
 <use draft_figures/Density_plots.pdf>
@@ -458,61 +458,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  (./fdi_draft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
+(rerunfilecheck)             Checksum: 42737B4E51DBB9DC9F7F24A40280E783;606.
 
-
-Package rerunfilecheck Warning: File `fdi_draft.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fdi_draft.out':
-(rerunfilecheck)             Before: 35FD2D015BDE92FBFC89F2B43CC80915;536
-(rerunfilecheck)             After:  42737B4E51DBB9DC9F7F24A40280E783;606.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
  ) 
 Here is how much of TeX's memory you used:
- 6717 strings out of 493089
- 98445 string characters out of 6134842
+ 6714 strings out of 493089
+ 98400 string characters out of 6134841
  207460 words of memory out of 5000000
- 10080 multiletter control sequences out of 15000+600000
+ 10081 multiletter control sequences out of 15000+600000
  8848 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,35p,1617b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on fdi_draft.pdf (9 pages, 299489 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on fdi_draft.pdf (9 pages, 299717 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
