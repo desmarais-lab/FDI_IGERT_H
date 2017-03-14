@@ -13,7 +13,7 @@ rm(list=ls())
 
 
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #load in data
 fdi <- read.csv("fdi_stock.csv", stringsAsFactors=FALSE)        #FDI
@@ -63,13 +63,15 @@ panel <- merge(panel, distance, by.x =c("Dest.Code", "Origin.Code"),
                by.y = c("iso_d", "iso_o"), all.x=TRUE)
 rm(distance)
 
-# GDP data
-GDP <- read.csv("WB_GDP.csv", stringsAsFactors=FALSE)           #GDP
-panel <- merge(panel, GDP, by.x = c("Dest.Code", "Year"), by.y = c("Country.Code", "Year"), all.x =TRUE)
-colnames(panel)[20] <- "Dest.GDP"
-panel <- merge(panel, GDP, by.x = c("Origin.Code", "Year"), by.y = c("Country.Code", "Year"), all.x =TRUE)
-colnames(panel)[21] <- "Origin.GDP"
-rm(GDP)
+# GDP, population, and exchange rate data from Penn World
+pwt <- read.csv("pwt.csv", stringsAsFactors=FALSE)        
+pwt <- pwt[,c(1,4,7, 18,26)]  #drop other varables
+pwt <- subset(pwt, pwt$year>2000 & pwt$year<2013)  #subset by year
+panel <- merge(panel, pwt, by.x = c("Dest.Code", "Year"), by.y = c("countrycode", "year"), all.x =TRUE)
+colnames(panel)[20:22] <- c("Dest.pop", "Dest.GDP", "Dest.xr")
+panel <- merge(panel, pwt, by.x = c("Origin.Code", "Year"), by.y = c("countrycode", "year"), all.x =TRUE)
+colnames(panel)[23:25] <- c("Origin.pop", "Origin.GDP", "Origin.xr")
+rm(pwt)
 
 # Alliances
 alliance <- read.csv("alliance.csv", stringsAsFactors=FALSE)    #Security Alliances
@@ -96,13 +98,13 @@ panel$nonaggression.max.x <- ifelse(is.na(panel$nonaggression.max.x),
                                     panel$nonaggression.max.y,panel$nonaggression.max.x)
 panel$entente.max.x <- ifelse(is.na(panel$entente.max.x), 
                               panel$entente.max.y,panel$entente.max.x)
-panel <- panel[,1:27]
+panel <- panel[,1:31]
 panel <- merge(panel, alliance, by.x = c("Dest.cown","Origin.cown", "Year"),
                by.y = c("ccode1", "ccode2", "year"), all.x =TRUE)
-colnames(panel)[28] <- "defense"
-colnames(panel)[29] <- "non_aggression"
-colnames(panel)[30] <- "neutrality"
-colnames(panel)[31] <- "entente"
+colnames(panel)[32] <- "defense"
+colnames(panel)[33] <- "non_aggression"
+colnames(panel)[34] <- "neutrality"
+colnames(panel)[35] <- "entente"
 panel <- merge(panel, alliance, by.x = c("Dest.cown","Origin.cown",  "Year"), 
                by.y = c("ccode2", "ccode1", "year"), all.x =TRUE)
 panel$defense.max.x <- ifelse(is.na(panel$defense.max.x ), 
@@ -121,7 +123,7 @@ panel$nonaggression.max.x <- ifelse(is.na(panel$nonaggression.max.x),
                                     panel$non_aggression,panel$nonaggression.max.x)
 panel$entente.max.x <- ifelse(is.na(panel$entente.max.x), 
                               panel$entente,panel$entente.max.x)
-panel <- panel[,1:27]
+panel <- panel[,1:31]
 rm(alliance)
 
 
@@ -131,22 +133,18 @@ polity <- subset(polity, polity$year>2000 & polity$year<2013)
 polity$ccode <- ifelse(polity$ccode==818, 816, polity$ccode)
 polity <- polity[,-2:-3]
 panel <- merge(panel, polity, by.x = c("Dest.cown", "Year"), by.y = c("ccode", "year"), all.x =TRUE)
-colnames(panel)[28] <- "Dest.polity"
+colnames(panel)[32] <- "Dest.polity"
 panel <- merge(panel, polity, by.x = c("Origin.cown", "Year"), by.y = c("ccode", "year"), all.x =TRUE)
-colnames(panel)[29] <- "Origin.polity"
+colnames(panel)[33] <- "Origin.polity"
 rm(polity)
 
 # WB: Population, trade openness, and growth rate
 WB <- read.csv("WB_var.csv", stringsAsFactors=FALSE)            #Trade opennes, Pop., growth
-WB <- WB[,-2]
+WB <- WB[,c(-2,-4,-6)]
 panel <- merge(panel, WB, by.x = c("Dest.Code", "Year"), by.y = c("ccode", "Year"), all.x =TRUE)
-colnames(panel)[30] <- "Dest.pop"
-colnames(panel)[31] <- "Dest.TO"
-colnames(panel)[32] <- "Dest.GDP.g"
+colnames(panel)[34] <- "Dest.TO"
 panel <- merge(panel, WB, by.x = c("Origin.Code", "Year"), by.y = c("ccode", "Year"), all.x =TRUE)
-colnames(panel)[33] <- "Origin.pop"
-colnames(panel)[34] <- "Origin.TO"
-colnames(panel)[35] <- "Origin.GDP.g"
+colnames(panel)[35] <- "Origin.TO"
 rm(WB)
 
 # Political Violence

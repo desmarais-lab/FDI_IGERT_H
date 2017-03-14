@@ -32,14 +32,15 @@ fdi$entente.max.x <- ifelse(is.na(fdi$entente.max.x), 0, fdi$entente.max.x)
 
 
 
-fdi <- fdi[c("Destination","Origin","Year",  "Value", "contig","comlang_off", "comlang_ethno","colony",
-             "comcol", "curcol","dist","Dest.GDP","Origin.GDP","defense.max.x","nonaggression.max.x",
-             "neutrality.max.x","entente.max.x","Dest.polity","Origin.polity","Dest.TO", "Dest.GDP.g", 
-             "Origin.pop", "Origin.TO", "Origin.GDP.g", "Dest.pv", "Origin.pv", "depth_index", "depth_latent",
-             "trade_hco", "trade_int", "trade_cap", "trade_mix")]
+fdi <- fdi[c("Destination","Origin","Year",  "Value", "contig","comlang_off", "comlang_ethno",
+             "colony","comcol", "curcol","dist","Dest.GDP","Origin.GDP",
+             "defense.max.x","nonaggression.max.x","neutrality.max.x","entente.max.x",
+             "Dest.polity","Origin.polity","Dest.TO", "Origin.TO",  
+             "Dest.pop", "Origin.pop", "Dest.pv", "Origin.pv", "Dest.xr", "Origin.xr",
+             "depth_index", "depth_latent","trade_hco", "trade_int", "trade_cap", "trade_mix")]
 
 fdi01 <- subset(fdi, fdi$Year ==2001)
-for(i in 3:32){
+for(i in 3:33){
   fdi01[,i] <- as.numeric(fdi01[,i])
   
 }
@@ -52,7 +53,7 @@ names$year = 2001
 for(i in 2002:2012){
   
   fdi_t <- subset(fdi, fdi$Year ==i)
-  for(i in 3:32){
+  for(i in 3:33){
     fdi_t[,i] <- as.numeric(fdi_t[,i])
     
   }
@@ -66,7 +67,7 @@ for(i in 2002:2012){
 
 
 fdi01 <- subset(fdi, fdi$Year ==2001)
-for(i in 3:32){
+for(i in 3:33){
   fdi01[,i] <- as.numeric(fdi01[,i])
   
 }
@@ -79,7 +80,7 @@ names2$year = 2001
 for(i in 2002:2012){
   
   fdi_t <- subset(fdi, fdi$Year ==i)
-  for(i in 3:32){
+  for(i in 3:33){
     fdi_t[,i] <- as.numeric(fdi_t[,i])
     
   }
@@ -98,12 +99,12 @@ colnames(names)[1] <- "Country"
 names$new = 1
 
 fdi_n  <- merge(fdi, names, by.x = "Destination", by.y = "Country")
-fdi_n <- fdi_n[,-33]
+fdi_n <- fdi_n[,-34]
 fdi_n  <- merge(fdi, names, by.x = "Origin", by.y = "Country")
-fdi_n <- fdi_n[,-33]
+fdi_n <- fdi_n[,-34]
 
-fdi_n <- unique(fdi_n[, 1:32]) 
-fdi_n <- fdi_n[,c(1,3,2, 4:32)]
+fdi_n <- unique(fdi_n[, 1:33]) 
+fdi_n <- fdi_n[,c(1,3,2, 4:33)]
 
 
 #create full panel
