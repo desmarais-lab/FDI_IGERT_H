@@ -39,8 +39,6 @@ fdi <- fdi[,-1]
 
 
 # create new variable transformations
-fdi$Dest.GDP <- fdi$Dest.GDP/1000000 # scale to millions
-fdi$Origin.GDP <- fdi$Origin.GDP/1000000
 fdi$trade_ln <- log(fdi$trade_int+1) 
 fdi$dyad <- paste(fdi$Destination, fdi$Origin, sep = "")
 fdi$mass <- (log(fdi$Dest.GDP*fdi$Origin.GDP))
@@ -50,8 +48,8 @@ fdi <- slide(fdi, Var = "Dest.GDP", GroupVar = "dyad", slideBy = -1)
 fdi <- slide(fdi, Var = "Origin.GDP", GroupVar = "dyad", slideBy = -1)
 
 #Create GDP pc and growth rate
-fdi$Origin.GDPpc <- fdi$Origin.GDP/fdi$Origin.pop*1000000
-fdi$Dest.GDPpc <- fdi$Dest.GDP/fdi$Dest.pop*1000000
+fdi$Origin.GDPpc <- fdi$Origin.GDP/fdi$Origin.pop
+fdi$Dest.GDPpc <- fdi$Dest.GDP/fdi$Dest.pop
 fdi$Origin.GDPg <- (fdi$Origin.GDP-fdi$`Origin.GDP-1`)/fdi$`Origin.GDP-1`
 fdi$Dest.GDPg <- (fdi$Dest.GDP-fdi$`Dest.GDP-1`)/fdi$`Dest.GDP-1`
 
@@ -182,7 +180,7 @@ lines(lowess(fdi$depth_latent,log(fdi$Value+1)), col="blue") # lowess line (x,y)
 
 #Split by low income, middle income, and high income#######################
 
-# low-income: $1,025 or less in 2015: conversion to 2005 dollars for GDP: .82
+# low-income: $1,025 or less in 2015: conversion to 2005 dollars for GDP: .95
 descriptive_stats <- matrix(nrow=12, ncol=6)
 
 for(i in 1:12){
@@ -191,7 +189,7 @@ for(i in 1:12){
   
   #extract one year and drop by income
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
-  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(1025*.82) & fdi_yr$Origin.GDPpc<(1025*.82))
+  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(1025*.95) & fdi_yr$Origin.GDPpc<(1025*.95))
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
   fdi_y <- get.adjacency(fdi_graph, attr='Value_ln', names=TRUE, sparse=FALSE)
@@ -229,8 +227,8 @@ for(i in 1:12){
   
   #extract one year
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
-  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(4036*.82) & fdi_yr$Origin.GDPpc<(4036*.82)&
-                     fdi_yr$Dest.GDPpc>(1025*.82) & fdi_yr$Origin.GDPpc>(1025*.82))
+  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(4036*.95) & fdi_yr$Origin.GDPpc<(4036*.95)&
+                     fdi_yr$Dest.GDPpc>(1025*.95) & fdi_yr$Origin.GDPpc>(1025*.95))
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
   fdi_y <- get.adjacency(fdi_graph, attr='Value_ln', names=TRUE, sparse=FALSE)
@@ -268,8 +266,8 @@ for(i in 1:12){
   
   #extract one year
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
-  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(12476*.82) & fdi_yr$Origin.GDPpc<(12476*.82)&
-                     fdi_yr$Dest.GDPpc>(4035*.82) & fdi_yr$Origin.GDPpc>(4035*.82))
+  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc<(12476*.95) & fdi_yr$Origin.GDPpc<(12476*.95)&
+                     fdi_yr$Dest.GDPpc>(4035*.95) & fdi_yr$Origin.GDPpc>(4035*.95))
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
   fdi_y <- get.adjacency(fdi_graph, attr='Value_ln', names=TRUE, sparse=FALSE)
@@ -307,7 +305,7 @@ for(i in 1:12){
   
   #extract one year
   fdi_yr <- subset(fdi, fdi$Year ==i +2000)
-  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc>(12476*.82) & fdi_yr$Origin.GDPpc>(12476*.82))
+  fdi_yr <- subset(fdi_yr, fdi_yr$Dest.GDPpc>(12476*.95) & fdi_yr$Origin.GDPpc>(12476*.95))
   # create graph object
   fdi_graph <- graph.data.frame(fdi_yr, directed=TRUE, vertices=NULL)
   fdi_y <- get.adjacency(fdi_graph, attr='Value_ln', names=TRUE, sparse=FALSE)
