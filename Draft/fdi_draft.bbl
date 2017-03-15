@@ -46,6 +46,25 @@ Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Justin~H Kirkland. 2012.
 \newblock ``Toward a network theory of alliance formation.'' {\em International
   Interactions} 38(3):295--324.
 
+\harvarditem[Cranmer et~al.]{Cranmer, Leifeld, McClurg \harvardand\
+  Rolfe}{2016}{cranmer2016navigating}
+Cranmer, Skyler~J, Philip Leifeld, Scott~D McClurg \harvardand\ Meredith Rolfe.
+  2016.
+\newblock ``Navigating the range of statistical tools for inferential network
+  analysis.'' {\em American Journal of Political Science} .
+
+\harvarditem{Desmarais \harvardand\ Cranmer}{2012}{desmarais2012statistical}
+Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2012.
+\newblock ``Statistical inference for valued-edge networks: the generalized
+  exponential random graph model.'' {\em PloS one} 7(1):e30136.
+
+\harvarditem{Desmarais \harvardand\ Cranmer}{2017}{desmarais2017statistical}
+Desmarais, Bruce~A. \harvardand\ Skyler~J. Cranmer. 2017.
+\newblock Statistical Inference in Political Networks Research.  In {\em The
+  Oxford Handbook of Political Networks}, ed. Jennifer~Nicoll Victor,
+  Alexander~H. Montgomery \harvardand\ Mark Lubell.
+\newblock Oxford University Press.
+
 \harvarditem{Diehl \harvardand\ Wright}{2016}{diehl2016conditional}
 Diehl, Paul~F \harvardand\ Thorin~M Wright. 2016.
 \newblock ``A Conditional Defense of the Dyadic Approach.'' {\em International
@@ -87,6 +106,11 @@ Kinne, Brandon~J. 2014.
 Kinne, Brandon~J. 2016.
 \newblock ``Agreeing to arm: Bilateral weapons agreements and the global arms
   trade.'' {\em Journal of Peace Research} 53(3):359--377.
+
+\harvarditem{Krivitsky}{2012}{krivitsky2012exponential}
+Krivitsky, Pavel~N. 2012.
+\newblock ``Exponential-family random graph models for valued networks.'' {\em
+  Electronic Journal of Statistics} 6:1100.
 
 \harvarditem{Lee \harvardand\ Bai}{2013}{lee2013network}
 Lee, Taedong \harvardand\ Byoung-Inn Bai. 2013.
@@ -154,5 +178,12 @@ Warren, T~Camber. 2016.
 \newblock ``Modeling the coevolution of international and domestic
   institutions: Alliances, democracy, and the complex path to peace.'' {\em
   Journal of Peace Research} 53(3):424--441.
+
+\harvarditem[Wilson et~al.]{Wilson, Denny, Bhamidi, Cranmer \harvardand\
+  Desmarais}{2017}{wilson2017stochastic}
+Wilson, James~D, Matthew~J Denny, Shankar Bhamidi, Skyler~J Cranmer
+  \harvardand\ Bruce~A Desmarais. 2017.
+\newblock ``Stochastic weighted graphs: Flexible model specification and
+  simulation.'' {\em Social Networks} 49:37--47.
 
 \end{thebibliography}
