@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 MAR 2017 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  20 MAR 2017 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,26 +521,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[7] [8] [9] [10] (./fdi_draft.bbl [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+[7] [8] <draft_figures/rope1.pdf, id=236, 614.295pt x 794.97pt>
+File: draft_figures/rope1.pdf Graphic file (type pdf)
+
+<use draft_figures/rope1.pdf>
+Package pdftex.def Info: draft_figures/rope1.pdf used on input line 243.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+
+<draft_figures/rope2.pdf, id=237, 614.295pt x 794.97pt>
+File: draft_figures/rope2.pdf Graphic file (type pdf)
+
+<use draft_figures/rope2.pdf>
+Package pdftex.def Info: draft_figures/rope2.pdf used on input line 244.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+
+Overfull \hbox (36.68164pt too wide) in paragraph at lines 243--245
+[][] 
+ []
+
+
+Overfull \hbox (21.68164pt too wide) in paragraph at lines 243--245
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+[9] [10] [11 <./draft_figures/rope1.pdf>] [12 <./draft_figures/rope2.pdf>]
+[13] (./fdi_draft.bbl [14])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: 6C163E89ED3D3F0890E5FF7731E5CF44;696.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
- 7428 strings out of 493089
- 107105 string characters out of 6134842
- 219335 words of memory out of 5000000
- 10748 multiletter control sequences out of 15000+600000
+ 7441 strings out of 493089
+ 107366 string characters out of 6134841
+ 219334 words of memory out of 5000000
+ 10756 multiletter control sequences out of 15000+600000
  14887 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,35p,1617b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -563,10 +592,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on fdi_draft.pdf (12 pages, 364423 bytes).
+Output written on fdi_draft.pdf (15 pages, 393619 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
