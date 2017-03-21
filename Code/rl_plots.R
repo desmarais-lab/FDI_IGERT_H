@@ -12,13 +12,15 @@ rm(list=ls())
 set.seed(19)
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
+library(doBy)
+library(network)
 #load in data
 fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
 
 # dataframe to store values
 a <- data.frame(1:21)
+wo <- data.frame(1:19)
 
 #loop through each year
 for(i in 2002:2012){
@@ -64,15 +66,22 @@ m_yr <- i-2000
 m_yr <- ifelse(m_yr<10, paste("0", m_yr, sep=""), paste(m_yr, sep=""))
 m_name <- paste("fdi_models/model_",m_yr, "_w.rda", sep="")
 load(m_name)
+m1_name <- paste("fdi_models/model_",m_yr, "_wo.rda", sep="")
+load(m1_name)
 
 #loop through coefficients to sign to dataframe
 a <- cbind(a, coef(fit.01.2))
 a <- cbind(a, confint(fit.01.2)[,1])
 a <- cbind(a, confint(fit.01.2)[,2])
 
+wo <- cbind(wo, coef(fit.01.1))
+wo <- cbind(wo, confint(fit.01.1)[,1])
+wo <- cbind(wo, confint(fit.01.1)[,2])
+
 }
 
 a <- a[,-1]
+wo <- wo[,-1]
 #save a
 
 #load a
@@ -80,16 +89,23 @@ a <- a[,-1]
 #name dataframe variables
 vars <- c("Sum", "Sum(1/2)", "Nonzero", "Mutuality", "Transitive Ties",
           "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
-          "Common Language", "Defense Treaty", "Non-aggression Treaty",
+          "Common Language", "Defense Treaty", "Non-agg Treaty",
           "Nuetrality Treat", "Entente Treaty", "PTA Depth",
-          "Node Polity", "Node Trade Openness", "Node GDP growth",
-          "Node Political Violence", "Node GDP per capita")
+          "Polity", "Trade Openness", "GDP growth",
+          "Political Violence", "GDP per capita")
+
+vars_wo <- c("Sum", "Sum(1/2)", "Nonzero",
+          "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
+          "Common Language", "Defense Treaty", "Non-agg Treaty",
+          "Nuetrality Treat", "Entente Treaty", "PTA Depth",
+          "Polity", "Trade Openness", "GDP growth",
+          "Political Violence", "GDP per capita")
 
 #Years
 m_yr <- (2002:2012)
 
 
-#reorganize data for ggplot
+#reorganize fit with network terms data for ggplot
 gg_a <- matrix(nrow=11, ncol=63)
 #loop by variable and year
 for(j in 1:21){
@@ -110,38 +126,68 @@ for(j in 1:21){
   }
 }
 
-gg_a <- data.frame(gg_a)
+
+#reorganize fit with network terms data for ggplot
+gg_wo <- matrix(nrow=11, ncol=57)
+#loop by variable and year
+for(j in 1:19){
+  gg_col <- j*3-2
+  for(i in -2:8){
+    #point estimates
+    mul <- i +3
+    a_i <- mul*3-2
+    gg_wo[mul,gg_col] <- wo[j,a_i]
+    #Upper CI
+    mul <- i +3
+    a_i <- mul*3-2+1
+    gg_wo[mul,gg_col+1] <- wo[j,a_i]
+    #Lower CI
+    mul <- i +3
+    a_i <- mul*3-2+2
+    gg_wo[mul,gg_col+2] <- wo[j,a_i]
+  }
+}
+
+
 
 # plot the variables
 library(ggplot2)
 source("http://peterhaschke.com/Code/multiplot.R")
 
 
-for(i in 4:12){
+for(i in 1:21){
   pe   <- i*3-2
   Lci  <- i*3-1
   Uci  <- i*3
   df <- data.frame(PE = gg_a[,pe], Lower= gg_a[,Lci], Upper = gg_a[,Uci])
   name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper))+
-    geom_pointrange()+ geom_hline(yintercept = mean(df$PE))+ 
+    geom_pointrange()+ geom_hline(yintercept = 0)+
+    scale_x_continuous(breaks= seq(2002,2012,3))+ 
     ggtitle(vars[i])+ xlab("Year") + ylab("Coefficient")
   #create plot object
   assign(paste("p", i, sep=""), name)
 }
-multiplot(p4,p5,p6,p7,p8,p9,p10,p11,p12, cols=3)
 
 
-for(i in 13:21){
+multiplot(p1,p2,p3,p4,p5,p6,p7,p8,
+          p9,p10,p11,p12,p13,p14,p15,p16,
+          p17,p18,p19,p20,p21, cols=4)
+
+for(i in 1:19){
   pe   <- i*3-2
   Lci  <- i*3-1
   Uci  <- i*3
-  df <- data.frame(PE = gg_a[,pe], Lower= gg_a[,Lci], Upper = gg_a[,Uci])
+  df <- data.frame(PE = gg_wo[,pe], Lower= gg_wo[,Lci], Upper = gg_wo[,Uci])
   name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper))+
-    geom_pointrange()+ geom_hline(yintercept = mean(df$PE))+ 
-    ggtitle(vars[i])+ xlab("Year") + ylab("Coefficient")
+    geom_pointrange()+ geom_hline(yintercept = 0)+ 
+    scale_x_continuous(breaks= seq(2002,2012,3))+
+    ggtitle(vars_wo[i])+ xlab("Year") + ylab("Coefficient")
   #create plot object
-  assign(paste("p", i, sep=""), name)
+  assign(paste("pw", i, sep=""), name)
 }
-multiplot(p13,p14,p15,p16,p17,p18,p19,p20,p21, cols=3)
+
+multiplot(pw1,pw2,pw3,pw4,pw5,pw6,pw7,pw8,
+          pw9,pw10,pw11,pw12,pw13,pw14,pw15,pw16,
+          pw17,pw18,pw19, cols=4)
 
 
