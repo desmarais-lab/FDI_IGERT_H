@@ -55,7 +55,7 @@ delete.isolates <- function(graph, mode = 'all') {
 
 fdi_netNoIsolates <- delete.isolates(fdi_net)
 
-coordinates <- layout_with_fr(fdi_netNoIsolates,weights=fdi_net$Value)
+coordinates <- layout_with_fr(fdi_netNoIsolates,weights=get.edge.attribute(fdi_net,"Value"))
 
 library(colorRamps)
 
