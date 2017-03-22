@@ -13,6 +13,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{setspace}
+
+\usepackage{amssymb}
 \usepackage{natbib}
 \usepackage{amsfonts}
 \usepackage[table]{xcolor}
@@ -67,15 +69,6 @@ To model the FDI network, we must use a statistical modeling approach that is ca
 
 Like other forms of the ERGM, the count ERGM is a statistical model that operates on one or more network adjacency matrices. To specify the count ERGM, the researcher selects two types of network statistics---those that relate tie values to observed covariates (i.e., covariate effects), and those that relate the ties to each other via high order network structure (i.e., network effects). If an ERGM is specified without network effects, it reduces to a dyadic regression model in which ties are assumed to be independent and identically distributed \cite{cranmer2011inferential}. Under \citeapos{krivitsky2012exponential} count ERGM, the probability of the observed $n \times n$ network adjacency matrix $\bm{y}$ is $$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})},$$ where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
 
-The count ERGM is extremely flexible in that there are very few constraints on the generative features that can be incorporated into the model through $\bm{g}( \bm{y} )$. In the models we specify below, we use statistics that model the effect of covariates on expected edge values, zero inflation in the adjacency matrix, reciprocity within dyads, and transitive closure among triples of states. {\bf BRUCE OR JOHN, WRITE OUT THESE STATISTICS}.
-
-$$Sum:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$$
-$$Sum, Fractional Moment:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$$
-$$Non-Zero: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
-$$ Reciprocity: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$$
-$$Transitive Ties: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}} \Big(\bm{y}_{i,j},(\bm{y}_{i,k} \land \bm{y}_{k,j} \geq 1)\Big) $$
-
-
 
 
 
@@ -105,7 +98,22 @@ A more minor economic variable included is the growth rate of the economy, which
 We include two categories of international agreement variables. The first is dummy variables for defense agreements \citep{Gibler09}. This includes defense, entente, non-aggression, and neutrality treaties. We expect these variables to positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and a lower risk of expropriation. The second international agreement variable is preferential trade agreement (PTA) depth \citep{dur2014design}. Past work has argued that PTAs represent a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{buthe2014foreign}. However, this study used monadic data and only a count PTAs signed. Our work takes this further since we are using network data and increases in PTA depth and FDI inflows is measured at the dyadic level and the PTA variable we use is built using latent trait analysis with 48 different variables.\\
 
 There is substantial amount of work that explores the relationship between regime type and FDI inflows. The work is inconclusive, but include controls for it nonetheless using the Polity IV score \citep{polity2012polity}. We also include political violence to proxy for state stability, which expect to be negatively correlated with FDI inflows \citep{marshall2005major}.
-\newpage
+
+\subsection{Model Specification}
+The count ERGM is extremely flexible in that there are very few constraints on the generative features that can be incorporated into the model through $\bm{g}( \bm{y} )$. In the models we specify, we use statistics that model the effect of covariates on expected edge values, zero inflation in the adjacency matrix, reciprocity within dyads, and transitive closure among triples of states. 
+
+$$\text{Sum}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$$
+$$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$$
+$$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
+$$ \text{Reciprocity}: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$$
+$$\text{Transitive Ties:} \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}} \Big(\bm{y}_{i,j},(\bm{y}_{i,k} \land \bm{y}_{k,j} \geq 1)\Big) $$
+
+$$ \text{Dyadic Covariate}: \bm{g(y,x)} = \sum_{(i,j)} \bm{y}_{i,j}x_{i,j}$$
+
+$$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
+
+$$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
+
 \subsection{Covariate Summary Statistics}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
