@@ -69,11 +69,11 @@ Like other forms of the ERGM, the count ERGM is a statistical model that operate
 
 The count ERGM is extremely flexible in that there are very few constraints on the generative features that can be incorporated into the model through $\bm{g}( \bm{y} )$. In the models we specify below, we use statistics that model the effect of covariates on expected edge values, zero inflation in the adjacency matrix, reciprocity within dyads, and transitive closure among triples of states. {\bf BRUCE OR JOHN, WRITE OUT THESE STATISTICS}.
 
-$$Sum:\sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$$
-$$Sum, Fractional Moment:\sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$$
+$$Sum:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$$
+$$Sum, Fractional Moment:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$$
 $$Non-Zero: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
-$$ Reciprocity: \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$$
-$$Transitive Ties: \sum_{(i,j) {\in} \mathbb{Y}} v_{\text{combine}}(v_{\text{2-path}}(\bm{y}_{i,k},\bm{y}_{k,j})_{k{\in}N {\backslash} \{i,j\}})$$
+$$ Reciprocity: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$$
+$$Transitive Ties: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}} \Big(\bm{y}_{i,j},(\bm{y}_{i,k} \land \bm{y}_{k,j} \geq 1)\Big) $$
 
 
 
