@@ -125,12 +125,11 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 \hline \\[-1.8ex] 
 Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
 \hline \\[-1.8ex] 
-contig & 189,000 & 0.024 & 0.152 & 0 & 1 \\ 
-comlang\_off & 189,000 & 0.112 & 0.315 & 0 & 1 \\ 
-comlang\_ethno & 189,000 & 0.115 & 0.318 & 0 & 1 \\ 
-colony & 189,000 & 0.015 & 0.121 & 0 & 1 \\ 
-comcol & 189,000 & 0.062 & 0.241 & 0 & 1 \\ 
-curcol & 189,000 & 0.0003 & 0.016 & 0 & 1 \\  
+Contiguity & 189,000 & 0.024 & 0.152 & 0 & 1 \\ 
+Common Official Language & 189,000 & 0.112 & 0.315 & 0 & 1 \\ 
+Common Language and Ethnicity & 189,000 & 0.115 & 0.318 & 0 & 1 \\ 
+Former Colonial Relationship & 189,000 & 0.015 & 0.121 & 0 & 1 \\ 
+Common Colonizer & 189,000 & 0.062 & 0.241 & 0 & 1 \\ 
 Defense Treaty & 189,000 & 0.075 & 0.264 & 0 & 1 \\ 
 Non-aggression Treaty & 189,000 & 0.064 & 0.245 & 0 & 1 \\ 
 Neutrality Treaty & 189,000 & 0.004 & 0.063 & 0 & 1 \\ 
@@ -142,124 +141,78 @@ Entente Treaty & 189,000 & 0.066 & 0.248 & 0 & 1 \\
 
 
 \newpage
-\section{Results}
-\begin{table}[!htbp] 
-\begin{center}
-\begin{tabular}{l c c }
-\hline
- & Model 1 & Model 2 \\
-\hline
-sum                           & $2.21^{***}$  & $-1.52^{***}$ \\
-                              & $(0.07)$      & $(0.16)$      \\
-sum0.5                        & $-4.37^{***}$ & $0.47$        \\
-                              & $(0.26)$      & $(0.30)$      \\
-nonzero                       & $-1.72^{***}$ & $-4.52^{***}$ \\
-                              & $(0.23)$      & $(0.24)$      \\
-mutual.geom.mean              & $0.61^{***}$  & $-0.04$       \\
-                              & $(0.03)$      & $(0.03)$      \\
-edgecov.fdi\_net.mass.sum     &               & $0.18^{***}$  \\
-                              &               & $(0.01)$      \\
-edgecov.fdi\_net.distance.sum &               & $-0.24^{***}$ \\
-                              &               & $(0.01)$      \\
-\hline
-AIC                           & -24739.37     & -27340.33     \\
-BIC                           & -24708.71     & -27294.34     \\
-Log Likelihood                & 12373.69      & 13676.17      \\
-\hline
-\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
-\end{tabular}
-\caption{Statistical models for FDI Inflows}
-\label{table:coefficients}
-\end{center}
-\end{table}
-
-\begin{table}[!htbp] 
-\begin{center}
-\begin{tabular}{l c c }
-\hline
- & Model 1 & Model 2 \\
-\hline
-sum                           & $2.37^{***}$  & $0.04$        \\
-                              & $(0.05)$      & $(0.12)$      \\
-sum0.5                        & $-4.14^{***}$ & $-0.67^{**}$  \\
-                              & $(0.21)$      & $(0.25)$      \\
-nonzero                       & $-2.55^{***}$ & $-6.17^{***}$ \\
-                              & $(0.21)$      & $(0.27)$      \\
-mutual.geom.mean              & $0.50^{***}$  & $0.02$        \\
-                              & $(0.02)$      & $(0.02)$      \\
-transitiveties                &               & $1.48^{***}$  \\
-                              &               & $(0.16)$      \\
-edgecov.fdi\_net.mass.sum     &               & $0.13^{***}$  \\
-                              &               & $(0.00)$      \\
-edgecov.fdi\_net.distance.sum &               & $-0.19^{***}$ \\
-                              &               & $(0.01)$      \\
-\hline
-AIC                           & -29303.05     & -32432.34     \\
-BIC                           & -29272.39     & -32378.69     \\
-Log Likelihood                & 14655.53      & 16223.17      \\
-\hline
-\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
-\end{tabular}
-\caption{Statistical models For FDI Stock}
-\label{table:coefficients}
-\end{center}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{l c c }
-\hline
- & Model 1 & Model 2 \\
-\hline
-sum                              & $-0.98^{***}$ & $-0.61^{***}$ \\
-                                 & $(0.15)$      & $(0.15)$      \\
-sum0.5                           & $0.31$        & $-0.23$       \\
-                                 & $(0.25)$      & $(0.24)$      \\
-nonzero                          & $-5.25^{***}$ & $-6.26^{***}$ \\
-                                 & $(0.24)$      & $(0.27)$      \\
-edgecov.fdi\_net.mass.sum        & $0.15^{***}$  & $0.14^{***}$  \\
-                                 & $(0.00)$      & $(0.00)$      \\
-edgecov.fdi\_net.distance.sum    & $-0.21^{***}$ & $-0.20^{***}$ \\
-                                 & $(0.01)$      & $(0.01)$      \\
-edgecov.fdi\_net.contig.sum      & $-0.06$       & $-0.05$       \\
-                                 & $(0.03)$      & $(0.03)$      \\
-edgecov.fdi\_net.colony.sum      & $0.18^{***}$  & $0.16^{***}$  \\
-                                 & $(0.03)$      & $(0.03)$      \\
-edgecov.fdi\_net.lang\_ethno.sum & $0.09^{***}$  & $0.08^{***}$  \\
-                                 & $(0.02)$      & $(0.02)$      \\
-edgecov.fdi\_net.defence\_t.sum  & $0.10$        & $0.11$        \\
-                                 & $(0.06)$      & $(0.07)$      \\
-edgecov.fdi\_net.nonagg\_t.sum   & $-0.20^{**}$  & $-0.19^{**}$  \\
-                                 & $(0.07)$      & $(0.06)$      \\
-edgecov.fdi\_net.neut\_t.sum     & $0.20^{*}$    & $0.20^{*}$    \\
-                                 & $(0.08)$      & $(0.08)$      \\
-edgecov.fdi\_net.entente\_t.sum  & $0.06$        & $0.05$        \\
-                                 & $(0.08)$      & $(0.08)$      \\
-edgecov.fdi\_net.depth.sum       & $-0.02^{*}$   & $-0.02^{**}$  \\
-                                 & $(0.01)$      & $(0.01)$      \\
-nodeicov.sum..Polity             & $0.03^{***}$  & $0.03^{***}$  \\
-                                 & $(0.00)$      & $(0.00)$      \\
-nodeicov.sum..TradeOpen          & $0.00^{***}$  & $0.00^{***}$  \\
-                                 & $(0.00)$      & $(0.00)$      \\
-nodeicov.sum..GDP.g              & $-0.02^{***}$ & $-0.01^{***}$ \\
-                                 & $(0.00)$      & $(0.00)$      \\
-nodeicov.sum..PV                 & $-0.02^{**}$  & $-0.02^{**}$  \\
-                                 & $(0.01)$      & $(0.01)$      \\
-mutual.geom.mean                 &               & $0.02$        \\
-                                 &               & $(0.02)$      \\
-transitiveties                   &               & $1.42^{***}$  \\
-                                 &               & $(0.17)$      \\
-\hline
-AIC                              & -33007.70     & -33129.09     \\
-BIC                              & -32877.40     & -32983.46     \\
-Log Likelihood                   & 16520.85      & 16583.54      \\
-\hline
-\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
-\end{tabular}
-\caption{Statistical models}
-\label{table:coefficients}
-\end{center}
-\end{table}
+\begin{table}[!htbp] \centering 
+  \caption{Year 2007} 
+  \label{} 
+\small 
+\begin{tabular}{@{\extracolsep{2pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & \multicolumn{2}{c}{fdi\_net} \\ 
+\\[-1.8ex] & (1) & (2)\\ 
+\hline \\[-1.8ex] 
+ sum & $-$4.008$^{***}$ & $-$3.984$^{***}$ \\ 
+  & (0.203) & (0.209) \\ 
+  sum0.5 & 15.231$^{***}$ & 13.695$^{***}$ \\ 
+  & (0.457) & (0.458) \\ 
+  nonzero & $-$16.176$^{***}$ & $-$14.982$^{***}$ \\ 
+  & (0.376) & (0.364) \\ 
+  mutual.min &  & 0.179$^{***}$ \\ 
+  &  & (0.035) \\ 
+  transitiveweights.min.max.min &  & 0.724$^{***}$ \\ 
+  &  & (0.052) \\ 
+  edgecov.fdi\_net.lag\_stock.sum & 0.376$^{***}$ & 0.372$^{***}$ \\ 
+  & (0.009) & (0.009) \\ 
+  edgecov.fdi\_net.mass.sum & 1.516$^{***}$ & 0.934$^{***}$ \\ 
+  & (0.096) & (0.105) \\ 
+  edgecov.fdi\_net.distance.sum & $-$0.129$^{***}$ & $-$0.114$^{***}$ \\ 
+  & (0.014) & (0.016) \\ 
+  edgecov.fdi\_net.contig.sum & $-$0.116$^{**}$ & $-$0.066 \\ 
+  & (0.051) & (0.056) \\ 
+  edgecov.fdi\_net.colony.sum & $-$0.054 & $-$0.103$^{*}$ \\ 
+  & (0.053) & (0.055) \\ 
+  edgecov.fdi\_net.lang\_ethno.sum & 0.081$^{**}$ & 0.074$^{**}$ \\ 
+  & (0.033) & (0.034) \\ 
+  edgecov.fdi\_net.defence\_t.sum & $-$0.044 & 0.044 \\ 
+  & (0.082) & (0.090) \\ 
+  edgecov.fdi\_net.nonagg\_t.sum & $-$0.040 & $-$0.068 \\ 
+  & (0.093) & (0.098) \\ 
+  edgecov.fdi\_net.neut\_t.sum & 0.312$^{***}$ & 0.407$^{***}$ \\ 
+  & (0.105) & (0.118) \\ 
+  edgecov.fdi\_net.entente\_t.sum & $-$0.045 & $-$0.088 \\ 
+  & (0.100) & (0.109) \\ 
+  edgecov.fdi\_net.depth.sum & 0.115$^{***}$ & 0.080$^{**}$ \\ 
+  & (0.041) & (0.041) \\ 
+  nodeocov.sum..Polity & 0.198$^{***}$ & 0.122$^{***}$ \\ 
+  & (0.044) & (0.042) \\ 
+  nodeocov.sum..TradeOpen & 0.307$^{***}$ & 0.183$^{**}$ \\ 
+  & (0.069) & (0.071) \\ 
+  nodeocov.sum..GDP.g & $-$0.058 & 0.011 \\ 
+  & (0.099) & (0.100) \\ 
+  nodeocov.sum..PV & $-$0.023 & 0.048 \\ 
+  & (0.064) & (0.066) \\ 
+  nodeocov.sum..GDPpc & 0.549$^{***}$ & 0.504$^{***}$ \\ 
+  & (0.068) & (0.075) \\ 
+  nodeicov.sum..Polity & 0.051 & $-$0.027 \\ 
+  & (0.040) & (0.040) \\ 
+  nodeicov.sum..TradeOpen & 0.287$^{***}$ & 0.164$^{*}$ \\ 
+  & (0.078) & (0.086) \\ 
+  nodeicov.sum..GDP.g & $-$0.236$^{**}$ & $-$0.112 \\ 
+  & (0.096) & (0.093) \\ 
+  nodeicov.sum..PV & $-$0.125$^{*}$ & $-$0.067 \\ 
+  & (0.069) & (0.077) \\ 
+  nodeicov.sum..GDPpc & $-$0.250$^{***}$ & $-$0.474$^{***}$ \\ 
+  & (0.090) & (0.093) \\ 
+ \hline \\[-1.8ex] 
+Akaike Inf. Crit. & $-$42,994.640 & $-$40,831.300 \\ 
+Bayesian Inf. Crit. & $-$42,811.080 & $-$40,632.430 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
 
 \begin{figure}[h]
 \centering
