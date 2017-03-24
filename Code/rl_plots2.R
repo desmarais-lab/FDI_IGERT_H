@@ -185,8 +185,7 @@ gg_both <- rbind (gg_wo, gg_a)
 # plot the variables
 library(ggplot2)
 library(gridExtra)
-source("http://peterhaschke.com/Code/multiplot.R")
-
+#source("http://peterhaschke.com/Code/multiplot.R")
 
 
 for(i in 1:24){
@@ -197,7 +196,7 @@ for(i in 1:24){
                    Model = gg_both[,73], Year = gg_both[,74])
   name <- ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model), 
                  legend=TRUE)+
-    geom_pointrange(size= .3)+ geom_hline(yintercept = 0)+
+    geom_pointrange(size= .2)+ geom_hline(yintercept = 0)+
     scale_x_continuous(breaks= seq(2002,2012,3))+
     scale_color_manual(breaks = c("w/o", "w/"),
                        values=c("#D55E00", "#999999"))+
@@ -211,7 +210,7 @@ for(i in 1:24){
           plot.title = element_text(family="Times"),
           legend.position="bottom") 
   #create plot object
-  ggsave(paste("rl_plots/",plot_n[i]), name, device="pdf", width=3, height=2)
+  ggsave(paste("rl_plots/",plot_n[i], sep=""), name, device="pdf", width=3, height=2)
 }
 
 
@@ -231,29 +230,27 @@ ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model,legend=TRU
         plot.title = element_text(family="Times"),
         legend.position="bottom")
 
-ggsave("Legend", device="pdf", width=3, height=2)
+ggsave("rl_plots/Legend", device="pdf", width=3, height=2)
 
-#1. Shrink the points by 15 percent so they don't overlap as much.
-#3. Widen each plot by 10 percent.
-#2. Make these individual plot files named based on the variable/effect.
-#4. Make one plot (doesn't matter which variable), but an extra plot in which 
-#   a horizontal legend is displayed in the file outside of the plotting region? 
-
-#multiplot(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,
- #         p11,p12,p13,p14,p15,p16,p17,p18,
-  #        p19,p20,p21,p22,p23,p24, cols=4)
 
 for(i in 1:2){
   pe   <- i*3-2
   Lci  <- i*3-1
   Uci  <- i*3
   df <- data.frame(PE = gg_n[,pe], Lower= gg_n[,Lci], Upper = gg_n[,Uci])
-  name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper))+
-    geom_pointrange(color='darkblue')+ geom_hline(yintercept = 0)+
-    scale_x_continuous(breaks= seq(2002,2012,3))+ 
-    ggtitle(vars_n[i])+ xlab("Year") + ylab("Coefficient")
+  name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper), 
+                 legend=TRUE)+
+    geom_pointrange(size= .2, colour= "#D55E00")+ geom_hline(yintercept = 0)+
+    scale_x_continuous(breaks= seq(2002,2012,3))+
+    ggtitle(vars_n[i])+xlab("Year") + ylab("Coefficient")+ 
+    theme(axis.text.x  = element_text(family="Times"),
+          axis.title.x  = element_text(family="Times"),
+          axis.text.y  = element_text(family="Times"),
+          axis.title.y  = element_text(family="Times"),
+          legend.text  = element_text(family="Times"),
+          legend.title  = element_text(family="Times"),
+          plot.title = element_text(family="Times"),
+          legend.position="bottom") 
   #create plot object
-  assign(paste("pw", i, sep=""), name)
+  ggsave(paste("rl_plots/",vars_n[i], sep=""), name, device="pdf", width=3, height=2)
 }
-
-multiplot(pw1,pw2, cols=2)
