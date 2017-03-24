@@ -11,7 +11,7 @@
 rm(list=ls())
 set.seed(19)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 library(doBy)
 library(network)
 #load in data
@@ -93,7 +93,7 @@ vars <- c("Sum", "Sum(1/2)", "Nonzero", "Mutuality", "Transitivity",
           "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
           "Common Language", "Defense Treaty", "Non-agg Treaty",
           "Nuetrality Treat", "Entente Treaty", "PTA Depth",
-          "Origin Polity", "Origin TO", "Origin growth",
+          "Origin Polity", "Origin TO", "Origin Growth",
           "Origin PV", "Origin GDPpc",
           "Dest. Polity", "Dest. TO", "Dest. Growth",
           "Dest. PV", "Dest. GDPpc")
@@ -102,7 +102,7 @@ vars_wo <- c("Sum", "Sum(1/2)", "Nonzero",
              "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
              "Common Language", "Defense Treaty", "Non-agg Treaty",
              "Nuetrality Treaty", "Entente Treaty", "PTA Depth",
-             "Origin Polity", "Origin TO", "Origin growth",
+             "Origin Polity", "Origin TO", "Origin Growth",
              "Origin PV", "Origin GDPpc",
              "Dest. Polity", "Dest. TO", "Dest. Growth",
              "Dest. PV", "Dest. GDPpc")
@@ -111,7 +111,7 @@ plot_n <- c("Sum", "Sum_5", "Nonzero",
              "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
              "Common Language", "Defense Treaty", "Non-agg Treaty",
              "Nuetrality Treaty", "Entente Treaty", "PTA Depth",
-             "Origin Polity", "Origin TO", "Origin growth",
+             "Origin Polity", "Origin TO", "Origin Growth",
              "Origin PV", "Origin GDPpc",
              "Dest. Polity", "Dest. TO", "Dest. Growth",
              "Dest. PV", "Dest. GDPpc")
