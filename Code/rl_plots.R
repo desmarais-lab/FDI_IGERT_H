@@ -127,7 +127,7 @@ for(j in 1:21){
 }
 
 
-#reorganize fit with network terms data for ggplot
+#reorganize fit without network terms data for ggplot
 gg_wo <- matrix(nrow=11, ncol=57)
 #loop by variable and year
 for(j in 1:19){
