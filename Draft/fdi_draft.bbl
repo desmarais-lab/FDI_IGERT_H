@@ -5,6 +5,12 @@ Aizenman, Joshua \harvardand\ Ilan Noy. 2006.
 \newblock ``FDI and trade?Two-way linkages?'' {\em The Quarterly Review of
   Economics and Finance} 46(3):317--337.
 
+\harvarditem{Allee \harvardand\ Peinhardt}{2011}{Allee_Peinhardt:2011}
+Allee, Todd \harvardand\ Clint Peinhardt. 2011.
+\newblock ``Contingent Credibility: The Impact of Investment Treaty Violations
+  on Foreign Direct Investment.'' {\em International Organization}
+  65(3):401--432.
+
 \harvarditem{Bank}{2012{\em a}}{WB1}
 Bank, The~World. 2012{\em a}.
 \newblock ``World Development Indicators, GDP.''.
@@ -12,6 +18,12 @@ Bank, The~World. 2012{\em a}.
 \harvarditem{Bank}{2012{\em b}}{WB2}
 Bank, The~World. 2012{\em b}.
 \newblock ``World Development Indicators, GDP Growth Rate.''.
+
+\harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
+B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
+\newblock ``The Politics of Foreign Direct Investment into Developing
+  Countries: Increasing FDI through International Trade Agreements?'' {\em
+  American Journal of Political Science} 52(4):741--762.
 
 \harvarditem{B{\"u}the \harvardand\ Milner}{2014}{buthe2014foreign}
 B{\"u}the, Tim \harvardand\ Helen~V Milner. 2014.
@@ -24,13 +36,31 @@ Camber~Warren, T. 2010.
 \newblock ``The geometry of security: Modeling interstate alliances as evolving
   networks.'' {\em Journal of Peace Research} 47(6):697--709.
 
+\harvarditem[Carr, Markusen \harvardand\ Maskus]{Carr, Markusen \harvardand\
+  Maskus}{2001}{Carr_et_al:2001}
+Carr, David~L., James~R. Markusen \harvardand\ Keith~E. Maskus. 2001.
+\newblock ``Estimating the Knowledge-Capital Model of the Multinational
+  Enterprise.'' {\em The American Economic Review} 91(3):693--708.
+
+\harvarditem{Caves}{1996}{Caves:1996}
+Caves, Richard~E. 1996.
+\newblock {\em Multinational Enterprise and Economic Analysis}.
+\newblock New York:  Cambridge University Press.
+
 \harvarditem{Chu-Shore}{2010}{chu2010homogenization}
 Chu-Shore, Jesse. 2010.
 \newblock ``Homogenization and Specialization Effects of International Trade:
   Are Cultural Goods Exceptional?'' {\em World Development} 38(1):37--47.
 
-\harvarditem{Cranmer \harvardand\ Desmarais}{2011}{cranmer2011inferential}
-Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011.
+\harvarditem{Cranmer \harvardand\ Desmarais}{2011{\em
+  a}}{Cranmer_Desmarais:2011}
+Cranmer, Skyler~J. \harvardand\ Bruce~A. Desmarais. 2011{\em a}.
+\newblock ``Inferential Network Analysis with Exponential Random Graph
+  Models.'' {\em Political Analysis} 19(1):66--86.
+
+\harvarditem{Cranmer \harvardand\ Desmarais}{2011{\em
+  b}}{cranmer2011inferential}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011{\em b}.
 \newblock ``Inferential network analysis with exponential random graph
   models.'' {\em Political Analysis} pp.~66--86.
 
@@ -58,6 +88,11 @@ Cranmer, Skyler~J, Philip Leifeld, Scott~D McClurg \harvardand\ Meredith Rolfe.
 \newblock ``Navigating the range of statistical tools for inferential network
   analysis.'' {\em American Journal of Political Science} .
 
+\harvarditem{Crystal}{2003}{Crystal:2003}
+Crystal, Jonathan. 2003.
+\newblock {\em Unwanted Company: Foreign Investment in American Industries}.
+\newblock Ithaca, NY:  Cornell University Press.
+
 \harvarditem{Desmarais \harvardand\ Cranmer}{2012}{desmarais2012statistical}
 Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2012.
 \newblock ``Statistical inference for valued-edge networks: the generalized
@@ -80,6 +115,11 @@ Dorff, Cassy \harvardand\ Michael~D Ward. 2013.
 \newblock ``Networks, dyads, and the social relations model.'' {\em Political
   Science Research and Methods} 1(02):159--178.
 
+\harvarditem{Dunning}{1992}{Dunning:1002}
+Dunning, John~H. 1992.
+\newblock {\em Multinational Enterprises and the Global Economy}.
+\newblock Reading, MA:  Addison-Wesley.
+
 \harvarditem[D{\"u}r, Baccini \harvardand\ Elsig]{D{\"u}r, Baccini \harvardand\
   Elsig}{2014}{dur2014design}
 D{\"u}r, Andreas, Leonardo Baccini \harvardand\ Manfred Elsig. 2014.
@@ -91,11 +131,60 @@ Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
 \newblock CQ Press.
 
+\harvarditem{Helpman}{1984}{Helpman:1984}
+Helpman, Elhanan. 1984.
+\newblock ``A Simple Theory of International Trade with Multinational
+  Corporations.'' {\em The Journal of Political Economy} 92(3):451--471.
+
+\harvarditem[Helpman, Melitz \harvardand\ Yeaple]{Helpman, Melitz \harvardand\
+  Yeaple}{2004}{Helpman_et_al:2004}
+Helpman, Elhanan, Marc~J. Melitz \harvardand\ Stephen~R. Yeaple. 2004.
+\newblock ``Export versus FDI with Heterogeneous Firms.'' {\em The American
+  Economic Review} 94(1):300--316.
+
+\harvarditem{Henisz}{2000}{Henisz:2000}
+Henisz, Witold~J. 2000.
+\newblock ``The Institutional Environment for Multinational Investment.'' {\em
+  The Journal of Law, Economics, \& Organization} 16(2):334--364.
+
 \harvarditem{Howell}{2013}{howell2013geography}
 Howell, Anthony. 2013.
 \newblock ``Is geography ?dead?or ?destiny?in a globalizing World? a network
   analysis and latent space modeling approach of the World trade network.''
   {\em Journal of Globalization Studies} 4(2).
+
+\harvarditem{Hymer}{1976}{Hymer:1976}
+Hymer, Stephen~H. 1976.
+\newblock {\em The International Operations of National Firms: A Study of
+  Direct Foreign Investment}.
+\newblock Cambridge, MA:  MIT Press.
+
+\harvarditem{Jensen}{2003}{Jensen:2003}
+Jensen, Nathan~M. 2003.
+\newblock ``Democratic Governance and Multinational Corporations: Political
+  Regimes and Inflows of Foreign Direct Investment.'' {\em International
+  Organization} 57(03):587--616.
+
+\harvarditem{Jensen}{2006}{Jensen:2006}
+Jensen, Nathan~M. 2006.
+\newblock {\em Nation-States and the Multinational Corporation: A Political
+  Economy of Foreign Direct Investment}.
+\newblock Princeton, N.J.:  Princeton University Press.
+
+\harvarditem{Kerner}{2009}{Kerner:2009}
+Kerner, Andrew. 2009.
+\newblock ``Why Should I Believe You? The Costs and Consequences of Bilateral
+  Investment Treaties.'' {\em International Studies Quarterly} 53(1):73--102.
+
+\harvarditem{Kim \harvardand\ Solingen}{2017}{Kim_Solingen:2017}
+Kim, {Soo Yeon} \harvardand\ Etel Solingen. 2017.
+\newblock ``Production Networks and Conffict in East Asia.''.
+\newblock Working Paper.
+
+\harvarditem{Kindleberger}{1969}{Kindleberger:1969}
+Kindleberger, Charles~P. 1969.
+\newblock {\em American Business Abroad: Six Lectures on Direct Investment}.
+\newblock New Haven, CT:  Yale University Press.
 
 \harvarditem{Kinne}{2013}{kinne2013network}
 Kinne, Brandon~J. 2013.
@@ -123,6 +212,17 @@ Lee, Taedong \harvardand\ Byoung-Inn Bai. 2013.
   Transitivity.'' {\em The Korean Journal of International Studies}
   11(2):263--293.
 
+\harvarditem{Li \harvardand\ Resnick}{2003}{Li_Resnick:2003}
+Li, Quan \harvardand\ Adam Resnick. 2003.
+\newblock ``Reversal of Fortunes: Democratic Institutions and Foreign Direct
+  Investment Inflows to Developing Countries.'' {\em International
+  Organization} 57(01):175--211.
+
+\harvarditem{Li \harvardand\ Vashchilko}{2010}{Li_Vashchilko:2010}
+Li, Quan \harvardand\ Tatiana Vashchilko. 2010.
+\newblock ``Dyadic Military Conflict, Security Alliances, and Bilateral FDI
+  Flows.'' {\em Journal of International Business Studies} 41(5):765--782.
+
 \harvarditem{Marshall}{2005}{marshall2005major}
 Marshall, Monty~G. 2005.
 \newblock ``Major episodes of political violence 1946--2004.'' {\em Center for
@@ -132,6 +232,11 @@ Marshall, Monty~G. 2005.
 Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
 \newblock ``Notes on CEPII?s distances measures: The GeoDist database.''.
 
+\harvarditem{Melitz}{2003}{Melitz:2003}
+Melitz, Marc~J. 2003.
+\newblock ``The Impact of Trade on Intra-Industry Reallocations and Aggregate
+  Industry Productivity.'' {\em Econometrica} 71(6):1695--1725.
+
 \harvarditem[Metternich et~al.]{Metternich, Dorff, Gallop, Weschle \harvardand\
   Ward}{2013}{metternich2013antigovernment}
 Metternich, Nils~W, Cassy Dorff, Max Gallop, Simon Weschle \harvardand\
@@ -139,6 +244,18 @@ Metternich, Nils~W, Cassy Dorff, Max Gallop, Simon Weschle \harvardand\
 \newblock ``Antigovernment networks in civil conflicts: How network structures
   affect conflictual behavior.'' {\em American Journal of Political Science}
   57(4):892--911.
+
+\harvarditem{Milner}{1988}{Milner:1988}
+Milner, Helen~V. 1988.
+\newblock {\em Resisting Protectionism: Global Industries and the Politics of
+  International Trade}.
+\newblock Princeton, N.J.:  Princeton University Press.
+
+\harvarditem[Noorbakhsh, Paloni \harvardand\ Youssef]{Noorbakhsh, Paloni
+  \harvardand\ Youssef}{2001}{Noorbakhsh_et_al:2001}
+Noorbakhsh, Farhad, Alberto Paloni \harvardand\ Ali Youssef. 2001.
+\newblock ``Human Capital and FDI Inflows to Developing Countries: New
+  Empirical Evidence.'' {\em World Development} 29(9):1593--1610.
 
 \harvarditem{OECD}{2016}{OECD}
 OECD. 2016.
@@ -157,9 +274,51 @@ Raeymaeckers, Peter \harvardand\ Patrick Kenis. 2016.
   of service networks: A comparative social network analysis.'' {\em
   International Public Management Journal} 19(3):397--426.
 
+\harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
+Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
+\newblock ``Foreign Direct Investment in Latin America: The Importance of
+  Judicial Strength and Rule of Law.'' {\em International Studies Quarterly}
+  56(1):193--202.
+
+\harvarditem[Tingley et~al.]{Tingley, Xu, Chilton \harvardand\
+  Milner}{2015}{Tingley:2015}
+Tingley, Dustin, Christopher Xu, Adam Chilton \harvardand\ Helen~V. Milner.
+  2015.
+\newblock ``The Political Economy of Inward FDI: Opposition to Chinese Mergers
+  and Acquisitions.'' {\em The Chinese Journal of International Politics}
+  8(1):27--57.
+
+\harvarditem{UNCTAD}{1991}{UNCTAD:1991}
+UNCTAD. 1991.
+\newblock {\em World Investment Report}.
+\newblock New York:  United Nations.
+
+\harvarditem{UNCTAD}{2006}{UNCTAD:2006}
+UNCTAD. 2006.
+\newblock {\em FDI from Developing and Transition Economies: Implications for
+  Development}.
+\newblock New York:  United Nations.
+
+\harvarditem{UNCTAD}{2013}{UNCTAD:2013}
+UNCTAD. 2013.
+\newblock {\em Global Value Chains: Investment and Trade for Development}.
+\newblock New York:  United Nations.
+
 \harvarditem{UNCTAD}{2014}{UNCTAD}
 UNCTAD. 2014.
 \newblock ``Bilateral FDI Statistics.''.
+
+\harvarditem{Vernon}{1971}{Vernon:1971}
+Vernon, Raymond. 1971.
+\newblock {\em Sovereignty at Bay: The Multinational Spread of U.S.
+  Enterprises}.
+\newblock New York:  Basic Books.
+
+\harvarditem{Vernon}{1980}{Vernon:1980}
+Vernon, Raymond. 1980.
+\newblock The Obsolescing Bargain: A Key Factor in Political Risk.  In {\em The
+  International Essays for Business Decision Makers}, ed. Mark~B. Winchester.
+\newblock Houston, T.X.:  Center for International Business.
 
 \harvarditem[Ward, Ahlquist \harvardand\ Rozenas]{Ward, Ahlquist \harvardand\
   Rozenas}{2013}{ward2013gravity}
@@ -190,5 +349,11 @@ Wilson, James~D, Matthew~J Denny, Shankar Bhamidi, Skyler~J Cranmer
   \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Stochastic weighted graphs: Flexible model specification and
   simulation.'' {\em Social Networks} 49:37--47.
+
+\harvarditem{Yeaple}{2003}{Yeaple:2003}
+Yeaple, Stephen~Ross. 2003.
+\newblock ``The Role of Skill Endowments in the Structure of U.S. Outward
+  Foreign Direct Investment.'' {\em The Review of Economics and Statistics}
+  85(3):726--734.
 
 \end{thebibliography}
