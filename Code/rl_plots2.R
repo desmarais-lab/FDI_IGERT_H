@@ -18,7 +18,6 @@ library(network)
 fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
 
-i = 2002
 
 # dataframe to store values
 a <- data.frame(1:26)
@@ -84,9 +83,7 @@ wo <- cbind(wo, confint(fit.01.1)[,2])
 
 a <- a[,-1]
 wo <- wo[,-1]
-#save a
 
-#load a
 
 #name dataframe variables
 vars <- c("Sum", "Sum(1/2)", "Nonzero", "Mutuality", "Transitivity",
@@ -196,7 +193,7 @@ for(i in 1:24){
                    Model = gg_both[,73], Year = gg_both[,74])
   name <- ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model), 
                  legend=TRUE)+
-    geom_pointrange(size= .2)+ geom_hline(yintercept = 0)+
+    geom_pointrange(size= .4, fatten = .3)+ geom_hline(yintercept = 0)+
     scale_x_continuous(breaks= seq(2002,2012,3))+
     scale_color_manual(breaks = c("w/o", "w/"),
                        values=c("#D55E00", "#999999"))+
@@ -210,13 +207,13 @@ for(i in 1:24){
           plot.title = element_text(family="Times"),
           legend.position="bottom") 
   #create plot object
-  ggsave(paste("rl_plots/",plot_n[i], sep=""), name, device="pdf", width=3, height=2)
+  ggsave(paste("rl_plots/",plot_n[i],".pdf", sep=""), name, device="pdf", width=3, height=2)
 }
 
 
 ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model,legend=TRUE), 
        legend=TRUE)+
-  geom_pointrange(size= .3)+ geom_hline(yintercept = 0)+
+  geom_pointrange(size= .4, fatten = .3)+ geom_hline(yintercept = 0)+
   scale_x_continuous(breaks= seq(2002,2012,3))+
   scale_color_manual(breaks = c("Without Network Terms", "With Network Terms"),
                      values=c("#D55E00", "#999999"))+
@@ -230,7 +227,7 @@ ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model,legend=TRU
         plot.title = element_text(family="Times"),
         legend.position="bottom")
 
-ggsave("rl_plots/Legend", device="pdf", width=3, height=2)
+ggsave("rl_plots/Legend.pdf", device="pdf", width=3, height=2)
 
 
 for(i in 1:2){
@@ -240,7 +237,7 @@ for(i in 1:2){
   df <- data.frame(PE = gg_n[,pe], Lower= gg_n[,Lci], Upper = gg_n[,Uci])
   name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper), 
                  legend=TRUE)+
-    geom_pointrange(size= .2, colour= "#D55E00")+ geom_hline(yintercept = 0)+
+    geom_pointrange(size= .4, fatten = .3, colour= "#D55E00")+ geom_hline(yintercept = 0)+
     scale_x_continuous(breaks= seq(2002,2012,3))+
     ggtitle(vars_n[i])+xlab("Year") + ylab("Coefficient")+ 
     theme(axis.text.x  = element_text(family="Times"),
@@ -252,5 +249,5 @@ for(i in 1:2){
           plot.title = element_text(family="Times"),
           legend.position="bottom") 
   #create plot object
-  ggsave(paste("rl_plots/",vars_n[i], sep=""), name, device="pdf", width=3, height=2)
+  ggsave(paste("rl_plots/",vars_n[i],".pdf", sep=""), name, device="pdf", width=3, height=2)
 }
