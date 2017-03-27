@@ -11,6 +11,7 @@
     citecolor=cyan
 }
 \usepackage{graphicx}
+\usepackage{rotating}
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{amssymb}
@@ -268,6 +269,29 @@ Bayesian Inf. Crit. & $-$42,811.080 & $-$40,632.430 \\
 \caption{Covariate Results}
 \end{figure}
 
+
+\begin{table}
+\centering
+\begin{tabular}{c@{\hskip -.4cm}c}
+Sum &
+Sum Sqrt.\\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .75cm]{draft_figures/rl_plots/Sum.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .75cm]{draft_figures/rl_plots/Sum_5.pdf}   \\
+Non-zero &
+Lagged FDI Flow\\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .75cm]{draft_figures/rl_plots/Nonzero.pdf} &  
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .75cm]{draft_figures/rl_plots/LDV.pdf}   \\
+Mass &
+Distance\\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .75cm]{draft_figures/rl_plots/Mass.pdf}    & 
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .75cm]{draft_figures/rl_plots/Distance.pdf}   \\
+Contiguity &
+Common Language\\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .75cm]{draft_figures/rl_plots/Contiguity.pdf}  &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .75cm]{draft_figures/rl_plots/CommonLanguage.pdf}   \\
+\end{tabular}
+\caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Gray coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\end{table}
 
 
 \section{Conclusion}
