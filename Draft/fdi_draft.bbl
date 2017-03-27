@@ -2,7 +2,7 @@
 
 \harvarditem{Aizenman \harvardand\ Noy}{2006}{aizenman2006fdi}
 Aizenman, Joshua \harvardand\ Ilan Noy. 2006.
-\newblock ``FDI and trade?Two-way linkages?'' {\em The Quarterly Review of
+\newblock ``FDI and trade: Two-way linkages?'' {\em The Quarterly Review of
   Economics and Finance} 46(3):317--337.
 
 \harvarditem{Allee \harvardand\ Peinhardt}{2011}{Allee_Peinhardt:2011}
@@ -11,12 +11,8 @@ Allee, Todd \harvardand\ Clint Peinhardt. 2011.
   on Foreign Direct Investment.'' {\em International Organization}
   65(3):401--432.
 
-\harvarditem{Bank}{2012{\em a}}{WB1}
-Bank, The~World. 2012{\em a}.
-\newblock ``World Development Indicators, GDP.''.
-
-\harvarditem{Bank}{2012{\em b}}{WB2}
-Bank, The~World. 2012{\em b}.
+\harvarditem{Bank}{2012}{WB2}
+Bank, The~World. 2012.
 \newblock ``World Development Indicators, GDP Growth Rate.''.
 
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
@@ -126,6 +122,12 @@ D{\"u}r, Andreas, Leonardo Baccini \harvardand\ Manfred Elsig. 2014.
 \newblock ``The design of international trade agreements: Introducing a new
   dataset.'' {\em The Review of International Organizations} 9(3):353--375.
 
+\harvarditem[Feenstra, Inklaar \harvardand\ Timmer]{Feenstra, Inklaar
+  \harvardand\ Timmer}{2015}{feenstra2015next}
+Feenstra, Robert~C, Robert Inklaar \harvardand\ Marcel~P Timmer. 2015.
+\newblock ``The next generation of the Penn World Table.'' {\em The American
+  Economic Review} 105(10):3150--3182.
+
 \harvarditem{Gibler}{2009}{Gibler09}
 Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
@@ -230,7 +232,7 @@ Marshall, Monty~G. 2005.
 
 \harvarditem{Mayer \harvardand\ Zignago}{2011}{mayer2011notes}
 Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
-\newblock ``Notes on CEPII?s distances measures: The GeoDist database.''.
+\newblock ``Notes on CEPII's distances measures: The GeoDist database.''.
 
 \harvarditem{Melitz}{2003}{Melitz:2003}
 Melitz, Marc~J. 2003.
@@ -264,7 +266,7 @@ OECD. 2016.
 
 \harvarditem{Polity}{2012}{polity2012polity}
 Polity, IV. 2012.
-\newblock ``Polity iv project: Political regime characteristics and
+\newblock ``Polity IV project: Political regime characteristics and
   transitions, 1800-2012.'' {\em On-line (http://www. systemicpeace.
   org/polity/polity4. htm)} .
 

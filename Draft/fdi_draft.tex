@@ -13,12 +13,12 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{setspace}
-
 \usepackage{amssymb}
 \usepackage{natbib}
 \usepackage{amsfonts}
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
+\usepackage{subcaption}
 \usepackage{courier}
 
 \newcommand\citeapos[1]{\citeauthor{#1}'s (\citeyear{#1})}
@@ -113,7 +113,7 @@ For the dependent variable we are using bilateral FDI inflows. These are from th
 
 \subsection{Covariates}
 
-We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's GDP and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \citep{mayer2011notes, WB1}. \\
+We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's real GDP \citep{feenstra2015next} and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \citep{mayer2011notes}. \\
 
 The other key economic variable that is included trade in intermediate goods \citep{OECD}. This is constructed according to the UN Broad Economic Category classification definitions that separates goods by end-use category. Intermediate goods include unprocessed and partially processed agricultural goods and industrial goods. Past research has shown that FDI and trade are compliments \citep{aizenman2006fdi} and the advantage of using trade in intermediate goods is that it proxies for production supply chains, which we expect to be strongly positively associated with FDI inflows.\\
 
@@ -235,34 +235,18 @@ Bayesian Inf. Crit. & $-$42,811.080 & $-$40,632.430 \\
 \end{tabular} 
 \end{table} 
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=.75]{draft_figures/rl_plot_wo.pdf}\\
-  \caption{Without Network Terms}
-  \label{fig:1}
-\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=.75]{draft_figures/rl_plot_w.pdf}\\
-  \caption{With Network Terms}
-  \label{fig:1}
-\end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=.75]{draft_figures/shift.pdf}\\
-  \caption{Model Comparison}
-  \label{fig:1}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=.75]{draft_figures/n_terms.pdf}\\
-  \caption{Network Terms}
-  \label{fig:1}
-\end{figure}
-
-
+\section{Results}
+{\centering
+\begin{table}[ht]
+\begin{tabular}{cccc}
+\begin{subfigure}{0.4\textwidth}\centering\includegraphics[width=0.6\columnwidth]{draft_figures/rl_plots/Sum.pdf}\end{subfigure}\hspace{1em}%
+\begin{subfigure}{0.4\textwidth}\centering\includegraphics[width=0.6\columnwidth]{draft_figures/rl_plots/Sum_5.pdf}\end{subfigure}\hspace{1em}%
+\begin{subfigure}{0.4\textwidth}\centering\includegraphics[width=0.6\columnwidth]{draft_figures/rl_plots/Nonzero.pdf}\end{subfigure}\hspace{1em}%
+\begin{subfigure}{0.4\textwidth}\centering\includegraphics[width=0.6\columnwidth]{draft_figures/rl_plots/Distance.pdf}\end{subfigure}\    \end{tabular}\caption{Results}
+\label{tab:mytable}
+\end{table}
+}
 
 
 

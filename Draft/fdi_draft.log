@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  25 MAR 2017 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  26 MAR 2017 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -346,21 +346,39 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count123
 \@thisrulewidth=\dimen141
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen142
+\captionmargin@=\dimen143
+\captionwidth=\dimen144
+\caption@tempdima=\dimen145
+\caption@indent=\dimen146
+\caption@parindent=\dimen147
+\caption@hangindent=\dimen148
+)
+\c@ContinuedFloat=\count124
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+))
+\c@subfigure=\count125
+\c@subtable=\count126
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (./fdi_draft.aux
 
 LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
 
 )
 \openout1 = `fdi_draft.aux'.
@@ -422,7 +440,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count127
 )
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
@@ -435,16 +453,16 @@ LaTeX Info: Redefining \nameref on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen142
+\scratchcounter=\count128
+\scratchdimen=\dimen149
 \scratchbox=\box33
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen143
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen150
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -461,6 +479,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -484,14 +504,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<draft_figures/reciprocity.png, id=278, 497.86pt x 379.4175pt>
+<draft_figures/reciprocity.png, id=282, 497.86pt x 379.4175pt>
 File: draft_figures/reciprocity.png Graphic file (type png)
 
 <use draft_figures/reciprocity.png>
 Package pdftex.def Info: draft_figures/reciprocity.png used on input line 107.
 (pdftex.def)             Requested size: 398.28853pt x 303.53441pt.
 
-<draft_figures/transitivity.png, id=280, 497.86pt x 379.4175pt>
+<draft_figures/transitivity.png, id=284, 497.86pt x 379.4175pt>
 File: draft_figures/transitivity.png Graphic file (type png)
 
 <use draft_figures/transitivity.png>
@@ -499,7 +519,7 @@ Package pdftex.def Info: draft_figures/transitivity.png used on input line 108.
 
 (pdftex.def)             Requested size: 398.28853pt x 303.53441pt.
 
-<draft_figures/assortativity.png, id=281, 497.86pt x 379.4175pt>
+<draft_figures/assortativity.png, id=285, 497.86pt x 379.4175pt>
 File: draft_figures/assortativity.png Graphic file (type png)
 
 <use draft_figures/assortativity.png>
@@ -507,14 +527,14 @@ Package pdftex.def Info: draft_figures/assortativity.png used on input line 109
 .
 (pdftex.def)             Requested size: 398.28853pt x 303.53441pt.
 
-<draft_figures/rho_income.png, id=282, 499.8675pt x 380.42125pt>
+<draft_figures/rho_income.png, id=286, 499.8675pt x 380.42125pt>
 File: draft_figures/rho_income.png Graphic file (type png)
 
 <use draft_figures/rho_income.png>
 Package pdftex.def Info: draft_figures/rho_income.png used on input line 110.
 (pdftex.def)             Requested size: 399.89453pt x 304.3374pt.
 
-<draft_figures/trans_income.png, id=283, 499.8675pt x 380.42125pt>
+<draft_figures/trans_income.png, id=287, 499.8675pt x 380.42125pt>
 File: draft_figures/trans_income.png Graphic file (type png)
 
 <use draft_figures/trans_income.png>
@@ -522,7 +542,7 @@ Package pdftex.def Info: draft_figures/trans_income.png used on input line 111.
 
 (pdftex.def)             Requested size: 399.89453pt x 304.3374pt.
 
-<draft_figures/assort_income.png, id=284, 499.8675pt x 380.42125pt>
+<draft_figures/assort_income.png, id=288, 499.8675pt x 380.42125pt>
 File: draft_figures/assort_income.png Graphic file (type png)
 
 <use draft_figures/assort_income.png>
@@ -552,73 +572,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
 [8] [9]
 
-LaTeX Warning: Float too large for page by 40.08957pt on input line 236.
+LaTeX Warning: Float too large for page by 44.14513pt on input line 236.
 
-<draft_figures/rl_plot_wo.pdf, id=367, 614.295pt x 794.97pt>
-File: draft_figures/rl_plot_wo.pdf Graphic file (type pdf)
+<draft_figures/rl_plots/Sum.pdf, id=372, 216.81pt x 144.54pt>
+File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
 
-<use draft_figures/rl_plot_wo.pdf>
-Package pdftex.def Info: draft_figures/rl_plot_wo.pdf used on input line 240.
-(pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
+<use draft_figures/rl_plots/Sum.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 243.
 
+(pdftex.def)             Requested size: 112.74062pt x 75.16121pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<draft_figures/rl_plots/Sum_5.pdf, id=373, 216.81pt x 144.54pt>
+File: draft_figures/rl_plots/Sum_5.pdf Graphic file (type pdf)
 
-<draft_figures/rl_plot_w.pdf, id=368, 614.295pt x 794.97pt>
-File: draft_figures/rl_plot_w.pdf Graphic file (type pdf)
+<use draft_figures/rl_plots/Sum_5.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Sum_5.pdf used on input line 24
+4.
+(pdftex.def)             Requested size: 112.74062pt x 75.16121pt.
 
-<use draft_figures/rl_plot_w.pdf>
-Package pdftex.def Info: draft_figures/rl_plot_w.pdf used on input line 246.
-(pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
+<draft_figures/rl_plots/Nonzero.pdf, id=374, 216.81pt x 144.54pt>
+File: draft_figures/rl_plots/Nonzero.pdf Graphic file (type pdf)
 
+<use draft_figures/rl_plots/Nonzero.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Nonzero.pdf used on input line 
+245.
+(pdftex.def)             Requested size: 112.74062pt x 75.16121pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<draft_figures/rl_plots/Distance.pdf, id=375, 216.81pt x 144.54pt>
+File: draft_figures/rl_plots/Distance.pdf Graphic file (type pdf)
 
-<draft_figures/shift.pdf, id=369, 614.295pt x 794.97pt>
-File: draft_figures/shift.pdf Graphic file (type pdf)
+<use draft_figures/rl_plots/Distance.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Distance.pdf used on input line
+ 246.
+(pdftex.def)             Requested size: 112.74062pt x 75.16121pt.
 
-<use draft_figures/shift.pdf>
-Package pdftex.def Info: draft_figures/shift.pdf used on input line 253.
-(pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
+Overfull \hbox (323.84158pt too wide) in paragraph at lines 242--246
+[][] 
+ []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<draft_figures/n_terms.pdf, id=370, 614.295pt x 794.97pt>
-File: draft_figures/n_terms.pdf Graphic file (type pdf)
-
-<use draft_figures/n_terms.pdf>
-Package pdftex.def Info: draft_figures/n_terms.pdf used on input line 260.
-(pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11] (./fdi_draft.bbl [12] [13] [14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
- [15] [16 <./draft_figures/rl_plot_wo.pdf>] [17 <./draft_figures/rl_plot_w.pdf>
-] [18 <./draft_figures/shift.pdf>]
-[19 <./draft_figures/n_terms.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
+[10] [11] (./fdi_draft.bbl [12 <./draft_figures/rl_plots/Sum.pdf> <./draft_figu
+res/rl_plots/Sum_5.pdf> <./draft_figures/rl_plots/Nonzero.pdf> <./draft_figures
+/rl_plots/Distance.pdf>] [13] [14])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 263.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 263.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 263.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 263.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
-(rerunfilecheck)             Checksum: 35AD68BA3995809F5328FF89CAF54A2E;882.
+(rerunfilecheck)             Checksum: 1F2C53624ADB0EC663EAFDB6B8FA389F;925.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
  ) 
 Here is how much of TeX's memory you used:
- 7884 strings out of 493089
- 113643 string characters out of 6134841
- 216871 words of memory out of 5000000
- 11134 multiletter control sequences out of 15000+600000
+ 8968 strings out of 493089
+ 133742 string characters out of 6134841
+ 237591 words of memory out of 5000000
+ 12211 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,35p,1624b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,40p,1624b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -647,10 +663,10 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on fdi_draft.pdf (19 pages, 539789 bytes).
+Output written on fdi_draft.pdf (15 pages, 449394 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 475 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
