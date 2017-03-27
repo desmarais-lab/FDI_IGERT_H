@@ -89,7 +89,7 @@ wo <- wo[,-1]
 vars <- c("Sum", "Sum(1/2)", "Nonzero", "Mutuality", "Transitivity",
           "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
           "Common Language", "Defense Treaty", "Non-agg Treaty",
-          "Nuetrality Treat", "Entente Treaty", "PTA Depth",
+          "Nutrality Treat", "Entente Treaty", "PTA Depth",
           "Origin Polity", "Origin TO", "Origin Growth",
           "Origin PV", "Origin GDPpc",
           "Dest. Polity", "Dest. TO", "Dest. Growth",
@@ -98,20 +98,20 @@ vars <- c("Sum", "Sum(1/2)", "Nonzero", "Mutuality", "Transitivity",
 vars_wo <- c("Sum", "Sum(1/2)", "Nonzero", 
              "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
              "Common Language", "Defense Treaty", "Non-agg Treaty",
-             "Nuetrality Treaty", "Entente Treaty", "PTA Depth",
+             "Neutrality Treaty", "Entente Treaty", "PTA Depth",
              "Origin Polity", "Origin TO", "Origin Growth",
              "Origin PV", "Origin GDPpc",
              "Dest. Polity", "Dest. TO", "Dest. Growth",
              "Dest. PV", "Dest. GDPpc")
 
 plot_n <- c("Sum", "Sum_5", "Nonzero", 
-             "LDV", "Mass", "Distance", "Contiguity", "Former Colony",
-             "Common Language", "Defense Treaty", "Non-agg Treaty",
-             "Nuetrality Treaty", "Entente Treaty", "PTA Depth",
-             "Origin Polity", "Origin TO", "Origin Growth",
-             "Origin PV", "Origin GDPpc",
-             "Dest. Polity", "Dest. TO", "Dest. Growth",
-             "Dest. PV", "Dest. GDPpc")
+             "LDV", "Mass", "Distance", "Contiguity", "FormerColony",
+             "CommonLanguage", "DefenseTreaty", "Non-aggTreaty",
+             "NeutralityTreaty", "EntenteTreaty", "PTADepth",
+             "OriginPolity", "OriginTO", "OriginGrowth",
+             "OriginPV", "OriginGDPpc",
+             "DestPolity", "DestTO", "DestGrowth",
+             "DestPV", "DestGDPpc")
 
 vars_n <- c("Mutuality", "Transitivity")
 
@@ -182,7 +182,6 @@ gg_both <- rbind (gg_wo, gg_a)
 # plot the variables
 library(ggplot2)
 library(gridExtra)
-#source("http://peterhaschke.com/Code/multiplot.R")
 
 
 for(i in 1:24){
@@ -191,43 +190,39 @@ for(i in 1:24){
   Uci  <- i*3
   df <- data.frame(PE = gg_both[,pe], Lower= gg_both[,Lci], Upper = gg_both[,Uci],
                    Model = gg_both[,73], Year = gg_both[,74])
-  name <- ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model), 
-                 legend=TRUE)+
-    geom_pointrange(size= .4, fatten = .3)+ geom_hline(yintercept = 0)+
+  name <- ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper,
+                         colour=Model,legend=TRUE, shape=Model), legend=TRUE)+
+    geom_pointrange(size= .5, fatten = 1.25)+ geom_hline(yintercept = 0)+
     scale_x_continuous(breaks= seq(2002,2012,3))+
-    scale_color_manual(breaks = c("w/o", "w/"),
-                       values=c("#D55E00", "#999999"))+
-    ggtitle(vars_wo[i])+xlab("Year") + ylab("Coefficient")+ 
-    theme(axis.text.x  = element_text(family="Times"),
-          axis.title.x  = element_text(family="Times"),
-          axis.text.y  = element_text(family="Times"),
-          axis.title.y  = element_text(family="Times"),
+    scale_color_manual(breaks = c("W/", "W/"),
+                       values=c("#D55E00", "#000000"))+  
+    xlab("Year") + ylab("Coefficient")+ 
+    theme(axis.text  = element_text(family="Times", size=9),
+          axis.title  = element_text(family="Times", size=8),
           legend.text  = element_text(family="Times"),
           legend.title  = element_text(family="Times"),
           plot.title = element_text(family="Times"),
-          legend.position="bottom") 
+          legend.position="none")
   #create plot object
-  ggsave(paste("rl_plots/",plot_n[i],".pdf", sep=""), name, device="pdf", width=3, height=2)
+  ggsave(paste("rl_plots/",plot_n[i],".pdf", sep=""), name, device="pdf", width=2.85, height=2)
 }
 
 
-ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper, colour=Model,legend=TRUE), 
-       legend=TRUE)+
-  geom_pointrange(size= .4, fatten = .3)+ geom_hline(yintercept = 0)+
+ggplot(df, aes(x=Year, y = PE, ymin= Lower, ymax= Upper,
+               colour=Model,legend=TRUE, shape=Model), legend=TRUE)+
+  geom_pointrange(size= .5, fatten = 1.25)+ geom_hline(yintercept = 0)+
   scale_x_continuous(breaks= seq(2002,2012,3))+
   scale_color_manual(breaks = c("Without Network Terms", "With Network Terms"),
-                     values=c("#D55E00", "#999999"))+
+                     values=c("#D55E00", "#000000"))+
   xlab("Year") + ylab("Coefficient")+ 
-  theme(axis.text.x  = element_text(family="Times"),
-        axis.title.x  = element_text(family="Times"),
-        axis.text.y  = element_text(family="Times"),
-        axis.title.y  = element_text(family="Times"),
+  theme(axis.text  = element_text(family="Times", size=9),
+        axis.title  = element_text(family="Times", size=8),
         legend.text  = element_text(family="Times"),
         legend.title  = element_text(family="Times"),
         plot.title = element_text(family="Times"),
         legend.position="bottom")
 
-ggsave("rl_plots/Legend.pdf", device="pdf", width=3, height=2)
+ggsave("rl_plots/Legend.pdf", device="pdf", width=2.85, height=2)
 
 
 for(i in 1:2){
@@ -235,19 +230,18 @@ for(i in 1:2){
   Lci  <- i*3-1
   Uci  <- i*3
   df <- data.frame(PE = gg_n[,pe], Lower= gg_n[,Lci], Upper = gg_n[,Uci])
-  name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper), 
-                 legend=TRUE)+
-    geom_pointrange(size= .4, fatten = .3, colour= "#D55E00")+ geom_hline(yintercept = 0)+
+  name <- ggplot(df, aes(x=m_yr, y = PE, ymin= Lower, ymax= Upper,
+                        legend=TRUE), legend=TRUE)+
+    geom_pointrange(size= .5, fatten = 1.25,color = "#D55E00")+ geom_hline(yintercept = 0)+
     scale_x_continuous(breaks= seq(2002,2012,3))+
-    ggtitle(vars_n[i])+xlab("Year") + ylab("Coefficient")+ 
-    theme(axis.text.x  = element_text(family="Times"),
-          axis.title.x  = element_text(family="Times"),
-          axis.text.y  = element_text(family="Times"),
-          axis.title.y  = element_text(family="Times"),
+    scale_color_manual(breaks = c("W/"))+  
+    xlab("Year") + ylab("Coefficient")+ 
+    theme(axis.text  = element_text(family="Times", size=9),
+          axis.title  = element_text(family="Times", size=8),
           legend.text  = element_text(family="Times"),
           legend.title  = element_text(family="Times"),
           plot.title = element_text(family="Times"),
-          legend.position="bottom") 
+          legend.position="none")
   #create plot object
-  ggsave(paste("rl_plots/",vars_n[i],".pdf", sep=""), name, device="pdf", width=3, height=2)
+  ggsave(paste("rl_plots/",vars_n[i],".pdf", sep=""), name, device="pdf", width=2.85, height=2)
 }

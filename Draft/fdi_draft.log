@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 MAR 2017 05:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  27 MAR 2017 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -394,6 +394,15 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `fig:effectPlots1' multiply defined.
+
+
+LaTeX Warning: Label `fig:effectPlots1' multiply defined.
+
+
+LaTeX Warning: Label `fig:effectPlots1' multiply defined.
+
 )
 \openout1 = `fdi_draft.aux'.
 
@@ -588,288 +597,251 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
 LaTeX Warning: Float too large for page by 44.14513pt on input line 237.
 
-<draft_figures/rl_plots/Sum.pdf, id=368, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Sum.pdf, id=368, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 244.
+Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 248.
 
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/Sum_5.pdf, id=369, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Sum_5.pdf, id=370, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum_5.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum_5.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Sum_5.pdf used on input line 24
-5.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+9.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/Nonzero.pdf, id=370, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Nonzero.pdf, id=372, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Nonzero.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Nonzero.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Nonzero.pdf used on input line 
-246.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+252.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/LDV.pdf, id=371, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/LDV.pdf, id=374, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/LDV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/LDV.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/LDV.pdf used on input line 247.
+Package pdftex.def Info: draft_figures/rl_plots/LDV.pdf used on input line 253.
 
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/Mass.pdf, id=372, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Mass.pdf, id=376, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Mass.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Mass.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Mass.pdf used on input line 248
+Package pdftex.def Info: draft_figures/rl_plots/Mass.pdf used on input line 256
 .
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/Distance.pdf, id=373, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Distance.pdf, id=378, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Distance.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Distance.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Distance.pdf used on input line
- 249.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ 257.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/Contiguity.pdf, id=374, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Contiguity.pdf, id=380, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Contiguity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Contiguity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Contiguity.pdf used on input li
-ne 250.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ne 260.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/CommonLanguage.pdf, id=375, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/CommonLanguage.pdf, id=382, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/CommonLanguage.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/CommonLanguage.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/CommonLanguage.pdf used on inpu
-t line 251.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+t line 261.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/DefenseTreaty.pdf, id=376, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DefenseTreaty.pdf, id=384, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DefenseTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DefenseTreaty.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/DefenseTreaty.pdf used on input
- line 252.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ line 274.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/Non-aggTreaty.pdf, id=377, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/Non-aggTreaty.pdf, id=386, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Non-aggTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Non-aggTreaty.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Non-aggTreaty.pdf used on input
- line 253.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ line 275.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/NuetralityTreaty.pdf, id=378, 216.81pt x 144.54pt>
-File: draft_figures/rl_plots/NuetralityTreaty.pdf Graphic file (type pdf)
+<draft_figures/rl_plots/NeutralityTreaty.pdf, id=388, 205.76875pt x 144.54pt>
+File: draft_figures/rl_plots/NeutralityTreaty.pdf Graphic file (type pdf)
 
-<use draft_figures/rl_plots/NuetralityTreaty.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/NuetralityTreaty.pdf used on in
-put line 254.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+<use draft_figures/rl_plots/NeutralityTreaty.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/NeutralityTreaty.pdf used on in
+put line 278.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/EntenteTreaty.pdf, id=379, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/EntenteTreaty.pdf, id=390, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/EntenteTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/EntenteTreaty.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/EntenteTreaty.pdf used on input
- line 255.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ line 279.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/PTADepth.pdf, id=380, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/PTADepth.pdf, id=392, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/PTADepth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/PTADepth.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/PTADepth.pdf used on input line
- 256.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ 282.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/FormerColony.pdf, id=381, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/FormerColony.pdf, id=394, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/FormerColony.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/FormerColony.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/FormerColony.pdf used on input 
-line 257.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+line 283.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/DestGDPpc.pdf, id=382, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DestGDPpc.pdf, id=396, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestGDPpc.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestGDPpc.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/DestGDPpc.pdf used on input lin
-e 258.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+e 286.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/DestGrowth.pdf, id=383, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DestGrowth.pdf, id=398, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestGrowth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestGrowth.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/DestGrowth.pdf used on input li
-ne 259.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ne 287.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/DestPolity.pdf, id=384, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DestPolity.pdf, id=400, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestPolity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestPolity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/DestPolity.pdf used on input li
-ne 260.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ne 298.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/DestPV.pdf, id=385, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DestPV.pdf, id=402, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestPV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestPV.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/DestPV.pdf used on input line 2
-61.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+99.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/DestTO.pdf, id=386, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/DestTO.pdf, id=404, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestTO.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestTO.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/DestTO.pdf used on input line 2
-62.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+Package pdftex.def Info: draft_figures/rl_plots/DestTO.pdf used on input line 3
+02.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/OriginGDPpc.pdf, id=387, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/OriginGDPpc.pdf, id=406, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginGDPpc.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginGDPpc.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/OriginGDPpc.pdf used on input l
-ine 263.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ine 303.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/OriginGrowth.pdf, id=388, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/OriginGrowth.pdf, id=408, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginGrowth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginGrowth.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/OriginGrowth.pdf used on input 
-line 264.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+line 306.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/OriginPolity.pdf, id=389, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/OriginPolity.pdf, id=410, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginPolity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginPolity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/OriginPolity.pdf used on input 
-line 265.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+line 307.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-<draft_figures/rl_plots/OriginPV.pdf, id=390, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/OriginPV.pdf, id=412, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginPV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginPV.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/OriginPV.pdf used on input line
- 266.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ 310.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/OriginTO.pdf, id=391, 216.81pt x 144.54pt>
+<draft_figures/rl_plots/OriginTO.pdf, id=414, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginTO.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginTO.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/OriginTO.pdf used on input line
- 267.
-(pdftex.def)             Requested size: 130.08699pt x 86.72466pt.
+ 311.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
 
-Overfull \hbox (50.59294pt too wide) in paragraph at lines 243--269
- [][] 
- []
+<draft_figures/rl_plots/Mutuality.pdf, id=416, 205.76875pt x 144.54pt>
+File: draft_figures/rl_plots/Mutuality.pdf Graphic file (type pdf)
 
-File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
-<use draft_figures/rl_plots/Sum.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 278.
+<use draft_figures/rl_plots/Mutuality.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Mutuality.pdf used on input lin
+e 323.
+(pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-(pdftex.def)             Requested size: 258.82092pt x 130.08401pt.
-File: draft_figures/rl_plots/Sum_5.pdf Graphic file (type pdf)
- <use draft_figures/rl_plots/Sum_5.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Sum_5.pdf used on input line 27
-9.
-(pdftex.def)             Requested size: 241.83795pt x 130.08401pt.
-File: draft_figures/rl_plots/Nonzero.pdf Graphic file (type pdf)
+<draft_figures/rl_plots/Transitivity.pdf, id=418, 205.76875pt x 144.54pt>
+File: draft_figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 
-<use draft_figures/rl_plots/Nonzero.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Nonzero.pdf used on input line 
-282.
-(pdftex.def)             Requested size: 258.82092pt x 130.08401pt.
-File: draft_figures/rl_plots/LDV.pdf Graphic file (type pdf)
- <use draft_figures/rl_plots/LDV.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/LDV.pdf used on input line 283.
+<use draft_figures/rl_plots/Transitivity.pdf>
+Package pdftex.def Info: draft_figures/rl_plots/Transitivity.pdf used on input 
+line 324.
+(pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
+ [10] [11] [12 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum
+_5.pdf> <./draft_figures/rl_plots/Nonzero.pdf> <./draft_figures/rl_plots/LDV.pd
+f> <./draft_figures/rl_plots/Mass.pdf> <./draft_figures/rl_plots/Distance.pdf> 
+<./draft_figures/rl_plots/Contiguity.pdf> <./draft_figures/rl_plots/CommonLangu
+age.pdf>] [13 <./draft_figures/rl_plots/DefenseTreaty.pdf> <./draft_figures/rl_
+plots/Non-aggTreaty.pdf> <./draft_figures/rl_plots/NeutralityTreaty.pdf> <./dra
+ft_figures/rl_plots/EntenteTreaty.pdf> <./draft_figures/rl_plots/PTADepth.pdf> 
+<./draft_figures/rl_plots/FormerColony.pdf> <./draft_figures/rl_plots/DestGDPpc
+.pdf> <./draft_figures/rl_plots/DestGrowth.pdf>] [14 <./draft_figures/rl_plots/
+DestPolity.pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots
+/DestTO.pdf> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plo
+ts/OriginGrowth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figur
+es/rl_plots/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>] (./fdi_draft
+.bbl [15 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Tra
+nsitivity.pdf>] [16] [17])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
 
-(pdftex.def)             Requested size: 241.83795pt x 130.08401pt.
-File: draft_figures/rl_plots/Mass.pdf Graphic file (type pdf)
-
-<use draft_figures/rl_plots/Mass.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Mass.pdf used on input line 286
-.
-(pdftex.def)             Requested size: 258.82092pt x 130.08401pt.
-File: draft_figures/rl_plots/Distance.pdf Graphic file (type pdf)
-
-<use draft_figures/rl_plots/Distance.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Distance.pdf used on input line
- 287.
-(pdftex.def)             Requested size: 241.83795pt x 130.08401pt.
-File: draft_figures/rl_plots/Contiguity.pdf Graphic file (type pdf)
-
-<use draft_figures/rl_plots/Contiguity.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/Contiguity.pdf used on input li
-ne 290.
-(pdftex.def)             Requested size: 258.82092pt x 130.08401pt.
-File: draft_figures/rl_plots/CommonLanguage.pdf Graphic file (type pdf)
-
-<use draft_figures/rl_plots/CommonLanguage.pdf>
-Package pdftex.def Info: draft_figures/rl_plots/CommonLanguage.pdf used on inpu
-t line 291.
-(pdftex.def)             Requested size: 241.83795pt x 130.08401pt.
-
-Overfull \hbox (31.52293pt too wide) in paragraph at lines 275--293
- [][] 
- []
-
-[10] [11] [12 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum_
-5.pdf> <./draft_figures/rl_plots/Nonzero.pdf> <./draft_figures/rl_plots/LDV.pdf
-> <./draft_figures/rl_plots/Mass.pdf> <./draft_figures/rl_plots/Distance.pdf> <
-./draft_figures/rl_plots/Contiguity.pdf> <./draft_figures/rl_plots/CommonLangua
-ge.pdf> <./draft_figures/rl_plots/DefenseTreaty.pdf> <./draft_figures/rl_plots/
-Non-aggTreaty.pdf> <./draft_figures/rl_plots/NuetralityTreaty.pdf> <./draft_fig
-ures/rl_plots/EntenteTreaty.pdf> <./draft_figures/rl_plots/PTADepth.pdf> <./dra
-ft_figures/rl_plots/FormerColony.pdf> <./draft_figures/rl_plots/DestGDPpc.pdf> 
-<./draft_figures/rl_plots/DestGrowth.pdf> <./draft_figures/rl_plots/DestPolity.
-pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots/DestTO.pdf
-> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plots/OriginGr
-owth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figures/rl_plots
-/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>] [13] (./fdi_draft.bbl
-[14] [15] [16])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+[18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: 35AD68BA3995809F5328FF89CAF54A2E;882.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 9171 strings out of 493089
- 138692 string characters out of 6134842
- 243392 words of memory out of 5000000
- 12385 multiletter control sequences out of 15000+600000
+ 9182 strings out of 493089
+ 139071 string characters out of 6134841
+ 246390 words of memory out of 5000000
+ 12391 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1624b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1624b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -898,10 +870,10 @@ st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on fdi_draft.pdf (17 pages, 539098 bytes).
+Output written on fdi_draft.pdf (18 pages, 554873 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 578 compressed objects within 6 object streams
- 101 named destinations out of 1000 (max. 500000)
- 303 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
