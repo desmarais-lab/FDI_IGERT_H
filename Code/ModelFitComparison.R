@@ -32,5 +32,10 @@ for(i in 1:length(modelFiles)){
 	BICMat[match(yri,rowLabels),col] <- BIC(fiti[[ls(fiti)]])
 }
 
+pdf("./Draft/draft_figures/BICdiff.pdf",height=4,width=6.5)
+par(las=1)
+barplot(BICMat[,1]-BICMat[,2],ylab="BIC Difference (Ind-Net)",xlab="Year")
+dev.off()
+
 
 
