@@ -1,5 +1,11 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Abrahamowicz \harvardand\ Ciampi}{1990}{abrahamowicz1990optimal}
+Abrahamowicz, M \harvardand\ A Ciampi. 1990.
+\newblock Optimal Fit in Non-Parametric Modelling Via Computationally Intensive
+  Inference.  In {\em Compstat}.
+\newblock Springer pp.~309--314.
+
 \harvarditem{Aizenman \harvardand\ Noy}{2006}{aizenman2006fdi}
 Aizenman, Joshua \harvardand\ Ilan Noy. 2006.
 \newblock ``FDI and trade: Two-way linkages?'' {\em The Quarterly Review of
@@ -276,6 +282,12 @@ Raeymaeckers, Peter \harvardand\ Patrick Kenis. 2016.
   of service networks: A comparative social network analysis.'' {\em
   International Public Management Journal} 19(3):397--426.
 
+\harvarditem{Raftery}{1999}{raftery1999bayes}
+Raftery, Adrian~E. 1999.
+\newblock ``Bayes factors and BIC: Comment on ?A critique of the Bayesian
+  information criterion for model selection?'' {\em Sociological Methods \&
+  Research} 27(3):411--427.
+
 \harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
 Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
 \newblock ``Foreign Direct Investment in Latin America: The Importance of
@@ -322,6 +334,13 @@ Vernon, Raymond. 1980.
 \newblock The Obsolescing Bargain: A Key Factor in Political Risk.  In {\em The
   International Essays for Business Decision Makers}, ed. Mark~B. Winchester.
 \newblock Houston, T.X.:  Center for International Business.
+
+\harvarditem[Waldorp et~al.]{Waldorp, Huizenga, Nehorai, Grasman \harvardand\
+  Molenaar}{2005}{waldorp2005model}
+Waldorp, Lourens~J, Hilde~M Huizenga, Arye Nehorai, Raoul~PPP Grasman
+  \harvardand\ Peter~CM Molenaar. 2005.
+\newblock ``Model selection in spatio-temporal electromagnetic source
+  analysis.'' {\em IEEE transactions on biomedical engineering} 52(3):414--420.
 
 \harvarditem[Ward, Ahlquist \harvardand\ Rozenas]{Ward, Ahlquist \harvardand\
   Rozenas}{2013}{ward2013gravity}

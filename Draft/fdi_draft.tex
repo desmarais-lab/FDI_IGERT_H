@@ -165,7 +165,7 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 
 
-\begin{table}
+\begin{figure}
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Sum &
@@ -186,12 +186,12 @@ Common Language\\
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/CommonLanguage.pdf}   \\
 \end{tabular}
 \caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-\end{table}
+\end{figure}
 
 
 
 
-\begin{table}
+\begin{figure}
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Defense Treaty &
@@ -212,10 +212,10 @@ Destination GDP Growth Rate\\
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/DestGrowth.pdf}   \\
 \end{tabular}
 \caption{\label{fig:effectPlots2} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-\end{table}
+\end{figure}
 
 
-\begin{table}
+\begin{figure}
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Destination Polity &
@@ -236,11 +236,11 @@ Origin Trade Openness\\
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/OriginTO.pdf}   \\
 \end{tabular}
 \caption{\label{fig:effectPlots3} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-\end{table}
+\end{figure}
 
 
 
-\begin{table}
+\begin{figure}
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Reciprocity &
@@ -249,18 +249,19 @@ Transitivity\\
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Transitivity.pdf}   \\
 \end{tabular}
 \caption{\label{fig:effectPlots4} Estimates of Network terms in Poisson ERGMs. Bars span 95\% confidence intervals.}
-\end{table}
-
-\begin{figure}
-\centering
-\includegraphics[scale=.75]{draft_figures/BICdiff.pdf}
-\caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
+
 
 
 \section{Results}
 
-The coefficients estimated in the yearly count ERGMs are depicted in Figures \ref{fig:effectPlots1}--\ref{fig:effectPlots4}. None of the models fitted 
+The coefficients estimated in the yearly count ERGMs are depicted in Figures \ref{fig:effectPlots1}--\ref{fig:effectPlots4}. Before discussing individual effects, we first assess the relative fit of the independence and network models. Figure \ref{fig:bic} presents the difference in Bayesian Information Criterion (BIC) in the between the independence and network models for each year in our analysis. The BIC is more conservative in terms of adding parameters to a model than the common alternative likelihood-based measure of model fit, the Akaike Information Criterion (AIC) \citep{waldorp2005model,abrahamowicz1990optimal,raftery1999bayes}. We see that the BIC in the independence model is higher than that in the network model for each year, which provides robust evidence that the network model provides a better fit to the data than the independence model over the time period that we study. Turning now to the network effects, which are presented in Figure \ref{fig:effectPlots4}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to the two canonical forms of network structure.
+
+\begin{figure}
+\centering
+\includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
+\caption{\label{fig:bic} Difference in BIC between independent and network model.}
+\end{figure}
 
 
 \section{Conclusion}

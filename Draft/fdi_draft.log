@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAR 2017 06:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAR 2017 09:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,13 +796,6 @@ File: draft_figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 Package pdftex.def Info: draft_figures/rl_plots/Transitivity.pdf used on input 
 line 249.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
-
-<draft_figures/BICdiff.pdf, id=416, 469.755pt x 289.08pt>
-File: draft_figures/BICdiff.pdf Graphic file (type pdf)
-
-<use draft_figures/BICdiff.pdf>
-Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 256.
-(pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
  [9] [10 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum_5.pdf
 > <./draft_figures/rl_plots/Nonzero.pdf> <./draft_figures/rl_plots/LDV.pdf> <./
 draft_figures/rl_plots/Mass.pdf> <./draft_figures/rl_plots/Distance.pdf> <./dra
@@ -811,32 +804,38 @@ f>] [11 <./draft_figures/rl_plots/DefenseTreaty.pdf> <./draft_figures/rl_plots/
 Non-aggTreaty.pdf> <./draft_figures/rl_plots/NeutralityTreaty.pdf> <./draft_fig
 ures/rl_plots/EntenteTreaty.pdf> <./draft_figures/rl_plots/PTADepth.pdf> <./dra
 ft_figures/rl_plots/FormerColony.pdf> <./draft_figures/rl_plots/DestGDPpc.pdf> 
-<./draft_figures/rl_plots/DestGrowth.pdf>]
-[12 <./draft_figures/rl_plots/DestPolity.pdf> <./draft_figures/rl_plots/DestPV.
-pdf> <./draft_figures/rl_plots/DestTO.pdf> <./draft_figures/rl_plots/OriginGDPp
-c.pdf> <./draft_figures/rl_plots/OriginGrowth.pdf> <./draft_figures/rl_plots/Or
-iginPolity.pdf> <./draft_figures/rl_plots/OriginPV.pdf> <./draft_figures/rl_plo
-ts/OriginTO.pdf>] [13 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures
-/rl_plots/Transitivity.pdf> <./draft_figures/BICdiff.pdf>] [14]
-(./fdi_draft.bbl [15] [16] [17])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+<./draft_figures/rl_plots/DestGrowth.pdf>] [12 <./draft_figures/rl_plots/DestPo
+lity.pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots/DestT
+O.pdf> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plots/Ori
+ginGrowth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figures/rl_
+plots/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>]
+<draft_figures/BICdiff.pdf, id=621, 469.755pt x 289.08pt>
+File: draft_figures/BICdiff.pdf Graphic file (type pdf)
+
+<use draft_figures/BICdiff.pdf>
+Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 262.
+(pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
+ [13 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
+ivity.pdf> <./draft_figures/BICdiff.pdf>]
+(./fdi_draft.bbl [14] [15] [16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: 019AD8909D6B1DD942DDC563E3ABC578;925.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 9180 strings out of 493089
- 139153 string characters out of 6134842
- 240113 words of memory out of 5000000
- 12393 multiletter control sequences out of 15000+600000
+ 9191 strings out of 493089
+ 139457 string characters out of 6134842
+ 241269 words of memory out of 5000000
+ 12402 multiletter control sequences out of 15000+600000
  17367 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1624b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1624b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -862,10 +861,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on fdi_draft.pdf (18 pages, 529827 bytes).
+Output written on fdi_draft.pdf (17 pages, 531688 bytes).
 PDF statistics:
- 754 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 105 named destinations out of 1000 (max. 500000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 622 compressed objects within 7 object streams
+ 107 named destinations out of 1000 (max. 500000)
  434 words of extra memory for PDF output out of 10000 (max. 10000000)
 
