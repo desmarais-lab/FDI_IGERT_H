@@ -23,6 +23,7 @@
 \usepackage{courier}
 
 \newcommand\citeapos[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\R}{\texttt{R}} % Write R in typewriter font
 
 \begin{document}
 
@@ -39,6 +40,7 @@ bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsy
 
 \end{abstract}
 
+\doublespacing
 \section{Introduction}
 
 Research examining foreign direct investment (FDI) and its relationship with economic and political determinants is expansive. Much of this work is conducted using the gravity model, which was originally developed to predict trade flows. This framework models FDI flows using dyadic data and the product of partner GDPs as mass and some variant of distance as an independent variable. Our work highlights a key weakness of these models that rely on standard panel regression models. There has been a growing body of literature that brings into question the way we estimate models for dyadic data. The primary challenge is that dyadic data is an edge-list and therefore represents a network. Ignoring this unmodeled network structure violates assumptions within a generalized linear model, particularly independence, potentially leading to biased estimates. While there is a growing body of work that has addressed the interdependence problem in dyadic data, especially for trade, FDI has been largely ignored. We address this gap in the literature through the use of network modeling to test previous theories alongside of estimating dependence terms.
@@ -88,47 +90,27 @@ The clustering of direct investment activities can be driven by the diffuse of P
 
 \section{Data and Research Design}
 
-\subsection{The Count ERGM for Modeling FDI Networks}
 
-To model the FDI network, we must use a statistical modeling approach that is capable of representing the dependencies underlying the ties. The literature offers a number of options. These include the latent space family of models, such as those that have been used to model trade networks in political science \citep{ward2007persistent,ward2013gravity}; the generalized exponential random graph model (GERGM), which can be used to model complex network features in networks with continuous-valued edges \citep{desmarais2012statistical,wilson2017stochastic}; and the ERGM for count-valued edges \citep{krivitsky2012exponential}. We select the count-valued ERGM for two reasons. First, if the researcher's objective is to test hypotheses regarding dependent network structure, ERGM family models can accomplish this more precisely than can latent space models \citep{cranmer2016navigating,cranmer2016critique,desmarais2017statistical}. Second, the count ERGM offers a modeling advantage over the GERGM for data such as FDI flows, which are zero for the majority of dyads. That is, the count ERGM is capable of modeling zero inflation in the network. This paper presents, as far as we are aware, the first application in political science of the count ERGM proposed by \cite{krivitsky2012exponential}.
+For the dependent variable we are using bilateral FDI inflows. These are from the United Nations Conference on Trade and Development (UNCTAD) and were first made available in 2014 \citep{UNCTAD:2014}. We use the entire time-period available, which is 2001-2012. Past work that has looked at country-year FDI relationships relied on monadic data. The advantage of using dyadic data is that it not only lets us model network relationships, but the disaggregation allows us to measure changes in FDI inflows related to covariates that are at the dyad level, such as PTAs. Because FDI flows tend to be highly dispersed we use the natural log of the values.
 
-Like other forms of the ERGM, the count ERGM is a statistical model that operates on one or more network adjacency matrices. To specify the count ERGM, the researcher selects two types of network statistics---those that relate tie values to observed covariates (i.e., covariate effects), and those that relate the ties to each other via high order network structure (i.e., network effects). If an ERGM is specified without network effects, it reduces to a dyadic regression model in which ties are assumed to be independent and identically distributed \cite{cranmer2011inferential}. Under \citeapos{krivitsky2012exponential} count ERGM, the probability of the observed $n \times n$ network adjacency matrix $\bm{y}$ is $$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})},$$ where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
-
-
-
-
-
-
-\subsection{FDI inflows}
-
-For the dependent variable we are using bilateral FDI inflows. These are from the United Nations Conference on Trade and Development (UNCTAD) and were first made available in 2014 \citep{UNCTAD:2014}. We use the entire time-period available, which is 2001-2012. Past work that has looked at country-year FDI relationships relied on monadic data. The advantage of using dyadic data is that it not only lets us model network relationships, but the disaggregation allows us to measure changes in FDI inflows related to covariates that are at the dyad level, such as PTAs. Because FDI flows tend to be highly dispersed we use the natural log of the values. 
-
-\subsection{Network Statistics}
-
-\includegraphics[scale=.8]{draft_figures/reciprocity.png}\\
-\includegraphics[scale=.8]{draft_figures/transitivity.png}\\
-\includegraphics[scale=.8]{draft_figures/assortativity.png}\\
-\includegraphics[scale=.8]{draft_figures/rho_income.png}\\
-\includegraphics[scale=.8]{draft_figures/trans_income.png}\\
-\includegraphics[scale=.8]{draft_figures/assort_income.png}
 
 \subsection{Covariates}
 
-We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's real GDP \citep{feenstra2015next} and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \citep{mayer2011notes}. \\
+We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's real GDP \citep{feenstra2015next} and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \citep{mayer2011notes}. 
 
-The other key economic variable that is included trade in intermediate goods \citep{OECD}. This is constructed according to the UN Broad Economic Category classification definitions that separates goods by end-use category. Intermediate goods include unprocessed and partially processed agricultural goods and industrial goods. Past research has shown that FDI and trade are compliments \citep{aizenman2006fdi} and the advantage of using trade in intermediate goods is that it proxies for production supply chains, which we expect to be strongly positively associated with FDI inflows.\\
+The other key economic variable that is included trade in intermediate goods \citep{OECD}. This is constructed according to the UN Broad Economic Category classification definitions that separates goods by end-use category. Intermediate goods include unprocessed and partially processed agricultural goods and industrial goods. Past research has shown that FDI and trade are compliments \citep{aizenman2006fdi} and the advantage of using trade in intermediate goods is that it proxies for production supply chains, which we expect to be strongly positively associated with FDI inflows.
 
-A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health of a country's economy \citep{WB2}.\\
+A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health of a country's economy \citep{WB2}.
 
-We include two categories of international agreement variables. The first is dummy variables for defense agreements \citep{Gibler09}. This includes defense, entente, non-aggression, and neutrality treaties. We expect these variables to positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and a lower risk of expropriation. The second international agreement variable is preferential trade agreement (PTA) depth \citep{dur2014design}. Past work has argued that PTAs represent a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{buthe2014foreign}. However, this study used monadic data and only a count PTAs signed. Our work takes this further since we are using network data and increases in PTA depth and FDI inflows is measured at the dyadic level and the PTA variable we use is built using latent trait analysis with 48 different variables.\\
+We include two categories of international agreement variables. The first is dummy variables for defense agreements \citep{Gibler09}. This includes defense, entente, non-aggression, and neutrality treaties. We expect these variables to positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and a lower risk of expropriation. The second international agreement variable is preferential trade agreement (PTA) depth \citep{dur2014design}. Past work has argued that PTAs represent a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{buthe2014foreign}. However, this study used monadic data and only a count PTAs signed. Our work takes this further since we are using network data and increases in PTA depth and FDI inflows is measured at the dyadic level and the PTA variable we use is built using latent trait analysis with 48 different variables.
 
 There is substantial amount of work that explores the relationship between regime type and FDI inflows. The work is inconclusive, but include controls for it nonetheless using the Polity IV score \citep{polity2012polity}. We also include political violence to proxy for state stability, which expect to be negatively correlated with FDI inflows \citep{marshall2005major}.
 
-\subsection{Covariate Summary Statistics}
+\subsection{Summary Statistics}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
 % Date and time: Mon, Feb 20, 2017 - 22:08:59
-\begin{table}[!htbp] \centering 
+\begin{table}[htp] \centering 
   \caption{} 
   \label{} 
 \begin{tabular}{@{\extracolsep{5pt}}lccccc} 
@@ -150,7 +132,20 @@ Entente Treaty & 189,000 & 0.066 & 0.248 & 0 & 1 \\
 \end{table} 
 
 
-\subsection{Model Specification}
+\includegraphics[scale=.8]{draft_figures/reciprocity.png}\\
+\includegraphics[scale=.8]{draft_figures/transitivity.png}\\
+\includegraphics[scale=.8]{draft_figures/assortativity.png}\\
+
+\subsection{Model and Specification: The Count ERGM}
+
+To model the FDI network, we must use a statistical modeling approach that is capable of representing the dependencies underlying the ties. The literature offers a number of options. These include the latent space family of models, such as those that have been used to model trade networks in political science \citep{ward2007persistent,ward2013gravity}; the generalized exponential random graph model (GERGM), which can be used to model complex network features in networks with continuous-valued edges \citep{desmarais2012statistical,wilson2017stochastic}; and the ERGM for count-valued edges \citep{krivitsky2012exponential}. We select the count-valued ERGM for two reasons. First, if the researcher's objective is to test hypotheses regarding dependent network structure, ERGM family models can accomplish this more precisely than can latent space models \citep{cranmer2016navigating,cranmer2016critique,desmarais2017statistical}. Second, the count ERGM offers a modeling advantage over the GERGM for data such as FDI flows, which are zero for the majority of dyads. That is, the count ERGM is capable of modeling zero inflation in the network. This paper presents, as far as we are aware, the first application in political science of the count ERGM proposed by \cite{krivitsky2012exponential}.
+
+Like other forms of the ERGM, the count ERGM is a statistical model that operates on one or more network adjacency matrices. To specify the count ERGM, the researcher selects two types of network statistics---those that relate tie values to observed covariates (i.e., covariate effects), and those that relate the ties to each other via high order network structure (i.e., network effects). If an ERGM is specified without network effects, it reduces to a dyadic regression model in which ties are assumed to be independent and identically distributed \cite{cranmer2011inferential}. Under \citeapos{krivitsky2012exponential} count ERGM, the probability of the observed $n \times n$ network adjacency matrix $\bm{y}$ is $$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})},$$ where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
+
+
+\subsubsection{Specification}
+
+
 The count ERGM is extremely flexible in that there are very few constraints on the generative features that can be incorporated into the model through $\bm{g}( \bm{y} )$. In the models we specify, we use statistics that model the shape of the individual edge distributions (i.e., the shapes of directed dyadic FDI flows), model the dependencies we have described above, and account for the effects of exogenous covariates. The statistics we use to account for the individual edge distribution include, $$\text{Sum}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j},$$ which models the average edge value $$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2},$$ which accounts for dispersion in the edge distribution, and
 $$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0),$$ which models the prevalence of zeros in dyadic FDI flows. We include two statistics to model the dependencies that correspond to our hypotheses. First,
 $$ \text{Reciprocity}: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i}),$$ in which we add up the lowest edge value within each dyad. If edges are reciprocated, this statistic will increase due to the co-occurrence of large edge values within the same dyad. Second, 
@@ -161,11 +156,12 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
+\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}.
 
 
 
 
-\begin{figure}
+\begin{figure}[htp] 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Sum &
@@ -191,7 +187,7 @@ Common Language\\
 
 
 
-\begin{figure}
+\begin{figure}[htp] 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Defense Treaty &
@@ -215,7 +211,7 @@ Destination GDP Growth Rate\\
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[htp] 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Destination Polity &
@@ -240,7 +236,7 @@ Origin Trade Openness\\
 
 
 
-\begin{figure}
+\begin{figure}[htp] 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
 Reciprocity &
@@ -257,19 +253,25 @@ Transitivity\\
 
 The coefficients estimated in the yearly count ERGMs are depicted in Figures \ref{fig:effectPlots1}--\ref{fig:effectPlots4}. Before discussing individual effects, we first assess the relative fit of the independence and network models. Figure \ref{fig:bic} presents the difference in Bayesian Information Criterion (BIC) in the between the independence and network models for each year in our analysis. The BIC is more conservative in terms of adding parameters to a model than the common alternative likelihood-based measure of model fit, the Akaike Information Criterion (AIC) \citep{waldorp2005model,abrahamowicz1990optimal,raftery1999bayes}. We see that the BIC in the independence model is higher than that in the network model for each year, which provides robust evidence that the network model provides a better fit to the data than the independence model over the time period that we study. Turning now to the network effects, which are presented in Figure \ref{fig:effectPlots4}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure.
 
-\begin{figure}
+We noted above that omitting dependent network structure, a condition that characterizes previous research on FDI, can result in biased estimates and improper standard errors. For several effects that we include in our models, the results are substantively changed by adding the network parameters. In the network model, we find the following effects to be lower in magnitude, statistically significant in fewer years, or both: Gravity model mass, contiguity, PTA depth, destination polity, destination trade openness, origin trade openness, origin GDP per capita, origin polity, and origin trade openness. For each of these effects, our results indicate that omitting the network dependencies lead to either an overestimate of the effect of the respective variable, or worse, a Type 2 inferential error in which the null hypothesis of no effect is incorrectly rejected. This finding shows that, even if a researcher is not theoretically interested in network dependencies, (s)he should still incorporate them into an empirical model in order to avoid misspecification bias. 
+
+\begin{figure}[htp] 
 \centering
 \includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
 \caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
 
-We noted above that omitting dependent network structure, a condition that characterizes previous research on FDI, can result in biased estimates and improper standard errors. For several effects that we include in our models, the results are substantively changed by adding the network parameters. In the network model, we find the following effects to be lower in magnitude, statistically significant in fewer years, or both: Gravity model mass, contiguity, PTA depth, destination polity, destination trade openness, origin trade openness, origin GDP per capita, origin polity, and origin trade openness. For each of these effects, our results indicate that omitting the network dependencies lead to either an overestimate of the effect of the respective variable, or worse, a Type 2 inferential error in which the null hypothesis of no effect is incorrectly rejected. This finding shows that, even if a researcher is not theoretically interested in network dependencies, (s)he should still incorporate them into an empirical model in order to avoid misspecification bias. 
-
 
 \section{Conclusion}
+% paragraph on substantive finding
+
+FDI flows represent ties between states that arise through both a complex underlying network of inter and even intra-firm relations, and legal agreements between states. The relational backdrop through which FDI operates leads to predictable network structure in the patterns of ties formed through FDI. We present a network theory of FDI that includes reciprocity and transitivity as the core structural dependencies. The results of our statistical models confirm that these dependencies exist---a result that holds over time, and while adjusting for other covariates known to relate to FDI. This is, to our knowledge, a novel finding in the study of FDI. Our result bears important real-world implications, as network dependencies will lead to the effects of policies relevant to FDI to ripple through the network according to these dependencies.
+
+% paragraph on methodological contribution
+In addition to our substantive findings, we offer a methodological contribution to the literature on FDI. We demonstrate how the count ERGM can be used to model the effects of both covariates and network dependencies on FDI flows. We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks. Our theory, specification, and finding of network-wide reciprocity and transitivity represent just the start in a broader scholarly dialogue on the network science of FDI flows.
 
 
-\newpage
+%\newpage
 \bibliographystyle{apsr}
 \bibliography{fdi_reference}
 

@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-You've used 67 entries,
+You've used 70 entries,
             2874 wiz_defined-function locations,
-            1039 strings with 15327 characters,
-and the built_in function-call counts, 249185 in all, are:
-= -- 40566
-> -- 2835
+            1056 strings with 15971 characters,
+and the built_in function-call counts, 265225 in all, are:
+= -- 43268
+> -- 2992
 < -- 0
-+ -- 18809
-- -- 1026
-* -- 21013
-:= -- 50471
-add.period$ -- 273
-call.type$ -- 67
-change.case$ -- 871
-chr.to.int$ -- 66
-cite$ -- 67
-duplicate$ -- 1026
-empty$ -- 2260
-format.name$ -- 1107
-if$ -- 44725
++ -- 20109
+- -- 1082
+* -- 22404
+:= -- 53638
+add.period$ -- 287
+call.type$ -- 70
+change.case$ -- 910
+chr.to.int$ -- 69
+cite$ -- 70
+duplicate$ -- 1065
+empty$ -- 2329
+format.name$ -- 1170
+if$ -- 47601
 int.to.chr$ -- 6
 int.to.str$ -- 0
 missing$ -- 75
-newline$ -- 288
-num.names$ -- 753
-pop$ -- 294
+newline$ -- 308
+num.names$ -- 784
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 1005
+purify$ -- 1050
 quote$ -- 0
-skip$ -- 855
+skip$ -- 880
 stack$ -- 0
-substring$ -- 56925
-swap$ -- 138
-text.length$ -- 938
+substring$ -- 60779
+swap$ -- 141
+text.length$ -- 980
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
+type$ -- 256
 warning$ -- 0
-while$ -- 1549
+while$ -- 1612
 width$ -- 0
-write$ -- 932
+write$ -- 984

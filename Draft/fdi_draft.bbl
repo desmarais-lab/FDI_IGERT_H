@@ -139,6 +139,16 @@ Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
 \newblock CQ Press.
 
+\harvarditem[Handcock et~al.]{Handcock, Hunter, Butts, Goodreau, Krivitsky
+  \harvardand\ Morris}{2017}{ergm}
+Handcock, Mark~S., David~R. Hunter, Carter~T. Butts, Steven~M. Goodreau,
+  Pavel~N. Krivitsky \harvardand\ Martina Morris. 2017.
+\newblock {\em ergm: Fit, Simulate and Diagnose Exponential-Family Models for
+  Networks}.
+\newblock The Statnet Project (\url{http://www.statnet.org}).
+\newblock R package version 3.6.1.
+\newline\harvardurl{https://CRAN.R-project.org/package=ergm}
+
 \harvarditem{Helpman}{1984}{Helpman:1984}
 Helpman, Elhanan. 1984.
 \newblock ``A Simple Theory of International Trade with Multinational
@@ -214,6 +224,14 @@ Krivitsky, Pavel~N. 2012.
 \newblock ``Exponential-family random graph models for valued networks.'' {\em
   Electronic Journal of Statistics} 6:1100.
 
+\harvarditem{Krivitsky}{2016}{ergmcount}
+Krivitsky, Pavel~N. 2016.
+\newblock {\em ergm.count: Fit, Simulate and Diagnose Exponential-Family Models
+  for Networks with Count Edges}.
+\newblock The Statnet Project (\url{http://www.statnet.org}).
+\newblock R package version 3.2.2.
+\newline\harvardurl{http://CRAN.R-project.org/package=ergm.count}
+
 \harvarditem{Lee \harvardand\ Bai}{2013}{lee2013network}
 Lee, Taedong \harvardand\ Byoung-Inn Bai. 2013.
 \newblock ``Network Analysis of Free Trade Agreements: Homophily and
@@ -275,6 +293,12 @@ Polity, IV. 2012.
 \newblock ``Polity IV project: Political regime characteristics and
   transitions, 1800-2012.'' {\em On-line (http://www. systemicpeace.
   org/polity/polity4. htm)} .
+
+\harvarditem{{R Core Team}}{2015}{r}
+{R Core Team}. 2015.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock Vienna, Austria:  R Foundation for Statistical Computing.
+\newline\harvardurl{https://www.R-project.org/}
 
 \harvarditem{Raeymaeckers \harvardand\ Kenis}{2016}{raeymaeckers2016influence}
 Raeymaeckers, Peter \harvardand\ Patrick Kenis. 2016.
