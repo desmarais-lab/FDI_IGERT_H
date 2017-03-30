@@ -7,9 +7,6 @@
 #=============================================================#
 
 
-# clear workspace
-rm(list=ls())
-
 set.seed(19)
 
 # libraries
@@ -19,7 +16,7 @@ library(igraph)
 
 
 #load in data
-fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
+fdi <- read.csv("./Code/sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
 
 # Important to note that the igraph function below is expecting an edgelist, which means it will record an edge between every pair of vertices if given a dyadic dataset

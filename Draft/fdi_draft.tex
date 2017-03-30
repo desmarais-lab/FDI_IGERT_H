@@ -94,41 +94,44 @@ The clustering of direct investment activities can be driven by the diffuse of P
 For the dependent variable we are using bilateral FDI inflows. These are from the United Nations Conference on Trade and Development (UNCTAD) and were first made available in 2014 \citep{UNCTAD:2014}. We use the entire time-period available, which is 2001-2012. Past work that has looked at country-year FDI relationships relied on monadic data. The advantage of using dyadic data is that it not only lets us model network relationships, but the disaggregation allows us to measure changes in FDI inflows related to covariates that are at the dyad level, such as PTAs. Because FDI flows tend to be highly dispersed we use the natural log of the values.
 
 
+
+
 \subsection{Covariates}
 
 We control for both economic and political variables. Following the literature's standard for predicting FDI inflows we include standard gravity variables. This includes the log product of the dyad's real GDP \citep{feenstra2015next} and logged euclidean distance. Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI \citep{mayer2011notes}. 
 
 The other key economic variable that is included trade in intermediate goods \citep{OECD}. This is constructed according to the UN Broad Economic Category classification definitions that separates goods by end-use category. Intermediate goods include unprocessed and partially processed agricultural goods and industrial goods. Past research has shown that FDI and trade are compliments \citep{aizenman2006fdi} and the advantage of using trade in intermediate goods is that it proxies for production supply chains, which we expect to be strongly positively associated with FDI inflows.
 
-A more minor economic variable included is the growth rate of the economy, which has been used in past studies to stand in for the general health of a country's economy \citep{WB2}.
+A more minor economic variable included is the GDP growth rate, which has been used in past studies to stand in for the general health of a country's economy \citep{WB2}. We expect that a high GDP growth rate will be associated with more FDI sent and received.
 
 We include two categories of international agreement variables. The first is dummy variables for defense agreements \citep{Gibler09}. This includes defense, entente, non-aggression, and neutrality treaties. We expect these variables to positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and a lower risk of expropriation. The second international agreement variable is preferential trade agreement (PTA) depth \citep{dur2014design}. Past work has argued that PTAs represent a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{buthe2014foreign}. However, this study used monadic data and only a count PTAs signed. Our work takes this further since we are using network data and increases in PTA depth and FDI inflows is measured at the dyadic level and the PTA variable we use is built using latent trait analysis with 48 different variables.
 
 There is substantial amount of work that explores the relationship between regime type and FDI inflows. The work is inconclusive, but include controls for it nonetheless using the Polity IV score \citep{polity2012polity}. We also include political violence to proxy for state stability, which expect to be negatively correlated with FDI inflows \citep{marshall2005major}.
 
-\subsection{Summary Statistics}
+Table \ref{tab:describe_binary} provides means for the dichotomous dyadic variables used in our models....
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
 % Date and time: Mon, Feb 20, 2017 - 22:08:59
 \begin{table}[htp] \centering 
   \caption{} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
-Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+Statistic &  \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
 \hline \\[-1.8ex] 
-Contiguity & 189,000 & 0.024 & 0.152 & 0 & 1 \\ 
-Common Official Language & 189,000 & 0.112 & 0.315 & 0 & 1 \\ 
-Common Language and Ethnicity & 189,000 & 0.115 & 0.318 & 0 & 1 \\ 
-Former Colonial Relationship & 189,000 & 0.015 & 0.121 & 0 & 1 \\ 
-Common Colonizer & 189,000 & 0.062 & 0.241 & 0 & 1 \\ 
-Defense Treaty & 189,000 & 0.075 & 0.264 & 0 & 1 \\ 
-Non-aggression Treaty & 189,000 & 0.064 & 0.245 & 0 & 1 \\ 
-Neutrality Treaty & 189,000 & 0.004 & 0.063 & 0 & 1 \\ 
-Entente Treaty & 189,000 & 0.066 & 0.248 & 0 & 1 \\ 
+Contiguity &  0.024 & 0.152 & 0 & 1 \\ 
+Common Official Language &  0.112 & 0.315 & 0 & 1 \\ 
+Common Language and Ethnicity &  0.115 & 0.318 & 0 & 1 \\ 
+Former Colonial Relationship &  0.015 & 0.121 & 0 & 1 \\ 
+Common Colonizer &  0.062 & 0.241 & 0 & 1 \\ 
+Defense Treaty &  0.075 & 0.264 & 0 & 1 \\ 
+Non-aggression Treaty &  0.064 & 0.245 & 0 & 1 \\ 
+Neutrality Treaty &  0.004 & 0.063 & 0 & 1 \\ 
+Entente Treaty &  0.066 & 0.248 & 0 & 1 \\ 
 \hline \\[-1.8ex] 
 \end{tabular} 
+\caption{\label{tab:describe_binary} Descriptive statistics for dichotomous dyadic covariates. Number of observations across all years is 189,000.}
 \end{table} 
 
 
@@ -164,16 +167,16 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 \begin{figure}[htp] 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
-Sum &
-Sum Sqrt.\\
+Sum of Edges&
+Sum Sqrt. of Edges\\
 \includegraphics[height=.22\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}   \\
-Non-zero &
+Number of Non-Zero Edges &
 Lagged FDI Flow\\
 \includegraphics[height=.22\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf} &  
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf}   \\
-Mass &
-Distance\\
+Log-GDP Product &
+Log-Geographic Distance\\
 \includegraphics[height=.22\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Mass.pdf}    & 
 \includegraphics[height=.22\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   \\
 Contiguity &
