@@ -17,9 +17,11 @@ Allee, Todd \harvardand\ Clint Peinhardt. 2011.
   on Foreign Direct Investment.'' {\em International Organization}
   65(3):401--432.
 
-\harvarditem{Bank}{2012}{WB2}
-Bank, The~World. 2012.
-\newblock ``World Development Indicators, GDP Growth Rate.''.
+\harvarditem{Bank}{2016}{WB}
+Bank, ?World. 2016.
+\newblock ``World Development Indicators 2016.''
+  https://openknowledge.worldbank.org/handle/10986/23969 License: CC BY 3.0
+  IGO.
 
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
@@ -189,6 +191,11 @@ Jensen, Nathan~M. 2006.
   Economy of Foreign Direct Investment}.
 \newblock Princeton, N.J.:  Princeton University Press.
 
+\harvarditem{Johns \harvardand\ Wellhausen}{2016}{johns2016under}
+Johns, Leslie \harvardand\ Rachel~L Wellhausen. 2016.
+\newblock ``Under one roof: Supply chains and the protection of foreign
+  investment.'' {\em American Political Science Review} 110(01):31--51.
+
 \harvarditem{Kerner}{2009}{Kerner:2009}
 Kerner, Andrew. 2009.
 \newblock ``Why Should I Believe You? The Costs and Consequences of Bilateral
@@ -282,11 +289,6 @@ Milner, Helen~V. 1988.
 Noorbakhsh, Farhad, Alberto Paloni \harvardand\ Ali Youssef. 2001.
 \newblock ``Human Capital and FDI Inflows to Developing Countries: New
   Empirical Evidence.'' {\em World Development} 29(9):1593--1610.
-
-\harvarditem{OECD}{2016}{OECD}
-OECD. 2016.
-\newblock ``Bilateral Trade in Goods by Industry and End-use (BTDIxE), ISIC
-  Rev.4.''.
 
 \harvarditem{Polity}{2012}{polity2012polity}
 Polity, IV. 2012.

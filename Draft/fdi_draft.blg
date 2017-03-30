@@ -5,42 +5,42 @@ The style file: apsr.bst
 Database file #1: fdi_reference.bib
 You've used 70 entries,
             2874 wiz_defined-function locations,
-            1056 strings with 15971 characters,
-and the built_in function-call counts, 265225 in all, are:
-= -- 43268
-> -- 2992
+            1059 strings with 16085 characters,
+and the built_in function-call counts, 268248 in all, are:
+= -- 43792
+> -- 3027
 < -- 0
-+ -- 20109
-- -- 1082
-* -- 22404
-:= -- 53638
++ -- 20372
+- -- 1093
+* -- 22691
+:= -- 54195
 add.period$ -- 287
 call.type$ -- 70
 change.case$ -- 910
 chr.to.int$ -- 69
 cite$ -- 70
-duplicate$ -- 1065
-empty$ -- 2329
-format.name$ -- 1170
-if$ -- 47601
+duplicate$ -- 1069
+empty$ -- 2337
+format.name$ -- 1179
+if$ -- 48153
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 75
+missing$ -- 76
 newline$ -- 308
-num.names$ -- 784
-pop$ -- 305
+num.names$ -- 786
+pop$ -- 298
 preamble$ -- 1
 purify$ -- 1050
 quote$ -- 0
-skip$ -- 880
+skip$ -- 882
 stack$ -- 0
-substring$ -- 60779
-swap$ -- 141
+substring$ -- 61547
+swap$ -- 142
 text.length$ -- 980
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 256
 warning$ -- 0
-while$ -- 1612
+while$ -- 1616
 width$ -- 0
-write$ -- 984
+write$ -- 986
