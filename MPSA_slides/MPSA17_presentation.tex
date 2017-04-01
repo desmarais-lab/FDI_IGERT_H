@@ -216,9 +216,8 @@
 \end{frame}
 
 
-\begin{frame}{ERGM Count Model}
+\begin{frame}{ERGM Count Model: Base}
 
-\small{
 
 $$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})} $$
 
@@ -227,6 +226,18 @@ $$\text{Sum}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$$
 $$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$$
 
 $$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
+
+%where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $\bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
+
+%average edge value and dispersion in the edge distribution
+
+%which models the prevalence of zeros in dyadic FDI flows. 
+
+
+
+\end{frame}
+
+\begin{frame}{ERGM Count Model: Variables}
 
 $$ \text{Reciprocity}: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$$
 
@@ -238,13 +249,6 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
-}
-
-%where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $\bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
-
-%average edge value and dispersion in the edge distribution
-
-%which models the prevalence of zeros in dyadic FDI flows. 
 
 %in which we add up the lowest edge value within each dyad. If edges are reciprocated, this statistic will increase due to the co-occurrence of large edge values within the same dyad. 
 
@@ -271,7 +275,23 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 \begin{frame}{Count Model and Network Dependencies}
 
-% Network measurements and what they mean
+\centering
+\begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
+Sum & Sum Sqrt.  & Non-Zero  \\
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum.pdf}    &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum_5.pdf}   &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Nonzero.pdf}\\
+
+
+Lagged DV& Mutuality & Transitivity \\ 
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/LDV.pdf} 
+ &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Mutuality.pdf}   &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Transitivity.pdf} \\  
+\end{tabular}
+
+
+
 
 \end{frame}
 
@@ -279,12 +299,27 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 \begin{frame}{Covariate Results}
 
-% Model Specfication
+
 
 \end{frame}
 
 
 \begin{frame}{Conclusion and Future Research}
+
+\begin{itemize}
+\item{Conclusion}
+\begin{itemize}
+\item{Network terms are substantively important}
+\item{Network terms need to be modeled instead of being assumed away}
+\end{itemize}
+\item{Future Steps}
+\begin{itemize}
+\item{Condition reciprocity on development}
+\item{Assortativity}
+\item{TERGM}
+\end{itemize}
+\end{itemize}
+
 
 \end{frame}
 
