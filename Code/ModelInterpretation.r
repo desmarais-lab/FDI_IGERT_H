@@ -63,15 +63,6 @@ for(i in vars){
 }
 
 
-
-
-
-
-pdf("./Draft/draft_figures/BICdiff.pdf",height=4,width=6.5)
-par(las=1)
-barplot(BICMat[,1]-BICMat[,2],ylab="BIC Difference (Ind-Net)",xlab="Year")
-dev.off()
-
 fdi02 <- subset(fdi, fdi$Year ==2012)
 
 range01 <- function(x){(x-min(x))/(max(x)-min(x))}
@@ -83,11 +74,6 @@ for(i in vars){
     fdi02[,i] <- range01(fdi02[,i])
     
 }
-
-
-###
-
-fdi02Base <- fdi02
 
 #create vertex dataset
 vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GDPg+
@@ -123,21 +109,88 @@ set.vertex.attribute(fdi_net, attrname="GDPpc", value=vertex_attr$GDPpc)
 set.vertex.attribute(fdi_net, attrname="GDP.g", value=vertex_attr$GDP.g)
 set.vertex.attribute(fdi_net, attrname="PV", value=vertex_attr$PV)
 
-# fixallbut(free.dyads)
+simNum <- 1000
 
-# Find an FDI value that is 6
-focalEdge <- which(fdi02$Value_ln==6)[1]
-fdi02Base[focalEdge,]
+set.seed(5)
+system.time(simNets <- simulate(fit.01.2,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
+save(list="simNets",file="./Code/simulatedNetworks.RData")
 
-FreeDyads <- fdi_net$mel[focalEdge]
+nodes <- network.size(fdi_net)
 
-simNets <- simulate(fit.01.2,nsim=10,constraints=~fixallbut(as.edgelist(t(c(3,30)),n=length(network.vertex.names(fdi_net)))))
+amatArray <- array(0,dim=c(nodes,nodes,simNum))
+
+for(i in 1:simNum){
+    amat0 <- matrix(0,nodes,nodes)
+    indexMatrix <- cbind(unlist(do.call('rbind',simNets[[i]]$mel)[,c(2)]),unlist(do.call('rbind',simNets[[i]]$mel)[,c(1)]))
+    amat0[indexMatrix] <- get.edge.attribute(simNets[[i]],"Value_ln")
+    amatArray[,,i] <- amat0
+}
+
+set.vertex.attribute(fdi_net,"nodeid",1:nodes)
+
+
+MPLEformula <- fdi_net ~ edgecov(fdi_net,
+"lag_stock") + edgecov(fdi_net, "mass") +
+edgecov(fdi_net, "distance") + edgecov(fdi_net,
+"contig") + edgecov(fdi_net, "colony") +
+edgecov(fdi_net, "lang_ethno") + edgecov(fdi_net,
+"defence_t") + edgecov(fdi_net, "nonagg_t") + edgecov(fdi_net, "neut_t") +
+edgecov(fdi_net, "entente_t") + edgecov(fdi_net,
+"depth") + nodeocov("Polity") +
+nodeocov("TradeOpen") + nodeocov("GDP.g") +
+nodeocov("PV") + nodeocov("GDPpc") +
+nodeicov("Polity") + nodeicov("TradeOpen") + nodeicov("GDP.g") + nodeicov("PV") + nodeicov("GDPpc") + nodeocov("nodeid")+nodeicov("nodeid")
+
+MPLEData <- ergmMPLE(MPLEformula)
+
+amatMean <- matrix(0,nodes,nodes)
+
+for(i in 1:nodes){
+    for(j in 1:nodes){
+        amatMean[i,j] <- mean(amatArray[i,j,])
+    }
+}
+
+covariates <- MPLEData$predictor
+
+nodeInd <- covariates[,c(ncol(covariates)-1,ncol(covariates))]
+predictors <- covariates[,-c(ncol(covariates)-1,ncol(covariates))]
+covariateCoef <- coef(fit.01.2)[-c(1:5)]
+
+predictorMat <- matrix(0,nodes,nodes)
+linearPredictor <- predictors%*%cbind(covariateCoef)
+predictorMat[nodeInd] <- linearPredictor
+
+diag(amatMean) <- NA
+
+meanPredict <- lm(c(amatMean)~c(predictorMat))
+
+# Covariate-predicted Adjacency matrix
+predictedAmat <- coef(meanPredict)[1]+coef(meanPredict)[2]*predictorMat
+
+deviationArray <- array(0,dim=c(nodes,nodes,simNum))
+transposedArray <- array(0,dim=c(nodes,nodes,simNum))
+
+for(i in 1:simNum){
+    deviationMat <- amatArray[,,i]
+    diag(deviationMat) <- NA
+    deviationMat <- deviationMat - predictedAmat
+    deviationArray[,,i] <- deviationMat
+    transposedArray[,,i] <- t(amatArray[,,i])
+}
+
+boxplot(c(deviationArray)~c(transposedArray))
+
+
+pdf("./Draft/draft_figures/mutualBoxplot.pdf",height=4,width=8,pointsize=11)
+par(las=1)
+boxplot(c(deviationArray)~c(transposedArray),xlab="Mutual Edge Value",ylab="Residual",subset=which(c(transposedArray) <= 20),outline=F)
+dev.off()
 
 
 
 
-
-
+### Difference from the covariate-predicted mean and the edge value
 
 
 
