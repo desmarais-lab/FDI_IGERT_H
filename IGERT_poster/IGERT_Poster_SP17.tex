@@ -20,6 +20,7 @@
 
 \documentclass[landscape,a0paper,fontscale=0.285]{baposter} % Adjust the font scale/size here
 \usepackage{url}
+\usepackage{bm}
 \usepackage{graphicx} % Required for including images
 \graphicspath{{figures/}} % Directory in which figures are stored
 
@@ -74,11 +75,13 @@ linewidth=2pt % Width of the border lines around content boxes
 {\includegraphics[height=4em]{PS_HOR_RGB_2C.png}} % First university/lab logo on the left
 {\bf\textsc{The Network of Foreign Direct Investment Flows}\vspace{0.5em}} % Poster title
 {\textsc{J. Schoeneman, B. Zhu, \& B. Desmarais\\
-  Pennsylvania State University}} % Author names and institution
-{\includegraphics[height=4em]{bdss.png}} % Second university/lab logo on the right
-
+Pennsylvania State University}} % Author names and institution
+{
+{\includegraphics[height=4em]{nsf.png}} % Second nsf logo on the right
+{\includegraphics[height=4em]{bdss.png}}
+}
 %----------------------------------------------------------------------------------------
-%	OBJECTIVES
+%	introduction
 %----------------------------------------------------------------------------------------
 
 \headerbox{Introduction}{name=objectives,column=0,row=0}{
@@ -89,11 +92,12 @@ The political economy of FDI literature has established several theoretical clai
 }
 
 %----------------------------------------------------------------------------------------
-%	INTRODUCTION
+%	Theory
 %----------------------------------------------------------------------------------------
 
 \headerbox{Theory}{name=introduction,column=1,row=0,bottomaligned=objectives}{
-
+MNC expansion via FDI often face opposition from host countries due to concerns over national security and protection for local firms that do not want to compete with foreign firms. To overcome this political opposition, countries enter into reciprocal agreements. Therefore we expect one structural dependency to be mutuality, which we measure as the increase of FDI given the minimum value in the dyad.\\
+The second structural dependency we model is transitivity, or the likelihood that country A, will send FDI to country C, given that country A sends FDI to country B and country B send FDI to country C. We expect this clustering given the fragmented global supply chains for production and the vertical FDI that follows. 
 
 }
 
@@ -101,30 +105,25 @@ The political economy of FDI literature has established several theoretical clai
 %	RESULTS
 %----------------------------------------------------------------------------------------
 
-\headerbox{Results}{name=results,column=2,span=2,row=0}{
+\headerbox{Key Results}{name=results,column=2,span=2,row=0}{
 
-\begin{multicols}{2}
-\vspace{1em}
-\begin{center}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{Figure caption}
-\end{center}
-
-
-\end{multicols}
-
-%------------------------------------------------
-
-\begin{multicols}{2}
-\vspace{1em}
+\centering
+\begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
+Log-GDP Product & Distance  & PTA Depth  \\
+\includegraphics[height=.14\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{figures/rl_plots/mass.pdf}    &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/distance.pdf}   &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/PTADepth.pdf}\\
 
 
-\begin{center}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{Figure caption}
-\end{center}
+Destination Polity & Mutuality & Transitivity \\ 
+\includegraphics[height=.14\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{figures/rl_plots/DestPolity.pdf} 
+ &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/Mutuality.pdf}   &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/Transitivity.pdf} \\  
+\end{tabular}
+\vfill
+Bars represents 95\% Confidence intervals. Black triangles are estimates without controlling for network dependencies, Orange circles are estimates with network controls.
 
-\end{multicols}
 }
 
 %----------------------------------------------------------------------------------------
@@ -141,12 +140,9 @@ This material is based on work supported by the National Science Foundation unde
 
 \headerbox{References}{name=futureresearch,column=1,span=2,aligned=references,above=bottom}{ % This block is as tall as the references block
 
-\begin{multicols}{2}
-1. \\
-2. \\
-3. \\
-4. \\
-\end{multicols}
+
+\small{1. D{\"u}r, A., Baccini, L., \& Elsig, M. (2014). The design of international trade agreements: Introducing a new dataset. The Review of International Organizations, 9(3), 353-375.}
+
 }
 
 %----------------------------------------------------------------------------------------
@@ -169,29 +165,52 @@ This material is based on work supported by the National Science Foundation unde
 
 \begin{multicols}{2}
 \begin{center}
-\includegraphics[width=0.8\linewidth]{fdiNet2011.pdf}
 \captionof{figure}{Plot for 2011. Blue represents autocratic regimes and red represents democratic regimes}
+\includegraphics[width=0.8\linewidth]{fdiNet2011.pdf}
 \end{center}
 
 %------------------------------------------------
 
 \begin{itemize}\compresslist
-\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
-\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
-\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
-\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+
+
+\item{Clustering, based on the edges between nodes, which here is FDI flow between countries, is visually present.} 
+
+\item{ It also appears that regime type plays a role in clustering as well, with red, democratic nodes often close to one another, albeit weakly. This assortativity is measured below.} 
+
+\includegraphics[scale= .3]{assortativity.png}
+
 \end{itemize}
 
 \end{multicols}
 }
 
 %----------------------------------------------------------------------------------------
-%	MATERIALS AND METHODS
+% Data and Software
 %----------------------------------------------------------------------------------------
 
 \headerbox{Data}{name=method,column=0,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
 
-
+\begin{itemize}\compresslist
+\item{Bilateral FDI statistics from UNCTAD, 2001-2012}
+\item{Dyad-level Covariates}
+\begin{itemize}
+\item{Gravity +} 
+\item{Contiguity +} 
+\item{Common Language +} 
+\item{Four Types of Defense Treaties +}  
+\item{Colonial Relationships +}
+ \item{PTA depth$^{1}$ + }
+\end{itemize}
+\item{Node-level Covariates}
+\begin{itemize}
+\item{GDP per capita +/-} 
+\item{GDP Growth Rate +} 
+\item {Polity IV +} 
+\item{Political Violence - } 
+\item{Trade Openness +}
+\end{itemize}
+\end{itemize}
 }
 
 %----------------------------------------------------------------------------------------
@@ -199,10 +218,31 @@ This material is based on work supported by the National Science Foundation unde
 %----------------------------------------------------------------------------------------
 
 \headerbox{ERGM Count Model}{name=results2,column=1,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
+$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})} $\\
+
+$\text{Sum}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$\\
+
+$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$\\
+
+$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$\\
+
+$ \text{Reciprocity}: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$\\
+
+$\text{Transitive Weights}: \\\bm{g(y)} =  \sum_{(i,j) {\in} \mathbb{Y}}\min\bigg( \bm{y}_{i,j}, \max\limits_{k{\in}N}\Big(\min(\bm{y}_{i,k},\bm{y}_{k,j})\Big) \bigg),$\\ 
+
+$ \text{Dyadic Covariate}: \bm{g(y,x)} = \sum_{(i,j)} \bm{y}_{i,j}x_{i,j}$ \\
+
+$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$\\
+
+$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$\\
+
 
 }
 
 %----------------------------------------------------------------------------------------
+
+
+
 
 \end{poster}
 

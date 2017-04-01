@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAR 2017 04:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  31 MAR 2017 22:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,15 +512,422 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-] [3] [4] [5]
-[6] [7] [8] [9]
+Package natbib Warning: Citation `Helpman:1984' on page 2 undefined on input li
+ne 49.
+
+
+Package natbib Warning: Citation `Carr_et_al:2001' on page 2 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `Vernon:1971' on page 2 undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `Vernon:1980' on page 2 undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `Henisz:2000' on page 2 undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `Jensen:2003' on page 2 undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `Jensen:2006' on page 2 undefined on input lin
+e 49.
+
+
+Package natbib Warning: Citation `Li_Resnick:2003' on page 2 undefined on input
+ line 49.
+
+
+Package natbib Warning: Citation `Staats_Biglaiser:2012' on page 2 undefined on
+ input line 49.
+
+
+Package natbib Warning: Citation `Buthe_Milner:2008' on page 2 undefined on inp
+ut line 49.
+
+
+Package natbib Warning: Citation `Allee_Peinhardt:2011' on page 2 undefined on 
+input line 49.
+
+
+Package natbib Warning: Citation `UNCTAD:2013' on page 2 undefined on input lin
+e 51.
+
+
+Package natbib Warning: Citation `cranmer2011inferential' on page 2 undefined o
+n input line 51.
+
+[2
+
+]
+
+Package natbib Warning: Citation `Caves:1996' on page 3 undefined on input line
+ 70.
+
+
+Package natbib Warning: Citation `Dunning:1992' on page 3 undefined on input li
+ne 70.
+
+
+Package natbib Warning: Citation `Vernon:1971' on page 3 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Vernon:1980' on page 3 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Henisz:2000' on page 3 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Jensen:2003' on page 3 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Jensen:2006' on page 3 undefined on input lin
+e 70.
+
+
+Package natbib Warning: Citation `Li_Resnick:2003' on page 3 undefined on input
+ line 70.
+
+
+Package natbib Warning: Citation `Staats_Biglaiser:2012' on page 3 undefined on
+ input line 70.
+
+
+Package natbib Warning: Citation `Buthe_Milner:2008' on page 3 undefined on inp
+ut line 70.
+
+
+Package natbib Warning: Citation `Allee_Peinhardt:2011' on page 3 undefined on 
+input line 70.
+
+
+Package natbib Warning: Citation `Noorbakhsh_et_al:2001' on page 3 undefined on
+ input line 72.
+
+
+Package natbib Warning: Citation `Yeaple:2003' on page 3 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `Jensen:2003' on page 3 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `Li_Resnick:2003' on page 3 undefined on input
+ line 72.
+
+
+Package natbib Warning: Citation `Buthe_Milner:2008' on page 3 undefined on inp
+ut line 72.
+
+
+Package natbib Warning: Citation `Li_Vashchilko:2010' on page 3 undefined on in
+put line 72.
+
+
+Package natbib Warning: Citation `Kerner:2009' on page 3 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `UNCTAD:2013' on page 3 undefined on input lin
+e 72.
+
+
+Package natbib Warning: Citation `diehl2016conditional' on page 3 undefined on 
+input line 75.
+
+
+Package natbib Warning: Citation `ward2007persistent' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `ward2007persistent' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `chu2010homogenization' on page 3 undefined on
+ input line 75.
+
+
+Package natbib Warning: Citation `cranmer2016critique' on page 3 undefined on i
+nput line 75.
+
+
+Package natbib Warning: Citation `dorff2013networks' on page 3 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `lee2013network' on page 3 undefined on input 
+line 75.
+
+
+Package natbib Warning: Citation `howell2013geography' on page 3 undefined on i
+nput line 75.
+
+
+Package natbib Warning: Citation `kinne2016agreeing' on page 3 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `camber2010geometry' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `kinne2016agreeing' on page 3 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `kinne2013network' on page 3 undefined on inpu
+t line 75.
+
+
+Package natbib Warning: Citation `kinne2014dependent' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `warren2016modeling' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `cranmer2012complex' on page 3 undefined on in
+put line 75.
+
+
+Package natbib Warning: Citation `cranmer2012toward' on page 3 undefined on inp
+ut line 75.
+
+
+Package natbib Warning: Citation `raeymaeckers2016influence' on page 3 undefine
+d on input line 75.
+
+
+Package natbib Warning: Citation `ward2007disputes' on page 3 undefined on inpu
+t line 75.
+
+
+Package natbib Warning: Citation `ward2013gravity' on page 3 undefined on input
+ line 75.
+
+
+Package natbib Warning: Citation `metternich2013antigovernment' on page 3 undef
+ined on input line 75.
+
+
+Package natbib Warning: Citation `Hymer:1976' on page 3 undefined on input line
+ 83.
+
+
+Package natbib Warning: Citation `Kindleberger:1969' on page 3 undefined on inp
+ut line 83.
+
+
+Package natbib Warning: Citation `Caves:1996' on page 3 undefined on input line
+ 83.
+
+
+Package natbib Warning: Citation `Dunning:1992' on page 3 undefined on input li
+ne 83.
+
+[3]
+
+Package natbib Warning: Citation `Milner:1988' on page 4 undefined on input lin
+e 85.
+
+
+Package natbib Warning: Citation `Crystal:2003' on page 4 undefined on input li
+ne 85.
+
+
+Package natbib Warning: Citation `Crystal:2003' on page 4 undefined on input li
+ne 85.
+
+
+Package natbib Warning: Citation `Tingley:2015' on page 4 undefined on input li
+ne 85.
+
+
+Package natbib Warning: Citation `Melitz:2003' on page 4 undefined on input lin
+e 87.
+
+
+Package natbib Warning: Citation `Helpman_et_al:2004' on page 4 undefined on in
+put line 87.
+
+
+Package natbib Warning: Citation `UNCTAD:2006' on page 4 undefined on input lin
+e 87.
+
+
+Package natbib Warning: Citation `UNCTAD:2006' on page 4 undefined on input lin
+e 87.
+
+
+Package natbib Warning: Citation `UNCTAD:2013' on page 4 undefined on input lin
+e 94.
+
+
+Package natbib Warning: Citation `UNCTAD:2013' on page 4 undefined on input lin
+e 94.
+
+
+Package natbib Warning: Citation `Carr_et_al:2001' on page 4 undefined on input
+ line 94.
+
+[4]
+
+Package natbib Warning: Citation `Vernon:1971' on page 5 undefined on input lin
+e 96.
+
+
+Package natbib Warning: Citation `Vernon:1980' on page 5 undefined on input lin
+e 96.
+
+
+Package natbib Warning: Citation `UNCTAD:2013' on page 5 undefined on input lin
+e 96.
+
+
+Package natbib Warning: Citation `Kim_Solingen:2017' on page 5 undefined on inp
+ut line 98.
+
+[5]
+
+Package natbib Warning: Citation `UNCTAD:1991' on page 6 undefined on input lin
+e 100.
+
+
+Package natbib Warning: Citation `Buthe_Milner:2008' on page 6 undefined on inp
+ut line 100.
+
+
+Package natbib Warning: Citation `buthe2014foreign' on page 6 undefined on inpu
+t line 100.
+
+
+Package natbib Warning: Citation `UNCTAD:2014' on page 6 undefined on input lin
+e 112.
+
+
+Package natbib Warning: Citation `feenstra2015next' on page 6 undefined on inpu
+t line 116.
+
+
+Package natbib Warning: Citation `mayer2011notes' on page 6 undefined on input 
+line 116.
+
+
+Package natbib Warning: Citation `WB' on page 6 undefined on input line 118.
+
+
+Package natbib Warning: Citation `aizenman2006fdi' on page 6 undefined on input
+ line 118.
+
+
+Package natbib Warning: Citation `WB' on page 6 undefined on input line 118.
+
+[6]
+
+Package natbib Warning: Citation `Gibler09' on page 7 undefined on input line 1
+20.
+
+
+Package natbib Warning: Citation `dur2014design' on page 7 undefined on input l
+ine 120.
+
+
+Package natbib Warning: Citation `buthe2014foreign' on page 7 undefined on inpu
+t line 120.
+
+
+Package natbib Warning: Citation `johns2016under' on page 7 undefined on input 
+line 122.
+
+
+Package natbib Warning: Citation `polity2012polity' on page 7 undefined on inpu
+t line 122.
+
+
+Package natbib Warning: Citation `marshall2005major' on page 7 undefined on inp
+ut line 122.
+
+
+Package natbib Warning: Citation `ward2007persistent' on page 7 undefined on in
+put line 127.
+
+
+Package natbib Warning: Citation `ward2013gravity' on page 7 undefined on input
+ line 127.
+
+
+Package natbib Warning: Citation `desmarais2012statistical' on page 7 undefined
+ on input line 127.
+
+
+Package natbib Warning: Citation `wilson2017stochastic' on page 7 undefined on 
+input line 127.
+
+
+Package natbib Warning: Citation `krivitsky2012exponential' on page 7 undefined
+ on input line 127.
+
+
+Package natbib Warning: Citation `cranmer2016navigating' on page 7 undefined on
+ input line 127.
+
+
+Package natbib Warning: Citation `cranmer2016critique' on page 7 undefined on i
+nput line 127.
+
+
+Package natbib Warning: Citation `desmarais2017statistical' on page 7 undefined
+ on input line 127.
+
+
+Package natbib Warning: Citation `krivitsky2012exponential' on page 7 undefined
+ on input line 127.
+
+[7]
+
+Package natbib Warning: Citation `cranmer2011inferential' on page 8 undefined o
+n input line 129.
+
+
+Package natbib Warning: Citation `krivitsky2012exponential' on page 8 undefined
+ on input line 129.
+
+
+Package natbib Warning: Citation `krivitsky2012exponential' on page 8 undefined
+ on input line 129.
+
+[8]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 145.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) <draft_figures/rl_plots/Sum.pdf, id=378, 205.76875pt x 144.54pt>
+)
+
+Package natbib Warning: Citation `ergm' on page 9 undefined on input line 145.
+
+
+Package natbib Warning: Citation `ergmcount' on page 9 undefined on input line 
+145.
+
+
+Package natbib Warning: Citation `r' on page 9 undefined on input line 145.
+
+<draft_figures/rl_plots/Sum.pdf, id=71, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum.pdf>
@@ -528,7 +935,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 155.
 
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/Sum_5.pdf, id=380, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Sum_5.pdf, id=73, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum_5.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum_5.pdf>
@@ -536,7 +943,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Sum_5.pdf used on input line 15
 6.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/Nonzero.pdf, id=382, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Nonzero.pdf, id=75, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Nonzero.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Nonzero.pdf>
@@ -544,7 +951,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Nonzero.pdf used on input line
 159.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/LDV.pdf, id=384, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/LDV.pdf, id=77, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/LDV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/LDV.pdf>
@@ -552,7 +959,7 @@ Package pdftex.def Info: draft_figures/rl_plots/LDV.pdf used on input line 160.
 
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/Mass.pdf, id=386, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Mass.pdf, id=79, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Mass.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Mass.pdf>
@@ -560,7 +967,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Mass.pdf used on input line 163
 .
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/Distance.pdf, id=388, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Distance.pdf, id=81, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Distance.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Distance.pdf>
@@ -568,7 +975,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Distance.pdf used on input line
  164.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/Contiguity.pdf, id=390, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Contiguity.pdf, id=83, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Contiguity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Contiguity.pdf>
@@ -576,7 +983,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Contiguity.pdf used on input li
 ne 167.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/CommonLanguage.pdf, id=392, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/CommonLanguage.pdf, id=85, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/CommonLanguage.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/CommonLanguage.pdf>
@@ -587,7 +994,7 @@ t line 168.
 
 LaTeX Warning: Float too large for page by 18.35167pt on input line 171.
 
-<draft_figures/rl_plots/DefenseTreaty.pdf, id=394, 205.76875pt x 144.54pt>
+[9] <draft_figures/rl_plots/DefenseTreaty.pdf, id=93, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DefenseTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DefenseTreaty.pdf>
@@ -595,7 +1002,7 @@ Package pdftex.def Info: draft_figures/rl_plots/DefenseTreaty.pdf used on input
  line 181.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/Non-aggTreaty.pdf, id=396, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Non-aggTreaty.pdf, id=95, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Non-aggTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Non-aggTreaty.pdf>
@@ -603,7 +1010,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Non-aggTreaty.pdf used on input
  line 182.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/NeutralityTreaty.pdf, id=398, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/NeutralityTreaty.pdf, id=97, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/NeutralityTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/NeutralityTreaty.pdf>
@@ -611,7 +1018,7 @@ Package pdftex.def Info: draft_figures/rl_plots/NeutralityTreaty.pdf used on in
 put line 185.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/EntenteTreaty.pdf, id=400, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/EntenteTreaty.pdf, id=99, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/EntenteTreaty.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/EntenteTreaty.pdf>
@@ -619,7 +1026,7 @@ Package pdftex.def Info: draft_figures/rl_plots/EntenteTreaty.pdf used on input
  line 186.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/PTADepth.pdf, id=402, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/PTADepth.pdf, id=101, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/PTADepth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/PTADepth.pdf>
@@ -627,7 +1034,7 @@ Package pdftex.def Info: draft_figures/rl_plots/PTADepth.pdf used on input line
  189.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/FormerColony.pdf, id=404, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/FormerColony.pdf, id=103, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/FormerColony.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/FormerColony.pdf>
@@ -635,7 +1042,7 @@ Package pdftex.def Info: draft_figures/rl_plots/FormerColony.pdf used on input
 line 190.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/DestGDPpc.pdf, id=406, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/DestGDPpc.pdf, id=105, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestGDPpc.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestGDPpc.pdf>
@@ -643,7 +1050,7 @@ Package pdftex.def Info: draft_figures/rl_plots/DestGDPpc.pdf used on input lin
 e 193.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/DestGrowth.pdf, id=408, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/DestGrowth.pdf, id=107, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestGrowth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestGrowth.pdf>
@@ -654,7 +1061,7 @@ ne 194.
 
 LaTeX Warning: Float too large for page by 18.35167pt on input line 197.
 
-<draft_figures/rl_plots/DestPolity.pdf, id=410, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/DestPolity.pdf, id=109, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestPolity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestPolity.pdf>
@@ -662,7 +1069,7 @@ Package pdftex.def Info: draft_figures/rl_plots/DestPolity.pdf used on input li
 ne 205.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/DestPV.pdf, id=412, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/DestPV.pdf, id=111, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestPV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestPV.pdf>
@@ -670,7 +1077,7 @@ Package pdftex.def Info: draft_figures/rl_plots/DestPV.pdf used on input line 2
 06.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/DestTO.pdf, id=414, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/DestTO.pdf, id=113, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/DestTO.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/DestTO.pdf>
@@ -678,7 +1085,7 @@ Package pdftex.def Info: draft_figures/rl_plots/DestTO.pdf used on input line 2
 09.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/OriginGDPpc.pdf, id=416, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/OriginGDPpc.pdf, id=115, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginGDPpc.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginGDPpc.pdf>
@@ -686,7 +1093,7 @@ Package pdftex.def Info: draft_figures/rl_plots/OriginGDPpc.pdf used on input l
 ine 210.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/OriginGrowth.pdf, id=418, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/OriginGrowth.pdf, id=117, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginGrowth.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginGrowth.pdf>
@@ -694,7 +1101,7 @@ Package pdftex.def Info: draft_figures/rl_plots/OriginGrowth.pdf used on input
 line 213.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/OriginPolity.pdf, id=420, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/OriginPolity.pdf, id=119, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginPolity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginPolity.pdf>
@@ -702,7 +1109,7 @@ Package pdftex.def Info: draft_figures/rl_plots/OriginPolity.pdf used on input
 line 214.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
 
-<draft_figures/rl_plots/OriginPV.pdf, id=422, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/OriginPV.pdf, id=121, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginPV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginPV.pdf>
@@ -710,7 +1117,7 @@ Package pdftex.def Info: draft_figures/rl_plots/OriginPV.pdf used on input line
  217.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/OriginTO.pdf, id=424, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/OriginTO.pdf, id=123, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/OriginTO.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/OriginTO.pdf>
@@ -721,7 +1128,7 @@ Package pdftex.def Info: draft_figures/rl_plots/OriginTO.pdf used on input line
 
 LaTeX Warning: Float too large for page by 18.35167pt on input line 221.
 
-<draft_figures/rl_plots/Mutuality.pdf, id=426, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Mutuality.pdf, id=125, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Mutuality.pdf>
@@ -729,13 +1136,47 @@ Package pdftex.def Info: draft_figures/rl_plots/Mutuality.pdf used on input lin
 e 230.
 (pdftex.def)             Requested size: 231.02142pt x 143.09538pt.
 
-<draft_figures/rl_plots/Transitivity.pdf, id=428, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Transitivity.pdf, id=127, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Transitivity.pdf used on input 
 line 231.
 (pdftex.def)             Requested size: 215.04916pt x 143.09538pt.
+
+
+LaTeX Warning: Reference `fig:effectPlots1' on page 10 undefined on input line 
+240.
+
+
+LaTeX Warning: Reference `fig:effectPlots4' on page 10 undefined on input line 
+240.
+
+
+LaTeX Warning: Reference `fig:bic' on page 10 undefined on input line 240.
+
+
+Package natbib Warning: Citation `waldorp2005model' on page 10 undefined on inp
+ut line 240.
+
+
+Package natbib Warning: Citation `abrahamowicz1990optimal' on page 10 undefined
+ on input line 240.
+
+
+Package natbib Warning: Citation `raftery1999bayes' on page 10 undefined on inp
+ut line 240.
+
+
+LaTeX Warning: Reference `fig:effectPlots4' on page 10 undefined on input line 
+240.
+
+<draft_figures/BICdiff.pdf, id=129, 469.755pt x 289.08pt>
+File: draft_figures/BICdiff.pdf Graphic file (type pdf)
+
+<use draft_figures/BICdiff.pdf>
+Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 248.
+(pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
  [10] [11 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum_5.pd
 f> <./draft_figures/rl_plots/Nonzero.pdf> <./draft_figures/rl_plots/LDV.pdf> <.
 /draft_figures/rl_plots/Mass.pdf> <./draft_figures/rl_plots/Distance.pdf> <./dr
@@ -744,75 +1185,90 @@ df>] [12 <./draft_figures/rl_plots/DefenseTreaty.pdf> <./draft_figures/rl_plots
 /Non-aggTreaty.pdf> <./draft_figures/rl_plots/NeutralityTreaty.pdf> <./draft_fi
 gures/rl_plots/EntenteTreaty.pdf> <./draft_figures/rl_plots/PTADepth.pdf> <./dr
 aft_figures/rl_plots/FormerColony.pdf> <./draft_figures/rl_plots/DestGDPpc.pdf>
- <./draft_figures/rl_plots/DestGrowth.pdf>] [13 <./draft_figures/rl_plots/DestP
-olity.pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots/Dest
-TO.pdf> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plots/Or
-iginGrowth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figures/rl
-_plots/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>]
-<draft_figures/BICdiff.pdf, id=640, 469.755pt x 289.08pt>
-File: draft_figures/BICdiff.pdf Graphic file (type pdf)
-
-<use draft_figures/BICdiff.pdf>
-Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 248.
-(pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
- [14 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
-ivity.pdf> <./draft_figures/BICdiff.pdf>]
-(./fdi_draft.bbl
+ <./draft_figures/rl_plots/DestGrowth.pdf>]
+[13 <./draft_figures/rl_plots/DestPolity.pdf> <./draft_figures/rl_plots/DestPV.
+pdf> <./draft_figures/rl_plots/DestTO.pdf> <./draft_figures/rl_plots/OriginGDPp
+c.pdf> <./draft_figures/rl_plots/OriginGrowth.pdf> <./draft_figures/rl_plots/Or
+iginPolity.pdf> <./draft_figures/rl_plots/OriginPV.pdf> <./draft_figures/rl_plo
+ts/OriginTO.pdf>] [14 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures
+/rl_plots/Transitivity.pdf> <./draft_figures/BICdiff.pdf>] (./fdi_draft.bbl
 Overfull \hbox (49.1739pt too wide) in paragraph at lines 21--25
 []\OT1/cmr/m/n/10 Bank, ?World. 2016.  ``World De-vel-op-ment In-di-ca-tors 201
 6.'' https://openknowledge.worldbank.org/handle/10986/23969
  []
 
 [15] [16] [17] [18] [19])
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
- [20]
+[20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
- (./fdi_draft.aux)
+ (./fdi_draft.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
-Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
-(rerunfilecheck)             Checksum: AC99953A686D5CB9984F3576E6796450;721.
+
+
+Package rerunfilecheck Warning: File `fdi_draft.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fdi_draft.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  AC99953A686D5CB9984F3576E6796450;721.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
  ) 
 Here is how much of TeX's memory you used:
- 9196 strings out of 493089
- 139000 string characters out of 6134842
- 239365 words of memory out of 5000000
- 12408 multiletter control sequences out of 15000+600000
+ 9183 strings out of 493089
+ 138834 string characters out of 6134841
+ 235656 words of memory out of 5000000
+ 12395 multiletter control sequences out of 15000+600000
  17882 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1690b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1690b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (20 pages, 423163 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/courier/ucrr8a.pfb>
+Output written on fdi_draft.pdf (20 pages, 420097 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
+ 545 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
  108 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 
