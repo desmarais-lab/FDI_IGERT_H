@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2017 07:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2017 07:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -777,9 +777,9 @@ Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 258.
 ivity.pdf>] [15 <./draft_figures/transitiveBoxplot.pdf> <./draft_figures/mutual
 Boxplot.pdf>] (./fdi_draft.bbl [16 <./draft_figures/BICdiff.pdf>] [17] [18]
 Missing character: There is no ¨ in font cmr10!
- [19] [20] [21])
+ [19] [20])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
- [22]
+ [21]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
  (./fdi_draft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
@@ -789,13 +789,13 @@ Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 9243 strings out of 493089
- 140154 string characters out of 6134842
- 239965 words of memory out of 5000000
- 12440 multiletter control sequences out of 15000+600000
+ 9230 strings out of 493089
+ 139900 string characters out of 6134842
+ 240841 words of memory out of 5000000
+ 12431 multiletter control sequences out of 15000+600000
  20401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1687b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1687b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -839,10 +839,10 @@ e1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (22 pages, 453030 bytes).
+Output written on fdi_draft.pdf (21 pages, 452479 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 711 compressed objects within 8 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 844 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 116 named destinations out of 1000 (max. 500000)
  390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
