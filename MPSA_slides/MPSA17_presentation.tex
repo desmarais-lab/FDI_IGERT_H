@@ -13,6 +13,8 @@
 \documentclass{beamer}
 \usepackage{amsmath}
 \usepackage{bm}
+\usefonttheme{professionalfonts}
+\usepackage{newtxtext,newtxmath}
 % There are many different themes available for Beamer. A comprehensive
 % list with examples is given here:
 % http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
@@ -52,7 +54,7 @@
 \newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
 
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
-\title[The Network of FDI Flows]{The Network of Foreign Direct Investment Flows:\\Theory and Empirical Analysis\thanks{\footnotesize {Acknowledgement: This material is based on work supported by the National Science Foundation under IGERT Grant DGE-1144860, Big Data Social Science.}}}
+\title[The Network of FDI Flows]{The Network of Foreign Direct Investment Flows:\\Theory and Empirical Analysis\thanks{\scriptsize {Acknowledgement: This material is based on work supported by the National Science Foundation under IGERT Grant DGE-1144860, Big Data Social Science.}}}
 
 
 \author[J.\,Schoeneman, B. \,Zhu \& B.\,Desmarais]{%
@@ -60,16 +62,16 @@
     \begin{columns}
       \column{.3\linewidth}
       \centering
-      John Schoeneman{\thanks{Pennsylvania State University}} \\ \small{jbs5686@psu.edu\\ PhD Candidate}
+      John Schoeneman{\thanks{\scriptsize{Pennsylvania State University}}} \\ \scriptsize{jbs5686@psu.edu\\ PhD Candidate}
       \column{.3\linewidth}
       \centering
-      Boliang Zhu{\samethanks[2]} \\ \small{bxz14@psu.edu\\ Assistant Professor}
+      Boliang Zhu{\samethanks[2]} \\ \scriptsize{bxz14@psu.edu\\ Assistant Professor}
     \end{columns}
     \vspace{12pt}
     \begin{columns}
       \column{.3\linewidth}
       \centering
-      Bruce Desmarais{\samethanks[2]}\\ \small{bdesmarais@psu.edu\\ Associate Professor}
+      Bruce Desmarais{\samethanks[2]}\\ \scriptsize{bdesmarais@psu.edu\\ Associate Professor}
     \end{columns}
  }
  {Author 1, Author 2, Author 3}
@@ -127,7 +129,7 @@
 \item{Violation of Independence Assumptions}
 \item{Theoretical Importance of Dependence Terms}
  \end{itemize}
-  \item{Simultaneously test exogenous variables as well}
+  \item{Simultaneously test exogenous variables}
  \end{itemize}
     \end{column}
     \begin{column}{.5\textwidth}
@@ -138,7 +140,7 @@
     \end{column}
   \end{columns}
 
-%In the image on the right is the network for weighted FDI flows for 2008. There are a couple things that are immediately obvious. The first is that we clearly see clustering. This clustering is based on FDI flows, which are the ties for between nodes, which here are countries. The more ties a node has and the larger these ties are, the more centrally placed a node is and the more shared partners and size of edge they share with a node, the closer they are to that node. This clear dependence in structure motivates us to model these networks, both to eliminate the potential bias that comes from ignoring them and measure the dependence, which we argue has theoretical importance. The second point is that it appears Polity plays a role in clustering as well, with red, democratic nodes often close to one another. Network models allow us to test exogenous variables such as the role of regime type alongside of network terms, and so we focus on both political and economic variables that have been estimated in the past, but in standard regression models that assumed independence.
+%The plot on the right is the network for weighted FDI flows for 2008. There are a couple things that are immediately obvious. The first is that we clearly see clustering. This clustering is based on FDI flows, which are the ties for between nodes, which for this application are countries. The more ties a node has and the larger these ties are, the more centrally placed a node is and the more shared partners and size of edge they share with a node, the closer they are to that partner. This dependence in structure motivates us to model these networks using exponential random graph model, both to eliminate the potential bias that comes from ignoring them and measure the dependence, which we argue has theoretical importance. The second thing that we see in the network is that it appears Polity plays a role in clustering as well, with red, democratic nodes often close to one another. Network models also allow us to test exogenous variables such as the role of regime type alongside of network terms, and so we focus on both political and economic variables that have been estimated in the past, but in standard regression models that assumed independence. We show that ignoring this bias has consequences for inference of these exogenous covariates as well.
 
 \end{frame}
 
@@ -168,8 +170,9 @@
     \includegraphics[scale=.3]{slides_figures/transitivity.png}
         \end{column}
   \end{columns}
-% We focus on two network dependencies in our model and provide theoretical reasons for them. The first is reciprocity. In the figure to the right we see that weighted reciprocity, scaled between -1 and and 1, is present. As with trade, expansion of a foreign firm into country's market is generally met with some opposition by the owners of similar firms. The political way to resolve this conflict is through reciprocal agreements. This can placate the host country MNCs by granting them or other firms access to new markets to built up sufficient political support for the MNCs. However, it is important to note the this behavior best explains the relationship between developed countries that have competing MNCs, whereas mixed dyads are more likely to be anti-reciprocal. This is not explored in the models, but will be addressed in future work. However, there is some evidence of this in the decline of reciprocity over time as more and more FDI is vertical and between mixed dyads.
-% The second network dependency is transitivity, or the clustering coefficient. In the figure to the right, unweighted and undirected transitivity, calculated as the number of triadic closures for all possible triads where a two-path exists, the percentage is quite high. Global production supply chains are increasingly complex and disaggregated. With large MNCs being the dominant players, they often invest in multiple countries for one finished product, and are increasingly involved in all levels of production, which increases the chance that an investor is more likely to invest in a country for which a two-path already exists. Also, since there is inherent risk in investment, that is the possibility of expropriation of fixed investments, investment is encouraged to cluster along particular countries that have a sustained interest in protecting investors, leading to triadic closures in the network. Another key factor is that this FDI is vertical and thus dependent on trade liberalization. PTAs then can reinforce or expand these triadic clusters through the expansion of trade networks. 
+% We focus on two network dependencies in our model and provide theoretical reasons for them. The first is reciprocity, also known as mutuality. In the figure to the right we see that weighted reciprocity, scaled between -1 and and 1, is present. As with trade, expansion of a foreign firms into a country's market is generally met with some opposition by the owners of similar firms. The political route to resolve this conflict is through reciprocal agreements. This can placate the host country MNCs by granting them or other firms access to new markets to build up sufficient political support for the FDI. However, it is important to note the this behavior best explains the relationship between developed countries that have competing MNCs, whereas mixed dyads are more likely to be anti-reciprocal. This is not explored in our current models, but will be addressed in future work. Despite not explicitly modeling this condition, there is some evidence of this in the decline of reciprocity over time as more and more FDI is vertical and between mixed dyads.
+
+% The second network dependency we estimate is transitivity, or the clustering coefficient. Transitivity is calculated as the number of triadic closures for all possible triads where a two-path exists, ranging from zero to 1. In the figure to the right, we see that unweighted and undirected transitivity is high for the network. Global production supply chains are increasingly complex and disaggregated. With large MNCs being the dominant players in global trade networks, they often invest in multiple countries, even for only one type of finished product, and are increasingly involved in all levels of production. This behavior increases the chance that an investor is more likely to invest in a country for which a two-path already exists. Also, since there is inherent risk in investment, the possibility of expropriation of fixed investments, investment is encouraged to cluster along particular countries that have a sustained interest in protecting investors, which also leads to triadic closures in the network. Another key factor is that much of FDI is vertical and thus dependent on trade liberalization. Preferential trade agreements can reinforce or expand these clusters through the expansion and liberalization of trade networks. 
 
 \end{frame}
 
@@ -207,11 +210,11 @@
         \end{column}
   \end{columns}
  
- %Our dependent variable is from recently made available data from UNCTAD. It covers 2001 to 2012. We use FDI stock levels since we take the log and FDI stock has fewer negative values. Although, we include a lagged dependent variable, so our covariates are estimating remaining variation, which is FDI flows.  
+ %Our dependent variable is from recently made available data by UNCTAD. It covers 2001 to 2012. We use FDI stock levels since we take the log and FDI stock has fewer negative values that need to be converted to zeros. Although, we include a lagged dependent variable, so our covariates are estimating remaining variation, which is FDI flows.  
   
-%Dyad: Alongside the network terms we estimate size dyad level relationship. We begin with gravity variables , which have been the workhorse in the trade and FDI literature. Gravity variables include the logged product of the dyad's GDPs and the logged euclidean distance. Binary variables in the model include contiguity, defense treaties, common language, and former colonial ties, for which we expect positive correlations. The last dyad level covariate is PTA depth, which we argue is related to transitivity. This depth variable comes from a recent dataset that used 48 different dichotomous variables, such as trade in services, SPS measures, etc., to create a latent measure of agreement depth.
+%Dyad: Alongside the network terms we estimate several dyad-level relationships. We begin with gravity variables , which have been the workhorse in the trade and FDI literature. Gravity variables include the logged product of the dyad's GDPs and the logged euclidean distance. Binary variables in the model include contiguity, defense treaties, common language, and former colonial ties, for which we expect positive correlations. The last dyad level covariate is PTA depth, which we argue is related to transitivity. This depth measurement comes from a recent dataset that used 48 different dichotomous variables, such as trade in services and SPS measures to create a latent measure of trade agreement depth.
 
-%Node: We also include five node level covariates, which we estimate both their relationship with receiving FDI and sending FDI.  GDP per capita represents factor endowments for a country. If FDI mainly flows from capital rich countries to labor rich countries, we expect it to be positive for the origin node and negative for the destination node. Growth rate, as a proxy for general economy health, should be positive for both directions. Literature for the democracy score, using the common Polity IV measure, is inconclusive, but there is a general expectation that better institutions will attract more FDI. Political Violence, which can inversely proxy for political stability, can proxy for regime stability, which is important for investors to consider since a change in government can result in new investment conditions, and thus we expect to be negatively related to FDI flows for both directions. Trade openness would be positive for both directions given the complementary relationship between trade and FDI. 
+%Node: We also include five node level covariates for which we estimate both their relationship with receiving FDI and sending FDI.  GDP per capita represents factor endowments for a country. If FDI mainly flows from capital rich countries to labor rich countries, we expect it to be positive for the origin node and negative for the destination node. Growth rate, as a proxy for general economy health, should be positive for both directions. Literature for the democracy score, using the common Polity IV measure, is inconclusive, but there is a general expectation that liberal markets institutions found in democracies will attract more FDI. Political Violence, which can inversely proxy for political stability, is important for investors to consider since a change in government can result in new investment conditions. Thus, we expect it to be negatively related to FDI flows for both directions. Trade openness would be positive for both directions given the complementary relationship between trade and FDI. 
 
 \end{frame}
 
@@ -227,8 +230,7 @@ $$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_
 
 $$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
 
-% The exponential random graph model MLE is approximated using MCMC because of computation limitations. This works well due to the law of large numbers and we use 10,000 MCMC samples for our estimations. Here we sample from a Poison distiribution, noted as h(y). Theta is the exogenous covariates, g(y) includes the network statistics, and kappa is a normalizing constant that ensures the probabilities sum to one. For this model we use both the sum of edges and the fraction moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fraction moment acts a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, with non-zero values being distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph. 
-
+% The exponential random graph model MLE is approximated using MCMC because of computation limitations. This works well due to the law of large numbers and we use 10,000 MCMC samples for our estimations. Here we sample from a Poison distiribution, noted as h(y). Theta is the exogenous covariates, g(y) includes the network statistics, and kappa is a normalizing constant that ensures the probabilities sum to one. For this model we use both the sum of edges and the fractional moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fractional moment is a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, by having non-zero values be distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph. 
 
 
 \end{frame}
@@ -246,11 +248,11 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 
-% We used the most conservative specification for reciprocity, which is that the conditional probability for a particular value of  Yij is deflated by the theta for mutuality for every unit by which Yij is less than Yji. That is larger minimum values increase the value of reciprocation. 
+% We used the most conservative specification for reciprocity, which is that the conditional probability for a particular value of  Yij is deflated by the theta for mutuality for every unit by which Yi,j is less than Yj,i. Or put differently, larger minimum values increase the value of reciprocation. 
 
-% We also used the most conservative specification for transitive weights. This specification measures weakest two-path between nodes i and j. The statistic is then the sum over the dyads (i, j) of the minimum of the value of (i, j) and the value of the strongest two-path between. Here the effect can be interpreted as the stronger the two-path, the higher i to j and the strong i to j the stronger the two-path. 
+% We also used the most conservative specification for transitive weights. This specification measures weakest two-path between nodes i and j. The statistic is then the sum over the dyads (i, j) of the minimum of the value of (i, j) and the value of the strongest two-path between. Here the effect can be interpreted as the stronger the two-path, the higher the FDI from i to j and conversely the more FDI there is from i to j, the stronger the two-path. 
 
-% Dyadic covariates are estimated bys taking the sum of the product of the edge value and dyad covariate value for dyadic covariates. Sender covariates are estimated by taking the sum of the covariate over the FDI sent or rececieved. 
+% Dyadic covariates are estimated by taking the sum of the product of the edge value and the dyad covariate value. Node covariates are estimated by taking the sum of the covariate over the FDI sent or received. 
 
 
 \end{frame}
@@ -260,20 +262,20 @@ $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
-Sum & Sum Sqrt.  & Non-Zero  \\
+\small{Sum} & \small{Sum Sqrt.}  & \small{Non-Zero}  \\
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum.pdf}    &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum_5.pdf}   &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Nonzero.pdf}\\
 
 
-Lagged DV& Mutuality & Transitivity \\ 
+\small{Lagged DV} & \small{Mutuality} & \small{Transitivity} \\ 
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/LDV.pdf} 
  &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Mutuality.pdf}   &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Transitivity.pdf} \\  
 \end{tabular}
 
-%
+% The first thing to note from our results is that the average edge value is negative and the second moment is positive, indicating that over-dispersion for the Poison distribution exists and has been controlled for. The second is that the non-zero estimate is highly signifiant and negative, indicating zero-inflation. The third, and most important, is that the network terms, mutuality (or reciprocity) and transitivity, are significant and positive for all years. This supports our hypotheses regarding the network dependencies and demonstrates that models that do not control for these dependencies violate independence assumptions.
 
 
 \end{frame}
@@ -284,49 +286,41 @@ Lagged DV& Mutuality & Transitivity \\
 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
-Log-GDP Product & Distance  & Contiguity  \\
+\small{Log-GDP Product} & \small{Distance} & \small{Contiguity} \\
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/mass.pdf}    &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/distance.pdf}   &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/contiguity.pdf}\\
 
 
-Dest. Polity & Dest. Trade Openness & PTA Depth \\ 
+\small{Dest. Polity} & \small{Dest. Trade Openness} & \small{PTA Depth} \\ 
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/DestPolity.pdf} 
  &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/DestTO.pdf}   &
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/PTAdepth.pdf} \\  
 \end{tabular}
 
-
+% To illustrate how estimates can be biased, I have included here six of the exogenous covariates from the models, although there were shifts in more than these six. The black points are for models without network dependency controls and the orange points are for the models that include them. We see that the estimates shift in magnitude in the opposite direction and in some instances move from being significant at the 95% level to insignificant. Therefore, by assuming away these dependencies, scholars are in danger of committing Type II errors despite readily available techniques to avoid this pitfall. 
 
 \end{frame}
 
 \begin{frame}{Model Fit and Bias}
 
-\frametitle{Model Fit and Bias}
-\begin{columns}[T]
-    \begin{column}{.5\textwidth}
-\includegraphics[scale=.4]{slides_figures/BICdiff.pdf}  
-    \end{column}
-    \begin{column}{.5\textwidth}
-    \includegraphics[scale=.3]{slides_figures/mutualBoxplot.pdf}\vfill
-    \includegraphics[scale=.3]{slides_figures/transitiveBoxplot.pdf}
-        \end{column}
-  \end{columns}
+
+    \centering
+    BIC Difference between Models\\
+\includegraphics[scale=.6]{slides_figures/BICdiff.pdf}  
+
+% To illustrate this point further, we can look at two other measures. The first is that of BIC. BIC is robust against increases in model fit simply due to added complexity and we see that for every year, inclusion of the network structural dependencies improve model fit.
 
 
+\end{frame}
 
+\begin{frame}{Residuals for Network Statistics}
+\centering
+  \includegraphics[scale=.45, clip=true, trim=0cm .5cm 0cm 1.9cm]{slides_figures/mutualBoxplot.pdf}\vfill
+   \includegraphics[scale=.45, clip=true, trim=0cm .5cm 0cm 1.9cm]{slides_figures/transitiveBoxplot.pdf}
 
-%\centering
-%\begin{tabular}{c@{\hskip -.4cm}c}
-%BIC \\
- 
-
-%Reciprocity & Transitivity \\ 
-%\includegraphics[height=.3\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{slides_figures/mutualBoxplot.pdf} 
- %&
-%\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/%transitiveBoxplot.pdf} 
-%\end{tabular}
+% The second measure we present is the residuals between simulated and predicted values when only using exogenous covariates. What we see is that as both transitive and reciprocal edge values increase, the residuals become more dispersed from zero and on average become positive. Put another way, the larger the network dependency for a pair of countries, the less accurate the exogenous covariate models are at predicting the relationship, which are systematically being under-estimated.
 
 \end{frame}
 
@@ -347,6 +341,11 @@ Dest. Polity & Dest. Trade Openness & PTA Depth \\
 \item{Network dynamics}
 \end{itemize}
 \end{itemize}
+
+
+% To conclude, FDI flows are part of a complex network. The structural dependencies of the network are substantively important and offer insights to scholars attempting to explain the determinants of FDI flows and these dependencies cannot be assumed to be absent even if the scholar is uninterested in explain them.
+
+% For further development in the paper, we currently have four items we'd like to include. The first, as mentioned above, is to condition reciprocity on whether or not the dyad is made of two developed countries or mixed. The second is assortativity measures that condition on variables such as the difference in Polity scores. The third is including a cyclical weight term to compare the significance between transitive triads and cyclical triads. And lastly, we plan to adopt variations of the ERGM count model that allow us to account for network dynamics beyond the simple inclusion of the lagged FDI stock level. Thank you again for allowing me to present here today and I look forward to hearing your suggestions on how this project can be improved.
 
 
 \end{frame}
