@@ -17,12 +17,6 @@ Allee, Todd \harvardand\ Clint Peinhardt. 2011.
   on Foreign Direct Investment.'' {\em International Organization}
   65(3):401--432.
 
-\harvarditem{Bank}{2016}{WB}
-Bank, ?World. 2016.
-\newblock ``World Development Indicators 2016.''
-  https://openknowledge.worldbank.org/handle/10986/23969 License: CC BY 3.0
-  IGO.
-
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
 \newblock ``The Politics of Foreign Direct Investment into Developing
@@ -129,6 +123,12 @@ Feenstra, Robert~C, Robert Inklaar \harvardand\ Marcel~P Timmer. 2015.
 \newblock ``The next generation of the Penn World Table.'' {\em The American
   Economic Review} 105(10):3150--3182.
 
+\harvarditem[Frenkel, Funke \harvardand\ Stadtmann]{Frenkel, Funke \harvardand\
+  Stadtmann}{2004}{Frenkel_et_al:2004}
+Frenkel, Michael, Katja Funke \harvardand\ Georg Stadtmann. 2004.
+\newblock ``A Panel Analysis of Bilateral FDI Flows to Emerging Economies.''
+  {\em Economic Systems} 28(3):281--300.
+
 \harvarditem{Gibler}{2009}{Gibler09}
 Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
@@ -172,6 +172,11 @@ Hymer, Stephen~H. 1976.
   Direct Foreign Investment}.
 \newblock Cambridge, MA:  MIT Press.
 
+\harvarditem{Jakobsen \harvardand\ De~Soysa}{2006}{Jakobsen_DeSoysa:2006}
+Jakobsen, Jo \harvardand\ Indra De~Soysa. 2006.
+\newblock ``Do Foreign Investors Punish Democracy? Theory and Empirics,
+  1984¨C2001.'' {\em Kyklos} 59(3):383--410.
+
 \harvarditem{Jensen}{2003}{Jensen:2003}
 Jensen, Nathan~M. 2003.
 \newblock ``Democratic Governance and Multinational Corporations: Political
@@ -183,11 +188,6 @@ Jensen, Nathan~M. 2006.
 \newblock {\em Nation-States and the Multinational Corporation: A Political
   Economy of Foreign Direct Investment}.
 \newblock Princeton, N.J.:  Princeton University Press.
-
-\harvarditem{Johns \harvardand\ Wellhausen}{2016}{johns2016under}
-Johns, Leslie \harvardand\ Rachel~L Wellhausen. 2016.
-\newblock ``Under one roof: Supply chains and the protection of foreign
-  investment.'' {\em American Political Science Review} 110(01):31--51.
 
 \harvarditem{Kerner}{2009}{Kerner:2009}
 Kerner, Andrew. 2009.
@@ -254,6 +254,11 @@ Marshall, Monty~G. 2005.
 \newblock ``Major episodes of political violence 1946--2004.'' {\em Center for
   Systemic Peace, Severn, Md.[http://members. aol. com/cspmgm/warlist. htm]} .
 
+\harvarditem{Marshall \harvardand\ Jaggers}{2010}{Marshall_Jaggers:2010}
+Marshall, Monty~G. \harvardand\ Keith Jaggers. 2010.
+\newblock ``Polity IV Project: Political Regime Characteristics and
+  Transitions, 1800-2008.''.
+
 \harvarditem{Mayer \harvardand\ Zignago}{2011}{mayer2011notes}
 Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
 \newblock ``Notes on CEPII's distances measures: The GeoDist database.''.
@@ -283,12 +288,6 @@ Noorbakhsh, Farhad, Alberto Paloni \harvardand\ Ali Youssef. 2001.
 \newblock ``Human Capital and FDI Inflows to Developing Countries: New
   Empirical Evidence.'' {\em World Development} 29(9):1593--1610.
 
-\harvarditem{Polity}{2012}{polity2012polity}
-Polity, IV. 2012.
-\newblock ``Polity IV project: Political regime characteristics and
-  transitions, 1800-2012.'' {\em On-line (http://www. systemicpeace.
-  org/polity/polity4. htm)} .
-
 \harvarditem{{R Core Team}}{2015}{r}
 {R Core Team}. 2015.
 \newblock {\em R: A Language and Environment for Statistical Computing}.
@@ -306,6 +305,19 @@ Raftery, Adrian~E. 1999.
 \newblock ``Bayes factors and BIC: Comment on ?A critique of the Bayesian
   information criterion for model selection?'' {\em Sociological Methods \&
   Research} 27(3):411--427.
+
+\harvarditem[Razin, Sadka \harvardand\ Tong]{Razin, Sadka \harvardand\
+  Tong}{2005}{Razin_et_al:2005}
+Razin, Assaf, Efraim Sadka \harvardand\ Hui Tong. 2005.
+\newblock Bilateral FDI Flows: Threshold Barriers and Productivity Shocks.
+  Working Paper 11639 National Bureau of Economic Research.
+\newline\harvardurl{http://www.nber.org/papers/w11639}
+
+\harvarditem{Resnick}{2001}{Resnick:2001}
+Resnick, Adam~L. 2001.
+\newblock ``Investors, Turbulence, and Transition: Democratic Transition and
+  Foreign Direct Investment in Nineteen Developing Countries.'' {\em
+  International Interactions} 27(4):381--398.
 
 \harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
 Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
