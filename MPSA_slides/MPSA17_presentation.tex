@@ -227,11 +227,7 @@ $$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_
 
 $$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$$
 
-%where $\bm{g}( \bm{y} )$ is the vector of network statistics used to specify the model, $\bm{\theta}$ is the vector of parameters that describes how those statistic values relate to the probability of observing the network, $h(\bm{y})$ is a reference function defined on the support of $\bm{y}$ and selected to affect the shape of the baseline distribution of dyadic data (e.g., Poisson reference measure), and $\bm{\kappa}_{h,\bm{g}}(\bm{\theta})$ is the normalizing constant that assures that the probabilities over all possible networks sums to one. 
-
-%average edge value and dispersion in the edge distribution
-
-%which models the prevalence of zeros in dyadic FDI flows. 
+% The exponential random graph model MLE is approximated using MCMC because of computation limitations. This works well due to the law of large numbers and we use 10,000 MCMC samples for our estimations. Here we sample from a Poison distiribution, noted as h(y). Theta is the exogenous covariates, g(y) includes the network statistics, and kappa is a normalizing constant that ensures the probabilities sum to one. For this model we use both the sum of edges and the fraction moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fraction moment acts a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, with non-zero values being distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph. 
 
 
 
@@ -250,25 +246,12 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
 
-%in which we add up the lowest edge value within each dyad. If edges are reciprocated, this statistic will increase due to the co-occurrence of large edge values within the same dyad. 
+% We used the most conservative specification for reciprocity, which is that the conditional probability for a particular value of  Yij is deflated by the theta for mutuality for every unit by which Yij is less than Yji. That is larger minimum values increase the value of reciprocation. 
 
-% which acounts for the degree to which edge $(i,j)$ co-occurs with pairs of large edge values with which  edge $(i,j)$ forms a transitive (i.e., non-cyclical) triangle. 
+% We also used the most conservative specification for transitive weights. This specification measures weakest two-path between nodes i and j. The statistic is then the sum over the dyads (i, j) of the minimum of the value of (i, j) and the value of the strongest two-path between. Here the effect can be interpreted as the stronger the two-path, the higher i to j and the strong i to j the stronger the two-path. 
 
+% Dyadic covariates are estimated bys taking the sum of the product of the edge value and dyad covariate value for dyadic covariates. Sender covariates are estimated by taking the sum of the covariate over the FDI sent or rececieved. 
 
-% measures this co-occurrence at the level of the directed dyad, in which there is a dyadic observation of the covariate corresponding to each potential FDI flow. 
-
-%Each statistic takes the product of the node's covariate value and a sum of the edge values in which the node is involved. The first, ``Sender Covariate,'' uses the sum over the flows that the node sends. The second, ``Receiver Covariate,'' uses the sum over the flows that the node receives. These two variants of node-level statistics differentiate between the effects of a variable on the volume of FDI originating from a state, and being invested in a state, respectively.
-
-
-
-%\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}.
-
-
-
-% General explanation of ERGM
-	% How does this solve the problem of dependences
-% How network terms are estimated
-% How Exogenous Variables are included
 
 \end{frame}
 
@@ -290,7 +273,7 @@ Lagged DV& Mutuality & Transitivity \\
 \includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Transitivity.pdf} \\  
 \end{tabular}
 
-
+%
 
 
 \end{frame}
@@ -301,20 +284,49 @@ Lagged DV& Mutuality & Transitivity \\
 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
-Sum & Sum Sqrt.  & Non-Zero  \\
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum.pdf}    &
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Sum_5.pdf}   &
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Nonzero.pdf}\\
+Log-GDP Product & Distance  & Contiguity  \\
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/mass.pdf}    &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/distance.pdf}   &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/contiguity.pdf}\\
 
 
-Lagged DV& Mutuality & Transitivity \\ 
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/LDV.pdf} 
+Dest. Polity & Dest. Trade Openness & PTA Depth \\ 
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/DestPolity.pdf} 
  &
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Mutuality.pdf}   &
-\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/Transitivity.pdf} \\  
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/DestTO.pdf}   &
+\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/rl_plots/PTAdepth.pdf} \\  
 \end{tabular}
 
 
+
+\end{frame}
+
+\begin{frame}{Model Fit and Bias}
+
+\frametitle{Model Fit and Bias}
+\begin{columns}[T]
+    \begin{column}{.5\textwidth}
+\includegraphics[scale=.4]{slides_figures/BICdiff.pdf}  
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \includegraphics[scale=.3]{slides_figures/mutualBoxplot.pdf}\vfill
+    \includegraphics[scale=.3]{slides_figures/transitiveBoxplot.pdf}
+        \end{column}
+  \end{columns}
+
+
+
+
+%\centering
+%\begin{tabular}{c@{\hskip -.4cm}c}
+%BIC \\
+ 
+
+%Reciprocity & Transitivity \\ 
+%\includegraphics[height=.3\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{slides_figures/mutualBoxplot.pdf} 
+ %&
+%\includegraphics[height=.3\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{slides_figures/%transitiveBoxplot.pdf} 
+%\end{tabular}
 
 \end{frame}
 
@@ -331,7 +343,8 @@ Lagged DV& Mutuality & Transitivity \\
 \begin{itemize}
 \item{Condition reciprocity on development}
 \item{Assortativity}
-\item{TERGM}
+\item{Cyclical Weights}
+\item{Network dynamics}
 \end{itemize}
 \end{itemize}
 
