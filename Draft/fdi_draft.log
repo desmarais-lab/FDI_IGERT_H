@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 21:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2017 06:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -506,6 +506,8 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
@@ -787,11 +789,11 @@ Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 9225 strings out of 493089
- 139741 string characters out of 6134842
+ 9235 strings out of 493089
+ 139908 string characters out of 6134842
  240879 words of memory out of 5000000
- 12424 multiletter control sequences out of 15000+600000
- 18234 words of font info for 67 fonts, out of 8000000 for 9000
+ 12434 multiletter control sequences out of 15000+600000
+ 20401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,14n,40p,1690b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
@@ -837,7 +839,7 @@ e1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (22 pages, 450279 bytes).
+Output written on fdi_draft.pdf (22 pages, 452125 bytes).
 PDF statistics:
  849 PDF objects out of 1000 (max. 8388607)
  709 compressed objects within 8 object streams
