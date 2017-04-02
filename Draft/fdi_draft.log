@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -749,35 +749,51 @@ olity.pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots/Dest
 TO.pdf> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plots/Or
 iginGrowth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figures/rl
 _plots/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>]
-<draft_figures/BICdiff.pdf, id=669, 469.755pt x 289.08pt>
+<draft_figures/transitiveBoxplot.pdf, id=671, 578.16pt x 289.08pt>
+File: draft_figures/transitiveBoxplot.pdf Graphic file (type pdf)
+
+<use draft_figures/transitiveBoxplot.pdf>
+Package pdftex.def Info: draft_figures/transitiveBoxplot.pdf used on input line
+ 243.
+(pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
+
+<draft_figures/mutualBoxplot.pdf, id=672, 578.16pt x 289.08pt>
+File: draft_figures/mutualBoxplot.pdf Graphic file (type pdf)
+
+<use draft_figures/mutualBoxplot.pdf>
+Package pdftex.def Info: draft_figures/mutualBoxplot.pdf used on input line 244
+.
+(pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
+
+<draft_figures/BICdiff.pdf, id=673, 469.755pt x 289.08pt>
 File: draft_figures/BICdiff.pdf Graphic file (type pdf)
 
 <use draft_figures/BICdiff.pdf>
-Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 245.
+Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 254.
 (pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
  [14 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
-ivity.pdf> <./draft_figures/BICdiff.pdf>]
-(./fdi_draft.bbl [15] [16]
+ivity.pdf>] [15 <./draft_figures/transitiveBoxplot.pdf> <./draft_figures/mutual
+Boxplot.pdf>] (./fdi_draft.bbl [16 <./draft_figures/BICdiff.pdf>] [17]
 Missing character: There is no ¨ in font cmr10!
- [17] [18] [19])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
- [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+ [18] [19] [20] [21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: AC99953A686D5CB9984F3576E6796450;721.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 9211 strings out of 493089
- 139356 string characters out of 6134842
- 239521 words of memory out of 5000000
- 12415 multiletter control sequences out of 15000+600000
+ 9225 strings out of 493089
+ 139741 string characters out of 6134842
+ 240879 words of memory out of 5000000
+ 12424 multiletter control sequences out of 15000+600000
  18234 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,1690b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1690b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -821,10 +837,10 @@ e1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (20 pages, 436833 bytes).
+Output written on fdi_draft.pdf (22 pages, 450279 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 115 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 709 compressed objects within 8 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
