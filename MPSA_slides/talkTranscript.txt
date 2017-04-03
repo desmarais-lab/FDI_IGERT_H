@@ -53,6 +53,58 @@ I recommend against marching through this list. It is fine to have the list up o
 
 "The exponential random graph model MLE is approximated using MCMC because of computation limitations. This works well due to the law of large numbers and we use 10,000 MCMC samples for our estimations. Here we sample from a Poison distiribution, noted as h(y). Theta is the exogenous covariates, g(y) includes the network statistics, and kappa is a normalizing constant that ensures the probabilities sum to one. For this model we use both the sum of edges and the fractional moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fractional moment is a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, by having non-zero values be distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph."
 
-See slide 6 in my ERGM slides.
+See slide 6 in my ERGM slides. ERGM is a tricky model to convey since it is not a regression model, but can estimate regression-like parameters. I suggest dedicating one slide to doing something like slide 6 in my ERGM slides, but with the Poisson model and our notation. Note that we are not simulating from a Poisson distribution. The Poisson reference function is used to parameterize the components of our model that are edge-specific. But there is nothing generated from this model that has a Poisson distribution. Also, I don't think you need to mention how the model is estimated in this slide---or if you do, just raise it as saying that the normalizing constant is intractable and must be approximated using MCMC simulation. Then do a separate slide on the components of g() that we use to capture features of the edge-wise distribution (i.e., sum, sum^1/2, non-zero).
 
 *************
+*************
+
+*** Slide 6/12 ***
+
+"We used the most conservative specification for reciprocity, which is that the conditional probability for a particular value of  Yij is deflated by the theta for mutuality for every unit by which Yi,j is less than Yj,i. Or put differently, larger minimum values increase the value of reciprocation. 
+
+% We also used the most conservative specification for transitive weights. This specification measures weakest two-path between nodes i and j. The statistic is then the sum over the dyads (i, j) of the minimum of the value of (i, j) and the value of the strongest two-path between. Here the effect can be interpreted as the stronger the two-path, the higher the FDI from i to j and conversely the more FDI there is from i to j, the stronger the two-path.
+
+% Dyadic covariates are estimated by taking the sum of the product of the edge value and the dyad covariate value. Node covariates are estimated by taking the sum of the covariate over the FDI sent or received. "
+
+First, I suggest dedicating one slide to "dependence terms", reciprocity and transitivity. Since you do not mention the other measures, I would not call these measures, "the most conservative". Your explanation of reciprocity is spot-on. For transitivity, it is not the weakest two path from i to j. Rather, it is the strongest two-path from i to j where the strength of the two-path is measured by the minimum edge value in the two-path (i.e., max of min over k). In the next slide, when explaining covariates, what you have works well, I would just add an (i.e., out-degree and in-degree) to the end of the sentence.
+
+
+*************
+*************
+
+
+NOTE: I SUGGEST PRESENTING BIC RESULTS BEFORE MODEL ESTIMATES (SAYING, E.G., WE FIND IN GENERAL THAT THE NETWORK MODEL FITS BETTER).
+
+*** Slide 7/12 ***
+
+"The first thing to note from our results is that the average edge value is negative and the second moment is positive, indicating that over-dispersion for the Poison distribution exists and has been controlled for. The second is that the non-zero estimate is highly signifiant and negative, indicating zero-inflation. The third, and most important, is that the network terms, mutuality (or reciprocity) and transitivity, are significant and positive for all years. This supports our hypotheses regarding the network dependencies and demonstrates that models that do not control for these dependencies violate independence assumptions."
+
+I recommend putting just one of these ropeladder plots on a slide for the main results---the dependence terms. There's too much going on to talk about a bunch of them at once. I think we can exclude the Sum-LDV plots altogether (put them in the back-matter of the slides). Discuss mutuality and transitivity first, put the interpretation plots next, then go into the control variable results.
+
+
+*************
+*************
+
+
+*** Slide 8/12 ***
+
+"To illustrate how estimates can be biased, I have included here six of the exogenous covariates from the models, although there were shifts in more than these six. The black points are for models without network dependency controls and the orange points are for the models that include them. We see that the estimates shift in magnitude in the opposite direction and in some instances move from being significant at the 95% level to insignificant. Therefore, by assuming away these dependencies, scholars are in danger of committing Type II errors despite readily available techniques to avoid this pitfall."
+
+This transcript is generally good, except I recommend putting this slide after the dependence interpretation slide. A Type 2 error is the failure to reject the null when the null should be rejected. I think you mean Type 1.
+
+
+*************
+*************
+
+*** Slide 9/12 ***
+
+"To illustrate this point further, we can look at two other measures. The first is that of BIC. BIC is robust against increases in model fit simply due to added complexity and we see that for every year, inclusion of the network structural dependencies improve model fit."
+
+This transcript is generally good, except I recommend putting this slide after the dependence interpretation slide. A Type 2 error is the failure to reject the null when the null should be rejected. I think you mean Type 1.
+
+
+*************
+*************
+
+
+
