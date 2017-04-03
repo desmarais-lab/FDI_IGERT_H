@@ -100,11 +100,34 @@ This transcript is generally good, except I recommend putting this slide after t
 
 "To illustrate this point further, we can look at two other measures. The first is that of BIC. BIC is robust against increases in model fit simply due to added complexity and we see that for every year, inclusion of the network structural dependencies improve model fit."
 
-This transcript is generally good, except I recommend putting this slide after the dependence interpretation slide. A Type 2 error is the failure to reject the null when the null should be rejected. I think you mean Type 1.
+This text does note explain that the plot gives the difference between the BIC in the independence model and that in the network model, and that positive difference indicates a better fit of the network model (i.e., since lower BIC indicates better fit). 
 
 
 *************
 *************
+
+*** Slide 10/12 ***
+
+"The second measure we present is the residuals between simulated and predicted values when only using exogenous covariates. What we see is that as both transitive and reciprocal edge values increase, the residuals become more dispersed from zero and on average become positive. Put another way, the larger the network dependency for a pair of countries, the less accurate the exogenous covariate models are at predicting the relationship, which are systematically being under-estimated."
+
+I should probably revise calling this a "residual", but it is a very particular type of residual. It is the difference between the edge value simulated from the 2012 count ERGM and the value of the edge that would be predicted using only the exogenous covariates and their associated parameters in the 2012 count ERGM. It is not a difference between an observed and predicted value (i.e., it is not an empirical difference). What, e.g., the mutual edge value plot tells us is that when the edge j->i is 15, edge values for i->j are, on average 3 units on the log scale greater than what we would predict the edge from i->j to be based solely on the exogenous covariates. Or, in other words, an increase in the value of edge j->i from 0 to 20 results in a 5 unit increase in the simulated values of edge i->j. Same logic for the transitivity plot, except the predictive edge is the minimum value of the edge in the two-path from i to j with the highest minimum.
+
+
+*************
+*************
+
+*** Slide 10/12 ***
+
+"To conclude, FDI flows are part of a complex network. The structural dependencies of the network are substantively important and offer insights to scholars attempting to explain the determinants of FDI flows and these dependencies cannot be assumed to be absent even if the scholar is uninterested in explain them.
+
+% For further development in the paper, we currently have four items we'd like to include. The first, as mentioned above, is to condition reciprocity on whether or not the dyad is made of two developed countries or mixed. The second is assortativity measures that condition on variables such as the difference in Polity scores. The third is including a cyclical weight term to compare the significance between transitive triads and cyclical triads. And lastly, we plan to adopt variations of the ERGM count model that allow us to account for network dynamics beyond the simple inclusion of the lagged FDI stock level. Thank you again for allowing me to present here today and I look forward to hearing your suggestions on how this project can be improved."
+
+Break the second sentence of the first paragraph into two sentences. I think it is OK to mention the extension to TERGM, as it doesn't imply much in terms of specification changes, but I recommend against listing off the other specification extensions. They may unintentionally convey the idea that we are building a kitchen sink model. I would also explicitly note that we offer both methodological and substantive contributions in this paper.
+
+
+*************
+*************
+
 
 
 
