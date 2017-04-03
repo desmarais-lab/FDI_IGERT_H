@@ -1,0 +1,58 @@
+*** Format: Slide Number is given between triple asterisks ***
+
+"Current text is given in quotation marks"
+
+Comments are given below outside of quotes.
+
+*************
+*************
+
+
+*** Slide 1/12 ***
+
+""
+
+What will you say when on the title slide?
+
+*************
+*************
+
+
+*** Slide 2/12 ***
+
+"The plot on the right is the network for weighted FDI flows for 2008. There are a couple things that are immediately obvious. The first is that we clearly see clustering. This clustering is based on FDI flows, which are the ties for between nodes, which for this application are countries. The more ties a node has and the larger these ties are, the more centrally placed a node is and the more shared partners and size of edge they share with a node, the closer they are to that partner. This dependence in structure motivates us to model these networks using exponential random graph model, both to eliminate the potential bias that comes from ignoring them and measure the dependence, which we argue has theoretical importance. The second thing that we see in the network is that it appears Polity plays a role in clustering as well, with red, democratic nodes often close to one another. Network models also allow us to test exogenous variables such as the role of regime type alongside of network terms, and so we focus on both political and economic variables that have been estimated in the past, but in standard regression models that assumed independence. We show that ignoring this bias has consequences for inference of these exogenous covariates as well."
+
+The presentation should begin with an introduction to the research problem and question. First, I recommend blowing up the network when you present it in the slides so that it takes up a full slide. You can explain what you are seeing in words, without them typed on the slide. However, I am not sure you should present the network on this slide, as it makes it seem like we came up with at least one hypothesis by looking at the network plot. I would recommend the first slide just present the conceptualization of FDI as a network and motivation for studying FDI as a network (e.g., independence violation and dependence interesting). I wouldn't mention ERGMs on this first slide.
+
+*** Slide 3/12 ***
+
+" We focus on two network dependencies in our model and provide theoretical reasons for them. The first is reciprocity, also known as mutuality. In the figure to the right we see that weighted reciprocity, scaled between -1 and and 1, is present. As with trade, expansion of a foreign firms into a country's market is generally met with some opposition by the owners of similar firms. The political route to resolve this conflict is through reciprocal agreements. This can placate the host country MNCs by granting them or other firms access to new markets to build up sufficient political support for the FDI. However, it is important to note the this behavior best explains the relationship between developed countries that have competing MNCs, whereas mixed dyads are more likely to be anti-reciprocal. This is not explored in our current models, but will be addressed in future work. Despite not explicitly modeling this condition, there is some evidence of this in the decline of reciprocity over time as more and more FDI is vertical and between mixed dyads.
+
+% The second network dependency we estimate is transitivity, or the clustering coefficient. Transitivity is calculated as the number of triadic closures for all possible triads where a two-path exists, ranging from zero to 1. In the figure to the right, we see that unweighted and undirected transitivity is high for the network. Global production supply chains are increasingly complex and disaggregated. With large MNCs being the dominant players in global trade networks, they often invest in multiple countries, even for only one type of finished product, and are increasingly involved in all levels of production. This behavior increases the chance that an investor is more likely to invest in a country for which a two-path already exists. Also, since there is inherent risk in investment, the possibility of expropriation of fixed investments, investment is encouraged to cluster along particular countries that have a sustained interest in protecting investors, which also leads to triadic closures in the network. Another key factor is that much of FDI is vertical and thus dependent on trade liberalization. Preferential trade agreements can reinforce or expand these clusters through the expansion and liberalization of trade networks. "
+
+I think there is too much going on with this slide. I suggest nixing the descriptive measures, as it will take a lot of time to explain them, and they don't convey much of note. Rather, I do suggest incorporating two and three node schematics in which you depict a reciprocal dyad, and a transitive triad, respectively. I added my ERGM lecture to the MPSA_slides folder, in which you can find (and use) example visuals for these concepts. I also suggest breaking the treatment of reciprocity and transitivity into one slide for each. You don't need to spend more time on these concepts, but presenting major concepts as one per slide helps to emphasize each concept. Don't be afraid of white space on slides, and always assume that you'll be presenting on a tiny screen. When you are speaking about these two concepts, it is most important that you (1) clearly identify the concept, hence the visual, and (2) explain why we think the network will exhibit this dependence pattern. I would not mention the conditional-on-development hypothesis at all, as time in an MPSA presentation is very limited and we do not test this hypothesis. Also, at this point, I would not say that we "estimate" these dependencies. Rather, we theorize that they will characterize the FDI network. In the transitivity paragraph, the content starting with, "With large MNCs", through the end is quite good. This is the style of content we need for both reciprocity and transitivity, along with clear definitions of these concepts.
+
+*************
+*************
+
+*** Slide 4/12 ***
+
+"%Our dependent variable is from recently made available data by UNCTAD. It covers 2001 to 2012. We use FDI stock levels since we take the log and FDI stock has fewer negative values that need to be converted to zeros. Although, we include a lagged dependent variable, so our covariates are estimating remaining variation, which is FDI flows.  
+  
+%Dyad: Alongside the network terms we estimate several dyad-level relationships. We begin with gravity variables , which have been the workhorse in the trade and FDI literature. Gravity variables include the logged product of the dyad's GDPs and the logged euclidean distance. Binary variables in the model include contiguity, defense treaties, common language, and former colonial ties, for which we expect positive correlations. The last dyad level covariate is PTA depth, which we argue is related to transitivity. This depth measurement comes from a recent dataset that used 48 different dichotomous variables, such as trade in services and SPS measures to create a latent measure of trade agreement depth.
+
+%Node: We also include five node level covariates for which we estimate both their relationship with receiving FDI and sending FDI.  GDP per capita represents factor endowments for a country. If FDI mainly flows from capital rich countries to labor rich countries, we expect it to be positive for the origin node and negative for the destination node. Growth rate, as a proxy for general economy health, should be positive for both directions. Literature for the democracy score, using the common Polity IV measure, is inconclusive, but there is a general expectation that liberal markets institutions found in democracies will attract more FDI. Political Violence, which can inversely proxy for political stability, is important for investors to consider since a change in government can result in new investment conditions. Thus, we expect it to be negatively related to FDI flows for both directions. Trade openness would be positive for both directions given the complementary relationship between trade and FDI."
+
+I recommend against marching through this list. It is fine to have the list up on the slides, but in this slide's transcript we are providing too little detail for so many variables, yet taking up a lot of presentation time. I would just characterize covariates as us adjusting for variables commonly used in the literature.
+
+*************
+*************
+
+
+*** Slide 5/12 ***
+
+"The exponential random graph model MLE is approximated using MCMC because of computation limitations. This works well due to the law of large numbers and we use 10,000 MCMC samples for our estimations. Here we sample from a Poison distiribution, noted as h(y). Theta is the exogenous covariates, g(y) includes the network statistics, and kappa is a normalizing constant that ensures the probabilities sum to one. For this model we use both the sum of edges and the fractional moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fractional moment is a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, by having non-zero values be distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph."
+
+See slide 6 in my ERGM slides.
+
+*************
