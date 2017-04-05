@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19320\viewh14240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 *** Format: Slide Number is given between triple asterisks ***\
+\
+"Current text is given in quotation marks"\
+\
+Comments are given below outside of quotes.\
+\
+*************\
+*************\
+\
+\
+*** Slide 1/15 ***\
+\
+\'93Good afternoon and thank you for the opportunity to present this paper today on FDI networks. My name is John Schoeneman and I am currently a PhD candidate at Penn State. My coauthors, Dr. Zhu and Dr. Desmarais, are both professors at Penn State.\'94\
+\
+\
+\
+\
+\
+*************\
+*************\
+\
+\
+*** Slide 2/15 ***\
+\
+"Foreign Direct Investment has grown over the years in magnitude and the number of destinations as well as senders, creating an intricate web of relationships for both trade and investment. Alongside of this increase, scholars have sought to explain who sends FDI and who receives it with a number of economic and political variables.  Historically, statistical models that have been used to test theories rely on the assumption that countries and pairs of countries are independent of one another. We argue that for most  foreign direct investment flows, and most applications, that this assumption is overly optimistic. This lack of independence though is not our only motivator to study the network of FDI. We argue that dependence terms such as reciprocity and clustering are theoretically important as well and present hypotheses for them. Furthermore, we test these network terms simultaneously with a selection of exogenous variables that have been found to be important in the literature. "\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+*************\
+*************\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+*** Slide 3/15 ***\
+\
+" We focus on two network dependencies in our model and provide theoretical reasons for them. The first is reciprocity, also known as mutuality. For the FDI network, this statistic is higher when the more FDI country i sends to country j, the more likely country j is to send more FDI to country i. As with trade, expansion of foreign firms into a country's market is generally met with some opposition by the owners of similar firms. The political route to resolve this conflict is through reciprocal agreements. This allows politicians to build up sufficient support to remove barriers for FDI by granting the opposing firms or other sectors of the economy access to new markets\'94\
+\
+\
+*************\
+*************\
+\
+*** Slide 4/15 ***\
+\
+\
+\
+"The second network dependency we estimate is transitivity, also known as the clustering coefficient. The transitivity network statistic is a triadic closure that is not a loop. Put another way, the stronger the two-path between country i and j, the higher the likelihood is of a stronger tie between i and j. Global production supply chains are increasingly complex and disaggregated. With large MNCs being the dominant players in global trade networks, they often invest in multiple countries, even for only one type of finished product, and are increasingly involved in all levels of production. This behavior increases the chance that an investor is more likely to invest in a country for which a two-path already exists. Also, since there is inherent risk in investment, the possibility of expropriation of fixed investments, investment is encouraged to cluster along particular countries that have a sustained interest in protecting investors, which also leads to triadic closures in the network. Another key factor is that much of FDI is vertical and thus dependent on trade liberalization. Preferential trade agreements can reinforce or expand these clusters through the expansion and liberalization of trade networks. \'93\
+\
+*************\
+*************\
+\
+\
+*** Slide 5/15 ***\
+\
+" Our dependent variable is from recently made available data by UNCTAD. It covers 2001 to 2012. We use FDI stock levels since we take the log and FDI stock has fewer negative values that need to be converted to zeros. Although, we include a lagged dependent variable, so our covariates are estimating remaining variation, which is FDI flows.  \
+ \
+ We include a number of dyadic and node level covariates in the model that have been commonly used in the literature. They are listed below with their expected relationship. Node level covariates are included in the model both for sending nodes and receiving node."\
+\
+\
+\
+*************\
+*************\
+\
+*** Slide 6/15 ***\
+\
+\'93We use the  count exponential random graph model (ERGM) for estimating the network dependencies and exogenous covariates The exponential random graph model MLE is approximated using MCMC because of computation limitations and the intractability of the normalizing constant, kappa. The Poisson reference function is used to parameterize the components of our model that are edge-specific, noted as h(y). Theta is the exogenous covariates and g(y) includes the network statistics.\'94\
+\
+*************\
+*************\
+\
+\
+*** Slide 7/15 ***\
+\
+"For this model we use both the sum of edges and the fractional moment of edges. The first here is analogous to an intercept term, which is the sum of all edges and the fractional moment is a variance stabilizer. The non-zero term allows us to account for zero-inflation, here roughly 80% of the possible edges, by having non-zero values be distributed conditional on not being zero. This modifies the top equation by taking the product of two different thetas, one for non-zero values and another for the entire graph. "\
+\
+\
+*************\
+*************\
+\
+\
+*** Slide 8/15 ***\
+\
+\'93Reciprocity is estimated as the minimum of the dyad, which is that the conditional probability for a particular value of  Yij is deflated by the theta for mutuality for every unit by which Yi,j is less than Yj,i. Or put differently, larger minimum values increase the value of reciprocation. \
+\
+This specification for transitive weights measures weakest two-path between nodes i and j. The statistic is then the sum over the dyads (i, j) of the  strongest two-path from i to j where the strength of the two-path is measured by the minimum edge value in the two-path. Here the effect can be interpreted as the stronger the two-path, the higher the FDI from i to j and conversely the more FDI there is from i to j, the stronger the two-path (Krivitsky 2011)%\
+\
+\
+*************\
+*************\
+\
+*** Slide 9/15 ***\
+\
+\'93Dyadic covariates are estimated by taking the sum of the product of the edge value and the dyad covariate value. Node covariates are estimated by taking the sum of the covariate over the FDI for both out-degree and in-degree.\'94\
+\
+*************\
+*************\
+\
+*** Slide 10/15 ***\
+\
+"To evaluate model fit, we subtract the network model BIC from the independent model, meaning that higher numbers indicate better fit. We use BIC since it is robust against increases in model fit simply due to added complexity. Here we see that for every year, inclusion of the network structural dependencies improves model fit."\
+\
+\
+*************\
+*************\
+\
+*** Slide 11/15 ***\
+\
+"Also, and most important, is that the network terms,  reciprocity and transitivity, are significant and positive , with the bars representing 95% CI, for all years. This supports our hypotheses regarding the network dependencies and demonstrates that models that do not control for these dependencies violate independence assumptions.\'94\
+\
+\
+*************\
+*************\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+*** Slide 12/15 ***\
+\
+\'93Network statistics are not readily interpreted as OLS coefficients and so plots below provide a way to interpret them. The 'residual' here is the difference between the simulated edge values from the 2012 count ERGM and the value that would be predicted using only the exogenous covariates. And so the mean bar for reciprocity shows the average increase, on the log scale, in addition to that predicted by the exogenous covariates of the FDI from i to j, given a particular increase of the value of j to i. Similarly for transitive edge values, an increase in the highest minimum value of the edge for all the two-paths from i to j, we expect an an average increase in the FDI from i to j.\'94\
+\
+*************\
+*************\
+\
+*** Slide 13/15 ***\
+\
+\'93To illustrate how estimates can be biased, I have included here six of the exogenous covariates from the models, although there were shifts in more than these six. The black points are for models without network dependency controls and the orange points are for the models that include them. We see that the estimates shift in magnitude in the opposite direction and in some instances move from being significant at the 95% level to insignificant. Therefore, by assuming away these dependencies, scholars are in danger of committing Type I errors despite readily available techniques to avoid this pitfall.\'93\
+\
+*************\
+*************\
+\
+\
+*** Slide 14/15 ***\
+\
+\'93To conclude, FDI flows are part of a complex network. The structural dependencies of the network are substantively important and offer insights to scholars attempting to explain the determinants of FDI flows and these dependencies cannot be assumed to be absent even if the scholar is uninterested in explain them. We offer contributions to both of these in this paper.\
+\
+The first is including a cyclical weight term to compare the significance between transitive triads and cyclical triads. And second, we plan to adopt variations of the ERGM count model that allow us to account for network dynamics beyond the simple inclusion of the lagged FDI stock level, such as TERGM. Thank you again for allowing me to present here today and I look forward to hearing your suggestions on how this project can be improved.\'94\
+\
+*************\
+*************\
+\
+*** Slide 15/15 ***\
+\
+\
+*************\
+*************\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+}
