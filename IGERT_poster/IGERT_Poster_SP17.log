@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  5 APR 2017 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  6 APR 2017 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,9 +516,30 @@ Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip69
+\RaggedLeftLeftskip=\skip70
+\RaggedRightLeftskip=\skip71
+\CenteringRightskip=\skip72
+\RaggedLeftRightskip=\skip73
+\RaggedRightRightskip=\skip74
+\CenteringParfillskip=\skip75
+\RaggedLeftParfillskip=\skip76
+\RaggedRightParfillskip=\skip77
+\JustifyingParfillskip=\skip78
+\CenteringParindent=\skip79
+\RaggedLeftParindent=\skip80
+\RaggedRightParindent=\skip81
+\JustifyingParindent=\skip82
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip69
+\@mathmargin=\skip83
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -569,8 +590,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen177
 \lineht@=\dimen178
 \@envbody=\toks32
-\multlinegap=\skip70
-\multlinetaggap=\skip71
+\multlinegap=\skip84
+\multlinetaggap=\skip85
 \mathdisplay@stack=\toks33
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -608,7 +629,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 (/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks34
-\labelindent=\skip72
+\labelindent=\skip86
 \enit@outerparindent=\dimen192
 \enit@toks=\toks35
 \enit@inbox=\box46
@@ -647,8 +668,8 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \page@free=\dimen202
 \premulticols=\dimen203
 \postmulticols=\dimen204
-\multicolsep=\skip73
-\multicolbaselineskip=\skip74
+\multicolsep=\skip87
+\multicolbaselineskip=\skip88
 \partial@page=\box48
 \last@line=\box49
 \maxbalancingoverflow=\dimen205
@@ -872,8 +893,11 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 51.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 <figures/PS_HOR_RGB_2C.png, id=31, 331.9602pt x 152.0079pt>
 File: figures/PS_HOR_RGB_2C.png Graphic file (type png)
 
@@ -908,46 +932,58 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2781) in paragraph at lines 93--93
+Underfull \hbox (badness 1270) in paragraph at lines 95--95
+\T1/ppl/m/n/10 reg-u-lar-i-ties re-gard-ing ex-oge-nous po-lit-i-cal and
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 95--95
 \T1/ppl/m/n/10 overlook the com-plex de-pen-den-cies that are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 95--95
+\T1/ppl/m/n/10 pre-hen-sive ex-po-nen-tial ran-dom graph model
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 93.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 93.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 95.
 Missing character: There is no ; in font nullfont!
 <figures/rl_plots/mass.pdf, id=37, 205.76875pt x 144.54pt>
 File: figures/rl_plots/mass.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/mass.pdf>
-Package pdftex.def Info: figures/rl_plots/mass.pdf used on input line 128.
+Package pdftex.def Info: figures/rl_plots/mass.pdf used on input line 122.
 (pdftex.def)             Requested size: 148.63376pt x 92.07077pt.
 
 <figures/rl_plots/distance.pdf, id=39, 205.76875pt x 144.54pt>
 File: figures/rl_plots/distance.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/distance.pdf>
-Package pdftex.def Info: figures/rl_plots/distance.pdf used on input line 128.
+Package pdftex.def Info: figures/rl_plots/distance.pdf used on input line 122.
 (pdftex.def)             Requested size: 138.35757pt x 92.07077pt.
 
 <figures/rl_plots/PTADepth.pdf, id=41, 205.76875pt x 144.54pt>
 File: figures/rl_plots/PTADepth.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/PTADepth.pdf>
-Package pdftex.def Info: figures/rl_plots/PTADepth.pdf used on input line 128.
+Package pdftex.def Info: figures/rl_plots/PTADepth.pdf used on input line 122.
 (pdftex.def)             Requested size: 138.35757pt x 92.07077pt.
 
 <figures/rl_plots/DestPolity.pdf, id=43, 205.76875pt x 144.54pt>
 File: figures/rl_plots/DestPolity.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/DestPolity.pdf>
-Package pdftex.def Info: figures/rl_plots/DestPolity.pdf used on input line 128
+Package pdftex.def Info: figures/rl_plots/DestPolity.pdf used on input line 122
 .
 (pdftex.def)             Requested size: 148.63376pt x 92.07077pt.
 
@@ -955,7 +991,7 @@ Package pdftex.def Info: figures/rl_plots/DestPolity.pdf used on input line 128
 File: figures/rl_plots/Mutuality.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/Mutuality.pdf>
-Package pdftex.def Info: figures/rl_plots/Mutuality.pdf used on input line 128.
+Package pdftex.def Info: figures/rl_plots/Mutuality.pdf used on input line 122.
 
 (pdftex.def)             Requested size: 138.35757pt x 92.07077pt.
 
@@ -964,153 +1000,133 @@ File: figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use figures/rl_plots/Transitivity.pdf>
 Package pdftex.def Info: figures/rl_plots/Transitivity.pdf used on input line 1
-28.
+22.
 (pdftex.def)             Requested size: 138.35757pt x 92.07077pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 159.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-[]$\T1/pcr/m/n/10 https : / / github . com /
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 187.
-<figures/fdiNet2011.pdf, id=49, 433.62pt x 433.62pt>
-File: figures/fdiNet2011.pdf Graphic file (type pdf)
-
-<use figures/fdiNet2011.pdf>
-Package pdftex.def Info: figures/fdiNet2011.pdf used on input line 187.
-(pdftex.def)             Requested size: 175.97198pt x 175.97243pt.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 187.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 158.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 187.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
 
-<figures/assortativity.png, id=50, 497.86pt x 379.4175pt>
-File: figures/assortativity.png Graphic file (type png)
+Underfull \hbox (badness 3281) in paragraph at lines 158--158
+[]\T1/ppl/m/n/10 Sum; Sum$[]$; Non-zero; Reci-procity;
+ []
 
-<use figures/assortativity.png>
-Package pdftex.def Info: figures/assortativity.png used on input line 187.
-(pdftex.def)             Requested size: 149.35915pt x 113.82613pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]\T1/ppl/m/n/10 Gravity(+); Con-ti-gu-ity(+); Com-mon
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 158--158
+\T1/ppl/m/n/10 Lan-guage(+); Four Types of De-fense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+\T1/ppl/m/n/10 Treaties(+); Colo-nial Re-la-tion-ships(+);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]\T1/ppl/m/n/10 GDP per capita(+/-); GDP Growth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+\T1/ppl/m/n/10 Rate(+/+); Polity IV(+/+); Po-lit-i-cal
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+<figures/fdiNet2011.pdf, id=49, 433.62pt x 433.62pt>
+File: figures/fdiNet2011.pdf Graphic file (type pdf)
+
+<use figures/fdiNet2011.pdf>
+Package pdftex.def Info: figures/fdiNet2011.pdf used on input line 215.
+(pdftex.def)             Requested size: 226.03044pt x 220.90886pt.
+
+Overfull \hbox (6.06628pt too wide) in paragraph at lines 215--215
+[] 
+ []
+
+<figures/mutualBoxplot.pdf, id=51, 578.16pt x 289.08pt>
+File: figures/mutualBoxplot.pdf Graphic file (type pdf)
+
+<use figures/mutualBoxplot.pdf>
+Package pdftex.def Info: figures/mutualBoxplot.pdf used on input line 215.
+(pdftex.def)             Requested size: 219.879pt x 87.1777pt.
+
+<figures/transitiveBoxplot.pdf, id=53, 578.16pt x 289.08pt>
+File: figures/transitiveBoxplot.pdf Graphic file (type pdf)
+
+<use figures/transitiveBoxplot.pdf>
+Package pdftex.def Info: figures/transitiveBoxplot.pdf used on input line 215.
+(pdftex.def)             Requested size: 219.879pt x 87.1777pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Overfull \hbox (6.55727pt too wide) in paragraph at lines 241--241
-\OML/cmm/b/it/10 g\OT1/cmr/bx/n/10 (\OML/cmm/b/it/10 y\OT1/cmr/bx/n/10 ) \OT1/c
-mr/m/n/10 = [][] [] []\OML/cmm/b/it/10 y[]\OML/cmm/m/it/10 ; [] [] []\OT1/cmr/m
-/n/10 (\OML/cmm/b/it/10 y[]\OML/cmm/m/it/10 ; \OML/cmm/b/it/10 y[]\OT1/cmr/m/n/
-10 )[][]\OML/cmm/m/it/10 ;$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
-
- []
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[2
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 250.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ [2
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
 es/rl_plots/mass.pdf> <./figures/rl_plots/distance.pdf> <./figures/rl_plots/PTA
 Depth.pdf> <./figures/rl_plots/DestPolity.pdf> <./figures/rl_plots/Mutuality.pd
-f> <./figures/rl_plots/Transitivity.pdf> <./figures/PS_HOR_RGB_2C.png> <./figur
-es/nsf.png> <./figures/bdss.png> <./figures/fdiNet2011.pdf> <./figures/assortat
-ivity.png>] (./IGERT_Poster_SP17.aux) ) 
+f> <./figures/rl_plots/Transitivity.pdf> <./figures/fdiNet2011.pdf> <./figures/
+mutualBoxplot.pdf> <./figures/transitiveBoxplot.pdf> <./figures/PS_HOR_RGB_2C.p
+ng> <./figures/nsf.png> <./figures/bdss.png>] (./IGERT_Poster_SP17.aux) ) 
 Here is how much of TeX's memory you used:
- 19393 strings out of 493089
- 414234 string characters out of 6134841
- 502868 words of memory out of 5000000
- 22457 multiletter control sequences out of 15000+600000
- 29868 words of font info for 58 fonts, out of 8000000 for 9000
+ 19497 strings out of 493089
+ 414774 string characters out of 6134841
+ 496801 words of memory out of 5000000
+ 22542 multiletter control sequences out of 15000+600000
+ 31451 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,92p,792b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/font
-s/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cmextra/cmmib5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cmextra/cmmib7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/up
-lb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pf
-b>
-Output written on IGERT_Poster_SP17.pdf (1 page, 1016910 bytes).
+ 62i,16n,92p,469b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/
+local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb>
+Output written on IGERT_Poster_SP17.pdf (1 page, 971967 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 176 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

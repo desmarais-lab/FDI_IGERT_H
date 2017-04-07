@@ -23,7 +23,7 @@
 \usepackage{bm}
 \usepackage{graphicx} % Required for including images
 \graphicspath{{figures/}} % Directory in which figures are stored
-
+\usepackage{ragged2e}
 \usepackage{amsmath} % For typesetting math
 \usepackage{amssymb} % Adds new symbols to be used in math mode
 
@@ -85,28 +85,22 @@ Pennsylvania State University}} % Author names and institution
 %	introduction
 %----------------------------------------------------------------------------------------
 
-\headerbox{Introduction}{name=objectives,column=0,row=0}{
+\headerbox{Introduction}{name=introduction,column=0,row=0}{
 
-The political economy of FDI literature has established several theoretical claims and empirical regularities regarding exogenous political and economic determinants of FDI inflows.  However, existing studies---based on monadic and to a lesser degree, dyadic regression models---overlook the complex dependencies that are likely to characterize the network. Recent developments in methodology for studying international relations show that the regression framework is typically inadequate for quantitatively modeling dyadic relational data, such as FDI flows. In this paper, we integrate hypotheses regarding exogenous determinants and novel hypotheses regarding structural dependencies into a comprehensive exponential random graph model (ERGM) for weighted networks.
+The political economy of FDI literature has established several theoretical claims and empirical regularities regarding exogenous political and economic determinants of FDI inflows.  However, existing studies---based on monadic and to a lesser degree, dyadic regression models---overlook the complex dependencies that are likely to characterize the network. \\
+
+In this paper, we integrate hypotheses regarding exogenous determinants and novel hypotheses regarding structural dependencies into a comprehensive exponential random graph model (ERGM) for weighted networks.$^1$
 
 \vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
 }
 
-%----------------------------------------------------------------------------------------
-%	Theory
-%----------------------------------------------------------------------------------------
 
-\headerbox{Theory}{name=introduction,column=1,row=0,bottomaligned=objectives}{
-MNC expansion via FDI often face opposition from host countries due to concerns over national security and protection for local firms that do not want to compete with foreign firms. To overcome this political opposition, countries enter into reciprocal agreements. Therefore we expect one structural dependency to be mutuality, which we measure as the increase of FDI given the minimum value in the dyad.\\
-The second structural dependency we model is transitivity, or the likelihood that country A, will send FDI to country C, given that country A sends FDI to country B and country B send FDI to country C. We expect this clustering given the fragmented global supply chains for production and the vertical FDI that follows. 
-
-}
 
 %----------------------------------------------------------------------------------------
 %	RESULTS
 %----------------------------------------------------------------------------------------
 
-\headerbox{Key Results}{name=results,column=2,span=2,row=0}{
+\headerbox{Select Results}{name=results,column=1,span=2,row=0}{
 
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
@@ -116,7 +110,7 @@ Log-GDP Product & Distance  & PTA Depth  \\
 \includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/PTADepth.pdf}\\
 
 
-Destination Polity & Mutuality & Transitivity \\ 
+Destination Polity & Reciprocity & Transitivity \\ 
 \includegraphics[height=.14\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{figures/rl_plots/DestPolity.pdf} 
  &
 \includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/Mutuality.pdf}   &
@@ -128,10 +122,118 @@ Bars represents 95\% Confidence intervals. Black triangles are estimates without
 }
 
 %----------------------------------------------------------------------------------------
+% Data 
+%----------------------------------------------------------------------------------------
+
+\headerbox{Model Specification}{name=data,column=3,row=0}{ % This block's bottom aligns with the bottom of the conclusion block
+
+
+\begin{itemize}[leftmargin=4mm]\compresslist
+
+\item{Dependent Variable}
+\begin{itemize}
+\item{Bilateral FDI statistics, 2001-2012}
+\end{itemize}
+\item{Network Statistics}
+\begin{itemize}
+\item{Sum; Sum$^{1/2}$; Non-zero; Reciprocity; Transitive Weights}
+\end{itemize}
+\item{Dyad-level Covariates (expected)}
+\begin{itemize}
+\item{Gravity(+); Contiguity(+); Common Language(+); Four Types of Defense Treaties(+); Colonial Relationships(+); PTA depth(+)}
+\end{itemize}
+\item{Node-level Covariates (sender/receiver)}
+\begin{itemize}
+\item{GDP per capita(+/-); GDP Growth Rate(+/+); Polity IV(+/+); Political Violence(-/-); Trade Openness(+)}
+\end{itemize}
+\end{itemize}
+
+%\textbf{Method}
+%\begin{itemize}[leftmargin=4mm]\compresslist
+%\item{Exponential Random Graph Model for Weighted Networks$^1$}
+%\vspace{5mm}
+%\end{itemize}
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	Theory
+%----------------------------------------------------------------------------------------
+
+\headerbox{Dependence Hypotheses}{name=theory,column=0,below=introduction}{
+
+MNC expansion via FDI often face opposition from host countries due to concerns over national security and protection for local firms that do not want to compete with foreign firms. To overcome this political opposition, countries enter into reciprocal agreements. Therefore we expect one structural dependency to be mutuality, which we measure as the increase of FDI given the minimum value in the dyad. For the model reciprocity is defined as:
+
+\vspace{.2cm}
+\hspace{2cm}$\sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$
+\vspace{.2cm}
+
+
+The second structural dependency we model is transitivity, or the likelihood that country A, will send FDI to country C, given that country A sends FDI to country B and country B send FDI to country C. We expect this clustering given the fragmented global supply chains for production and the vertical FDI that follows. For the model transitivity is defined as: 
+
+\vspace{.2cm}
+$ \sum_{(i,j) {\in} \mathbb{Y}}\min\bigg( \bm{y}_{i,j}, \max\limits_{k{\in}N}\Big(\min(\bm{y}_{i,k},\bm{y}_{k,j})\Big) \bigg)$ 
+\vspace{.2cm}
+
+}
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Network Plot
+%----------------------------------------------------------------------------------------
+
+\headerbox{Network Plots}{name=network,column=1,span=2,row=0,below=results,above=references,bottomaligned=theory}{
+
+\begin{multicols}{2}
+
+
+Plot for 2011: Scale from Blue to red represents autocratic regimes to democratic regimes
+\includegraphics[scale=.6, clip=true, trim=2cm 0cm 0cm 2.3cm]{fdiNet2011.pdf}
+
+
+%------------------------------------------------
+
+
+\centering
+
+\vfill{Reciprocity}
+\includegraphics[scale=.4, clip=true, trim=1cm 1cm 0cm 1.5cm]{mutualBoxplot.pdf}
+Transitivity
+\includegraphics[scale=.4, clip=true, trim=1cm 1cm 0cm 1.5cm]{transitiveBoxplot.pdf}
+
+\end{multicols}
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	Results
+%----------------------------------------------------------------------------------------
+
+\headerbox{Interpretation}{name=results2,column=3,below=data,bottomaligned=theory}{ 
+
+
+
+
+
+
+}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
 %	Acknowledgement
 %----------------------------------------------------------------------------------------
 
-\headerbox{Acknowledgement}{name=references,column=0,above=bottom}{
+\headerbox{Acknowledgement}{name=nsf,column=0,above=bottom}{
 
 This material is based on work supported by the National Science Foundation under IGERT Grant DGE-1144860, Big Data Social Science.}
 
@@ -139,10 +241,10 @@ This material is based on work supported by the National Science Foundation unde
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\headerbox{References}{name=futureresearch,column=1,span=2,aligned=references,above=bottom}{ % This block is as tall as the references block
+\headerbox{Reference}{name=references,column=1,span=2,aligned=nsf,above=bottom}{ % This block is as tall as the references block
 
 
-\small{1. D{\"u}r, A., Baccini, L., \& Elsig, M. (2014). The design of international trade agreements: Introducing a new dataset. The Review of International Organizations, 9(3), 353-375.}
+\small{1. Krivitsky, Pavel N. 2016. ergm.count: Fit, Simulate and Diagnose Exponential-Family Models for Networks with Count Edges. The Statnet Project (\texttt{http://www.statnet.org}). R package version 3.2.2.\url{http://CRAN.R-project.org/package=ergm.count}}
 
 }
 
@@ -150,99 +252,14 @@ This material is based on work supported by the National Science Foundation unde
 %	CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\headerbox{Contact Information}{name=contact,column=3,aligned=references,above=bottom}{ % This block is as tall as the references block
+\headerbox{Contact Information}{name=contact,column=3,aligned=nsf,above=bottom}{ % This block is as tall as the references block
 
 \begin{description}\compresslist
-\item[Web] \url{https://github.com/desmarais-lab/FDI_IGERT_H}
+\item[Department]  Political Science, Pond Labratory
+\item[Web]  \url{github.com/desmarais-lab}
 \item[Email] jbs5686@psu.edu
 \end{description}
 }
-
-%----------------------------------------------------------------------------------------
-%	Network Plot
-%----------------------------------------------------------------------------------------
-
-\headerbox{Network Plots}{name=conclusion,column=2,span=2,row=0,below=results,above=references}{
-
-\begin{multicols}{2}
-\begin{center}
-\captionof{figure}{Plot for 2011. Blue represents autocratic regimes and red represents democratic regimes}
-\includegraphics[width=0.8\linewidth]{fdiNet2011.pdf}
-\end{center}
-
-%------------------------------------------------
-
-\begin{itemize}\compresslist
-
-
-\item{Clustering, based on the edges between nodes, which here is FDI flow between countries, is visually present.} 
-
-\item{ It also appears that regime type plays a role in clustering as well, with red, democratic nodes often close to one another, albeit weakly. This assortativity is measured below.} 
-
-\includegraphics[scale= .3]{assortativity.png}
-
-\end{itemize}
-
-\end{multicols}
-}
-
-%----------------------------------------------------------------------------------------
-% Data and Software
-%----------------------------------------------------------------------------------------
-
-\headerbox{Data}{name=method,column=0,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
-
-\begin{itemize}\compresslist
-\item{Bilateral FDI statistics from UNCTAD, 2001-2012}
-\item{Dyad-level Covariates}
-\begin{itemize}
-\item{Gravity +} 
-\item{Contiguity +} 
-\item{Common Language +} 
-\item{Four Types of Defense Treaties +}  
-\item{Colonial Relationships +}
- \item{PTA depth$^{1}$ + }
-\end{itemize}
-\item{Node-level Covariates}
-\begin{itemize}
-\item{GDP per capita +/-} 
-\item{GDP Growth Rate +} 
-\item {Polity IV +} 
-\item{Political Violence - } 
-\item{Trade Openness +}
-\end{itemize}
-\end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
-%	Count Model
-%----------------------------------------------------------------------------------------
-
-\headerbox{ERGM Count Model}{name=results2,column=1,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
-$ \text{Pr}_{\bm{\theta};h;\bm{g}}( \bm{Y}=\bm{y} )=\frac{ h(\bm{y})\text{exp}( \bm{\theta} \cdot \bm{g} (\bm{y}) )}{\bm{\kappa}_{h,\bm{g}}(\bm{\theta})} $\\
-
-$\text{Sum}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}$\\
-
-$\text{Sum, Fractional Moment}:\bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}\bm{y}_{i,j}^{1/2}$\\
-
-$\text{Non-Zero}: \bm{g}_k = \sum_{(i,j) {\in} \mathbb{Y}} \mathbb{I}(\bm{y}_{i,j} \neq 0)$\\
-
-$ \text{Reciprocity}: \bm{g(y)} = \sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$\\
-
-$\text{Transitive Weights}: \\\bm{g(y)} =  \sum_{(i,j) {\in} \mathbb{Y}}\min\bigg( \bm{y}_{i,j}, \max\limits_{k{\in}N}\Big(\min(\bm{y}_{i,k},\bm{y}_{k,j})\Big) \bigg),$\\ 
-
-$ \text{Dyadic Covariate}: \bm{g(y,x)} = \sum_{(i,j)} \bm{y}_{i,j}x_{i,j}$ \\
-
-$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$\\
-
-$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$\\
-
-
-}
-
-%----------------------------------------------------------------------------------------
-
-
 
 
 \end{poster}
