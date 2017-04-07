@@ -33,7 +33,7 @@ Comments are given below outside of quotes.
 
 *** Slide 3/15 ***
 
- "The list below is a selection of the exogenous covariates that have been examined in the literature. Standard economic models attribute cross-border capital movements primarily to relative factor endowments, market size, and transportation and trade cost. As with trade, much of this is controlled for using the gravity model, and a selection of other factors such trade openness. However, noting the risk of expropriation, the recent political economy of FDI literature emphasizes the importance of political institutions in constraining host government's opportunistic behavior. Scholars suggest that political constraints  and rule of law that are often found in democratic governance. Also analyzed in the literature is the participation in international institutions such as defense treaties and preferential trade agreements (or PTAs) that help to ensure policy credibility and provide investor protection, thereby luring in foreign investors. We add to political economy model two dependency terms."
+ "The list below is a selection of the exogenous covariates that have been examined in the literature. Standard economic models attribute cross-border capital movements primarily to relative factor endowments, market size, and transportation and trade cost. As with trade, much of this is controlled for using the gravity model, and a selection of other factors such trade openness. However, noting the risk of expropriation, the recent political economy of FDI literature emphasizes the importance of political institutions in constraining host government's opportunistic behavior. Scholars suggest that these institutions include political constraints  and rule of law that are often found in democratic governance. Also analyzed in the literature is the participation in international institutions such as defense treaties and preferential trade agreements (or PTAs) that help to ensure policy credibility and provide investor protection, thereby luring in foreign investors. We add to political economy model two dependency terms."
 
 
 *************
@@ -56,7 +56,7 @@ Comments are given below outside of quotes.
 
 "The second network dependency we estimate is transitivity, also known as the clustering coefficient. The transitivity network statistic is a triadic closure that is not a loop. Put another way, the stronger the two-path between country i and j, the higher the likelihood is of a stronger tie between i and j. 
 
-%Large MNCs are the dominant players in global trade networks, often investing in multiple countries, even for only one type of finished product, and are increasingly involved in all levels of production as they seek to increase profits. This expansion increases the chance that an investor is more likely to invest in a country for which a two-path already exists since it is already part of the production network. For instance, Volkswagen's investment in Skoda Auto in Czech Republic not only attracted other auto makers such as PSA Peugeot and Toyota, but also international suppliers of parts and components to acquire local firms or build new factories; ``As of 2002, there were 270 firms operating in the Czech Republic, representing 45 percent of the top 100 world suppliers of automotive parts and components.''
+%Large MNCs are the dominant players in global trade networks, often investing in multiple countries, even for only one type of finished product, and are increasingly involved in all levels of production as they seek to increase profits. This expansion increases the chance that an investor is more likely to invest in a country for which a two-path already exists since it is already part of the production network. For instance, Volkswagen's investment in Skoda Auto in Czech Republic not only attracted other auto makers such as Toyota, but also international suppliers of parts and components to acquire local firms or build new factories.
 
  %Another key factor is that this vertical FDI is dependent on trade liberalization. Therefore PTAs can reinforce or expand these triadic clusters through the expansion of trade networks. The PTAs can reduce the risk of expropriation explicitly and by reinforcing a sustained interest in protecting investors. A prominent example is the creation of the European Union led to rapid increase of intra-region FDI."
 
@@ -75,7 +75,7 @@ Comments are given below outside of quotes.
 
 *** Slide 6/15 ***
 
-“We use the  count exponential random graph model (ERGM) for estimating the network dependencies and exogenous covariates The exponential random graph model maximum likelihood estimation is approximated using Markov chain Monte Carlo simulations  because of computation limitations and the intractability of the normalizing constant, kappa. The Poisson reference function is used to parameterize the components of our model that are edge-specific, noted as h(y). Theta is the exogenous covariates and g(y) includes the network statistics.”
+“We use the  count exponential random graph model (ERGM) for estimating the network dependencies and exogenous covariates.  
 
 *************
 *************
