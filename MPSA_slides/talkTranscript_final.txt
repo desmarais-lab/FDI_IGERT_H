@@ -33,7 +33,7 @@ Comments are given below outside of quotes.
 
 *** Slide 3/15 ***
 
- "The list below is a selection of the exogenous covariates that have been examined in the literature. Standard economic models attribute cross-border capital movements primarily to relative factor endowments, market size, and transportation and trade cost. As with trade, much of this is controlled for using the gravity model, and a selection of other factors such trade openness. However, noting the risk of expropriation, the recent political economy of FDI literature emphasizes the importance of political institutions in constraining host government's opportunistic behavior. Scholars suggest that these institutions include political constraints  and rule of law that are often found in democratic governance. Also analyzed in the literature is the participation in international institutions such as defense treaties and preferential trade agreements (or PTAs) that help to ensure policy credibility and provide investor protection, thereby luring in foreign investors. We add to political economy model two dependency terms."
+ "The list below is a selection of the exogenous covariates that have been examined in the literature. Standard economic models attribute cross-border capital movements primarily to relative factor endowments, market size, and transportation and trade cost. As with trade, much of this is controlled for using the gravity model, and a selection of other factors such trade openness. Noting the risk of expropriation, the recent political economy of FDI literature emphasizes the importance of political institutions in constraining host government's opportunistic behavior. Scholars suggest that these institutions include political constraints  and rule of law that are often found in democratic governance. Also analyzed in the literature is the participation in international institutions such as defense treaties and preferential trade agreements (or PTAs) that help to ensure policy credibility and provide investor protection, thereby luring in foreign investors. We add to political economy model two dependency terms."
 
 
 *************
@@ -85,7 +85,7 @@ Comments are given below outside of quotes.
 
 "Reciprocity for the model is estimated for the minimum of the dyad, which is the conditional probability that a particular value of  Yij is deflated by theta for for every unit by which Yi,j is less than Yj,i. Or put differently, larger minimum values increase the value of reciprocation. 
 
-% This specification for transitive weights measures the effect of the highest combined two-path between nodes which is defined as the highest minimum value of the two edges. Here the effect can be interpreted as the stronger the two-path, the higher the FDI from i to j and conversely the more FDI there is from i to j, the stronger the two-path (Krivitsky 2011) "
+% This specification for transitive weights measures the effect of the strongest combined two-path between nodes which is defined as the highest minimum value of the two edges. Here the effect can be interpreted as the stronger the two-path, the higher the FDI from i to j and conversely the more FDI there is from i to j, the stronger the two-path (Krivitsky 2011) "
 
 
 *************
@@ -94,7 +94,7 @@ Comments are given below outside of quotes.
 
 *** Slide 8/15 ***
 
-“To evaluate model fit, we fit the model with network terms and with network terms. We then subtract the network model Bayesian Information criterion from that of the independent model, meaning that higher numbers indicate better fit. We use BIC since it is robust against increases in model fit simply due to added complexity. Here we see that for every year, inclusion of the network structural dependencies improves model fit.”
+“To evaluate model fit, we fit the model without network terms and with network terms. We then subtract the network model Bayesian Information criterion from that of the independent model, meaning that higher numbers indicate better fit. We use BIC since it is robust against increases in model fit simply due to added complexity. Here we see that for every year, inclusion of the network structural dependencies improves model fit.”
 
 
 *************
@@ -109,7 +109,7 @@ Comments are given below outside of quotes.
 
 *** Slide 10/15 ***
 
-"Network statistics are not readily interpreted as OLS coefficients and so plots below provide a way to interpret them. The 'residual' here on the y-axis is the difference between the simulated edge values from the 2012 count ERGM and the value that would be predicted using only the exogenous covariates.The x-axis is fixed value of FDI from country j to i. And so if country j sent 15 units to country i, the model only using exogenous covariates would underestimate the simulated value between i to j by 3 units, all of this on the log scale. The same is true for transitivity, but here the predictive edge on the x-axis is the highest minimum value of the edge in the two-path from i to j."
+"Network statistics are not readily interpreted as OLS coefficients and so the plots below provide a way to interpret them. The 'residual' here on the y-axis is the difference between the simulated edge values from the 2012 count ERGM and the value that would be predicted using only the exogenous covariates.The x-axis is a fixed value of FDI from country j to i. And so if country j sent 15 units to country i, the model only using exogenous covariates would underestimate the simulated value between i to j by 3 units, all of this on the log scale. The same is true for transitivity, but here the predictive edge on the x-axis is the highest minimum value of the edge in the two-path from i to j."
 
 
 *************
@@ -117,7 +117,7 @@ Comments are given below outside of quotes.
 
 *** Slide 11/15 ***
 
-"To illustrate how estimates can be biased, I have included here six of the exogenous covariates from the models, although there were shifts in more than these six. The black points are for models without network dependency controls and the orange points are for the models that include them. One covariate here that has received a lot of attention in the literature here is the Polity. We see that the estimates shift in magnitude in the opposite direction and in some instances move from being significant at the 95% level to insignificant.  Therefore, by assuming away these dependencies, scholars are in danger of committing Type I errors despite readily available techniques to avoid this pitfall.”
+"To illustrate how estimates can be biased, I have included here six of the exogenous covariates from the models, although there were shifts in more than these six. The black points are for models without network dependency controls and the orange points are for the models that include them. One covariate here that has received a lot of attention in the literature here is Polity. We see that the estimates shift in magnitude in the opposite direction and in some instances move from being significant at the 95% level to insignificant.  Therefore, by assuming away these dependencies, scholars are in danger of committing Type I errors despite readily available methods to avoid this pitfall.”
 
 
 *************
@@ -128,9 +128,29 @@ Comments are given below outside of quotes.
 
 “ To conclude, FDI flows are part of a complex network. We offer both theoretical contributions to understanding the structural dependencies of the network that are substantively important and provide evidence that these dependencies cannot be assumed to be absent even if the scholar is uninterested in explaining them.
 
-% For future iterations of the model we plan to adopt variations of the ERGM count model that allow us to account for network dynamics beyond the simple inclusion of the lagged FDI stock level. We are also exploring methodological paths that would allow us to condition the structural dependencies such as reciprocity on the development level mix within a dyad. Currently though the model and associated package do not allow for that in the binary models do. Thank you again for allowing me to present here today and I look forward to hearing your suggestions.”
+% For future iterations of the model we plan to adopt variations of the count ERGM  that allow us to account for network dynamics beyond the simple inclusion of the lagged FDI stock level. We are also exploring methodological paths that would allow us to condition the structural dependencies such as reciprocity on the development level mix within a dyad. Currently though the model and associated package do not allow for that as the binary models do. Thank you again for allowing me to present here today and I look forward to hearing your suggestions.”
 
 *************
 *************
 
 Slide 13-15: additional covariates and model terms
+
+
+
+
+
+Notes from Dr. Staat:
+
+- Use a different measure than Polity, such as the one Susan uses (V dem) 
+- Linders statin judicial independence measure.
+
+- what is the exogenous variables that determine the initial state of the network.
+
+
+
+
+
+Susan: the effect is related to contracts, that is increased contract intensity/quality, we are more likely to see vertical FDI. Why not increases in horizontal FDI as well?
+
+Julian: Endogeneity could be an issue in determining the causal direction. Is it possible that there are alternative  reasons driving the lack of FDI in Italy? 
+

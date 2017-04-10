@@ -103,21 +103,21 @@ In this paper, we integrate hypotheses regarding exogenous determinants and nove
 \headerbox{Select Results}{name=results,column=1,span=2,row=0}{
 
 \centering
-\begin{tabular}{c@{\hskip -.4cm}c@{\hskip -.4cm}c}
+\begin{tabular}{c@{\hskip -.1cm}c@{\hskip -.1cm}c@{\hskip -.1cm}}
 Log-GDP Product & Distance  & PTA Depth  \\
-\includegraphics[height=.14\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{figures/rl_plots/mass.pdf}    &
-\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/distance.pdf}   &
-\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/PTADepth.pdf}\\
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .4cm 0cm .1cm]{figures/rl_plots/mass.pdf}    &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .4cm 0cm .1cm]{figures/rl_plots/distance.pdf}   &
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .4cm 0cm .1cm]{figures/rl_plots/PTADepth.pdf}\\
 
 
 Destination Polity & Reciprocity & Transitivity \\ 
-\includegraphics[height=.14\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{figures/rl_plots/DestPolity.pdf} 
+\includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/DestPolity.pdf} 
  &
 \includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/Mutuality.pdf}   &
 \includegraphics[height=.14\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/rl_plots/Transitivity.pdf} \\  
 \end{tabular}
 \vfill
-Bars represents 95\% Confidence intervals. Black triangles are estimates without controlling for network dependencies, Orange circles are estimates with network controls.
+Bars represents 95\% Confidence intervals. Black triangles are coefficient estimates without controlling for network dependencies. Orange circles are estimates with network controls.
 
 }
 
@@ -163,16 +163,18 @@ Bars represents 95\% Confidence intervals. Black triangles are estimates without
 
 \headerbox{Dependence Hypotheses}{name=theory,column=0,below=introduction}{
 
-MNC expansion via FDI often face opposition from host countries due to concerns over national security and protection for local firms that do not want to compete with foreign firms. To overcome this political opposition, countries enter into reciprocal agreements. Therefore we expect one structural dependency to be mutuality, which we measure as the increase of FDI given the minimum value in the dyad. For the model reciprocity is defined as:
+MNC expansion via FDI often faces opposition from host countries due to concerns over national security and protection for local firms that do not want to compete with foreign firms. To overcome this political opposition, countries enter into reciprocal agreements. Therefore we expect one structural dependency to be reciprocity. For the model reciprocity is defined as:
 
 \vspace{.2cm}
 \hspace{2cm}$\sum_{(i,j) {\in} \mathbb{Y}}min(\bm{y}_{i,j},\bm{y}_{j,i})$
 \vspace{.2cm}
 
 
-The second structural dependency we model is transitivity, or the likelihood that country A, will send FDI to country C, given that country A sends FDI to country B and country B send FDI to country C. We expect this clustering given the fragmented global supply chains for production and the vertical FDI that follows. For the model transitivity is defined as: 
+The second structural dependency we model is transitivity, or the likelihood that country A, will send FDI to country C, given that country A sends FDI to country B and country B send FDI to country C. We expect this clustering as a result of the increasingly fragmented global supply chains for production that have been expanded through preferential trade agreements and the vertical FDI that follows due to the reduction in the risk of expropriation. For the model transitivity is defined as: 
+
 
 \vspace{.2cm}
+\centering
 $ \sum_{(i,j) {\in} \mathbb{Y}}\min\bigg( \bm{y}_{i,j}, \max\limits_{k{\in}N}\Big(\min(\bm{y}_{i,k},\bm{y}_{k,j})\Big) \bigg)$ 
 \vspace{.2cm}
 
@@ -190,7 +192,7 @@ $ \sum_{(i,j) {\in} \mathbb{Y}}\min\bigg( \bm{y}_{i,j}, \max\limits_{k{\in}N}\Bi
 %	Network Plot
 %----------------------------------------------------------------------------------------
 
-\headerbox{Network Plots}{name=network,column=1,span=2,row=0,below=results,above=references,bottomaligned=theory}{
+\headerbox{Structural Dependency Plots}{name=network,column=1,span=2,row=0,below=results,above=references,bottomaligned=theory}{
 
 \begin{multicols}{2}
 
@@ -218,12 +220,12 @@ Transitivity
 %	Results
 %----------------------------------------------------------------------------------------
 
-\headerbox{Interpretation}{name=results2,column=3,below=data,bottomaligned=theory}{ 
+\headerbox{Discussion}{name=results2,column=3,below=data,bottomaligned=theory}{ 
 
+ \textbf{Select Results:} To assess model fit and compare exogenous covariate estimates when network statistics are excluded, we fit models with and without the network dependency terms. For every year the model was fit, we saw a decrease in the Bayesian Information Criterion. The plots show that the estimates of exogenous covariates shift opposite of the expected direction, moving from significant at the 95\% level to insignificant in some cases, and the dependency terms are significant for every year. 
 
-
-
-
+\vspace{.2cm}
+\textbf{Structural Dependency Plots:} In the plot for the FDI network in 2011 both clustering and reciprocity are visually evident. The box-plots on the right show that edge values are are increasingly underestimated when only using exogenous covariates (y-axis) as the values increase for each structural dependence (x-axis). (e.g. For reciprocity, when edge $y_{j,i}$ is $15$, $y_{i,j}$ is underestimated by $3$ log-scale units. For transitivity the x-axis is the minimum edge value in a two-path.)
 
 }
 
@@ -244,7 +246,8 @@ This material is based on work supported by the National Science Foundation unde
 \headerbox{Reference}{name=references,column=1,span=2,aligned=nsf,above=bottom}{ % This block is as tall as the references block
 
 
-\small{1. Krivitsky, Pavel N. 2016. ergm.count: Fit, Simulate and Diagnose Exponential-Family Models for Networks with Count Edges. The Statnet Project (\texttt{http://www.statnet.org}). R package version 3.2.2.\url{http://CRAN.R-project.org/package=ergm.count}}
+\small{1. Krivitsky, Pavel N. 2016. ergm.count: Fit, Simulate and Diagnose Exponential-Family Models for Networks with Count Edges. The Statnet Project (\texttt{http://www.statnet.org}). R package version 3.2.2.
+\url{http://CRAN.R-project.org/package=ergm.count}}
 
 }
 
