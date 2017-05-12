@@ -34,7 +34,14 @@ row.names(fdi) <- fdi[,1]
 fdi <- data.frame(fdi[,-1])
 
 year <- substr(row.names(fdi),nchar(row.names(fdi))-3,nchar(row.names(fdi)))
-for(i in 1:)
+for(i in 2:length(year)){
+    for(j in 1:(i-1)){
+        if(year[i]!=year[j]){
+            fdi[i,j] <- NA
+            fdi[j,i] <- NA
+        }
+    }
+}
 
 fdi.net <- network(fdi,dir=T)
 fdi.edgelist <- as.matrix(fdi.net,"edgelist")
