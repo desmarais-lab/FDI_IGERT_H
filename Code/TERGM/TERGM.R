@@ -9,7 +9,7 @@ set.seed(19)
 # libraries
 library(ergm.count)
 library(network)
-library(igraph)
+#library(igraph)
 
 
 # load data
@@ -33,10 +33,12 @@ fdi <- read.csv("fdi.csv", stringsAsFactors=FALSE)
 row.names(fdi) <- fdi[,1]
 fdi <- data.frame(fdi[,-1])
 
+year <- substr(row.names(fdi),nchar(row.names(fdi))-3,nchar(row.names(fdi)))
+for(i in 1:)
+
 fdi.net <- network(fdi,dir=T)
 fdi.edgelist <- as.matrix(fdi.net,"edgelist")
 set.edge.attribute(fdi.net,"fdi.value",fdi[fdi.edgelist])
-year <- substr(row.names(fdi),nchar(row.names(fdi))-3,nchar(row.names(fdi)))
 set.vertex.attribute(fdi.net,"year",year)
 
 
