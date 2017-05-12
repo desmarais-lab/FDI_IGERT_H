@@ -44,21 +44,22 @@ set.vertex.attribute(fdi.net,"year",year)
 
 
 #Model 2: add network terms
-formula <- fdi ~ sum + sum(pow=1/2)+ nonzero+
-  edgecov(dist, form="sum")+
-  edgecov(mass, form="sum")+
-  nodeocov(polity[,2], form="sum")+
-  nodeocov(trade_openess[,2], form="sum")+
-  nodeicov(polity[,2], form="sum")+
-  nodeicov(trade_openess[,2], form="sum")
+formula <- fdi.net ~ sum + sum(pow=1/2)+ nonzero
+  #edgecov(dist, form="sum")+
+  #edgecov(mass, form="sum")+
+  #nodeocov(polity[,2], form="sum")+
+  #nodeocov(trade_openess[,2], form="sum")+
+  #nodeicov(polity[,2], form="sum")+
+  #nodeicov(trade_openess[,2], form="sum")
 
 
 # count model
 fit.1 <- ergm(formula,
                  #estimate='MLE',
-                 #response="Value_ln",
-                 #reference=~Poisson,
-                 #verbose=TRUE,
+                 response="fdi.value",
+                 reference=~Poisson,
+                 verbose=TRUE,
+                 #constraints= ~blockdiag("year"),
                  control=control.ergm(MCMLE.trustregion=100,
                                       MCMLE.maxit=50, 
                                       MCMC.samplesize=1000,
@@ -66,7 +67,7 @@ fit.1 <- ergm(formula,
                                       MCMC.interval=1000
                                       #,MCMC.prop.weights="0inflated"
                                       #,MCMC.prop.args=list(p0=0.75)
-                 ))
+              ))
 
 
 ## save this model
