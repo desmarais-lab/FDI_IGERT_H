@@ -3,53 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 722 of file fdi_reference.bib
+Repeated entry---line 757 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 753 of file fdi_reference.bib
+Repeated entry---line 788 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
-You've used 71 entries,
+You've used 74 entries,
             2874 wiz_defined-function locations,
-            1080 strings with 16665 characters,
-and the built_in function-call counts, 280987 in all, are:
-= -- 45928
-> -- 3222
+            1096 strings with 17199 characters,
+and the built_in function-call counts, 291752 in all, are:
+= -- 47672
+> -- 3343
 < -- 1
-+ -- 21436
-- -- 1157
-* -- 23834
-:= -- 56631
-add.period$ -- 292
-call.type$ -- 71
-change.case$ -- 923
-chr.to.int$ -- 71
-cite$ -- 71
-duplicate$ -- 1092
-empty$ -- 2391
-format.name$ -- 1237
-if$ -- 50477
++ -- 22234
+- -- 1201
+* -- 24748
+:= -- 58813
+add.period$ -- 304
+call.type$ -- 74
+change.case$ -- 962
+chr.to.int$ -- 74
+cite$ -- 74
+duplicate$ -- 1137
+empty$ -- 2499
+format.name$ -- 1285
+if$ -- 52404
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 75
-newline$ -- 313
-num.names$ -- 807
-pop$ -- 302
+missing$ -- 78
+newline$ -- 325
+num.names$ -- 841
+pop$ -- 310
 preamble$ -- 1
-purify$ -- 1065
+purify$ -- 1110
 quote$ -- 0
-skip$ -- 905
+skip$ -- 945
 stack$ -- 0
-substring$ -- 64620
-swap$ -- 149
-text.length$ -- 995
+substring$ -- 67079
+swap$ -- 155
+text.length$ -- 1037
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 262
+type$ -- 274
 warning$ -- 0
-while$ -- 1650
+while$ -- 1722
 width$ -- 0
-write$ -- 1004
+write$ -- 1045
 (There were 2 error messages)
