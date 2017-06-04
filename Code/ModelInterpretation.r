@@ -44,6 +44,11 @@ library(plyr)
 
 #setwd("/Users/johnpschoeneman/Desktop/ACI/Count")
 
+# Load in independent model
+i = 11
+# load the fit in the ith model file
+load(paste("./Code/models_tweight/",modelFiles[i],sep=""))
+
 #load in data
 fdi <- read.csv("./Code/sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
@@ -111,12 +116,23 @@ set.vertex.attribute(fdi_net, attrname="PV", value=vertex_attr$PV)
 
 simNum <- 1000
 
-set.seed(5)
-system.time(simNets <- simulate(fit.01.2,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
-save(list="simNets",file="./Code/simulatedNetworks.RData")
+# set.seed(5)
+# system.time(simNets <- simulate(fit.01.2,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
+# save(list="simNets",file="./Code/simulatedNetworks.RData")
+
+# set.seed(5)
+# system.time(simNets <- simulate(fit.01.1,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
+# save(list="simNets",file="./Code/simulatedNetworksIndependent.RData")
+
+load("./Code/simulatedNetworks.RData")
+simNetsDep <- simNets
+
+load("./Code/simulatedNetworksIndependent.RData")
+simNets <- simNets
 
 nodes <- network.size(fdi_net)
 
+### Calculating interpretation quantities for independent model
 amatArray <- array(0,dim=c(nodes,nodes,simNum))
 
 for(i in 1:simNum){
@@ -126,47 +142,6 @@ for(i in 1:simNum){
     amatArray[,,i] <- amat0
 }
 
-set.vertex.attribute(fdi_net,"nodeid",1:nodes)
-
-
-MPLEformula <- fdi_net ~ edgecov(fdi_net,
-"lag_stock") + edgecov(fdi_net, "mass") +
-edgecov(fdi_net, "distance") + edgecov(fdi_net,
-"contig") + edgecov(fdi_net, "colony") +
-edgecov(fdi_net, "lang_ethno") + edgecov(fdi_net,
-"defence_t") + edgecov(fdi_net, "nonagg_t") + edgecov(fdi_net, "neut_t") +
-edgecov(fdi_net, "entente_t") + edgecov(fdi_net,
-"depth") + nodeocov("Polity") +
-nodeocov("TradeOpen") + nodeocov("GDP.g") +
-nodeocov("PV") + nodeocov("GDPpc") +
-nodeicov("Polity") + nodeicov("TradeOpen") + nodeicov("GDP.g") + nodeicov("PV") + nodeicov("GDPpc") + nodeocov("nodeid")+nodeicov("nodeid")
-
-MPLEData <- ergmMPLE(MPLEformula)
-
-amatMean <- matrix(0,nodes,nodes)
-
-for(i in 1:nodes){
-    for(j in 1:nodes){
-        amatMean[i,j] <- mean(amatArray[i,j,])
-    }
-}
-
-covariates <- MPLEData$predictor
-
-nodeInd <- covariates[,c(ncol(covariates)-1,ncol(covariates))]
-predictors <- covariates[,-c(ncol(covariates)-1,ncol(covariates))]
-covariateCoef <- coef(fit.01.2)[-c(1:5)]
-
-predictorMat <- matrix(0,nodes,nodes)
-linearPredictor <- predictors%*%cbind(covariateCoef)
-predictorMat[nodeInd] <- linearPredictor
-
-diag(amatMean) <- NA
-
-meanPredict <- lm(c(amatMean)~c(predictorMat))
-
-# Covariate-predicted Adjacency matrix
-predictedAmat <- coef(meanPredict)[1]+coef(meanPredict)[2]*predictorMat
 
 deviationArray <- array(0,dim=c(nodes,nodes,simNum))
 transposedArray <- array(0,dim=c(nodes,nodes,simNum))
@@ -192,14 +167,61 @@ getTransitiveWeights <- function(wAmat){
 for(i in 1:simNum){
     deviationMat <- amatArray[,,i]
     diag(deviationMat) <- NA
-    deviationMat <- deviationMat - predictedAmat
+    deviationMat <- deviationMat
     deviationArray[,,i] <- deviationMat
     transposedArray[,,i] <- t(amatArray[,,i])
     transitiveArray[,,i] <- getTransitiveWeights(amatArray[,,i])
+    print(i)
     
 }
 
-save(list=c("deviationArray","transposedArray","transitiveArray"),file="./Code/interpretationStats.RData")
+# Caclulating interpretation quantities for dependent sample
+amatArrayDep <- array(0,dim=c(nodes,nodes,simNum))
+
+for(i in 1:simNum){
+    amat0 <- matrix(0,nodes,nodes)
+    indexMatrix <- cbind(unlist(do.call('rbind',simNetsDep[[i]]$mel)[,c(2)]),unlist(do.call('rbind',simNetsDep[[i]]$mel)[,c(1)]))
+    amat0[indexMatrix] <- get.edge.attribute(simNetsDep[[i]],"Value_ln")
+    amatArrayDep[,,i] <- amat0
+}
+
+
+deviationArrayDep <- array(0,dim=c(nodes,nodes,simNum))
+transposedArrayDep <- array(0,dim=c(nodes,nodes,simNum))
+transitiveArrayDep <- array(0,dim=c(nodes,nodes,simNum))
+
+getTransitiveWeights <- function(wAmat){
+    n <- ncol(wAmat)
+    transWeights <- matrix(0,n,n)
+    for(i in 1:n){
+        for(j in 1:n){
+            kmins <- numeric(n-2)
+            kminInd <- 1
+            for(k in c(1:n)[-c(i,j)]){
+                kmins[kminInd] <- min(c(wAmat[i,k],wAmat[k,j]))
+                kminInd <- kminInd + 1
+            }
+            transWeights[i,j] <- max(kmins)
+        }
+    }
+    transWeights
+}
+
+for(i in 1:simNum){
+    deviationMatDep <- amatArrayDep[,,i]
+    diag(deviationMatDep) <- NA
+    deviationMatDep <- deviationMatDep
+    deviationArrayDep[,,i] <- deviationMatDep
+    transposedArrayDep[,,i] <- t(amatArrayDep[,,i])
+    transitiveArrayDep[,,i] <- getTransitiveWeights(amatArrayDep[,,i])
+    print(i)
+    
+}
+
+
+
+
+save(list=c("deviationArray","transposedArray","transitiveArray","deviationArrayDep","transposedArrayDep","transitiveArrayDep"),file="./Code/interpretationStats.RData")
 
 pdf("./Draft/draft_figures/mutualBoxplot.pdf",height=4,width=8,pointsize=11)
 par(las=1)
