@@ -221,22 +221,47 @@ for(i in 1:simNum){
 
 
 
+
+
 save(list=c("deviationArray","transposedArray","transitiveArray","deviationArrayDep","transposedArrayDep","transitiveArrayDep"),file="./Code/interpretationStats.RData")
 
-pdf("./Draft/draft_figures/mutualBoxplot.pdf",height=4,width=8,pointsize=11)
+intersectRecip <- sort(intersect(unique(c(transposedArray)),unique(c(transposedArrayDep))))
+
+diffRecip <- NULL
+for(i in 1:length(intersectRecip)){
+    valInd <- c(deviationArray)[which(c(transposedArray)==intersectRecip[i])]
+    valDep <- c(deviationArrayDep)[which(c(transposedArrayDep)==intersectRecip[i])]
+    ttobj <- t.test(valDep,valInd)
+    diffRecip <- rbind(diffRecip,c(ttobj$conf.int[c(1)],-diff(ttobj$estimate),ttobj$conf.int[c(2)]))
+    print(i)
+}
+
+
+pdf("./Draft/draft_figures/mutualInterpretation.pdf",height=4,width=8,pointsize=12)
 par(las=1)
-boxplot(c(deviationArray)~c(transposedArray),xlab="Mutual Edge Value",ylab="Residual",subset=which(c(transposedArray) <= 20),outline=F)
+plot(intersectRecip[intersectRecip <= 20],diffRecip[intersectRecip <= 20,2],xlab="Mutual Edge Value",ylab="Reciprocity Effect",type="n",ylim=c(min(diffRecip[,1]),max(diffRecip[,2])))
+points(intersectRecip[intersectRecip <= 20],diffRecip[intersectRecip <= 20,2],pch=19)
+segments(x0=intersectRecip[intersectRecip <= 20],x1=intersectRecip[intersectRecip <= 20],y0=diffRecip[intersectRecip <= 20,1],diffRecip[intersectRecip <= 20,3],lwd=2)
 dev.off()
 
-pdf("./Draft/draft_figures/transitiveBoxplot.pdf",height=4,width=8,pointsize=11)
+intersectTrans <- sort(intersect(unique(c(transitiveArray)),unique(c(transitiveArrayDep))))
+
+diffTrans <- NULL
+for(i in 1:length(intersectTrans)){
+    valInd <- c(deviationArray)[which(c(transitiveArray)==intersectTrans[i])]
+    valDep <- c(deviationArrayDep)[which(c(transitiveArrayDep)==intersectTrans[i])]
+    ttobj <- t.test(valDep,valInd)
+    diffTrans <- rbind(diffTrans,c(ttobj$conf.int[c(1)],-diff(ttobj$estimate),ttobj$conf.int[c(2)]))
+    print(i)
+}
+
+
+pdf("./Draft/draft_figures/transitiveInterpretation.pdf",height=4,width=8,pointsize=12)
 par(las=1)
-boxplot(c(deviationArray)~c(transitiveArray),xlab="Transitive Edge Value",ylab="Residual",subset=which(c(transitiveArray) <= 20),outline=F)
+plot(intersectTrans[intersectTrans <= 20],diffTrans[intersectTrans <= 20,2],xlab="Transitive Edge Value",ylab="Transitivity Effect",type="n",ylim=c(min(diffTrans[,1]),max(diffTrans[,3])))
+points(intersectTrans[intersectTrans <= 20],diffTrans[intersectTrans <= 20,2],pch=19)
+segments(x0=intersectTrans[intersectTrans <= 20],x1=intersectTrans[intersectTrans <= 20],y0=diffTrans[intersectTrans <= 20,1],diffTrans[intersectTrans <= 20,3],lwd=2)
 dev.off()
-
-
-
-### Difference from the covariate-predicted mean and the edge value
-
 
 
 
