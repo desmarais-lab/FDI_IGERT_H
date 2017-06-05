@@ -17,6 +17,12 @@ library(plyr)
 #load in data
 fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
+#plot dependent variable distribution
+hist_1 <- hist(subset(fdi$Value_ln, fdi$Value_ln!=0))
+hist_1$counts <- hist_1$counts/12
+plot(hist_1, col="lightgray", main = "Distribution of FDI Flows", ylim = c(0,600),
+     xlab="Value, logged (Excludes Zero Values, ~85% of obs.)", ylab = "Per Year")
+length(subset(fdi$Value_ln, fdi$Value_ln==0))/186000
 #125 countries, 12 years (2001-2012),
 fdi <- fdi[,c(2,1,3:44)]
 
