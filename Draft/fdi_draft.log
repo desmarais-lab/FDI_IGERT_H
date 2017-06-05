@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 MAY 2017 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 JUN 2017 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -760,25 +760,25 @@ olity.pdf> <./draft_figures/rl_plots/DestPV.pdf> <./draft_figures/rl_plots/Dest
 TO.pdf> <./draft_figures/rl_plots/OriginGDPpc.pdf> <./draft_figures/rl_plots/Or
 iginGrowth.pdf> <./draft_figures/rl_plots/OriginPolity.pdf> <./draft_figures/rl
 _plots/OriginPV.pdf> <./draft_figures/rl_plots/OriginTO.pdf>]
-<draft_figures/transitiveBoxplot.pdf, id=679, 578.16pt x 289.08pt>
-File: draft_figures/transitiveBoxplot.pdf Graphic file (type pdf)
+<draft_figures/transitiveInterpretation.pdf, id=680, 578.16pt x 289.08pt>
+File: draft_figures/transitiveInterpretation.pdf Graphic file (type pdf)
 
-<use draft_figures/transitiveBoxplot.pdf>
-Package pdftex.def Info: draft_figures/transitiveBoxplot.pdf used on input line
- 264.
+<use draft_figures/transitiveInterpretation.pdf>
+Package pdftex.def Info: draft_figures/transitiveInterpretation.pdf used on inp
+ut line 264.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
 
-<draft_figures/mutualBoxplot.pdf, id=680, 578.16pt x 289.08pt>
-File: draft_figures/mutualBoxplot.pdf Graphic file (type pdf)
+<draft_figures/mutualInterpretation.pdf, id=681, 578.16pt x 289.08pt>
+File: draft_figures/mutualInterpretation.pdf Graphic file (type pdf)
 
-<use draft_figures/mutualBoxplot.pdf>
-Package pdftex.def Info: draft_figures/mutualBoxplot.pdf used on input line 265
-.
+<use draft_figures/mutualInterpretation.pdf>
+Package pdftex.def Info: draft_figures/mutualInterpretation.pdf used on input l
+ine 265.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
  [14 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
-ivity.pdf>] [15 <./draft_figures/transitiveBoxplot.pdf> <./draft_figures/mutual
-Boxplot.pdf>]
-<draft_figures/BICdiff.pdf, id=714, 469.755pt x 289.08pt>
+ivity.pdf>] [15 <./draft_figures/transitiveInterpretation.pdf> <./draft_figures
+/mutualInterpretation.pdf>]
+<draft_figures/BICdiff.pdf, id=717, 469.755pt x 289.08pt>
 File: draft_figures/BICdiff.pdf Graphic file (type pdf)
 
 <use draft_figures/BICdiff.pdf>
@@ -800,8 +800,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
  ) 
 Here is how much of TeX's memory you used:
  9249 strings out of 493089
- 140423 string characters out of 6134842
- 241005 words of memory out of 5000000
+ 140493 string characters out of 6134842
+ 241255 words of memory out of 5000000
  12445 multiletter control sequences out of 15000+600000
  20401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -849,10 +849,10 @@ e1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (22 pages, 460244 bytes).
+Output written on fdi_draft.pdf (22 pages, 458476 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 719 compressed objects within 8 object streams
+ 862 PDF objects out of 1000 (max. 8388607)
+ 722 compressed objects within 8 object streams
  121 named destinations out of 1000 (max. 500000)
  390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
