@@ -28,12 +28,14 @@ fdi_col$prop <- fdi_col$Value.sum/15500
 #plot(hist_1+1, col="lightgray", main = "Distribution of FDI Flows", ylim = c(0,600),
 #     xlab="Value, logged (Excludes Zero Values, ~85% of obs.)", ylab = "Per Year")
 par(mar = c(5,5,5,5))
-boxplot(fdi_h$Value_h~fdi_h$Year, log = "y",col="lightgray", main = "Distribution of FDI Flows", 
-        xlab="Year", ylab = "Value, (Log Scale)",outline=TRUE, cex=0.5, pch = 16)
-mtext("Removed Zeroes from Box-Plots")
+boxplot(fdi_h$Value_h~fdi_h$Year, log = "y",col="lightgray", main = "Non-Zero FDI Stocks",yaxt='n',
+        xlab="Year", ylab = "FDI Stock (in mil USD)",outline=TRUE, cex=0.5, pch = 16, par(las=1))
+axis(2,at=c(1, 100, 10000),labels=c("1","100","10K"))
+#mtext("Removed Zeroes from Box-Plots")
 par(new = T)
 plot(fdi_col$prop, axes=F, xlab=NA, ylab=NA, type="l", col = "#D55E00", pch = 16)
 axis(side = 4, col = "#D55E00", col.axis ="#D55E00",col.ticks="#D55E00")
+par(las=0)
 mtext(side = 4, line = 3, 'Proportion of Zeroes', col ="#D55E00")
 
 
