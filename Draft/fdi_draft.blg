@@ -11,45 +11,45 @@ Repeated entry---line 788 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
-You've used 74 entries,
+You've used 97 entries,
             2874 wiz_defined-function locations,
-            1096 strings with 17199 characters,
-and the built_in function-call counts, 291752 in all, are:
-= -- 47672
-> -- 3343
+            1238 strings with 21044 characters,
+and the built_in function-call counts, 386409 in all, are:
+= -- 63145
+> -- 4464
 < -- 1
-+ -- 22234
-- -- 1201
-* -- 24748
-:= -- 58813
-add.period$ -- 304
-call.type$ -- 74
-change.case$ -- 962
-chr.to.int$ -- 74
-cite$ -- 74
-duplicate$ -- 1137
-empty$ -- 2499
-format.name$ -- 1285
-if$ -- 52404
-int.to.chr$ -- 5
++ -- 29498
+- -- 1599
+* -- 32838
+:= -- 77847
+add.period$ -- 397
+call.type$ -- 97
+change.case$ -- 1261
+chr.to.int$ -- 96
+cite$ -- 97
+duplicate$ -- 1479
+empty$ -- 3287
+format.name$ -- 1699
+if$ -- 69424
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 78
-newline$ -- 325
-num.names$ -- 841
-pop$ -- 310
+missing$ -- 102
+newline$ -- 422
+num.names$ -- 1113
+pop$ -- 386
 preamble$ -- 1
-purify$ -- 1110
+purify$ -- 1455
 quote$ -- 0
-skip$ -- 945
+skip$ -- 1239
 stack$ -- 0
-substring$ -- 67079
-swap$ -- 155
-text.length$ -- 1037
+substring$ -- 88910
+swap$ -- 200
+text.length$ -- 1359
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 274
+type$ -- 362
 warning$ -- 0
-while$ -- 1722
+while$ -- 2261
 width$ -- 0
-write$ -- 1045
+write$ -- 1364
 (There were 2 error messages)
