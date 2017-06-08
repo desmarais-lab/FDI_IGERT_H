@@ -38,21 +38,6 @@ axis(side = 4, col = "#D55E00", col.axis ="#D55E00",col.ticks="#D55E00")
 par(las=0)
 mtext(side = 4, line = 3, 'Proportion of Zeroes', col ="#D55E00")
 
-
-par(mar = c(5,5,2,5))
-with(d, plot(x, logp, type="l", col="red3", 
-             ylab=expression(-log[10](italic(p))),
-             ylim=c(0,3)))
-par(new = T)
-with(d, plot(x, n, pch=16, axes=F, xlab=NA, ylab=NA, cex=1.2))
-axis(side = 4)
-mtext(side = 4, line = 3, 'Number genes selected')
-legend("topleft",
-       legend=c(expression(-log[10](italic(p))), "N genes"),
-       lty=c(1,0), pch=c(NA, 16), col=c("red3", "black"))
-
-
-
 #125 countries, 12 years (2001-2012),
 fdi <- fdi[,c(2,1,3:44)]
 
