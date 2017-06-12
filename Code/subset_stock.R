@@ -32,15 +32,16 @@ fdi$entente.max.x <- ifelse(is.na(fdi$entente.max.x), 0, fdi$entente.max.x)
 
 
 
-fdi <- fdi[c("Destination","Origin","Year",  "Value", "contig","comlang_off", "comlang_ethno",
+fdi <- fdi[c("Origin","Destination","Year",  "Value", "contig","comlang_off", "comlang_ethno",
              "colony","comcol", "curcol","dist","Dest.GDP","Origin.GDP",
              "defense.max.x","nonaggression.max.x","neutrality.max.x","entente.max.x",
              "Dest.polity","Origin.polity","Dest.TO", "Origin.TO",  
              "Dest.pop", "Origin.pop", "Dest.pv", "Origin.pv", "Dest.xr", "Origin.xr",
-             "depth_index", "depth_latent","trade_hco", "trade_int", "trade_cap", "trade_mix")]
+             "depth_index", "depth_latent","trade_hco", "trade_int", "trade_cap", "trade_mix",
+             "bit_dummy")]
 
 fdi01 <- subset(fdi, fdi$Year ==2001)
-for(i in 3:33){
+for(i in 3:34){
   fdi01[,i] <- as.numeric(fdi01[,i])
   
 }
@@ -53,7 +54,7 @@ names$year = 2001
 for(i in 2002:2012){
   
   fdi_t <- subset(fdi, fdi$Year ==i)
-  for(i in 3:33){
+  for(i in 3:34){
     fdi_t[,i] <- as.numeric(fdi_t[,i])
     
   }
@@ -67,7 +68,7 @@ for(i in 2002:2012){
 
 
 fdi01 <- subset(fdi, fdi$Year ==2001)
-for(i in 3:33){
+for(i in 3:34){
   fdi01[,i] <- as.numeric(fdi01[,i])
   
 }
@@ -80,7 +81,7 @@ names2$year = 2001
 for(i in 2002:2012){
   
   fdi_t <- subset(fdi, fdi$Year ==i)
-  for(i in 3:33){
+  for(i in 3:34){
     fdi_t[,i] <- as.numeric(fdi_t[,i])
     
   }
@@ -99,12 +100,12 @@ colnames(names)[1] <- "Country"
 names$new = 1
 
 fdi_n  <- merge(fdi, names, by.x = "Destination", by.y = "Country")
-fdi_n <- fdi_n[,-34]
+fdi_n <- fdi_n[,-35]
 fdi_n  <- merge(fdi, names, by.x = "Origin", by.y = "Country")
-fdi_n <- fdi_n[,-34]
+fdi_n <- fdi_n[,-35]
 
-fdi_n <- unique(fdi_n[, 1:33]) 
-fdi_n <- fdi_n[,c(1,3,2, 4:33)]
+fdi_n <- unique(fdi_n[, 1:34]) 
+fdi_n <- fdi_n[,c(1,3,2, 4:34)]
 
 
 #create full panel
@@ -113,8 +114,8 @@ id1 <- data.frame(unique(names$Country)) # 186
 years <- seq(2001, 2012)
 panel <- expand.grid(x = id1[,1], y = id1[,1])
 panel <- subset(panel, panel[,1] != panel[,2])
-colnames(panel)[1] <- "Destination"
-colnames(panel)[2] <- "Origin"
+colnames(panel)[1] <- "Origin"
+colnames(panel)[2] <- "Destination"
 panel <- do.call("rbind", replicate(12, panel, simplify = FALSE)) # 408480
 yearid <- data.frame()
 for(i in years){
@@ -127,7 +128,7 @@ rm(i, id1, years, yearid, year)
 
 
 
-fdi_m <- merge(panel, fdi_n, by= c("Destination", "Origin", "Year"))
+fdi_m <- merge(panel, fdi_n, by= c("Origin", "Destination", "Year"))
 
 fdi_m <- na.omit(fdi_m)
 

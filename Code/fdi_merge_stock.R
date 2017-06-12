@@ -283,8 +283,118 @@ panel <- merge(panel, transparency, by.x = c("Origin", "Year"),
 colnames(panel)[45] <- "t.score_Origin"
 rm(transparency, years)
 
-# Diaspora Network
+# BIT ########################################################################
+bit <- read.csv("bit.csv", stringsAsFactors=FALSE)
+#clean off unneeded columns and split year out
+bit <- bit[,c(2,3,6,7)]
+bit <- subset(bit, bit$inforce_pre != "")
+bit$force_yr <- sapply(strsplit(bit$inforce_pre, "/"),"[", 3)
+bit <- bit[,c(1,2,5)]
+bit$bit_dummy <- 1
+bit <- unique(bit)
+# fix names for merge ###
+#subset and create sets with beglium and luxembourg seperate
+c1_bl <- subset(bit, bit$country1=="Belgium/Luxembourg")
+c1_bl$country1.1 <- "Belgium"
+c1_bl$country1.2 <- "Luxembourg"
+c1_bl.1 <- c1_bl[,c(2,3,4,5)]
+c1_bl.2 <- c1_bl[,c(2,3,4,6)]
+colnames(c1_bl.1)[4] <- "country1"
+colnames(c1_bl.2)[4] <- "country1"
+c1_bl <- rbind(c1_bl.1, c1_bl.2)
+rm(c1_bl.1,c1_bl.2)
+c1_bleu <- subset(bit, bit$country1=="BLEU (Belgium_Luxembourg Economic Union)")
+c1_bleu$country1.1 <- "Belgium"
+c1_bleu$country1.2 <- "Luxembourg"
+c1_bleu.1 <- c1_bleu[,c(2,3,4,5)]
+c1_bleu.2 <- c1_bleu[,c(2,3,4,6)]
+colnames(c1_bleu.1)[4] <- "country1"
+colnames(c1_bleu.2)[4] <- "country1"
+c1_bleu <- rbind(c1_bleu.1, c1_bleu.2)
+rm(c1_bleu.1,c1_bleu.2)
+c2_bl <- subset(bit, bit$country2=="Belgium/Luxembourg")
+c2_bl$country1.1 <- "Belgium"
+c2_bl$country1.2 <- "Luxembourg"
+c2_bl.1 <- c2_bl[,c(2,3,4,5)]
+c2_bl.2 <- c2_bl[,c(2,3,4,6)]
+colnames(c2_bl.1)[4] <- "country1"
+colnames(c2_bl.2)[4] <- "country1"
+c2_bl <- rbind(c2_bl.1, c2_bl.2)
+rm(c2_bl.1,c2_bl.2)
+c2_bleu <- subset(bit, bit$country2=="BLEU (Belgium_Luxembourg Economic Union)")
+c2_bleu$country1.1 <- "Belgium"
+c2_bleu$country1.2 <- "Luxembourg"
+c2_bleu.1 <- c2_bleu[,c(2,3,4,5)]
+c2_bleu.2 <- c2_bleu[,c(2,3,4,6)]
+colnames(c2_bleu.1)[4] <- "country1"
+colnames(c2_bleu.2)[4] <- "country1"
+c2_bleu <- rbind(c2_bleu.1, c2_bleu.2)
+rm(c2_bleu.1,c2_bleu.2)
+#remove bl obs from master and add in new sets
+bit <- subset(bit, bit$country2 != "BLEU (Belgium_Luxembourg Economic Union)")
+bit <- subset(bit, bit$country1 != "BLEU (Belgium_Luxembourg Economic Union)")
+bit <- subset(bit, bit$country2 != "Belgium/Luxembourg")
+bit <- subset(bit, bit$country1 != "Belgium/Luxembourg")
+bit <- rbind(bit, c1_bl, c1_bleu, c2_bl, c2_bleu)
+rm(c1_bl, c1_bleu, c2_bl, c2_bleu)
+# now fix wrong country names
+bit$country2 <- ifelse(bit$country2=="Bolivia, Plurinational State of","Bolivia" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="C<f4>te d'Ivoire","Ivory Coast" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Congo","Congo (Brazzaville)" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Congo, Republic of","Congo, Democratic Republic of the" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Hong Kong, China SAR","Hong Kong, Special Administrative Region of China" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Korea, Dem. People's Rep. of","Korea, Democratic People's Republic of" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Lao People's Democratic Republic","Lao PDR" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Macedonia, The former Yugoslav Republic of","Macedonia, Republic of" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Moldova, Republic of","Moldova" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Occupied Palestinian territory","Palestinian Territory, Occupied" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Serbia and Montenegro","Montenegro" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Syrian Arab Republic","Syrian Arab Republic (Syria)" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Taiwan Province of China","Taiwan, Republic of China" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Timor_Leste","Timor-Leste" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="United Republic of Tanzania","Tanzania, United Republic of" ,bit$country2)
+bit$country2 <- ifelse(bit$country2=="Venezuela, Bolivarian Republic of","Venezuela (Bolivarian Republic of)" ,bit$country2)
+bit$country1 <- ifelse(bit$country1=="Bolivia, Plurinational State of","Bolivia" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="C<f4>te d'Ivoire","Ivory Coast" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Congo","Congo (Brazzaville)" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Congo, Democratic Republic of the","Congo, Democratic Republic of the" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Guinea_Bissau","Guinea-Bissau" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Hong Kong, China SAR","Hong Kong, Special Administrative Region of China" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Korea, Dem. People's Rep. of","Korea, Democratic People's Republic of" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Lao People's Democratic Republic","Lao PDR" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Macao, China SAR","Macao, Special Administrative Region of China" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Macedonia, The former Yugoslav Republic of","Macedonia, Republic of" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Moldova, Republic of","Moldova" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Syrian Arab Republic","Syrian Arab Republic (Syria)" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="Taiwan Province of China","Taiwan, Republic of China" ,bit$country1)
+bit$country1 <- ifelse(bit$country1=="United Republic of Tanzania","Tanzania, United Republic of" ,bit$country1)
+# merge together
+panel <- merge(panel, bit, by.x = c("Destination", "Origin", "Year"), 
+               by.y = c("country1", "country2", "force_yr"), all.x =TRUE)
+panel <- merge(panel, bit, by.x = c("Destination", "Origin", "Year"), 
+               by.y = c("country2","country1",  "force_yr"), all.x =TRUE)
+panel$bit_dummy.x <- ifelse(is.na(panel$bit_dummy.x),panel$bit_dummy.y,panel$bit_dummy.x)
+panel <- panel[,-47]
+panel <- merge(panel, bit, by.x = c("Origin","Destination",  "Year"), 
+               by.y = c("country1", "country2", "force_yr"), all.x =TRUE)
+panel$bit_dummy.x <- ifelse(is.na(panel$bit_dummy.x),panel$bit_dummy,panel$bit_dummy.x)
+panel <- panel[,-47]
+panel <- merge(panel, bit, by.x = c("Origin","Destination",  "Year"), 
+               by.y = c("country2","country1",  "force_yr"), all.x =TRUE)
+panel$bit_dummy <- ifelse(is.na(panel$bit_dummy),panel$bit_dummy.x,panel$bit_dummy)
+panel <- panel[,-46]
+#carryforward values
+panel <- panel[order(panel$dyadid, panel$Year),]
+panel <- transform(panel, bit_dummy = ave(bit_dummy, dyadid, FUN = na.locf2))
+#replace remaining empty values with zero
+panel$bit_dummy <- ifelse(is.na(panel$bit_dummy),0,panel$bit_dummy)
+rm(bit)
 
+
+
+
+
+# Diaspora Network
 # Resource Endowment
 
 

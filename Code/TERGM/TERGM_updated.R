@@ -1,4 +1,4 @@
-# clear workspace
+# clear workspace, set seed, and set wd
 rm(list=ls())
 
 set.seed(19)
@@ -101,9 +101,15 @@ load("fdi_net.Rdata")
 # function. Second, offset.coef is defined as pooled_par. These two differences are necessary for estimating the
 # partially pooled models.
 # note that edge covariates should be specified as edgecov(edgecovars[["nameOfMatrix"]])
-ergm.call <- expression(ergm(net ~ edges + offset(esp(0))+offset(nodecov("polity"))+
-                               offset(nodecov("trade_opennes"))+offset(edgecov(edgecovars[[1]]))+
-                               offset(edgecov(edgecovars[[2]]))+offset(edgecov(edgecovars[[3]]))
+
+#Node list: "polity","trade_opennes","pop","gdp.pc"
+#Edge list:  lag, mass, dist, alliance, defense, trade_vol, bit 
+
+ergm.call <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
+                               mutual(form="min")+transitiveweights("min", "max", "min")+
+                               offset(nodecov("polity"))+offset(nodecov("trade_opennes"))+
+                               offset(edgecov(edgecovars[[1]]))+offset(edgecov(edgecovars[[2]]))+
+                               offset(edgecov(edgecovars[[3]]))
                              ,offset.coef=pooled_par))
 
 # the no offset call strips the ERGM call of the offset() function and the offset.coef argument
