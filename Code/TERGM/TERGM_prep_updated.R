@@ -81,9 +81,12 @@ for(i in vars){
 
 # create alliance dummy
 fdi$alliance <- (fdi$nonaggression.max.x + fdi$entente.max.x + fdi$neutrality.max.x)
-fdi$alliance <- ifelse(fdi$alliance >0, 1, 0)
-
+fdi$alliance <- as.numeric(ifelse(fdi$alliance >0, 1, 0))
+#make bit  and defense numeric
+fdi$bit_dummy <- as.numeric(fdi$bit_dummy)
+fdi$defense.max.x <- as.numeric(fdi$defense.max.x)
 #subset by year, get adjacency matrix, and create list of DV matrices #########################################
+
 
 #FDI Stock
 
@@ -113,7 +116,7 @@ netlist[[i]] %v% "pop" <- vertex$Pop
 netlist[[i]] %v% "gdp.pc" <- vertex$GDPpc
 
 }
-
+save(netlist, file = "fdi_net.Rdata")
 
 #lag FDI Stock, mass, and distance
 
@@ -144,5 +147,5 @@ for(i in 1:11){
 rm(dist, fdi, fdi_yr, full, lag, mass, vertex, covlist_yr, fdi_graph, i, vars, years)
 #SAVE as Rdata
 save(covlist, file = "fdi_cov.Rdata")
-save(netlist, file = "fdi_net.Rdata")
+
 

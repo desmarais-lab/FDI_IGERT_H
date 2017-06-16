@@ -105,21 +105,32 @@ load("fdi_net.Rdata")
 #Node list: "polity","trade_opennes","pop","gdp.pc"
 #Edge list:  lag, mass, dist, alliance, defense, trade_vol, bit 
 
-ergm.call <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
-                               mutual(form="min")+transitiveweights("min", "max", "min")+
-                               offset(nodecov("polity"))+offset(nodecov("trade_opennes"))+
+ergm.call <- expression(ergm(net ~ edges+ #sum + sum(pow=1/2)+ nonzero +
+                               #mutual(form="min")+transitiveweights("min", "max", "min")+
+                               offset(nodeicov("polity"))+offset(nodeocov("polity"))+
+                               offset(nodeicov("trade_opennes"))+offset(nodeocov("trade_opennes"))+
+                               offset(nodeicov("pop"))+offset(nodeocov("pop"))+
+                               offset(nodeicov("gdp.pc"))+offset(nodeocov("gdp.pc"))+
                                offset(edgecov(edgecovars[[1]]))+offset(edgecov(edgecovars[[2]]))+
-                               offset(edgecov(edgecovars[[3]]))
-                             ,offset.coef=pooled_par))
+                               offset(edgecov(edgecovars[[3]]))+offset(edgecov(edgecovars[[4]]))+
+                               offset(edgecov(edgecovars[[5]]))+offset(edgecov(edgecovars[[6]]))+
+                               offset(edgecov(edgecovars[[7]])),
+                               offset.coef=pooled_par))
+
+
 
 # the no offset call strips the ERGM call of the offset() function and the offset.coef argument
 # terms must match and be in the same order
-ergm.call.no.offset <- expression(ergm(net ~ edges + esp(0)+
-                                         nodecov("polity")+nodecov("trade_opennes")+
-                                         edgecov(edgecovars[[1]])+
-                                         edgecov(edgecovars[[2]])+
-                                         edgecov(edgecovars[[3]])
-                                       ))
+ergm.call.no.offset <- expression(ergm(net ~ edges + #sum + sum(pow=1/2)+ nonzero +
+                                         #mutual(form="min")+transitiveweights("min", "max", "min")+
+                                         nodeicov("polity")+nodeocov("polity")+
+                                         nodeicov("trade_opennes")+nodeocov("trade_opennes")+
+                                         nodeicov("pop")+nodeocov("pop")+
+                                         nodeicov("gdp.pc")+nodeocov("gdp.pc")+
+                                         edgecov(edgecovars[[1]])+edgecov(edgecovars[[2]])+
+                                         edgecov(edgecovars[[3]])+edgecov(edgecovars[[4]])+
+                                         edgecov(edgecovars[[5]])+edgecov(edgecovars[[6]])+
+                                         edgecov(edgecovars[[7]])))
 
 # the partially pooled ergm conducts a two-step meta analysis
 # in the first step, coefficients are estimated for each network individually
