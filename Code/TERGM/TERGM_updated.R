@@ -105,7 +105,7 @@ load("fdi_net.Rdata")
 #Node list: "polity","trade_opennes","pop","gdp.pc"
 #Edge list:  lag, mass, dist, alliance, defense, trade_vol, bit 
 
-ergm.call <- expression(ergm(net ~ edges + #sum + sum(pow=1/2)+ nonzero +
+ergm.call <- expression(ergm(net ~ sum + #sum(pow=1/2)+ nonzero +
                                #mutual(form="min")+transitiveweights("min", "max", "min")+
                                offset(nodeicov("polity"))+offset(nodeocov("polity"))+
                                offset(nodeicov("trade_opennes"))+offset(nodeocov("trade_opennes"))+
@@ -115,9 +115,9 @@ ergm.call <- expression(ergm(net ~ edges + #sum + sum(pow=1/2)+ nonzero +
                                offset(edgecov(edgecovars[[3]]))+offset(edgecov(edgecovars[[4]]))+
                                offset(edgecov(edgecovars[[5]]))+offset(edgecov(edgecovars[[6]]))+
                                offset(edgecov(edgecovars[[7]])),
-                               offset.coef=pooled_par),
+                               offset.coef=pooled_par,
                         response="Value_ln",
-                        reference=~Poisson)
+                        reference=~Poisson))
 
 
 
@@ -132,9 +132,9 @@ ergm.call.no.offset <- expression(ergm(net ~ sum + #sum(pow=1/2)+ nonzero +
                                          edgecov(edgecovars[[1]])+edgecov(edgecovars[[2]])+
                                          edgecov(edgecovars[[3]])+edgecov(edgecovars[[4]])+
                                          edgecov(edgecovars[[5]])+edgecov(edgecovars[[6]])+
-                                         edgecov(edgecovars[[7]])),
+                                         edgecov(edgecovars[[7]]),
                                   response="Value_ln",
-                                  reference=~Poisson)
+                                  reference=~Poisson))
 
 # the partially pooled ergm conducts a two-step meta analysis
 # in the first step, coefficients are estimated for each network individually
