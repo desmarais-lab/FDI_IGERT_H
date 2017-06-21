@@ -96,11 +96,12 @@ years <- 2002:2012
 
 for(i in 1:11){
 #subset by year
-fdi_yr <- subset(fdi, fdi$Year == years[i])
+fdi_yr <- subset(fdi, fdi$Year == years[11])
 #turn into graph object
 fdi_graph <- graph.data.frame(fdi_yr)
 #extract adjacency matrix
-full <- as.network(get.adjacency(fdi_graph,attr='Value_ln', sparse=FALSE))
+adj <- get.adjacency(fdi_graph,attr='Value_ln', sparse=FALSE)
+full <- as.network(adj)
 #loop and add to list
 netlist[[i]] <- full
 
@@ -109,7 +110,7 @@ vertex <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop_ln +Origin.GDP
                       Origin.GDPpc_ln+Origin.pv ~ Origin, data=fdi_yr)
 names(vertex) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g","GDPpc", "PV")
 
-
+netlist[[i]] %e% "Value_ln" <- adj
 netlist[[i]] %v% "polity" <- vertex$Polity
 netlist[[i]] %v% "trade_opennes" <- vertex$TradeOpen
 netlist[[i]] %v% "pop" <- vertex$Pop
