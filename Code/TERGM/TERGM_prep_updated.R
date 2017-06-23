@@ -36,6 +36,7 @@ fdi <- slide(fdi, Var = "Value_ln", GroupVar = "dyad", slideBy = -1)
 #Create GDP pc (logged) and growth rate
 fdi$Origin.GDPpc_ln <- log(fdi$Origin.GDP/fdi$Origin.pop)
 fdi$Dest.GDPpc_ln <- log(fdi$Dest.GDP/fdi$Dest.pop)
+fdi$Dest.GDPpc <- fdi$Dest.GDP/fdi$Dest.pop
 fdi$Origin.GDPg <- (fdi$Origin.GDP-fdi$`Origin.GDP-1`)/fdi$`Origin.GDP-1`
 fdi$Dest.GDPg <- (fdi$Dest.GDP-fdi$`Dest.GDP-1`)/fdi$`Dest.GDP-1`
 
@@ -65,12 +66,79 @@ axis(side = 4, col = "#D55E00", col.axis ="#D55E00",col.ticks="#D55E00")
 par(las=0)
 mtext(side = 4, line = 3, 'Proportion of Zeroes', col ="#D55E00")
 
-rm(fdi_col, fdi_h, i, vars)
+rm(fdi_col, fdi_h)
 
-#125 countries, 12 years (2001-2012),
+
+# create alliance dummy
+fdi$alliance <- (fdi$nonaggression.max.x + fdi$entente.max.x + fdi$neutrality.max.x)
+fdi$alliance <- as.numeric(ifelse(fdi$alliance >0, 1, 0))
+#make bit  and defense numeric
+fdi$bit_dummy <- as.numeric(fdi$bit_dummy)
+fdi$defense.max.x <- as.numeric(fdi$defense.max.x)
+
+#drop 2001 with missing variables
+fdi <- na.omit(fdi)
+
+
+####### Descriptive Stats ##################################################################
+
+# Bar charts giving proportion 1 by year for dichotomous variables
+
+
+dichot <- summaryBy(bit_dummy + alliance + defense.max.x~Year, data = fdi, FUN=sum)
+dichot[,2:4] <- dichot[,2:4]/(length(fdi$Year)/length(unique(fdi$Year)))
+# BIT
+mp <- barplot(dichot$bit_dummy.sum,  main="Proportion of BIT dyads",
+        col="lightgray",axes = FALSE,xlab="Year")
+axis(2,at=seq(0, .1, .02),labels=c("0%","2%","4%", "6%", "8%", "10%"))
+axis(1,at=mp,labels=dichot$Year)
+# Alliance
+mp <- barplot(dichot$alliance.sum,  main="Proportion of Alliance Dyads",
+              col="lightgray",axes=FALSE,xlab="Year", ylim = c(0,.1))
+axis(2,at=seq(0, .1, .02),labels=c("0%","2%","4%", "6%", "8%", "10%"))
+axis(1,at=mp,labels=dichot$Year)
+#Defense Treaty
+mp <- barplot(dichot$defense.max.x.sum,  main="Proportion of Defense Treaty Dyads",
+              col="lightgray",axes = FALSE,xlab="Year", ylim = c(0,.1))
+axis(2,at=seq(0, .1, .02),labels=c("0%","2%","4%", "6%", "8%", "10%"))
+axis(1,at=mp,labels=dichot$Year)
+
+rm(dichot, mp)
+# Yearly box-plots for quantitative variables
+
+#Polity
+boxplot(fdi$Dest.polity~fdi$Year, col="lightgray", main = "Polity",#yaxt='n',
+        xlab="Year", ylab = "Polity Scale", cex=0.5, pch = 16)
+#Trade_openness
+boxplot(fdi$Dest.TO~fdi$Year, col="lightgray", main = "Trade Openness", yaxt='n',
+        xlab="Year", ylab = "IM/EX as % of GDP ", cex=0.5, pch = 16)
+axis(2,at=seq(0, 400, 100),labels=c("0%","100%","200%", "300%", "400%"))
+#Population
+boxplot(fdi$Dest.pop~fdi$Year, log = "y",col="lightgray", main = "Population", yaxt='n',
+        xlab="Year", ylab = "Population in Millions", cex=0.5, pch = 16)
+axis(2,at=c(0, 1, 100, 1000),labels=c("0","1","100","1K"))
+#gdp.pc
+boxplot(fdi$Dest.GDPpc~fdi$Year, col="lightgray", main = "GDP pc", yaxt='n',
+        xlab="Year", ylab = "GDP per capita", cex=0.5, pch = 16)
+axis(2,at=c(0, 50000, 100000, 150000),labels=c("0","50K","100K","150K"))
+#Mass
+boxplot(fdi$mass~fdi$Year, col="lightgray", main = "Mass", #yaxt='n',
+        xlab="Year", ylab = "GDP Product of Dyad, Logged", cex=0.5, pch = 16)
+axis(2,at=c(0, 50000, 100000, 150000),labels=c("0","50K","100K","150K"))
+#Distance
+boxplot(fdi$dist~fdi$Year, col="lightgray", main = "Distance", yaxt='n',
+        xlab="Year", ylab = "Distance, Miles", cex=0.5, pch = 16)
+axis(2,at=c(0, 5000, 10000, 15000, 20000),labels=c("0","5K","10K","15K", "20K"))
+#Trade
+boxplot(fdi$trade_ln~fdi$Year, col="lightgray", main = "Trade", #yaxt='n',
+        xlab="Year", ylab = "Value of Trade USD in mil, logged", cex=0.5, pch = 16)
+axis(2,at=c(0, 50000, 100000, 150000),labels=c("0","50K","100K","150K"))
+
+#subset by year, get adjacency matrix, and create list of DV matrices #########################################
+
+#convert values to one to zero
 
 range_0to1 <- function(x){(x-min(x))/(max(x)-min(x))}
-fdi <- na.omit(fdi)
 #scale continuous variables
 vars <- c(18:33,35, 37:49)
 for(i in vars){
@@ -79,16 +147,8 @@ for(i in vars){
   
 }
 
-# create alliance dummy
-fdi$alliance <- (fdi$nonaggression.max.x + fdi$entente.max.x + fdi$neutrality.max.x)
-fdi$alliance <- as.numeric(ifelse(fdi$alliance >0, 1, 0))
-#make bit  and defense numeric
-fdi$bit_dummy <- as.numeric(fdi$bit_dummy)
-fdi$defense.max.x <- as.numeric(fdi$defense.max.x)
-#subset by year, get adjacency matrix, and create list of DV matrices #########################################
 
 
-#FDI Stock
 
 # Create an empty list in which to store the networks
 netlist <- list()
@@ -110,7 +170,7 @@ vertex <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop_ln +Origin.GDP
                       Origin.GDPpc_ln+Origin.pv ~ Origin, data=fdi_yr)
 names(vertex) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g","GDPpc", "PV")
 
-netlist[[i]] %e% "Value_ln" <- adj
+netlist[[i]] %e% "Value_ln" <- vertex$Polity
 netlist[[i]] %v% "polity" <- vertex$Polity
 netlist[[i]] %v% "trade_opennes" <- vertex$TradeOpen
 netlist[[i]] %v% "pop" <- vertex$Pop
@@ -148,5 +208,10 @@ for(i in 1:11){
 rm(dist, fdi, fdi_yr, full, lag, mass, vertex, covlist_yr, fdi_graph, i, vars, years)
 #SAVE as Rdata
 save(covlist, file = "fdi_cov.Rdata")
+
+
+
+
+
 
 

@@ -3,9 +3,9 @@ rm(list=ls())
 
 set.seed(19)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-ergmPooledMeta <- function(list_of_networks,ergm_call,ergm_call_no_offset,list_of_edgecovs=NULL,seed=1234,ncores=2){
+ergmPooledMeta <- function(list_of_networks,ergm_call,ergm_call_no_offset,list_of_edgecovs=NULL,seed=1234,ncores=20){
   require(ergm)
   require(ergm.count)
   require(doParallel)
@@ -106,8 +106,8 @@ load("fdi_net.Rdata")
 #Edge list:  lag, mass, dist, alliance, defense, trade_vol, bit 
 
 
-ergm.call <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
-                               mutual(form="min")+transitiveweights("min", "max", "min")+
+ergm.call <- expression(ergm(net ~ sum + offset(sum(pow=1/2))+ offset(nonzero) +
+                               offset(mutual(form="min"))+offset(transitiveweights("min", "max", "min"))+
                                offset(nodeicov("polity"))+offset(nodeocov("polity"))+ 
                                offset(nodeicov("trade_opennes"))+offset(nodeocov("trade_opennes"))+
                                offset(nodeicov("pop"))+offset(nodeocov("pop"))+
@@ -118,7 +118,13 @@ ergm.call <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
                                offset(edgecov(edgecovars[[7]])),
                                offset.coef=pooled_par,
                                response="Value_ln",
-                               reference=~Poisson))
+                               reference=~Poisson,
+                             control=control.ergm(MCMLE.trustregion=100,
+                                                  MCMLE.maxit=50, 
+                                                  MCMC.samplesize=10000,
+                                                  MCMC.burnin=500,
+                                                  MCMC.interval=1000)
+                             ))
 
 
 
@@ -135,7 +141,13 @@ ergm.call.no.offset <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
                                          edgecov(edgecovars[[5]])+edgecov(edgecovars[[6]])+
                                          edgecov(edgecovars[[7]]),
                                          response="Value_ln",
-                                         reference=~Poisson))
+                                         reference=~Poisson,
+                                       control=control.ergm(MCMLE.trustregion=100,
+                                                            MCMLE.maxit=50, 
+                                                            MCMC.samplesize=10000,
+                                                            MCMC.burnin=500,
+                                                            MCMC.interval=1000)
+                                       ))
 
 # the partially pooled ergm conducts a two-step meta analysis
 # in the first step, coefficients are estimated for each network individually
@@ -146,3 +158,5 @@ ergm.call.no.offset <- expression(ergm(net ~ sum + sum(pow=1/2)+ nonzero +
 # MCMC diagnostics can be run on the second-stage ERGM results.
 pooledERGMres <- ergmPooledMeta(list_of_networks=netlist,ergm_call=ergm.call,ergm_call_no_offset=ergm.call.no.offset,list_of_edgecovs=covlist)
 
+## save this model
+save(pooledERGMres, file = "pooledERGM.rda")
