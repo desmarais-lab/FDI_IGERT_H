@@ -13,7 +13,7 @@ library(doBy)
 library(plyr)
 library(DataCombine)
 
-#setwd("/Users/johnpschoeneman/Desktop/ACI/Count")
+
 
 #load in data
 fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
@@ -41,6 +41,18 @@ fdi$Origin.GDPg <- (fdi$Origin.GDP-fdi$`Origin.GDP-1`)/fdi$`Origin.GDP-1`
 fdi$Dest.GDPg <- (fdi$Dest.GDP-fdi$`Dest.GDP-1`)/fdi$`Dest.GDP-1`
 
 
+# create alliance dummy
+fdi$alliance <- (fdi$nonaggression.max.x + fdi$entente.max.x + fdi$neutrality.max.x)
+fdi$alliance <- as.numeric(ifelse(fdi$alliance >0, 1, 0))
+#make bit  and defense numeric
+fdi$bit_dummy <- as.numeric(fdi$bit_dummy)
+fdi$defense.max.x <- as.numeric(fdi$defense.max.x)
+
+#drop 2001 with missing variables
+fdi <- na.omit(fdi)
+
+#write csv
+#write.csv(fdi, file = "sub_stock.csv")
 
 
 
@@ -69,15 +81,7 @@ mtext(side = 4, line = 3, 'Proportion of Zeroes', col ="#D55E00")
 rm(fdi_col, fdi_h)
 
 
-# create alliance dummy
-fdi$alliance <- (fdi$nonaggression.max.x + fdi$entente.max.x + fdi$neutrality.max.x)
-fdi$alliance <- as.numeric(ifelse(fdi$alliance >0, 1, 0))
-#make bit  and defense numeric
-fdi$bit_dummy <- as.numeric(fdi$bit_dummy)
-fdi$defense.max.x <- as.numeric(fdi$defense.max.x)
 
-#drop 2001 with missing variables
-fdi <- na.omit(fdi)
 
 
 ####### Descriptive Stats ##################################################################
@@ -138,14 +142,14 @@ axis(2,at=c(0, 50000, 100000, 150000),labels=c("0","50K","100K","150K"))
 
 #convert values to one to zero
 
-range_0to1 <- function(x){(x-min(x))/(max(x)-min(x))}
+#range_0to1 <- function(x){(x-min(x))/(max(x)-min(x))}
 #scale continuous variables
-vars <- c(18:33,35, 37:49)
-for(i in vars){
+#vars <- c(18:33,35, 37:49)
+#for(i in vars){
   
-  fdi[,i] <- range_0to1(fdi[,i]) 
+#  fdi[,i] <- range_0to1(fdi[,i]) 
   
-}
+#}
 
 
 
@@ -170,7 +174,7 @@ vertex <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop_ln +Origin.GDP
                       Origin.GDPpc_ln+Origin.pv ~ Origin, data=fdi_yr)
 names(vertex) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g","GDPpc", "PV")
 
-netlist[[i]] %e% "Value_ln" <- vertex$Polity
+netlist[[i]] %e% "Value_ln" <- adj
 netlist[[i]] %v% "polity" <- vertex$Polity
 netlist[[i]] %v% "trade_opennes" <- vertex$TradeOpen
 netlist[[i]] %v% "pop" <- vertex$Pop
@@ -205,7 +209,7 @@ for(i in 1:11){
 
 
 #Clean out unneeded data
-rm(dist, fdi, fdi_yr, full, lag, mass, vertex, covlist_yr, fdi_graph, i, vars, years)
+rm(dist, fdi, fdi_yr, full, lag, mass, vertex, covlist_yr, fdi_graph, i, years)
 #SAVE as Rdata
 save(covlist, file = "fdi_cov.Rdata")
 

@@ -19,7 +19,7 @@ library(igraph)
 library(doBy)
 
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #load in data
 fdi <- read.csv("panel_stock.csv", stringsAsFactors=FALSE)        #FDI
