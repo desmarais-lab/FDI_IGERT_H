@@ -289,7 +289,46 @@ We noted above that omitting dependent network structure, a condition that chara
 \caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
 
+\subsection{Pooled ERGM Results}
 
+\begin{figure}[htp]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Sum & Sum$^{(1/2)}$ \\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Sum.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/sum_5.pdf}   \\
+Non-Zero & Alliance Treaty\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Non-zero.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/AllianceTreaty.pdf}   \\
+Bilateral Investment Treaty & Defense Treaty\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/BIT.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/DefenseTreaty.pdf}   \\
+Product of Dyad's GDP & Distance\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/DyadGDPProduct.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Distance.pdf}   \\
+\end{tabular}
+\caption{\label{fig:effectPlots4} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Lagged FDI stock & Bilateral Trade Volume \\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/LaggedDV.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/TradeVolume.pdf}   \\
+GDP per capita, in-degree & GDP per capita, out-degree\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/GDPpc_in.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/GDPpc_out.pdf}   \\
+Polity, in-degree & Polity, out-degree\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Polity_in.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Polity_out.pdf}   \\
+Trade Openness, in-degree & Trade Openness, out-degree\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Trade_in.pdf} &
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Trade_out.pdf}   \\
+\end{tabular}
+\caption{\label{fig:effectPlots4} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\end{figure}
+\newpage
 \section{Conclusion}
 % paragraph on substantive finding
 
