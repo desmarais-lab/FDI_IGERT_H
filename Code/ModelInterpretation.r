@@ -11,11 +11,11 @@ library(ergm.count)
 
 
 ### Read in data
-load("fdi_cov.Rdata")
-load("fdi_net.Rdata")
-load("TERGMResults137.RData")
+load("./Code/TERGM/fdi_cov.Rdata")
+load("./Code/TERGM/fdi_net.Rdata")
+load("./Code/TERGM/TERGMResults137.RData")
 fit.dep <- ergms[[11]]
-load("TERGMResults138.RData")
+load("./Code/TERGM/TERGMResults138.RData")
 fit.ind <- ergms[[11]]
 
 fdi_net <- list_of_networks[[11]]
@@ -24,20 +24,20 @@ simNum <- 1000
 
 set.seed(5)
 system.time(simNets <- simulate(fit.dep,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
-save(list="simNets",file="./Code/simulatedNetworks.RData")
+save(list="simNets",file="./Code/TERGM/simulatedNetworks.RData")
 
 print("DONE WITH DEP SIMS")
 
 set.seed(5)
 system.time(simNets <- simulate(fit.ind,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))
-save(list="simNets",file="./Code/simulatedNetworksIndependent.RData")
+save(list="simNets",file="./Code/TERGM/simulatedNetworksIndependent.RData")
 
 print("DONE WITH IND SIMS")
 
-load("./Code/simulatedNetworks.RData")
+load("./Code/TERGM/simulatedNetworks.RData")
 simNetsDep <- simNets
 
-load("./Code/simulatedNetworksIndependent.RData")
+load("./Code/TERGM/simulatedNetworksIndependent.RData")
 simNets <- simNets
 
 nodes <- network.size(fdi_net)
@@ -129,7 +129,7 @@ for(i in 1:simNum){
 }
 
 
-save(list=c("deviationArray","transposedArray","transitiveArray","deviationArrayDep","transposedArrayDep","transitiveArrayDep"),file="./Code/interpretationStats.RData")
+save(list=c("deviationArray","transposedArray","transitiveArray","deviationArrayDep","transposedArrayDep","transitiveArrayDep"),file="./Code/TERGM/interpretationStats.RData")
 
 intersectRecip <- sort(intersect(unique(c(transposedArray)),unique(c(transposedArrayDep))))
 
