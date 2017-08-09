@@ -131,60 +131,27 @@ The diffusion of PTAs is likely to drive the clustering of direct investment act
 
 \section{Data and Research Design}
 
+%\begin{equation}\label{gravity}
+%  logFDI_{ijt}=\alpha + \beta_{1}*GDP~Product + \beta_{2}*GDP/cap_{it} + \beta_{3}*GDP/cap_{jt} +
+%\end{equation}
 
-To test our hypotheses, we estimate a gravity model of FDI flows as follows:
+To test our hypotheses, we estimate a gravity model of FDI.The dependent variable is bilateral FDI stock. The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}. Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as BITs, alliances, and bilateral trade. We take the natural log of the bilateral FDI stock variable to deal with the skewed distribution. 
 
-% add the regression equation
-
-\begin{equation}\label{gravity}
-  logFDI_{ijt}=\alpha + \beta_{1}*GDP~Product + \beta_{2}*GDP/cap_{it} + \beta_{3}*GDP/cap_{jt} +
-\end{equation}
-
-The dependent variable is bilateral FDI inflows. The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}. Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as PTAs, alliances, colonial history, and common language. We take the natural log of the bilateral FDI flow variable to deal with the skewed distribution.
 
 \subsection{Covariates}
 
-\begin{figure}[htp]
-\centering
-\begin{tabular}{c@{\hskip -.4cm}c}
-Alliance Treaty &
-Defense Treaty\\
-\includegraphics[height=.22\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/alliance.pdf}    &
-\includegraphics[height=.22\textheight, clip=true, trim=.5cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/defense.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Summary Statistics.}
-\end{figure}
+In the gravity model, we include the log product of the dyad's real GDP\footnote{The data comes from the \textit{Penn World Table}  \citep{feenstra2015next}.} and logged Euclidean distance.\footnote{See \citet{mayer2011notes} for the calculation of Euclidean distance.} Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI. One key point here is that for the purpose of model convergence the logged product of dyadic GDP has been estimated as one variable in the model, rather than being estimated separately. Also from  \textit{Penn World Table}, GDP per capita is included, which allows us to roughly control for relative factor endowments.
 
-\begin{figure}[htp]
-\centering
-\begin{tabular}{c@{\hskip -.4cm}c}
-Bilateral Investment Treaty &
-Polity\\
-\includegraphics[height=.22\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/BIT.pdf}    &
-\includegraphics[height=.22\textheight, clip=true, trim =1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/Polity.pdf}   \\
-Dyad GDP Product &
-Distance\\
-\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/mass.pdf}    &
-\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/distance.pdf}   \\
-GDP per capita &
-Trade as \% of GDP\\
-\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/GDPpc.pdf}    &
-\includegraphics[height=.22\textheight, clip=true, trim=.95cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/TradeO.pdf}   \\
-Trade Volume &
-FDI Stock\\
-\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/TradeV.pdf}    &
-\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/fdi_stock.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Summary Statistics.}
-\end{figure}
+Other economic controls include a country's trade openness (trade as \% of GDP) and bilateral trade volumes. Existing research has shown that FDI and trade are compliments \citep{aizenman2006fdi,Markusen:1995}. We expect that higher levels of trade openness and bilateral trade will be associated with higher levels of bilateral FDI. Trade openness data are from the World Bank's \textit{World Development Indicators} and trade volume is from the \citet{OECD}.
 
-In the gravity model, we include the log product of the dyad's real GDP\footnote{The data comes from the \textit{Penn World Table}  \citep{feenstra2015next}.} and logged Euclidean distance.\footnote{See \citet{mayer2011notes} for the calculation of Euclidean distance.} Generally, larger products of GDP are associated with higher levels of FDI while longer distances are associated with less FDI. One key point here is that for the purpose of model convergence the logged product of dyadic GDP has been estimated as one variable in the model, rather than being estimated separately.
+There is a substantial amount of work that explores the relationship between democratic institutions and FDI inflows; yet empirical results to date remain inconclusive \citep[see e.g.][]{Henisz:2000,Jensen:2003,Li_Resnick:2003,Jakobsen_DeSoysa:2006,Resnick:2001,Wright_Zhu:2017}. We include standard polity scores as a measure of a country's level of democracy \citep{Marshall_Jaggers:2010}. Another institutional variable included is bilateral investment treaties (BIT), which includes bilateral investment policy included in preferential trade agreements. These should be positively associated with FDI levels as they should effectively remove barriers to investment and provide commitment to liberal economic policies \citep{Buthe_Milner:2008,buthe2014foreign}.
 
-We also control for a country's trade openness (trade as \% of GDP) and GDP growth rate. Existing research has shown that FDI and trade are compliments \citep{aizenman2006fdi,Markusen:1995}. We expect that higher levels of trade openness will be associated with higher levels of FDI. High GDP growth rates stand in for the general health of a country's economy. Thus we expect that a high GDP growth rate to correlate with more FDI, both as a sender and receiver. Both data are from the World Bank's \textit{World Development Indicators}.
+In addition, we include two sets of international agreement variables. The first is a binary variable for a combination of military alliance treaties that are not defense treaties. The second is a defense treaty. Both are from \citet{Gibler09}. We expect these variables to be positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and low political risk \citep{Li_Vashchilko:2010}. \footnote{Summary statistics of the covariates is provided in  Appendix A}
 
-There is a substantial amount of work that explores the relationship between democratic institutions and FDI inflows; yet empirical results to date remain inconclusive \citep[see e.g.][]{Henisz:2000,Jensen:2003,Li_Resnick:2003,Jakobsen_DeSoysa:2006,Resnick:2001,Wright_Zhu:2017}. We include standard polity scores as a measure of a country's level of democracy \citep{Marshall_Jaggers:2010}. We also include political violence to proxy for state instability,\footnote{Data comes from \citet{marshall2005major}.} which should be negatively correlated with FDI inflows.
 
-In addition, we include two sets of international agreement variables. The first is four dummy variables for different types of defense agreements, from \citet{Gibler09}. They include defense, entente, non-aggression, and neutrality treaties. We expect these variables to be positively associated with FDI inflows, particularly defense treaties since this indicates political cooperation and low political risk \citep{Li_Vashchilko:2010}. The second is preferential trade agreement (PTAs). Signing a PTA represents a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{Buthe_Milner:2008,buthe2014foreign}. Yet, PTAs vary significantly in depth with some requiring nearly full liberalization of trade barriers while others are superficial political signals. We thus measure the depth of PTAs by using latent trait analysis with 48 different dichotomous variables regarding topics covered in PTAs.\footnote{Data are from \citet{dur2014design}.}
+
+%The second is preferential trade agreement (PTAs). Signing a PTA represents a commitment to liberal markets that investors would favor and therefore would be associated with increased FDI inflows \citep{Buthe_Milner:2008,buthe2014foreign}. Yet, PTAs vary significantly in depth with some requiring nearly full liberalization of trade barriers while others are superficial political signals. We thus measure the depth of PTAs by using latent trait analysis with 48 different dichotomous variables regarding topics covered in PTAs.\footnote{Data are from \citet{dur2014design}.}
+
 
 
 
@@ -302,8 +269,74 @@ We noted above that omitting dependent network structure, a condition that chara
 \caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
 
-\subsection{Pooled ERGM Results}
 
+
+
+
+\newpage
+\section{Conclusion}
+% paragraph on substantive finding
+
+In the past decades, one prominent feature of the global economy is the growth of global production networks. Firms have chosen to invest overseas at an unprecedent level, and consequently, production is increasingly fragmented and organized across the globe. One central question is then what drives the pattern of global investment flows. In this paper, we adopt a novel network approach to address this question. FDI flows represent ties between states that arise through both a complex underlying network of inter and intra-firm relations, and legal agreements between states. The relational backdrop through which FDI operates leads to predictable network structure in the patterns of ties formed through FDI. We present a network theory of FDI that includes reciprocity and transitivity as the core structural dependencies. The results of our statistical models confirm that these dependencies exist---a result that holds over time, and while adjusting for other covariates known to relate to FDI. Our result bears important real-world implications, as network dependencies will lead to the effects of policies relevant to FDI to ripple through the network according to these dependencies.
+
+Our paper makes a few important contributions to the literature. First, to our knowledge, we are the first to examine FDI flows through a network approach. Our network theory suggests that FDI flows can be shaped by its network structures. This has been overlooked in the existing literature that focuses exclusively on countries or dyads' political and economic characteristics.\footnote{See \citet{Pandya:2016} for a review of the literature.} We believe our network perspective to global investment flows have broad implications for other cross-border movements of aid, goods, services, people, etc., which are central themes in the IPE literature. Global international trade regimes, for instance, are explicitly designed based on the principle of reciprocity \citep{Bagwell_Staiger:1999}. Yet empirical studies of trade flows rarely account for the pattern of reciprocity. Likewise, we expect other global economic exchanges to exhibit structural characteristics as well.
+
+% paragraph on methodological contribution
+Second, we offer a methodological contribution to the literature on FDI, and political science more broadly. In regards to the study of FDI,  we demonstrate how the count ERGM can be used to model the effects of both covariates and network dependencies on FDI flows. We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
+
+Third, we introduced the count ERGM in political science. This model is broadly applicable to weighted network data, and, as we demonstrate, offers the powerful capability to represent precise network theory along side covariate effects, handles zero inflation, and can be used for either single network analysis or pooled over multiple networks. [Note: can we say this model has a wider application in the IPE field, and political science in general, because it can handle continuous DVs with network dependencies?]
+
+Finally, we should emphasize that our theory, specification, and finding of network-wide reciprocity and transitivity represent just the start in a broader scholarly dialogue on the network science of FDI flows. One limitation of our study is that we do not model the conditional reciprocity and transitivity. In theory, we should expect that the degree of reciprocity varies by countries' levels of development. Investing abroad incurs large fixed costs and firms need to overcome the disadvantages such as ``liability of foreignness'' they face when competing with indigenous firms in the host country. Therefore, only the most productive firms are able to engage in FDI activities \citep{Melitz:2003,Helpman_et_al:2004}. Historically, MNCs from developed countries predominate. Although there is a surge of FDI from developing countries since the early 2000s, firms in most developing countries are still not competitive enough to strive in a global market.\footnote{For instance, in 2005 outward FDI flows and stocks from developing countries are approximately 17\% and 13\% of the world total, respectively \citep{UNCTAD:2006}. Furthermore, outward FDI from developing countries is highly concentrated; the top 10 countries, mostly large emerging economies such as Argentina, Brazil, Chile, China, Mexico, Russia, and South Africa contribute about 83\% \citep{UNCTAD:2006}. } Future research should explore how network dependencies vary across different groups of countries.
+
+
+
+
+\newpage
+\singlespacing
+\bibliographystyle{apsr}
+\bibliography{fdi_reference}
+
+
+\newpage
+\appendix
+\section{Summary Statistics}
+\begin{figure}[htp]
+\centering
+\begin{tabular}{c@{\hskip -.4cm}c}
+Alliance Treaty &
+Defense Treaty\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/alliance.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=.5cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/defense.pdf}   \\
+\end{tabular}
+\caption{\label{fig:effectPlots4} Summary Statistics.}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\begin{tabular}{c@{\hskip -.4cm}c}
+Bilateral Investment Treaty &
+Polity\\
+\includegraphics[height=.22\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/BIT.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim =1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/Polity.pdf}   \\
+Dyad GDP Product &
+Distance\\
+\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/mass.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/distance.pdf}   \\
+GDP per capita &
+Trade as \% of GDP\\
+\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/GDPpc.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=.95cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/TradeO.pdf}   \\
+Trade Volume &
+FDI Stock\\
+\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/TradeV.pdf}    &
+\includegraphics[height=.22\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/fdi_stock.pdf}   \\
+\end{tabular}
+\caption{\label{fig:effectPlots4} Summary Statistics.}
+\end{figure}
+
+
+
+\section{Time-Pooled Model Results}
 \begin{figure}[htp]
 \centering
 \begin{tabular}{c@{\hskip 0cm}c}
@@ -353,33 +386,6 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 \end{tabular}
 \caption{\label{fig:effectPlots4} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
 \end{figure}
-
-
-
-\newpage
-\section{Conclusion}
-% paragraph on substantive finding
-
-In the past decades, one prominent feature of the global economy is the growth of global production networks. Firms have chosen to invest overseas at an unprecedent level, and consequently, production is increasingly fragmented and organized across the globe. One central question is then what drives the pattern of global investment flows. In this paper, we adopt a novel network approach to address this question. FDI flows represent ties between states that arise through both a complex underlying network of inter and intra-firm relations, and legal agreements between states. The relational backdrop through which FDI operates leads to predictable network structure in the patterns of ties formed through FDI. We present a network theory of FDI that includes reciprocity and transitivity as the core structural dependencies. The results of our statistical models confirm that these dependencies exist---a result that holds over time, and while adjusting for other covariates known to relate to FDI. Our result bears important real-world implications, as network dependencies will lead to the effects of policies relevant to FDI to ripple through the network according to these dependencies.
-
-Our paper makes a few important contributions to the literature. First, to our knowledge, we are the first to examine FDI flows through a network approach. Our network theory suggests that FDI flows can be shaped by its network structures. This has been overlooked in the existing literature that focuses exclusively on countries or dyads' political and economic characteristics.\footnote{See \citet{Pandya:2016} for a review of the literature.} We believe our network perspective to global investment flows have broad implications for other cross-border movements of aid, goods, services, people, etc., which are central themes in the IPE literature. Global international trade regimes, for instance, are explicitly designed based on the principle of reciprocity \citep{Bagwell_Staiger:1999}. Yet empirical studies of trade flows rarely account for the pattern of reciprocity. Likewise, we expect other global economic exchanges to exhibit structural characteristics as well.
-
-% paragraph on methodological contribution
-Second, we offer a methodological contribution to the literature on FDI, and political science more broadly. In regards to the study of FDI,  we demonstrate how the count ERGM can be used to model the effects of both covariates and network dependencies on FDI flows. We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
-
-Third, we introduced the count ERGM in political science. This model is broadly applicable to weighted network data, and, as we demonstrate, offers the powerful capability to represent precise network theory along side covariate effects, handles zero inflation, and can be used for either single network analysis or pooled over multiple networks. [Note: can we say this model has a wider application in the IPE field, and political science in general, because it can handle continuous DVs with network dependencies?]
-
-Finally, we should emphasize that our theory, specification, and finding of network-wide reciprocity and transitivity represent just the start in a broader scholarly dialogue on the network science of FDI flows. One limitation of our study is that we do not model the conditional reciprocity and transitivity. In theory, we should expect that the degree of reciprocity varies by countries' levels of development. Investing abroad incurs large fixed costs and firms need to overcome the disadvantages such as ``liability of foreignness'' they face when competing with indigenous firms in the host country. Therefore, only the most productive firms are able to engage in FDI activities \citep{Melitz:2003,Helpman_et_al:2004}. Historically, MNCs from developed countries predominate. Although there is a surge of FDI from developing countries since the early 2000s, firms in most developing countries are still not competitive enough to strive in a global market.\footnote{For instance, in 2005 outward FDI flows and stocks from developing countries are approximately 17\% and 13\% of the world total, respectively \citep{UNCTAD:2006}. Furthermore, outward FDI from developing countries is highly concentrated; the top 10 countries, mostly large emerging economies such as Argentina, Brazil, Chile, China, Mexico, Russia, and South Africa contribute about 83\% \citep{UNCTAD:2006}. } Future research should explore how network dependencies vary across different groups of countries.
-
-
-
-
-\newpage
-\singlespacing
-\bibliographystyle{apsr}
-\bibliography{fdi_reference}
-
-
 
 
 \end{document}
