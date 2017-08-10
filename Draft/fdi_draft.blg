@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: fdi_draft.aux
+The style file: apsr.bst
+Database file #1: fdi_reference.bib
+Repeated entry---line 1579 of file fdi_reference.bib
+ : @book{Caves:1996
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1641 of file fdi_reference.bib
+ : @article{Henisz:2000
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2201 of file fdi_reference.bib
+ : @article{Kerner:2009
+ :                     ,
+I'm skipping whatever remains of this entry
+You've used 98 entries,
+            2874 wiz_defined-function locations,
+            1243 strings with 21176 characters,
+and the built_in function-call counts, 389696 in all, are:
+= -- 63669
+> -- 4515
+< -- 1
++ -- 29736
+- -- 1617
+* -- 33117
+:= -- 78521
+add.period$ -- 401
+call.type$ -- 98
+change.case$ -- 1274
+chr.to.int$ -- 97
+cite$ -- 98
+duplicate$ -- 1490
+empty$ -- 3322
+format.name$ -- 1717
+if$ -- 70014
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 101
+newline$ -- 425
+num.names$ -- 1125
+pop$ -- 389
+preamble$ -- 1
+purify$ -- 1470
+quote$ -- 0
+skip$ -- 1254
+stack$ -- 0
+substring$ -- 89634
+swap$ -- 202
+text.length$ -- 1373
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 368
+warning$ -- 0
+while$ -- 2287
+width$ -- 0
+write$ -- 1374
+(There were 3 error messages)

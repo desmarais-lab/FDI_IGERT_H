@@ -11,6 +11,7 @@
     citecolor=cyan
 }
 \usepackage{graphicx}
+\usepackage{soul}
 \usepackage{rotating}
 \usepackage{amsmath}
 \usepackage{setspace}
@@ -39,15 +40,16 @@ bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsy
 \thispagestyle{empty}
 \singlespacing
 \begin{abstract}
-    \noindent We study the structure of the international network of foreign direct investment (FDI). The political economy of FDI literature has established several theoretical claims and empirical regularities regarding determinants of FDI. However, existing studies---based on regression models---overlook the complex dependencies that are likely to characterize the FDI network. Recent developments in methodology for studying international relations show that regression is inadequate for quantitatively modeling dyadic data. We integrate hypotheses regarding exogenous determinants and novel hypotheses regarding structural network dependencies into an exponential random graph model (ERGM) for weighted networks. Our findings reveal that the FDI network exhibits both reciprocity and transitivity in the FDI network. These dependencies have been omitted from previous empirical models of FDI flows, which has consequences for inferences regarding covariate effects. In addition to our substantive findings, we offer a broad methodological contribution by introducing the ERGM for count-weighted networks in political science.
+    \noindent We study the structure of the international network of foreign direct investment (FDI). Existing studies of FDI?based on regression models?overlook the complex dependencies that are likely to characterize the FDI network. Recent developments in methodology for studying international relations show that regression is inadequate for quantitatively modeling dyadic data. We integrate hypotheses regarding exogenous covariate determinants and structural network dependencies into an exponential random graph model (ERGM) for weighted networks. We find that the FDI network exhibits both reciprocity and transitivity. These dependencies have been omitted from previous empirical models of FDI, which has consequences for inferences regarding covariate effects. In addition to our substantive findings, we offer a broad methodological contribution by introducing the ERGM for count-weighted networks in political science. 
 
 \end{abstract}
 ~\\
 
 {\bf Pre-submission to-do}
 \begin{itemize}
+\item \st{reduce abstract to 125 words}
 \item Do a general read through for grammar
-\item Why don't we pool? With dyadic data we can identify effects. See significant heterogeneity. Beginning in 2008 we see a shift. This may be attributable to the great recession.... Cite Desmarais and Cranmer, and Ward. {\bf BD}
+\item \st{Why don't we pool? With dyadic data we can identify effects. See significant heterogeneity. Beginning in 2008 we see a shift. This may be attributable to the great recession.}
 \item Figures re-ordered
 \item Correlation table in appendix. 
 \item Total outward FDI
@@ -66,7 +68,7 @@ To date, existing theories have focused exclusively on firm-level characteristic
 
 We argue that two network structures---reciprocity and transitivity---are important to account for the pattern of cross-border FDI flows. First, reciprocity arises from the fact that FDI represents an oligopolistic expansion strategy of MNCs and the fact that host governments tend to use a principle of reciprocity to regulate FDI inflows. Second, the expansion of global supply chains and the diffusion of preferential trade agreements (PTAs) drive the transitivity/clustering of investment activities. Utilizing bilateral FDI flow data from United Nations Conference on Trade and Development (UNCTAD) over the period of 2001--2012, we find strong evidence that FDI inflows are reciprocal and transitive/clustering, suggesting that cross-border FDI flows are \textit{interdependent} and shaped by their network structure. We further show that ignoring high-order network structure variables can lead to biased estimates in standard panel regression models.
 
-Our paper advances the literature in a couple of important ways. First, this study is the first to examine FDI flows through a network approach. Our network theory suggests that FDI flows can be shaped by its network structures, which has been overlooked in the existing literature that focuses exclusively on countries or dyads' political and economic characteristics.\footnote{See \citet{Pandya:2016} for a review of the literature.} We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. %Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
+Our paper advances the literature in two important ways. First, this study is the first to examine FDI flows through a network approach. Our network theory suggests that FDI flows can be shaped by structures of interdependence---a class of generative processes that has been overlooked in the existing literature.\footnote{See \citet{Pandya:2016} for a review of the literature.} We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. %Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
 We believe our network perspective to global investment flows have broad implications for other cross-border movements of aid, goods, services, people, etc., which are central themes in the IPE literature. Global international trade regimes, for instance, are explicitly designed based on the principle of reciprocity \citep{Bagwell_Staiger:1999}. Yet empirical studies of trade flows rarely account for the pattern of reciprocity. Likewise, we expect other global economic exchanges to exhibit structural characteristics as well.
 
 % paragraph on methodological contribution
@@ -186,7 +188,7 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
-\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}. We estimate a separate model for each year from 2002 to 2012. We have enough data to identify a separate set of parameter values in each year, as we observe over fifteen-thousand potential directed dyadic ties in a single year.  By allowing the parameters to change with each year, we can observe the temporal robustness of effects, and avoid imposing the limiting assumption that the coefficient values are stable.\footnote{We present pooled results in the Appendix.}
+\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}. We estimate a separate model for each year from 2002 to 2012. We have two main reasons for presenting year-by-year estimates as our main results. First, since analyzing dyadic data essentially squares the size of the data when compared to the monadic level, we have enough data to identify a separate set of parameter values in each year. Second, recent international relations applications have called into question the appropriateness of pooling over long time periods since there may be considerable historical heterogeneity in the parameter values, and have estimated separate models for each year or time period (see, e.g., \citet{cranmer2014reciprocity}, \citet{cranmer2012toward},  \cite{cao2014democracies}, and \cite{ward2007persistent}).   By allowing the parameters to change with each year, we can observe the temporal robustness of effects, and avoid imposing the limiting assumption that the coefficient values are stable. Indeed, in the results we present below, we see that many of the parameters vary considerably over time. In particular, several parameters exhibit significant shifts in magnitude and statistical significance beginning in 2008---a pattern that is likely attributable to the Great Recession. Since the conventional approach in the study of FDI is to pool time periods into a panel, we present pooled results in the Appendix.
 
 
 
