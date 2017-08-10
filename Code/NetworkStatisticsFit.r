@@ -38,7 +38,7 @@ pdf("./Draft/draft_figures/reciprocityFit.pdf",height=6,width=6,pointsize=12)
 par(las=1)
 Network <- sim.recip.dep
 Independent <- sim.recip.ind
-boxplot(cbind(Network,Independent),col="grey65")
+boxplot(cbind(Network,Independent),col="grey65",ylab="Reciprocity")
 abline(h=obs.recip,lwd=2,lty=2)
 dev.off()
 
