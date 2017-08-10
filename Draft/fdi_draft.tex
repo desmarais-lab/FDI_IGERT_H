@@ -15,7 +15,9 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{amssymb}
+\usepackage{longtable}
 \usepackage{natbib}
+\usepackage{lscape}
 \usepackage{amsfonts}
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
@@ -349,6 +351,56 @@ FDI Stock\\
 \end{tabular}
 \caption{\label{fig:effectPlots4} Summary Statistics.}
 \end{figure}
+
+
+
+\newpage
+
+
+\begin{table}[!htbp] \centering 
+  \caption{Correlation Matrix} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}} cccccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & Mass & Distance, logged & Polity & Trade Openness &BIT \\ 
+\hline \\[-1.8ex] 
+Mass & $1$ & $$-$0.003$ & $0.091$ & $$-$0.166$ & $0.141$  \\ 
+Distance, logged & $$-$0.003$ & $1$ & $0.008$ & $$-$0.057$ & $$-$0.085$  \\ 
+Polity & $0.091$ & $0.008$ & $1$ & $$-$0.078$ & $0.018$ \\ 
+Trade Openness & $$-$0.166$ & $$-$0.057$ & $$-$0.078$ & $1$ & $0.032$  \\ 
+BIT & $0.141$ & $$-$0.085$ & $0.018$ & $0.032$ & $1$  \\ 
+Trade Volume & $0.714$ & $$-$0.215$ & $0.215$ & $$-$0.055$ & $0.143$  \\ 
+GDP per capita, ln& $0.392$ & $$-$0.084$ & $0.166$ & $0.225$ & $0.093$  \\ 
+Alliance Treaty & $0.133$ & $$-$0.348$ & $0.073$ & $$-$0.044$ & $0.021$  \\ 
+Defense Treaty & $0.065$ & $$-$0.391$ & $0.065$ & $$-$0.046$ & $0.010$ \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+
+\begin{table}[!htbp] \centering 
+  \caption{Correlation Matrix Continued} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}} cccccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ &  Trade Volume & GDP per capita, ln& Alliance Treaty & Defense Treaty \\ 
+\hline \\[-1.8ex] 
+Mass & $0.714$ & $0.392$ & $0.133$ & $0.065$ \\ 
+Distance, logged & $$-$0.215$ & $$-$0.084$ & $$-$0.348$ & $$-$0.391$ \\ 
+Polity & $0.215$ & $0.166$ & $0.073$ & $0.065$  \\ 
+Trade Openness & $$-$0.055$ & $0.225$ & $$-$0.044$ & $$-$0.046$\\ 
+BIT & $0.143$ & $0.093$ & $0.021$ & $0.010$\\ 
+Trade Volume & $1$ & $0.330$ & $0.216$ & $0.177$ \\ 
+GDP per capita, ln& $0.330$ & $1$ & $0.098$ & $0.038$ \\ 
+Alliance Treaty & $0.216$ & $0.098$ & $1$ & $0.850$ \\ 
+Defense Treaty & $0.177$ & $0.038$ & $0.850$ & $1$  \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
+
+
 
 \clearpage
 
