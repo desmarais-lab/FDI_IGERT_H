@@ -1,55 +1,59 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 757 of file fdi_reference.bib
+Repeated entry---line 1537 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 788 of file fdi_reference.bib
+Repeated entry---line 1599 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
-You've used 98 entries,
+Repeated entry---line 2159 of file fdi_reference.bib
+ : @article{Kerner:2009
+ :                     ,
+I'm skipping whatever remains of this entry
+You've used 96 entries,
             2874 wiz_defined-function locations,
-            1241 strings with 21121 characters,
-and the built_in function-call counts, 387590 in all, are:
-= -- 63312
-> -- 4480
+            1233 strings with 20841 characters,
+and the built_in function-call counts, 379865 in all, are:
+= -- 62058
+> -- 4375
 < -- 1
-+ -- 29557
-- -- 1606
-* -- 32912
-:= -- 78135
-add.period$ -- 401
-call.type$ -- 98
-change.case$ -- 1274
-chr.to.int$ -- 97
-cite$ -- 98
-duplicate$ -- 1490
-empty$ -- 3313
-format.name$ -- 1708
-if$ -- 69628
++ -- 28966
+- -- 1569
+* -- 32263
+:= -- 76562
+add.period$ -- 393
+call.type$ -- 96
+change.case$ -- 1248
+chr.to.int$ -- 95
+cite$ -- 96
+duplicate$ -- 1460
+empty$ -- 3254
+format.name$ -- 1669
+if$ -- 68247
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 102
-newline$ -- 426
-num.names$ -- 1123
-pop$ -- 395
+missing$ -- 99
+newline$ -- 417
+num.names$ -- 1099
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 1470
+purify$ -- 1440
 quote$ -- 0
-skip$ -- 1250
+skip$ -- 1227
 stack$ -- 0
-substring$ -- 89109
-swap$ -- 201
-text.length$ -- 1373
+substring$ -- 87355
+swap$ -- 198
+text.length$ -- 1345
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 366
+type$ -- 360
 warning$ -- 0
-while$ -- 2282
+while$ -- 2236
 width$ -- 0
-write$ -- 1376
-(There were 2 error messages)
+write$ -- 1346
+(There were 3 error messages)
