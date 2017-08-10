@@ -146,7 +146,7 @@ for(i in 1:length(intersectRecip)){
 pdf("./Draft/draft_figures/mutualInterpretation.pdf",height=4,width=8,pointsize=12)
 par(las=1)
 plot(intersectRecip[intersectRecip <= 20],diffRecip[intersectRecip <= 20,2],xlab="Mutual Edge Value",ylab="Reciprocity Effect",type="n",ylim=c(min(diffRecip[,1]),max(diffRecip[,2])))
-abline(h=(0:7)/2,lty=3,col="gray60")
+abline(h=(0:10)/2,lty=3,col="gray60")
 abline(v=0:20,lty=3,col="gray60")
 points(intersectRecip[intersectRecip <= 20],diffRecip[intersectRecip <= 20,2],pch=19)
 segments(x0=intersectRecip[intersectRecip <= 20],x1=intersectRecip[intersectRecip <= 20],y0=diffRecip[intersectRecip <= 20,1],diffRecip[intersectRecip <= 20,3],lwd=2)
