@@ -55,9 +55,9 @@ bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsy
 \item \st{Do a general read through for grammar}
 \item \st{Why don't we pool? With dyadic data we can identify effects. See significant heterogeneity. Beginning in 2008 we see a shift. This may be
     attributable to the great recession.}
-\item Figures re-ordered
+\item Figures re-ordered and made into long table
 \item Discussion of Pooled Plots
-\item footnote 12: justify use of Stock as DV
+\item \st{footnote 12: justify use of Stock as DV}
 \item \st{Correlation table in appendix.}
 \item \st{Total outward FDI}
 
@@ -98,7 +98,7 @@ We believe our network approach to the study of global investment flows has broa
 
 % paragraph on methodological contribution
 Second, %we use the count exponential random graph model (ERGM) \citep{krivitsky2012exponential} to test our arguments.
-to our knowledge, this recent extension of ERGM has not yet been applied in political science research. As such, our use and introduction of the count ERGM represents two distinct contributions. First, the application of the count ERGM to the study of bilateral FDI results in novel findings regarding patterns of dependence that characterize the FDI network. Second, by introducing the count ERGM in political science, we provide an illustrative application of a methodology that is widely applicable in political science research. The count ERGM can be applied to any network in which ties are count-weighted, and therefore represents a valuable tool for political scientists, who regularly study networks with count-weighted ties (e.g., interstate trade \citep{ward2007persistent}, shared membership in international governmental organizations \citep{boehmke2016addressing}, the count of bills co-sponsored between legislators \citep{kirkland2013hypothesis}, the number of policy ideas on which policymakers and other policy stakeholders agree \citep{leifeld2013reconceptualizing}).
+to our knowledge, this recent extension of ERGM has not yet been applied in political science research. As such, our use and introduction of the count ERGM represents two distinct contributions. First, the application of the count ERGM to the study of bilateral FDI results in novel findings regarding patterns of dependence that characterize the FDI network. Second, by introducing the count ERGM in political science, we provide an illustrative application of a methodology that is widely applicable in political science research. The count ERGM can be applied to any network in which ties are count-weighted, and therefore represents a valuable tool for political scientists, who regularly study networks with count-weighted ties (e.g., interstate trade \citep{ward2007persistent}, shared membership in international governmental organizations \citep{boehmke2016addressing}, the count of bills co-sponsored between legislators \citep{kirkland2013hypothesis}, and the number of policy ideas on which policymakers and other policy stakeholders agree \citep{leifeld2013reconceptualizing}).
 
 %Second, we offer a methodological contribution to the literature on FDI, and political science more broadly. In regards to the study of FDI,  we demonstrate how the count ERGM can be used to model the effects of both covariates and network dependencies on FDI flows. We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
 
@@ -122,7 +122,7 @@ We organize the paper as follows. In the next section we provide an overview of 
 The extant literature focuses on firm-level characteristics and/or country- and dyad-level parameters to explain global investment flows. The eclectic paradigm suggests that MNCs arise from taking advantage of firms' intangible or specific assets to overcome imperfections in arm's-length transactions \citep{Dunning:1988,Dunning:1992}. In general equilibrium models, firms undertake direct investment to take advantage of relative factor endowments, exploit large consumer markets, or overcome transportation and trade costs \citep[e.g.,][]{Helpman:1984,Carr_et_al:2001}. %In this sense, direct investment or the establishment of a foreign affiliate is a decision made by a parent company.
 Yet, footloose capital becomes relatively immobile after investment takes place, and thus a hostage to the host government \citep{Vernon:1971,Vernon:1980}. MNCs are thus ex post vulnerable to the host government's opportunistic behavior, such as asset expropriation or subtle policy changes that dampen firms' profitability. Adopting a neo-institutionalist approach, the political economy of FDI literature emphasizes the role of domestic and international institutions in preventing state's predatory behavior and ensuring credible commitment, thereby attracting FDI \citep[e.g.,][]{Henisz:2000,Jensen:2003,Jensen:2006,Li_Resnick:2003,Staats_Biglaiser:2012,Buthe_Milner:2008,Allee_Peinhardt:2011,Kerner:2009}.
 
-There is now a profuse empirical literature examining the economic, political, and institutional determinants of FDI inflows \citep[e.g.,][]{Noorbakhsh_et_al:2001,Yeaple:2003,Jensen:2003,Li_Resnick:2003,Buthe_Milner:2008,Li_Vashchilko:2010,Kerner:2009,Wright_Zhu:2017,Pinto_Pinto:2008,Pinto:2013}.\footnote{See \citet{Pandya:2016} for a comprehensive review.} Existing studies typically model FDI flows at the monadic and to a lesser extent at the dyadic level. One implicit assumption in existing theoretical and empirical models is that FDI flows into one country or between one dyad are independent of other countries or dyads. As such, the political economy of FDI literature has focused on examining the impact of host countries' political and   economic characteristics on FDI flows, while overlooking the structure parameters. Given the intertwined linkages among MNCs and the expansion of global production networks \citep{UNCTAD:2013}, we expect that high-order network structures should play an important role in shaping the pattern of FDI flows.
+There is now a profuse empirical literature examining the economic, political, and institutional determinants of FDI inflows \citep[e.g.,][]{Noorbakhsh_et_al:2001,Yeaple:2003,Jensen:2003,Li_Resnick:2003,Buthe_Milner:2008,Li_Vashchilko:2010,Kerner:2009,Wright_Zhu:2017,Pinto_Pinto:2008,Pinto:2013}.\footnote{See \citet{Pandya:2016} for a comprehensive review.} Existing studies typically model FDI flows at the monadic and to a lesser extent at the dyadic level. One implicit assumption in existing theoretical and empirical models is that FDI flows into one country or between one dyad are independent of other countries or dyads. As such, the political economy of FDI literature has focused on examining the impact of host countries' political and economic characteristics on FDI flows, while overlooking the structural parameters. Given the intertwined linkages among MNCs and the expansion of global production networks \citep{UNCTAD:2013}, we expect that high-order network structures should play an important role in shaping the pattern of FDI flows.
 
 
 % Paragraph on interdependence in IR/IPE
@@ -175,7 +175,7 @@ The diffusion of PTAs is likely to drive the clustering of direct investment act
 %  logFDI_{ijt}=\alpha + \beta_{1}*GDP~Product + \beta_{2}*GDP/cap_{it} + \beta_{3}*GDP/cap_{jt} +
 %\end{equation}
 
-To test our hypotheses, we estimate a gravity model of FDI.\footnote{We follow the model specification in \citet{Li_Vashchilko:2010}.} The dependent variable is bilateral FDI stock.\footnote{We include a lagged dependent variable the model such that it essentially models FDI flows. {\color{red}The advantage of using FDI stock data is that. The problem with the FDI flow data is that }  } The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}. Systematic Bilateral FDI data are not available for earlier time periods. Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as BITs, alliances, and bilateral trade. We take the natural log of the bilateral FDI stock variable to deal with the skewed distribution.
+To test our hypotheses, we estimate a gravity model of FDI.\footnote{We follow as closely as possible the model specification in \citet{Li_Vashchilko:2010}.} The dependent variable is bilateral FDI stock.\footnote{We include a lagged dependent variable the model such that it essentially models FDI flows. We use FDI stock because the count ERGM currently cannot model negative values in the dependent variable. By using stocks we minimize changes in the data by our transformation of negative values to zero, since negative FDI stock is rare as it only occurs when debt to a parent company exceeds FDI stock value.} The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}. Systematic Bilateral FDI data are not available for earlier time periods. Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as BITs, alliances, and bilateral trade. We take the natural log of the bilateral FDI stock variable to deal with the skewed distribution.
 
 
 \subsection{Covariates}
@@ -217,62 +217,36 @@ $$ \text{Sender Covariate}: \bm{g(y,x)} = \sum_{i}x_i \sum_{j} \bm{y}_{i,j}$$
 
 $$ \text{Receiver Covariate}: \bm{g(y,x)} = \sum_{j}x_j \sum_{i} \bm{y}_{i,j}$$
 
-\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}. We estimate a separate model for each year from 2002 to 2012. We have two main reasons for presenting year-by-year estimates as our main results. First, since analyzing dyadic data essentially squares the size of the data when compared to the monadic level, we have enough data to identify a separate set of parameter values in each year. Second, recent international relations applications have called into question the appropriateness of pooling over long time periods since there may be considerable historical heterogeneity in the parameter values, and have estimated separate models for each year or time period  \citep[see,~e.g.,][]{cranmer2014reciprocity,cranmer2012toward,cao2014democracies,ward2007persistent}. By allowing the parameters to change with each year, we can observe the temporal robustness of effects, and avoid imposing the limiting assumption that the coefficient values are stable. Indeed, in the results we present below, we see that many of the parameters vary considerably over time. In particular, several parameters exhibit significant shifts in magnitude and statistical significance beginning in 2008---a pattern that is likely attributable to the Great Recession. Since the conventional approach in the study of FDI is to pool time periods into a panel, we present pooled results in the Appendix.
+\noindent The count ERGM estimates that we present below are estimated using the \texttt{ergm} \citep{ergm} and \texttt{ergm.count} \citep{ergmcount} packages in the \R \space statistical software \citep{r}. We estimate a separate model for each year from 2002 to 2012. We have two main reasons for presenting year-by-year estimates as our main results. First, since analyzing dyadic data essentially squares the size of the data when compared to the monadic level, we have enough data to identify a separate set of parameter values in each year. Second, recent international relations applications have called into question the appropriateness of pooling over long time periods since there may be considerable historical heterogeneity in the parameter values, and have estimated separate models for each year or time period  \citep[see,~e.g.,][]{cranmer2014reciprocity,cranmer2012toward,cao2014democracies,ward2007persistent}. By allowing the parameters to change with each year, we can observe the temporal robustness of effects, and avoid imposing the limiting assumption that the coefficient values are stable. Indeed, in the results we present below, we see that many of the parameters vary considerably over time. In particular, several parameters exhibit significant shifts in magnitude and statistical significance beginning in 2008---a pattern that is likely attributable to the Great Recession.\footnote{A shift in total FDI flows happens in 2008 as well, as seen in Figure 10 in the Appendix.} Since the conventional approach in the study of FDI is to pool time periods into a panel, we present pooled results in the Appendix.
 
 
+\section{Results}
+
+Before discussing individual effects, we first assess the relative fit of the independence and network models. Figure \ref{fig:bic} presents the difference in Bayesian Information Criterion (BIC) in the between the independence and network models for each year in our analysis. The BIC is more conservative in terms of adding parameters to a model than the common alternative likelihood-based measure of model fit, the Akaike Information Criterion (AIC) \citep{waldorp2005model,abrahamowicz1990optimal,raftery1999bayes}. We see that the BIC in the independence model is higher than that in the network model for each year, which provides robust evidence that the network model is a better fit for the data than the independence model over the time period that we study.
 
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 \centering
-\begin{tabular}{c@{\hskip -.4cm}c}
-Sum of Edges&
-Sum Sqrt. of Edges\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}   \\
-Number of Non-Zero Edges &
-Lagged FDI Flow\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf} &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf}   \\
-Log-GDP Product &
-Log-Geographic Distance\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDP_Dyad.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   \\
-Defense Treaty &
-Alliance Treaty\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Defense.pdf}   &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Alliance.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
+\caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
 
 
-
-
-\begin{figure}[htp]
+To illustrate how the network model fits better, we compare the fit of the two models to the level of reciprocity in the FDI ties. The level of reciprocity is defined as $$ \frac{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cap \bm{y}_{j,i}>0 \right)}{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cup \bm{y}_{j,i}>0 \right)}.$$ In words, this is the proportion of dyads in which there is an FDI tie from state $i$ to state $j$ and a tie from state $j$ to state $i$ out of the number of dyads in which there is at least one tie. This measures the degree to which the presence of a tie in one direction within a dyad implies that the other tie will exist. To compare the network and independent models we simulated 1,000 networks from each, and compare the reciprocity values in the simulated networks to the observed reciprocity value. 
+\begin{figure}[!h]
 \centering
-\begin{tabular}{c@{\hskip -.4cm}c}
-Polity, in-degree &
-Polity, out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_in.pdf}   &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_out.pdf}   \\
-GDP per capita, in-degree &
-GDP per capita,  out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_in.pdf} &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_out.pdf}   \\
-Bilateral Investment Treaty &
-Bilateral Trade Volume\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/BIT.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeV.pdf}   \\
-Trade Openness, in-degree &
-Trade Openness,  out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_in.pdf}  &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_out.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots2} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\includegraphics[scale=.75]{draft_figures/reciprocityFit.pdf} \vspace{-.5cm}
+\caption{\label{fig:recipFit} Reciprocity values of 1,000 networks simulated from the Network and Independent models. Observed value given by the dashed horizontal line.}
 \end{figure}
+We see in Figure \ref{fig:recipFit} that the network model provides a much better fit to the observed level of reciprocity (approximately 0.32) than the independent model. Indeed, the observed value is an extreme outlier with respect to the distribution of reciprocity values of networks simulated from the independent model. Unlike the BIC, the fit to the observed reciprocity value does not provide a holistic assessment of model fit. Rather, it illustrates the improved fit to an interpretable quantity in the FDI network, and illustrates how a model in which independence is assumed provides a relatively poor fit to this quantity.
 
 
 
+
+
+
+
+Turning now to the network effects, which are presented in Figure \ref{fig:net_effects}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure. 
 \begin{figure}[htp]
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
@@ -281,33 +255,12 @@ Transitivity\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Transitivity.pdf}   \\
 \end{tabular}
-\caption{\label{fig:effectPlots4} Estimates of Network terms in Poisson ERGMs. Bars span 95\% confidence intervals.}
+\caption{\label{fig:net_effects} Estimates of Network terms in Poisson ERGMs. Bars span 95\% confidence intervals.}
 \end{figure}
+The dependence effects, though formulated intuitively, do not permit a straightforward marginal-effects interpretation of the coefficients aside from the signs of the effects. We can, however, estimate and visualize the dependence effects using simulation. In Figure \ref{fig:interpret} we present visualizations of the effects of the dependence terms. To measure these effects we begin with a simulation exercise in which we simulate networks using both the full model with dependence terms, and the null model based only on covariates. We then classify each simulated edge value in terms of the value of the local version of the dependence term operating on that edge. For example, when it comes to the reciprocity effect, we classify each simulated edge value ($y_{i,j}$) in terms of the value of the mutual edge, $y_{j,i}$. Finally, we estimate the difference in means between the edge values simulated from the full and null models at each dependence term value. This difference in means can be interpreted as the effect on predicted edge values of accounting for the respective dependence term in the model.
 
-
-
-\section{Results}
-
-The coefficients estimated in the yearly count ERGMs are depicted in Figures \ref{fig:effectPlots1}--\ref{fig:effectPlots4}. Before discussing individual effects, we first assess the relative fit of the independence and network models. Figure \ref{fig:bic} presents the difference in Bayesian Information Criterion (BIC) in the between the independence and network models for each year in our analysis. The BIC is more conservative in terms of adding parameters to a model than the common alternative likelihood-based measure of model fit, the Akaike Information Criterion (AIC) \citep{waldorp2005model,abrahamowicz1990optimal,raftery1999bayes}. We see that the BIC in the independence model is higher than that in the network model for each year, which provides robust evidence that the network model is a better fit for the data than the independence model over the time period that we study.
-
-To illustrate how the network model fits better, we compare the fit of the two models to the level of reciprocity in the FDI ties. The level of reciprocity is defined as $$ \frac{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cap \bm{y}_{j,i}>0 \right)}{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cup \bm{y}_{j,i}>0 \right)}.$$ In words, this is the proportion of dyads in which there is an FDI tie from state $i$ to state $j$ and a tie from state $j$ to state $i$ out of the number of dyads in which there is at least one tie. This measures the degree to which the presence of a tie in one direction within a dyad implies that the other tie will exist. To compare the network and independent models we simulated 1,000 networks from each, and compare the reciprocity values in the simulated networks to the observed reciprocity value. We see in Figure \ref{fig:recipFit} that the network model provides a much better fit to the observed level of reciprocity (approximately 0.32) than the independent model. Indeed, the observed value is an extreme outlier with respect to the distribution of reciprocity values of networks simulated from the independent model. Unlike the BIC, the fit to the observed reciprocity value does not provide a holistic assessment of model fit. Rather, it illustrates the improved fit to an interpretable quantity in the FDI network, and illustrates how a model in which independence is assumed provides a relatively poor fit to this quantity.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
-\caption{\label{fig:bic} Difference in BIC between independent and network model.}
-\end{figure}
-
-Turning now to the network effects, which are presented in Figure \ref{fig:effectPlots4}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure. The dependence effects, though formulated intuitively, do not permit a straightforward marginal-effects interpretation of the coefficients aside from the signs of the effects. We can, however, estimate and visualize the dependence effects using simulation. In Figure \ref{fig:interpret} we present visualizations of the effects of the dependence terms. To measure these effects we begin with a simulation exercise in which we simulate networks using both the full model with dependence terms, and the null model based only on covariates. We then classify each simulated edge value in terms of the value of the local version of the dependence term operating on that edge. For example, when it comes to the reciprocity effect, we classify each simulated edge value ($y_{i,j}$) in terms of the value of the mutual edge, $y_{j,i}$. Finally, we estimate the difference in means between the edge values simulated from the full and null models at each dependence term value. This difference in means can be interpreted as the effect on predicted edge values of accounting for the respective dependence term in the model.
-
-\begin{figure}[!h]
-\centering
-\includegraphics[scale=.75]{draft_figures/reciprocityFit.pdf} \vspace{-.5cm}
-\caption{\label{fig:recipFit} Reciprocity values of 1,000 networks simulated from the Network and Independent models. Observed value given by the dashed horizontal line.}
-\end{figure}
 
 We see in Figure \ref{fig:interpret}, that the dependence effects can result in differences in predicted edge values in the range of 1--4 in log-scale FDI.  The standard deviation in log-scale FDI stock (in 2012---the year we use for the interpretation plots) is 2.40.  We see that the scale of both the reciprocity and transitivity effects are significant, with a shift from lower values of the relevant dependence edge to higher values resulting in more than a standard deviation increase in the predicted edge value.
-
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=.75]{draft_figures/transitiveInterpretation.pdf} \vspace{-.5cm}\\
@@ -315,15 +268,63 @@ We see in Figure \ref{fig:interpret}, that the dependence effects can result in 
 \caption{\label{fig:interpret} Plots depict the difference in predicted value ($y$-axis) that is attributable to the respective dependence effect, averaged over all dyads in the network. Interpretation plots are based on 1,000 FDI stock networks simulated from the 2012 model. Tie weights are measured on the natural logarithm scale. Predicted value differences are calculated by taking the differences between expected dyad values simulated from the full model with dependence terms and the null model that is based on covariates only. Error bars span 95\% confidence intervals for the difference in means. }
 \end{figure}
 
-Regarding covariate determinants, the results show that FDI flows between a dyad are strongly and positively correlated with the product of the dyad's GDP, BIT, defense treaty, both destination and origin countries' polity scores and trade openness, and origin country's GDP per capita. On the other hand, FDI flows are negatively associated with geographic distance between a dyad, alliance treaty, and destination country's GDP per capita. In addition, several parameters such as geographic distance, defense treaty, as well as origin and destination's polity scores, GDP per capita, and trade openness change significantly after 2008 when the Great Recession began. The magnitude of most of these coefficients decreases since then. One possible explanation is that concerns about global economic uncertainty might predominate in investment decisions at that time so that home and host countries' political and economic characteristics play a less important role.
+Regarding covariate determinants, presented in Table \ref{fig:effectPlots1}, the results show that FDI flows between a dyad are strongly and positively correlated with the product of the dyad's GDP, BIT, defense treaty, both destination and origin countries' polity scores and trade openness, and origin country's GDP per capita. On the other hand, FDI flows are negatively associated with geographic distance between a dyad, alliance treaty, and destination country's GDP per capita. In addition, several parameters such as geographic distance, defense treaty, as well as origin and destination's polity scores, GDP per capita, and trade openness change significantly after 2008 when the Great Recession began. The magnitude of most of these coefficients decreases since then. One possible explanation is that concerns about global economic uncertainty might predominate in investment decisions at that time so that home and host countries' political and economic characteristics play a less important role.
 
 We noted above that omitting dependent network structure, a condition that characterizes previous research on FDI, can result in biased estimates and improper standard errors. For several effects that we include in our models, the results are substantively changed by adding the network parameters. In the network model, we find the following effects to be lower in magnitude, statistically significant in fewer years, or both: Gravity model mass, distance, contiguity, PTA depth, destination polity, destination trade openness, origin trade openness, origin GDP per capita, origin polity, and origin trade openness. For each of these effects, our results indicate that omitting the network dependencies lead to either an overestimate of the effect of the respective variable, or worse, a Type 2 inferential error in which the null hypothesis of no effect is incorrectly rejected. This finding shows that, even if a researcher is not theoretically interested in network dependencies, (s)he should still incorporate them into an empirical model in order to avoid misspecification bias.
 
-\begin{figure}[!h]
-\centering
-\includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
-\caption{\label{fig:bic} Difference in BIC between independent and network model.}
-\end{figure}
+
+\begin{longtable}{c@{\hskip -.4cm}c}
+Sum of Edges&
+Sum Sqrt. of Edges\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}   \\
+Number of Non-Zero Edges &
+Lagged FDI Flow\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf}   \\
+Log-GDP Product &
+Log-Geographic Distance\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDP_Dyad.pdf}    &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   \\
+Defense Treaty &
+Alliance Treaty\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Defense.pdf}   &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Alliance.pdf}\\
+
+%
+\pagebreak
+%
+
+Polity, in-degree &
+Polity, out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_in.pdf}   &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_out.pdf}   \\
+GDP per capita, in-degree &
+GDP per capita,  out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_in.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_out.pdf}   \\
+Bilateral Investment Treaty &
+Bilateral Trade Volume\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/BIT.pdf}    &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeV.pdf}   \\
+Trade Openness, in-degree &
+Trade Openness,  out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_in.pdf}  &
+\includegraphics[height=.18\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_out.pdf}   \\
+
+\caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Conclusion}
@@ -349,20 +350,12 @@ Finally, we should emphasize that our theory, specification, and finding of netw
 \doublespacing
 \appendix
 \section{Summary Statistics}\label{summstats}
-\begin{figure}[htp]
-\centering
-\begin{tabular}{c@{\hskip -.4cm}c}
+
+\begin{longtable}{c@{\hskip -.4cm}c}
 Alliance Treaty &
 Defense Treaty\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/alliance.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=.5cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/defense.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Summary Statistics.}
-\end{figure}
-
-\begin{figure}[htp]
-\centering
-\begin{tabular}{c@{\hskip -.4cm}c}
 Bilateral Investment Treaty &
 Polity\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/BIT.pdf}    &
@@ -379,14 +372,14 @@ Trade Volume &
 FDI Stock\\
 \includegraphics[height=.2\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/TradeV.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=1cm 1cm 0cm 1.6cm]{draft_figures/descriptive_plots/fdi_stock.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Summary Statistics.}
-\end{figure}
+
+\caption{\label{fig:sum_stats} Summary Statistics.}
+\end{longtable}
 
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=.75]{draft_figures/descriptive_plots/fdi_flows.pdf} \vspace{0cm}
-\caption{\label{fig:bic} Total FDI flows by Direction.}
+\caption{\label{fig:flows} Total FDI flows by Direction.}
 \end{figure}
 
 \clearpage
@@ -396,39 +389,45 @@ FDI Stock\\
 \begin{tabular}{@{\extracolsep{5pt}} cccccccccc}
 \\[-1.8ex]\hline
 \hline \\[-1.8ex]
- & Mass & Distance, logged & Polity & Trade Openness &BIT \\
+ & Mass & Distance, logged & Polity \\
 \hline \\[-1.8ex]
-Mass & $1$ & $$-$0.003$ & $0.091$ & $$-$0.166$ & $0.141$  \\
-Distance, logged & $$-$0.003$ & $1$ & $0.008$ & $$-$0.057$ & $$-$0.085$  \\
-Polity & $0.091$ & $0.008$ & $1$ & $$-$0.078$ & $0.018$ \\
-Trade Openness & $$-$0.166$ & $$-$0.057$ & $$-$0.078$ & $1$ & $0.032$  \\
-BIT & $0.141$ & $$-$0.085$ & $0.018$ & $0.032$ & $1$  \\
-Trade Volume & $0.714$ & $$-$0.215$ & $0.215$ & $$-$0.055$ & $0.143$  \\
-GDP per capita, ln& $0.392$ & $$-$0.084$ & $0.166$ & $0.225$ & $0.093$  \\
-Alliance Treaty & $0.133$ & $$-$0.348$ & $0.073$ & $$-$0.044$ & $0.021$  \\
-Defense Treaty & $0.065$ & $$-$0.391$ & $0.065$ & $$-$0.046$ & $0.010$ \\
+Mass & $1$ & $$-$0.003$ & $0.091$   \\
+Distance, logged & $$-$0.003$ & $1$ & $0.008$  \\
+Polity & $0.091$ & $0.008$ & $1$  \\
+Trade Openness & $$-$0.166$ & $$-$0.057$ & $$-$0.078$ \\
+BIT & $0.141$ & $$-$0.085$ & $0.018$  \\
+Trade Volume & $0.714$ & $$-$0.215$ & $0.215$   \\
+GDP per capita, ln& $0.392$ & $$-$0.084$ & $0.166$   \\
+Alliance Treaty & $0.133$ & $$-$0.348$ & $0.073$   \\
+Defense Treaty & $0.065$ & $$-$0.391$ & $0.065$ \\
 \hline \\[-1.8ex]
-\end{tabular}
-\end{table}
-
-
-\begin{table}[!htbp] \centering
-  \caption{Correlation Matrix Continued}
-  \label{}
-\begin{tabular}{@{\extracolsep{5pt}} cccccccccc}
 \\[-1.8ex]\hline
 \hline \\[-1.8ex]
- &  Trade Volume & GDP per capita, ln& Alliance Treaty & Defense Treaty \\
+ & Trade Openness &BIT &  Trade Volume  \\
 \hline \\[-1.8ex]
-Mass & $0.714$ & $0.392$ & $0.133$ & $0.065$ \\
-Distance, logged & $$-$0.215$ & $$-$0.084$ & $$-$0.348$ & $$-$0.391$ \\
-Polity & $0.215$ & $0.166$ & $0.073$ & $0.065$  \\
-Trade Openness & $$-$0.055$ & $0.225$ & $$-$0.044$ & $$-$0.046$\\
-BIT & $0.143$ & $0.093$ & $0.021$ & $0.010$\\
-Trade Volume & $1$ & $0.330$ & $0.216$ & $0.177$ \\
-GDP per capita, ln& $0.330$ & $1$ & $0.098$ & $0.038$ \\
-Alliance Treaty & $0.216$ & $0.098$ & $1$ & $0.850$ \\
-Defense Treaty & $0.177$ & $0.038$ & $0.850$ & $1$  \\
+Mass & $$-$0.166$ & $0.141$& $0.714$  \\
+Distance, logged & $$-$0.057$ & $$-$0.085$ & $$-$0.215$ \\
+Polity & $$-$0.078$ & $0.018$& $0.215$  \\
+Trade Openness  & $1$ & $0.032$ & $$-$0.055$ \\
+BIT & $0.032$ & $1$ & $0.143$ \\
+Trade Volume & $$-$0.055$ & $0.143$& $1$  \\
+GDP per capita, ln & $0.225$ & $0.093$ & $0.330$  \\
+Alliance Treaty & $$-$0.044$ & $0.021$& $0.216$  \\
+Defense Treaty & $$-$0.046$ & $0.010$ & $0.177$   \\
+\hline \\[-1.8ex]
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+& GDP per capita, ln& Alliance Treaty & Defense Treaty \\
+\hline \\[-1.8ex]
+Mass & $0.392$ & $0.133$ & $0.065$ \\
+Distance, logged & $$-$0.084$ & $$-$0.348$ & $$-$0.391$  \\
+Polity & $0.166$ & $0.073$ & $0.065$   \\
+Trade Openness & $0.225$ & $$-$0.044$ & $$-$0.046$\\\
+BIT & $0.093$ & $0.021$ & $0.010$\\
+Trade Volume & $0.330$ & $0.216$ & $0.177$ \\
+GDP per capita, ln & $1$ & $0.098$ & $0.038$ \\
+Alliance Treaty & $0.098$ & $1$ & $0.850$ \\
+Defense Treaty & $0.038$ & $0.850$ & $1$ \\
 \hline \\[-1.8ex]
 \end{tabular}
 \end{table}
@@ -438,7 +437,7 @@ Defense Treaty & $0.177$ & $0.038$ & $0.850$ & $1$  \\
 \clearpage
 
 \section{Time-Pooled Model Results}\label{pooledresults}
-In this paper, we estimate a separate model for each year from 2002 to 2012. Results in Figures xxx show significant heterogeneity in the estimates over time. For robustness checks, we re-estimate the count ERGM by pooling the data.
+For robustness checks, we re-estimate the count ERGM by pooling the data. We see in Figure \ref{fig:exog_2} that after pooling, network terms remain positive and statistically significant. In Table \ref{fig:effectPlots2}, we see that exogenous covariates are similar to yearly results and that differences when network terms are included still supports the assertion that failure to include network structure results in biased estimates. 
 
 \begin{figure}[!h]
 \centering
@@ -447,17 +446,17 @@ Mutuality & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:effectPlots4} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
+\caption{\label{fig:exog_2} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
 \end{figure}
 
 
 
-\begin{figure}[!p]
-\centering
-\begin{tabular}{c@{\hskip 0cm}c}
+
+\begin{longtable}{c@{\hskip 0cm}c}
 Sum & Sum$^{(1/2)}$ \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Sum.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/sum_5.pdf}   \\
+\pagebreak
 Non-Zero & Alliance Treaty\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Non-zero.pdf} &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/AllianceTreaty.pdf}   \\
@@ -467,13 +466,6 @@ Bilateral Investment Treaty & Defense Treaty\\
 Product of Dyad's GDP & Distance\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/DyadGDPProduct.pdf} &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Distance.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-\end{figure}
-
-\begin{figure}[htp]
-\centering
-\begin{tabular}{c@{\hskip 0cm}c}
 Lagged FDI stock & Bilateral Trade Volume \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/LaggedDV.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/TradeVolume.pdf}   \\
@@ -486,10 +478,9 @@ Polity, in-degree & Polity, out-degree\\
 Trade Openness, in-degree & Trade Openness, out-degree\\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Trade_in.pdf} &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Trade_out.pdf}   \\
-\end{tabular}
-\caption{\label{fig:effectPlots4} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-\end{figure}
 
+\caption{\label{fig:effectPlots2} Estimates of terms in time-pooled ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
+\end{longtable}
 
 \end{document}
 
