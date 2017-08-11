@@ -437,12 +437,12 @@ Defense Treaty & $0.038$ & $0.850$ & $1$ \\
 \clearpage
 
 \section{Time-Pooled Model Results}\label{pooledresults}
-For robustness checks, we re-estimate the count ERGM by pooling the data. We see in Figure \ref{fig:exog_2} that after pooling, network terms remain positive and statistically significant. In Table \ref{fig:effectPlots2}, we see that exogenous covariates are similar to yearly results and that differences when network terms are included still supports the assertion that failure to include network structure results in biased estimates. 
+For robustness checks, we re-estimate the count ERGM by pooling the data, which is common in the literature for regression based models. Figure \ref{fig:exog_2} shows that after pooling, network terms remain positive and statistically significant, supporting our hypothesis that reciprocity and transitivity characterize FDI flows. The exogenous covariates from the pooled model are presented in Table \ref{fig:effectPlots2}. The estimates are similar to yearly results in terms of direction and statistical significance. As expected from pooling, there are decreases in standard errors and for variables that exhibit more yearly heterogeneity, estimates are on average more different than yearly estimates. Statistically significant differences when network terms are included, such as those for distance, GDP per capita, and Polity, also supports the assertion that failure to include network structure results in biased estimates. 
 
 \begin{figure}[!h]
 \centering
 \begin{tabular}{c@{\hskip 0cm}c}
-Mutuality & Transitivity \\
+Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/plots_pooled/Transitivity.pdf}
 \end{tabular}
