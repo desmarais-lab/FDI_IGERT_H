@@ -33,6 +33,14 @@ Boehmke, Frederick~J, Olga Chyzh \harvardand\ Cameron~G Thies. 2016.
 \newblock ``Addressing endogeneity in actor-specific network measures.'' {\em
   Political Science Research and Methods} 4(01):123--149.
 
+\harvarditem[Brida, G{\'o}mez \harvardand\ Risso]{Brida, G{\'o}mez \harvardand\
+  Risso}{2009}{brida2009symbolic}
+Brida, Juan~Gabriel, David~Matesanz G{\'o}mez \harvardand\ Wiston~Adri{\'a}n
+  Risso. 2009.
+\newblock ``Symbolic hierarchical analysis in currency markets: An application
+  to contagion in currency crises.'' {\em Expert Systems with applications}
+  36(4):7721--7728.
+
 \harvarditem{{Bueno de Mesquita} \harvardand\ Smith}{2009}{BDM_Smith:2009}
 {Bueno de Mesquita}, Bruce \harvardand\ Alastair Smith. 2009.
 \newblock ``A Political Economy of Aid.'' {\em International Organization}
@@ -158,6 +166,16 @@ Dorff, Cassy \harvardand\ Michael~D Ward. 2013.
 \newblock ``Networks, dyads, and the social relations model.'' {\em Political
   Science Research and Methods} 1(02):159--178.
 
+\harvarditem{Dorussen \harvardand\ Ward}{2008}{Dorussen_Ward:2008}
+Dorussen, Han \harvardand\ Hugh Ward. 2008.
+\newblock ``Intergovernmental Organizations and the Kantian Peace.'' {\em
+  Journal of Conflict Resolution} 52(2):189--212.
+
+\harvarditem{Dorussen \harvardand\ Ward}{2010}{Dorussen_Ward:2010}
+Dorussen, Han \harvardand\ Hugh Ward. 2010.
+\newblock ``Trade networks and the Kantian peace.'' {\em Journal of Peace
+  Research} 47(1):29--42.
+
 \harvarditem{Dunning}{1988}{Dunning:1988}
 Dunning, John~H. 1988.
 \newblock ``The Eclectic Paradigm of International Production: A Restatement
@@ -179,7 +197,6 @@ Egger, Peter \harvardand\ Michael Pfaffermayr. 2004.
 Erikson, Robert~S., Pablo~M. Pinto \harvardand\ Kelly~T. Rader. 2014.
 \newblock ``Dyadic Analysis in International Relations: A Cautionary Tale.''
   {\em Political Analysis} 22(4):457--463.
-\newline\harvardurl{http://dx.doi.org/10.1093/pan/mpt051}
 
 \harvarditem[Feenstra, Inklaar \harvardand\ Timmer]{Feenstra, Inklaar
   \harvardand\ Timmer}{2015}{feenstra2015next}
@@ -193,11 +210,23 @@ Fitzgerald, Jennifer, David Leblang \harvardand\ Jessica~C. Teets. 2014.
 \newblock ``Defying the Law of Gravity: The Political Economy of International
   Migration.'' {\em World Politics} 66(03):406--445.
 
+\harvarditem[Franzese, Hays \harvardand\ Kachi]{Franzese, Hays \harvardand\
+  Kachi}{2012}{Franzese_et_al:2012}
+Franzese, Robert~J., Jude~C. Hays \harvardand\ Aya Kachi. 2012.
+\newblock ``Modeling History Dependence in Network-Behavior Coevolution.'' {\em
+  Political Analysis} 20(2):175--190.
+
 \harvarditem[Frenkel, Funke \harvardand\ Stadtmann]{Frenkel, Funke \harvardand\
   Stadtmann}{2004}{Frenkel_et_al:2004}
 Frenkel, Michael, Katja Funke \harvardand\ Georg Stadtmann. 2004.
 \newblock ``A Panel Analysis of Bilateral FDI Flows to Emerging Economies.''
   {\em Economic Systems} 28(3):281--300.
+
+\harvarditem{Gai \harvardand\ Kapadia}{2010}{gai2010contagion}
+Gai, Prasanna \harvardand\ Sujit Kapadia. 2010.
+\newblock Contagion in financial networks.  In {\em Proceedings of the Royal
+  Society of London A: Mathematical, Physical and Engineering Sciences}.
+\newblock Vol. 466 The Royal Society pp.~2401--2423.
 
 \harvarditem{Garlaschelli \harvardand\
   Loffredo}{2004}{garlaschelli2004patterns}
@@ -236,6 +265,13 @@ Handcock, Mark~S., David~R. Hunter, Carter~T. Butts, Steven~M. Goodreau,
 \newblock The Statnet Project (\url{http://www.statnet.org}).
 \newblock R package version 3.6.1.
 \newline\harvardurl{https://CRAN.R-project.org/package=ergm}
+
+\harvarditem[Hays, Kachi \harvardand\ Franzese]{Hays, Kachi \harvardand\
+  Franzese}{2010}{Hays_et_al:2010}
+Hays, Jude~C., Aya Kachi \harvardand\ Robert~J. Franzese. 2010.
+\newblock ``A spatial model incorporating dynamic, endogenous network
+  interdependence: A political science application.'' {\em Statistical
+  Methodology} 7(3):406--428.
 
 \harvarditem{Helpman}{1984}{Helpman:1984}
 Helpman, Elhanan. 1984.
@@ -299,6 +335,11 @@ Julius, DeAnne~S. 1990.
 \newblock Chatham House papers New York:  Published in North America for the
   Royal Institute of International Affairs by Council on Foreign Relations
   Press.
+
+\harvarditem{Kali \harvardand\ Reyes}{2010}{kali2010financial}
+Kali, Raja \harvardand\ Javier Reyes. 2010.
+\newblock ``Financial contagion on the international trade network.'' {\em
+  Economic Inquiry} 48(4):1072--1101.
 
 \harvarditem{Kaminski \harvardand\ Javorcik}{2005}{Kaminski_Javorcik:2005}
 Kaminski, Bart \harvardand\ Beata Javorcik. 2005.
@@ -372,6 +413,11 @@ Leifeld, Philip. 2013.
   framework: a discourse network analysis of German pension politics.'' {\em
   Policy Studies Journal} 41(1):169--198.
 
+\harvarditem{Leitner}{2005}{leitner2005financial}
+Leitner, Yaron. 2005.
+\newblock ``Financial networks: Contagion, commitment, and private sector
+  bailouts.'' {\em The Journal of Finance} 60(6):2925--2953.
+
 \harvarditem{Li \harvardand\ Resnick}{2003}{Li_Resnick:2003}
 Li, Quan \harvardand\ Adam Resnick. 2003.
 \newblock ``Reversal of Fortunes: Democratic Institutions and Foreign Direct
@@ -396,7 +442,6 @@ Li, Quan \harvardand\ Tatiana Vashchilko. 2010.
 Mansfield, Edward~D., Helen~V. Milner \harvardand\ B.~Peter Rosendorff. 2000.
 \newblock ``Free to Trade: Democracies, Autocracies, and International Trade.''
   {\em The American Political Science Review} 94(2):305--321.
-\newline\harvardurl{http://www.jstor.org/stable/2586014}
 
 \harvarditem{Markusen}{1995}{Markusen:1995}
 Markusen, James~R. 1995.
@@ -408,6 +453,11 @@ Markusen, James~R. 1995.
 Marshall, Monty~G. \harvardand\ Keith Jaggers. 2010.
 \newblock ``Polity IV Project: Political Regime Characteristics and
   Transitions, 1800-2008.''.
+
+\harvarditem{Matesanz \harvardand\ Ortega}{2014}{matesanz2014network}
+Matesanz, David \harvardand\ Guillermo~J Ortega. 2014.
+\newblock ``Network analysis of exchange data: interdependence drives crisis
+  contagion.'' {\em Quality \& Quantity} 48(4):1835--1851.
 
 \harvarditem{Mayer \harvardand\ Zignago}{2011}{mayer2011notes}
 Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
