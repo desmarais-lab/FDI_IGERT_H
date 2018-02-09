@@ -1,3 +1,3 @@
 # FDI_IGERT_H
 
-Using GERGM to analyze FDI flows.
+Using ERGM count models to analyze FDI flows.
