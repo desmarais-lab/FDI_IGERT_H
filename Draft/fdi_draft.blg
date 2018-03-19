@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
@@ -15,41 +15,45 @@ Repeated entry---line 1197 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1323 of file fdi_reference.bib
+ : @article{Leblang:2010
+ :                      ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "agunoff2001model"
 Warning--can't use both volume and number fields in gai2010contagion
 You've used 114 entries,
             2874 wiz_defined-function locations,
-            1328 strings with 23687 characters,
-and the built_in function-call counts, 453721 in all, are:
+            1328 strings with 23868 characters,
+and the built_in function-call counts, 453731 in all, are:
 = -- 74044
 > -- 5381
 < -- 2
 + -- 34584
 - -- 1921
-* -- 38565
-:= -- 91439
+* -- 38569
+:= -- 91442
 add.period$ -- 467
 call.type$ -- 114
 change.case$ -- 1482
 chr.to.int$ -- 113
 cite$ -- 115
-duplicate$ -- 1740
+duplicate$ -- 1743
 empty$ -- 3892
 format.name$ -- 2029
 if$ -- 81534
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 118
+missing$ -- 119
 newline$ -- 491
 num.names$ -- 1319
-pop$ -- 450
+pop$ -- 446
 preamble$ -- 1
 purify$ -- 1710
 quote$ -- 0
-skip$ -- 1472
+skip$ -- 1474
 stack$ -- 0
 substring$ -- 104190
-swap$ -- 242
+swap$ -- 243
 text.length$ -- 1598
 text.prefix$ -- 0
 top$ -- 0
@@ -58,4 +62,4 @@ warning$ -- 1
 while$ -- 2674
 width$ -- 0
 write$ -- 1599
-(There were 3 error messages)
+(There were 4 error messages)
