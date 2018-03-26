@@ -17,10 +17,21 @@ Allee, Todd \harvardand\ Clint Peinhardt. 2011.
   on Foreign Direct Investment.'' {\em International Organization}
   65(3):401--432.
 
+\harvarditem{Axelrod}{1984}{Axelrod:1984}
+Axelrod, Robert~M. 1984.
+\newblock {\em The Evolution of Cooperation}.
+\newblock New York:  Basic Books.
+
 \harvarditem{Bagwell \harvardand\ Staiger}{1999}{Bagwell_Staiger:1999}
 Bagwell, Kyle \harvardand\ Robert~W. Staiger. 1999.
 \newblock ``An Economic Theory of GATT.'' {\em The American Economic Review}
   89(1):215--248.
+
+\harvarditem{Beazer \harvardand\ Blake}{2018}{Beazer_Blake:2018}
+Beazer, Quintin~H. \harvardand\ Daniel~J. Blake. 2018.
+\newblock ``The Conditional Nature of Political Risk: How Home Institutions
+  Influence the Location of Foreign Direct Investment.'' {\em American Journal
+  of Political Science} (Online Early View).
 
 \harvarditem{Bliss \harvardand\ Russett}{1998}{Bliss_Russett:1998}
 Bliss, Harry \harvardand\ Bruce Russett. 1998.
@@ -192,6 +203,12 @@ Dunning, John~H. 1992.
 \newblock {\em Multinational Enterprises and the Global Economy}.
 \newblock Reading, MA:  Addison-Wesley.
 
+\harvarditem{Eden \harvardand\ Miller}{2004}{Eden_Miller:2004}
+Eden, Lorraine \harvardand\ Stewart~R Miller. 2004.
+\newblock ``Distance Matters: Liability of Foreignness, Institutional Distance
+  and Ownership Strategy.'' {\em Advances in International Management}
+  16:187--221.
+
 \harvarditem{Egger \harvardand\ Pfaffermayr}{2004}{Egger_Pfaffermayr:2004}
 Egger, Peter \harvardand\ Michael Pfaffermayr. 2004.
 \newblock ``The impact of bilateral investment treaties on foreign direct
@@ -352,6 +369,12 @@ Kaminski, Bart \harvardand\ Beata Javorcik. 2005.
   Union in International Trade}, ed. Harry~G. Broadman.
 \newblock Washington, DC:  World Bank pp.~337--374.
 
+\harvarditem{Keohane}{1984}{Keohane:1984}
+Keohane, Robert~O. 1984.
+\newblock {\em After Hegemony: Cooperation and Discord in the World Political
+  Economy}.
+\newblock Princeton, N.J.:  Princeton University Press.
+
 \harvarditem{Kerner}{2009}{Kerner:2009}
 Kerner, Andrew. 2009.
 \newblock ``Why Should I Believe You? The Costs and Consequences of Bilateral
@@ -389,6 +412,12 @@ Kirkland, Justin~H. 2013.
 \newblock ``Hypothesis testing for group structure in legislative networks.''
   {\em State Politics \& Policy Quarterly} 13(2):225--243.
 
+\harvarditem{Kostova \harvardand\ Zaheer}{1999}{Kostova_Zaheer:1999}
+Kostova, Tatiana \harvardand\ Srilata Zaheer. 1999.
+\newblock ``Organizational Legitimacy under Conditions of Complexity: The Case
+  of the Multinational Enterprise.'' {\em Academy of Management review}
+  24(1):64--81.
+
 \harvarditem{Krivitsky}{2012}{krivitsky2012exponential}
 Krivitsky, Pavel~N. 2012.
 \newblock ``Exponential-family random graph models for valued networks.'' {\em
@@ -401,6 +430,17 @@ Krivitsky, Pavel~N. 2016.
 \newblock The Statnet Project (\url{http://www.statnet.org}).
 \newblock R package version 3.2.2.
 \newline\harvardurl{http://CRAN.R-project.org/package=ergm.count}
+
+\harvarditem{Kwok \harvardand\ Tadesse}{2006}{Kwok_Tadesse:2006}
+Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
+\newblock ``The MNC as an Agent of Change for Host-Country Institutions: FDI
+  and Corruption.'' {\em Journal of International Business Studies}
+  37(6):767--785.
+
+\harvarditem{Lagunoff \harvardand\ Schreft}{2001}{lagunoff2001model}
+Lagunoff, Roger \harvardand\ Stacey~L Schreft. 2001.
+\newblock ``A model of financial fragility.'' {\em Journal of Economic Theory}
+  99(1-2):220--264.
 
 \harvarditem{Leblang}{2010}{Leblang:2010}
 Leblang, David. 2010.
@@ -482,12 +522,6 @@ Metternich, Nils~W, Cassy Dorff, Max Gallop, Simon Weschle \harvardand\
   affect conflictual behavior.'' {\em American Journal of Political Science}
   57(4):892--911.
 
-\harvarditem{Milner}{1988}{Milner:1988}
-Milner, Helen~V. 1988.
-\newblock {\em Resisting Protectionism: Global Industries and the Politics of
-  International Trade}.
-\newblock Princeton, N.J.:  Princeton University Press.
-
 \harvarditem[Noorbakhsh, Paloni \harvardand\ Youssef]{Noorbakhsh, Paloni
   \harvardand\ Youssef}{2001}{Noorbakhsh_et_al:2001}
 Noorbakhsh, Farhad, Alberto Paloni \harvardand\ Ali Youssef. 2001.
@@ -552,6 +586,11 @@ Resnick, Adam~L. 2001.
 Rose, Andrew~K. 2004.
 \newblock ``Do We Really Know That the WTO Increases Trade?'' {\em The American
   Economic Review} 94(1):98--114.
+
+\harvarditem{Sandholtz \harvardand\ Gray}{2003}{Sandholtz_Gray:2003}
+Sandholtz, Wayne \harvardand\ Mark~M. Gray. 2003.
+\newblock ``International Integration and National Corruption.'' {\em
+  International Organization} 57(04):761--800.
 
 \harvarditem[Schiavo, Reyes \harvardand\ Fagiolo]{Schiavo, Reyes \harvardand\
   Fagiolo}{2010}{schiavo2010international}
@@ -654,6 +693,11 @@ Yeaple, Stephen~Ross. 2003.
 \newblock ``The Role of Skill Endowments in the Structure of U.S. Outward
   Foreign Direct Investment.'' {\em The Review of Economics and Statistics}
   85(3):726--734.
+
+\harvarditem{Zaheer}{1995}{Zaheer:1995}
+Zaheer, Srilata. 1995.
+\newblock ``Overcoming the Liability of Foreignness.'' {\em Academy of
+  Management Journal} 38(2):341--363.
 
 \harvarditem{Zakaria \harvardand\ Fatine}{2017}{zakaria2017evidence}
 Zakaria, Firano \harvardand\ Filali~Adib Fatine. 2017.
