@@ -12,3 +12,10 @@
 \BOOKMARK [1][-]{section.6}{Conclusion}{}% 12
 \BOOKMARK [1][-]{appendix.A}{Summary Statistics}{}% 13
 \BOOKMARK [1][-]{appendix.B}{Time-Pooled Model Results}{}% 14
+\BOOKMARK [1][-]{appendix.C}{Subsetting of Missingness Results}{}% 15
+\BOOKMARK [2][-]{subsection.C.1}{q = .5}{appendix.C}% 16
+\BOOKMARK [2][-]{subsection.C.2}{q = .25}{appendix.C}% 17
+\BOOKMARK [1][-]{appendix.D}{Multiple Imputations with Amelia Results}{}% 18
+\BOOKMARK [2][-]{subsection.D.1}{Full}{appendix.D}% 19
+\BOOKMARK [2][-]{subsection.D.2}{q = .5}{appendix.D}% 20
+\BOOKMARK [2][-]{subsection.D.3}{q = .25}{appendix.D}% 21
