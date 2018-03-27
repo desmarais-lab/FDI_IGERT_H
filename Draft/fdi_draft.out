@@ -4,18 +4,18 @@
 \BOOKMARK [2][-]{subsection.3.1}{Reciprocity of FDI Flows}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Transitivity/Clustering of FDI Flows}{section.3}% 5
 \BOOKMARK [1][-]{section.4}{Data and Research Design}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Covariates}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Model and Specification: The Count ERGM}{section.4}% 8
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Specification}{subsection.4.2}% 9
-\BOOKMARK [1][-]{section.5}{Results}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{Ripple effects of FDI shocks}{section.5}% 11
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 12
-\BOOKMARK [1][-]{appendix.A}{Summary Statistics}{}% 13
-\BOOKMARK [1][-]{appendix.B}{Time-Pooled Model Results}{}% 14
-\BOOKMARK [1][-]{appendix.C}{Subsetting of Missingness Results}{}% 15
-\BOOKMARK [2][-]{subsection.C.1}{q = .5}{appendix.C}% 16
-\BOOKMARK [2][-]{subsection.C.2}{q = .25}{appendix.C}% 17
-\BOOKMARK [1][-]{appendix.D}{Multiple Imputations with Amelia Results}{}% 18
-\BOOKMARK [2][-]{subsection.D.1}{Full}{appendix.D}% 19
-\BOOKMARK [2][-]{subsection.D.2}{q = .5}{appendix.D}% 20
-\BOOKMARK [2][-]{subsection.D.3}{q = .25}{appendix.D}% 21
+\BOOKMARK [2][-]{subsection.4.1}{Missingness}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Covariates}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Model and Specification: The Count ERGM}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Specification}{subsection.4.3}% 10
+\BOOKMARK [1][-]{section.5}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Ripple effects of FDI shocks}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 13
+\BOOKMARK [1][-]{appendix.A}{Summary Statistics}{}% 14
+\BOOKMARK [1][-]{appendix.B}{Time-Pooled Model Results}{}% 15
+\BOOKMARK [1][-]{appendix.C}{Subset by Missingness Results}{}% 16
+\BOOKMARK [2][-]{subsection.C.1}{q \0400.50}{appendix.C}% 17
+\BOOKMARK [2][-]{subsection.C.2}{q \0400.25}{appendix.C}% 18
+\BOOKMARK [1][-]{appendix.D}{Multiple Imputations with Amelia Results}{}% 19
+\BOOKMARK [2][-]{subsection.D.1}{Full}{appendix.D}% 20
+\BOOKMARK [2][-]{subsection.D.2}{q \0400.50}{appendix.D}% 21

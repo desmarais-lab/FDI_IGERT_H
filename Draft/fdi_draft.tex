@@ -78,7 +78,7 @@ Yet, footloose capital becomes immobile ex post and thus an ``obsolescent bargai
 
 The extant literature focuses exclusively on firm-level characteristics as well as country- and dyad-level covariates to explain cross-border FDI flows. It overlooks high-order structure variables that may account for global investment flows. Over the past decades, production processes have been increasingly characterized by fragmentation and dispersion of tasks and activities, which gives rise to global production chains and complex networks \citep[~xxi]{UNCTAD:2013}. If global FDI flows can arise endogenously from the network structure, existing political economy models of FDI remain incomplete by excluding high-order structural variables. Further, one implicit assumption in existing theories or empirical models of FDI is that countries and dyads are independent of each other. This assumption, nonetheless, unlikely holds, given the intertwined links among MNCs and the expansion of global production networks. Neglecting network structure variables may lead to biased estimates or even invalid inferences \citep{cranmer2011inferential}.
 
-We argue that two network structures---reciprocity and transitivity---are important to account for the pattern of cross-border FDI flows. First, reciprocity arises from the fact that FDI represents an oligopolistic expansion strategy of MNCs and that MNCs, through diffusing information about their home country environments, help to reduces the transactions costs of investing in their home country. Therefore, FDI is more likely to flow from country $i$ to country $j$ if there is already a high stock of FDI from country $j$ to country $i$. Further, governments' tendency of using a principle of reciprocity to regulate FDI reinforces this pattern of reciprocity. Second, the fragmentation of production processes and the expansion of global supply chains contribute to the transitivity/clustering of investment activities. This pattern is further enhanced by the diffusion of preferential trade agreements (PTAs) that allow MNCs to optimize their supply chains within member states to better exploit location advantages such as factor endowments and favorable government policies.
+We argue that two network structures---reciprocity and transitivity---are important to account for the pattern of cross-border FDI flows. First, reciprocity arises from the fact that FDI represents an oligopolistic expansion strategy of MNCs and that MNCs, through diffusing information about their home country environments, help to reduces the transaction costs of investing in their home country. Therefore, FDI is more likely to flow from country $i$ to country $j$ if there is already a high stock of FDI from country $j$ to country $i$. Further, governments' tendency of using a principle of reciprocity to regulate FDI reinforces this pattern of reciprocity. Second, the fragmentation of production processes and the expansion of global supply chains contribute to the transitivity/clustering of investment activities. This pattern is further enhanced by the diffusion of preferential trade agreements (PTAs) that allow MNCs to optimize their supply chains within member states to better exploit location advantages such as factor endowments and favorable government policies.
 
 To test our arguments, we use the count exponential random graph model (ERGM) \citep{krivitsky2012exponential}. Utilizing bilateral FDI flow data from the United Nations Conference on Trade and Development (UNCTAD) over the period of 2001--2012, we find strong evidence that FDI inflows are reciprocal and transitive (i.e., strongly clustered). These results suggest that cross-border FDI flows are \textit{interdependent} and shaped by their network structure. %We further show that ignoring high-order network structure variables can lead to biased estimates in standard panel regression models.
 
@@ -97,7 +97,7 @@ Further, understanding interdependence through FDI networks is critical to under
 
 % paragraph on methodological contribution
 Finally, %we use the count exponential random graph model (ERGM) \citep{krivitsky2012exponential} to test our arguments.
-to our knowledge, this recent extension of ERGM has not yet been applied in political science research. Our use and introduction of the count ERGM represents two distinct contributions. First, the application of the count ERGM to the study of bilateral FDI results in novel findings regarding patterns of dependence that characterize the FDI network. Second, by introducing the count ERGM in political science, we provide an illustrative application of a methodology that is widely applicable in political science research. The count ERGM can be applied to any network in which ties are count-weighted, and therefore represents a valuable tool for political scientists, who regularly study networks with count-weighted ties, such as interstate trade \citep{ward2007persistent}, shared membership in international governmental organizations \citep{boehmke2016addressing}, the count of bills co-sponsored between legislators \citep{kirkland2013hypothesis}, and the number of policy ideas on which policymakers and other policy stakeholders agree \citep{leifeld2013reconceptualizing}.
+to our knowledge, this recent extension of ERGM has not yet been applied in political science research. Our use and introduction of the count ERGM represents two distinct contributions. First, the application of the count ERGM to the study of bilateral FDI results in novel findings regarding patterns of dependence that characterize the FDI network. Second, by introducing the count ERGM in political science, we provide an illustrative application of a methodology that is widely applicable in political science research. The count ERGM can be applied to any network in which ties are count-weighted, and therefore represents a valuable tool for political scientists, who regularly study networks with count-weighted ties (or ties that can reasonably be converted to counts), such as interstate trade \citep{ward2007persistent}, shared membership in international governmental organizations \citep{boehmke2016addressing}, the count of bills co-sponsored between legislators \citep{kirkland2013hypothesis}, and the number of policy ideas on which policymakers and other policy stakeholders agree \citep{leifeld2013reconceptualizing}.
 
 %Second, we offer a methodological contribution to the literature on FDI, and political science more broadly. In regards to the study of FDI,  we demonstrate how the count ERGM can be used to model the effects of both covariates and network dependencies on FDI flows. We show that adding network dependencies to the covariate-based model of FDI offers a robust improvement in model fit. Yet, ignoring network dependencies can lead to biased estimates or even invalid inferences. In future work on FDI, researchers should consider using the count ERGM, or comparable models for weighted networks.
 
@@ -188,7 +188,11 @@ In addition, the diffusion of PTAs is likely to further enhance the clustering o
 %  logFDI_{ijt}=\alpha + \beta_{1}*GDP~Product + \beta_{2}*GDP/cap_{it} + \beta_{3}*GDP/cap_{jt} +
 %\end{equation}
 
-To test our hypotheses, we estimate a gravity model of FDI.\footnote{We follow as closely as possible the model specification in \citet{Li_Vashchilko:2010}.} The dependent variable is bilateral FDI stock.\footnote{We include a lagged dependent variable in the model such that it essentially models FDI flows. We use FDI stock because the count ERGM currently cannot model negative values in the dependent variable. By using stocks we minimize changes in the data by our transformation of negative values to zero, since negative FDI stock is rare as it only occurs when debt to a parent company exceeds FDI stock value.} The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}.\footnote{Systematic Bilateral FDI data are not available for earlier time periods.} Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as BITs, alliances, and bilateral trade. We take the natural log of the bilateral FDI stock variable to deal with the skewed distribution.
+To test our hypotheses, we estimate a gravity model of FDI.\footnote{We follow as closely as possible the model specification in \citet{Li_Vashchilko:2010}.} The dependent variable is bilateral FDI stock.\footnote{We include a lagged dependent variable in the model such that it essentially models FDI flows. We use FDI stock because the count ERGM currently cannot model negative values in the dependent variable. By using stocks we minimize changes in the data by our transformation of negative values to zero, since negative FDI stock is rare as it only occurs when debt to a parent company exceeds FDI stock value.} The data are from UNCTAD, covering the time-period of 2001 to 2012. The data set was first made available in 2014 \citep{UNCTAD:2014}.\footnote{Systematic Bilateral FDI data are not available for earlier time periods.} Most existing empirical studies on FDI use monadic data because scholars are primarily interested in how host countries' economic and political characteristics affect capital inflows.\footnote{There are very few studies that use dyadic FDI data. See \citet{Frenkel_et_al:2004}, \citet{Leblang:2010}, \citet{Li_Vashchilko:2010}, and \citet{Razin_et_al:2005}. } The advantage of using dyadic data is that it allows us not only to model network relationships, but to measure changes in FDI inflows related to covariates that are at the dyad level, such as BITs, alliances, and bilateral trade. Following common practice, we take the natural log of the bilateral FDI stock variable.
+
+\subsection{Missingness}
+
+Bilateral stock levels are self-reported and only reported if the value is not zero for all years. Because of this, around 83\% of the dyadic values are missing. The missingness is strong evidence that the value should be zero or is a negligible amount and for our main models we impute zeros. To attend to the possibility that missing values are not true zeroes due to reporting biases we use two different methods of robustness checks. The first is that we subset our data based on the amount of missingness. The second is that we use multiple imputations to impute the missing values for the full dataset and for the subsets based on the amount of missingness. Further discussion and results can be found in Appendix C and D.
 
 
 \subsection{Covariates}
@@ -260,7 +264,7 @@ We see in Figure \ref{fig:recipFit} that the network model provides a much bette
 
 
 
-Turning now to the network effects, which are presented in Figure \ref{fig:net_effects}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure.
+Turning now to the network effects, which are presented in Figure \ref{fig:net_effects}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure. \footnote{As noted in the Section 4.1, we also tested our hypotheses on different subsets using different methods of imputation. The majority of these results support our hypotheses, although in the smaller subsets mutuality is not significant for every year estimated. When subsetting based on missingness, we are only left with more developed countries. This indicates that reciprocity might be conditional on the relative level the level of development between dyads.}
 \begin{figure}[htp]
 \centering
 \begin{tabular}{c@{\hskip -.4cm}c}
@@ -286,7 +290,7 @@ Regarding covariate determinants, presented in Table \ref{fig:effectPlots1}, the
 
 We noted above that omitting dependent network structure, a condition that characterizes previous research on FDI, can result in biased estimates and improper standard errors. For several effects that we include in our models, the results are substantively changed by adding the network parameters. In the network model, we find the following effects to be lower in magnitude, statistically significant in fewer years, or both: Gravity model mass, distance, contiguity, PTA depth, destination polity, destination trade openness, origin trade openness, origin GDP per capita, origin polity, and origin trade openness. For each of these effects, our results indicate that omitting the network dependencies lead to either an overestimate of the effect of the respective variable, or worse, a Type 2 inferential error in which the null hypothesis of no effect is incorrectly rejected. This finding shows that, even if a researcher is not theoretically interested in network dependencies, (s)he should still incorporate them into an empirical model in order to avoid misspecification bias.
 
-
+\pagebreak
 \begin{longtable}{c@{\hskip -.4cm}c}
 Sum of Edges&
 Sum Sqrt. of Edges\\
@@ -528,15 +532,29 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 \end{longtable}
 
 
-\section{Subsetting of Missingness Results}\label{qlevelresults}
+\section{Subset by Missingness Results}\label{qlevelresults}
 
-\subsection{q = .5}
+To subset the data based on the level of missingness, we approximate total level of missingness ({\emph{q}) in the adjacency matrices by using the proportion of missing values for each node (\emph{p}). When \emph{p} = 0.72, \emph{q} $\approx$ 0.25 and  \emph{n} = 28. When \emph{p} = 0.86,  \emph{q} $\approx$ 0.50 and  \emph{n} = 70.
+
+\subsection{q $\approx$  0.50}
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:exog_2} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
+\end{figure}
+
+
 
 \begin{longtable}[!h]{c@{\hskip 0cm}c}
 Sum & Sum$^{(1/2)}$ \\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Sum.pdf}    &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Sum_5.pdf}   \\
-%\pagebreak
+\pagebreak
 Non-Zero & Alliance Treaty\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Nonzero.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/AllianceTreaty.pdf}   \\
@@ -560,11 +578,23 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Dest_TO.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Origin_TO.pdf}   \\
 
-\caption{\label{fig:q50plots} Estimates of terms when subsetting for \emph{q = 0.5}. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
+\caption{\label{fig:q50plots} Estimates of terms when subsetting for \emph{q = 0.50}. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
 
 \end{longtable}
 
-\subsection{q = .25}
+\subsection{q $\approx$  0.25}
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:q25netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
+\end{figure}
+
+
 
 \begin{longtable}[!h]{c@{\hskip 0cm}c}
 Sum & Sum$^{(1/2)}$ \\
@@ -574,6 +604,7 @@ Sum & Sum$^{(1/2)}$ \\
 Non-Zero & Alliance Treaty\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Nonzero.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Non_Defense_Treaty.pdf}   \\
+\pagebreak
 Bilateral Investment Treaty & Defense Treaty\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Bilateral_Investment_Treaty.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Defense_Treaty.pdf}   \\
@@ -602,9 +633,68 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 
 \section{Multiple Imputations with Amelia Results}\label{ameliaresults}
 
+We use the \R{Amelia} package to create 10 datasets of imputed FDI stock values for the full dataset and when \emph{q} $\approx$ 0.05 \citep{honaker2011amelia}.
+
 \subsection{Full}
 
-\subsection{q = .5}
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:full_amelia_netterms} Estimates of Dependence terms Bars span 95\% confidence intervals. }
+\end{figure}
+
+
+
+\begin{longtable}[!h]{c@{\hskip 0cm}c}
+Sum & Sum$^{(1/2)}$ \\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Sum.pdf}    &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Sum_5.pdf}   \\
+%\pagebreak
+Non-Zero & Alliance Treaty\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Nonzero.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Non_Defense_Treaty.pdf}   \\
+Bilateral Investment Treaty & Defense Treaty\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Bilateral_Investment_Treaty.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Defense_Treaty.pdf}   \\
+Product of Dyad's GDP & Distance\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Mass.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Distance.pdf}   \\
+
+Lagged FDI stock & Bilateral Trade Volume \\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/LDV.pdf}    &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Trade_Volume.pdf}   \\
+GDP per capita, in-degree & GDP per capita, out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_GDPpc.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_GDPpc.pdf}   \\
+Polity, in-degree & Polity, out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_Polity.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_Polity.pdf}   \\
+Trade Openness, in-degree & Trade Openness, out-degree\\
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_TO.pdf} &
+\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_TO.pdf}   \\
+
+
+\caption{\label{fig:full_amelia_terms} Estimates of terms for Amelia imputations. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
+
+\end{longtable}
+
+\subsection{q $\approx$ 0.50}
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:q50_amelia_netterms} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
+\end{figure}
+
+
 
 \begin{longtable}[!h]{c@{\hskip 0cm}c}
 Sum & Sum$^{(1/2)}$ \\
@@ -620,7 +710,7 @@ Bilateral Investment Treaty & Defense Treaty\\
 Product of Dyad's GDP & Distance\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Mass.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Distance.pdf}   \\
-\pagebreak
+
 Lagged FDI stock & Bilateral Trade Volume \\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/LDV.pdf}    &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Trade_Volume.pdf}   \\
@@ -634,11 +724,13 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Dest_TO.pdf} &
 \includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Origin_TO.pdf}   \\
 
-\caption{\label{fig:q25plots} Estimates of terms when subsetting for \emph{q = 0.50} for Amelia imputations. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
+\caption{\label{fig:q50_amelia_terms} Estimates of terms when subsetting for \emph{q = 0.50} for Amelia imputations. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
 
 \end{longtable}
 
-\subsection{q = .25}
+
+
+
 
 
 \end{document}
