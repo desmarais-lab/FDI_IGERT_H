@@ -192,7 +192,9 @@ To test our hypotheses, we estimate a gravity model of FDI.\footnote{We follow a
 
 \subsection{Missingness}
 
-Bilateral stock levels are self-reported and only reported if the value is not zero for all years. Because of this, around 83\% of the dyadic values are missing. The missingness is strong evidence that the value should be zero or is a negligible amount and for our main models we impute zeros. To attend to the possibility that missing values are not true zeroes due to reporting biases we use two different methods of robustness checks. The first is that we subset our data based on the amount of missingness. The second is that we use multiple imputations to impute the missing values for the full dataset and for the subsets based on the amount of missingness. Further discussion and results can be found in Appendix C and D.
+Bilateral stock levels are self-reported and only reported if the value is not zero for all years. Because of this, around 83\% of the dyadic values are missing. The missingness is strong evidence that the value should be zero or is a negligible amount and for our main models we impute zeros. Comparing world totals to bilateral totals, we find that the difference is small. A density plot can be found in Appendix \ref{summstats} with the summary statistics. To attend to the possibility that missing values are not true zeroes due to reporting biases we use two different methods of robustness checks. The first is that we subset our data based on the amount of missingness. The second is that we use multiple imputations to impute the missing values for the full dataset and for the subsets based on the amount of missingness. Further discussion and results can be found in Appendix \ref{qlevelresults} and \ref{ameliaresults}.
+
+
 
 
 \subsection{Covariates}
@@ -472,6 +474,14 @@ Defense Treaty & $0.038$ & $0.850$ & $1$ \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[!h]
+\centering
+\includegraphics[height=5in]{draft_figures/descriptive_plots/diff_plot.pdf} \vspace{0cm}
+\caption{\label{fig:flows} Density Plot of the Difference between Total FDI stocks and Summing Bilateral FDI stocks.}
+\end{figure}
+
+
+
 %\clearpage
 %\begin{figure}[!h]
 %\centering
@@ -550,37 +560,7 @@ Reciprocity & Transitivity \\
 
 
 
-\begin{longtable}[!h]{c@{\hskip 0cm}c}
-Sum & Sum$^{(1/2)}$ \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Sum.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Sum_5.pdf}   \\
-\pagebreak
-Non-Zero & Alliance Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Nonzero.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/AllianceTreaty.pdf}   \\
-Bilateral Investment Treaty & Defense Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/BIT.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/DefenseTreaty.pdf}   \\
-Product of Dyad's GDP & Distance\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Mass.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Distance.pdf}   \\
-\pagebreak
-Lagged FDI stock & Bilateral Trade Volume \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/LaggedDV.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/TradeVolume.pdf}   \\
-GDP per capita, in-degree & GDP per capita, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Dest_GDPpc.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Origin_GDPpc.pdf}   \\
-Polity, in-degree & Polity, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Dest_Polity.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Origin_Polity.pdf}   \\
-Trade Openness, in-degree & Trade Openness, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Dest_TO.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots50/Origin_TO.pdf}   \\
 
-\caption{\label{fig:q50plots} Estimates of terms when subsetting for \emph{q = 0.50}. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
-
-\end{longtable}
 
 \subsection{q $\approx$  0.25}
 
@@ -596,44 +576,14 @@ Reciprocity & Transitivity \\
 
 
 
-\begin{longtable}[!h]{c@{\hskip 0cm}c}
-Sum & Sum$^{(1/2)}$ \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Sum.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Sum_5.pdf}   \\
-%\pagebreak
-Non-Zero & Alliance Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Nonzero.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Non_Defense_Treaty.pdf}   \\
-\pagebreak
-Bilateral Investment Treaty & Defense Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Bilateral_Investment_Treaty.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Defense_Treaty.pdf}   \\
-Product of Dyad's GDP & Distance\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Mass.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Distance.pdf}   \\
-\pagebreak
-Lagged FDI stock & Bilateral Trade Volume \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/LDV.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Trade_Volume.pdf}   \\
-GDP per capita, in-degree & GDP per capita, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Dest_GDPpc.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Origin_GDPpc.pdf}   \\
-Polity, in-degree & Polity, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Dest_Polity.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Origin_Polity.pdf}   \\
-Trade Openness, in-degree & Trade Openness, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Dest_TO.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots25/Origin_TO.pdf}   \\
 
-\caption{\label{fig:q25plots} Estimates of terms when subsetting for \emph{q = 0.25}. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
 
-\end{longtable}
 
 
 
 \section{Multiple Imputations with Amelia Results}\label{ameliaresults}
 
-We use the \R{Amelia} package to create 10 datasets of imputed FDI stock values for the full dataset and when \emph{q} $\approx$ 0.05 \citep{honaker2011amelia}.
+We use the \R{} Amelia  package to create 10 datasets of imputed FDI stock values for the full dataset and when \emph{q} $\approx$ 0.05 \citep{honaker2011amelia}.
 
 \subsection{Full}
 
@@ -649,38 +599,10 @@ Reciprocity & Transitivity \\
 
 
 
-\begin{longtable}[!h]{c@{\hskip 0cm}c}
-Sum & Sum$^{(1/2)}$ \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Sum.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Sum_5.pdf}   \\
-%\pagebreak
-Non-Zero & Alliance Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Nonzero.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Non_Defense_Treaty.pdf}   \\
-Bilateral Investment Treaty & Defense Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Bilateral_Investment_Treaty.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Defense_Treaty.pdf}   \\
-Product of Dyad's GDP & Distance\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Mass.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Distance.pdf}   \\
-
-Lagged FDI stock & Bilateral Trade Volume \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/LDV.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Trade_Volume.pdf}   \\
-GDP per capita, in-degree & GDP per capita, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_GDPpc.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_GDPpc.pdf}   \\
-Polity, in-degree & Polity, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_Polity.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_Polity.pdf}   \\
-Trade Openness, in-degree & Trade Openness, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Dest_TO.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Origin_TO.pdf}   \\
 
 
-\caption{\label{fig:full_amelia_terms} Estimates of terms for Amelia imputations. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
 
-\end{longtable}
+
 
 \subsection{q $\approx$ 0.50}
 
@@ -695,38 +617,6 @@ Reciprocity & Transitivity \\
 \end{figure}
 
 
-
-\begin{longtable}[!h]{c@{\hskip 0cm}c}
-Sum & Sum$^{(1/2)}$ \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Sum.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Sum_5.pdf}   \\
-%\pagebreak
-Non-Zero & Alliance Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Nonzero.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Non_Defense_Treaty.pdf}   \\
-Bilateral Investment Treaty & Defense Treaty\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Bilateral_Investment_Treaty.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Defense_Treaty.pdf}   \\
-Product of Dyad's GDP & Distance\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Mass.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Distance.pdf}   \\
-
-Lagged FDI stock & Bilateral Trade Volume \\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/LDV.pdf}    &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Trade_Volume.pdf}   \\
-GDP per capita, in-degree & GDP per capita, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Dest_GDPpc.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Origin_GDPpc.pdf}   \\
-Polity, in-degree & Polity, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Dest_Polity.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Origin_Polity.pdf}   \\
-Trade Openness, in-degree & Trade Openness, out-degree\\
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Dest_TO.pdf} &
-\includegraphics[height=.18\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Origin_TO.pdf}   \\
-
-\caption{\label{fig:q50_amelia_terms} Estimates of terms when subsetting for \emph{q = 0.50} for Amelia imputations. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). All covariates are normalized between zero and one.}
-
-\end{longtable}
 
 
 
