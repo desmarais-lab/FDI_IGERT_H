@@ -21,45 +21,45 @@ Repeated entry---line 1333 of file fdi_reference.bib
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-You've used 92 entries,
+You've used 85 entries,
             2874 wiz_defined-function locations,
-            1221 strings with 20517 characters,
-and the built_in function-call counts, 354256 in all, are:
-= -- 57770
-> -- 4144
+            1182 strings with 19324 characters,
+and the built_in function-call counts, 319811 in all, are:
+= -- 52088
+> -- 3720
 < -- 2
-+ -- 26893
-- -- 1488
-* -- 29965
-:= -- 71622
-add.period$ -- 379
-call.type$ -- 92
-change.case$ -- 1196
-chr.to.int$ -- 92
-cite$ -- 94
-duplicate$ -- 1401
-empty$ -- 3087
-format.name$ -- 1577
-if$ -- 63631
++ -- 24172
+- -- 1341
+* -- 26963
+:= -- 64793
+add.period$ -- 351
+call.type$ -- 85
+change.case$ -- 1105
+chr.to.int$ -- 85
+cite$ -- 87
+duplicate$ -- 1298
+empty$ -- 2856
+format.name$ -- 1422
+if$ -- 57435
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 95
-newline$ -- 401
-num.names$ -- 1054
-pop$ -- 381
+missing$ -- 88
+newline$ -- 373
+num.names$ -- 972
+pop$ -- 361
 preamble$ -- 1
-purify$ -- 1380
+purify$ -- 1275
 quote$ -- 0
-skip$ -- 1173
+skip$ -- 1079
 stack$ -- 0
-substring$ -- 81075
-swap$ -- 191
-text.length$ -- 1290
+substring$ -- 72996
+swap$ -- 177
+text.length$ -- 1192
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 344
+type$ -- 316
 warning$ -- 2
-while$ -- 2142
+while$ -- 1979
 width$ -- 0
-write$ -- 1289
+write$ -- 1192
 (There were 4 error messages)
