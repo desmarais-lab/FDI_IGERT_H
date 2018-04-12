@@ -1,0 +1,16 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Honaker et~al.]{Honaker, King, Blackwell
+  et~al.}{2011}{honaker2011amelia}
+Honaker, James, Gary King, Matthew Blackwell et~al. 2011.
+\newblock ``Amelia II: A program for missing data.'' {\em Journal of
+  statistical software} 45(7):1--47.
+
+\harvarditem[King et~al.]{King, Honaker, Joseph \harvardand\
+  Scheve}{2002}{King_et_al:2001}
+King, Gary, James Honaker, Anne Joseph \harvardand\ Kenneth Scheve. 2002.
+\newblock ``Analyzing Incomplete Political Science Data: An Alternative
+  Algorithm for Multiple Imputation.'' {\em American Political Science Review}
+  95(1):49--69.
+
+\end{thebibliography}

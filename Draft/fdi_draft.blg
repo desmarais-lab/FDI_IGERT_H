@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
@@ -21,45 +21,45 @@ Repeated entry---line 1333 of file fdi_reference.bib
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-You've used 94 entries,
+You've used 92 entries,
             2874 wiz_defined-function locations,
-            1234 strings with 20872 characters,
-and the built_in function-call counts, 366096 in all, are:
-= -- 59724
-> -- 4310
+            1221 strings with 20517 characters,
+and the built_in function-call counts, 354256 in all, are:
+= -- 57770
+> -- 4144
 < -- 2
-+ -- 27847
-- -- 1544
-* -- 31020
-:= -- 73936
-add.period$ -- 387
-call.type$ -- 94
-change.case$ -- 1222
-chr.to.int$ -- 94
-cite$ -- 96
-duplicate$ -- 1431
-empty$ -- 3154
-format.name$ -- 1639
-if$ -- 65767
++ -- 26893
+- -- 1488
+* -- 29965
+:= -- 71622
+add.period$ -- 379
+call.type$ -- 92
+change.case$ -- 1196
+chr.to.int$ -- 92
+cite$ -- 94
+duplicate$ -- 1401
+empty$ -- 3087
+format.name$ -- 1577
+if$ -- 63631
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 97
-newline$ -- 409
-num.names$ -- 1076
-pop$ -- 385
+missing$ -- 95
+newline$ -- 401
+num.names$ -- 1054
+pop$ -- 381
 preamble$ -- 1
-purify$ -- 1410
+purify$ -- 1380
 quote$ -- 0
-skip$ -- 1201
+skip$ -- 1173
 stack$ -- 0
-substring$ -- 83872
-swap$ -- 195
-text.length$ -- 1318
+substring$ -- 81075
+swap$ -- 191
+text.length$ -- 1290
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 344
 warning$ -- 2
-while$ -- 2187
+while$ -- 2142
 width$ -- 0
-write$ -- 1319
+write$ -- 1289
 (There were 4 error messages)
