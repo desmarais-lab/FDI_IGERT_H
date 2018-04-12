@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: fdi_draft.aux
+The style file: apsr.bst
+Database file #1: fdi_reference.bib
+Repeated entry---line 898 of file fdi_reference.bib
+ : @book{Caves:1996
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 929 of file fdi_reference.bib
+ : @article{Henisz:2000
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1207 of file fdi_reference.bib
+ : @article{Kerner:2009
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1333 of file fdi_reference.bib
+ : @article{Leblang:2010
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in Beazer_Blake:2018
+Warning--can't use both volume and number fields in gai2010contagion
+You've used 94 entries,
+            2874 wiz_defined-function locations,
+            1234 strings with 20872 characters,
+and the built_in function-call counts, 366096 in all, are:
+= -- 59724
+> -- 4310
+< -- 2
++ -- 27847
+- -- 1544
+* -- 31020
+:= -- 73936
+add.period$ -- 387
+call.type$ -- 94
+change.case$ -- 1222
+chr.to.int$ -- 94
+cite$ -- 96
+duplicate$ -- 1431
+empty$ -- 3154
+format.name$ -- 1639
+if$ -- 65767
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 97
+newline$ -- 409
+num.names$ -- 1076
+pop$ -- 385
+preamble$ -- 1
+purify$ -- 1410
+quote$ -- 0
+skip$ -- 1201
+stack$ -- 0
+substring$ -- 83872
+swap$ -- 195
+text.length$ -- 1318
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 352
+warning$ -- 2
+while$ -- 2187
+width$ -- 0
+write$ -- 1319
+(There were 4 error messages)

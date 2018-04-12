@@ -27,16 +27,18 @@ Bagwell, Kyle \harvardand\ Robert~W. Staiger. 1999.
 \newblock ``An Economic Theory of GATT.'' {\em The American Economic Review}
   89(1):215--248.
 
+\harvarditem{Baldwin}{2011}{Baldwin:2011}
+Baldwin, Richard. 2011.
+\newblock ``Trade And Industrialisation After Globalisation's 2$^{nd}$
+  Unbundling: How Building And Joining A Supply Chain Are Different And Why It
+  Matters.'' {\em National Bureau of Economic Research Working Paper Series}
+  No. 17716.
+
 \harvarditem{Beazer \harvardand\ Blake}{2018}{Beazer_Blake:2018}
 Beazer, Quintin~H. \harvardand\ Daniel~J. Blake. 2018.
 \newblock ``The Conditional Nature of Political Risk: How Home Institutions
   Influence the Location of Foreign Direct Investment.'' {\em American Journal
   of Political Science} (Online Early View).
-
-\harvarditem{Bliss \harvardand\ Russett}{1998}{Bliss_Russett:1998}
-Bliss, Harry \harvardand\ Bruce Russett. 1998.
-\newblock ``Democratic Trading Partners: The Liberal Connection, 1962-1989.''
-  {\em The Journal of Politics} 60(4):1126--1147.
 
 \harvarditem[Boehmke, Chyzh \harvardand\ Thies]{Boehmke, Chyzh \harvardand\
   Thies}{2016}{boehmke2016addressing}
@@ -52,11 +54,6 @@ Brida, Juan~Gabriel, David~Matesanz G{\'o}mez \harvardand\ Wiston~Adri{\'a}n
   to contagion in currency crises.'' {\em Expert Systems with applications}
   36(4):7721--7728.
 
-\harvarditem{{Bueno de Mesquita} \harvardand\ Smith}{2009}{BDM_Smith:2009}
-{Bueno de Mesquita}, Bruce \harvardand\ Alastair Smith. 2009.
-\newblock ``A Political Economy of Aid.'' {\em International Organization}
-  63(02):309--340.
-
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
 \newblock ``The Politics of Foreign Direct Investment into Developing
@@ -68,11 +65,6 @@ B{\"u}the, Tim \harvardand\ Helen~V Milner. 2014.
 \newblock ``Foreign direct investment and institutional diversity in trade
   agreements: Credibility, commitment, and economic flows in the developing
   world, 1971--2007.'' {\em World Politics} 66(01):88--122.
-
-\harvarditem{Camber~Warren}{2010}{camber2010geometry}
-Camber~Warren, T. 2010.
-\newblock ``The geometry of security: Modeling interstate alliances as evolving
-  networks.'' {\em Journal of Peace Research} 47(6):697--709.
 
 \harvarditem{Cao \harvardand\ Ward}{2014}{cao2014democracies}
 Cao, Xun \harvardand\ Michael~D Ward. 2014.
@@ -92,43 +84,25 @@ Caves, Richard~E. 1996.
 \newblock New York:  Cambridge University Press.
 
 \harvarditem[Chilton, Milner \harvardand\ Tingley]{Chilton, Milner \harvardand\
-  Tingley}{Forthcoming}{Chilton_et_al:forthcoming}
-Chilton, Adam~S., Helen~V. Milner \harvardand\ Dustin Tingley. Forthcoming.
+  Tingley}{2017}{Chilton_et_al:forthcoming}
+Chilton, Adam~S., Helen~V. Milner \harvardand\ Dustin Tingley. 2017.
 \newblock ``Reciprocity and Public Opposition to Foreign Direct Investment.''
   {\em British Journal of Political Science} .
-
-\harvarditem{Chu-Shore}{2010}{chu2010homogenization}
-Chu-Shore, Jesse. 2010.
-\newblock ``Homogenization and Specialization Effects of International Trade:
-  Are Cultural Goods Exceptional?'' {\em World Development} 38(1):37--47.
 
 \harvarditem{Chuluun}{2017}{chuluun2017global}
 Chuluun, Tuugi. 2017.
 \newblock ``Global portfolio investment network and stock market comovement.''
   {\em Global Finance Journal} 33:51--68.
 
-\harvarditem{Cranmer \harvardand\ Desmarais}{2011{\em
-  a}}{cranmer2011inferential}
-Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011{\em a}.
+\harvarditem{Cranmer \harvardand\ Desmarais}{2011}{cranmer2011inferential}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011.
 \newblock ``Inferential network analysis with exponential random graph
   models.'' {\em Political Analysis} pp.~66--86.
-
-\harvarditem{Cranmer \harvardand\ Desmarais}{2011{\em
-  b}}{Cranmer_Desmarais:2011}
-Cranmer, Skyler~J. \harvardand\ Bruce~A. Desmarais. 2011{\em b}.
-\newblock ``Inferential Network Analysis with Exponential Random Graph
-  Models.'' {\em Political Analysis} 19(1):66--86.
 
 \harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
 \newblock ``A critique of dyadic design.'' {\em International Studies
   Quarterly} 60(2):355--362.
-
-\harvarditem[Cranmer, Desmarais \harvardand\ Menninga]{Cranmer, Desmarais
-  \harvardand\ Menninga}{2012}{cranmer2012complex}
-Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Elizabeth~J Menninga. 2012.
-\newblock ``Complex dependencies in the alliance network.'' {\em Conflict
-  Management and Peace Science} 29(3):279--313.
 
 \harvarditem[Cranmer, Desmarais \harvardand\ Kirkland]{Cranmer, Desmarais
   \harvardand\ Kirkland}{2012}{cranmer2012toward}
@@ -149,11 +123,6 @@ Cranmer, Skyler~J, Tobias Heinrich \harvardand\ Bruce~A Desmarais. 2014.
 \newblock ``Reciprocity and the structural determinants of the international
   sanctions network.'' {\em Social Networks} 36:5--22.
 
-\harvarditem{Crystal}{2003}{Crystal:2003}
-Crystal, Jonathan. 2003.
-\newblock {\em Unwanted Company: Foreign Investment in American Industries}.
-\newblock Ithaca, NY:  Cornell University Press.
-
 \harvarditem{Desmarais \harvardand\ Cranmer}{2012}{desmarais2012statistical}
 Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2012.
 \newblock ``Statistical inference for valued-edge networks: the generalized
@@ -166,21 +135,11 @@ Desmarais, Bruce~A. \harvardand\ Skyler~J. Cranmer. 2017.
   Alexander~H. Montgomery \harvardand\ Mark Lubell.
 \newblock Oxford University Press.
 
-\harvarditem{Diehl \harvardand\ Wright}{2016}{diehl2016conditional}
-Diehl, Paul~F \harvardand\ Thorin~M Wright. 2016.
-\newblock ``A Conditional Defense of the Dyadic Approach.'' {\em International
-  Studies Quarterly} 60(2):363--368.
-
 \harvarditem{DiMascio \harvardand\ Pauwelyn}{2008}{DiMascio_Pauwelyn:2008}
 DiMascio, Nicholas \harvardand\ Joost Pauwelyn. 2008.
 \newblock ``Nondiscrimination in Trade and Investment Treaties: Worlds Apart or
   Two Sides of the Same Coin?'' {\em The American Journal of International Law}
   102(1):48--89.
-
-\harvarditem{Dorff \harvardand\ Ward}{2013}{dorff2013networks}
-Dorff, Cassy \harvardand\ Michael~D Ward. 2013.
-\newblock ``Networks, dyads, and the social relations model.'' {\em Political
-  Science Research and Methods} 1(02):159--178.
 
 \harvarditem{Dorussen \harvardand\ Ward}{2008}{Dorussen_Ward:2008}
 Dorussen, Han \harvardand\ Hugh Ward. 2008.
@@ -209,34 +168,11 @@ Eden, Lorraine \harvardand\ Stewart~R Miller. 2004.
   and Ownership Strategy.'' {\em Advances in International Management}
   16:187--221.
 
-\harvarditem{Egger \harvardand\ Pfaffermayr}{2004}{Egger_Pfaffermayr:2004}
-Egger, Peter \harvardand\ Michael Pfaffermayr. 2004.
-\newblock ``The impact of bilateral investment treaties on foreign direct
-  investment.'' {\em Journal of Comparative Economics} 32(4):788--804.
-
-\harvarditem[Erikson, Pinto \harvardand\ Rader]{Erikson, Pinto \harvardand\
-  Rader}{2014}{Erikson_et_al:2014}
-Erikson, Robert~S., Pablo~M. Pinto \harvardand\ Kelly~T. Rader. 2014.
-\newblock ``Dyadic Analysis in International Relations: A Cautionary Tale.''
-  {\em Political Analysis} 22(4):457--463.
-
 \harvarditem[Feenstra, Inklaar \harvardand\ Timmer]{Feenstra, Inklaar
   \harvardand\ Timmer}{2015}{feenstra2015next}
 Feenstra, Robert~C, Robert Inklaar \harvardand\ Marcel~P Timmer. 2015.
 \newblock ``The next generation of the Penn World Table.'' {\em The American
   Economic Review} 105(10):3150--3182.
-
-\harvarditem[Fitzgerald, Leblang \harvardand\ Teets]{Fitzgerald, Leblang
-  \harvardand\ Teets}{2014}{Fitzgerald_et_al:2014}
-Fitzgerald, Jennifer, David Leblang \harvardand\ Jessica~C. Teets. 2014.
-\newblock ``Defying the Law of Gravity: The Political Economy of International
-  Migration.'' {\em World Politics} 66(03):406--445.
-
-\harvarditem[Franzese, Hays \harvardand\ Kachi]{Franzese, Hays \harvardand\
-  Kachi}{2012}{Franzese_et_al:2012}
-Franzese, Robert~J., Jude~C. Hays \harvardand\ Aya Kachi. 2012.
-\newblock ``Modeling History Dependence in Network-Behavior Coevolution.'' {\em
-  Political Analysis} 20(2):175--190.
 
 \harvarditem[Frenkel, Funke \harvardand\ Stadtmann]{Frenkel, Funke \harvardand\
   Stadtmann}{2004}{Frenkel_et_al:2004}
@@ -261,18 +197,6 @@ Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
 \newblock CQ Press.
 
-\harvarditem[Goldstein, Rivers \harvardand\ Tomz]{Goldstein, Rivers
-  \harvardand\ Tomz}{2007}{Goldstein_et_al:2007}
-Goldstein, Judith~L., Douglas Rivers \harvardand\ Michael Tomz. 2007.
-\newblock ``Institutions in International Relations: Understanding the Effects
-  of the GATT and the WTO on World Trade.'' {\em International Organization}
-  61(01):37--67.
-
-\harvarditem{Gowa \harvardand\ Mansfield}{1993}{Gowa_Mansfield:1993}
-Gowa, Joanne \harvardand\ Edward~D. Mansfield. 1993.
-\newblock ``Power Politics and International Trade.'' {\em The American
-  Political Science Review} 87(2):408--420.
-
 \harvarditem{Graham}{1978}{Graham:1978}
 Graham, Edward~M. 1978.
 \newblock ``Transatlantic Investment by Multinational Firms: A Rivalistic
@@ -287,13 +211,6 @@ Handcock, Mark~S., David~R. Hunter, Carter~T. Butts, Steven~M. Goodreau,
 \newblock The Statnet Project (\url{http://www.statnet.org}).
 \newblock R package version 3.6.1.
 \newline\harvardurl{https://CRAN.R-project.org/package=ergm}
-
-\harvarditem[Hays, Kachi \harvardand\ Franzese]{Hays, Kachi \harvardand\
-  Franzese}{2010}{Hays_et_al:2010}
-Hays, Jude~C., Aya Kachi \harvardand\ Robert~J. Franzese. 2010.
-\newblock ``A spatial model incorporating dynamic, endogenous network
-  interdependence: A political science application.'' {\em Statistical
-  Methodology} 7(3):406--428.
 
 \harvarditem{Helpman}{1984}{Helpman:1984}
 Helpman, Elhanan. 1984.
@@ -321,12 +238,6 @@ Holland, Paul~W \harvardand\ Samuel Leinhardt. 1971.
 Honaker, James, Gary King, Matthew Blackwell et~al. 2011.
 \newblock ``Amelia II: A program for missing data.'' {\em Journal of
   statistical software} 45(7):1--47.
-
-\harvarditem{Howell}{2013}{howell2013geography}
-Howell, Anthony. 2013.
-\newblock ``Is geography ?dead?or ?destiny?in a globalizing World? a network
-  analysis and latent space modeling approach of the World trade network.''
-  {\em Journal of Globalization Studies} 4(2).
 
 \harvarditem{Hymer}{1976}{Hymer:1976}
 Hymer, Stephen~H. 1976.
@@ -398,20 +309,12 @@ Kindleberger, Charles~P. 1969.
 \newblock {\em American Business Abroad: Six Lectures on Direct Investment}.
 \newblock New Haven, CT:  Yale University Press.
 
-\harvarditem{Kinne}{2013}{kinne2013network}
-Kinne, Brandon~J. 2013.
-\newblock ``Network dynamics and the evolution of international cooperation.''
-  {\em American Political Science Review} pp.~766--785.
-
-\harvarditem{Kinne}{2014}{kinne2014dependent}
-Kinne, Brandon~J. 2014.
-\newblock ``Dependent diplomacy: Signaling, strategy, and prestige in the
-  diplomatic network.'' {\em International Studies Quarterly} 58(2):247--259.
-
-\harvarditem{Kinne}{2016}{kinne2016agreeing}
-Kinne, Brandon~J. 2016.
-\newblock ``Agreeing to arm: Bilateral weapons agreements and the global arms
-  trade.'' {\em Journal of Peace Research} 53(3):359--377.
+\harvarditem[King et~al.]{King, Honaker, Joseph \harvardand\
+  Scheve}{2002}{King_et_al:2001}
+King, Gary, James Honaker, Anne Joseph \harvardand\ Kenneth Scheve. 2002.
+\newblock ``Analyzing Incomplete Political Science Data: An Alternative
+  Algorithm for Multiple Imputation.'' {\em American Political Science Review}
+  95(1):49--69.
 
 \harvarditem{Kirkland}{2013}{kirkland2013hypothesis}
 Kirkland, Justin~H. 2013.
@@ -453,12 +356,6 @@ Leblang, David. 2010.
 \newblock ``Familiarity Breeds Investment: Diaspora Networks and International
   Investment.'' {\em American Political Science Review} 104(03):584--600.
 
-\harvarditem{Lee \harvardand\ Bai}{2013}{lee2013network}
-Lee, Taedong \harvardand\ Byoung-Inn Bai. 2013.
-\newblock ``Network Analysis of Free Trade Agreements: Homophily and
-  Transitivity.'' {\em The Korean Journal of International Studies}
-  11(2):263--293.
-
 \harvarditem{Leifeld}{2013}{leifeld2013reconceptualizing}
 Leifeld, Philip. 2013.
 \newblock ``Reconceptualizing major policy change in the advocacy coalition
@@ -489,12 +386,6 @@ Li, Quan \harvardand\ Tatiana Vashchilko. 2010.
 \newblock ``Dyadic Military Conflict, Security Alliances, and Bilateral FDI
   Flows.'' {\em Journal of International Business Studies} 41(5):765--782.
 
-\harvarditem[Mansfield, Milner \harvardand\ Rosendorff]{Mansfield, Milner
-  \harvardand\ Rosendorff}{2000}{Mansfield_et_al:2000}
-Mansfield, Edward~D., Helen~V. Milner \harvardand\ B.~Peter Rosendorff. 2000.
-\newblock ``Free to Trade: Democracies, Autocracies, and International Trade.''
-  {\em The American Political Science Review} 94(2):305--321.
-
 \harvarditem{Markusen}{1995}{Markusen:1995}
 Markusen, James~R. 1995.
 \newblock ``The Boundaries of Multinational Enterprises and the Theory of
@@ -520,19 +411,11 @@ Melitz, Marc~J. 2003.
 \newblock ``The Impact of Trade on Intra-Industry Reallocations and Aggregate
   Industry Productivity.'' {\em Econometrica} 71(6):1695--1725.
 
-\harvarditem[Metternich et~al.]{Metternich, Dorff, Gallop, Weschle \harvardand\
-  Ward}{2013}{metternich2013antigovernment}
-Metternich, Nils~W, Cassy Dorff, Max Gallop, Simon Weschle \harvardand\
-  Michael~D Ward. 2013.
-\newblock ``Antigovernment networks in civil conflicts: How network structures
-  affect conflictual behavior.'' {\em American Journal of Political Science}
-  57(4):892--911.
-
-\harvarditem[Noorbakhsh, Paloni \harvardand\ Youssef]{Noorbakhsh, Paloni
-  \harvardand\ Youssef}{2001}{Noorbakhsh_et_al:2001}
-Noorbakhsh, Farhad, Alberto Paloni \harvardand\ Ali Youssef. 2001.
-\newblock ``Human Capital and FDI Inflows to Developing Countries: New
-  Empirical Evidence.'' {\em World Development} 29(9):1593--1610.
+\harvarditem{Moran}{2014}{Moran:2014}
+Moran, Theodore. 2014.
+\newblock ``Foreign Investment and Supply Chains in Emerging Markets: Recurring
+  Problems and Demonstrated Solutions.'' {\em Peterson Institute for
+  International Economics Working Paper} No. 2014-12.
 
 \harvarditem{OECD}{2016}{OECD}
 OECD. 2016.
@@ -545,29 +428,11 @@ Pandya, Sonal~S. 2016.
   Production in the Twenty-First Century.'' {\em Annual Review of Political
   Science} 19:455--475.
 
-\harvarditem{Pinto}{2013}{Pinto:2013}
-Pinto, Pablo~M. 2013.
-\newblock {\em Partisan Investment in the Global Economy: Why the Left Loves
-  Foreign Direct Investment and FDI Loves the Left}.
-\newblock New York:  Cambridge University Press.
-
-\harvarditem{Pinto \harvardand\ Pinto}{2008}{Pinto_Pinto:2008}
-Pinto, Pablo~M. \harvardand\ Santiago~M. Pinto. 2008.
-\newblock ``The Politics of Investment Partisanship: And the Sectoral
-  Allocation of Foreign Direct Investment.'' {\em Economics \& Politics}
-  20(2):216--254.
-
 \harvarditem{{R Core Team}}{2015}{r}
 {R Core Team}. 2015.
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock Vienna, Austria:  R Foundation for Statistical Computing.
 \newline\harvardurl{https://www.R-project.org/}
-
-\harvarditem{Raeymaeckers \harvardand\ Kenis}{2016}{raeymaeckers2016influence}
-Raeymaeckers, Peter \harvardand\ Patrick Kenis. 2016.
-\newblock ``The influence of shared participant governance on the integration
-  of service networks: A comparative social network analysis.'' {\em
-  International Public Management Journal} 19(3):397--426.
 
 \harvarditem{Raftery}{1999}{raftery1999bayes}
 Raftery, Adrian~E. 1999.
@@ -587,11 +452,6 @@ Resnick, Adam~L. 2001.
 \newblock ``Investors, Turbulence, and Transition: Democratic Transition and
   Foreign Direct Investment in Nineteen Developing Countries.'' {\em
   International Interactions} 27(4):381--398.
-
-\harvarditem{Rose}{2004}{Rose:2004}
-Rose, Andrew~K. 2004.
-\newblock ``Do We Really Know That the WTO Increases Trade?'' {\em The American
-  Economic Review} 94(1):98--114.
 
 \harvarditem{Sandholtz \harvardand\ Gray}{2003}{Sandholtz_Gray:2003}
 Sandholtz, Wayne \harvardand\ Mark~M. Gray. 2003.
@@ -620,7 +480,7 @@ Tingley, Dustin, Christopher Xu, Adam Chilton \harvardand\ Helen~V. Milner.
 
 \harvarditem{UNCTAD}{1991}{UNCTAD:1991}
 UNCTAD. 1991.
-\newblock {\em World Investment Report}.
+\newblock {\em The Triad In Foreign Direct Investment}.
 \newblock New York:  United Nations.
 
 \harvarditem{UNCTAD}{2006}{UNCTAD:2006}
@@ -632,11 +492,6 @@ UNCTAD. 2006.
 \harvarditem{UNCTAD}{2013}{UNCTAD:2013}
 UNCTAD. 2013.
 \newblock {\em Global Value Chains: Investment and Trade for Development}.
-\newblock New York:  United Nations.
-
-\harvarditem{UNCTAD}{2014}{UNCTAD:2014}
-UNCTAD. 2014.
-\newblock {\em Bilateral FDI Statistics}.
 \newblock New York:  United Nations.
 
 \harvarditem{Vernon}{1971}{Vernon:1971}
@@ -669,18 +524,6 @@ Ward, Michael~D \harvardand\ Peter~D Hoff. 2007.
 \newblock ``Persistent patterns of international commerce.'' {\em Journal of
   Peace Research} 44(2):157--175.
 
-\harvarditem[Ward, Siverson \harvardand\ Cao]{Ward, Siverson \harvardand\
-  Cao}{2007}{ward2007disputes}
-Ward, Michael~D, Randolph~M Siverson \harvardand\ Xun Cao. 2007.
-\newblock ``Disputes, democracies, and dependencies: A reexamination of the
-  Kantian peace.'' {\em American Journal of Political Science} 51(3):583--601.
-
-\harvarditem{Warren}{2016}{warren2016modeling}
-Warren, T~Camber. 2016.
-\newblock ``Modeling the coevolution of international and domestic
-  institutions: Alliances, democracy, and the complex path to peace.'' {\em
-  Journal of Peace Research} 53(3):424--441.
-
 \harvarditem[Wilson et~al.]{Wilson, Denny, Bhamidi, Cranmer \harvardand\
   Desmarais}{2017}{wilson2017stochastic}
 Wilson, James~D, Matthew~J Denny, Shankar Bhamidi, Skyler~J Cranmer
@@ -693,12 +536,6 @@ Wright, Joseph \harvardand\ Boliang Zhu. Forthcoming.
 \newblock ``Monopoly Rents and Foreign Direct Investment in Fixed Assets.''
   {\em International Studies Quarterly} .
 \newblock Available at: \url{https://ssrn.com/abstract=2945523}.
-
-\harvarditem{Yeaple}{2003}{Yeaple:2003}
-Yeaple, Stephen~Ross. 2003.
-\newblock ``The Role of Skill Endowments in the Structure of U.S. Outward
-  Foreign Direct Investment.'' {\em The Review of Economics and Statistics}
-  85(3):726--734.
 
 \harvarditem{Zaheer}{1995}{Zaheer:1995}
 Zaheer, Srilata. 1995.
