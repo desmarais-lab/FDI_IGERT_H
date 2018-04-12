@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 APR 2018 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 APR 2018 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -545,41 +545,29 @@ Overfull \hbox (0.54309pt too wide) in paragraph at lines 157--158
 at FDI rep-re-sents an oligopolis-
  []
 
-[6] [7] [8] [9]
-
-LaTeX Warning: Reference `fig:flows' on page 10 undefined on input line 208.
-
-
-LaTeX Warning: Reference `summstats' on page 10 undefined on input line 208.
-
-
-LaTeX Warning: Reference `qlevelresults' on page 10 undefined on input line 208
-.
-
-
-LaTeX Warning: Reference `ameliaresults' on page 10 undefined on input line 208
-.
-
-[10] [11]
-
-LaTeX Warning: Reference `summstats' on page 12 undefined on input line 221.
-
-[12] [13] [14] [15] <draft_figures/BICdiff.pdf, id=494, 469.755pt x 289.08pt>
+[6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+<draft_figures/BICdiff.pdf, id=488, 469.755pt x 289.08pt>
 File: draft_figures/BICdiff.pdf Graphic file (type pdf)
 
 <use draft_figures/BICdiff.pdf>
 Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 263.
 (pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
- [16 <./draft_figures/BICdiff.pdf>]
-<draft_figures/reciprocityFit.pdf, id=509, 433.62pt x 433.62pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<draft_figures/reciprocityFit.pdf, id=489, 433.62pt x 433.62pt>
 File: draft_figures/reciprocityFit.pdf Graphic file (type pdf)
 
 <use draft_figures/reciprocityFit.pdf>
 Package pdftex.def Info: draft_figures/reciprocityFit.pdf used on input line 27
 1.
 (pdftex.def)             Requested size: 325.2142pt x 325.2142pt.
- [17 <./draft_figures/reciprocityFit.pdf>] <draft_figures/rl_plots/Mutuality.pd
-f, id=525, 205.76875pt x 144.54pt>
+ [16]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<draft_figures/rl_plots/Mutuality.pdf, id=505, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Mutuality.pdf>
@@ -587,16 +575,15 @@ Package pdftex.def Info: draft_figures/rl_plots/Mutuality.pdf used on input lin
 e 285.
 (pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/Transitivity.pdf, id=527, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Transitivity.pdf, id=507, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Transitivity.pdf used on input 
 line 286.
 (pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
- [18 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
-ivity.pdf>]
-<draft_figures/transitiveInterpretation.pdf, id=553, 578.16pt x 289.08pt>
+ [17 <./draft_figures/BICdiff.pdf>] [18 <./draft_figures/reciprocityFit.pdf>]
+<draft_figures/transitiveInterpretation.pdf, id=535, 578.16pt x 289.08pt>
 File: draft_figures/transitiveInterpretation.pdf Graphic file (type pdf)
 
 <use draft_figures/transitiveInterpretation.pdf>
@@ -604,7 +591,7 @@ Package pdftex.def Info: draft_figures/transitiveInterpretation.pdf used on inp
 ut line 296.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
 
-<draft_figures/mutualInterpretation.pdf, id=554, 578.16pt x 289.08pt>
+<draft_figures/mutualInterpretation.pdf, id=536, 578.16pt x 289.08pt>
 File: draft_figures/mutualInterpretation.pdf Graphic file (type pdf)
 
 <use draft_figures/mutualInterpretation.pdf>
@@ -615,8 +602,9 @@ ine 297.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./draft_figures/transitiveInterpretation.pdf> <./draft_figures/mutual
-Interpretation.pdf>]
+[19 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transiti
+vity.pdf>] [20 <./draft_figures/transitiveInterpretation.pdf> <./draft_figures/
+mutualInterpretation.pdf>] [21]
 <draft_figures/rl_plots/Sum.pdf, id=578, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
 
@@ -744,15 +732,15 @@ File: draft_figures/rl_plots/TradeO_out.pdf Graphic file (type pdf)
 Package pdftex.def Info: draft_figures/rl_plots/TradeO_out.pdf used on input li
 ne 346.
 (pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
- [21 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum_5.pdf> <.
+ [22 <./draft_figures/rl_plots/Sum.pdf> <./draft_figures/rl_plots/Sum_5.pdf> <.
 /draft_figures/rl_plots/Nonzero.pdf> <./draft_figures/rl_plots/LDV.pdf> <./draf
-t_figures/rl_plots/GDP_Dyad.pdf> <./draft_figures/rl_plots/Distance.pdf>] [22 <
+t_figures/rl_plots/GDP_Dyad.pdf> <./draft_figures/rl_plots/Distance.pdf>] [23 <
 ./draft_figures/rl_plots/Defense.pdf> <./draft_figures/rl_plots/Alliance.pdf> <
 ./draft_figures/rl_plots/Polity_in.pdf> <./draft_figures/rl_plots/Polity_out.pd
 f> <./draft_figures/rl_plots/GDPpc_in.pdf> <./draft_figures/rl_plots/GDPpc_out.
 pdf> <./draft_figures/rl_plots/BIT.pdf> <./draft_figures/rl_plots/TradeV.pdf>] 
-[23 <./draft_figures/rl_plots/TradeO_in.pdf> <./draft_figures/rl_plots/TradeO_o
-ut.pdf>] [24]
+[24 <./draft_figures/rl_plots/TradeO_in.pdf> <./draft_figures/rl_plots/TradeO_o
+ut.pdf>] [25]
 <./draft_figures/contagion_simulation_results.pdf, id=740, 397.485pt x 234.8775
 pt>
 File: ./draft_figures/contagion_simulation_results.pdf Graphic file (type pdf)
@@ -760,43 +748,35 @@ File: ./draft_figures/contagion_simulation_results.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./draft_figures/contagion_simulation_results.pdf used 
 on input line 364.
 (pdftex.def)             Requested size: 337.86385pt x 199.6468pt.
- [25 <./draft_figures/contagion_simulation_results.pdf>] [26] [27] (./fdi_draft
-.bbl [28] [29]
-[30]
-Underfull \hbox (badness 1910) in paragraph at lines 272--277
+ [26 <./draft_figures/contagion_simulation_results.pdf>] [27] [28] (./fdi_draft
+.bbl [29] [30]
+Underfull \hbox (badness 1910) in paragraph at lines 266--271
 \OT1/cmr/m/n/12 Avail-able at [][]$\OT1/pcr/m/n/12 https : / / www . internatio
 nalpoliticaleconomysociety . org /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--277
+Underfull \hbox (badness 10000) in paragraph at lines 266--271
 \OT1/pcr/m/n/12 sites / default / files / paper-[]uploads / 2017-[]11-[]15-[]17
  _ 30 _ 32-[]sooyeon .
  []
 
-[31] [32])
+[31] [32] [33])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
- [33]
+ [34]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./fdi_draft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: 514D363F6CA96BF2ADDD1EDE96B7102E;779.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 9611 strings out of 492995
- 145117 string characters out of 6132704
- 243434 words of memory out of 5000000
- 12839 multiletter control sequences out of 15000+600000
+ 9599 strings out of 492995
+ 144880 string characters out of 6132704
+ 243369 words of memory out of 5000000
+ 12828 multiletter control sequences out of 15000+600000
  21524 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,49p,1914b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -876,10 +856,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (34 pages, 402519 bytes).
+Output written on fdi_draft.pdf (35 pages, 401958 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 778 compressed objects within 8 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
  320 words of extra memory for PDF output out of 10000 (max. 10000000)
 
