@@ -79,7 +79,7 @@ Chuluun, Tuugi. 2017.
 \harvarditem{Cranmer \harvardand\ Desmarais}{2011}{cranmer2011inferential}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011.
 \newblock ``Inferential network analysis with exponential random graph
-  models.'' {\em Political Analysis} pp.~66--86.
+  models.'' {\em Political Analysis} 19(1):66--86.
 
 \harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
@@ -291,11 +291,6 @@ Krivitsky, Pavel~N. 2016.
 \newblock The Statnet Project (\url{http://www.statnet.org}).
 \newblock R package version 3.2.2.
 \newline\harvardurl{http://CRAN.R-project.org/package=ergm.count}
-
-\harvarditem{Krivitsky \harvardand\ Butts}{2013}{krivitsky2013modeling}
-Krivitsky, Pavel~N \harvardand\ Carter~T Butts. 2013.
-\newblock ``Modeling valued networks with statnet.'' {\em The Statnet
-  Development Team} p.~2013.
 
 \harvarditem{Kwok \harvardand\ Tadesse}{2006}{Kwok_Tadesse:2006}
 Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
