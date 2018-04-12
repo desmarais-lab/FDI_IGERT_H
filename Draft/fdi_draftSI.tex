@@ -297,6 +297,34 @@ Reciprocity & Transitivity \\
 \caption{\label{fig:q50_amelia_netterms} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
 \end{figure}
 
+\subsection{q $\approx$ 0.25}
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q25/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q25/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:q25_amelia_netterms} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
+\end{figure}
+
+
+
+
+
+\section{Independent Covariate Interpretation}
+
+
+For the Poisson-reference ERGM these covariate estimates are usually interpreted by exponentiating Euler's constant to the power of the coefficient times the number of unit changes in the covariate to get the expected change in the tie weight \citep{krivitsky2013modeling}. Taking Polity, in-degree for example, if the FDI destination had a Polity score of 10 in 2002, we would expect the value of logged FDI being sent to be 1.27 times more than a destination that had a Polity score of -10. In the model with network terms this expected increase is only 1.17 times higher. Another possibility to interpret independent terms in the model is to simulate networks using the estimated coefficients while fixing all other independent terms at the mean value and then comparing changes in the average edge value to the range of values of the covariate. We present a plot of this for Polity, in-degree below in Figure \ref{fig:polity}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=.6]{./draft_figures/polity_in_sims} \vspace{-.5cm}\\
+\caption{\label{fig:polity} Results from simulation exercise investigating the effects of Polity, in-degree for year 2002. These results are from 500 simulations. The line in red is the Loess curve.}
+\end{figure}
+
+
 
 
 \newpage
