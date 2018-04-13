@@ -292,6 +292,11 @@ Krivitsky, Pavel~N. 2016.
 \newblock R package version 3.2.2.
 \newline\harvardurl{http://CRAN.R-project.org/package=ergm.count}
 
+\harvarditem{Krivitsky \harvardand\ Butts}{2013}{krivitsky2013modeling}
+Krivitsky, Pavel~N \harvardand\ Carter~T Butts. 2013.
+\newblock ``Modeling valued networks with statnet.'' {\em The Statnet
+  Development Team} p.~2013.
+
 \harvarditem{Kwok \harvardand\ Tadesse}{2006}{Kwok_Tadesse:2006}
 Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
 \newblock ``The MNC as an Agent of Change for Host-Country Institutions: FDI
