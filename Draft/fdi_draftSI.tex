@@ -72,7 +72,7 @@
 \renewcommand\thetable{\Alph{table}}
 \renewcommand\thefigure{\Alph{figure}}
 \appendix
-\section{Summary Statistics}\label{summstats}
+\section{Summary Statistics}\label{sum_stats}
 
 \begin{longtable}{c@{\hskip -.4cm}c}
 Alliance Treaty &
@@ -223,9 +223,11 @@ Trade Openness, in-degree & Trade Openness, out-degree\\
 
 \section{Subset by Missingness Results}\label{qlevelresults}
 
-In the paper, we imputed missing values with zeros. In this section, we check whether our results are robust if we analyze a subset of the data set based on the level of missingness. To subset the data, we approximate total level of missingness ({\emph{q}) in the adjacency matrices by using the proportion of missing values for each node (\emph{p}). We conduct two robustness checks: (1) when \emph{p} = 0.72, \emph{q} $\approx$ 0.25 and  \emph{n} = 28; and (2) when \emph{p} = 0.86,  \emph{q} $\approx$ 0.50 and  \emph{n} = 70. In the first case, we include nodes that ... {\color{red}[please explain what p=.72 and q=.25 mean and what the sub-data sets look like].}   Following our approach in the paper, we impute missing values in two sub-data sets with zeros.
+In the paper, we imputed missing values with zeros. In this section, we check whether our results are robust if we analyze a subset of the data set based on the level of missingness. To subset the data, we approximate total level of missingness in the adjacency matrices ({\emph{q}) by using the proportion of missing values for each node (\emph{p}). We conduct two robustness checks: (1) when \emph{p} = 0.86,  \emph{q} $\approx$ 0.50 and  \emph{n} = 70; and (2) when \emph{p} = 0.72, \emph{q} $\approx$ 0.25 and  \emph{n} = 28. In the first case, we only include nodes that are missing values for 86\% or less of the possible edges for the entire dataset, which leaves us with an adjacency matrix that is only missing 50\% of the values. Similarly, the second set only includes nodes that are missing values for 72\% or less of the possible edges for the entire dataset, which leaves us with an adjacency matrix that is only missing 25\% of the values.  Following our approach in the paper, we impute missing values in the two subsets of the data with zeros.
 
-Figures \ref{fig:q50netterms} and \ref{fig:q25netterms} present the results for the two robustness checks, respectively. We see that FDI networks show strong transitivity for all years, {\color{red}but reciprocity effects become weak and insignificant in some years. This may be because most nodes (i.e. states) in the sub-data sets are developed countries that have high two-way FDI flows between them and thus there is low variation in the level of reciprocity.}
+Figures \ref{fig:q50netterms} and \ref{fig:q25netterms} present the results for the two robustness checks, respectively. We see that FDI networks show strong transitivity for all years, but reciprocity effects become weak and insignificant in some years. This may be because most nodes (i.e. states) in the sub-data sets are developed countries that have substantial two-way FDI flows between them and thus there is little variation in the level of reciprocity.
+
+\clearpage
 
 \subsection{q $\approx$  0.50}
 
@@ -238,9 +240,6 @@ Reciprocity & Transitivity \\
 \end{tabular}
 \caption{\label{fig:q50netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
 \end{figure}
-
-
-
 
 
 \subsection{q $\approx$  0.25}
@@ -275,7 +274,7 @@ Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_full/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:full_amelia_netterms} Estimates of Dependence terms Bars span 95\% confidence intervals. }
+\caption{\label{fig:full_amelia_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
 \end{figure}
 
 
@@ -294,8 +293,10 @@ Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q50/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:q50_amelia_netterms} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
+\caption{\label{fig:q50_amelia_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
 \end{figure}
+
+\clearpage
 
 \subsection{q $\approx$ 0.25}
 
@@ -306,7 +307,7 @@ Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q25/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_amelia_q25/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:q25_amelia_netterms} Estimates of Dependence terms in time-pooled ERGMs. Bars span 95\% confidence intervals. }
+\caption{\label{fig:q25_amelia_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
 \end{figure}
 
 
@@ -316,12 +317,12 @@ Reciprocity & Transitivity \\
 \section{Independent Covariate Interpretation}
 
 
-For the Poisson-reference ERGM these covariate estimates are usually interpreted by exponentiating Euler's constant to the power of the coefficient times the number of unit changes in the covariate to get the expected change in the tie weight \citep{krivitsky2013modeling}. Taking Polity, in-degree for example, if the FDI destination had a Polity score of 10 in 2002, we would expect the value of logged FDI being sent to be 1.27 times more than a destination that had a Polity score of -10. In the model with network terms this expected increase is only 1.17 times higher. Another possibility to interpret independent terms in the model is to simulate networks using the estimated coefficients while fixing all other independent terms at the mean value and then comparing changes in the average edge value to the range of values of the covariate. We present a plot of this for Polity, in-degree below in Figure \ref{fig:polity}.
+For the Poisson-reference ERGM these covariate estimates are usually interpreted by exponentiating Euler's constant to the power of the coefficient times the number of unit changes in the covariate to get the expected change in the tie weight \citep{krivitsky2013modeling}. Taking Polity, in-degree for example, if the FDI destination had a Polity score of 10 in 2002, we would expect the value of logged FDI being sent to be 1.27 times more than a destination that had a Polity score of -10. In the model with network terms this expected increase is only 1.17 times higher. Another possibility to interpret independent terms in the model is to simulate networks using the estimated coefficients while fixing all other independent terms at the mean value and then comparing changes in the average edge value to the range of values of the covariate. For node-level covariates you take the column (receiver) averages in the adjacency matrix. We present a plot of this for Polity, in-degree below in Figure \ref{fig:polity}. Here the plot shows that as the destination state's Polity increases, there is an slow increase in the average level of FDI received from the score -10 to the score of 6, with a sharper increase between Polity Scores 7 and 10. %Since Western democracies are the states that tend to have Polity Scores of 10, this gives some evidence that the significance of Polity is tied to Western democracies and not democracy itself. 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=.6]{./draft_figures/polity_in_sims} \vspace{-.5cm}\\
-\caption{\label{fig:polity} Results from simulation exercise investigating the effects of Polity, in-degree for year 2002. These results are from 500 simulations. The line in red is the Loess curve.}
+\caption{\label{fig:polity} Results from the simulation exercise investigating the effects of Polity, in-degree for year 2002. The points are calculated as the the receiver node averages in the adjacency matrix. These results are from 500 simulations. The line in red is the Loess curve.}
 \end{figure}
 
 

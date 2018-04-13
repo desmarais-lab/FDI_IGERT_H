@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  12 APR 2018 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  12 APR 2018 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,170 +789,173 @@ edDV.pdf> <./draft_figures/plots_pooled/TradeVolume.pdf> <./draft_figures/plots
 _pooled/GDPpc_in.pdf> <./draft_figures/plots_pooled/GDPpc_out.pdf> <./draft_fig
 ures/plots_pooled/Polity_in.pdf> <./draft_figures/plots_pooled/Polity_out.pdf> 
 <./draft_figures/plots_pooled/Trade_in.pdf> <./draft_figures/plots_pooled/Trade
-_out.pdf>]
+_out.pdf>] [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 230.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\approx' on input line 230.
+(hyperref)                removing `math shift' on input line 232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 230.
+(hyperref)                removing `\approx' on input line 232.
 
-<draft_figures/rl_plots50/Mutuality.pdf, id=355, 205.76875pt x 144.54pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 232.
+
+<draft_figures/rl_plots50/Mutuality.pdf, id=363, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots50/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots50/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_plots50/Mutuality.pdf used on input l
-ine 236.
+ine 238.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
-<draft_figures/rl_plots50/Transitivity.pdf, id=357, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots50/Transitivity.pdf, id=365, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots50/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots50/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots50/Transitivity.pdf used on inpu
-t line 237.
+t line 239.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 246.
+(hyperref)                removing `math shift' on input line 245.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\approx' on input line 246.
+(hyperref)                removing `\approx' on input line 245.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 246.
+(hyperref)                removing `math shift' on input line 245.
 
-<draft_figures/rl_plots25/Mutuality.pdf, id=359, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots25/Mutuality.pdf, id=367, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots25/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots25/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_plots25/Mutuality.pdf used on input l
-ine 252.
+ine 251.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
-<draft_figures/rl_plots25/Transitivity.pdf, id=361, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots25/Transitivity.pdf, id=369, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots25/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots25/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots25/Transitivity.pdf used on inpu
-t line 253.
+t line 252.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 266.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 267.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [8 <./draft_figures/rl_plots50/Mutuality.pdf> <./draft_figures/rl_plots50/Tra
-nsitivity.pdf>]
-<draft_figures/rl_amelia_full/Mutuality.pdf, id=393, 205.76875pt x 144.54pt>
+) [9
+
+ <./draft_figures/rl_plots50/Mutuality.pdf> <./draft_figures/rl_plots50/Transit
+ivity.pdf> <./draft_figures/rl_plots25/Mutuality.pdf> <./draft_figures/rl_plots
+25/Transitivity.pdf>]
+<draft_figures/rl_amelia_full/Mutuality.pdf, id=416, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_full/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_amelia_full/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_full/Mutuality.pdf used on inp
-ut line 275.
+ut line 274.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
-<draft_figures/rl_amelia_full/Transitivity.pdf, id=395, 205.76875pt x 144.54pt>
+<draft_figures/rl_amelia_full/Transitivity.pdf, id=418, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_full/Transitivity.pdf Graphic file (type pdf)
 <use draft_figures/rl_amelia_full/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_full/Transitivity.pdf used on 
-input line 276.
+input line 275.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
- [9 <./draft_figures/rl_plots25/Mutuality.pdf> <./draft_figures/rl_plots25/Tran
-sitivity.pdf> <./draft_figures/rl_amelia_full/Mutuality.pdf> <./draft_figures/r
-l_amelia_full/Transitivity.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\approx' on input line 288.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 288.
+(hyperref)                removing `\approx' on input line 287.
 
-<draft_figures/rl_amelia_q50/Mutuality.pdf, id=434, 205.76875pt x 144.54pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 287.
+
+<draft_figures/rl_amelia_q50/Mutuality.pdf, id=420, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_q50/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_amelia_q50/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_q50/Mutuality.pdf used on inpu
-t line 294.
+t line 293.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
-<draft_figures/rl_amelia_q50/Transitivity.pdf, id=436, 205.76875pt x 144.54pt>
+<draft_figures/rl_amelia_q50/Transitivity.pdf, id=422, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_q50/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_amelia_q50/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_q50/Transitivity.pdf used on i
-nput line 295.
+nput line 294.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
+ [10 <./draft_figures/rl_amelia_full/Mutuality.pdf> <./draft_figures/rl_amelia_
+full/Transitivity.pdf> <./draft_figures/rl_amelia_q50/Mutuality.pdf> <./draft_f
+igures/rl_amelia_q50/Transitivity.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 301.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 300.
+(hyperref)                removing `\approx' on input line 301.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\approx' on input line 300.
+(hyperref)                removing `math shift' on input line 301.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 300.
-
-<draft_figures/rl_amelia_q25/Mutuality.pdf, id=438, 205.76875pt x 144.54pt>
+<draft_figures/rl_amelia_q25/Mutuality.pdf, id=457, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_q25/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_amelia_q25/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_q25/Mutuality.pdf used on inpu
-t line 306.
+t line 307.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
 
-<draft_figures/rl_amelia_q25/Transitivity.pdf, id=440, 205.76875pt x 144.54pt>
+<draft_figures/rl_amelia_q25/Transitivity.pdf, id=459, 205.76875pt x 144.54pt>
 File: draft_figures/rl_amelia_q25/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_amelia_q25/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_amelia_q25/Transitivity.pdf used on i
-nput line 307.
+nput line 308.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
- [10 <./draft_figures/rl_amelia_q50/Mutuality.pdf> <./draft_figures/rl_amelia_q
-50/Transitivity.pdf> <./draft_figures/rl_amelia_q25/Mutuality.pdf> <./draft_fig
-ures/rl_amelia_q25/Transitivity.pdf>] <./draft_figures/polity_in_sims.pdf, id=4
-80, 794.97pt x 614.295pt>
+
+<./draft_figures/polity_in_sims.pdf, id=464, 794.97pt x 614.295pt>
 File: ./draft_figures/polity_in_sims.pdf Graphic file (type pdf)
 
 <use ./draft_figures/polity_in_sims.pdf>
 Package pdftex.def Info: ./draft_figures/polity_in_sims.pdf used on input line 
-323.
+324.
 (pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
 
-Overfull \hbox (7.23067pt too wide) in paragraph at lines 323--323
+Overfull \hbox (7.23067pt too wide) in paragraph at lines 324--324
  [][] 
  []
 
-[11 <./draft_figures/polity_in_sims.pdf>] (./fdi_draftSI.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
 
-(./fdi_draftSI.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11
+
+ <./draft_figures/rl_amelia_q25/Mutuality.pdf> <./draft_figures/rl_amelia_q25/T
+ransitivity.pdf>] (./fdi_draftSI.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+ [12 <./draft_figures/polity_in_sims.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+ (./fdi_draftSI.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `fdi_draftSI.out' has not changed.
 (rerunfilecheck)             Checksum: 41E013DDFA5ACC86181F95EC60F2D511;623.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  )
 (\end occurred inside a group at level 1)
 
@@ -961,11 +964,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
 Here is how much of TeX's memory you used:
  9174 strings out of 493089
  138720 string characters out of 6134841
- 237932 words of memory out of 5000000
+ 237981 words of memory out of 5000000
  12449 multiletter control sequences out of 15000+600000
  19409 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,47p,1123b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,47p,1486b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -978,7 +981,7 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draftSI.pdf (13 pages, 543570 bytes).
+Output written on fdi_draftSI.pdf (13 pages, 543691 bytes).
 PDF statistics:
  546 PDF objects out of 1000 (max. 8388607)
  398 compressed objects within 4 object streams
