@@ -89,7 +89,7 @@ average.col <- colMeans(average.amat) # average received
 
 # plot relationship
 plot(c(fdi_ver[[2]]),c(average.col),
-     xlab="Polity, Indegree",ylab="Average FDI Received in USD, Logged",
+     xlab="Polity, in-degree",ylab="Average FDI Received (USD millions), logged",
      pch=20)
 lines(lowess(c(fdi_ver[[2]]),c(average.col)), col="Red")
 abline(h=(0:8)/2,lty=3,col="gray60")
