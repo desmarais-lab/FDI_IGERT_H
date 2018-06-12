@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.6)  11 JUN 2018 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.6)  12 JUN 2018 15:37
 entering extended mode
 **C:/Users/bxz14/Research/FDI_Networks/Github/FDI_IGERT_H/Draft/fdi_draftSI.tex
 
@@ -884,23 +884,24 @@ File: draft_figures/rl_amelia_q25/Transitivity.pdf Graphic file (type pdf)
 Package pdftex.def Info: draft_figures/rl_amelia_q25/Transitivity.pdf  used on 
 input line 308.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
-<draft_figures/rl_plots_tax/Mutuality.pdf, id=462, 205.76875pt x 144.54pt>
+[11
+
+ <./draft_figures/rl_amelia_q25/Mutuality.pdf> <./draft_figures/rl_amelia_q25/T
+ransitivity.pdf>]
+<draft_figures/rl_plots_tax/Mutuality.pdf, id=487, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots_tax/Mutuality.pdf Graphic file (type pdf)
 <use draft_figures/rl_plots_tax/Mutuality.pdf>
 Package pdftex.def Info: draft_figures/rl_plots_tax/Mutuality.pdf  used on inpu
 t line 324.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
-<draft_figures/rl_plots_tax/Transitivity.pdf, id=464, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots_tax/Transitivity.pdf, id=489, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots_tax/Transitivity.pdf Graphic file (type pdf)
 <use draft_figures/rl_plots_tax/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots_tax/Transitivity.pdf  used on i
 nput line 325.
 (pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
-[11
-
- <./draft_figures/rl_amelia_q25/Mutuality.pdf> <./draft_figures/rl_amelia_q25/T
-ransitivity.pdf>] [12 <./draft_figures/rl_plots_tax/Mutuality.pdf> <./draft_fig
-ures/rl_plots_tax/Transitivity.pdf>] (fdi_draftSI.bbl)
+ [12 <./draft_figures/rl_plots_tax/Mutuality.pdf> <./draft_figures/rl_plots_tax
+/Transitivity.pdf>] (fdi_draftSI.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
  [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
@@ -916,13 +917,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
 ### simple group (level 1) entered at line 226 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9202 strings out of 493303
- 142538 string characters out of 3129785
- 236499 words of memory out of 3000000
- 12535 multiletter control sequences out of 15000+200000
+ 9207 strings out of 493303
+ 142620 string characters out of 3129785
+ 236525 words of memory out of 3000000
+ 12539 multiletter control sequences out of 15000+200000
  21485 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,49p,1207b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,49p,1387b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -941,9 +942,9 @@ fonts/cm/cmr7.pfb><C:/Users/bxz14/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bxz14/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/bxz14/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draftSI.pdf (14 pages, 608919 bytes).
+Output written on fdi_draftSI.pdf (14 pages, 609803 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
  526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
