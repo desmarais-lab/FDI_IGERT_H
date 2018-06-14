@@ -11,13 +11,15 @@
 rm(list=ls())
 set.seed(19)
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 library(doBy)
 library(network)
 #load in data
 fdi <- read.csv("sub_stock.csv", stringsAsFactors=FALSE)        #FDI
 fdi <- fdi[,-1]
 
+m_name <- paste("models_tweight/model2_","02", "_w.rda", sep="")
+load(m_name)
 
 # dataframe to store values
 a <- data.frame(1:26)

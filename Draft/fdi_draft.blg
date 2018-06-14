@@ -9,6 +9,11 @@ Repeated entry---line 931 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
+You're missing a field name---line 1137 of file fdi_reference.bib
+ :    
+ :    %note = {Available at: \url{https://ssrn.com/abstract=2945523}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Repeated entry---line 1209 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
@@ -19,4 +24,4 @@ Repeated entry---line 1335 of file fdi_reference.bib
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-(There were 4 error messages)
+(There were 5 error messages)
