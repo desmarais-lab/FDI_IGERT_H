@@ -76,6 +76,12 @@ Caves, Richard~E. 1996.
 \newblock {\em Multinational Enterprise and Economic Analysis}.
 \newblock New York:  Cambridge University Press.
 
+\harvarditem[Chatterjee, Diaconis et~al.]{Chatterjee, Diaconis
+  et~al.}{2013}{chatterjee2013estimating}
+Chatterjee, Sourav, Persi Diaconis et~al. 2013.
+\newblock ``Estimating and understanding exponential random graph models.''
+  {\em The Annals of Statistics} 41(5):2428--2461.
+
 \harvarditem{Chuluun}{2017}{chuluun2017global}
 Chuluun, Tuugi. 2017.
 \newblock ``Global portfolio investment network and stock market comovement.''
@@ -407,6 +413,13 @@ Sauvant, Karl~P. 2017.
 Schiavo, Stefano, Javier Reyes \harvardand\ Giorgio Fagiolo. 2010.
 \newblock ``International trade and financial integration: a weighted network
   analysis.'' {\em Quantitative Finance} 10(4):389--399.
+
+\harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
+  Handcock}{2006}{snijders2006new}
+Snijders, Tom~AB, Philippa~E Pattison, Garry~L Robins \harvardand\ Mark~S
+  Handcock. 2006.
+\newblock ``New specifications for exponential random graph models.'' {\em
+  Sociological methodology} 36(1):99--153.
 
 \harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
 Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
