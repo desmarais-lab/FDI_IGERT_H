@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  14 JUN 2018 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  17 JUN 2018 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -872,7 +872,7 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on fdi_draft.pdf (37 pages, 433670 bytes).
+Output written on fdi_draft.pdf (37 pages, 433621 bytes).
 PDF statistics:
  943 PDF objects out of 1000 (max. 8388607)
  810 compressed objects within 9 object streams

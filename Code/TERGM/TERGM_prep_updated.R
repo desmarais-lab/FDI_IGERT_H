@@ -3,7 +3,7 @@ rm(list=ls())
 
 set.seed(19)
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #load packages
 library(magic)
