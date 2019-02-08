@@ -3,59 +3,59 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 934 of file fdi_reference.bib
+Repeated entry---line 979 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1171 of file fdi_reference.bib
+You're missing a field name---line 1217 of file fdi_reference.bib
  :    
  :    %note = {Available at: \url{https://ssrn.com/abstract=2945523}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1369 of file fdi_reference.bib
+Repeated entry---line 1415 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in gai2010contagion
 You've used 69 entries,
             2874 wiz_defined-function locations,
-            1084 strings with 16232 characters,
-and the built_in function-call counts, 249529 in all, are:
-= -- 40581
-> -- 2864
+            1094 strings with 16678 characters,
+and the built_in function-call counts, 239621 in all, are:
+= -- 38797
+> -- 2813
 < -- 2
-+ -- 18759
-- -- 1039
-* -- 20927
-:= -- 50749
-add.period$ -- 283
++ -- 17838
+- -- 1022
+* -- 20014
+:= -- 48930
+add.period$ -- 282
 call.type$ -- 69
 change.case$ -- 897
 chr.to.int$ -- 69
 cite$ -- 70
-duplicate$ -- 1050
-empty$ -- 2268
-format.name$ -- 1112
-if$ -- 44782
+duplicate$ -- 1058
+empty$ -- 2296
+format.name$ -- 1089
+if$ -- 42991
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 304
-num.names$ -- 779
+missing$ -- 74
+newline$ -- 308
+num.names$ -- 785
 pop$ -- 298
 preamble$ -- 1
 purify$ -- 1035
 quote$ -- 0
-skip$ -- 870
+skip$ -- 877
 stack$ -- 0
-substring$ -- 56722
-swap$ -- 143
+substring$ -- 54060
+swap$ -- 149
 text.length$ -- 968
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 254
 warning$ -- 1
-while$ -- 1590
+while$ -- 1601
 width$ -- 0
-write$ -- 966
+write$ -- 968
 (There were 3 error messages)

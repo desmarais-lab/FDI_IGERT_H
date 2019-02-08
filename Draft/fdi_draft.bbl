@@ -27,6 +27,7 @@ Baldwin, Richard. 2011.
   Unbundling: How Building And Joining A Supply Chain Are Different And Why It
   Matters.'' {\em National Bureau of Economic Research Working Paper Series}
   No. 17716.
+\newline\harvardurl{\url{http://www.nber.org/papers/w17716}}
 
 \harvarditem[Boehmke, Chyzh \harvardand\ Thies]{Boehmke, Chyzh \harvardand\
   Thies}{2016}{boehmke2016addressing}
@@ -38,6 +39,7 @@ Boehmke, Frederick~J, Olga Chyzh \harvardand\ Cameron~G Thies. 2016.
 Borga, Maria. 2016.
 \newblock ``Not All Foreign Direct Investment Is Foreign: The Extent of
   Round-Tripping.'' {\em Columbia FDI Perspectives} No. 172:1--3.
+\newline\harvardurl{\url{https://academiccommons.columbia.edu/catalog/ac:201602}}
 
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
@@ -66,11 +68,6 @@ Chatterjee, Sourav, Persi Diaconis et~al. 2013.
 Chuluun, Tuugi. 2017.
 \newblock ``Global portfolio investment network and stock market comovement.''
   {\em Global Finance Journal} 33:51--68.
-
-\harvarditem{Cranmer \harvardand\ Desmarais}{2011}{cranmer2011inferential}
-Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2011.
-\newblock ``Inferential network analysis with exponential random graph
-  models.'' {\em Political Analysis} 19(1):66--86.
 
 \harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
@@ -126,16 +123,6 @@ Gibler, Douglas~M. 2009.
 Graham, Edward~M. 1978.
 \newblock ``Transatlantic Investment by Multinational Firms: A Rivalistic
   Phenomenon?'' {\em Journal of Post Keynesian Economics} 1(1):82--99.
-
-\harvarditem[Handcock et~al.]{Handcock, Hunter, Butts, Goodreau, Krivitsky
-  \harvardand\ Morris}{2017}{ergm}
-Handcock, Mark~S., David~R. Hunter, Carter~T. Butts, Steven~M. Goodreau,
-  Pavel~N. Krivitsky \harvardand\ Martina Morris. 2017.
-\newblock {\em ergm: Fit, Simulate and Diagnose Exponential-Family Models for
-  Networks}.
-\newblock The Statnet Project (\url{http://www.statnet.org}).
-\newblock R package version 3.6.1.
-\newline\harvardurl{https://CRAN.R-project.org/package=ergm}
 
 \harvarditem{Helpman}{1984}{Helpman:1984}
 Helpman, Elhanan. 1984.
@@ -205,8 +192,8 @@ Keohane, Robert~O. 1984.
 Kim, {Soo Yeon} \harvardand\ Etel Solingen. 2017.
 \newblock ``Production Networks and Conflict in East Asia.''.
 \newblock Paper Presented at the Annual Meeting of International Political
-  Economy Society. Available at
-  \url{https://www.internationalpoliticaleconomysociety.org/sites/default/files/paper-uploads/2017-11-15-17_30_32-sooyeon.kim@nus.edu.sg.pdf}.
+  Economy Society.
+\newline\harvardurl{\url{https://www.internationalpoliticaleconomysociety.org/sites/default/files/paper-uploads/2017-11-15-17_30_32-sooyeon.kim@nus.edu.sg.pdf}}
 
 \harvarditem{Kindleberger}{1969}{Kindleberger:1969}
 Kindleberger, Charles~P. 1969.
@@ -241,6 +228,7 @@ Krivitsky, Pavel~N. 2016.
 Krivitsky, Pavel~N \harvardand\ Carter~T Butts. 2013.
 \newblock ``Modeling valued networks with statnet.'' {\em The Statnet
   Development Team} p.~2013.
+\newline\harvardurl{\url{https://statnet.csde.washington.edu/trac/raw-attachment/wiki/Sunbelt2015/Valued.pdf}}
 
 \harvarditem{Kwok \harvardand\ Tadesse}{2006}{Kwok_Tadesse:2006}
 Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
@@ -286,21 +274,35 @@ Markusen, James~R. 1995.
 Marshall, Monty~G. \harvardand\ Keith Jaggers. 2010.
 \newblock ``Polity IV Project: Political Regime Characteristics and
   Transitions, 1800-2008.''.
+\newline\harvardurl{\url{http://www.systemicpeace.org/polity/polity4.htm}}
 
 \harvarditem{Matesanz \harvardand\ Ortega}{2014}{matesanz2014network}
 Matesanz, David \harvardand\ Guillermo~J Ortega. 2014.
 \newblock ``Network analysis of exchange data: interdependence drives crisis
   contagion.'' {\em Quality \& Quantity} 48(4):1835--1851.
 
+\harvarditem{Matias \harvardand\ Robin}{2014}{matias2014modeling}
+Matias, Catherine \harvardand\ St{\'e}phane Robin. 2014.
+\newblock ``Modeling heterogeneity in random graphs through latent space
+  models: a selective review.'' {\em ESAIM: Proceedings and Surveys} 47:55--74.
+
 \harvarditem{Mayer \harvardand\ Zignago}{2011}{mayer2011notes}
 Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
 \newblock ``Notes on CEPII's distances measures: The GeoDist database.''.
+\newline\harvardurl{\url{http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877}}
+
+\harvarditem[Metz, Leifeld \harvardand\ Ingold]{Metz, Leifeld \harvardand\
+  Ingold}{2018}{metz2018interdependent}
+Metz, Florence, Philip Leifeld \harvardand\ Karin Ingold. 2018.
+\newblock ``Interdependent policy instrument preferences: a two-mode network
+  approach.'' {\em Journal of public policy} pp.~1--28.
 
 \harvarditem{Moran}{2014}{Moran:2014}
 Moran, Theodore. 2014.
 \newblock ``Foreign Investment and Supply Chains in Emerging Markets: Recurring
   Problems and Demonstrated Solutions.'' {\em Peterson Institute for
   International Economics Working Paper} No. 2014-12.
+\newline\harvardurl{\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2534095}}
 
 \harvarditem[Oatley et~al.]{Oatley, Winecoff, Pennock \harvardand\
   Danzman}{2013}{oatley2013political}
@@ -313,6 +315,7 @@ Oatley, Thomas, W~Kindred Winecoff, Andrew Pennock \harvardand\ Sarah~Bauerle
 OECD. 2016.
 \newblock ``Bilateral Trade in Goods by Industry and End-use (BTDIxE), ISIC
   Rev.4.''.
+\newline\harvardurl{\url{http://www.oecd.org/trade/bilateraltradeingoodsbyindustryandend-usecategory.htm}}
 
 \harvarditem{Pandya}{2016}{Pandya:2016}
 Pandya, Sonal~S. 2016.
@@ -320,18 +323,18 @@ Pandya, Sonal~S. 2016.
   Production in the Twenty-First Century.'' {\em Annual Review of Political
   Science} 19:455--475.
 
-\harvarditem{{R Core Team}}{2015}{r}
-{R Core Team}. 2015.
-\newblock {\em R: A Language and Environment for Statistical Computing}.
-\newblock Vienna, Austria:  R Foundation for Statistical Computing.
-\newline\harvardurl{https://www.R-project.org/}
-
 \harvarditem[Razin, Sadka \harvardand\ Tong]{Razin, Sadka \harvardand\
   Tong}{2005}{Razin_et_al:2005}
 Razin, Assaf, Efraim Sadka \harvardand\ Hui Tong. 2005.
 \newblock Bilateral FDI Flows: Threshold Barriers and Productivity Shocks.
   Working Paper 11639 National Bureau of Economic Research.
 \newline\harvardurl{http://www.nber.org/papers/w11639}
+
+\harvarditem[Robins, Lewis \harvardand\ Wang]{Robins, Lewis \harvardand\
+  Wang}{2012}{robins2012statistical}
+Robins, Garry, Jenny~M Lewis \harvardand\ Peng Wang. 2012.
+\newblock ``Statistical network analysis for analyzing policy networks.'' {\em
+  Policy Studies Journal} 40(3):375--401.
 
 \harvarditem{Sandholtz \harvardand\ Gray}{2003}{Sandholtz_Gray:2003}
 Sandholtz, Wayne \harvardand\ Mark~M. Gray. 2003.
@@ -342,12 +345,18 @@ Sandholtz, Wayne \harvardand\ Mark~M. Gray. 2003.
 Sauvant, Karl~P. 2017.
 \newblock ``Beware of FDI Statistics.'' {\em Columbia FDI Perspectives} No.
   215:1--4.
+\newline\harvardurl{\url{https://academiccommons.columbia.edu/catalog/ac:2ngf1vhhnq}}
 
 \harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
 Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
 \newblock ``Foreign Direct Investment in Latin America: The Importance of
   Judicial Strength and Rule of Law.'' {\em International Studies Quarterly}
   56(1):193--202.
+
+\harvarditem{Sweet}{2015}{sweet2015incorporating}
+Sweet, Tracy~M. 2015.
+\newblock ``Incorporating covariates into stochastic blockmodels.'' {\em
+  Journal of Educational and Behavioral Statistics} 40(6):635--664.
 
 \harvarditem{UNCTAD}{2006}{UNCTAD:2006}
 UNCTAD. 2006.
@@ -381,13 +390,6 @@ Veugelers, Reinhilde. 1995.
 Ward, Michael~D \harvardand\ Peter~D Hoff. 2007.
 \newblock ``Persistent patterns of international commerce.'' {\em Journal of
   Peace Research} 44(2):157--175.
-
-\harvarditem[Wilson et~al.]{Wilson, Denny, Bhamidi, Cranmer \harvardand\
-  Desmarais}{2017}{wilson2017stochastic}
-Wilson, James~D, Matthew~J Denny, Shankar Bhamidi, Skyler~J Cranmer
-  \harvardand\ Bruce~A Desmarais. 2017.
-\newblock ``Stochastic weighted graphs: Flexible model specification and
-  simulation.'' {\em Social Networks} 49:37--47.
 
 \harvarditem{Wright \harvardand\ Zhu}{Forthcoming}{Wright_Zhu:2017}
 Wright, Joseph \harvardand\ Boliang Zhu. Forthcoming.
