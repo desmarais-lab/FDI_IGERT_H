@@ -311,11 +311,9 @@ Reciprocity & Transitivity \\
 \end{figure}
 
 
-\section{Results with Tax Havens Removed}\label{taxresults}
+\section{Including Corporate Tax Rates Results}\label{taxresults}
 
-One potential concern with bilateral FDI data is that they include round-tripping FDI, in which domestic firms transfer funds to a foreign country (typically a tax haven) and invest back as ``foreign capital'' to take advantage of preferential policies that their home countries offer to foreign investors \citep{Borga:2016}. Round-tripping FDI in itself could inflate reciprocity. Further, firms may use tax havens to channel funds to other countries \citep{Borga:2017}. If firms from two countries invest in each other through the same tax haven, it creates an artificial triangle closure of investment flows (i.e., transitivity). To address these issues in bilateral FDI data and check the robustness of our findings, we re-estimated the model by excluding tax havens. We used the list of 17 tax havens published by the European Union on December 5, 2017. They are American Samoa, Bahrain, Barbados, Republic of Korea, United Arab Emirates, Grenada, Guam, Macao, Marshall Islands, Mongolia, Namibia, Palau, Panama, Saint Lucia, Samoa, Trinidad and Tobago, Tunisia.\footnote{See Council of the European Union. 2017. ``The EU List of Non-Cooperative Jurisdictions for Tax Purposes.'' Available at \url{http://www.consilium.europa.eu/media/31945/st15429en17.pdf}, accessed June 11, 2018.}
-%All 17 countries originally identified as tax havens by the European Union in 2017 were removed.\footnote{http://www.consilium.europa.eu/media/31945/st15429en17.pdf} 
-Because the data had already been subset based on available covariates, there were only three left to remove. This included  Namibia,  Trinidad and Tobago, and Bahrain. Figure H plots the results on reciprocity and transitivity. We see that the results on reciprocity become a little weaker when tax havens are excluded, but they remain significant in most years. Removing tax havens does not affect transitivity.
+One potential concern with bilateral FDI data is that they include round-tripping FDI, in which domestic firms transfer funds to a foreign country (typically a tax haven) and invest back as ``foreign capital'' to take advantage of preferential policies that their home countries offer to foreign investors \citep{Borga:2016}. Round-tripping FDI in itself could inflate reciprocity. Further, firms may use tax havens to channel funds to other countries \citep{Borga:2017}. If firms from two countries invest in each other through the same tax haven, it creates an artificial triangle closure of investment flows (i.e., transitivity). To address these issues in bilateral FDI data and check the robustness of our findings, we re-estimated the model by including the corporate tax rate for both the sending and receiving country. Figure H plots the results on reciprocity and transitivity. We see that the results on reciprocity become a little weaker when tax rates are included, but they remain significant in most years. Including tax rates does not affect transitivity.
 
 \begin{figure}[!h]
 \centering
@@ -328,6 +326,21 @@ Reciprocity & Transitivity \\
 \end{figure}
 
 
+\section{Excluding the European Union Results}\label{EUresults}
+
+A significant portion of the FDI in the global economy involves the European Union and the majority of the top partners for the EU are other EU countries. This is because of proximity, similar business environments and endowments, and few barriers for EU firms to send FDI to other EU countries. Because of this, there is a high degree of clustering within the EU, and so we run models that drop all EU countries to test if transitivity is still significant for the rest of the global economy. We find that the transitivity statistic remains largely unchanged after dropping EU countries, but that reciprocity is either insignificant or negative for all years except the last two. This supports our point that reciprocity is stronger for Western democracies. However, the positive trend beginning in 2005 indicates that this is changing as FDI  between developing countries increases. 
+
+
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_EU/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_EU/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:tax_havens_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
+\end{figure}
 
 
 \newpage
