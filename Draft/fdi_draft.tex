@@ -24,6 +24,7 @@
 \usepackage{booktabs}
 \usepackage{subcaption}
 \usepackage{courier}
+\usepackage{setspace}
 
 \newcommand\citeapos[1]{\citeauthor{#1}'s (\citeyear{#1})}
 \newcommand{\R}{\texttt{R}} % Write R in typewriter font
@@ -34,7 +35,7 @@
  SES-1637089, CISE-1320219, SMA-1360104, and IGERT Grant DGE-1144860. Any opinions, findings, and conclusions or recommendations are those of the authors and
  do not necessarily reflect those of the sponsor.}}
 \author{John  Schoeneman\thanks{\footnotesize{
-bs5686@psu.edu, PhD Student, Pennsylvania State University.}} \and Boliang Zhu\thanks{\footnotesize{bxz14@psu.edu, Assistant Professor, Department of Political
+jbs5686@psu.edu, PhD Student, Pennsylvania State University.}} \and Boliang Zhu\thanks{\footnotesize{bxz14@psu.edu, Assistant Professor, Department of Political
 Science, Pennsylvania State University. }} \and Bruce A. Desmarais\thanks{\footnotesize{
 bdesmarais@psu.edu, Associate Professor, Department of Political Science, Pennsylvania State University.}}}
 \date{}
@@ -321,50 +322,56 @@ We see in Figure \ref{fig:interpret}, that the dependence effects can result in 
 
 
 
-\pagebreak
-\begin{longtable}[!h]{c@{\hskip -.4cm}c}
-Sum of Edges&
-Sum Sqrt. of Edges\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}   \\
-Number of Non-Zero Edges &
+\begin{landscape}
+\begin{spacing}{.7}
+\begin{longtable}[!h]{c@{\hskip .5cm}c@{\hskip .5cm}c@{\hskip .5cm}c}
+
+
+Sum of Edges& 
+Sum Sqrt. of Edges & 
+Number of Non-Zero Edges&
 Lagged FDI Flow\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf} &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf}   \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}  &
+ \includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf}&
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf} \\ 
+ 
+
 Log-GDP Product &
-Log-Geographic Distance\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDP_Dyad.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   \\
-\pagebreak
+Log-Geographic Distance &
 Defense Treaty &
-Alliance Treaty\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Defense.pdf}   &
+Alliance Treaty \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDP_Dyad.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Defense.pdf}   &
 \includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Alliance.pdf}\\
 
-%
-%\pagebreak
-%
-
+ 
 Polity, in-degree &
-Polity, out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_in.pdf}   &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_out.pdf}   \\
+Polity, out-degree &
 GDP per capita, in-degree &
 GDP per capita,  out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_in.pdf} &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_in.pdf} & 
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_out.pdf}  &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_in.pdf} &
 \includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_out.pdf}   \\
+
+
 Bilateral Investment Treaty &
-Bilateral Trade Volume\\
+Bilateral Trade Volume& 
+Trade Openness, in-degree&
+Trade Openness,  out-degree \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/BIT.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeV.pdf}   \\
-Trade Openness, in-degree &
-Trade Openness,  out-degree\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_in.pdf}  &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeV.pdf} &
+\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_in.pdf} &
 \includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_out.pdf}   \\
 
 \caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity).}
 
 \end{longtable}
+\end{spacing}
+\end{landscape}
+
 
 Regarding covariate determinants, presented in Table \ref{fig:effectPlots1}, the results show that FDI flows between a dyad are strongly and positively correlated with the product of the dyad's GDP, BIT, defense treaty, both destination and origin countries' polity scores and trade openness, and origin country's GDP per capita. On the other hand, FDI flows are negatively associated with geographic distance between a dyad, alliance treaty, and destination country's GDP per capita. In addition, we see that the coefficient values are not stable over time. Several parameters such as geographic distance, defense treaty, as well as origin and destination's polity scores, GDP per capita, and trade openness change significantly after 2008 when the Great Recession began. The magnitude of most of these coefficients decreases since then. One possible explanation is that concerns about global economic uncertainty might predominate in investment decisions at that time so that home and host countries' political and economic characteristics play a less important role.
 

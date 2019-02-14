@@ -313,7 +313,8 @@ Reciprocity & Transitivity \\
 
 \section{Including Corporate Tax Rates Results}\label{taxresults}
 
-One potential concern with bilateral FDI data is that they include round-tripping FDI, in which domestic firms transfer funds to a foreign country (typically a tax haven) and invest back as ``foreign capital'' to take advantage of preferential policies that their home countries offer to foreign investors \citep{Borga:2016}. Round-tripping FDI in itself could inflate reciprocity. Further, firms may use tax havens to channel funds to other countries \citep{Borga:2017}. If firms from two countries invest in each other through the same tax haven, it creates an artificial triangle closure of investment flows (i.e., transitivity). To address these issues in bilateral FDI data and check the robustness of our findings, we re-estimated the model by including the corporate tax rate for both the sending and receiving country. Figure H plots the results on reciprocity and transitivity. We see that the results on reciprocity become a little weaker when tax rates are included, but they remain significant in most years. Including tax rates does not affect transitivity.
+One potential concern with bilateral FDI data is that they include round-tripping FDI, in which domestic firms transfer funds to a foreign country (typically a tax haven) and invest back as ``foreign capital'' to take advantage of preferential policies that their home countries offer to foreign investors \citep{Borga:2016}. Round-tripping FDI in itself could inflate reciprocity. Further, firms may use tax havens to channel funds to other countries \citep{Borga:2017}. If firms from two countries invest in each other through the same tax haven, it creates an artificial triangle closure of investment flows (i.e., transitivity). To address these issues in bilateral FDI data and check the robustness of our findings, we re-estimated the model by including the corporate tax rate for both the sending and receiving country and estimating models that exclude tax havens. The countries dropped as tax havens are Namibia, Trinidad and Tobago, Bahrain, Luxembourg, the United Kingdom, Ireland, and the Netherlands. Figure \ref{fig:tax_rates_netterms} plots the results for reciprocity and transitivity for the models with corporate tax rates. We see that the results on reciprocity become a little weaker when tax rates are included, but they remain significant in most years. Including tax rates does not affect transitivity. 
+Figure \ref{fig:tax_havens_netterms} plots the results for reciprocity and transitivity for the models that exclude tax havens and the results are nearly identical to those with corporate tax rates.
 
 \begin{figure}[!h]
 \centering
@@ -322,7 +323,17 @@ Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_tax/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_tax/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:tax_havens_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
+\caption{\label{fig:tax_rates_netterms} Estimates of Dependence terms for models with corporate tax rates. Bars span 95\% confidence intervals. }
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\begin{tabular}{c@{\hskip 0cm}c}
+Reciprocity & Transitivity \\
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_haven/Mutuality.pdf}    &
+\includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_haven/Transitivity.pdf}
+\end{tabular}
+\caption{\label{fig:tax_havens_netterms} Estimates of Dependence terms for models without tax havens. Bars span 95\% confidence intervals. }
 \end{figure}
 
 
@@ -339,7 +350,7 @@ Reciprocity & Transitivity \\
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_EU/Mutuality.pdf}    &
 \includegraphics[height=.2\textheight, clip=true, trim=0cm 0cm 0cm .2cm]{draft_figures/rl_plots_EU/Transitivity.pdf}
 \end{tabular}
-\caption{\label{fig:tax_havens_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
+\caption{\label{fig:EU_netterms} Estimates of Dependence terms. Bars span 95\% confidence intervals. }
 \end{figure}
 
 
