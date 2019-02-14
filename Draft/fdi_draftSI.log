@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  14 FEB 2019 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  14 FEB 2019 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -937,21 +937,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--316
 
  <./draft_figures/rl_amelia_q25/Mutuality.pdf> <./draft_figures/rl_amelia_q25/T
 ransitivity.pdf>]
-<draft_figures/rl_plots_tax/Mutuality.pdf, id=502, 205.76875pt x 144.54pt>
-File: draft_figures/rl_plots_tax/Mutuality.pdf Graphic file (type pdf)
+<draft_figures/rl_plots_xr/Mutuality.pdf, id=502, 184.69pt x 129.48375pt>
+File: draft_figures/rl_plots_xr/Mutuality.pdf Graphic file (type pdf)
 
-<use draft_figures/rl_plots_tax/Mutuality.pdf>
-Package pdftex.def Info: draft_figures/rl_plots_tax/Mutuality.pdf used on input
- line 323.
-(pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
+<use draft_figures/rl_plots_xr/Mutuality.pdf>
+Package pdftex.def Info: draft_figures/rl_plots_xr/Mutuality.pdf used on input 
+line 323.
+(pdftex.def)             Requested size: 194.09084pt x 130.08401pt.
 
-<draft_figures/rl_plots_tax/Transitivity.pdf, id=504, 205.76875pt x 144.54pt>
-File: draft_figures/rl_plots_tax/Transitivity.pdf Graphic file (type pdf)
+<draft_figures/rl_plots_xr/Transitivity.pdf, id=504, 184.69pt x 129.48375pt>
+File: draft_figures/rl_plots_xr/Transitivity.pdf Graphic file (type pdf)
 
-<use draft_figures/rl_plots_tax/Transitivity.pdf>
-Package pdftex.def Info: draft_figures/rl_plots_tax/Transitivity.pdf used on in
-put line 324.
-(pdftex.def)             Requested size: 192.78526pt x 130.08401pt.
+<use draft_figures/rl_plots_xr/Transitivity.pdf>
+Package pdftex.def Info: draft_figures/rl_plots_xr/Transitivity.pdf used on inp
+ut line 324.
+(pdftex.def)             Requested size: 194.09084pt x 130.08401pt.
 
 <draft_figures/rl_plots_haven/Mutuality.pdf, id=506, 184.69pt x 129.48375pt>
 File: draft_figures/rl_plots_haven/Mutuality.pdf Graphic file (type pdf)
@@ -967,9 +967,9 @@ File: draft_figures/rl_plots_haven/Transitivity.pdf Graphic file (type pdf)
 Package pdftex.def Info: draft_figures/rl_plots_haven/Transitivity.pdf used on 
 input line 334.
 (pdftex.def)             Requested size: 194.09084pt x 130.08401pt.
- [12 <./draft_figures/rl_plots_tax/Mutuality.pdf> <./draft_figures/rl_plots_tax
-/Transitivity.pdf> <./draft_figures/rl_plots_haven/Mutuality.pdf> <./draft_figu
-res/rl_plots_haven/Transitivity.pdf>]
+ [12 <./draft_figures/rl_plots_xr/Mutuality.pdf> <./draft_figures/rl_plots_xr/T
+ransitivity.pdf> <./draft_figures/rl_plots_haven/Mutuality.pdf> <./draft_figure
+s/rl_plots_haven/Transitivity.pdf>]
 <draft_figures/rl_plots_EU/Mutuality.pdf, id=547, 184.69pt x 129.48375pt>
 File: draft_figures/rl_plots_EU/Mutuality.pdf Graphic file (type pdf)
 
@@ -1007,7 +1007,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
 ### bottom level 
 Here is how much of TeX's memory you used:
  9233 strings out of 493089
- 140158 string characters out of 6134841
+ 140149 string characters out of 6134841
  238200 words of memory out of 5000000
  12491 multiletter control sequences out of 15000+600000
  22102 words of font info for 81 fonts, out of 8000000 for 9000
@@ -1033,7 +1033,7 @@ ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draftSI.pdf (15 pages, 591181 bytes).
+Output written on fdi_draftSI.pdf (15 pages, 591115 bytes).
 PDF statistics:
  635 PDF objects out of 1000 (max. 8388607)
  466 compressed objects within 5 object streams
