@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  29 APR 2019 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  29 APR 2019 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,7 +565,7 @@ venue-[]lost-[]to-[]tax-[]loopholes$[][] \OT1/cmr/m/n/10 (Ac-
  []
 
 [11] [12] [13] [14] [15] [16] [17] [18]
-<draft_figures/BICdiff.pdf, id=542, 469.755pt x 289.08pt>
+<draft_figures/BICdiff.pdf, id=541, 469.755pt x 289.08pt>
 File: draft_figures/BICdiff.pdf Graphic file (type pdf)
 
 <use draft_figures/BICdiff.pdf>
@@ -575,14 +575,14 @@ Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 305.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<draft_figures/reciprocityFit.pdf, id=543, 433.62pt x 433.62pt>
+[19] <draft_figures/reciprocityFit.pdf, id=551, 433.62pt x 433.62pt>
 File: draft_figures/reciprocityFit.pdf Graphic file (type pdf)
 
 <use draft_figures/reciprocityFit.pdf>
 Package pdftex.def Info: draft_figures/reciprocityFit.pdf used on input line 31
 3.
 (pdftex.def)             Requested size: 325.2142pt x 325.2142pt.
- [19]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -831,11 +831,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 464.
 Here is how much of TeX's memory you used:
  9636 strings out of 493089
  145935 string characters out of 6134841
- 239787 words of memory out of 5000000
+ 240787 words of memory out of 5000000
  12774 multiletter control sequences out of 15000+600000
  24308 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,47p,2288b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,47p,2452b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -929,7 +929,7 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draft.pdf (38 pages, 453733 bytes).
+Output written on fdi_draft.pdf (38 pages, 453789 bytes).
 PDF statistics:
  985 PDF objects out of 1000 (max. 8388607)
  850 compressed objects within 9 object streams
