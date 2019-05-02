@@ -1,0 +1,1912 @@
+table(preTreatment)
+table(postTreatment)
+preTreatmentStart
+preTreatmentStart>preTreatmentEnd
+tbale(preTreatment,postTreatment)
+table(preTreatment,postTreatment)
+tweetDate[which(postTreatment)]
+tweetDate[which(preTreatment)]
+# store "pre" and "post" flags in studyPhase#
+studyPhase[which(preTreatment)] <- "pre"#
+studyPhase[which(postTreatment)] <- "post"
+names(tweetData)
+# Tabulate pre/post treatment by senator#
+table(tweetData$screenName,tweetData$studyPhase)
+# add study phase to tweet data#
+tweetData$studyPhase <- studyPhase#
+#
+# Tabulate pre/post treatment by senator#
+table(tweetData$screenName,tweetData$studyPhase)
+table(tweetData$screenName)
+# save the data#
+# note, you'll need to change the file path#
+save(list="tweetData",file="/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorTweets.RData")
+# get date part of 'created'#
+tweetDate <- substr(tweetData$created,1,10)#
+# convert to a date#
+tweetDate <- as.Date(tweetDate)#
+#
+# define pre-treatment window#
+preTreatmentStart <- as.Date("2016-12-20")#
+preTreatmentEnd <- as.Date("2017-01-19")#
+#
+# define post-treatment window#
+postTreatmentStart <- as.Date("2017-01-20")#
+postTreatmentEnd <- as.Date("2017-02-19")#
+#
+# Create a variable full of NAs#
+# This assures that tweets outside of the study window are discarded#
+studyPhase <- rep(NA,nrow(tweetData))#
+#
+# flag pre treatement tweets#
+preTreatment <- tweetDate >= preTreatmentStart & tweetDate <= preTreatmentEnd#
+#
+# flag post treatement tweets#
+postTreatment <- tweetDate >= postTreatmentStart & tweetDate <= postTreatmentEnd#
+#
+# store "pre" and "post" flags in studyPhase#
+studyPhase[which(preTreatment)] <- "pre"#
+studyPhase[which(postTreatment)] <- "post"#
+#
+# add study phase to tweet data#
+tweetData$studyPhase <- studyPhase#
+#
+# Tabulate pre/post treatment by senator#
+# note that tweets outside the study window are not counted#
+table(tweetData$screenName,tweetData$studyPhase)#
+#
+# save the data#
+# note, you'll need to change the file path#
+save(list="tweetData",file="/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorTweets.RData")
+# Let's pretend the treatment was administered on 11/8/16, and we want to compare the month before to the month after#
+# get date part of 'created'#
+tweetDate <- substr(tweetData$created,1,10)#
+# convert to a date#
+tweetDate <- as.Date(tweetDate)#
+#
+# define pre-treatment window#
+preTreatmentStart <- as.Date("2016-10-08")#
+preTreatmentEnd <- as.Date("2016-11-08")#
+#
+# define post-treatment window#
+postTreatmentStart <- as.Date("2016-11-08")#
+postTreatmentEnd <- as.Date("2016-12-09")#
+#
+# Create a variable full of NAs#
+# This assures that tweets outside of the study window are discarded#
+studyPhase <- rep(NA,nrow(tweetData))#
+#
+# flag pre treatement tweets#
+preTreatment <- tweetDate >= preTreatmentStart & tweetDate <= preTreatmentEnd#
+#
+# flag post treatement tweets#
+postTreatment <- tweetDate >= postTreatmentStart & tweetDate <= postTreatmentEnd#
+#
+# store "pre" and "post" flags in studyPhase#
+studyPhase[which(preTreatment)] <- "pre"#
+studyPhase[which(postTreatment)] <- "post"#
+#
+# add study phase to tweet data#
+tweetData$studyPhase <- studyPhase#
+#
+# Tabulate pre/post treatment by senator#
+# note that tweets outside the study window are not counted#
+table(tweetData$screenName,tweetData$studyPhase)#
+#
+# save the data#
+# note, you'll need to change the file path#
+save(list="tweetData",file="/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorTweets.RData")
+# Let's pretend the treatment was administered on 11/8/16, and we want to compare the month before to the month after#
+# get date part of 'created'#
+tweetDate <- substr(tweetData$created,1,10)#
+# convert to a date#
+tweetDate <- as.Date(tweetDate)#
+#
+# define pre-treatment window#
+preTreatmentStart <- as.Date("2016-12-20")#
+preTreatmentEnd <- as.Date("2017-01-19")#
+#
+# define post-treatment window#
+postTreatmentStart <- as.Date("2017-01-20")#
+postTreatmentEnd <- as.Date("2017-02-19")#
+#
+# Create a variable full of NAs#
+# This assures that tweets outside of the study window are discarded#
+studyPhase <- rep(NA,nrow(tweetData))#
+#
+# flag pre treatement tweets#
+preTreatment <- tweetDate >= preTreatmentStart & tweetDate <= preTreatmentEnd#
+#
+# flag post treatement tweets#
+postTreatment <- tweetDate >= postTreatmentStart & tweetDate <= postTreatmentEnd#
+#
+# store "pre" and "post" flags in studyPhase#
+studyPhase[which(preTreatment)] <- "pre"#
+studyPhase[which(postTreatment)] <- "post"#
+#
+# add study phase to tweet data#
+tweetData$studyPhase <- studyPhase#
+#
+# Tabulate pre/post treatment by senator#
+# note that tweets outside the study window are not counted#
+table(tweetData$screenName,tweetData$studyPhase)#
+#
+# save the data#
+# note, you'll need to change the file path#
+save(list="tweetData",file="/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorTweets.RData")
+table(tweetData$screenName)
+300+300+300+305+250+305+25+80+75+80+240+500+425+2035+425+425
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+names(senatorData)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+names(senatorData)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)
+senatorData
+# Required libraries for the scraping#
+# install.packages("twitteR")#
+library(twitteR)#
+# install.packages("ROAuth")#
+library(ROAuth)#
+# install.packages("httr")#
+library(httr)#
+#
+# Codes required to scrape twitter from R#
+# Must have a twitter account to do this#
+# Need to create a generic "application" on twitter#
+# do so at https://apps.twitter.com#
+api_key <- 	"KEuTxGdTRCzO4K2xAYiqvmXnZ"#
+api_secret <- "sQVnHGrk9ueITxGPxKhBnDhCiY8SNb3hea8rZPFPfLT93Poq66"#
+access_token <- "628967454-RPTNraIhPiR9i7Zh2QkBTe2os4LNswcEiDxgfpf8"#
+access_token_secret <- "E6DL60fLMOcNqZqNlrMO5txuF1aGxF9PvuNBJbah9DyNj"#
+#
+# open the data pipleline from twitter#
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)#
+# hit 1 when queried about setting up local file#
+#
+# Senators Toomey and Casey in a CSV file#
+senatorData <- read.csv("/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorData.csv",stringsAsFactors=F)#
+#
+# Extract just the handles#
+handles <- senatorData$handle#
+#
+# Create an empty object in which to store the twitter data#
+tweetData <- NULL#
+#
+# Loop over handles to scrape tweets#
+# first step is to figure out the length of the loop#
+loopN <- length(handles)#
+# take a look#
+loopN#
+#
+# Note 1:N creates a vector containing a sequence of integers (whole numbers) from 1 through N.#
+# Create loop indexes#
+loopIndexes <- 1:loopN#
+# take a look#
+loopIndexes#
+#
+# Loop over all of the handles via the loop indexes#
+# loop operations go within the curly braces#
+for(i in loopIndexes){#
+	# extract the ith handle#
+	handlei <- handles[i]#
+	# store scraper results for the ith handle, up to 3,200 in the month of February#
+	tweetDatai <- userTimeline(handlei,n=3200)#
+    # Convert result to a dataset#
+    tweetDatai <- do.call(rbind, lapply(tweetDatai, function(x) x$toDataFrame()))#
+    # add the ith dataset to the existing data#
+    tweetData <- rbind(tweetData,tweetDatai)#
+}#
+#
+# Let's pretend the treatment was administered on 11/8/16, and we want to compare the month before to the month after#
+# get date part of 'created'#
+tweetDate <- substr(tweetData$created,1,10)#
+# convert to a date#
+tweetDate <- as.Date(tweetDate)#
+#
+# define pre-treatment window#
+preTreatmentStart <- as.Date("2016-12-20")#
+preTreatmentEnd <- as.Date("2017-01-19")#
+#
+# define post-treatment window#
+postTreatmentStart <- as.Date("2017-01-20")#
+postTreatmentEnd <- as.Date("2017-02-19")#
+#
+# Create a variable full of NAs#
+# This assures that tweets outside of the study window are discarded#
+studyPhase <- rep(NA,nrow(tweetData))#
+#
+# flag pre treatement tweets#
+preTreatment <- tweetDate >= preTreatmentStart & tweetDate <= preTreatmentEnd#
+#
+# flag post treatement tweets#
+postTreatment <- tweetDate >= postTreatmentStart & tweetDate <= postTreatmentEnd#
+#
+# store "pre" and "post" flags in studyPhase#
+studyPhase[which(preTreatment)] <- "pre"#
+studyPhase[which(postTreatment)] <- "post"#
+#
+# add study phase to tweet data#
+tweetData$studyPhase <- studyPhase#
+#
+# Tabulate pre/post treatment by senator#
+# note that tweets outside the study window are not counted#
+table(tweetData$screenName,tweetData$studyPhase)#
+#
+# save the data#
+# note, you'll need to change the file path#
+save(list="tweetData",file="/Users/bbd5087/Box Sync/Box/Teaching/Next/soda308/twitterScraping/senatorTweets.RData")
+library(amen)
+ciation("amen")
+citation("amen")
+7*20*12
+7*20*12*3
+load("/Users/bbd5087/Box Sync/Box/Research/FDI_IGERT_H/Code/fdi_models/model_12_w.rda")
+rm(list=ls())
+load("/Users/bbd5087/Box Sync/Box/Research/FDI_IGERT_H/Code/fdi_models/model_12_w.rda")
+library(ergm)
+ls()
+mcmc.diagnostics("fit.01.2")
+fit.01.2
+mcmc.diagnostics(fit.01.2)
+load("/Users/bbd5087/Box Sync/Box/Research/FDI_IGERT_H/Code/fdi_models/model_04_w.rda")
+ls()
+mcmc.diagnostics(fit.01.2)
+names(mcmc.diagnostics(fit.01.2))
+names(fit.01.2)
+summary(fit.01.2)
+devtools::install_github("https://github.com/leifeld/btergm")
+devtools::install_github("leifeld/btergm")
+library(btergm)
+?gofmethods
+## Not run: #
+# First, create data and fit a TERGM...#
+networks <- list()#
+for(i in 1:10){            # create 10 random networks with 10 actors#
+  mat <- matrix(rbinom(100, 1, .25), nrow = 10, ncol = 10)#
+  diag(mat) <- 0           # loops are excluded#
+  nw <- network(mat)       # create network object#
+  networks[[i]] <- nw      # add network to the list#
+}#
+#
+covariates <- list()#
+for (i in 1:10) {          # create 10 matrices as covariate#
+  mat <- matrix(rnorm(100), nrow = 10, ncol = 10)#
+  covariates[[i]] <- mat   # add matrix to the list#
+}#
+#
+fit <- btergm(networks ~ edges + istar(2) +#
+    edgecov(covariates), R = 100)#
+#
+# Then assess the goodness of fit:#
+g <- gof(fit, statistics = c(triad.directed, esp, maxmod.modularity, #
+    rocpr), nsim = 50)#
+g#
+plot(g)  # see ?"gof-plot" for details
+?gof-plot
+?"gof-plot"
+?gofstatistics
+?"gof-plot"
+?gof
+g <- gof(fit, statistics = c(triad.directed, esp, maxmod.modularity, #
++     rocpr), nsim = 50,joint=T)
+g <- gof(fit, statistics = c(triad.directed, esp, maxmod.modularity, rocpr), nsim = 50,joint=T)
+g
+?ergm.terms
+rnorm(5)%*%t(rnorm(5))
+load("/Users/bbd5087/Downloads/match-all.RData")
+rm(list=ls())
+load("/Users/bbd5087/Downloads/match-all.RData")
+ls()
+names(x)
+100/6
+install.packages("GERGM")
+library(GERGM)
+library(GERGM)#
+set.seed(12345)#
+data("lending_2005")#
+data("covariate_data_2005")#
+data("net_exports_2005")
+lending_2005
+library(foreign)#
+library(sna)#
+#
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}#
+#
+maoz.dat <- data.frame(maoz.dat)#
+names(maoz.dat) <- maoz.vars#
+#
+maoz.dat <- na.omit(maoz.dat)#
+#
+maozrep <- glm(dichmid20~midspline2+minreg302+caprat301+distance+atopsecorr+igosecorr+tradesecorr, data=maoz.dat,family=binomial)#
+#
+# Create triadic changestats#
+#
+tchange <- numeric(nrow(maoz.dat))#
+tschange <- numeric(nrow(maoz.dat))#
+#
+for(i in 1:nrow(maoz.dat)){#
+	dat1 <- subset(maoz.dat,maoz.dat$year==maoz.dat$year[i])#
+	dat1mid <- subset(dat1,dat1$dichmid20==1)#
+	datc1 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$statea[i])+as.numeric(dat1mid$stateb==maoz.dat$statea[i]) > 0)#
+	datc2 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$stateb[i])+as.numeric(dat1mid$stateb==maoz.dat$stateb[i]) > 0)#
+	us1 <- unique(c(datc1$statea,datc1$stateb))#
+	if(is.element(maoz.dat$statea[i],us1)) us1 <- us1[-which(us1==maoz.dat$statea[i])]#
+	if(is.element(maoz.dat$stateb[i],us1)) us1 <- us1[-which(us1==maoz.dat$stateb[i])]#
+	us2 <- unique(c(datc2$statea,datc2$stateb))#
+	if(is.element(maoz.dat$stateb[i],us2)) us2 <- us2[-which(us2==maoz.dat$stateb[i])]#
+	if(is.element(maoz.dat$statea[i],us2)) us2 <- us2[-which(us2==maoz.dat$statea[i])]#
+	if(min(c(length(us1),length(us2)))>0){#
+		tchange[i] <- length(intersect(us1,us2))#
+		tschange[i] <- length(us1)+length(us2)#
+	}#
+}#
+#
+### Make Lagged MID#
+#
+# Code in maoz.dat#
+#
+mdcode <- paste(maoz.dat$year,"#",maoz.dat$statea,"#",maoz.dat$stateb,sep="")#
+#
+# mids data#
+#
+mids <- subset(maoz.dat,maoz.dat$dichmid20==1)#
+#
+lmidsc <- paste(mids$year+1,"#",mids$statea,"#",mids$stateb,sep="")#
+#
+lmidsc2 <- paste(mids$year+1,"#",mids$stateb,"#",mids$statea,sep="")#
+#
+mm1 <- match(mdcode,lmidsc)#
+#
+mm2 <- match(mdcode,lmidsc2) #
+#
+lmid <- 1-as.numeric(is.na(mm1)+is.na(mm2) ==2)#
+#
+whichab <- function(x,y){#
+#
+return(which(y==x))#
+#
+}#
+##### Bootstrap year-by-year, with and without lagged conflict #
+#
+maoz.dat <- cbind(maoz.dat,tchange,tschange,lmid)#
+#
+m <- 1000#
+set.seed(10)#
+uyr <- unique(maoz.dat$year)#
+coef.triad <- NULL#
+coef.triad.l <- NULL#
+for(i in 1:1000){#
+	yrsi <- sample(uyr,length(uyr),rep=T)#
+	yrsil <- as.list(yrsi)#
+	inds <- unlist(lapply(yrsil,whichab,y=maoz.dat$year))#
+	datai <- maoz.dat[inds,]#
+	mod.triad <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange, data=datai,family=binomial)#
+	mod.triadl <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange+lmid, data=datai,family=binomial)#
+	coef.triad <- rbind(coef.triad,rbind(mod.triad$coefficients))#
+	coef.triad.l <- rbind(coef.triad.l,rbind(mod.triadl$coefficients))#
+}#
+#
+dput(list(coef=coef.triad,coefl = coef.triad.l),"/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/bootergmDep.txt")
+names(maoz)
+library(foreign)#
+library(sna)#
+#
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse","atopsecorr")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}#
+#
+maoz.dat <- data.frame(maoz.dat)#
+names(maoz.dat) <- maoz.vars#
+#
+maoz.dat <- na.omit(maoz.dat)#
+#
+maozrep <- glm(dichmid20~midspline2+minreg302+caprat301+distance+atopsecorr+igosecorr+tradesecorr, data=maoz.dat,family=binomial)#
+#
+# Create triadic changestats#
+#
+tchange <- numeric(nrow(maoz.dat))#
+tschange <- numeric(nrow(maoz.dat))#
+#
+for(i in 1:nrow(maoz.dat)){#
+	dat1 <- subset(maoz.dat,maoz.dat$year==maoz.dat$year[i])#
+	dat1mid <- subset(dat1,dat1$dichmid20==1)#
+	datc1 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$statea[i])+as.numeric(dat1mid$stateb==maoz.dat$statea[i]) > 0)#
+	datc2 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$stateb[i])+as.numeric(dat1mid$stateb==maoz.dat$stateb[i]) > 0)#
+	us1 <- unique(c(datc1$statea,datc1$stateb))#
+	if(is.element(maoz.dat$statea[i],us1)) us1 <- us1[-which(us1==maoz.dat$statea[i])]#
+	if(is.element(maoz.dat$stateb[i],us1)) us1 <- us1[-which(us1==maoz.dat$stateb[i])]#
+	us2 <- unique(c(datc2$statea,datc2$stateb))#
+	if(is.element(maoz.dat$stateb[i],us2)) us2 <- us2[-which(us2==maoz.dat$stateb[i])]#
+	if(is.element(maoz.dat$statea[i],us2)) us2 <- us2[-which(us2==maoz.dat$statea[i])]#
+	if(min(c(length(us1),length(us2)))>0){#
+		tchange[i] <- length(intersect(us1,us2))#
+		tschange[i] <- length(us1)+length(us2)#
+	}#
+}#
+#
+### Make Lagged MID#
+#
+# Code in maoz.dat#
+#
+mdcode <- paste(maoz.dat$year,"#",maoz.dat$statea,"#",maoz.dat$stateb,sep="")#
+#
+# mids data#
+#
+mids <- subset(maoz.dat,maoz.dat$dichmid20==1)#
+#
+lmidsc <- paste(mids$year+1,"#",mids$statea,"#",mids$stateb,sep="")#
+#
+lmidsc2 <- paste(mids$year+1,"#",mids$stateb,"#",mids$statea,sep="")#
+#
+mm1 <- match(mdcode,lmidsc)#
+#
+mm2 <- match(mdcode,lmidsc2) #
+#
+lmid <- 1-as.numeric(is.na(mm1)+is.na(mm2) ==2)#
+#
+whichab <- function(x,y){#
+#
+return(which(y==x))#
+#
+}#
+##### Bootstrap year-by-year, with and without lagged conflict #
+#
+maoz.dat <- cbind(maoz.dat,tchange,tschange,lmid)#
+#
+m <- 1000#
+set.seed(10)#
+uyr <- unique(maoz.dat$year)#
+coef.triad <- NULL#
+coef.triad.l <- NULL#
+for(i in 1:1000){#
+	yrsi <- sample(uyr,length(uyr),rep=T)#
+	yrsil <- as.list(yrsi)#
+	inds <- unlist(lapply(yrsil,whichab,y=maoz.dat$year))#
+	datai <- maoz.dat[inds,]#
+	mod.triad <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange, data=datai,family=binomial)#
+	mod.triadl <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange+lmid, data=datai,family=binomial)#
+	coef.triad <- rbind(coef.triad,rbind(mod.triad$coefficients))#
+	coef.triad.l <- rbind(coef.triad.l,rbind(mod.triadl$coefficients))#
+}#
+#
+dput(list(coef=coef.triad,coefl = coef.triad.l),"/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/bootergmDep.txt")
+library(foreign)#
+library(sna)#
+#
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse","atopsecorr","igosecorr")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}#
+#
+maoz.dat <- data.frame(maoz.dat)#
+names(maoz.dat) <- maoz.vars#
+#
+maoz.dat <- na.omit(maoz.dat)#
+#
+maozrep <- glm(dichmid20~midspline2+minreg302+caprat301+distance+atopsecorr+igosecorr+tradesecorr, data=maoz.dat,family=binomial)#
+#
+# Create triadic changestats#
+#
+tchange <- numeric(nrow(maoz.dat))#
+tschange <- numeric(nrow(maoz.dat))#
+#
+for(i in 1:nrow(maoz.dat)){#
+	dat1 <- subset(maoz.dat,maoz.dat$year==maoz.dat$year[i])#
+	dat1mid <- subset(dat1,dat1$dichmid20==1)#
+	datc1 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$statea[i])+as.numeric(dat1mid$stateb==maoz.dat$statea[i]) > 0)#
+	datc2 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$stateb[i])+as.numeric(dat1mid$stateb==maoz.dat$stateb[i]) > 0)#
+	us1 <- unique(c(datc1$statea,datc1$stateb))#
+	if(is.element(maoz.dat$statea[i],us1)) us1 <- us1[-which(us1==maoz.dat$statea[i])]#
+	if(is.element(maoz.dat$stateb[i],us1)) us1 <- us1[-which(us1==maoz.dat$stateb[i])]#
+	us2 <- unique(c(datc2$statea,datc2$stateb))#
+	if(is.element(maoz.dat$stateb[i],us2)) us2 <- us2[-which(us2==maoz.dat$stateb[i])]#
+	if(is.element(maoz.dat$statea[i],us2)) us2 <- us2[-which(us2==maoz.dat$statea[i])]#
+	if(min(c(length(us1),length(us2)))>0){#
+		tchange[i] <- length(intersect(us1,us2))#
+		tschange[i] <- length(us1)+length(us2)#
+	}#
+}#
+#
+### Make Lagged MID#
+#
+# Code in maoz.dat#
+#
+mdcode <- paste(maoz.dat$year,"#",maoz.dat$statea,"#",maoz.dat$stateb,sep="")#
+#
+# mids data#
+#
+mids <- subset(maoz.dat,maoz.dat$dichmid20==1)#
+#
+lmidsc <- paste(mids$year+1,"#",mids$statea,"#",mids$stateb,sep="")#
+#
+lmidsc2 <- paste(mids$year+1,"#",mids$stateb,"#",mids$statea,sep="")#
+#
+mm1 <- match(mdcode,lmidsc)#
+#
+mm2 <- match(mdcode,lmidsc2) #
+#
+lmid <- 1-as.numeric(is.na(mm1)+is.na(mm2) ==2)#
+#
+whichab <- function(x,y){#
+#
+return(which(y==x))#
+#
+}#
+##### Bootstrap year-by-year, with and without lagged conflict #
+#
+maoz.dat <- cbind(maoz.dat,tchange,tschange,lmid)#
+#
+m <- 1000#
+set.seed(10)#
+uyr <- unique(maoz.dat$year)#
+coef.triad <- NULL#
+coef.triad.l <- NULL#
+for(i in 1:1000){#
+	yrsi <- sample(uyr,length(uyr),rep=T)#
+	yrsil <- as.list(yrsi)#
+	inds <- unlist(lapply(yrsil,whichab,y=maoz.dat$year))#
+	datai <- maoz.dat[inds,]#
+	mod.triad <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange, data=datai,family=binomial)#
+	mod.triadl <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange+lmid, data=datai,family=binomial)#
+	coef.triad <- rbind(coef.triad,rbind(mod.triad$coefficients))#
+	coef.triad.l <- rbind(coef.triad.l,rbind(mod.triadl$coefficients))#
+}#
+#
+dput(list(coef=coef.triad,coefl = coef.triad.l),"/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/bootergmDep.txt")
+library(foreign)#
+library(sna)#
+#
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse","atopsecorr","igosecorr","tradescorr")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}#
+#
+maoz.dat <- data.frame(maoz.dat)#
+names(maoz.dat) <- maoz.vars#
+#
+maoz.dat <- na.omit(maoz.dat)#
+#
+maozrep <- glm(dichmid20~midspline2+minreg302+caprat301+distance+atopsecorr+igosecorr+tradesecorr, data=maoz.dat,family=binomial)#
+#
+# Create triadic changestats#
+#
+tchange <- numeric(nrow(maoz.dat))#
+tschange <- numeric(nrow(maoz.dat))#
+#
+for(i in 1:nrow(maoz.dat)){#
+	dat1 <- subset(maoz.dat,maoz.dat$year==maoz.dat$year[i])#
+	dat1mid <- subset(dat1,dat1$dichmid20==1)#
+	datc1 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$statea[i])+as.numeric(dat1mid$stateb==maoz.dat$statea[i]) > 0)#
+	datc2 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$stateb[i])+as.numeric(dat1mid$stateb==maoz.dat$stateb[i]) > 0)#
+	us1 <- unique(c(datc1$statea,datc1$stateb))#
+	if(is.element(maoz.dat$statea[i],us1)) us1 <- us1[-which(us1==maoz.dat$statea[i])]#
+	if(is.element(maoz.dat$stateb[i],us1)) us1 <- us1[-which(us1==maoz.dat$stateb[i])]#
+	us2 <- unique(c(datc2$statea,datc2$stateb))#
+	if(is.element(maoz.dat$stateb[i],us2)) us2 <- us2[-which(us2==maoz.dat$stateb[i])]#
+	if(is.element(maoz.dat$statea[i],us2)) us2 <- us2[-which(us2==maoz.dat$statea[i])]#
+	if(min(c(length(us1),length(us2)))>0){#
+		tchange[i] <- length(intersect(us1,us2))#
+		tschange[i] <- length(us1)+length(us2)#
+	}#
+}#
+#
+### Make Lagged MID#
+#
+# Code in maoz.dat#
+#
+mdcode <- paste(maoz.dat$year,"#",maoz.dat$statea,"#",maoz.dat$stateb,sep="")#
+#
+# mids data#
+#
+mids <- subset(maoz.dat,maoz.dat$dichmid20==1)#
+#
+lmidsc <- paste(mids$year+1,"#",mids$statea,"#",mids$stateb,sep="")#
+#
+lmidsc2 <- paste(mids$year+1,"#",mids$stateb,"#",mids$statea,sep="")#
+#
+mm1 <- match(mdcode,lmidsc)#
+#
+mm2 <- match(mdcode,lmidsc2) #
+#
+lmid <- 1-as.numeric(is.na(mm1)+is.na(mm2) ==2)#
+#
+whichab <- function(x,y){#
+#
+return(which(y==x))#
+#
+}#
+##### Bootstrap year-by-year, with and without lagged conflict #
+#
+maoz.dat <- cbind(maoz.dat,tchange,tschange,lmid)#
+#
+m <- 1000#
+set.seed(10)#
+uyr <- unique(maoz.dat$year)#
+coef.triad <- NULL#
+coef.triad.l <- NULL#
+for(i in 1:1000){#
+	yrsi <- sample(uyr,length(uyr),rep=T)#
+	yrsil <- as.list(yrsi)#
+	inds <- unlist(lapply(yrsil,whichab,y=maoz.dat$year))#
+	datai <- maoz.dat[inds,]#
+	mod.triad <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange, data=datai,family=binomial)#
+	mod.triadl <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange+lmid, data=datai,family=binomial)#
+	coef.triad <- rbind(coef.triad,rbind(mod.triad$coefficients))#
+	coef.triad.l <- rbind(coef.triad.l,rbind(mod.triadl$coefficients))#
+}#
+#
+dput(list(coef=coef.triad,coefl = coef.triad.l),"/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/bootergmDep.txt")
+ncol(maoz.dat)
+length(maoz.vars)
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse","atopsecorr","igosecorr","tradescorr")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}
+length(maoz.vars)
+ncol(maoz.dat)
+library(foreign)#
+library(sna)#
+#
+maoz <- read.dta("/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/jcr2006/jcr2006replication.dta")#
+maoz.vars <- c("year","statea","stateb","newmid20","dichmid20","midspline2","midspline3","minreg302","caprat301","distance","integcorrse","atopsecorr","igosecorr","tradesecorr")#
+maoz.dat <- NULL#
+for(i in maoz.vars){#
+	maoz.dat <- cbind(maoz.dat,maoz[,which(names(maoz)==i)])#
+}#
+#
+maoz.dat <- data.frame(maoz.dat)#
+names(maoz.dat) <- maoz.vars#
+#
+maoz.dat <- na.omit(maoz.dat)#
+#
+maozrep <- glm(dichmid20~midspline2+minreg302+caprat301+distance+atopsecorr+igosecorr+tradesecorr, data=maoz.dat,family=binomial)#
+#
+# Create triadic changestats#
+#
+tchange <- numeric(nrow(maoz.dat))#
+tschange <- numeric(nrow(maoz.dat))#
+#
+for(i in 1:nrow(maoz.dat)){#
+	dat1 <- subset(maoz.dat,maoz.dat$year==maoz.dat$year[i])#
+	dat1mid <- subset(dat1,dat1$dichmid20==1)#
+	datc1 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$statea[i])+as.numeric(dat1mid$stateb==maoz.dat$statea[i]) > 0)#
+	datc2 <- subset(dat1mid,as.numeric(dat1mid$statea==maoz.dat$stateb[i])+as.numeric(dat1mid$stateb==maoz.dat$stateb[i]) > 0)#
+	us1 <- unique(c(datc1$statea,datc1$stateb))#
+	if(is.element(maoz.dat$statea[i],us1)) us1 <- us1[-which(us1==maoz.dat$statea[i])]#
+	if(is.element(maoz.dat$stateb[i],us1)) us1 <- us1[-which(us1==maoz.dat$stateb[i])]#
+	us2 <- unique(c(datc2$statea,datc2$stateb))#
+	if(is.element(maoz.dat$stateb[i],us2)) us2 <- us2[-which(us2==maoz.dat$stateb[i])]#
+	if(is.element(maoz.dat$statea[i],us2)) us2 <- us2[-which(us2==maoz.dat$statea[i])]#
+	if(min(c(length(us1),length(us2)))>0){#
+		tchange[i] <- length(intersect(us1,us2))#
+		tschange[i] <- length(us1)+length(us2)#
+	}#
+}#
+#
+### Make Lagged MID#
+#
+# Code in maoz.dat#
+#
+mdcode <- paste(maoz.dat$year,"#",maoz.dat$statea,"#",maoz.dat$stateb,sep="")#
+#
+# mids data#
+#
+mids <- subset(maoz.dat,maoz.dat$dichmid20==1)#
+#
+lmidsc <- paste(mids$year+1,"#",mids$statea,"#",mids$stateb,sep="")#
+#
+lmidsc2 <- paste(mids$year+1,"#",mids$stateb,"#",mids$statea,sep="")#
+#
+mm1 <- match(mdcode,lmidsc)#
+#
+mm2 <- match(mdcode,lmidsc2) #
+#
+lmid <- 1-as.numeric(is.na(mm1)+is.na(mm2) ==2)#
+#
+whichab <- function(x,y){#
+#
+return(which(y==x))#
+#
+}#
+##### Bootstrap year-by-year, with and without lagged conflict #
+#
+maoz.dat <- cbind(maoz.dat,tchange,tschange,lmid)#
+#
+m <- 1000#
+set.seed(10)#
+uyr <- unique(maoz.dat$year)#
+coef.triad <- NULL#
+coef.triad.l <- NULL#
+for(i in 1:1000){#
+	yrsi <- sample(uyr,length(uyr),rep=T)#
+	yrsil <- as.list(yrsi)#
+	inds <- unlist(lapply(yrsil,whichab,y=maoz.dat$year))#
+	datai <- maoz.dat[inds,]#
+	mod.triad <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange, data=datai,family=binomial)#
+	mod.triadl <- glm(dichmid20~midspline3+minreg302+caprat301+distance+integcorrse+tchange+tschange+lmid, data=datai,family=binomial)#
+	coef.triad <- rbind(coef.triad,rbind(mod.triad$coefficients))#
+	coef.triad.l <- rbind(coef.triad.l,rbind(mod.triadl$coefficients))#
+}#
+#
+dput(list(coef=coef.triad,coefl = coef.triad.l),"/Users/bbd5087/Dropbox/professional/Research/Published/ERGM/Data/bootergmDep.txt")
+?optim
+loglik_ergm
+#========section I============#
+#Initialize the sample network provided in the question#
+sample_net <- matrix(#
+  c(0,1,1,1,1,#
+    1,0,1,0,0,#
+    1,0,0,0,0,#
+    1,0,0,0,0,#
+    0,0,0,0,0),#
+  nrow = 5,#
+  ncol = 5,#
+  byrow = TRUE#
+)#
+edge <- function(net_mat){#
+  # Compute how many edges are in the network.#
+  ##
+  # Args:#
+  #   net_mat: the network to compute its edge number.#
+  # Returns:#
+  #   the number of edges in the network net_mat.#
+  edge_value = sum(net_mat)#
+  return(edge_value)#
+}#
+#test#
+edge(sample_net)#
+dyad <- function(net_mat){#
+  # Compute how many mutual dyads are in the network.#
+  ##
+  # Args:#
+  #   net_mat: the network to compute its mutual dyads number.#
+  # Returns:#
+  #   the number of mutual dyads in the network net_mat#
+  n <- nrow(net_mat)#
+  dyad_value = 0#
+  for (i in 2:n){#
+    for (j in 1:i){#
+      if (net_mat[i,j] == 1 && net_mat[i,j] == net_mat[j,i]){#
+        dyad_value = dyad_value + 1#
+      }#
+    }#
+  }#
+  return(dyad_value)#
+}#
+#test#
+dyad(sample_net)#
+net_denom_bf <- function(par, net_mat){#
+  # The function that computes the denominator part of the likelihood function#
+  # This is a brute force way to compute, very inefficient.#
+  # It compute all the possible networks.#
+  # When the number of nodes become large, it takes really long time#
+  # Args:#
+  #   par: theta_1 and theta_2, coefficients for edge and dyad, respectively#
+  #   net_mat: the input network.#
+  # Return:#
+  #   return the denominater in the likelihood function. Needs to use log() for log-likelihood#
+  nodes <- nrow(net_mat)#
+  total <- 0#
+  for (i in 0:2^(nodes * nodes)){#
+    #sim_mat will iterate through all possible networks#
+    sim_mat = matrix(as.integer(intToBits(i)), nodes, nodes)#
+    if(sum(diag(sim_mat)) == 0){#
+      total = total + exp(edge(sim_mat) * par[1] + dyad(sim_mat) * par[2])#
+    }#
+  }#
+  return(total)#
+}#
+loglik_ergm <- function(par, net_mat){#
+  # The function to compute log-likelihood of ERGM#
+  # Args:#
+  #   par: theta_1 and theta_2, coefficients for edge and dyad, respectively#
+  #   net_mat: the input network#
+  # Return:#
+  #   The negative value of log-likelihood for ERGM#
+  # -(par[1] * edge(net_mat) + par[2] * dyad(net_mat) - log(net_denom_bf(par, net_mat)))#
+  -(par[1] * edge(net_mat) + par[2] * dyad(net_mat) + log(net_denom_bf(par, net_mat)))#
+}
+loglik_ergm
+loglik_ergm(c(0,0),sample_net)
+warnings()
+intToBits(10)
+intToBits(1000)
+intToBits(10000)
+intToBits(0)
+net_denom_bf <- function(par, net_mat){#
+  # The function that computes the denominator part of the likelihood function#
+  # This is a brute force way to compute, very inefficient.#
+  # It compute all the possible networks.#
+  # When the number of nodes become large, it takes really long time#
+  # Args:#
+  #   par: theta_1 and theta_2, coefficients for edge and dyad, respectively#
+  #   net_mat: the input network.#
+  # Return:#
+  #   return the denominater in the likelihood function. Needs to use log() for log-likelihood#
+  nodes <- nrow(net_mat)#
+  total <- 0#
+  for (i in 0:2^(nodes * nodes)){#
+    #sim_mat will iterate through all possible networks#
+    sim_mat = matrix(as.integer(intToBits(i)), nodes, nodes)#
+    if(sum(diag(sim_mat)) == 0){#
+      total = total + exp(edge(sim_mat) * par[1] + dyad(sim_mat) * par[2])#
+    }#
+    if(i/100==round(i/100)) print(i)#
+  }#
+  return(total)#
+}
+loglik_ergm(c(0,0),sample_net)
+2^25
+2^25/1000000
+2^25/10000000
+net_denom_bf <- function(par, net_mat){#
+  # The function that computes the denominator part of the likelihood function#
+  # This is a brute force way to compute, very inefficient.#
+  # It compute all the possible networks.#
+  # When the number of nodes become large, it takes really long time#
+  # Args:#
+  #   par: theta_1 and theta_2, coefficients for edge and dyad, respectively#
+  #   net_mat: the input network.#
+  # Return:#
+  #   return the denominater in the likelihood function. Needs to use log() for log-likelihood#
+  nodes <- nrow(net_mat)#
+  total <- 0#
+  for (i in 0:2^(nodes * nodes)){#
+    #sim_mat will iterate through all possible networks#
+    sim_mat = matrix(as.integer(intToBits(i)), nodes, nodes)#
+    if(sum(diag(sim_mat)) == 0){#
+      total = total + exp(edge(sim_mat) * par[1] + dyad(sim_mat) * par[2])#
+    }#
+    if(i/10000==round(i/10000)) print(i)#
+  }#
+  return(total)#
+}
+system.time(loglik_ergm(c(0,0),sample_net))
+net_denom_bf <- function(par, net_mat){#
+  # The function that computes the denominator part of the likelihood function#
+  # This is a brute force way to compute, very inefficient.#
+  # It compute all the possible networks.#
+  # When the number of nodes become large, it takes really long time#
+  # Args:#
+  #   par: theta_1 and theta_2, coefficients for edge and dyad, respectively#
+  #   net_mat: the input network.#
+  # Return:#
+  #   return the denominater in the likelihood function. Needs to use log() for log-likelihood#
+  nodes <- nrow(net_mat)#
+  total <- 0#
+  for (i in 0:2^(nodes * nodes)){#
+    #sim_mat will iterate through all possible networks#
+    sim_mat = matrix(as.integer(intToBits(i)), nodes, nodes)#
+    if(sum(diag(sim_mat)) == 0){#
+      total = total + exp(edge(sim_mat) * par[1] + dyad(sim_mat) * par[2])#
+    }#
+    if(i/100000==round(i/100000)) print(i)#
+  }#
+  return(total)#
+}
+system.time(loglik_ergm(c(0,0),sample_net))
+1628.917/60
+?ergm
+library(ergm)
+?ergm
+library(ergm)
+?ergm
+library(ergm)#
+##
+data(florentine)#
+##
+# Fit a model where the propensity to form ties between#
+# families depends on the absolute difference in wealth#
+##
+gest <- ergm(flomarriage ~ kstar(1:2) + absdiff("wealth") + triangle)#
+summary(gest)#
+#
+simnets <- simulate(gest,nsim=2)
+simnets$networks
+names(simnets)
+simnets
+?simulate.ergm
+simnets[[1]]
+simnets[[2]]
+install.packages("magic")
+netid <- c(rep(1,size(flomarriage)),rep(2,size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)
+bnet <- network(adiag(simnets[[1]][,],simnets[[2]][,]),dir=F)#
+#
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)
+library(magic)#
+#
+bnet <- network(adiag(simnets[[1]][,],simnets[[2]][,]),dir=F)#
+#
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)
+bnetNA <- bnet#
+#
+for(i in 1:length(netid)){#
+	for(j in 1:length(netid)){#
+		if(netid[i] != netid[j]){#
+			bnetNA[i,j] <- NA#
+		}#
+	}#
+}
+est.blockdiag <- ergm(bnet ~ kstar(1:2) + absdiff("wealth") + triangle, constraint = ~blockdiag("netid"))
+est.blockdiag <- ergm(bnet ~ kstar(1:2)  + triangle, constraint = ~blockdiag("netid"))
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"))
+est.blockdiag
+set.seed(1234)#
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"))#
+#
+set.seed(1234)#
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T))
+est.na
+est.blockdiag
+summary(est.na)
+summary(est.blockdiag)
+set.seed(1234)#
+bnetNA <- bnet#
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+absdiff("netid"))
+summary(est.na)
+BIC(est.na)
+BIC(est.blockdiag)
+est.bdiag
+est.blockdiag
+?offset in r
+bnetNA <- bnet#
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offfset(absdiff("netid")=-Inf))
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(absdiff("netid")=-Inf))
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(-1000*absdiff("netid")))
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(-1000absdiff("netid")))
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(-absdiff("netid")))
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(absdiff("netid")))
+?ergm
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(absdiff("netid")),offset.coef=c(-1000))
+est.na
+summary(est.na)
+summary(est.blockdiag)
+bnetNA <- bnet#
+#
+for(i in 1:length(netid)){#
+	for(j in 1:length(netid)){#
+		if(netid[i] != netid[j]){#
+			bnetNA[i,j] <- NA#
+		}#
+	}#
+}
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T)+offset(absdiff("netid")),offset.coef=c(-1000))
+summary(est.na)
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T))
+library(ergm.count)
+?ergm.count
+?ergm
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference="Poisson")
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Poisson)
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Gaussian)
+?ergm
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~StdNormal)
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Poisson)
+?ergm
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Poisson, control=list(MCMC.prop.weights="random"))
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Poisson, control=control.ergm(MCMC.prop.weights="random"))
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Geometric, control=control.ergm(MCMC.prop.weights="random"))
+est.blockdiag <- ergm(bnet ~ edges+gwesp(0,fixed=T), constraint = ~blockdiag("netid"),reference=~Geometric)
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T),reference=~Poisson)
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T),reference=~Geometric)
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T),reference=~Poisson)
+library(ergm.count)
+set.network.attribute(bnetNA,"amat",bnetNA[,])
+est.na <- ergm(bnetNA ~ edges+gwesp(0,fixed=T),reference=~Poisson,response="amat")
+est.na <- ergm(bnetNA ~ edges,reference=~Poisson,response="amat")
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="amat")
+?ergm
+set.seed(5)#
+nEdges <- nrow(as.matrix(bnetNA,"edgelist"))#
+set.edge.attribute(bnetNA,"weight",rpois(nEdges,2))
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight")
+?ergm
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight",control=ergm.control(MCMC.proposal.weights="PoissonNonObserved"))
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight",control=control.ergm(MCMC.proposal.weights="PoissonNonObserved"))
+?ergm
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight",control=control.ergm(MCMC.prop.weights="PoissonNonObserved"))
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight",control=control.ergm(obs.MCMC.prop.weights="random"))
+get.edge.attribute(bnetNA,"weight")
+bnetNA[,]
+est.na <- ergm(bnetNA ~ sum,reference=~Poisson,response="weight",control=control.ergm(MCMC.prop.weights="PoissonNonObserved"))
+detach.package("ergm.count")
+detach(package:ergm.count)
+library(ergm.count)
+set.edge.attribute(bnet,"weight",rpois(nEdges,2))
+set.seed(1234)#
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights=blockdiag("netid")),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights="blockdiag",attrname=#
+"netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights="blockdiag",attrname= "netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights="blockdiag",attrname= "netid"))
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag",attrname= "netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag(attrname="netid) "netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag(attrname="netid)"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag(attrname="netid")"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag(attrname='netid')"),response="weight")
+library(ergm)#
+library(ergm.count)#
+##
+data(florentine)#
+##
+# Fit a model where the propensity to form ties between#
+# families depends on the absolute difference in wealth#
+##
+gest <- ergm(flomarriage ~ kstar(1:2) + absdiff("wealth") + triangle)#
+summary(gest)#
+#
+simnets <- simulate(gest,nsim=2)#
+#
+library(magic)#
+#
+bnet <- network(adiag(simnets[[1]][,],simnets[[2]][,]),dir=F)#
+#
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)#
+#
+bnetNA <- bnet#
+#
+for(i in 1:length(netid)){#
+	for(j in 1:length(netid)){#
+		if(netid[i] != netid[j]){#
+			bnetNA[i,j] <- NA#
+		}#
+	}#
+}#
+set.seed(5)#
+nEdges <- nrow(as.matrix(bnetNA,"edgelist"))#
+set.edge.attribute(bnetNA,"weight",rpois(nEdges,2))
+set.seed(1234)#
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights="blockdiag",attrname=#
+"netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control.ergm=(MCMC.prop.weights="blockdiag",attrname = "netid"),response="weight")
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag",attrname = "netid"),response="weight")
+?ergm
+est.blockdiag <- ergm(bnet ~ sum, control=control.ergm(MCMC.prop.weights="blockdiag"),response="weight")
+library(ergm)#
+library(ergm.count)#
+##
+data(florentine)#
+##
+# Fit a model where the propensity to form ties between#
+# families depends on the absolute difference in wealth#
+##
+gest <- ergm(flomarriage ~ kstar(1:2) + absdiff("wealth") + triangle)#
+summary(gest)#
+#
+simnets <- simulate(gest,nsim=2)#
+#
+library(magic)#
+#
+bnet <- network(adiag(simnets[[1]][,],simnets[[2]][,]),dir=F)#
+#
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)#
+#
+bnetNA <- bnet#
+#
+for(i in 1:length(netid)){#
+	for(j in 1:length(netid)){#
+		if(netid[i] != netid[j]){#
+			bnetNA[i,j] <- NA#
+		}#
+	}#
+}#
+set.seed(5)#
+nEdges <- nrow(as.matrix(bnetNA,"edgelist"))#
+set.edge.attribute(bnetNA,"weight",rpois(nEdges,2))#
+#
+set.edge.attribute(bnet,"weight",rpois(nEdges,2))#
+#
+set.seed(1234)#
+est.blockdiag <- ergm(bnet ~ sum, constraint=~blockdiag("netid"),response="weight",control=control.ergm(MCMC.prop.weights="random"))
+?ergm
+library(ergm)#
+library(ergm.count)#
+##
+data(florentine)#
+##
+# Fit a model where the propensity to form ties between#
+# families depends on the absolute difference in wealth#
+##
+gest <- ergm(flomarriage ~ kstar(1:2) + absdiff("wealth") + triangle)#
+summary(gest)#
+#
+simnets <- simulate(gest,nsim=2)#
+#
+library(magic)#
+#
+bnet <- network(adiag(simnets[[1]][,],simnets[[2]][,]),dir=F)#
+#
+netid <- c(rep(1,network.size(flomarriage)),rep(2,network.size(flomarriage)))#
+#
+set.vertex.attribute(bnet,"netid",netid)#
+#
+bnetNA <- bnet#
+#
+for(i in 1:length(netid)){#
+	for(j in 1:length(netid)){#
+		if(netid[i] != netid[j]){#
+			bnetNA[i,j] <- NA#
+		}#
+	}#
+}#
+set.seed(5)#
+nEdges <- nrow(as.matrix(bnetNA,"edgelist"))#
+set.edge.attribute(bnetNA,"weight",rpois(nEdges,2))#
+#
+set.edge.attribute(bnet,"weight",rpois(nEdges,2))#
+#
+est.noconstraint <- ergm(bnet ~ sum,response="weight",reference=~Poisson)#
+\
+library(ergm)
+data(florentine)
+netlist <- list()#
+#
+netlist[[1]] <- flomarriage#
+netlist[[2]] <- flomarriage#
+#
+netlist[[2]][4,3] <- 1#
+netlist[[2]][3,4] <- 1
+ergm.call <- expression(ergm(net ~ edges + kstar(2)+triangle))#
+pooledERGM <- function(list_of_networks,ergm_call,ergm_call_no_offset,list_of_edgecovs=NULL,cores=2,seed=1234,ncores=2){#
+    require(ergm)#
+    require(ergm.count)#
+    require(doParallel)#
+    require(foreach)#
+    registerDoParallel(cores=ncores)#
+    individual_coefs <- foreach(i=1:length(list_of_networks)) %dopar% {#
+        net <- list_of_networks[[i]]#
+        if(length(list_of_networks)==length(list_of_edgecovs)) attach(list_of_edgecovs[[i]])#
+        set.seed(seed)#
+        esti <- eval(ergm_call_no_offset)#
+        coef(esti)#
+    }#
+    init.coefs <- apply(do.call('rbind',individual_coefs),2,mean)#
+    init.coefs#
+}#
+pooledERGM(list_of_networks=netlist,ergm_call=ergm.call,ergm_call_no_offset=ergm.call)
+library(doParallel)
+stopImplicitCluster()
+gibbsNormalizerBrute <- function(delta,lambdai,support){#
+	normalizer=0#
+	for(i in 1:nrow(support)){#
+		normalizer = normalizer + logitNumerator(support[i,],delta,lambdai)#
+	}#
+	normalizer#
+}
+logitNormalizingConstant <- function(delta,lambdai){#
+	# lambdaij is the vector of element-specific coefficients#
+	# delta is the shared intercept#
+	1/prod(exp(-(delta+lambdai))/(exp(-(delta+lambdai))+1))#
+}#
+#
+logitNumerator <- function(Ji,delta,lambdai){#
+	exp(sum((delta+lambdai)*Ji))#
+}#
+#
+gibbsLogitProb <- function(Ji,delta,lambdai){#
+	logitNumerator(Ji,delta,lambdai)/logitNormalizingConstant(delta,lambdai)#
+}#
+#
+LogitProb <- function(Ji,delta,lambdai){#
+	prob1 <- exp(delta+lambdai)/(1+exp(delta+lambdai))#
+	prob0 <- 1-prob1#
+	prod(prob1^Ji*prob0^(1-Ji))#
+}#
+#
+gibbsNormalizer <- function(delta,lambdai){#
+	logitNormalizingConstant(delta,lambdai)-1#
+}#
+#
+gibbs.measure.support <- function(n){#
+	require(combinat)#
+	# returns a 2^n x n binary matrix representing#
+	# the support of the binary Gibbs measure in n elements#
+	gibbs.support <- rbind(rep(1,n))#
+	for(i in 1:(n-1)){#
+		gibbs.mat.i <- do.call('rbind',permn(c(rep(1,i),rep(0,n-i))))#
+		gibbs.support <- rbind(gibbs.support,gibbs.mat.i)#
+	}#
+	as.matrix(unique(gibbs.support))#
+}#
+#
+gibbsNormalizerBrute <- function(delta,lambdai,support){#
+	normalizer=0#
+	for(i in 1:nrow(support)){#
+		normalizer = normalizer + logitNumerator(support[i,],delta,lambdai)#
+	}#
+	normalizer#
+}
+logitNormalizingConstant <- function(delta,lambdai){#
+	# lambdaij is the vector of element-specific coefficients#
+	# delta is the shared intercept#
+	1/prod(exp(-(delta+lambdai))/(exp(-(delta+lambdai))+1))#
+}#
+#
+logitNumerator <- function(Ji,delta,lambdai){#
+	exp(sum((delta+lambdai)*Ji))#
+}#
+#
+gibbsLogitProb <- function(Ji,delta,lambdai){#
+	logitNumerator(Ji,delta,lambdai)/logitNormalizingConstant(delta,lambdai)#
+}#
+#
+LogitProb <- function(Ji,delta,lambdai){#
+	prob1 <- exp(delta+lambdai)/(1+exp(delta+lambdai))#
+	prob0 <- 1-prob1#
+	prod(prob1^Ji*prob0^(1-Ji))#
+}#
+#
+gibbsNormalizer <- function(delta,lambdai){#
+	logitNormalizingConstant(delta,lambdai)-1#
+}#
+#
+gibbs.measure.support <- function(n){#
+	require(combinat)#
+	# returns a 2^n x n binary matrix representing#
+	# the support of the binary Gibbs measure in n elements#
+	gibbs.support <- rbind(rep(1,n))#
+	for(i in 1:(n-1)){#
+		gibbs.mat.i <- do.call('rbind',permn(c(rep(1,i),rep(0,n-i))))#
+		gibbs.support <- rbind(gibbs.support,gibbs.mat.i)#
+	}#
+	as.matrix(unique(gibbs.support))#
+}#
+#
+gibbsNormalizerBrute <- function(delta,lambdai,support){#
+	normalizer=0#
+	for(i in 1:nrow(support)){#
+		normalizer = normalizer + logitNumerator(support[i,],delta,lambdai)#
+	}#
+	normalizer#
+}#
+#
+# Test#
+delta = -0.75#
+lambda = runif(4)#
+gibbsNormalizer(delta,lambda)#
+#
+support <- gibbs.measure.support(4)#
+#
+gibbsNormalzierBrute(delta,lambda,support)
+gibbsNormalizerBrute(delta,lambda,support)
+25*20*12
+load("/Users/bbd5087/Box Sync/FDI networks/Valued Networks/model_tergm.rda")
+rm(list=ls())
+load("/Users/bbd5087/Box Sync/FDI networks/Valued Networks/model_tergm.rda")
+ls()
+names(pooledERGMres)
+pooledERGMres$estimate
+pooledERGMres$SE
+pooledERGMres$estimate/pooledERGMres$SE
+install.packages("xergm")
+library("statnet")  # version 2016.9 with ergm 3.7.1#
+library("texreg")   # version 1.36.23#
+library("xergm")    # version 1.8.2 with btergm 1.9.0 and xergm.common 1.7.7#
+set.seed(10)#
+# sessionInfo() for replication purposes:#
+#
+# R version 3.3.0 (2016-05-03)#
+# Platform: x86_64-pc-linux-gnu (64-bit)#
+# Running under: Ubuntu 16.04.2 LTS#
+# #
+# locale:#
+#  [1] LC_CTYPE=en_GB.UTF-8       LC_NUMERIC=C              #
+#  [3] LC_TIME=en_GB.UTF-8        LC_COLLATE=en_GB.UTF-8    #
+#  [5] LC_MONETARY=en_GB.UTF-8    LC_MESSAGES=en_GB.UTF-8   #
+#  [7] LC_PAPER=en_GB.UTF-8       LC_NAME=C                 #
+#  [9] LC_ADDRESS=C               LC_TELEPHONE=C            #
+# [11] LC_MEASUREMENT=en_GB.UTF-8 LC_IDENTIFICATION=C#
+# #
+# attached base packages:#
+# [1] stats     graphics  grDevices utils     datasets  methods   base     #
+# #
+# other attached packages:#
+#  [1] xergm_1.8.2          GERGM_0.11.2         rem_1.1.2           #
+#  [4] tnam_1.6.5           btergm_1.9.0         ggplot2_2.1.0       #
+#  [7] xergm.common_1.7.7   texreg_1.36.23       statnet_2016.9      #
+# [10] sna_2.4              ergm.count_3.2.2     tergm_3.4.0         #
+# [13] networkDynamic_0.9.0 ergm_3.7.1           network_1.13.0      #
+# [16] statnet.common_3.3.0#
+# #
+# loaded via a namespace (and not attached):#
+#  [1] deSolve_1.12        gtools_3.5.0        lpSolve_5.6.13     #
+#  [4] splines_3.3.0       lattice_0.20-33     mstate_0.2.8       #
+#  [7] colorspace_1.3-0    flexsurv_0.7        stats4_3.3.0       #
+# [10] mgcv_1.8-12         survival_2.39-4     nloptr_1.0.4       #
+# [13] RColorBrewer_1.1-2  muhaz_1.2.6         speedglm_0.3-2     #
+# [16] trust_0.1-7         plyr_1.8.4          robustbase_0.92-7  #
+# [19] munsell_0.4.3       gtable_0.1.2        caTools_1.17.1     #
+# [22] mvtnorm_1.0-5       coda_0.19-1         permute_0.8-4      #
+# [25] parallel_3.3.0      DEoptimR_1.0-8      Rcpp_0.12.10       #
+# [28] KernSmooth_2.23-15  ROCR_1.0-7          scales_0.4.1       #
+# [31] gdata_2.17.0        vegan_2.3-1         RcppParallel_4.3.20#
+# [34] lme4_1.1-10         gplots_2.17.0       grid_3.3.0         #
+# [37] quadprog_1.5-5      tools_3.3.0         bitops_1.0-6       #
+# [40] magrittr_1.5        RSiena_1.1-232      cluster_2.0.4      #
+# [43] MASS_7.3-45         Matrix_1.2-6        minqa_1.2.4        #
+# [46] boot_1.3-17         igraph_1.0.1        nlme_3.1-128#
+# EXAMPLE 1: ALLIANCES#
+#
+data("alliances")#
+#
+pdf("alliances.pdf", width = 9, height = 3)#
+par(mfrow = c(1, 3), mar = c(0, 0, 1, 0))#
+for (i in (length(allyNet) - 2):length(allyNet)) {#
+  plot(allyNet[[i]], main = paste("t =", i))#
+}#
+dev.off()#
+#
+model.1a <- btergm(allyNet ~ edges + gwesp(0, fixed = TRUE) +#
+    edgecov(LSP) + edgecov(warNet) + nodecov("polity") +#
+    nodecov("cinc") + absdiff("polity") + absdiff("cinc") +#
+    edgecov(contigMat), R = 50, parallel = "snow", ncpus = 2)#
+summary(model.1a, level = 0.95)#
+#
+gof.1a <- gof(model.1a, nsim = 50, statistics = c(esp, geodesic, deg))#
+pdf("gof-1a.pdf", width = 8, height = 2.5)#
+plot(gof.1a)#
+dev.off()#
+#
+model.1b <- btergm(allyNet ~ edges + gwesp(0, fixed = TRUE) +#
+    edgecov(LSP) + edgecov(warNet) + nodecov("polity") +#
+    nodecov("cinc") + absdiff("polity") + absdiff("cinc") +#
+    edgecov(contigMat) + memory(type = "stability") +#
+    timecov(transform = function(t) t) + timecov(warNet,#
+    transform = function(t) t), R = 50)#
+#
+texreg(list(model.1a, model.1b), single.row = TRUE,#
+    include.nobs = FALSE, file = "alliance-table.tex",#
+    caption = "International alliance TERGM examples.",#
+    label = "alliance-table", custom.model.names =#
+    c("Model~1a", "Model~1b"), use.packages = FALSE,#
+    booktabs = TRUE, dcolumn = TRUE)#
+#
+gof.1b <- gof(model.1b, nsim = 50, statistics = c(esp, geodesic, deg))#
+pdf("gof-1b.pdf", width = 8, height = 2.5)#
+plot(gof.1b)#
+dev.off()#
+# EXAMPLE 2: SCHOOL FRIENDSHIP NETWORK#
+#
+data("knecht")#
+#
+for (i in 1:length(friendship)) {#
+  rownames(friendship[[i]]) <- 1:nrow(friendship[[i]])#
+  colnames(friendship[[i]]) <- 1:ncol(friendship[[i]])#
+}#
+rownames(primary) <- rownames(friendship[[1]])#
+colnames(primary) <- colnames(friendship[[1]])#
+sex <- demographics$sex#
+names(sex) <- 1:length(sex)#
+#
+friendship <- handleMissings(friendship, na = 10, method = "remove")#
+friendship <- handleMissings(friendship, na = NA, method = "fillmode")#
+#
+for (i in 1:length(friendship)) {#
+  s <- adjust(sex, friendship[[i]])#
+  friendship[[i]] <- network(friendship[[i]])#
+  friendship[[i]] <- set.vertex.attribute(friendship[[i]], "sex", s)#
+  idegsqrt <- sqrt(degree(friendship[[i]], cmode = "indegree"))#
+  friendship[[i]] <- set.vertex.attribute(friendship[[i]],#
+      "idegsqrt", idegsqrt)#
+  odegsqrt <- sqrt(degree(friendship[[i]], cmode = "outdegree"))#
+  friendship[[i]] <- set.vertex.attribute(friendship[[i]],#
+      "odegsqrt", odegsqrt)#
+}#
+sapply(friendship, network.size)#
+#
+pdf("knecht.pdf")#
+par(mfrow = c(2, 2), mar = c(0, 0, 1, 0))#
+for (i in 1:length(friendship)) {#
+  plot(network(friendship[[i]]), main = paste("t =", i),#
+  usearrows = TRUE, edge.col = "grey50")#
+}#
+dev.off()#
+#
+model.2a <- btergm(friendship ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary), R = 100)#
+#
+model.2b <- btergm(friendship ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary) + delrecip + memory(type = "stability"),#
+    R = 100)#
+#
+texreg(list(model.2a, model.2b), single.row = TRUE, #
+    include.nobs = FALSE, file = "knecht-table.tex", #
+    caption = "TERGM examples on friendship networks in a school class.", #
+    label = "knecht-table", custom.model.names = #
+    c("Model~2a", "Model~2b"), use.packages = FALSE, #
+    booktabs = TRUE, dcolumn = TRUE)#
+#
+delrecip <- lapply(friendship, function(x) t(as.matrix(x)))[1:3]#
+stability <- lapply(friendship, function(x) {#
+  mat <- as.matrix(x)#
+  mat[mat == 0] <- -1#
+  return(mat)#
+})[1:3]#
+#
+model.2c <- btergm(friendship[2:4] ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary) + edgecov(delrecip) + edgecov(stability),#
+    R = 100)#
+#
+model.2d <- mtergm(friendship ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary) + delrecip + memory(type = "stability"),#
+    control = control.ergm(MCMC.samplesize = 5000, MCMC.interval = 2000))#
+#
+model.2e <- btergm(friendship[1:3] ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary) + delrecip + memory(type = "stability"),#
+    R = 100)#
+#
+gof.2e <- gof(model.2e, nsim = 100, target = friendship[[4]],#
+    formula = friendship[3:4] ~ edges + mutual + ttriple +#
+    transitiveties + ctriple + nodeicov("idegsqrt") +#
+    nodeicov("odegsqrt") + nodeocov("odegsqrt") +#
+    nodeofactor("sex") + nodeifactor("sex") + nodematch("sex") +#
+    edgecov(primary) + delrecip + memory(type = "stability"),#
+    coef = coef(model.2b), statistics = c(esp, dsp, geodesic,#
+    deg, triad.undirected, rocpr))#
+pdf("gof-2e.pdf", width = 8, height = 6)#
+plot(gof.2e, roc.rgraph = TRUE, pr.rgraph = TRUE)#
+dev.off()#
+#
+gof.2e#
+plot(gof.2e[[6]])#
+gof.2e[[6]]$auc.pr#
+#
+nw <- simulate(model.2e, nsim = 10, index = 3)#
+#
+interpret(model.2b, type = "dyad", i = 12, j = 15, t = 3)#
+#
+dyads <- list()#
+for (t in 2:length(friendship)) {#
+  sex <- get.vertex.attribute(friendship[[t]], "sex")#
+  mat <- as.matrix(friendship[[t]])#
+  for (i in 1:nrow(mat)) {#
+    for (j in 1:ncol(mat)) {#
+      if (i != j && sex[i] == sex[j]) {#
+        dyads[[length(dyads) + 1]] <- c(i, j, t, interpret(model.2b,#
+            type = "tie", i = i, j = j, t = t - 1), sex[i])#
+      }#
+    }#
+  }#
+}#
+dyads <- do.call(rbind, dyads)#
+dyads <- as.data.frame(dyads)#
+colnames(dyads) <- c("i", "j", "t", "prob", "sex")#
+#
+samplesize <- 10000#
+results <- list()#
+for (t in 2:length(friendship)) {#
+  for (s in 1:2) {#
+    label <- ifelse(s == 1, paste("f", t), paste0("m", t))#
+    d <- dyads[dyads$sex == s & dyads$t == t, ]#
+    n <- nrow(d)#
+    means <- sapply(1:samplesize, function(x) {#
+      samp <- sample(1:n, n, replace = TRUE)#
+      mean(d[samp, ]$prob)#
+    })#
+    results[[label]] <- means#
+  }#
+}#
+#
+quantiles <- sapply(results, function(x) {#
+  return(c(quantile(x, 0.025), quantile(x, 0.5), quantile(x, 0.975)))#
+})#
+#
+library("gplots")#
+pdf("interpret.pdf")#
+barplot2(quantiles[2, ], col = c("lightpink", "cornflowerblue"),#
+    plot.ci = TRUE, ci.l = quantiles[1, ], ci.u = quantiles[3, ],#
+    names = rep(c("F", "M"), 3), space = c(0.2, 0.2, 0.6, 0.2, 0.6, 0.2),#
+    xlab = "Time from t = 2 to t = 4",#
+    ylab = "Median edge probability (with 95 percent CI)", ci.lwd = 2,#
+    main = "Same-sex friendship probabilities over time")#
+dev.off()#
+#
+ep <- edgeprob(model.2b)#
+head(ep)#
+#
+degen <- checkdegeneracy(model.2b, nsim = 1000)#
+degen
+setwd("~/Box Sync/Box/Research/FDI_IGERT_H")
+# Code to plot BIC of model with and without network effects#
+#
+library(ergm)#
+#interpretFunction <- function(#
+#
+# Get file names for ERGM results#
+modelFiles <- dir("./Code/models_tweight")#
+modelFiles <- modelFiles[which(grepl("rda",modelFiles))]#
+#
+# Matrix to store results#
+BICMat <- matrix(0,length(modelFiles)/2,2)#
+#
+# Row labels for fit matrix#
+#
+cols <- 1+grepl("model2",modelFiles)#
+rowLabels <- sort(unique(substr(modelFiles,6+cols,7+cols)))#
+rownames(BICMat) <- rowLabels#
+colnames(BICMat) <- c("Independent","Network")#
+#
+i = length(modelFiles)#
+#
+# Create environment in which to load results#
+fiti <- new.env()#
+#
+# load the fit in the ith model file#
+load(paste("./Code/models_tweight/",modelFiles[i],sep=""))#
+#
+# Identify whether there are network effects based on file name#
+col <- 1+grepl("model2",modelFiles[i])#
+#
+# Extract the year from the file name#
+yri <- substr(modelFiles,6+col,7+col)[i]#
+#
+# libraries#
+library(ergm.count)#
+library(network)#
+library(igraph)#
+library(doBy)#
+library(plyr)#
+#
+#setwd("/Users/johnpschoeneman/Desktop/ACI/Count")#
+#
+#load in data#
+fdi <- read.csv("./Code/sub_stock.csv", stringsAsFactors=FALSE)        #FDI#
+fdi <- fdi[,-1]#
+#125 countries, 12 years (2001-2012),#
+fdi <- fdi[,c(2,1,3:44)]#
+#extract one year#
+fdi02 <- subset(fdi, fdi$Year ==2012)#
+#
+range01 <- function(x){(x-min(x))/(max(x)-min(x))}#
+#
+#scale continuous variables#
+vars <- c(18:34,36, 38:39, 41:44)#
+for(i in vars){#
+    fdi02[,i] <- range01(fdi02[,i])#
+}#
+fdi02 <- subset(fdi, fdi$Year ==2012)#
+#
+range01 <- function(x){(x-min(x))/(max(x)-min(x))}#
+#
+#scale continuous variables#
+vars <- c(18:34,36, 38:39, 41:44)#
+for(i in vars){#
+    fdi02[,i] <- range01(fdi02[,i])#
+}#
+#
+#create vertex dataset#
+vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GDPg+#
+Origin.GDPpc+Origin.pv ~ Origin, data=fdi02)#
+#vertex attr: "Origin.GDP","Origin.polity","Origin.TO", "Origin.pop",  "Origin.GDP.g",　Origin.pv"#
+#rename vertex dataset#
+names(vertex_attr) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g","GDPpc", "PV")#
+#
+#create network object#
+detach("package:igraph", unload=TRUE)#
+fdi_net <- network(fdi02, matrix.type="edgelist", directed=TRUE)#
+#
+#set edge attributes#
+set.edge.attribute(fdi_net, attrname="Value_ln", value=fdi02$Value_ln)#
+set.edge.attribute(fdi_net, attrname="distance", value=fdi02$dist)#
+set.edge.attribute(fdi_net, attrname="contig", value=fdi02$contig)#
+set.edge.attribute(fdi_net, attrname="colony", value=fdi02$colony)#
+set.edge.attribute(fdi_net, attrname="lang_ethno", value=fdi02$comlang_ethno)#
+set.edge.attribute(fdi_net, attrname="defence_t", value=fdi02$defense.max.x)#
+set.edge.attribute(fdi_net, attrname="nonagg_t", value=fdi02$nonaggression.max.x)#
+set.edge.attribute(fdi_net, attrname="neut_t", value=fdi02$neutrality.max.x)#
+set.edge.attribute(fdi_net, attrname="entente_t", value=fdi02$entente.max.x)#
+set.edge.attribute(fdi_net, attrname="depth", value=fdi02$depth_latent)#
+set.edge.attribute(fdi_net, attrname="trade_int", value=fdi02$trade_int)#
+set.edge.attribute(fdi_net, attrname="mass", value=fdi02$mass)#
+set.edge.attribute(fdi_net, attrname="lag_stock", value=fdi02$Value_ln.1)#
+#
+#set vertex attributes#
+set.vertex.attribute(fdi_net, attrname="GDP", value=vertex_attr$GDP)#
+set.vertex.attribute(fdi_net, attrname="Polity", value=vertex_attr$Polity)#
+set.vertex.attribute(fdi_net, attrname="TradeOpen", value=vertex_attr$TradeOpen)#
+set.vertex.attribute(fdi_net, attrname="GDPpc", value=vertex_attr$GDPpc)#
+set.vertex.attribute(fdi_net, attrname="GDP.g", value=vertex_attr$GDP.g)#
+set.vertex.attribute(fdi_net, attrname="PV", value=vertex_attr$PV)#
+#
+simNum <- 1000
+install.packages("doBy")
+# Code to plot BIC of model with and without network effects#
+#
+library(ergm)#
+#interpretFunction <- function(#
+#
+# Get file names for ERGM results#
+modelFiles <- dir("./Code/models_tweight")#
+modelFiles <- modelFiles[which(grepl("rda",modelFiles))]#
+#
+# Matrix to store results#
+BICMat <- matrix(0,length(modelFiles)/2,2)#
+#
+# Row labels for fit matrix#
+#
+cols <- 1+grepl("model2",modelFiles)#
+rowLabels <- sort(unique(substr(modelFiles,6+cols,7+cols)))#
+rownames(BICMat) <- rowLabels#
+colnames(BICMat) <- c("Independent","Network")#
+#
+i = length(modelFiles)#
+#
+# Create environment in which to load results#
+fiti <- new.env()#
+#
+# load the fit in the ith model file#
+load(paste("./Code/models_tweight/",modelFiles[i],sep=""))#
+#
+# Identify whether there are network effects based on file name#
+col <- 1+grepl("model2",modelFiles[i])#
+#
+# Extract the year from the file name#
+yri <- substr(modelFiles,6+col,7+col)[i]#
+#
+# libraries#
+library(ergm.count)#
+library(network)#
+library(igraph)#
+library(doBy)#
+library(plyr)#
+#
+#setwd("/Users/johnpschoeneman/Desktop/ACI/Count")#
+#
+#load in data#
+fdi <- read.csv("./Code/sub_stock.csv", stringsAsFactors=FALSE)        #FDI#
+fdi <- fdi[,-1]#
+#125 countries, 12 years (2001-2012),#
+fdi <- fdi[,c(2,1,3:44)]#
+#extract one year#
+fdi02 <- subset(fdi, fdi$Year ==2012)#
+#
+range01 <- function(x){(x-min(x))/(max(x)-min(x))}#
+#
+#scale continuous variables#
+vars <- c(18:34,36, 38:39, 41:44)#
+for(i in vars){#
+    fdi02[,i] <- range01(fdi02[,i])#
+}#
+fdi02 <- subset(fdi, fdi$Year ==2012)#
+#
+range01 <- function(x){(x-min(x))/(max(x)-min(x))}#
+#
+#scale continuous variables#
+vars <- c(18:34,36, 38:39, 41:44)#
+for(i in vars){#
+    fdi02[,i] <- range01(fdi02[,i])#
+}#
+#
+#create vertex dataset#
+vertex_attr <- summaryBy(Origin.GDP+Origin.polity+Origin.TO+Origin.pop+Origin.GDPg+#
+Origin.GDPpc+Origin.pv ~ Origin, data=fdi02)#
+#vertex attr: "Origin.GDP","Origin.polity","Origin.TO", "Origin.pop",  "Origin.GDP.g",　Origin.pv"#
+#rename vertex dataset#
+names(vertex_attr) <- c("name","GDP", "Polity", "TradeOpen", "Pop", "GDP.g","GDPpc", "PV")#
+#
+#create network object#
+detach("package:igraph", unload=TRUE)#
+fdi_net <- network(fdi02, matrix.type="edgelist", directed=TRUE)#
+#
+#set edge attributes#
+set.edge.attribute(fdi_net, attrname="Value_ln", value=fdi02$Value_ln)#
+set.edge.attribute(fdi_net, attrname="distance", value=fdi02$dist)#
+set.edge.attribute(fdi_net, attrname="contig", value=fdi02$contig)#
+set.edge.attribute(fdi_net, attrname="colony", value=fdi02$colony)#
+set.edge.attribute(fdi_net, attrname="lang_ethno", value=fdi02$comlang_ethno)#
+set.edge.attribute(fdi_net, attrname="defence_t", value=fdi02$defense.max.x)#
+set.edge.attribute(fdi_net, attrname="nonagg_t", value=fdi02$nonaggression.max.x)#
+set.edge.attribute(fdi_net, attrname="neut_t", value=fdi02$neutrality.max.x)#
+set.edge.attribute(fdi_net, attrname="entente_t", value=fdi02$entente.max.x)#
+set.edge.attribute(fdi_net, attrname="depth", value=fdi02$depth_latent)#
+set.edge.attribute(fdi_net, attrname="trade_int", value=fdi02$trade_int)#
+set.edge.attribute(fdi_net, attrname="mass", value=fdi02$mass)#
+set.edge.attribute(fdi_net, attrname="lag_stock", value=fdi02$Value_ln.1)#
+#
+#set vertex attributes#
+set.vertex.attribute(fdi_net, attrname="GDP", value=vertex_attr$GDP)#
+set.vertex.attribute(fdi_net, attrname="Polity", value=vertex_attr$Polity)#
+set.vertex.attribute(fdi_net, attrname="TradeOpen", value=vertex_attr$TradeOpen)#
+set.vertex.attribute(fdi_net, attrname="GDPpc", value=vertex_attr$GDPpc)#
+set.vertex.attribute(fdi_net, attrname="GDP.g", value=vertex_attr$GDP.g)#
+set.vertex.attribute(fdi_net, attrname="PV", value=vertex_attr$PV)#
+#
+simNum <- 1000
+ls()
+fit.01.2
+modelFiles
+# Load in independent model#
+i = 11#
+# load the fit in the ith model file#
+load(paste("./Code/models_tweight/",modelFiles[i],sep=""))
+ls()
+coef(fit.01.1)
+length(coef(fit.01.1))
+length(coef(fit.01.2))
+set.seed(5)#
+system.time(simNets <- simulate(fit.01.1,nsim=simNum,control=control.simulate.ergm(MCMC.interval=10000)))#
+save(list="simNets",file="./Code/simulatedNetworksIndependent.RData")
+save(list="simNets",file="./Code/simulatedNetworksIndependent.RData")
+rm(list=ls())
