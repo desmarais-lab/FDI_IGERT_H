@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: fdi_draft.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
 Repeated entry---line 980 of file fdi_reference.bib
@@ -15,4 +17,45 @@ Repeated entry---line 1427 of file fdi_reference.bib
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
+You've used 92 entries,
+            2874 wiz_defined-function locations,
+            1226 strings with 20587 characters,
+and the built_in function-call counts, 337716 in all, are:
+= -- 54850
+> -- 3976
+< -- 2
++ -- 25379
+- -- 1434
+* -- 28430
+:= -- 68589
+add.period$ -- 375
+call.type$ -- 92
+change.case$ -- 1196
+chr.to.int$ -- 92
+cite$ -- 94
+duplicate$ -- 1407
+empty$ -- 3121
+format.name$ -- 1515
+if$ -- 60641
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 98
+newline$ -- 402
+num.names$ -- 1060
+pop$ -- 374
+preamble$ -- 1
+purify$ -- 1380
+quote$ -- 0
+skip$ -- 1174
+stack$ -- 0
+substring$ -- 76770
+swap$ -- 192
+text.length$ -- 1290
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 344
+warning$ -- 2
+while$ -- 2149
+width$ -- 0
+write$ -- 1282
 (There were 3 error messages)
