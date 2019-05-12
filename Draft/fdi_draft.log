@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  10 MAY 2019 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  11 MAY 2019 19:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,11 +565,8 @@ File: draft_figures/BICdiff.pdf Graphic file (type pdf)
 <use draft_figures/BICdiff.pdf>
 Package pdftex.def Info: draft_figures/BICdiff.pdf used on input line 307.
 (pdftex.def)             Requested size: 352.31538pt x 216.80946pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19] <draft_figures/reciprocityFit.pdf, id=555, 433.62pt x 433.62pt>
+ [19]
+<draft_figures/reciprocityFit.pdf, id=555, 433.62pt x 433.62pt>
 File: draft_figures/reciprocityFit.pdf Graphic file (type pdf)
 
 <use draft_figures/reciprocityFit.pdf>
@@ -580,7 +577,8 @@ Package pdftex.def Info: draft_figures/reciprocityFit.pdf used on input line 31
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<draft_figures/rl_plots/Mutuality.pdf, id=559, 205.76875pt x 144.54pt>
+[20 <./draft_figures/BICdiff.pdf>]
+<draft_figures/rl_plots/Mutuality.pdf, id=570, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Mutuality.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Mutuality.pdf>
@@ -588,14 +586,14 @@ Package pdftex.def Info: draft_figures/rl_plots/Mutuality.pdf used on input lin
 e 329.
 (pdftex.def)             Requested size: 210.0132pt x 130.08401pt.
 
-<draft_figures/rl_plots/Transitivity.pdf, id=561, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Transitivity.pdf, id=572, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Transitivity.pdf>
 Package pdftex.def Info: draft_figures/rl_plots/Transitivity.pdf used on input 
 line 330.
 (pdftex.def)             Requested size: 195.4934pt x 130.08401pt.
- [20 <./draft_figures/BICdiff.pdf>] [21 <./draft_figures/reciprocityFit.pdf>]
+ [21 <./draft_figures/reciprocityFit.pdf>]
 <draft_figures/transitiveInterpretation.pdf, id=589, 578.16pt x 289.08pt>
 File: draft_figures/transitiveInterpretation.pdf Graphic file (type pdf)
 
@@ -611,14 +609,10 @@ File: draft_figures/mutualInterpretation.pdf Graphic file (type pdf)
 Package pdftex.def Info: draft_figures/mutualInterpretation.pdf used on input l
 ine 342.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transiti
-vity.pdf>] [23 <./draft_figures/transitiveInterpretation.pdf> <./draft_figures/
-mutualInterpretation.pdf>]
-<draft_figures/rl_plots/Sum.pdf, id=625, 205.76875pt x 144.54pt>
+ [22 <./draft_figures/rl_plots/Mutuality.pdf> <./draft_figures/rl_plots/Transit
+ivity.pdf>] [23 <./draft_figures/transitiveInterpretation.pdf> <./draft_figures
+/mutualInterpretation.pdf>]
+<draft_figures/rl_plots/Sum.pdf, id=626, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum.pdf>
@@ -626,7 +620,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Sum.pdf used on input line 357.
 
 (pdftex.def)             Requested size: 144.08737pt x 89.2546pt.
 
-<draft_figures/rl_plots/Sum_5.pdf, id=627, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Sum_5.pdf, id=628, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Sum_5.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Sum_5.pdf>
@@ -634,7 +628,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Sum_5.pdf used on input line 35
 8.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/Nonzero.pdf, id=629, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Nonzero.pdf, id=630, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Nonzero.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Nonzero.pdf>
@@ -642,7 +636,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Nonzero.pdf used on input line
 359.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/LDV.pdf, id=631, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/LDV.pdf, id=632, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/LDV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/LDV.pdf>
@@ -650,7 +644,7 @@ Package pdftex.def Info: draft_figures/rl_plots/LDV.pdf used on input line 360.
 
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/GDP_Dyad.pdf, id=633, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/GDP_Dyad.pdf, id=634, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/GDP_Dyad.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/GDP_Dyad.pdf>
@@ -658,7 +652,7 @@ Package pdftex.def Info: draft_figures/rl_plots/GDP_Dyad.pdf used on input line
  367.
 (pdftex.def)             Requested size: 144.08737pt x 89.2546pt.
 
-<draft_figures/rl_plots/Distance.pdf, id=635, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Distance.pdf, id=636, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Distance.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Distance.pdf>
@@ -666,7 +660,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Distance.pdf used on input line
  368.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/Defense.pdf, id=637, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Defense.pdf, id=638, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Defense.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Defense.pdf>
@@ -674,7 +668,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Defense.pdf used on input line
 369.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/Alliance.pdf, id=639, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Alliance.pdf, id=640, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Alliance.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Alliance.pdf>
@@ -682,7 +676,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Alliance.pdf used on input line
  370.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/Polity_in.pdf, id=641, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Polity_in.pdf, id=642, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Polity_in.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Polity_in.pdf>
@@ -690,7 +684,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Polity_in.pdf used on input lin
 e 377.
 (pdftex.def)             Requested size: 144.08737pt x 89.2546pt.
 
-<draft_figures/rl_plots/Polity_out.pdf, id=643, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/Polity_out.pdf, id=644, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/Polity_out.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/Polity_out.pdf>
@@ -698,7 +692,7 @@ Package pdftex.def Info: draft_figures/rl_plots/Polity_out.pdf used on input li
 ne 378.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/GDPpc_in.pdf, id=645, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/GDPpc_in.pdf, id=646, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/GDPpc_in.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/GDPpc_in.pdf>
@@ -706,7 +700,7 @@ Package pdftex.def Info: draft_figures/rl_plots/GDPpc_in.pdf used on input line
  379.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/GDPpc_out.pdf, id=647, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/GDPpc_out.pdf, id=648, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/GDPpc_out.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/GDPpc_out.pdf>
@@ -714,7 +708,7 @@ Package pdftex.def Info: draft_figures/rl_plots/GDPpc_out.pdf used on input lin
 e 380.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/BIT.pdf, id=649, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/BIT.pdf, id=650, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/BIT.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/BIT.pdf>
@@ -722,7 +716,7 @@ Package pdftex.def Info: draft_figures/rl_plots/BIT.pdf used on input line 387.
 
 (pdftex.def)             Requested size: 144.08737pt x 89.2546pt.
 
-<draft_figures/rl_plots/TradeV.pdf, id=651, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/TradeV.pdf, id=652, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/TradeV.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/TradeV.pdf>
@@ -730,7 +724,7 @@ Package pdftex.def Info: draft_figures/rl_plots/TradeV.pdf used on input line 3
 88.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/TradeO_in.pdf, id=653, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/TradeO_in.pdf, id=654, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/TradeO_in.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/TradeO_in.pdf>
@@ -738,7 +732,7 @@ Package pdftex.def Info: draft_figures/rl_plots/TradeO_in.pdf used on input lin
 e 389.
 (pdftex.def)             Requested size: 134.12552pt x 89.2546pt.
 
-<draft_figures/rl_plots/TradeO_out.pdf, id=655, 205.76875pt x 144.54pt>
+<draft_figures/rl_plots/TradeO_out.pdf, id=656, 205.76875pt x 144.54pt>
 File: draft_figures/rl_plots/TradeO_out.pdf Graphic file (type pdf)
 
 <use draft_figures/rl_plots/TradeO_out.pdf>
@@ -755,7 +749,7 @@ igures/rl_plots/Polity_in.pdf> <./draft_figures/rl_plots/Polity_out.pdf> <./dra
 ft_figures/rl_plots/GDPpc_in.pdf> <./draft_figures/rl_plots/GDPpc_out.pdf> <./d
 raft_figures/rl_plots/BIT.pdf> <./draft_figures/rl_plots/TradeV.pdf> <./draft_f
 igures/rl_plots/TradeO_in.pdf> <./draft_figures/rl_plots/TradeO_out.pdf>]
-<./draft_figures/polity_in_sims.pdf, id=777, 794.97pt x 614.295pt>
+<./draft_figures/polity_in_sims.pdf, id=778, 794.97pt x 614.295pt>
 File: ./draft_figures/polity_in_sims.pdf Graphic file (type pdf)
 
 <use ./draft_figures/polity_in_sims.pdf>
@@ -769,7 +763,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [25
 
 ] [26 <./draft_figures/polity_in_sims.pdf>] [27]
-<./draft_figures/contagion_simulation_results.pdf, id=802, 397.485pt x 234.8775
+<./draft_figures/contagion_simulation_results.pdf, id=803, 397.485pt x 234.8775
 pt>
 File: ./draft_figures/contagion_simulation_results.pdf Graphic file (type pdf)
  <use ./draft_figures/contagion_simulation_results.pdf>
@@ -829,7 +823,7 @@ Here is how much of TeX's memory you used:
  12778 multiletter control sequences out of 15000+600000
  24308 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,47p,2418b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,47p,2427b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -923,10 +917,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draft.pdf (39 pages, 456102 bytes).
+Output written on fdi_draft.pdf (39 pages, 456176 bytes).
 PDF statistics:
- 992 PDF objects out of 1000 (max. 8388607)
- 856 compressed objects within 9 object streams
+ 993 PDF objects out of 1000 (max. 8388607)
+ 857 compressed objects within 9 object streams
  175 named destinations out of 1000 (max. 500000)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
