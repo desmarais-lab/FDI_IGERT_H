@@ -1,0 +1,49 @@
+
+#Edge covars:  c(lag, mass, dist, alliance, defense, trade_vol, bit, pta_depth) 
+#DV value:  net %e% "tValue" <- ceiling(log(edge_vals)*2)
+
+
+Main Model Specification: net ~ sum+ sum(1/2) +nonzero+
+                                      edgecovmutual(oecd_both)+ edgecovmutual(not_oecd_both)+
+                                      transitiveweights("min", "max", "min")+
+                                      nodeicov("polity")+nodeocov("polity")+
+                                      nodeicov("trade_opennes")+nodeocov("trade_opennes")+
+                                      nodeicov("gdp.pc")+nodeocov("gdp.pc")+
+                                      nodematch("OECD_mem")+
+                                      edgecov(edgecovars[[1]])+edgecov(edgecovars[[2]])+
+                                      edgecov(edgecovars[[3]])+edgecov(edgecovars[[4]])+
+                                      edgecov(edgecovars[[5]])+edgecov(edgecovars[[6]])+
+                                      edgecov(edgecovars[[7]])+edgecov(edgecovars[[9]])
+                                      
+
+Models and simulations completed:
+
+1. Main model
+                                      
+                                      
+                                      
+ERGM Models to Run with updated reciprocity, new covariates, and expanded DV:
+
+1. Time-pooled models
+2. Subset by missingness
+	2a. Q=.5
+	2b. Q=.25 
+3. Imputed data models: I suggest not including these as I'm confident the zeros are 
+						supposed to be zero and the subset by missingness models already 
+						address the issue.
+						Rough estimate is at least 24k core hours.
+						(3 models x 11 years x 10 imputations x 72 hours)
+4. Model with corporate tax rates
+5. Model that drops tax havens
+6. Model the drops EU countries
+7. LSM with AMEN for main model                                   
+                                      
+                                      
+Simulations to Run with new main results
+
+1.  Figure 2 Reciprocity
+2.  Figure 4 Predicted edge change for dependence terms
+3. 	Figure 5 Covariate simulation
+4.  Figure 6 Ripple effects                                     
+                                      
+
