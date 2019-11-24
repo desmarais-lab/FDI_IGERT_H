@@ -41,9 +41,11 @@ ERGM Models to Run with updated reciprocity, new covariates, and expanded DV:
                                       
 Simulations to Run with new main results
 
-1.  Figure 2 Reciprocity
-2.  Figure 4 Predicted edge change for dependence terms
-3. 	Figure 5 Covariate simulation
-4.  Figure 6 Ripple effects                                     
+1.  ModelFitCOmparison.R : Figure 1 BIC Diff - Done
+2.  ModelInterpretation.R : simluations for Figure 2 and Figure 4, Figure 4 - Done
+3.  NetworkStatisticsFit.r : Figure 2 - Done
+2.  main_rl_plots: rl plots for all variables, Figure 3 and Table 1 - Done
+3.  CovariateInterpretation.R : Figure 5 Covariate simulation
+4.  flow_contagion_plot.R, contagion_simulation_interpretation.R : Figure 6 Ripple effects                                     
                                       
 
