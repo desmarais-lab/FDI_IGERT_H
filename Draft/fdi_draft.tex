@@ -244,7 +244,7 @@ Another concern is that bilateral investment flows can be driven by round-trippi
 %\centering
 %\begin{tabular}{cc}
 %{\bf 2002} & {\bf 2006} \\
-%\includegraphics[scale=.7, trim = 1.75cm 1.75cm 1.75cm 1.75cm, clip=true]{draft_figures/GAB2002} &  \includegraphics[scale=.7, trim = 1.75cm 1.75cm 1.75cm 1.75cm, clip=true]{draft_figures/GAB2006}  \\\vspace{-.5cm}
+%\includegraphics[scale=.7, trim = 1.75cm 1.75cm 1.75cm 1.75cm, clip=true]{figures/GAB2002} &  \includegraphics[scale=.7, trim = 1.75cm 1.75cm 1.75cm 1.75cm, clip=true]{figures/GAB2006}  \\\vspace{-.5cm}
 %\end{tabular}
 %\caption{\label{fig:gab} Networks among Gabon's FDI partners. A state is included in one of these plots if it has either an inward or outward FDI tie with Gabon in the respective year. The width of an edge is proportional to the natural log of the FDI stock value that corresponds to the edge.}
 %\end{figure}
@@ -304,7 +304,7 @@ Throughout the results section, we compare two specifications of the count ERGM-
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.75]{draft_figures/BICdiff.pdf} \vspace{-.5cm}
+\includegraphics[scale=.75]{figures/BICdiff.pdf} \vspace{-.5cm}
 \caption{\label{fig:bic} Difference in BIC between independent and network model.}
 \end{figure}
 
@@ -312,7 +312,7 @@ Throughout the results section, we compare two specifications of the count ERGM-
 To illustrate how the network model fits better, we compare the fit of the two models to the level of reciprocity in the FDI ties. The level of reciprocity is defined as $$ \frac{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cap \bm{y}_{j,i}>0 \right)}{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cup \bm{y}_{j,i}>0 \right)}.$$ In other words, this is the proportion of dyads in which there is an FDI tie from state $i$ to state $j$ and a tie from state $j$ to state $i$ out of the number of dyads in which there is at least one tie. This measures the degree to which the presence of a tie in one direction within a dyad implies that the other tie will exist. To compare the network and independent models we simulated 1,000 networks from each, and compare the reciprocity values in the simulated networks to the observed reciprocity value.
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.75]{draft_figures/reciprocityFit.pdf} \vspace{-.5cm}
+\includegraphics[scale=.75]{figures/reciprocityFit.pdf} \vspace{-.5cm}
 \caption{\label{fig:recipFit} Reciprocity values of 1,000 networks simulated from the Network and Independent models. Observed value given by the dashed horizontal line.}
 \end{figure}
 We see in Figure \ref{fig:recipFit} that the network model provides a much better fit to the observed level of reciprocity (approximately 0.32) than the independent model. Indeed, the observed value is an extreme outlier with respect to the distribution of reciprocity values of networks simulated from the independent model. Unlike the BIC, the fit to the observed reciprocity value does not provide a holistic assessment of model fit. Rather, it illustrates the improved fit regarding an interpretable quantity in the FDI network, and illustrates how a model in which independence is assumed provides a relatively poor fit to this quantity.
@@ -323,13 +323,13 @@ We see in Figure \ref{fig:recipFit} that the network model provides a much bette
 Turning now to the network effects, which are presented in Figure \ref{fig:net_effects}, we see that the reciprocity and transitivity effects are positive and statistically significant in each year, offering robust evidence that FDI flows are interdependent according to these two canonical forms of network structure.\footnote{As noted in the Section 3, we also tested our hypotheses on different subsets using different methods of imputation. The majority of these results support our hypotheses, although in the smaller subsets reciprocity is not significant for every year estimated. Since subsetting based on missingness or other variables is not random, this indicates that mutuality is conditional on certain criteria. However, the increase in reciprocity coefficient in later years for most models supports our assertion that reciprocity is becoming more prominent.} While these forms of network dependence are common in networks, they are not inherent and therefore this finding is significant and as substantively important as statistical significance for conventional covariates.
 \begin{figure}[htp]
 \centering
-\begin{tabular}{c@{\hskip -.4cm}c}
-Reciprocity &
-Transitivity\\
-\includegraphics[height=.2\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Mutuality.pdf}    &
-\includegraphics[height=.2\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Transitivity.pdf}   \\
+\begin{tabular}{@{\hskip -.05cm}c@{\hskip -.2cm}c@{\hskip -.2cm}c}
+Transitivity  & Reciprocity, OECD pair &Reciprocity, non-OECD pair\\
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Transitivity.pdf}   &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Mutuality_OECD.pdf}    &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Mutuality_notOECD.pdf} \\
 \end{tabular}
-\caption{\label{fig:net_effects} Estimates of Network terms in Poisson ERGMs. Bars span 95\% confidence intervals.}
+\caption{\label{fig:net_effects} Estimates of network terms in Poisson ERGMs. Bars span 95\% confidence intervals.}
 \end{figure}
 The dependence effects, though formulated intuitively, do not permit a straightforward marginal-effects interpretation of the coefficients aside from the signs of the effects. We can, however, estimate and visualize the dependence effects using simulation. In Figure \ref{fig:interpret} we present visualizations of the effects of the dependence terms. To measure these effects we begin with a simulation exercise in which we simulate networks using both the full model with dependence terms, and the null model based only on covariates. We then classify each simulated edge value in terms of the value of the local version of the dependence term operating on that edge. For example, when it comes to the reciprocity effect, we classify each simulated edge value ($y_{i,j}$) in terms of the value of the mutual edge, $y_{j,i}$. Finally, we estimate the difference in means between the edge values simulated from the full and null models at each dependence term value. This difference in means can be interpreted as the effect on predicted edge values of accounting for the respective dependence term in the model.
 
@@ -338,62 +338,90 @@ We see in Figure \ref{fig:interpret}, that the dependence effects can result in 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.75]{draft_figures/transitiveInterpretation.pdf} \vspace{-.5cm}\\
-\includegraphics[scale=.75]{draft_figures/mutualInterpretation.pdf} \vspace{-.5cm}
+\includegraphics[scale=.75]{figures/transitiveInterpretation.pdf} \vspace{-.5cm}\\
+\includegraphics[scale=.75]{figures/mutualInterpretation.pdf} \vspace{-.5cm}
 \caption{\label{fig:interpret} Plots depict the difference in predicted value ($y$-axis) that is attributable to the respective dependence effect, averaged over all dyads in the network. Interpretation plots are based on 1,000 FDI stock networks simulated from the 2012 model. Tie weights are measured on the natural logarithm scale. Predicted value differences are calculated by taking the differences between expected dyad values simulated from the full model with dependence terms and the null model that is based on covariates only. Error bars span 95\% confidence intervals for the difference in means. }
 \end{figure}
 
 
 
-\begin{landscape}
-\begin{spacing}{.7}
-\begin{longtable}[!h]{c@{\hskip .5cm}c@{\hskip .5cm}c@{\hskip .5cm}c}
 
-
+\begin{figure}[htp]
+\centering
+\begin{tabular}{@{\hskip -.05cm}c@{\hskip -.2cm}c@{\hskip -.2cm}c}
 Sum of Edges&
 Sum Sqrt. of Edges &
-Number of Non-Zero Edges&
-Lagged FDI Flow\\
-\includegraphics[height=.19\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum.pdf}    &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Sum_5.pdf}  &
- \includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Nonzero.pdf}&
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/LDV.pdf} \\
+Number of Non-Zero Edges\\
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Sum.pdf}    &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Sum_5.pdf}  &
+ \includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Nonzero.pdf}\\
+\end{tabular}
+\caption{\label{fig:net_controls} Estimates of network control terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). For some models, the confidence intervals are not visible due to being small and the large range of the coefficient estimates.}
+\end{figure}
 
+\begin{figure}[htp]
+\centering
+\begin{tabular}{@{\hskip -.05cm}c@{\hskip -.2cm}c@{\hskip -.2cm}c}
 
+Lagged FDI Flow& 
 Log-GDP Product &
-Log-Geographic Distance &
+Log-Geographic Distance\\
+
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/LDV.pdf} & 
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Mass.pdf}    &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Distance.pdf}  \\
+
+
 Defense Treaty &
-Alliance Treaty \\
-\includegraphics[height=.19\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDP_Dyad.pdf}    &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Distance.pdf}   &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Defense.pdf}   &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Alliance.pdf}\\
+Alliance Treaty &
+Bilateral Investment Treaty \\
+
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Defense_Treaty.pdf}   &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Non_Defense_Treaty.pdf} &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Bilateral_Investment_Treaty.pdf}    \\
 
 
+
+Bilateral Trade Volume&
+OECD membership &
+PTA Depth \\
+
+
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Trade_Volume.pdf} &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Nodematch_OECD.pdf}    &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/PTA_Depth.pdf}    \\
+
+\end{tabular}
+\caption{\label{fig:edge_controls} Estimates of exogenous edge terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). For some models, the confidence intervals are not visible due to being small and the large range of the coefficient estimates.}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\begin{tabular}{@{\hskip -.05cm}c@{\hskip -.2cm}c@{\hskip -.2cm}c}
 Polity, in-degree &
 Polity, out-degree &
-GDP per capita, in-degree &
-GDP per capita,  out-degree\\
-\includegraphics[height=.19\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_in.pdf} &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/Polity_out.pdf}  &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_in.pdf} &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/GDPpc_out.pdf}   \\
+GDP per capita, in-degree \\
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Dest_Polity.pdf} &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Origin_Polity.pdf}  &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Dest_GDPpc.pdf} \\
 
-
-Bilateral Investment Treaty &
-Bilateral Trade Volume&
+GDP per capita,  out-degree &
 Trade Openness, in-degree&
 Trade Openness,  out-degree \\
-\includegraphics[height=.19\textheight, clip=true, trim=0cm .5cm 0cm .1cm]{draft_figures/rl_plots/BIT.pdf}    &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeV.pdf} &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_in.pdf} &
-\includegraphics[height=.19\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{draft_figures/rl_plots/TradeO_out.pdf}   \\
 
-\caption{\label{fig:effectPlots1} Estimates of exogenous terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). For some models, the confidence intervals are not visible due to being small and the large range of the coefficient estimates.}
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Origin_GDPpc.pdf}   &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Dest_TO.pdf} &
+\includegraphics[height=.165\textheight, clip=true, trim=.5cm .5cm 0cm .1cm]{figures/main_rl_plots/Origin_TO.pdf}   \\
 
-\end{longtable}
-\end{spacing}
-\end{landscape}
+
+\end{tabular}
+\caption{\label{fig:node_controls} Estimates of exogenous node terms in Poisson ERGMs. Bars span 95\% confidence intervals. Black coefficient representations are from models excluding dependence terms (i.e., transitivity and reciprocity). For some models, the confidence intervals are not visible due to being small and the large range of the coefficient estimates.}
+\end{figure}
+
+
+
+
+
 
 
 Regarding covariate determinants, presented in Table \ref{fig:effectPlots1}, the results show that FDI flows between a dyad are strongly and positively correlated with the product of the dyad's GDP, BIT, defense treaty, both destination and origin countries' polity scores and trade openness, and origin country's GDP per capita. On the other hand, FDI flows are negatively associated with geographic distance between a dyad, alliance treaty, and destination country's GDP per capita. In addition, we see that the coefficient values are not stable over time. Several parameters such as geographic distance, defense treaty, as well as origin and destination's polity scores, GDP per capita, and trade openness change significantly after 2008 when the Great Recession began. The magnitude of most of these coefficients decreases since then. One possible explanation is that concerns about global economic uncertainty might predominate in investment decisions at that time so that home and host countries' political and economic characteristics play a less important role.
@@ -403,7 +431,7 @@ We noted above that omitting dependent network structure, a condition that chara
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.45]{./draft_figures/polity_in_sims} \vspace{-.5cm}\\
+\includegraphics[scale=.75]{./figures/polity_in_sims} \vspace{-.5cm}\\
 \caption{\label{fig:polity} Results from the simulation exercise investigating the effects of Polity, in-degree for year 2002. The points are calculated as the the receiver node averages in the adjacency matrix. These results are from 500 simulations. The line in red is the Loess curve.}
 \end{figure}
 
@@ -423,7 +451,7 @@ There are three steps in the simulation experiment we conduct to analyze the eff
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.85]{./draft_figures/contagion_simulation_results} \vspace{-.5cm}\\
+\includegraphics[scale=.85]{./figures/contagion_simulation_results} \vspace{-.5cm}\\
 \caption{\label{fig:contagion} Results from simulation exercise investigating the effects of eliminating edge $i \rightarrow j$ on the expected values of other edges incident to both $i$ and $j$. Points are drawn at the average values over all edges in the 2012 network. The bars span 95\% confidence intervals.  Expected values of edges are expressed on the natural logarithm scale.}
 \end{figure}
 
@@ -498,6 +526,6 @@ Entente Treaty &  0.066 & 0.248 & 0 & 1 \\
 \end{table}
 
 
-\includegraphics[scale=.8]{draft_figures/reciprocity.png}\\
-\includegraphics[scale=.8]{draft_figures/transitivity.png}\\
-\includegraphics[scale=.8]{draft_figures/assortativity.png}\\
+\includegraphics[scale=.8]{figures/reciprocity.png}\\
+\includegraphics[scale=.8]{figures/transitivity.png}\\
+\includegraphics[scale=.8]{figures/assortativity.png}\\
