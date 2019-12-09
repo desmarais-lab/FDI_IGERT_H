@@ -1,1 +1,4 @@
-*interpretationStats.RData
+#ignore data files
+*.csv
+*.Rdata
+*.RData
