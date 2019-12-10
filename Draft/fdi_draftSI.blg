@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: fdi_draftSI.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: fdi_draftSI.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
+You've used 2 entries,
+            2874 wiz_defined-function locations,
+            657 strings with 5089 characters,
+and the built_in function-call counts, 4176 in all, are:
+= -- 648
+> -- 32
+< -- 0
++ -- 270
+- -- 14
+* -- 324
+:= -- 914
+add.period$ -- 8
+call.type$ -- 2
+change.case$ -- 26
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 30
+empty$ -- 63
+format.name$ -- 18
+if$ -- 735
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 20
+pop$ -- 6
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 872
+swap$ -- 4
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 44
+width$ -- 0
+write$ -- 30
