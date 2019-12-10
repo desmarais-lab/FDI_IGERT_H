@@ -309,10 +309,13 @@ Throughout the results section, we compare two specifications of the count ERGM-
 \end{figure}
 
 
-To illustrate how the network model fits better, we compare the fit of the two models to the level of reciprocity in the FDI ties. The level of reciprocity is defined as $$ \frac{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cap \bm{y}_{j,i}>0 \right)}{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cup \bm{y}_{j,i}>0 \right)}.$$ In other words, this is the proportion of dyads in which there is an FDI tie from state $i$ to state $j$ and a tie from state $j$ to state $i$ out of the number of dyads in which there is at least one tie. This measures the degree to which the presence of a tie in one direction within a dyad implies that the other tie will exist. To compare the network and independent models we simulated 1,000 networks from each, and compare the reciprocity values in the simulated networks to the observed reciprocity value.
+To illustrate how the network model fits better, we compare the fit of the two models to the level of reciprocity in the FDI ties. The level of reciprocity is defined as $$ \frac{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cap \bm{y}_{j,i}>0 \right)}{ \sum_{(i>j)} \text{\bf 1}\left( \bm{y}_{i,j}>0  \cup \bm{y}_{j,i}>0 \right)}.$$ In other words, this is the proportion of dyads in which there is an FDI tie from state $i$ to state $j$ and a tie from state $j$ to state $i$ out of the number of dyads in which there is at least one tie. This measures the degree to which the presence of a tie in one direction within a dyad implies that the other tie will exist. To compare the network and independent models we simulated 100 networks from each, and compare the reciprocity values in the simulated networks to the observed reciprocity value.
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=.75]{figures/reciprocityFit.pdf} \vspace{-.5cm}
+\includegraphics[scale=.75, trim = 0cm 1.5cm .1cm 0cm, clip=true  ]{figures/recip_fit.pdf}  \\
+\includegraphics[scale=.75,  trim = 0cm 1.5cm .1cm 2.4cm, clip=true]{figures/trans_fit.pdf}  \\
+\includegraphics[scale=.75, trim = 0cm 1.5cm .1cm 2.4cm, clip=true]{figures/idsd_fit.pdf}  \\
+\includegraphics[scale=.75, trim = 0cm 1.5cm .1cm 2.4cm, clip=true]{figures/odsd_fit.pdf}
 \caption{\label{fig:recipFit} Reciprocity values of 1,000 networks simulated from the Network and Independent models. Observed value given by the dashed horizontal line.}
 \end{figure}
 We see in Figure \ref{fig:recipFit} that the network model provides a much better fit to the observed level of reciprocity (approximately 0.32) than the independent model. Indeed, the observed value is an extreme outlier with respect to the distribution of reciprocity values of networks simulated from the independent model. Unlike the BIC, the fit to the observed reciprocity value does not provide a holistic assessment of model fit. Rather, it illustrates the improved fit regarding an interpretable quantity in the FDI network, and illustrates how a model in which independence is assumed provides a relatively poor fit to this quantity.
