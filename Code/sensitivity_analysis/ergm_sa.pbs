@@ -1,0 +1,15 @@
+#PBS -A open
+#PBS -l nodes=1:ppn=12
+#PBS -l walltime=24:00:00
+#PBS -j oe
+
+# send an email if the job aborts (a) and when it ends (e)
+#PBS -mae
+
+# send the email to this address
+#PBS -M jbs5686@psu.edu
+
+module load r/3.3
+cd $PBS_O_WORKDIR
+R --no-save --no-restore < R.in > R.out
+Rscript zero_ergm.R

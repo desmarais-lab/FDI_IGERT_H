@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  9 DEC 2019 20:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  12 DEC 2019 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -519,7 +519,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<SI_figures/descriptive_plots/alliance_barplot.pdf, id=45, 397.485pt x 307.1475
+<SI_figures/descriptive_plots/alliance_barplot.pdf, id=14, 397.485pt x 307.1475
 pt>
 File: SI_figures/descriptive_plots/alliance_barplot.pdf Graphic file (type pdf)
 
@@ -528,7 +528,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/alliance_barplot.pdf used
  on input line 138.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/defense_barplot.pdf, id=47, 397.485pt x 307.1475p
+<SI_figures/descriptive_plots/defense_barplot.pdf, id=16, 397.485pt x 307.1475p
 t>
 File: SI_figures/descriptive_plots/defense_barplot.pdf Graphic file (type pdf)
  <use SI_figures/descriptive_plots/defense_barplot.pdf>
@@ -536,7 +536,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/defense_barplot.pdf used
 on input line 139.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/BIT_barplot.pdf, id=49, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/BIT_barplot.pdf, id=18, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/BIT_barplot.pdf Graphic file (type pdf)
 
 <use SI_figures/descriptive_plots/BIT_barplot.pdf>
@@ -544,7 +544,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/BIT_barplot.pdf used on i
 nput line 142.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/OECDpair_barplot.pdf, id=51, 397.485pt x 307.1475
+<SI_figures/descriptive_plots/OECDpair_barplot.pdf, id=20, 397.485pt x 307.1475
 pt>
 File: SI_figures/descriptive_plots/OECDpair_barplot.pdf Graphic file (type pdf)
 
@@ -553,7 +553,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/OECDpair_barplot.pdf used
  on input line 143.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/Mass_boxplot.pdf, id=53, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/Mass_boxplot.pdf, id=22, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/Mass_boxplot.pdf Graphic file (type pdf)
 
 <use SI_figures/descriptive_plots/Mass_boxplot.pdf>
@@ -561,7 +561,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/Mass_boxplot.pdf used on
 input line 146.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/dist_boxplot.pdf, id=55, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/dist_boxplot.pdf, id=24, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/dist_boxplot.pdf Graphic file (type pdf)
 
 <use SI_figures/descriptive_plots/dist_boxplot.pdf>
@@ -569,14 +569,14 @@ Package pdftex.def Info: SI_figures/descriptive_plots/dist_boxplot.pdf used on
 input line 147.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/GDPpc_boxplot.pdf, id=57, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/GDPpc_boxplot.pdf, id=26, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/GDPpc_boxplot.pdf Graphic file (type pdf)
 <use SI_figures/descriptive_plots/GDPpc_boxplot.pdf>
 Package pdftex.def Info: SI_figures/descriptive_plots/GDPpc_boxplot.pdf used on
  input line 150.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/polity_boxplot.pdf, id=59, 397.485pt x 307.1475pt
+<SI_figures/descriptive_plots/polity_boxplot.pdf, id=28, 397.485pt x 307.1475pt
 >
 File: SI_figures/descriptive_plots/polity_boxplot.pdf Graphic file (type pdf)
  <use SI_figures/descriptive_plots/polity_boxplot.pdf>
@@ -584,7 +584,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/polity_boxplot.pdf used o
 n input line 151.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/TO_boxplot.pdf, id=61, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/TO_boxplot.pdf, id=30, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/TO_boxplot.pdf Graphic file (type pdf)
 
 <use SI_figures/descriptive_plots/TO_boxplot.pdf>
@@ -592,14 +592,14 @@ Package pdftex.def Info: SI_figures/descriptive_plots/TO_boxplot.pdf used on in
 put line 157.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/Trade_boxplot.pdf, id=63, 397.485pt x 307.1475pt>
+<SI_figures/descriptive_plots/Trade_boxplot.pdf, id=32, 397.485pt x 307.1475pt>
 File: SI_figures/descriptive_plots/Trade_boxplot.pdf Graphic file (type pdf)
 <use SI_figures/descriptive_plots/Trade_boxplot.pdf>
 Package pdftex.def Info: SI_figures/descriptive_plots/Trade_boxplot.pdf used on
  input line 158.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/ptadepth_boxplot.pdf, id=65, 397.485pt x 307.1475
+<SI_figures/descriptive_plots/ptadepth_boxplot.pdf, id=34, 397.485pt x 307.1475
 pt>
 File: SI_figures/descriptive_plots/ptadepth_boxplot.pdf Graphic file (type pdf)
 
@@ -608,7 +608,7 @@ Package pdftex.def Info: SI_figures/descriptive_plots/ptadepth_boxplot.pdf used
  on input line 161.
 (pdftex.def)             Requested size: 198.16582pt x 110.5719pt.
 
-<SI_figures/descriptive_plots/fdi_stock_zeroes_boxplot.pdf, id=67, 397.485pt x 
+<SI_figures/descriptive_plots/fdi_stock_zeroes_boxplot.pdf, id=36, 397.485pt x 
 307.1475pt>
 File: SI_figures/descriptive_plots/fdi_stock_zeroes_boxplot.pdf Graphic file (t
 ype pdf)
@@ -625,20 +625,25 @@ e_plots/defense_barplot.pdf> <./SI_figures/descriptive_plots/BIT_barplot.pdf> <
 plots/Mass_boxplot.pdf> <./SI_figures/descriptive_plots/dist_boxplot.pdf> <./SI
 _figures/descriptive_plots/GDPpc_boxplot.pdf> <./SI_figures/descriptive_plots/p
 olity_boxplot.pdf>]
-<SI_figures/descriptive_plots/check_sums.pdf, id=132, 433.62pt x 289.08pt>
+<SI_figures/descriptive_plots/check_sums.pdf, id=101, 433.62pt x 289.08pt>
 File: SI_figures/descriptive_plots/check_sums.pdf Graphic file (type pdf)
 
 <use SI_figures/descriptive_plots/check_sums.pdf>
 Package pdftex.def Info: SI_figures/descriptive_plots/check_sums.pdf used on in
 put line 173.
 (pdftex.def)             Requested size: 414.7553pt x 260.16803pt.
- [3
+
+
+LaTeX Warning: Reference `fig:net_effects' on page 3 undefined on input line 19
+2.
+
+[3
 
  <./SI_figures/descriptive_plots/TO_boxplot.pdf> <./SI_figures/descriptive_plot
 s/Trade_boxplot.pdf> <./SI_figures/descriptive_plots/ptadepth_boxplot.pdf> <./S
 I_figures/descriptive_plots/fdi_stock_zeroes_boxplot.pdf> <./SI_figures/descrip
-tive_plots/check_sums.pdf>] <SI_figures/rl_TERGM_plots/Transitivity.pdf, id=180
-, 205.76875pt x 144.54pt>
+tive_plots/check_sums.pdf>]
+<SI_figures/rl_TERGM_plots/Transitivity.pdf, id=147, 205.76875pt x 144.54pt>
 File: SI_figures/rl_TERGM_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/rl_TERGM_plots/Transitivity.pdf>
@@ -646,7 +651,7 @@ Package pdftex.def Info: SI_figures/rl_TERGM_plots/Transitivity.pdf used on inp
 ut line 237.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/rl_TERGM_plots/Mutuality_OECD_Pair.pdf, id=182, 205.76875pt x 144.5
+<SI_figures/rl_TERGM_plots/Mutuality_OECD_Pair.pdf, id=149, 205.76875pt x 144.5
 4pt>
 File: SI_figures/rl_TERGM_plots/Mutuality_OECD_Pair.pdf Graphic file (type pdf)
 
@@ -655,7 +660,7 @@ Package pdftex.def Info: SI_figures/rl_TERGM_plots/Mutuality_OECD_Pair.pdf used
  on input line 238.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/rl_TERGM_plots/Mutuality_Not_OECD_Pair.pdf, id=184, 205.76875pt x 1
+<SI_figures/rl_TERGM_plots/Mutuality_Not_OECD_Pair.pdf, id=151, 205.76875pt x 1
 44.54pt>
 File: SI_figures/rl_TERGM_plots/Mutuality_Not_OECD_Pair.pdf Graphic file (type 
 pdf)
@@ -664,25 +669,33 @@ Package pdftex.def Info: SI_figures/rl_TERGM_plots/Mutuality_Not_OECD_Pair.pdf
 used on input line 239.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/LSM_rl_plots/transitivity.pdf, id=186, 184.69pt x 129.48375pt>
-File: SI_figures/LSM_rl_plots/transitivity.pdf Graphic file (type pdf)
+<SI_figures/LSM_rl_plots/trans_dep.pdf, id=153, 184.69pt x 129.48375pt>
+File: SI_figures/LSM_rl_plots/trans_dep.pdf Graphic file (type pdf)
 
-<use SI_figures/LSM_rl_plots/transitivity.pdf>
-Package pdftex.def Info: SI_figures/LSM_rl_plots/transitivity.pdf used on input
- line 252.
+<use SI_figures/LSM_rl_plots/trans_dep.pdf>
+Package pdftex.def Info: SI_figures/LSM_rl_plots/trans_dep.pdf used on input li
+ne 252.
 (pdftex.def)             Requested size: 162.74326pt x 107.31657pt.
 
-<SI_figures/LSM_rl_plots/mutuality.pdf, id=188, 184.69pt x 129.48375pt>
-File: SI_figures/LSM_rl_plots/mutuality.pdf Graphic file (type pdf)
+<SI_figures/LSM_rl_plots/dyad_dep.pdf, id=155, 184.69pt x 129.48375pt>
+File: SI_figures/LSM_rl_plots/dyad_dep.pdf Graphic file (type pdf)
 
-<use SI_figures/LSM_rl_plots/mutuality.pdf>
-Package pdftex.def Info: SI_figures/LSM_rl_plots/mutuality.pdf used on input li
-ne 253.
+<use SI_figures/LSM_rl_plots/dyad_dep.pdf>
+Package pdftex.def Info: SI_figures/LSM_rl_plots/dyad_dep.pdf used on input lin
+e 253.
 (pdftex.def)             Requested size: 162.74326pt x 107.31657pt.
  [4 <./SI_figures/rl_TERGM_plots/Transitivity.pdf> <./SI_figures/rl_TERGM_plots
 /Mutuality_OECD_Pair.pdf> <./SI_figures/rl_TERGM_plots/Mutuality_Not_OECD_Pair.
-pdf> <./SI_figures/LSM_rl_plots/transitivity.pdf> <./SI_figures/LSM_rl_plots/mu
-tuality.pdf>]
+pdf> <./SI_figures/LSM_rl_plots/trans_dep.pdf> <./SI_figures/LSM_rl_plots/dyad_
+dep.pdf>]
+
+LaTeX Warning: Reference `fig:q50netterms' on page 5 undefined on input line 26
+2.
+
+
+LaTeX Warning: Reference `fig:q25netterms' on page 5 undefined on input line 26
+2.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 265.
@@ -695,7 +708,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 265.
 
-<SI_figures/q50_rl_plots/Transitivity.pdf, id=233, 205.76875pt x 144.54pt>
+<SI_figures/q50_rl_plots/Transitivity.pdf, id=201, 205.76875pt x 144.54pt>
 File: SI_figures/q50_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/q50_rl_plots/Transitivity.pdf>
@@ -703,7 +716,7 @@ Package pdftex.def Info: SI_figures/q50_rl_plots/Transitivity.pdf used on input
  line 271.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/q50_rl_plots/Mutuality_OECD.pdf, id=235, 205.76875pt x 144.54pt>
+<SI_figures/q50_rl_plots/Mutuality_OECD.pdf, id=203, 205.76875pt x 144.54pt>
 File: SI_figures/q50_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use SI_figures/q50_rl_plots/Mutuality_OECD.pdf>
@@ -711,7 +724,7 @@ Package pdftex.def Info: SI_figures/q50_rl_plots/Mutuality_OECD.pdf used on inp
 ut line 272.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/q50_rl_plots/Mutuality_notOECD.pdf, id=237, 205.76875pt x 144.54pt>
+<SI_figures/q50_rl_plots/Mutuality_notOECD.pdf, id=205, 205.76875pt x 144.54pt>
 File: SI_figures/q50_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 <use SI_figures/q50_rl_plots/Mutuality_notOECD.pdf>
 Package pdftex.def Info: SI_figures/q50_rl_plots/Mutuality_notOECD.pdf used on 
@@ -733,7 +746,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 279.
 
-<SI_figures/q25_rl_plots/Transitivity.pdf, id=239, 205.76875pt x 144.54pt>
+<SI_figures/q25_rl_plots/Transitivity.pdf, id=207, 205.76875pt x 144.54pt>
 File: SI_figures/q25_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/q25_rl_plots/Transitivity.pdf>
@@ -741,7 +754,7 @@ Package pdftex.def Info: SI_figures/q25_rl_plots/Transitivity.pdf used on input
  line 285.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/q25_rl_plots/Mutuality_OECD.pdf, id=241, 205.76875pt x 144.54pt>
+<SI_figures/q25_rl_plots/Mutuality_OECD.pdf, id=209, 205.76875pt x 144.54pt>
 File: SI_figures/q25_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use SI_figures/q25_rl_plots/Mutuality_OECD.pdf>
@@ -749,7 +762,7 @@ Package pdftex.def Info: SI_figures/q25_rl_plots/Mutuality_OECD.pdf used on inp
 ut line 286.
 (pdftex.def)             Requested size: 142.10396pt x 107.31657pt.
 
-<SI_figures/q25_rl_plots/Mutuality_notOECD.pdf, id=243, 205.76875pt x 144.54pt>
+<SI_figures/q25_rl_plots/Mutuality_notOECD.pdf, id=211, 205.76875pt x 144.54pt>
 File: SI_figures/q25_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 <use SI_figures/q25_rl_plots/Mutuality_notOECD.pdf>
 Package pdftex.def Info: SI_figures/q25_rl_plots/Mutuality_notOECD.pdf used on 
@@ -758,6 +771,14 @@ input line 287.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `Borga:2016' on page 5 undefined on input line
+ 301.
+
+
+Package natbib Warning: Citation `Borga:2017' on page 5 undefined on input line
+ 301.
 
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 301.
 
@@ -769,11 +790,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--301
 ] data -[] tell -[] us -[] about -[] corporate -[] tax -[]
  []
 
+
+LaTeX Warning: Reference `fig:tax_rates_netterms' on page 5 undefined on input 
+line 301.
+
+
+LaTeX Warning: Reference `fig:tax_havens_netterms' on page 5 undefined on input
+ line 302.
+
 [5] [6 <./SI_figures/q50_rl_plots/Transitivity.pdf> <./SI_figures/q50_rl_plots/
 Mutuality_OECD.pdf> <./SI_figures/q50_rl_plots/Mutuality_notOECD.pdf> <./SI_fig
 ures/q25_rl_plots/Transitivity.pdf> <./SI_figures/q25_rl_plots/Mutuality_OECD.p
 df> <./SI_figures/q25_rl_plots/Mutuality_notOECD.pdf>]
-<SI_figures/tax_rl_plots/Transitivity.pdf, id=320, 184.69pt x 129.48375pt>
+<SI_figures/tax_rl_plots/Transitivity.pdf, id=285, 184.69pt x 129.48375pt>
 File: SI_figures/tax_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/tax_rl_plots/Transitivity.pdf>
@@ -781,7 +810,7 @@ Package pdftex.def Info: SI_figures/tax_rl_plots/Transitivity.pdf used on input
  line 308.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/tax_rl_plots/Mutuality_OECD.pdf, id=322, 184.69pt x 129.48375pt>
+<SI_figures/tax_rl_plots/Mutuality_OECD.pdf, id=287, 184.69pt x 129.48375pt>
 File: SI_figures/tax_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use SI_figures/tax_rl_plots/Mutuality_OECD.pdf>
@@ -789,14 +818,14 @@ Package pdftex.def Info: SI_figures/tax_rl_plots/Mutuality_OECD.pdf used on inp
 ut line 309.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/tax_rl_plots/Mutuality_notOECD.pdf, id=324, 184.69pt x 129.48375pt>
+<SI_figures/tax_rl_plots/Mutuality_notOECD.pdf, id=289, 184.69pt x 129.48375pt>
 File: SI_figures/tax_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 <use SI_figures/tax_rl_plots/Mutuality_notOECD.pdf>
 Package pdftex.def Info: SI_figures/tax_rl_plots/Mutuality_notOECD.pdf used on 
 input line 310.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/haven_rl_plots/Transitivity.pdf, id=326, 184.69pt x 129.48375pt>
+<SI_figures/haven_rl_plots/Transitivity.pdf, id=291, 184.69pt x 129.48375pt>
 File: SI_figures/haven_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/haven_rl_plots/Transitivity.pdf>
@@ -804,7 +833,7 @@ Package pdftex.def Info: SI_figures/haven_rl_plots/Transitivity.pdf used on inp
 ut line 319.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/haven_rl_plots/Mutuality_OECD.pdf, id=328, 184.69pt x 129.48375pt>
+<SI_figures/haven_rl_plots/Mutuality_OECD.pdf, id=293, 184.69pt x 129.48375pt>
 File: SI_figures/haven_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use SI_figures/haven_rl_plots/Mutuality_OECD.pdf>
@@ -812,7 +841,7 @@ Package pdftex.def Info: SI_figures/haven_rl_plots/Mutuality_OECD.pdf used on i
 nput line 320.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/haven_rl_plots/Mutuality_notOECD.pdf, id=330, 184.69pt x 129.48375p
+<SI_figures/haven_rl_plots/Mutuality_notOECD.pdf, id=295, 184.69pt x 129.48375p
 t>
 File: SI_figures/haven_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
  <use SI_figures/haven_rl_plots/Mutuality_notOECD.pdf>
@@ -823,7 +852,7 @@ n input line 321.
 uality_OECD.pdf> <./SI_figures/tax_rl_plots/Mutuality_notOECD.pdf> <./SI_figure
 s/haven_rl_plots/Transitivity.pdf> <./SI_figures/haven_rl_plots/Mutuality_OECD.
 pdf> <./SI_figures/haven_rl_plots/Mutuality_notOECD.pdf>]
-<SI_figures/EU_rl_plots/Transitivity.pdf, id=384, 184.69pt x 129.48375pt>
+<SI_figures/EU_rl_plots/Transitivity.pdf, id=359, 184.69pt x 129.48375pt>
 File: SI_figures/EU_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use SI_figures/EU_rl_plots/Transitivity.pdf>
@@ -831,7 +860,7 @@ Package pdftex.def Info: SI_figures/EU_rl_plots/Transitivity.pdf used on input
 line 337.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/EU_rl_plots/Mutuality_OECD.pdf, id=386, 184.69pt x 129.48375pt>
+<SI_figures/EU_rl_plots/Mutuality_OECD.pdf, id=361, 184.69pt x 129.48375pt>
 File: SI_figures/EU_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use SI_figures/EU_rl_plots/Mutuality_OECD.pdf>
@@ -839,7 +868,7 @@ Package pdftex.def Info: SI_figures/EU_rl_plots/Mutuality_OECD.pdf used on inpu
 t line 338.
 (pdftex.def)             Requested size: 141.01187pt x 107.31657pt.
 
-<SI_figures/EU_rl_plots/Mutuality_notOECD.pdf, id=388, 184.69pt x 129.48375pt>
+<SI_figures/EU_rl_plots/Mutuality_notOECD.pdf, id=363, 184.69pt x 129.48375pt>
 File: SI_figures/EU_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 
 <use SI_figures/EU_rl_plots/Mutuality_notOECD.pdf>
@@ -852,14 +881,35 @@ lity_OECD.pdf> <./SI_figures/EU_rl_plots/Mutuality_notOECD.pdf>] (./fdi_draftSI
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 7.
 )
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
- [9]
+[9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
- (./fdi_draftSI.aux)
+ (./fdi_draftSI.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
-Package rerunfilecheck Info: File `fdi_draftSI.out' has not changed.
-(rerunfilecheck)             Checksum: 241B43E05AB8305C6D196A3D1345D13D;484.
+
+
+Package rerunfilecheck Warning: File `fdi_draftSI.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fdi_draftSI.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  241B43E05AB8305C6D196A3D1345D13D;484.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
  )
 (\end occurred inside a group at level 1)
@@ -867,13 +917,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
 ### simple group (level 1) entered at line 260 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9141 strings out of 493089
- 137797 string characters out of 6134841
- 237729 words of memory out of 5000000
- 12421 multiletter control sequences out of 15000+600000
+ 9129 strings out of 493089
+ 137632 string characters out of 6134841
+ 235366 words of memory out of 5000000
+ 12409 multiletter control sequences out of 15000+600000
  20719 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,47p,2163b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,47p,2163b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -894,10 +944,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draftSI.pdf (9 pages, 331727 bytes).
+Output written on fdi_draftSI.pdf (9 pages, 331536 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
- 344 compressed objects within 4 object streams
+ 444 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
  35 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 
