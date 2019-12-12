@@ -4,7 +4,7 @@ set.seed(19)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 library(ggplot2)
-
+library(amen)
 
 
 #load ERGM results for with
@@ -22,13 +22,19 @@ confint_ame <- function(x, conf){
   df[,1] <- colnames(x)
   n <- nrow(x)-1
   for(r in 1:nrow(df)){df[r,2] <- mean(x[,r])}
-  for(r in 1:nrow(df)){df[r,3] <- qt(conf,df=n-1)*sd(x[,r])/sqrt(n)}
+  for(r in 1:nrow(df)){df[r,3] <- qt(conf,df=n-1)*sd(x[,r])}
   for(r in 1:nrow(df)){df[r,4] <- df[r,2]-df[r,3]}
   for(r in 1:nrow(df)){df[r,5] <- df[r,2]+df[r,3]}
   return(df)
 }
 
 
+
+
+
+#mean(x[,r])/(-0.862 + sqrt(0.743 - 2.404*log(p)))
+
+summary(x)
 #put results into df
 years <- 2002:2012
 df <- confint_ame(LSMs[[1]]$GOF, conf=.975)
@@ -43,7 +49,6 @@ for(i in 1:11){
   dfi$year <- years[i]
   df <- rbind(df, dfi)
 }
-
 
 
 #set vars to loop through.

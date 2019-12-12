@@ -2,3 +2,5 @@
 *.csv
 *.Rdata
 *.RData
+*.DS_Store
+*.rda
