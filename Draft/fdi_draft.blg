@@ -1,61 +1,65 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 980 of file fdi_reference.bib
+Repeated entry---line 265 of file fdi_reference.bib
+ :   @article{garlaschelli2004patterns
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1011 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1295 of file fdi_reference.bib
+Repeated entry---line 1326 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1427 of file fdi_reference.bib
+Repeated entry---line 1458 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-You've used 93 entries,
+You've used 96 entries,
             2874 wiz_defined-function locations,
-            1231 strings with 20788 characters,
-and the built_in function-call counts, 346606 in all, are:
-= -- 56351
-> -- 4080
+            1250 strings with 21279 characters,
+and the built_in function-call counts, 362710 in all, are:
+= -- 59029
+> -- 4271
 < -- 2
-+ -- 26124
-- -- 1469
-* -- 29234
-:= -- 70290
-add.period$ -- 379
-call.type$ -- 93
-change.case$ -- 1209
-chr.to.int$ -- 93
-cite$ -- 95
-duplicate$ -- 1422
-empty$ -- 3154
-format.name$ -- 1553
-if$ -- 62245
++ -- 27410
+- -- 1535
+* -- 30635
+:= -- 73475
+add.period$ -- 391
+call.type$ -- 96
+change.case$ -- 1248
+chr.to.int$ -- 96
+cite$ -- 98
+duplicate$ -- 1466
+empty$ -- 3251
+format.name$ -- 1619
+if$ -- 65143
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 99
-newline$ -- 406
-num.names$ -- 1071
-pop$ -- 376
+missing$ -- 102
+newline$ -- 418
+num.names$ -- 1109
+pop$ -- 384
 preamble$ -- 1
-purify$ -- 1395
+purify$ -- 1440
 quote$ -- 0
-skip$ -- 1188
+skip$ -- 1229
 stack$ -- 0
-substring$ -- 78955
-swap$ -- 194
-text.length$ -- 1304
+substring$ -- 82766
+swap$ -- 200
+text.length$ -- 1346
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
+type$ -- 360
 warning$ -- 2
-while$ -- 2172
+while$ -- 2245
 width$ -- 0
-write$ -- 1297
-(There were 3 error messages)
+write$ -- 1338
+(There were 4 error messages)

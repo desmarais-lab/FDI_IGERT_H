@@ -185,6 +185,12 @@ Gai, Prasanna \harvardand\ Sujit Kapadia. 2010.
   Society of London A: Mathematical, Physical and Engineering Sciences}.
 \newblock Vol. 466 The Royal Society pp.~2401--2423.
 
+\harvarditem{Garlaschelli \harvardand\
+  Loffredo}{2004}{garlaschelli2004patterns}
+Garlaschelli, Diego \harvardand\ Maria~I Loffredo. 2004.
+\newblock ``Patterns of link reciprocity in directed networks.'' {\em Physical
+  review letters} 93(26):268701.
+
 \harvarditem{Gibler}{2009}{Gibler09}
 Gibler, Douglas~M. 2009.
 \newblock ``International military alliances, 1648-2008.''.
@@ -219,6 +225,12 @@ Helpman, Elhanan. 1984.
 Helpman, Elhanan, Marc~J. Melitz \harvardand\ Stephen~R. Yeaple. 2004.
 \newblock ``Export versus FDI with Heterogeneous Firms.'' {\em The American
   Economic Review} 94(1):300--316.
+
+\harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
+  \harvardand\ Handcock}{2008}{hunter2008goodness}
+Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008.
+\newblock ``Goodness of fit of social network models.'' {\em Journal of the
+  American Statistical Association} 103(481):248--258.
 
 \harvarditem{Hymer}{1976}{Hymer:1976}
 Hymer, Stephen~H. 1976.
@@ -324,6 +336,11 @@ Krivitsky, Pavel~N \harvardand\ Carter~T Butts. 2013.
 \newblock ``Modeling valued networks with statnet.'' {\em The Statnet
   Development Team} p.~2013.
 \newline\harvardurl{\url{https://statnet.csde.washington.edu/trac/raw-attachment/wiki/Sunbelt2015/Valued.pdf}}
+
+\harvarditem{Krivitsky \harvardand\ Handcock}{2008}{krivitsky2008fitting}
+Krivitsky, Pavel~N \harvardand\ Mark~S Handcock. 2008.
+\newblock ``Fitting position latent cluster models for social networks with
+  latentnet.'' {\em Journal of Statistical Software} 24.
 
 \harvarditem{Kwok \harvardand\ Tadesse}{2006}{Kwok_Tadesse:2006}
 Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
