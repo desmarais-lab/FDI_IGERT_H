@@ -3,63 +3,67 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 265 of file fdi_reference.bib
+Repeated entry---line 73 of file fdi_reference.bib
+ : @article{snijders2006new
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 298 of file fdi_reference.bib
  :   @article{garlaschelli2004patterns
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1011 of file fdi_reference.bib
+Repeated entry---line 1054 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1326 of file fdi_reference.bib
+Repeated entry---line 1369 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1458 of file fdi_reference.bib
+Repeated entry---line 1501 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-You've used 96 entries,
+You've used 100 entries,
             2874 wiz_defined-function locations,
-            1250 strings with 21279 characters,
-and the built_in function-call counts, 362710 in all, are:
-= -- 59029
-> -- 4271
+            1274 strings with 21892 characters,
+and the built_in function-call counts, 382313 in all, are:
+= -- 62261
+> -- 4510
 < -- 2
-+ -- 27410
-- -- 1535
-* -- 30635
-:= -- 73475
-add.period$ -- 391
-call.type$ -- 96
-change.case$ -- 1248
-chr.to.int$ -- 96
-cite$ -- 98
-duplicate$ -- 1466
-empty$ -- 3251
-format.name$ -- 1619
-if$ -- 65143
++ -- 28947
+- -- 1618
+* -- 32348
+:= -- 77356
+add.period$ -- 407
+call.type$ -- 100
+change.case$ -- 1300
+chr.to.int$ -- 100
+cite$ -- 102
+duplicate$ -- 1526
+empty$ -- 3391
+format.name$ -- 1707
+if$ -- 68668
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 102
-newline$ -- 418
-num.names$ -- 1109
-pop$ -- 384
+missing$ -- 106
+newline$ -- 434
+num.names$ -- 1156
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 1440
+purify$ -- 1500
 quote$ -- 0
-skip$ -- 1229
+skip$ -- 1283
 stack$ -- 0
-substring$ -- 82766
-swap$ -- 200
-text.length$ -- 1346
+substring$ -- 87367
+swap$ -- 208
+text.length$ -- 1402
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 360
+type$ -- 376
 warning$ -- 2
-while$ -- 2245
+while$ -- 2342
 width$ -- 0
-write$ -- 1338
-(There were 4 error messages)
+write$ -- 1394
+(There were 5 error messages)

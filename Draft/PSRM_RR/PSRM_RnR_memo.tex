@@ -26,7 +26,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{E1:} \emph{Both reviewers would like to see a more developed justification for the use of count ERGMs. R1 wants to know why the count ERGM is preferable to "spatial" models with exogenous connectivity matrices. Perhaps the most relevant model in this tradition is the dyadic model in Neumayer and Plümper, International Organization, Vol. 64, No. 1 (Winter 2010), pp. 145-166. With directed dyads, this model can handle reciprocity and transitivity. If the spatial lag is time lagged, one could model zero-inflation in a selection framework. R2 suggests that Hoff's AMEN model for networks can be easily amended to handle zero-inflation. R2 would also like to see some mention of Ward, Ahlquist and Rozenas.}\\
 
-\noindent \textbf{Addressed:} TODO  (Bruce) , Add a note that N/P develop a 'spatial' model that can model some of the dependencies---it could be extended to model ZI if dependencies were lagged, and that AMEN could be extended to address ZI. Be clear that ERGM is just one possible approach, but has distinct strength when it comes to the zero-dominated FDI data.
+\noindent \textbf{Addressed:} These are all great points, and we realize that our treatment of existing modeling approaches was overly narrow in the initial submission. We extended our discussion of alternative approaches to note that three existing models---GERGM, AMEN, and N/P spatial, could all be used for dyadic FDI if they were extended to capture zero inflation. We note that developing such an extension would be beyond the scope of the current paper. Especially given that R1 is calling for additional substantive/theoretical discussion, we do not have sufficient space to add a substantial methods development objective to this paper.
 
 \noindent \textbf{E2:} \emph{Both reviewers would like to see you address more of the literature on FDI. R1 points out that there's a literature on structural dependence across countries that goes back to Coughlin and Segev and includes several papers by Blonigen and Egger.} \\
 
@@ -50,7 +50,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{E7:} \emph{R2 has a number of reasonable requests for the appendix: more on the estimation process; how is the multiple imputation handled; detailed GOF statistics.}\\
 
-\noindent \textbf{Addressed:} TODO (John, can you discuss MI in detail?) Add more discussion of estimation, and GOF stats. \\
+\noindent \textbf{Addressed:} We TODO (John, can you discuss MI in detail?). \\
 
 
 \section*{Reviewer: 1}
@@ -91,11 +91,11 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{R2.3:} \emph{In general, more detail should be provided at least in an appendix about the estimation process for the count ERGM. I'm guessing the authors are using the model from Krivitsky (2012), which provides a way to estimate ERGM on valued networks and specifically dispersed count dependent variables but it would be useful if this was made clearer in the manuscript, especially since this has been submitted in a methods journal.}\\
 
-\noindent \textbf{Addressed:} TODO  (Bruce), add discussion of Count ERGM estimation \\
+\noindent \textbf{Addressed:} We added a paragraph to Section 3.2.1 in which we discuss the specific form of the count ERGM we use---the Poisson ERGM from Krivitsky (2012), and discuss how the parameters are estimated. \\
 
 \noindent \textbf{R2.4:} \emph{On page 14, the authors note that the count ERGM is "the only network model that can currently be used to model weighted data with zero-inflation". This is not correct as the Ward, Ahlquist, and Rozenas (2013) piece introduced a latent space model for trade data to account for the excess of non-trading dyads via a mixture approach. I understand that the authors are interesting in estimating substantive effects for network terms such as transitivity, which cannot be done via a latent space or factor approach, but the quoted text should be corrected. Additionally, extending Hoff's AMEN framework to handling dispersed count processes is also a trivial task.}\\
 
-\noindent \textbf{Addressed:} TODO  (Bruce), clarify.\\
+\noindent \textbf{Addressed:} Please see our response to E1. We have expanded our discussion to engage these approaches, and extensions thereof, as alternative methods.\\
 
 \noindent \textbf{R2.5:} \emph{Additionally, the choice to model FDI as a count process is something that I at least have not often encountered in the FDI literature. I understand that extending GERGM in a way to handle the excess of zeros is not straightforward, but it would be helpful if the authors provided some grounding for their choice beyond noting that an ERGM for a continuous dependent variable with an excess of zeros does not exist.}\\
 

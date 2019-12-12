@@ -415,6 +415,12 @@ Metz, Florence, Philip Leifeld \harvardand\ Karin Ingold. 2018.
 \newblock ``Interdependent policy instrument preferences: a two-mode network
   approach.'' {\em Journal of public policy} pp.~1--28.
 
+\harvarditem[Minhas, Hoff \harvardand\ Ward]{Minhas, Hoff \harvardand\
+  Ward}{2019}{minhas2019inferential}
+Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. 2019.
+\newblock ``Inferential Approaches for Network Analysis: AMEN for Latent Factor
+  Models.'' {\em Political Analysis} 27(2):208--222.
+
 \harvarditem{Moran}{2014}{Moran:2014}
 Moran, Theodore. 2014.
 \newblock ``Foreign Investment and Supply Chains in Emerging Markets: Recurring
@@ -439,6 +445,11 @@ OECD. 2016.
 \newblock ``Bilateral Trade in Goods by Industry and End-use (BTDIxE), ISIC
   Rev.4.''.
 \newline\harvardurl{\url{http://www.oecd.org/trade/bilateraltradeingoodsbyindustryandend-usecategory.htm}}
+
+\harvarditem{Opsahl \harvardand\ Panzarasa}{2009}{opsahl2009clustering}
+Opsahl, Tore \harvardand\ Pietro Panzarasa. 2009.
+\newblock ``Clustering in weighted networks.'' {\em Social networks}
+  31(2):155--163.
 
 \harvarditem{Pandya}{2016}{Pandya:2016}
 Pandya, Sonal~S. 2016.
@@ -481,6 +492,18 @@ Simmons, Beth~A. \harvardand\ Zachary Elkins. 2004.
 \newblock ``The Globalization of Liberalization: Policy Diffusion in the
   International Political Economy.'' {\em The American Political Science
   Review} 98(1):171--189.
+
+\harvarditem{Snijders}{2002}{snijders2002markov}
+Snijders, Tom~AB. 2002.
+\newblock ``Markov chain Monte Carlo estimation of exponential random graph
+  models.'' {\em Journal of Social Structure} 3(2):1--40.
+
+\harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
+  Handcock}{2006}{snijders2006new}
+Snijders, Tom~AB, Philippa~E Pattison, Garry~L Robins \harvardand\ Mark~S
+  Handcock. 2006.
+\newblock ``New specifications for exponential random graph models.'' {\em
+  Sociological methodology} 36(1):99--153.
 
 \harvarditem{Staats \harvardand\ Biglaiser}{2012}{Staats_Biglaiser:2012}
 Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
