@@ -188,19 +188,76 @@ Bilateral and World FDI stocks\\
 
 \section{Correlations Before and After Rounding FDI} 
 
-In this section we investigate whether the structure of associations between FDI an the dyadic covariates included in the count ERGM is significantly changed by rounding the natural logarithm of FDI
+In this section we investigate whether the structure of associations between FDI an the dyadic covariates included in the count ERGM is significantly changed by rounding the natural logarithm of FDI. In Table \ref{tab:cor} we present the correlation between the dyadic variables included in our ERGMs, and the pre-rounded log-FDI. In Table \ref{tab:rcor} we present the correlation between the dyadic variables and the rounded version log-FDI. In Table \ref{tab:cortest} we present two-tailed $p$-values from tests, developed by \cite{dunn1969correlation} and implemented in the \R~ package \texttt{psych} \citep{psych}, of the null hypothesis that the correlations pre and post-rounding are equal. The lowest $p$-value is 0.12, and the majority are greater than 0.50, indicating that rounding log-FDI to create a count variable does not significantly change the structure of associations in the data. 
 
-\begin{table}[ht]\centering\begin{tabular}{rrrrrrrrrr}  \hline & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\   \hline2002 & 0.37 & 0.38 & -0.24 & 0.24 & 0.22 & 0.41 & 0.01 & 0.51 & 0.22 \\   2003 & 0.39 & 0.37 & -0.25 & 0.24 & 0.22 & 0.41 & 0.01 & 0.53 & 0.24 \\   2004 & 0.40 & 0.37 & -0.26 & 0.25 & 0.22 & 0.42 & 0.02 & 0.52 & 0.25 \\   2005 & 0.39 & 0.40 & -0.26 & 0.26 & 0.23 & 0.44 & 0.03 & 0.50 & 0.24 \\   2006 & 0.37 & 0.38 & -0.27 & 0.25 & 0.22 & 0.44 & 0.03 & 0.50 & 0.26 \\   2007 & 0.36 & 0.39 & -0.28 & 0.26 & 0.23 & 0.45 & 0.04 & 0.50 & 0.31 \\   2008 & 0.39 & 0.40 & -0.29 & 0.26 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\   2009 & 0.37 & 0.43 & -0.31 & 0.28 & 0.25 & 0.48 & 0.07 & 0.49 & 0.31 \\   2010 & 0.38 & 0.46 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.45 & 0.30 \\   2011 & 0.39 & 0.45 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.44 & 0.30 \\   2012 & 0.38 & 0.44 & -0.27 & 0.26 & 0.24 & 0.45 & 0.06 & 0.45 & 0.25 \\    \hline\end{tabular}
-\caption{Correlation between dyadic variables and FDI} \label{tab:cor}\end{table}
+\begin{table}[htp]
+\centering
+\begin{tabular}{rrrrrrrrrr}
+  \hline
+ & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\ 
+  \hline
+2002 & 0.37 & 0.38 & -0.24 & 0.24 & 0.22 & 0.41 & 0.01 & 0.51 & 0.22 \\ 
+  2003 & 0.39 & 0.37 & -0.25 & 0.24 & 0.22 & 0.41 & 0.01 & 0.53 & 0.24 \\ 
+  2004 & 0.40 & 0.37 & -0.26 & 0.25 & 0.22 & 0.42 & 0.02 & 0.52 & 0.25 \\ 
+  2005 & 0.39 & 0.40 & -0.26 & 0.26 & 0.23 & 0.44 & 0.03 & 0.50 & 0.24 \\ 
+  2006 & 0.37 & 0.38 & -0.27 & 0.25 & 0.22 & 0.44 & 0.03 & 0.50 & 0.26 \\ 
+  2007 & 0.36 & 0.39 & -0.28 & 0.26 & 0.23 & 0.45 & 0.04 & 0.50 & 0.31 \\ 
+  2008 & 0.39 & 0.40 & -0.29 & 0.26 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\ 
+  2009 & 0.37 & 0.43 & -0.31 & 0.28 & 0.25 & 0.48 & 0.07 & 0.49 & 0.31 \\ 
+  2010 & 0.38 & 0.46 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.45 & 0.30 \\ 
+  2011 & 0.39 & 0.45 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.44 & 0.30 \\ 
+  2012 & 0.38 & 0.44 & -0.27 & 0.26 & 0.24 & 0.45 & 0.06 & 0.45 & 0.25 \\ 
+   \hline
+\end{tabular}
+\caption{Correlation between dyadic variables and FDI} \label{tab:cor}
+\end{table}
 
-\begin{table}[ht]\centering
-Correlation between dyadic variables and rounded FDI\begin{tabular}{rrrrrrrrrr}  \hline & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\   \hline2002 & 0.36 & 0.38 & -0.24 & 0.24 & 0.21 & 0.40 & 0.01 & 0.51 & 0.22 \\   2003 & 0.39 & 0.37 & -0.25 & 0.24 & 0.22 & 0.41 & 0.01 & 0.52 & 0.24 \\   2004 & 0.40 & 0.37 & -0.26 & 0.25 & 0.22 & 0.42 & 0.02 & 0.52 & 0.25 \\   2005 & 0.39 & 0.39 & -0.26 & 0.26 & 0.23 & 0.44 & 0.03 & 0.50 & 0.24 \\   2006 & 0.36 & 0.38 & -0.27 & 0.25 & 0.22 & 0.44 & 0.03 & 0.50 & 0.26 \\   2007 & 0.36 & 0.39 & -0.28 & 0.26 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\   2008 & 0.38 & 0.40 & -0.29 & 0.25 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\   2009 & 0.36 & 0.43 & -0.31 & 0.28 & 0.25 & 0.47 & 0.07 & 0.49 & 0.31 \\   2010 & 0.37 & 0.46 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.45 & 0.30 \\   2011 & 0.39 & 0.44 & -0.29 & 0.28 & 0.25 & 0.48 & 0.08 & 0.44 & 0.30 \\   2012 & 0.38 & 0.44 & -0.26 & 0.26 & 0.24 & 0.45 & 0.06 & 0.44 & 0.25 \\    \hline\end{tabular}
-\caption{Correlation between dyadic variables and FDI} \label{tab:rcor}\end{table}
+\begin{table}[htp]
+\centering
+Correlation between dyadic variables and rounded FDI
+\begin{tabular}{rrrrrrrrrr}
+  \hline
+ & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\ 
+  \hline
+2002 & 0.36 & 0.38 & -0.24 & 0.24 & 0.21 & 0.40 & 0.01 & 0.51 & 0.22 \\ 
+  2003 & 0.39 & 0.37 & -0.25 & 0.24 & 0.22 & 0.41 & 0.01 & 0.52 & 0.24 \\ 
+  2004 & 0.40 & 0.37 & -0.26 & 0.25 & 0.22 & 0.42 & 0.02 & 0.52 & 0.25 \\ 
+  2005 & 0.39 & 0.39 & -0.26 & 0.26 & 0.23 & 0.44 & 0.03 & 0.50 & 0.24 \\ 
+  2006 & 0.36 & 0.38 & -0.27 & 0.25 & 0.22 & 0.44 & 0.03 & 0.50 & 0.26 \\ 
+  2007 & 0.36 & 0.39 & -0.28 & 0.26 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\ 
+  2008 & 0.38 & 0.40 & -0.29 & 0.25 & 0.23 & 0.44 & 0.04 & 0.50 & 0.30 \\ 
+  2009 & 0.36 & 0.43 & -0.31 & 0.28 & 0.25 & 0.47 & 0.07 & 0.49 & 0.31 \\ 
+  2010 & 0.37 & 0.46 & -0.30 & 0.28 & 0.25 & 0.49 & 0.08 & 0.45 & 0.30 \\ 
+  2011 & 0.39 & 0.44 & -0.29 & 0.28 & 0.25 & 0.48 & 0.08 & 0.44 & 0.30 \\ 
+  2012 & 0.38 & 0.44 & -0.26 & 0.26 & 0.24 & 0.45 & 0.06 & 0.44 & 0.25 \\ 
+   \hline
+\end{tabular}
+\caption{Correlation between dyadic variables and FDI} \label{tab:rcor}
+\end{table}
 
 
-\begin{table}[ht]\centering
-Two-tailed $p$-value in test for difference in correlations before and after rounding\begin{tabular}{rrrrrrrrrr}  \hline & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\   \hline2002 & 0.24 & 0.57 & 0.72 & 0.65 & 0.69 & 0.58 & 1.00 & 0.47 & 0.88 \\   2003 & 0.12 & 0.69 & 0.78 & 0.84 & 0.81 & 0.66 & 0.91 & 0.64 & 0.86 \\   2004 & 0.22 & 0.69 & 0.66 & 0.75 & 0.72 & 0.57 & 0.91 & 0.51 & 0.75 \\   2005 & 0.18 & 0.57 & 0.74 & 0.76 & 0.76 & 0.57 & 0.98 & 0.47 & 0.99 \\   2006 & 0.18 & 0.68 & 0.77 & 0.76 & 0.75 & 0.65 & 0.95 & 0.43 & 0.96 \\   2007 & 0.15 & 0.75 & 0.81 & 0.89 & 0.81 & 0.82 & 0.93 & 0.51 & 0.78 \\   2008 & 0.19 & 0.73 & 0.71 & 0.86 & 0.89 & 0.73 & 0.98 & 0.52 & 0.84 \\   2009 & 0.20 & 0.66 & 0.73 & 0.83 & 0.79 & 0.60 & 0.99 & 0.33 & 0.80 \\   2010 & 0.20 & 0.71 & 0.82 & 0.90 & 0.91 & 0.68 & 1.00 & 0.52 & 0.96 \\   2011 & 0.20 & 0.64 & 0.72 & 0.85 & 0.82 & 0.71 & 0.88 & 0.51 & 0.95 \\   2012 & 0.23 & 0.72 & 0.73 & 0.84 & 0.88 & 0.76 & 0.87 & 0.55 & 0.92 \\    \hline\end{tabular}
-\caption{Correlation between dyadic variables and FDI} \label{tab:cortest}\end{table}
+\begin{table}[htp]
+\centering
+Two-tailed $p$-value in test for difference in correlations before and after rounding
+\begin{tabular}{rrrrrrrrrr}
+  \hline
+ & Lag FDI & GDP prod & Dist & Alliance &Defense& Trade & BIT & Both OECD & PTA \\ 
+  \hline
+2002 & 0.24 & 0.57 & 0.72 & 0.65 & 0.69 & 0.58 & 1.00 & 0.47 & 0.88 \\ 
+  2003 & 0.12 & 0.69 & 0.78 & 0.84 & 0.81 & 0.66 & 0.91 & 0.64 & 0.86 \\ 
+  2004 & 0.22 & 0.69 & 0.66 & 0.75 & 0.72 & 0.57 & 0.91 & 0.51 & 0.75 \\ 
+  2005 & 0.18 & 0.57 & 0.74 & 0.76 & 0.76 & 0.57 & 0.98 & 0.47 & 0.99 \\ 
+  2006 & 0.18 & 0.68 & 0.77 & 0.76 & 0.75 & 0.65 & 0.95 & 0.43 & 0.96 \\ 
+  2007 & 0.15 & 0.75 & 0.81 & 0.89 & 0.81 & 0.82 & 0.93 & 0.51 & 0.78 \\ 
+  2008 & 0.19 & 0.73 & 0.71 & 0.86 & 0.89 & 0.73 & 0.98 & 0.52 & 0.84 \\ 
+  2009 & 0.20 & 0.66 & 0.73 & 0.83 & 0.79 & 0.60 & 0.99 & 0.33 & 0.80 \\ 
+  2010 & 0.20 & 0.71 & 0.82 & 0.90 & 0.91 & 0.68 & 1.00 & 0.52 & 0.96 \\ 
+  2011 & 0.20 & 0.64 & 0.72 & 0.85 & 0.82 & 0.71 & 0.88 & 0.51 & 0.95 \\ 
+  2012 & 0.23 & 0.72 & 0.73 & 0.84 & 0.88 & 0.76 & 0.87 & 0.55 & 0.92 \\ 
+   \hline
+\end{tabular}
+\caption{Correlation between dyadic variables and FDI} \label{tab:cortest}
+\end{table}
 
 
 
