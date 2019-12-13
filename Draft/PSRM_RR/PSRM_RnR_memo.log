@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 DEC 2019 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 DEC 2019 11:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,6 +239,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 
+Overfull \hbox (1.74638pt too wide) in paragraph at lines 33--34
+\OT1/ppl/b/n/10.95 Addressed: \OT1/ppl/m/n/10.95 R1 spot-ted a blindspot in our
+ cov-er-age of de-pen-dence in the FDI lit-er-a-ture. Though
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
@@ -295,48 +301,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
@@ -345,7 +351,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
@@ -380,7 +386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
@@ -390,7 +396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -406,22 +412,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
@@ -429,16 +425,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--116
 Here is how much of TeX's memory you used:
  2694 strings out of 492995
  37890 string characters out of 6132704
- 213725 words of memory out of 5000000
+ 214725 words of memory out of 5000000
  6221 multiletter control sequences out of 15000+600000
  8512 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,4n,31p,2288b,139s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,5n,31p,2716b,139s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/
 base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PSRM_RnR_memo.pdf (5 pages, 75975 bytes).
+Output written on PSRM_RnR_memo.pdf (5 pages, 76594 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

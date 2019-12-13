@@ -3,67 +3,76 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 73 of file fdi_reference.bib
+I was expecting an "="---line 60 of file fdi_reference.bib
+ :   
+ :   year={2019},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 95 of file fdi_reference.bib
  : @article{snijders2006new
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 298 of file fdi_reference.bib
+Repeated entry---line 320 of file fdi_reference.bib
  :   @article{garlaschelli2004patterns
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1054 of file fdi_reference.bib
+Repeated entry---line 573 of file fdi_reference.bib
+ : @article{ward2013gravity
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1119 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1369 of file fdi_reference.bib
+Repeated entry---line 1434 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1501 of file fdi_reference.bib
+Repeated entry---line 1566 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
 Warning--can't use both volume and number fields in gai2010contagion
-You've used 100 entries,
+You've used 103 entries,
             2874 wiz_defined-function locations,
-            1274 strings with 21892 characters,
-and the built_in function-call counts, 382313 in all, are:
-= -- 62261
-> -- 4510
+            1290 strings with 22357 characters,
+and the built_in function-call counts, 397653 in all, are:
+= -- 64824
+> -- 4666
 < -- 2
-+ -- 28947
-- -- 1618
-* -- 32348
-:= -- 77356
-add.period$ -- 407
-call.type$ -- 100
-change.case$ -- 1300
-chr.to.int$ -- 100
-cite$ -- 102
-duplicate$ -- 1526
-empty$ -- 3391
-format.name$ -- 1707
-if$ -- 68668
++ -- 30166
+- -- 1673
+* -- 33676
+:= -- 80391
+add.period$ -- 419
+call.type$ -- 103
+change.case$ -- 1339
+chr.to.int$ -- 103
+cite$ -- 105
+duplicate$ -- 1569
+empty$ -- 3486
+format.name$ -- 1764
+if$ -- 71425
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 106
-newline$ -- 434
-num.names$ -- 1156
-pop$ -- 394
+missing$ -- 109
+newline$ -- 446
+num.names$ -- 1192
+pop$ -- 404
 preamble$ -- 1
-purify$ -- 1500
+purify$ -- 1545
 quote$ -- 0
-skip$ -- 1283
+skip$ -- 1319
 stack$ -- 0
-substring$ -- 87367
-swap$ -- 208
-text.length$ -- 1402
+substring$ -- 91024
+swap$ -- 214
+text.length$ -- 1444
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 376
+type$ -- 388
 warning$ -- 2
-while$ -- 2342
+while$ -- 2414
 width$ -- 0
-write$ -- 1394
-(There were 5 error messages)
+write$ -- 1435
+(There were 7 error messages)

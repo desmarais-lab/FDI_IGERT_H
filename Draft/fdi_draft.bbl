@@ -40,6 +40,14 @@ Beazer, Quintin~H. \harvardand\ Daniel~J. Blake. 2018.
   Influence the Location of Foreign Direct Investment.'' {\em American Journal
   of Political Science} (Online Early View).
 
+\harvarditem[B{\'e}nassy-Qu{\'e}r{\'e}, Coupet \harvardand\
+  Mayer]{B{\'e}nassy-Qu{\'e}r{\'e}, Coupet \harvardand\
+  Mayer}{2007}{benassy2007institutional}
+B{\'e}nassy-Qu{\'e}r{\'e}, Agn{\`e}s, Maylis Coupet \harvardand\ Thierry Mayer.
+  2007.
+\newblock ``Institutional determinants of foreign direct investment.'' {\em
+  World economy} 30(5):764--782.
+
 \harvarditem[Boehmke, Chyzh \harvardand\ Thies]{Boehmke, Chyzh \harvardand\
   Thies}{2016}{boehmke2016addressing}
 Boehmke, Frederick~J, Olga Chyzh \harvardand\ Cameron~G Thies. 2016.
@@ -238,6 +246,12 @@ Hymer, Stephen~H. 1976.
   Direct Foreign Investment}.
 \newblock Cambridge, MA:  MIT Press.
 
+\harvarditem{Hyun}{2006}{hyun2006quality}
+Hyun, Hea-Jung. 2006.
+\newblock ``Quality of institutions and foreign direct investment in developing
+  countries: Causality tests for cross-country panels.'' {\em Journal of
+  Business Economics and Management} 7(3):103--110.
+
 \harvarditem{Jakobsen \harvardand\ De~Soysa}{2006}{Jakobsen_DeSoysa:2006}
 Jakobsen, Jo \harvardand\ Indra De~Soysa. 2006.
 \newblock ``Do Foreign Investors Punish Democracy? Theory and Empirics,
@@ -416,10 +430,10 @@ Metz, Florence, Philip Leifeld \harvardand\ Karin Ingold. 2018.
   approach.'' {\em Journal of public policy} pp.~1--28.
 
 \harvarditem[Minhas, Hoff \harvardand\ Ward]{Minhas, Hoff \harvardand\
-  Ward}{2019}{minhas2019inferential}
-Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. 2019.
+  Ward}{N.d.}{minhas2019inferential}
+Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. N.d.
 \newblock ``Inferential Approaches for Network Analysis: AMEN for Latent Factor
-  Models.'' {\em Political Analysis} 27(2):208--222.
+  Models.'' {\em Political Analysis}. Forthcoming.
 
 \harvarditem{Moran}{2014}{Moran:2014}
 Moran, Theodore. 2014.
@@ -427,6 +441,11 @@ Moran, Theodore. 2014.
   Problems and Demonstrated Solutions.'' {\em Peterson Institute for
   International Economics Working Paper} No. 2014-12.
 \newline\harvardurl{\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2534095}}
+
+\harvarditem{Neumayer \harvardand\ Pl{\"u}mper}{2010}{neumayer2010spatial}
+Neumayer, Eric \harvardand\ Thomas Pl{\"u}mper. 2010.
+\newblock ``Spatial effects in dyadic data.'' {\em International Organization}
+  64(1):145--166.
 
 \harvarditem{Oatley}{2011}{Oatley:2011}
 Oatley, Thomas. 2011.
@@ -547,8 +566,8 @@ Veugelers, Reinhilde. 1995.
 \harvarditem[Ward, Ahlquist \harvardand\ Rozenas]{Ward, Ahlquist \harvardand\
   Rozenas}{2013}{ward2013gravity}
 Ward, Michael~D, John~S Ahlquist \harvardand\ Arturas Rozenas. 2013.
-\newblock ``Gravity's Rainbow: A dynamic latent space model for the world trade
-  network.'' {\em Network Science} 1(1):95--118.
+\newblock ``Gravity’s rainbow: Dynamic networks models of international
+  commerce.'' {\em Network Science} 1(1):95--118.
 
 \harvarditem{Ward \harvardand\ Hoff}{2007}{ward2007persistent}
 Ward, Michael~D \harvardand\ Peter~D Hoff. 2007.
