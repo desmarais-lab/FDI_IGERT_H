@@ -34,7 +34,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{E3:} \emph{R2 notes the research on PTAs and FDI and, based on the findings in this literature, would like you to control for trade agreements as well as BITs in your analysis}.\\
 
-\noindent \textbf{Addressed:} TODO (John), comment on adding these to the model. \\
+\noindent \textbf{Addressed:} We have added a PTA depth variable to all models and kept BITs in the updated models as well. We respond in more detail in R2.1\\
 
 \noindent \textbf{E4:} \emph{R1 notes that your explanations for the two network effects seem to be rooted in different theoretical traditions. Reciprocity is older idea that is tied to market expansion while transitivity is rooted in the logic of global production chains.} 
 
@@ -50,7 +50,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{E7:} \emph{R2 has a number of reasonable requests for the appendix: more on the estimation process; how is the multiple imputation handled; detailed GOF statistics.}\\
 
-\noindent \textbf{Addressed:} We TODO (John, can you discuss MI in detail?). \\
+\noindent \textbf{Addressed:} We have added a discussion of the multiple imputation models in the Appendix and discussion and visualization of GOF statistics in the main draft. We respond to these points more in R2.6 and R2.8\\
 
 
 \section*{Reviewer: 1}
@@ -79,7 +79,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{R2.1:} \emph{One simple request that I have is that the authors account for the effect that PTAs may have on FDI. Though PTAs are often thought of as simply means to ensure reciprocal market access vis a vis adjustment of tariffs and related border measures, more recent PTAs contain provisions that cover a wide array of non-tariff measures such as rules on investment and intellectual property rights protection. The DESTA database provides a very useful way to account for these types of deep PTAs and I'd be interested in seeing whether or not that parameter accounts for some of the clusters the authors are picking up through their transitivity term. The relationship between PTAs and FDI is not uncommon in the literature, for example, see Buthe \& Milner (2008), Medvedev (2012), and Osnago et al. (2016).}\\
 
-\noindent \textbf{Addressed:} TODO (John?) add discussion of this.\\
+\noindent \textbf{Addressed:} While the literature that we cited and R2 mentions uses a count variable for PTAs, we agree with R2 that the DESTA database is very useful to control for differences between PTAs. We opted to use the latent space measure of PTA depth from DESTA  in the updated models and made sure that the variable was not too highly correlated with the BIT binary variable as ERGMs are sensitive to multicollinearity. The transitivity coefficient is smaller in the updated models, but remains positive and significant. \\
 
 \noindent \textbf{R2.2:} \emph{I was surprised to not see a term for actor heterogeneity in the model. I imagine this could manifest in the FDI network for a variety of reasons (beyond those accounted for by the already included covariates) as some countries are more active or reliant on FDI than others. It would be useful to at least see an Appendix item in which the authors include a term for actor heterogeneity in the model and present the results in a format similar to Table 1.}\\
 
@@ -99,7 +99,7 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{R2.6:} \emph{In terms of dealing with missing data, the authors have effectively applied a number of robustness checks. However, the robustness check I was most interested in was Section D of the Appendix, in which they imputed via Amelia. Specifically, how was the imputation and estimation process done, were multiple imputed datasets generated and then count ERGMs run on each imputed dataset? How were the parameter estimates results from each of the ERGM-imputed datasets combined? Was it simply a matter of employing Rubin's rules?}\\
 
-\noindent \textbf{Addressed:} TODO (John) explain this in more detail in the appendix. \\
+\noindent \textbf{Addressed:} We thank R2 for catching the lack of discussion regarding the multiple imputation robustness check, given it is not commonly used for ERGMs. For the imputations, we used the dataset that included all covariates and imputed the column for the original FDI stock values and then transformed the data for the models. We used ten imputations, modeled each imputed dataset and then combined the parameter estimates using standard Rubin's rules. As ERGMs are computationally intensive and take some time to run, we have only included the results from one imputation and will update the results once the other models finish.\\
 
 \noindent \textbf{R2.7:} \emph{For Figure 2, I'd be interested in seeing the results broken out by year. Additionally, I think that a corresponding yearly figure for transitivity is useful and necessary. Of course, figure 3 is helpful in terms of showing that the transitivity and reciprocity parameters are significant but I would like to know how far away a model without network terms is in accounting for transitivity especially after the authors have accounted for PTAs. My guess is that the network model will still outperform the canonical approach, and this will strengthen the key contribution being made by the authors.}\\
 
