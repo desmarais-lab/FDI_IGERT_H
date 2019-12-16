@@ -11,8 +11,13 @@ Allee, Todd \harvardand\ Clint Peinhardt. 2011.
   on Foreign Direct Investment.'' {\em International Organization}
   65(3):401--432.
 
-\harvarditem{Arel-Bundock}{2017}{Arel-Bundock:2017}
-Arel-Bundock, Vincent. 2017.
+\harvarditem{Arel-Bundock}{2017{\em a}}{Arel-Bundock:2017b}
+Arel-Bundock, Vincent. 2017{\em a}.
+\newblock ``The Political Determinants of Foreign Direct Investment: A
+  Firm-Level Analysis.'' {\em International Interactions} 43(3):424--452.
+
+\harvarditem{Arel-Bundock}{2017{\em b}}{Arel-Bundock:2017a}
+Arel-Bundock, Vincent. 2017{\em b}.
 \newblock ``The Unintended Consequences of Bilateralism: Treaty Shopping and
   International Tax Policy.'' {\em International Organization} 71(2):349--371.
 
@@ -33,6 +38,12 @@ Baldwin, Richard. 2011.
   Matters.'' {\em National Bureau of Economic Research Working Paper Series}
   No. 17716.
 \newline\harvardurl{\url{http://www.nber.org/papers/w17716}}
+
+\harvarditem[Baltagi, Egger \harvardand\ Pfaffermayr]{Baltagi, Egger
+  \harvardand\ Pfaffermayr}{2007}{Baltagi_et_al:2007}
+Baltagi, Badi~H., Peter Egger \harvardand\ Michael Pfaffermayr. 2007.
+\newblock ``Estimating models of complex FDI: Are there third-country
+  effects?'' {\em Journal of Econometrics} 140(1):260--281.
 
 \harvarditem{Beazer \harvardand\ Blake}{2018}{Beazer_Blake:2018}
 Beazer, Quintin~H. \harvardand\ Daniel~J. Blake. 2018.
@@ -79,6 +90,11 @@ Brida, Juan~Gabriel, David~Matesanz G{\'o}mez \harvardand\ Wiston~Adri{\'a}n
 \newblock ``Symbolic hierarchical analysis in currency markets: An application
   to contagion in currency crises.'' {\em Expert Systems with applications}
   36(4):7721--7728.
+
+\harvarditem{Busse \harvardand\ Hefeker}{2007}{Busse_Hefeker:2007}
+Busse, Matthias \harvardand\ Carsten Hefeker. 2007.
+\newblock ``Political Risk, Institutions and Foreign Direct Investment.'' {\em
+  European Journal of Political Economy} 23(2):397--415.
 
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
@@ -256,6 +272,11 @@ Helpman, Elhanan, Marc~J. Melitz \harvardand\ Stephen~R. Yeaple. 2004.
 \newblock ``Export versus FDI with Heterogeneous Firms.'' {\em The American
   Economic Review} 94(1):300--316.
 
+\harvarditem{Henisz}{2000}{Henisz:2000}
+Henisz, Witold~J. 2000.
+\newblock ``The Institutional Environment for Multinational Investment.'' {\em
+  The Journal of Law, Economics, \& Organization} 16(2):334--364.
+
 \harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
   \harvardand\ Handcock}{2008}{hunter2008goodness}
 Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008.
@@ -277,7 +298,7 @@ Hyun, Hea-Jung. 2006.
 \harvarditem{Jakobsen \harvardand\ De~Soysa}{2006}{Jakobsen_DeSoysa:2006}
 Jakobsen, Jo \harvardand\ Indra De~Soysa. 2006.
 \newblock ``Do Foreign Investors Punish Democracy? Theory and Empirics,
-  1984?C2001.'' {\em Kyklos} 59(3):383--410.
+  1984--2001.'' {\em Kyklos} 59(3):383--410.
 
 \harvarditem{Jensen}{2003}{Jensen:2003}
 Jensen, Nathan~M. 2003.
@@ -445,6 +466,11 @@ Mayer, Thierry \harvardand\ Soledad Zignago. 2011.
 \newblock ``Notes on CEPII's distances measures: The GeoDist database.''.
 \newline\harvardurl{\url{http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877}}
 
+\harvarditem{Medvedev}{2012}{Medvedev:2012}
+Medvedev, Denis. 2012.
+\newblock ``Beyond Trade: The Impact of Preferential Trade Agreements on FDI
+  Inflows.'' {\em World Development} 40(1):49--61.
+
 \harvarditem[Metz, Leifeld \harvardand\ Ingold]{Metz, Leifeld \harvardand\
   Ingold}{2018}{metz2018interdependent}
 Metz, Florence, Philip Leifeld \harvardand\ Karin Ingold. 2018.
@@ -452,10 +478,10 @@ Metz, Florence, Philip Leifeld \harvardand\ Karin Ingold. 2018.
   approach.'' {\em Journal of public policy} pp.~1--28.
 
 \harvarditem[Minhas, Hoff \harvardand\ Ward]{Minhas, Hoff \harvardand\
-  Ward}{N.d.}{minhas2019inferential}
-Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. N.d.
+  Ward}{2019}{minhas2019inferential}
+Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. 2019.
 \newblock ``Inferential Approaches for Network Analysis: AMEN for Latent Factor
-  Models.'' {\em Political Analysis}. Forthcoming.
+  Models.'' {\em Political Analysis} 27(2):208--222.
 
 \harvarditem{Moran}{2014}{Moran:2014}
 Moran, Theodore. 2014.
@@ -491,6 +517,12 @@ OECD. 2016.
 Opsahl, Tore \harvardand\ Pietro Panzarasa. 2009.
 \newblock ``Clustering in weighted networks.'' {\em Social networks}
   31(2):155--163.
+
+\harvarditem[Osnago, Rocha \harvardand\ Ruta]{Osnago, Rocha \harvardand\
+  Ruta}{2016}{Osnago_et_al:2017}
+Osnago, Alberto, Nadia Rocha \harvardand\ Michele Ruta. 2016.
+\newblock ``Do Deep Trade Agreements Boost Vertical FDI?'' {\em The World Bank
+  Economic Review} 30(Supplement\_1):S119--S125.
 
 \harvarditem{Pandya}{2016}{Pandya:2016}
 Pandya, Sonal~S. 2016.
@@ -556,12 +588,6 @@ Staats, Joseph~L. \harvardand\ Glen Biglaiser. 2012.
 Sweet, Tracy~M. 2015.
 \newblock ``Incorporating covariates into stochastic blockmodels.'' {\em
   Journal of Educational and Behavioral Statistics} 40(6):635--664.
-
-\harvarditem{UNCTAD}{2006}{UNCTAD:2006}
-UNCTAD. 2006.
-\newblock {\em FDI from Developing and Transition Economies: Implications for
-  Development}.
-\newblock New York:  United Nations.
 
 \harvarditem{UNCTAD}{2013}{UNCTAD:2013}
 UNCTAD. 2013.
