@@ -92,13 +92,14 @@ average.amat <- average.amat/length(sim.nets)
 #collapse average.amat to plot against changes in vertex attribute
 average.col <- colMeans(average.amat) # average received
 
+load("tradevol_sims.Rdata")
 # plot relationship
 pdf("figures/tradevol_sims.pdf",height=4,width=8,pointsize=12)
 par(las=1)
 plot(c(fdi_cov[[6]]),c(average.amat),
      xlab="Trade Volume",ylab="Average FDI Received (USD millions), logged",
      pch=20)
-lines(lowess(c(fdi_cov[[6]]),c(average.amat)), col="Red")
-abline(h=(0:8)/2,lty=3,col="gray60")
-abline(v=-10:10,lty=3,col="gray60")
+lines(lowess(c(fdi_cov[[6]]),c(average.amat)), col="Red",lwd =3)
+abline(h=seq(0,20,2.5),lty=3,col="gray60")
+abline(v=seq(0,20,2.5),lty=3,col="gray60")
 dev.off()
