@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  16 DEC 2019 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  17 DEC 2019 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +560,7 @@ venue-[]lost-[]to-[]tax-[]loopholes$[][] \OT1/cmr/m/n/10 (Ac-
  []
 
 [12] [13] [14] [15] [16] [17] [18] [19] [20]
-<figures/BICdiff.pdf, id=635, 469.755pt x 289.08pt>
+<figures/BICdiff.pdf, id=634, 469.755pt x 289.08pt>
 File: figures/BICdiff.pdf Graphic file (type pdf)
  <use figures/BICdiff.pdf>
 Package pdftex.def Info: figures/BICdiff.pdf used on input line 310.
@@ -571,27 +571,27 @@ Package pdftex.def Info: figures/BICdiff.pdf used on input line 310.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 317.
 
-<figures/recip_fit.pdf, id=657, 433.62pt x 289.08pt>
+<figures/recip_fit.pdf, id=656, 433.62pt x 289.08pt>
 File: figures/recip_fit.pdf Graphic file (type pdf)
 
 <use figures/recip_fit.pdf>
 Package pdftex.def Info: figures/recip_fit.pdf used on input line 319.
 (pdftex.def)             Requested size: 323.08012pt x 184.8002pt.
 
-<figures/trans_fit.pdf, id=659, 433.62pt x 289.08pt>
+<figures/trans_fit.pdf, id=658, 433.62pt x 289.08pt>
 File: figures/trans_fit.pdf Graphic file (type pdf)
 
 <use figures/trans_fit.pdf>
 Package pdftex.def Info: figures/trans_fit.pdf used on input line 320.
 (pdftex.def)             Requested size: 323.08012pt x 133.58551pt.
 
-<figures/idsd_fit.pdf, id=661, 433.62pt x 289.08pt>
+<figures/idsd_fit.pdf, id=660, 433.62pt x 289.08pt>
 File: figures/idsd_fit.pdf Graphic file (type pdf)
  <use figures/idsd_fit.pdf>
 Package pdftex.def Info: figures/idsd_fit.pdf used on input line 321.
 (pdftex.def)             Requested size: 323.08012pt x 133.58551pt.
 
-<figures/odsd_fit.pdf, id=663, 433.62pt x 289.08pt>
+<figures/odsd_fit.pdf, id=662, 433.62pt x 289.08pt>
 File: figures/odsd_fit.pdf Graphic file (type pdf)
  <use figures/odsd_fit.pdf>
 Package pdftex.def Info: figures/odsd_fit.pdf used on input line 322.
@@ -606,7 +606,7 @@ t.pdf> <./figures/odsd_fit.pdf>]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 333.
 
-<figures/main_rl_plots/Transitivity.pdf, id=707, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Transitivity.pdf, id=706, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Transitivity.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Transitivity.pdf>
@@ -614,7 +614,7 @@ Package pdftex.def Info: figures/main_rl_plots/Transitivity.pdf used on input l
 ine 337.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Mutuality_OECD.pdf, id=709, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Mutuality_OECD.pdf, id=708, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Mutuality_OECD.pdf>
@@ -622,7 +622,7 @@ Package pdftex.def Info: figures/main_rl_plots/Mutuality_OECD.pdf used on input
  line 338.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Mutuality_notOECD.pdf, id=711, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Mutuality_notOECD.pdf, id=710, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Mutuality_notOECD.pdf>
@@ -634,13 +634,12 @@ Overfull \hbox (7.24715pt too wide) in paragraph at lines 335--341
  [][] 
  []
 
-[24 <./figures/main_rl_plots/Transitivity.pdf> <./figures/main_rl_plots/Mutuali
-ty_OECD.pdf> <./figures/main_rl_plots/Mutuality_notOECD.pdf>]
+[24]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 348.
 
-<figures/transitiveInterpretation.pdf, id=744, 578.16pt x 289.08pt>
+<figures/transitiveInterpretation.pdf, id=722, 578.16pt x 289.08pt>
 File: figures/transitiveInterpretation.pdf Graphic file (type pdf)
 
 <use figures/transitiveInterpretation.pdf>
@@ -648,7 +647,7 @@ Package pdftex.def Info: figures/transitiveInterpretation.pdf used on input lin
 e 350.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
 
-<figures/mutualInterpretation.pdf, id=745, 578.16pt x 289.08pt>
+<figures/mutualInterpretation.pdf, id=723, 578.16pt x 289.08pt>
 File: figures/mutualInterpretation.pdf Graphic file (type pdf)
 
 <use figures/mutualInterpretation.pdf>
@@ -656,14 +655,14 @@ Package pdftex.def Info: figures/mutualInterpretation.pdf used on input line 35
 1.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
 
-<figures/main_rl_plots/Sum.pdf, id=746, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Sum.pdf, id=724, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Sum.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Sum.pdf>
 Package pdftex.def Info: figures/main_rl_plots/Sum.pdf used on input line 364.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Sum_5.pdf, id=748, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Sum_5.pdf, id=726, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Sum_5.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Sum_5.pdf>
@@ -671,7 +670,7 @@ Package pdftex.def Info: figures/main_rl_plots/Sum_5.pdf used on input line 365
 .
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Nonzero.pdf, id=750, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Nonzero.pdf, id=728, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Nonzero.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Nonzero.pdf>
@@ -683,14 +682,14 @@ Overfull \hbox (7.24715pt too wide) in paragraph at lines 360--368
  [][] 
  []
 
-<figures/main_rl_plots/LDV.pdf, id=752, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/LDV.pdf, id=730, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/LDV.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/LDV.pdf>
 Package pdftex.def Info: figures/main_rl_plots/LDV.pdf used on input line 379.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Mass.pdf, id=754, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Mass.pdf, id=732, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Mass.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Mass.pdf>
@@ -698,7 +697,7 @@ Package pdftex.def Info: figures/main_rl_plots/Mass.pdf used on input line 380.
 
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Distance.pdf, id=756, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Distance.pdf, id=734, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Distance.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Distance.pdf>
@@ -706,7 +705,7 @@ Package pdftex.def Info: figures/main_rl_plots/Distance.pdf used on input line
 381.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Defense_Treaty.pdf, id=758, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Defense_Treaty.pdf, id=736, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Defense_Treaty.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Defense_Treaty.pdf>
@@ -714,7 +713,7 @@ Package pdftex.def Info: figures/main_rl_plots/Defense_Treaty.pdf used on input
  line 388.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Non_Defense_Treaty.pdf, id=760, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Non_Defense_Treaty.pdf, id=738, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Non_Defense_Treaty.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Non_Defense_Treaty.pdf>
@@ -722,7 +721,7 @@ Package pdftex.def Info: figures/main_rl_plots/Non_Defense_Treaty.pdf used on i
 nput line 389.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Bilateral_Investment_Treaty.pdf, id=762, 205.76875pt x 1
+<figures/main_rl_plots/Bilateral_Investment_Treaty.pdf, id=740, 205.76875pt x 1
 44.54pt>
 File: figures/main_rl_plots/Bilateral_Investment_Treaty.pdf Graphic file (type 
 pdf)
@@ -731,7 +730,7 @@ Package pdftex.def Info: figures/main_rl_plots/Bilateral_Investment_Treaty.pdf
 used on input line 390.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Trade_Volume.pdf, id=764, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Trade_Volume.pdf, id=742, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Trade_Volume.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Trade_Volume.pdf>
@@ -739,7 +738,7 @@ Package pdftex.def Info: figures/main_rl_plots/Trade_Volume.pdf used on input l
 ine 399.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Nodematch_OECD.pdf, id=766, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Nodematch_OECD.pdf, id=744, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Nodematch_OECD.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Nodematch_OECD.pdf>
@@ -747,7 +746,7 @@ Package pdftex.def Info: figures/main_rl_plots/Nodematch_OECD.pdf used on input
  line 400.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/PTA_Depth.pdf, id=768, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/PTA_Depth.pdf, id=746, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/PTA_Depth.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/PTA_Depth.pdf>
@@ -759,7 +758,7 @@ Overfull \hbox (7.24715pt too wide) in paragraph at lines 373--404
  [][] 
  []
 
-<figures/main_rl_plots/Dest_Polity.pdf, id=770, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Dest_Polity.pdf, id=748, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Dest_Polity.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Dest_Polity.pdf>
@@ -767,7 +766,7 @@ Package pdftex.def Info: figures/main_rl_plots/Dest_Polity.pdf used on input li
 ne 413.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Origin_Polity.pdf, id=772, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Origin_Polity.pdf, id=750, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Origin_Polity.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Origin_Polity.pdf>
@@ -775,7 +774,7 @@ Package pdftex.def Info: figures/main_rl_plots/Origin_Polity.pdf used on input
 line 414.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Dest_GDPpc.pdf, id=774, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Dest_GDPpc.pdf, id=752, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Dest_GDPpc.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Dest_GDPpc.pdf>
@@ -783,7 +782,7 @@ Package pdftex.def Info: figures/main_rl_plots/Dest_GDPpc.pdf used on input lin
 e 415.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Origin_GDPpc.pdf, id=776, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Origin_GDPpc.pdf, id=754, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Origin_GDPpc.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Origin_GDPpc.pdf>
@@ -791,7 +790,7 @@ Package pdftex.def Info: figures/main_rl_plots/Origin_GDPpc.pdf used on input l
 ine 421.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Dest_TO.pdf, id=778, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Dest_TO.pdf, id=756, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Dest_TO.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Dest_TO.pdf>
@@ -799,7 +798,7 @@ Package pdftex.def Info: figures/main_rl_plots/Dest_TO.pdf used on input line 4
 22.
 (pdftex.def)             Requested size: 161.2686pt x 107.31657pt.
 
-<figures/main_rl_plots/Origin_TO.pdf, id=780, 205.76875pt x 144.54pt>
+<figures/main_rl_plots/Origin_TO.pdf, id=758, 205.76875pt x 144.54pt>
 File: figures/main_rl_plots/Origin_TO.pdf Graphic file (type pdf)
 
 <use figures/main_rl_plots/Origin_TO.pdf>
@@ -811,19 +810,20 @@ Overfull \hbox (7.24715pt too wide) in paragraph at lines 409--427
  [][] 
  []
 
-[25] [26 <./figures/transitiveInterpretation.pdf> <./figures/mutualInterpretati
-on.pdf>] [27 <./figures/main_rl_plots/Sum.pdf> <./figures/main_rl_plots/Sum_5.p
-df> <./figures/main_rl_plots/Nonzero.pdf>] [28 <./figures/main_rl_plots/LDV.pdf
-> <./figures/main_rl_plots/Mass.pdf> <./figures/main_rl_plots/Distance.pdf> <./
-figures/main_rl_plots/Defense_Treaty.pdf> <./figures/main_rl_plots/Non_Defense_
-Treaty.pdf> <./figures/main_rl_plots/Bilateral_Investment_Treaty.pdf> <./figure
-s/main_rl_plots/Trade_Volume.pdf> <./figures/main_rl_plots/Nodematch_OECD.pdf> 
-<./figures/main_rl_plots/PTA_Depth.pdf>]
-<./figures/tradevol_sims.pdf, id=913, 578.16pt x 289.08pt>
+[25 <./figures/main_rl_plots/Transitivity.pdf> <./figures/main_rl_plots/Mutuali
+ty_OECD.pdf> <./figures/main_rl_plots/Mutuality_notOECD.pdf>] [26 <./figures/tr
+ansitiveInterpretation.pdf> <./figures/mutualInterpretation.pdf>] [27 <./figure
+s/main_rl_plots/Sum.pdf> <./figures/main_rl_plots/Sum_5.pdf> <./figures/main_rl
+_plots/Nonzero.pdf>] [28 <./figures/main_rl_plots/LDV.pdf> <./figures/main_rl_p
+lots/Mass.pdf> <./figures/main_rl_plots/Distance.pdf> <./figures/main_rl_plots/
+Defense_Treaty.pdf> <./figures/main_rl_plots/Non_Defense_Treaty.pdf> <./figures
+/main_rl_plots/Bilateral_Investment_Treaty.pdf> <./figures/main_rl_plots/Trade_
+Volume.pdf> <./figures/main_rl_plots/Nodematch_OECD.pdf> <./figures/main_rl_plo
+ts/PTA_Depth.pdf>] <./figures/tradevol_sims.pdf, id=912, 578.16pt x 289.08pt>
 File: ./figures/tradevol_sims.pdf Graphic file (type pdf)
 
 <use ./figures/tradevol_sims.pdf>
-Package pdftex.def Info: ./figures/tradevol_sims.pdf used on input line 446.
+Package pdftex.def Info: ./figures/tradevol_sims.pdf used on input line 444.
 (pdftex.def)             Requested size: 433.61893pt x 216.80946pt.
 
 
@@ -833,15 +833,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 olity.pdf> <./figures/main_rl_plots/Dest_GDPpc.pdf> <./figures/main_rl_plots/Or
 igin_GDPpc.pdf> <./figures/main_rl_plots/Dest_TO.pdf> <./figures/main_rl_plots/
 Origin_TO.pdf>] [30 <./figures/tradevol_sims.pdf>] [31]
-<./figures/contagion_simulation_results.pdf, id=987, 397.485pt x 234.8775pt>
+<./figures/contagion_simulation_results.pdf, id=986, 397.485pt x 234.8775pt>
 File: ./figures/contagion_simulation_results.pdf Graphic file (type pdf)
 
 <use ./figures/contagion_simulation_results.pdf>
 Package pdftex.def Info: ./figures/contagion_simulation_results.pdf used on inp
-ut line 468.
+ut line 464.
 (pdftex.def)             Requested size: 337.86385pt x 199.6468pt.
- [32 <./figures/contagion_simulation_results.pdf>] [33] [34] [35] (./fdi_draft.
-bbl
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32] [33 <./figures/contagion_simulation_results.pdf>] [34] [35]
+(./fdi_draft.bbl
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 40.
  [36] [37] [38] [39]
@@ -879,24 +883,24 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [43])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 511.
  [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 511.
  (./fdi_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 511.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 511.
 Package rerunfilecheck Info: File `fdi_draft.out' has not changed.
 (rerunfilecheck)             Checksum: 5521A5BFE6FD2A367982D0E0A8C65BAE;718.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 515.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 511.
  ) 
 Here is how much of TeX's memory you used:
  9790 strings out of 493089
  149804 string characters out of 6134841
- 247196 words of memory out of 5000000
+ 247231 words of memory out of 5000000
  12890 multiletter control sequences out of 15000+600000
  24308 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,40p,3114b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,3068b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -989,10 +993,10 @@ dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draft.pdf (45 pages, 618069 bytes).
+Output written on fdi_draft.pdf (45 pages, 618747 bytes).
 PDF statistics:
- 1189 PDF objects out of 1200 (max. 8388607)
- 1024 compressed objects within 11 object streams
+ 1188 PDF objects out of 1200 (max. 8388607)
+ 1023 compressed objects within 11 object streams
  205 named destinations out of 1000 (max. 500000)
  389 words of extra memory for PDF output out of 10000 (max. 10000000)
 
