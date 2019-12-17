@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  14 DEC 2019 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.29)  17 DEC 2019 12:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -883,36 +883,64 @@ File: SI_figures/EU_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
 Package pdftex.def Info: SI_figures/EU_rl_plots/Mutuality_notOECD.pdf used on i
 nput line 418.
 (pdftex.def)             Requested size: 151.23639pt x 104.07118pt.
- [10 <./SI_figures/haven_rl_plots/Transitivity.pdf> <./SI_figures/haven_rl_plot
-s/Mutuality_OECD.pdf> <./SI_figures/haven_rl_plots/Mutuality_notOECD.pdf> <./SI
-_figures/EU_rl_plots/Transitivity.pdf> <./SI_figures/EU_rl_plots/Mutuality_OECD
-.pdf> <./SI_figures/EU_rl_plots/Mutuality_notOECD.pdf>] [11] (./fdi_draftSI.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+[10 <./SI_figures/haven_rl_plots/Transitivity.pdf> <./SI_figures/haven_rl_plots
+/Mutuality_OECD.pdf> <./SI_figures/haven_rl_plots/Mutuality_notOECD.pdf> <./SI_
+figures/EU_rl_plots/Transitivity.pdf> <./SI_figures/EU_rl_plots/Mutuality_OECD.
+pdf> <./SI_figures/EU_rl_plots/Mutuality_notOECD.pdf>]
+<SI_figures/xr_rl_plots/Transitivity.pdf, id=454, 184.69pt x 129.48375pt>
+File: SI_figures/xr_rl_plots/Transitivity.pdf Graphic file (type pdf)
+
+<use SI_figures/xr_rl_plots/Transitivity.pdf>
+Package pdftex.def Info: SI_figures/xr_rl_plots/Transitivity.pdf used on input 
+line 432.
+(pdftex.def)             Requested size: 151.23639pt x 104.07118pt.
+
+<SI_figures/xr_rl_plots/Mutuality_OECD.pdf, id=456, 184.69pt x 129.48375pt>
+File: SI_figures/xr_rl_plots/Mutuality_OECD.pdf Graphic file (type pdf)
+
+<use SI_figures/xr_rl_plots/Mutuality_OECD.pdf>
+Package pdftex.def Info: SI_figures/xr_rl_plots/Mutuality_OECD.pdf used on inpu
+t line 433.
+(pdftex.def)             Requested size: 151.23639pt x 104.07118pt.
+
+<SI_figures/xr_rl_plots/Mutuality_notOECD.pdf, id=458, 184.69pt x 129.48375pt>
+File: SI_figures/xr_rl_plots/Mutuality_notOECD.pdf Graphic file (type pdf)
+
+<use SI_figures/xr_rl_plots/Mutuality_notOECD.pdf>
+Package pdftex.def Info: SI_figures/xr_rl_plots/Mutuality_notOECD.pdf used on i
+nput line 434.
+(pdftex.def)             Requested size: 151.23639pt x 104.07118pt.
+ [11 <./SI_figures/xr_rl_plots/Transitivity.pdf> <./SI_figures/xr_rl_plots/Mutu
+ality_OECD.pdf> <./SI_figures/xr_rl_plots/Mutuality_notOECD.pdf>] (./fdi_draftS
+I.bbl
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 7.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
- (./fdi_draftSI.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+
+(./fdi_draftSI.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
 Package rerunfilecheck Info: File `fdi_draftSI.out' has not changed.
 (rerunfilecheck)             Checksum: 5D28387ED2713A8FEA99ADA1CA43531D;689.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 438.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 335 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9174 strings out of 493089
- 138304 string characters out of 6134841
- 252110 words of memory out of 5000000
- 12441 multiletter control sequences out of 15000+600000
+ 9189 strings out of 493089
+ 138926 string characters out of 6134841
+ 252211 words of memory out of 5000000
+ 12454 multiletter control sequences out of 15000+600000
  21234 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,14n,47p,2113b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -937,10 +965,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/courier/ucrro8a.pfb>
-Output written on fdi_draftSI.pdf (12 pages, 350492 bytes).
+Output written on fdi_draftSI.pdf (12 pages, 364299 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 388 compressed objects within 4 object streams
- 47 named destinations out of 1000 (max. 500000)
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 485 words of extra memory for PDF output out of 10000 (max. 10000000)
 
