@@ -60,7 +60,7 @@ for(i in 1:length(vertex_names)){
 list.vertex.attributes(net)
 
 # simulate networks for Polity, in degree
-sim.nets <- simulate.ergm(net ~ sum+ sum(1/2) +nonzero+
+sim.nets <- simulate(net ~ sum+ sum(1/2) +nonzero+
                        edgecovmutual(oecd_both)+ edgecovmutual(not_oecd_both)+
                        transitiveweights("min", "max", "min")+
                        nodeicov("polity_mean")+nodeocov("polity_mean")+
@@ -69,8 +69,8 @@ sim.nets <- simulate.ergm(net ~ sum+ sum(1/2) +nonzero+
                        nodematch("OECD_mem_mean")+
                        edgecov(cov_mean[[1]])+edgecov(cov_mean[[2]])+
                        edgecov(cov_mean[[3]])+edgecov(cov_mean[[4]])+
-                       edgecov(cov_mean[[5]])+edgecov(cov_mean[[6]])+
-                       edgecov(cov_mean[[7]])+edgecov(fdi_cov[[9]]),
+                       edgecov(cov_mean[[5]])+edgecov(fdi_cov[[6]])+
+                       edgecov(cov_mean[[7]])+edgecov(cov_mean[[9]]),
                        nsim=simNum,reference=~Poisson,
                        response="tValue",coef=coef(fit_dep))
   
@@ -93,12 +93,12 @@ average.amat <- average.amat/length(sim.nets)
 average.col <- colMeans(average.amat) # average received
 
 # plot relationship
-pdf("figures/polity_in_sims.pdf",height=4,width=8,pointsize=12)
+pdf("figures/tradevol_sims.pdf",height=4,width=8,pointsize=12)
 par(las=1)
-plot(c(fdi_ver[[1]]),c(average.col),
-     xlab="Polity Score",ylab="Average FDI Received (USD millions), logged",
+plot(c(fdi_cov[[6]]),c(average.amat),
+     xlab="Trade Volume",ylab="Average FDI Received (USD millions), logged",
      pch=20)
-lines(lowess(c(fdi_ver[[1]]),c(average.col)), col="Red")
+lines(lowess(c(fdi_cov[[6]]),c(average.amat)), col="Red")
 abline(h=(0:8)/2,lty=3,col="gray60")
 abline(v=-10:10,lty=3,col="gray60")
 dev.off()

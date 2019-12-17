@@ -30,8 +30,6 @@ confint_ame <- function(x, conf){
 
 
 
-
-
 #mean(x[,r])/(-0.862 + sqrt(0.743 - 2.404*log(p)))
 
 summary(x)
@@ -49,12 +47,17 @@ for(i in 1:11){
   dfi$year <- years[i]
   df <- rbind(df, dfi)
 }
+for(i in 1:11){
+  dfi <- confint_ame(LSMs[[i]]$VC, conf=.975)
+  dfi$year <- years[i]
+  df <- rbind(df, dfi)
+}
 
 
 #set vars to loop through.
 vars <- unique(df$var)
 
-for(i in 1:21){
+for(i in 1:length(vars)){
   df2 <- subset(df, df$var==vars[i])
   name <- ggplot(df2, aes(x=year, y = estimate, ymin= conf.low, ymax= conf.high,
                          colour="#D55E00",legend=TRUE), legend=TRUE)+
