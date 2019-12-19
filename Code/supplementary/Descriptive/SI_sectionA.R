@@ -155,3 +155,65 @@ name <- ggplot(df ,aes(x=(Value), fill=Source)) +
   #          colour="black", angle=90, vjust = 1.2, family="URWTimes")+
   ylab("Density")+ xlab("FDI Value, USD")+
 ggsave(paste("descriptive_plots/check_sums.pdf",sep=""), name, device="pdf", width=6, height=4)
+
+
+#check summed world totals to imputed totals
+load("../Impute_Missing_Values/amelia_fit.Rdata") 
+
+
+df_a <- amelia_fit$imputations[[1]]
+for(i in 2:10){
+  df_a$Value <- df_a$Value+amelia_fit$imputations[[i]]$Value
+}
+df_a$Value <- df_a$Value/10
+fdi2 <- read.csv("../../create_datasets/clean_stock.csv", stringsAsFactors=FALSE) #FDI
+
+
+
+
+df1 <- df_a[,c(1:3,5)]
+df1$Value <- ifelse(df1$Value<0, 0,df1$Value)
+df1 <- summaryBy(Value ~ Destination +Year,data=df1, FUN = sum, keep.names = T)
+df1$Source <- "Imputed_Sums"
+df1 <- df1[,c(1,4,2,3)]
+df2 <- subset(fdi2, fdi2$Origin=="World")[,c(2,4,6,7)]
+df2 <- na.omit(df2)
+colnames(df2)[2] <- "Source"
+df1$CY <- paste0(df1$Destination,df1$Year)
+df2$CY <- paste0(df2$Destination,df2$Year)
+
+df1 <- subset(df1, df1$CY %in% df2$CY)
+df2 <- subset(df2, df2$CY %in% df1$CY)
+
+df <- rbind(df1, df2)
+
+
+name <- ggplot(df ,aes(x=(Value), fill=Source)) + 
+  geom_density(alpha=0.25)+ 
+  scale_fill_manual(values=c("red","blue"),name = "Group")+
+  ggtitle(paste0("Distribution of World vs. MI Partner Sums"))+
+  #geom_vline(xintercept=max(d$donation.sum)/1000, colour="red") +
+  #geom_vline(xintercept=max(r$donation.sum)/1000, colour="blue") +
+  #geom_text(aes(x=max(d$donation.sum)/1000, label="Max Contribution Total, BE", y=0.05), 
+  #          colour="black", angle=90, vjust = 1.2, family="URWTimes")+
+  #geom_text(aes(x=max(r$donation.sum)/1000, label="Max Contribution Total, Random", y=0.05), 
+  #          colour="black", angle=90, vjust = 1.2, family="URWTimes")+
+  ylab("Density")+ xlab("FDI Value, USD")
+  ggsave(paste("descriptive_plots/check_MIsums.pdf",sep=""), name, device="pdf", width=6, height=4)
+
+
+df$Value <- ceiling(log(df$Value)*2)
+  
+  
+name <- ggplot(df ,aes(x=(Value), fill=Source)) + 
+    geom_density(alpha =.25,adjust = 3)+ 
+    scale_fill_manual(values=c("red","blue"),name = "Group")+
+    ggtitle(paste0("Distribution of Reported Total vs. MI Partner Sums"))+
+    #geom_vline(xintercept=max(d$donation.sum)/1000, colour="red") +
+    #geom_vline(xintercept=max(r$donation.sum)/1000, colour="blue") +
+    #geom_text(aes(x=max(d$donation.sum)/1000, label="Max Contribution Total, BE", y=0.05), 
+    #          colour="black", angle=90, vjust = 1.2, family="URWTimes")+
+    #geom_text(aes(x=max(r$donation.sum)/1000, label="Max Contribution Total, Random", y=0.05), 
+    #          colour="black", angle=90, vjust = 1.2, family="URWTimes")+
+    ylab("Density")+ xlab("FDI Value,USD (transformed)")
+ggsave(paste("descriptive_plots/check_MIsums_logged.pdf",sep=""), name, device="pdf", width=6, height=4)
