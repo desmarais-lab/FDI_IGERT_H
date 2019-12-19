@@ -367,11 +367,11 @@ Transitivity  & Reciprocity, OECD pair &Reciprocity, non-OECD pair\\
 
 
 
-\subsection{Multiple Imputations}
+%\subsection{Multiple Imputations}
 
-In addition to subsetting by missingness, we also employ multiple imputations using the \R{} package \texttt{Amelia}. For the imputations, we used the dataset that included all covariates and imputed the column for the original FDI stock values and then transformed the data for the models. We used ten imputations, modeled each imputed dataset and then combined the parameter estimates using standard Rubin's rules. \\
+%In addition to subsetting by missingness, we also employ multiple imputations using the \R{} package \texttt{Amelia}. For the imputations, we used the dataset that included all covariates and imputed the column for the original FDI stock values and then transformed the data for the models. We used ten imputations, modeled each imputed dataset and then combined the parameter estimates using standard Rubin's rules. \\
 
-\centerline{\textcolor{red}{WILL ADD FIGURE ONCE MODELS FINISH}}
+%\centerline{\textcolor{red}{WILL ADD FIGURE ONCE MODELS FINISH}}
 
 
 
@@ -501,7 +501,7 @@ Entente Treaty &  0.066 & 0.248 & 0 & 1 \\
 
 \section{Multiple Imputations with Amelia Results}\label{ameliaresults}
 
-In this section, we utilize the \R{} package Amelia to impute the missing values in the full data set,  when \emph{q} $\approx$ 0.50, and when \emph{q} $\approx$ 0.25 \citep{King_et_al:2001,honaker2011amelia}. Figures \ref{fig:full_amelia_netterms} and \ref{fig:q50_amelia_netterms} show the results. We see that transitivity effects are significant in all years and reciprocity effects are also significant in most years. The results in Sections \ref{qlevelresults} and \ref{ameliaresults} give us confidence that our findings regarding the reciprocity and transitivity of FDI are not driven by the pattern of missingness in the data set.
+%In this section, we utilize the \R{} package Amelia to impute the missing values in the full data set,  when \emph{q} $\approx$ 0.50, and when \emph{q} $\approx$ 0.25 \citep{King_et_al:2001,honaker2011amelia}. Figures \ref{fig:full_amelia_netterms} and \ref{fig:q50_amelia_netterms} show the results. We see that transitivity effects are significant in all years and reciprocity effects are also significant in most years. The results in Sections \ref{qlevelresults} and \ref{ameliaresults} give us confidence that our findings regarding the reciprocity and transitivity of FDI are not driven by the pattern of missingness in the data set.
 
 \subsection{Full}
 

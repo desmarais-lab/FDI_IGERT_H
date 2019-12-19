@@ -3,74 +3,78 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 95 of file fdi_reference.bib
+Repeated entry---line 128 of file fdi_reference.bib
  : @article{snijders2006new
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 320 of file fdi_reference.bib
+Repeated entry---line 353 of file fdi_reference.bib
  :   @article{garlaschelli2004patterns
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 573 of file fdi_reference.bib
+Repeated entry---line 606 of file fdi_reference.bib
  : @article{ward2013gravity
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1171 of file fdi_reference.bib
+Repeated entry---line 639 of file fdi_reference.bib
+ : @article{cao2014democracies
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1204 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1202 of file fdi_reference.bib
+Repeated entry---line 1235 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1486 of file fdi_reference.bib
+Repeated entry---line 1519 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1618 of file fdi_reference.bib
+Repeated entry---line 1651 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
-You've used 103 entries,
+You've used 104 entries,
             2874 wiz_defined-function locations,
-            1295 strings with 22228 characters,
-and the built_in function-call counts, 398531 in all, are:
-= -- 64995
-> -- 4625
+            1301 strings with 22407 characters,
+and the built_in function-call counts, 403101 in all, are:
+= -- 65751
+> -- 4676
 < -- 1
-+ -- 30262
-- -- 1660
-* -- 33804
-:= -- 80522
-add.period$ -- 418
-call.type$ -- 103
-change.case$ -- 1339
-chr.to.int$ -- 102
-cite$ -- 104
-duplicate$ -- 1558
-empty$ -- 3490
-format.name$ -- 1756
-if$ -- 71578
++ -- 30616
+- -- 1678
+* -- 34198
+:= -- 81432
+add.period$ -- 422
+call.type$ -- 104
+change.case$ -- 1352
+chr.to.int$ -- 103
+cite$ -- 105
+duplicate$ -- 1573
+empty$ -- 3526
+format.name$ -- 1774
+if$ -- 72401
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 108
-newline$ -- 443
-num.names$ -- 1187
-pop$ -- 390
+missing$ -- 109
+newline$ -- 447
+num.names$ -- 1199
+pop$ -- 393
 preamble$ -- 1
-purify$ -- 1545
+purify$ -- 1560
 quote$ -- 0
-skip$ -- 1316
+skip$ -- 1329
 stack$ -- 0
-substring$ -- 91342
-swap$ -- 207
-text.length$ -- 1443
+substring$ -- 92411
+swap$ -- 209
+text.length$ -- 1457
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 390
+type$ -- 394
 warning$ -- 1
-while$ -- 2406
+while$ -- 2431
 width$ -- 0
-write$ -- 1429
-(There were 7 error messages)
+write$ -- 1442
+(There were 8 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 DEC 2019 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 DEC 2019 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -409,12 +409,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
@@ -448,7 +448,7 @@ base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PSRM_RnR_memo.pdf (7 pages, 89058 bytes).
+Output written on PSRM_RnR_memo.pdf (7 pages, 89587 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
