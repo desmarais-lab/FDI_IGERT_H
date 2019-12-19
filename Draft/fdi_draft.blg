@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: fdi_draft.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
 Repeated entry---line 128 of file fdi_reference.bib
@@ -36,45 +34,4 @@ Repeated entry---line 1651 of file fdi_reference.bib
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
-You've used 104 entries,
-            2874 wiz_defined-function locations,
-            1301 strings with 22407 characters,
-and the built_in function-call counts, 403101 in all, are:
-= -- 65751
-> -- 4676
-< -- 1
-+ -- 30616
-- -- 1678
-* -- 34198
-:= -- 81432
-add.period$ -- 422
-call.type$ -- 104
-change.case$ -- 1352
-chr.to.int$ -- 103
-cite$ -- 105
-duplicate$ -- 1573
-empty$ -- 3526
-format.name$ -- 1774
-if$ -- 72401
-int.to.chr$ -- 6
-int.to.str$ -- 0
-missing$ -- 109
-newline$ -- 447
-num.names$ -- 1199
-pop$ -- 393
-preamble$ -- 1
-purify$ -- 1560
-quote$ -- 0
-skip$ -- 1329
-stack$ -- 0
-substring$ -- 92411
-swap$ -- 209
-text.length$ -- 1457
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 394
-warning$ -- 1
-while$ -- 2431
-width$ -- 0
-write$ -- 1442
 (There were 8 error messages)
