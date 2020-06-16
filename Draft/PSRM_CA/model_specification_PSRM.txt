@@ -1,0 +1,51 @@
+
+#Edge covars:  c(lag, mass, dist, alliance, defense, trade_vol, bit, pta_depth) 
+#DV value:  net %e% "tValue" <- ceiling(log(edge_vals)*2)
+
+
+Main Model Specification: net ~ sum+ sum(1/2) +nonzero+
+                                      edgecovmutual(oecd_both)+ edgecovmutual(not_oecd_both)+
+                                      transitiveweights("min", "max", "min")+
+                                      nodeicov("polity")+nodeocov("polity")+
+                                      nodeicov("trade_opennes")+nodeocov("trade_opennes")+
+                                      nodeicov("gdp.pc")+nodeocov("gdp.pc")+
+                                      nodematch("OECD_mem")+
+                                      edgecov(edgecovars[[1]])+edgecov(edgecovars[[2]])+
+                                      edgecov(edgecovars[[3]])+edgecov(edgecovars[[4]])+
+                                      edgecov(edgecovars[[5]])+edgecov(edgecovars[[6]])+
+                                      edgecov(edgecovars[[7]])+edgecov(edgecovars[[9]])
+                                      
+
+Models and simulations completed:
+
+1. Main model
+                                      
+                                      
+                                      
+ERGM Models to Run with updated reciprocity, new covariates, and expanded DV:
+
+1. Time-pooled models
+2. Subset by missingness
+	2a. Q=.5
+	2b. Q=.25 
+3. Imputed data models: I suggest not including these as I'm confident the zeros are 
+						supposed to be zero and the subset by missingness models already 
+						address the issue.
+						Rough estimate is at least 24k core hours.
+						(3 models x 11 years x 10 imputations x 72 hours)
+4. Model with corporate tax rates
+5. Model that drops tax havens
+6. Model the drops EU countries
+7. LSM with AMEN for main model                                   
+                                      
+                                      
+Simulations to Run with new main results
+
+1.  ModelFitCOmparison.R : Figure 1 BIC Diff - Done
+2.  ModelInterpretation.R : simluations for Figure 2 and Figure 4, Figure 4 - Done
+3.  NetworkStatisticsFit.r : Figure 2 - Done
+2.  main_rl_plots: rl plots for all variables, Figure 3 and Table 1 - Done
+3.  CovariateInterpretation.R : Figure 5 Covariate simulation
+4.  flow_contagion_plot.R, contagion_simulation_interpretation.R : Figure 6 Ripple effects                                     
+                                      
+

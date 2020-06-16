@@ -1,37 +1,80 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: fdi_draft.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: fdi_draft.aux
 The style file: apsr.bst
 Database file #1: fdi_reference.bib
-Repeated entry---line 128 of file fdi_reference.bib
+Repeated entry---line 140 of file fdi_reference.bib
  : @article{snijders2006new
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 353 of file fdi_reference.bib
+Repeated entry---line 365 of file fdi_reference.bib
  :   @article{garlaschelli2004patterns
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 606 of file fdi_reference.bib
+Repeated entry---line 618 of file fdi_reference.bib
  : @article{ward2013gravity
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 639 of file fdi_reference.bib
+Repeated entry---line 651 of file fdi_reference.bib
  : @article{cao2014democracies
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1204 of file fdi_reference.bib
+Repeated entry---line 1216 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1235 of file fdi_reference.bib
+Repeated entry---line 1247 of file fdi_reference.bib
  : @article{Henisz:2000
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1519 of file fdi_reference.bib
+Repeated entry---line 1531 of file fdi_reference.bib
  : @article{Kerner:2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1651 of file fdi_reference.bib
+Repeated entry---line 1663 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Beazer_Blake:2018
+You've used 105 entries,
+            2874 wiz_defined-function locations,
+            1306 strings with 22636 characters,
+and the built_in function-call counts, 409917 in all, are:
+= -- 66887
+> -- 4765
+< -- 1
++ -- 31179
+- -- 1708
+* -- 34801
+:= -- 82765
+add.period$ -- 426
+call.type$ -- 105
+change.case$ -- 1365
+chr.to.int$ -- 104
+cite$ -- 106
+duplicate$ -- 1588
+empty$ -- 3556
+format.name$ -- 1804
+if$ -- 73626
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 110
+newline$ -- 451
+num.names$ -- 1213
+pop$ -- 395
+preamble$ -- 1
+purify$ -- 1575
+quote$ -- 0
+skip$ -- 1343
+stack$ -- 0
+substring$ -- 94043
+swap$ -- 211
+text.length$ -- 1471
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 398
+warning$ -- 1
+while$ -- 2456
+width$ -- 0
+write$ -- 1457
 (There were 8 error messages)
