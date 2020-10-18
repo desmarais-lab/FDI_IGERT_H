@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: fdi_draft.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: apsr.bst
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+Database file #1: fdi_reference.bib
+Repeated entry---line 1216 of file fdi_reference.bib
+ : @book{Caves:1996
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1247 of file fdi_reference.bib
+ : @article{Henisz:2000
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1531 of file fdi_reference.bib
+ : @article{Kerner:2009
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1663 of file fdi_reference.bib
+ : @article{Leblang:2010
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in Beazer_Blake:2018
+You've used 80 entries,
+            2874 wiz_defined-function locations,
+            1164 strings with 18689 characters,
+and the built_in function-call counts, 290593 in all, are:
+= -- 47233
+> -- 3320
+< -- 1
++ -- 21849
+- -- 1204
+* -- 24443
+:= -- 59063
+add.period$ -- 326
+call.type$ -- 80
+change.case$ -- 1040
+chr.to.int$ -- 79
+cite$ -- 81
+duplicate$ -- 1213
+empty$ -- 2677
+format.name$ -- 1281
+if$ -- 52155
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 84
+newline$ -- 350
+num.names$ -- 914
+pop$ -- 321
+preamble$ -- 1
+purify$ -- 1200
+quote$ -- 0
+skip$ -- 1013
+stack$ -- 0
+substring$ -- 66108
+swap$ -- 163
+text.length$ -- 1121
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 300
+warning$ -- 1
+while$ -- 1853
+width$ -- 0
+write$ -- 1113
+(There were 4 error messages)
