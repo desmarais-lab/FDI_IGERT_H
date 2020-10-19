@@ -465,13 +465,24 @@ Transitivity  & Reciprocity, OECD pair &Reciprocity, non-OECD pair\\
 \end{figure}
 
 
-\section{Ripple Effect Simulation Details}\label{ripple_sim}
+\section{Ripple Effect Simulation}\label{ripple_sim}
 
 We investigate the interdependence in the FDI network by simulating networks after edge elimation from the full model estimated for 2012.\footnote{Our conclusions are robust to using other years---we use 2012 for consistency with the model interpretations presented in the paper.} The complete elimination of a single FDI edge would be admittedly unlikely, but the effects would be similar to that of a large reduction in an edge value, and simulating the network conditional on a fixed but non-zero edge value is much more computationally complex than eliminating an edge entirely. Another way to look at edge elimination is to consider the structural differences we would have observed if a policy was in place to prevent investment along a particular edge (e.g., via an embargo on investment).
 
 Our objective in this simulation experiment is to understand how the elimination of an FDI edge from country $i$ to country $j$ affects the other ties to which countries $i$ and $j$ are incident. Specifically, we analyze the effects of eliminating edge $i \rightarrow j$  on four measures: (1) the expected value of FDI ties sent by $i$ to countries other than $j$, (2) the expected value of FDI ties sent by $j$, (3) the expected value of ties received by $i$, and (4) the expected value of ties received by $j$ from countries other than $i$.  These edges are ``close'' to edge $i \rightarrow j$ according to our ERGM specification in that (1) the edge sent from $j$ to $i$ factors directly into the measure of reciprocity, and (2) all edges sent to (from) $i$ and $j$ by other nodes factor into the transitive triads measure with the edge from $i$ to $j$.\footnote{Note that despite including the total amount of investment in the network (via $\text{Sum}:\bm{g(y)}$), the ERGM does not fix the sum of edges in the network---it simply generates networks with, on average, the same value of $\text{Sum}:\bm{g(y)}$ as seen in the observed network. As such, eliminating a single edge from the network will have virtually no effect on the expected values of other edges.}
 
 There are three steps in the simulation experiment we conduct to analyze the effects of eliminating edge $i \rightarrow j$. We first simulate 500 networks from the 2012 ERGM fit. We use this sample to calculate expected values of each edge, as well as our summary measures of indirect effects, from the model without constraints on edge values (i.e., no edges eliminated). Our second step is to, for each observed edge in the 2012 networks, simulate 100 networks from the ERGM with the same parameter values, but with the respective edge value fixed to zero. Our third step is to calculate, again for each edge, the percentage change in the measures of indirect effects that result from eliminating the edge.
+
+
+The results from our simulation exercise are presented in Figure \ref{fig:contagion}. We divide the edges in the network into three categories based on their expected values---small edge values (approximately 40\% of edges), between 0 and 5 on the half-log scale (i.e., \$75m USD or less); medium edge values (approximately 50\% of edges), between 5 and 15 on the half-log scale (\$75m- \$163bn USD); large edge values (approximately 10\% of edges), greater than 15 on the half-log scale (\$163bn USD and above). We see that the effects of eliminating an edge are uniformly negative for the surrounding edge---their expected values decrease.  As the expected value of the edge being eliminated increases, the magnitude of the effects on surrounding edges increases. Even for small edge values, eliminating edge $i \rightarrow j$ from the network reduces the expected values of other edges sent to/from nodes $i$ and $j$ by 2-4\%. When multiplied over dozens, or even hundreds, of ties to which two countries are incident, a 2-4\% decrease in the value of investments would represent a substantial economic shock. %If the value of edge $i \rightarrow j$ is large, the expected impact on surrounding edges grows to a 4-6\% decrease. %Our modeling highlights mechanisms through whic an economic crisis in countries at the center of the network, such as the U.S., will have a ripple effect on FDI inflows and outflows in many other countries.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=.85]{./figures/contagion_simulation_results} \vspace{-.5cm}\\
+\caption{\label{fig:contagion} Results from simulation exercise investigating the effects of eliminating edge $i \rightarrow j$. Points are drawn at the average values over all edges in the 2012 network. The bars span 95\% confidence intervals.}
+\end{figure}
+
 
 \section{Contributions to the Literature}
 
@@ -491,15 +502,23 @@ Third, our article speaks to the ``science and the system'' debate in the Intern
 Finally, to our knowledge, the count ERGM has not been applied previously in political science research. The count ERGM can be applied to any network in which ties are count-weighted, and therefore represents a valuable tool for political scientists, who regularly study networks with count-weighted ties (e.g., shared membership in international governmental organizations \citep{boehmke2016addressing}, the count of bills co-sponsored between legislators \citep{kirkland2013hypothesis}).%\footnote{In Appendix B we provide more discussion about why we chose the count ERGM and compare it with other model options.}
 
 
+
+
+\section{Covariate interpretation}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=.75]{./figures/tradevol_sims} \vspace{-.5cm}\\
+\caption{\label{fig:tradevol} Results from the simulation exercise investigating the effects of bilateral trade volume  for year 2011. These results are from 500 simulations. The line in red is the Loess curve.}
+\end{figure}
+
+For the Poisson-reference ERGM these covariate estimates are usually interpreted by exponentiating Euler's constant to the power of the coefficient times the number of unit changes in the covariate to get the expected change in the tie weight \citep{krivitsky2013modeling}. Taking bilateral trade volume for example, if the FDI origin sent had a value of 10 logged units of trade, we would expect the value of logged FDI being sent to be 10.17 times more than if the trade volume was zero. Another method for interpreting covariate terms in the model is to simulate networks using the estimated coefficients while fixing all other covariate terms at the mean value and then comparing changes in the average edge value to the range of values of the covariate. For illustrative purpose, we present a plot of this for bilateral trade volume below in Figure \ref{fig:tradevol}. Here the plot shows that as the trade volume increases from zero to 10 logged units there is a slow increase in the average level of FDI received, but increases after 10 logged units show a much sharper increase.
+
+
 \newpage
 \singlespacing
 \bibliographystyle{apsr}
 \bibliography{fdi_reference}
-
-
-
-
-
 
 \end{document}
 
