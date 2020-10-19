@@ -19,45 +19,45 @@ Repeated entry---line 1663 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
-You've used 68 entries,
+You've used 66 entries,
             2874 wiz_defined-function locations,
-            1095 strings with 16614 characters,
-and the built_in function-call counts, 243987 in all, are:
-= -- 39634
-> -- 2737
+            1084 strings with 16356 characters,
+and the built_in function-call counts, 239252 in all, are:
+= -- 38880
+> -- 2705
 < -- 0
-+ -- 18293
-- -- 997
-* -- 20499
-:= -- 49613
-add.period$ -- 278
-call.type$ -- 68
-change.case$ -- 884
-chr.to.int$ -- 67
-cite$ -- 68
-duplicate$ -- 1030
-empty$ -- 2305
-format.name$ -- 1068
-if$ -- 43784
++ -- 17973
+- -- 983
+* -- 20119
+:= -- 48613
+add.period$ -- 270
+call.type$ -- 66
+change.case$ -- 858
+chr.to.int$ -- 65
+cite$ -- 66
+duplicate$ -- 1000
+empty$ -- 2238
+format.name$ -- 1050
+if$ -- 42942
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 297
-num.names$ -- 772
-pop$ -- 277
+missing$ -- 70
+newline$ -- 289
+num.names$ -- 752
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 1020
+purify$ -- 990
 quote$ -- 0
-skip$ -- 854
+skip$ -- 828
 stack$ -- 0
-substring$ -- 55504
-swap$ -- 133
-text.length$ -- 952
+substring$ -- 54469
+swap$ -- 129
+text.length$ -- 924
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 254
+type$ -- 246
 warning$ -- 0
-while$ -- 1574
+while$ -- 1529
 width$ -- 0
-write$ -- 946
+write$ -- 920
 (There were 4 error messages)
