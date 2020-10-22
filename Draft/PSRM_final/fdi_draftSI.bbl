@@ -1,11 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem[Boehmke, Chyzh \harvardand\ Thies]{Boehmke, Chyzh \harvardand\
-  Thies}{2016}{boehmke2016addressing}
-Boehmke, Frederick~J, Olga Chyzh \harvardand\ Cameron~G Thies. 2016.
-\newblock ``Addressing endogeneity in actor-specific network measures.'' {\em
-  Political Science Research and Methods} 4(01):123--149.
-
 \harvarditem{Borga}{2016}{Borga:2016}
 Borga, Maria. 2016.
 \newblock ``Not All Foreign Direct Investment Is Foreign: The Extent of
@@ -18,38 +12,6 @@ Cao, Xun \harvardand\ Michael~D Ward. 2014.
   portfolio investments modeled as dynamic network.'' {\em International
   Interactions} 40(2):216--245.
 
-\harvarditem{Chaudoin \harvardand\ Milner}{2017}{Chaudoin_Milner:2017}
-Chaudoin, Stephen \harvardand\ Helen~V. Milner. 2017.
-\newblock ``Science and the system: IPE and international monetary politics AU
-  - Chaudoin, Stephen.'' {\em Review of International Political Economy}
-  24(4):681--698.
-
-\harvarditem[Chaudoin, Milner \harvardand\ Pang]{Chaudoin, Milner \harvardand\
-  Pang}{2014}{Chaudoin_et_al:2014}
-Chaudoin, Stephen, Helen~V. Milner \harvardand\ Xun Pang. 2014.
-\newblock ``International Systems and Domestic Politics: Linking Complex
-  Interactions with Empirical Models in International Relations.'' {\em
-  International Organization} 69(2):275--309.
-
-\harvarditem{Chaudoin \harvardand\ Wilf}{2018}{Chaudoin_Wilf:2018}
-Chaudoin, Stephen \harvardand\ Meredith Wilf. 2018.
-\newblock ``Interdependence, Networks, and Public Policy Support.''.
-
-\harvarditem{Chuluun}{2017}{chuluun2017global}
-Chuluun, Tuugi. 2017.
-\newblock ``Global portfolio investment network and stock market comovement.''
-  {\em Global Finance Journal} 33:51--68.
-
-\harvarditem{Cohen}{2008}{Cohen:2008}
-Cohen, Benjamin~J. 2008.
-\newblock {\em International Political Economy: An Intellectual History}.
-\newblock Princeton, N.J.:  Princeton University Press.
-
-\harvarditem{Drezner \harvardand\ McNamara}{2013}{Drezner_McNamara:2013}
-Drezner, Daniel~W. \harvardand\ Kathleen~R. McNamara. 2013.
-\newblock ``International Political Economy, Global Financial Orders and the
-  2008 Financial Crisis.'' {\em Perspectives on Politics} 11(1):155--166.
-
 \harvarditem{Dunn \harvardand\ Clark}{1969}{dunn1969correlation}
 Dunn, Olive~Jean \harvardand\ Virginia Clark. 1969.
 \newblock ``Correlation coefficients measured on the same individuals.'' {\em
@@ -60,13 +22,6 @@ Dunn, Olive~Jean \harvardand\ Virginia Clark. 1969.
 Garlaschelli, Diego \harvardand\ Maria~I Loffredo. 2004.
 \newblock ``Patterns of link reciprocity in directed networks.'' {\em Physical
   review letters} 93(26):268701.
-
-\harvarditem[Hafner-Burton, Kahler \harvardand\ Montgomery]{Hafner-Burton,
-  Kahler \harvardand\ Montgomery}{2009}{Hafner-Burton:2009}
-Hafner-Burton, Emilie~M., Miles Kahler \harvardand\ Alexander~H. Montgomery.
-  2009.
-\newblock ``Network Analysis for International Relations.'' {\em International
-  Organization} 63(3):559--592.
 
 \harvarditem[Hoff et~al.]{Hoff, Fosdick, Volfovsky \harvardand\ He}{2017}{amen}
 Hoff, Peter, Bailey Fosdick, Alex Volfovsky \harvardand\ Yanjun He. 2017.
@@ -81,30 +36,16 @@ Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008.
 \newblock ``Goodness of fit of social network models.'' {\em Journal of the
   American Statistical Association} 103(481):248--258.
 
-\harvarditem{Kali \harvardand\ Reyes}{2010}{kali2010financial}
-Kali, Raja \harvardand\ Javier Reyes. 2010.
-\newblock ``Financial contagion on the international trade network.'' {\em
-  Economic Inquiry} 48(4):1072--1101.
-
-\harvarditem{Kirkland}{2013}{kirkland2013hypothesis}
-Kirkland, Justin~H. 2013.
-\newblock ``Hypothesis testing for group structure in legislative networks.''
-  {\em State Politics \& Policy Quarterly} 13(2):225--243.
-
 \harvarditem{Krivitsky}{2012}{krivitsky2012exponential}
 Krivitsky, Pavel~N. 2012.
 \newblock ``Exponential-family random graph models for valued networks.'' {\em
   Electronic Journal of Statistics} 6:1100.
 
-\harvarditem{Lake}{2009}{Lake:2009}
-Lake, David~A. 2009.
-\newblock ``Open Economy Politics: A Critical Review.'' {\em The Review of
-  International Organizations} 4(3):219--244.
-
-\harvarditem{Matesanz \harvardand\ Ortega}{2014}{matesanz2014network}
-Matesanz, David \harvardand\ Guillermo~J Ortega. 2014.
-\newblock ``Network analysis of exchange data: interdependence drives crisis
-  contagion.'' {\em Quality \& Quantity} 48(4):1835--1851.
+\harvarditem{Krivitsky \harvardand\ Butts}{2013}{krivitsky2013modeling}
+Krivitsky, Pavel~N \harvardand\ Carter~T Butts. 2013.
+\newblock ``Modeling valued networks with statnet.'' {\em The Statnet
+  Development Team} p.~2013.
+\newline\harvardurl{\url{https://statnet.csde.washington.edu/trac/raw-attachment/wiki/Sunbelt2015/Valued.pdf}}
 
 \harvarditem[Minhas, Hoff \harvardand\ Ward]{Minhas, Hoff \harvardand\
   Ward}{2019}{minhas2019inferential}
@@ -116,18 +57,6 @@ Minhas, Shahryar, Peter~D Hoff \harvardand\ Michael~D Ward. 2019.
 Neumayer, Eric \harvardand\ Thomas Pl{\"u}mper. 2010.
 \newblock ``Spatial effects in dyadic data.'' {\em International Organization}
   64(1):145--166.
-
-\harvarditem{Oatley}{2011}{Oatley:2011}
-Oatley, Thomas. 2011.
-\newblock ``The Reductionist Gamble: Open Economy Politics in the Global
-  Economy.'' {\em International Organization} 65(02):311--341.
-
-\harvarditem[Oatley et~al.]{Oatley, Winecoff, Pennock \harvardand\
-  Danzman}{2013}{Oatley_et_al:2013}
-Oatley, Thomas, W.~Kindred Winecoff, Andrew Pennock \harvardand\ Sarah~Bauerle
-  Danzman. 2013.
-\newblock ``The Political Economy of Global Finance: A Network Model.'' {\em
-  Perspectives on Politics} 11(1):133--153.
 
 \harvarditem{Opsahl \harvardand\ Panzarasa}{2009}{opsahl2009clustering}
 Opsahl, Tore \harvardand\ Pietro Panzarasa. 2009.
@@ -172,10 +101,5 @@ Wilson, James~D, Matthew~J Denny, Shankar Bhamidi, Skyler~J Cranmer
   \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Stochastic weighted graphs: Flexible model specification and
   simulation.'' {\em Social Networks} 49:37--47.
-
-\harvarditem{Zakaria \harvardand\ Fatine}{2017}{zakaria2017evidence}
-Zakaria, Firano \harvardand\ Filali~Adib Fatine. 2017.
-\newblock ``Evidence of the cross border contagion risk for Moroccan banking
-  system.'' {\em Risk and Decision Analysis} 6(4):299--315.
 
 \end{thebibliography}

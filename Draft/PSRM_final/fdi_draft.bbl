@@ -15,16 +15,6 @@ Arel-Bundock, Vincent. 2017{\em b}.
 \newblock ``The Unintended Consequences of Bilateralism: Treaty Shopping and
   International Tax Policy.'' {\em International Organization} 71(2):349--371.
 
-\harvarditem{Axelrod}{1984}{Axelrod:1984}
-Axelrod, Robert~M. 1984.
-\newblock {\em The Evolution of Cooperation}.
-\newblock New York:  Basic Books.
-
-\harvarditem{Bagwell \harvardand\ Staiger}{1999}{Bagwell_Staiger:1999}
-Bagwell, Kyle \harvardand\ Robert~W. Staiger. 1999.
-\newblock ``An Economic Theory of GATT.'' {\em The American Economic Review}
-  89(1):215--248.
-
 \harvarditem{Baldwin}{2011}{Baldwin:2011}
 Baldwin, Richard. 2011.
 \newblock ``Trade And Industrialisation After Globalisation's 2$^{nd}$
@@ -59,6 +49,12 @@ Blonigen, Bruce~A, Ronald~B Davies, Glen~R Waddell \harvardand\ Helen~T
 \newblock ``FDI in space: Spatial autoregressive relationships in foreign
   direct investment.'' {\em European Economic Review} 51(5):1303--1325.
 
+\harvarditem[Boehmke, Chyzh \harvardand\ Thies]{Boehmke, Chyzh \harvardand\
+  Thies}{2016}{boehmke2016addressing}
+Boehmke, Frederick~J, Olga Chyzh \harvardand\ Cameron~G Thies. 2016.
+\newblock ``Addressing endogeneity in actor-specific network measures.'' {\em
+  Political Science Research and Methods} 4(01):123--149.
+
 \harvarditem{B\"{u}the \harvardand\ Milner}{2008}{Buthe_Milner:2008}
 B\"{u}the, Tim \harvardand\ Helen~V. Milner. 2008.
 \newblock ``The Politics of Foreign Direct Investment into Developing
@@ -71,6 +67,12 @@ B{\"u}the, Tim \harvardand\ Helen~V Milner. 2014.
   agreements: Credibility, commitment, and economic flows in the developing
   world, 1971--2007.'' {\em World Politics} 66(01):88--122.
 
+\harvarditem{Cao \harvardand\ Ward}{2014}{cao2014democracies}
+Cao, Xun \harvardand\ Michael~D Ward. 2014.
+\newblock ``Do democracies attract portfolio investment? Transnational
+  portfolio investments modeled as dynamic network.'' {\em International
+  Interactions} 40(2):216--245.
+
 \harvarditem[Carr, Markusen \harvardand\ Maskus]{Carr, Markusen \harvardand\
   Maskus}{2001}{Carr_et_al:2001}
 Carr, David~L., James~R. Markusen \harvardand\ Keith~E. Maskus. 2001.
@@ -81,6 +83,28 @@ Carr, David~L., James~R. Markusen \harvardand\ Keith~E. Maskus. 2001.
 Caves, Richard~E. 1996.
 \newblock {\em Multinational Enterprise and Economic Analysis}.
 \newblock New York:  Cambridge University Press.
+
+\harvarditem{Chaudoin \harvardand\ Milner}{2017}{Chaudoin_Milner:2017}
+Chaudoin, Stephen \harvardand\ Helen~V. Milner. 2017.
+\newblock ``Science and the system: IPE and international monetary politics AU
+  - Chaudoin, Stephen.'' {\em Review of International Political Economy}
+  24(4):681--698.
+
+\harvarditem[Chaudoin, Milner \harvardand\ Pang]{Chaudoin, Milner \harvardand\
+  Pang}{2014}{Chaudoin_et_al:2014}
+Chaudoin, Stephen, Helen~V. Milner \harvardand\ Xun Pang. 2014.
+\newblock ``International Systems and Domestic Politics: Linking Complex
+  Interactions with Empirical Models in International Relations.'' {\em
+  International Organization} 69(2):275--309.
+
+\harvarditem{Chaudoin \harvardand\ Wilf}{2018}{Chaudoin_Wilf:2018}
+Chaudoin, Stephen \harvardand\ Meredith Wilf. 2018.
+\newblock ``Interdependence, Networks, and Public Policy Support.''.
+
+\harvarditem{Cohen}{2008}{Cohen:2008}
+Cohen, Benjamin~J. 2008.
+\newblock {\em International Political Economy: An Intellectual History}.
+\newblock Princeton, N.J.:  Princeton University Press.
 
 \harvarditem{Coughlin \harvardand\ Segev}{2000}{coughlin2000foreign}
 Coughlin, Cletus~C \harvardand\ Eran Segev. 2000.
@@ -106,16 +130,15 @@ Desmarais, Bruce~A. \harvardand\ Skyler~J. Cranmer. 2017.
   Alexander~H. Montgomery \harvardand\ Mark Lubell.
 \newblock Oxford University Press.
 
-\harvarditem{DiMascio \harvardand\ Pauwelyn}{2008}{DiMascio_Pauwelyn:2008}
-DiMascio, Nicholas \harvardand\ Joost Pauwelyn. 2008.
-\newblock ``Nondiscrimination in Trade and Investment Treaties: Worlds Apart or
-  Two Sides of the Same Coin?'' {\em The American Journal of International Law}
-  102(1):48--89.
-
 \harvarditem{Dorussen \harvardand\ Ward}{2010}{Dorussen_Ward:2010}
 Dorussen, Han \harvardand\ Hugh Ward. 2010.
 \newblock ``Trade networks and the Kantian peace.'' {\em Journal of Peace
   Research} 47(1):29--42.
+
+\harvarditem{Drezner \harvardand\ McNamara}{2013}{Drezner_McNamara:2013}
+Drezner, Daniel~W. \harvardand\ Kathleen~R. McNamara. 2013.
+\newblock ``International Political Economy, Global Financial Orders and the
+  2008 Financial Crisis.'' {\em Perspectives on Politics} 11(1):155--166.
 
 \harvarditem{Dunning}{1988}{Dunning:1988}
 Dunning, John~H. 1988.
@@ -156,6 +179,13 @@ Graham, Benjamin A.~T., Noel~P. Johnston \harvardand\ Allison~F. Kingsley.
 Graham, Edward~M. 1978.
 \newblock ``Transatlantic Investment by Multinational Firms: A Rivalistic
   Phenomenon?'' {\em Journal of Post Keynesian Economics} 1(1):82--99.
+
+\harvarditem[Hafner-Burton, Kahler \harvardand\ Montgomery]{Hafner-Burton,
+  Kahler \harvardand\ Montgomery}{2009}{Hafner-Burton:2009}
+Hafner-Burton, Emilie~M., Miles Kahler \harvardand\ Alexander~H. Montgomery.
+  2009.
+\newblock ``Network Analysis for International Relations.'' {\em International
+  Organization} 63(3):559--592.
 
 \harvarditem{Helpman}{1984}{Helpman:1984}
 Helpman, Elhanan. 1984.
@@ -215,12 +245,6 @@ Kaminski, Bart \harvardand\ Beata Javorcik. 2005.
   Union in International Trade}, ed. Harry~G. Broadman.
 \newblock Washington, DC:  World Bank pp.~337--374.
 
-\harvarditem{Keohane}{1984}{Keohane:1984}
-Keohane, Robert~O. 1984.
-\newblock {\em After Hegemony: Cooperation and Discord in the World Political
-  Economy}.
-\newblock Princeton, N.J.:  Princeton University Press.
-
 \harvarditem{Kerner}{2009}{Kerner:2009}
 Kerner, Andrew. 2009.
 \newblock ``Why Should I Believe You? The Costs and Consequences of Bilateral
@@ -242,6 +266,11 @@ Kim, {Soo Yeon} \harvardand\ Etel Solingen. 2017.
 Kindleberger, Charles~P. 1969.
 \newblock {\em American Business Abroad: Six Lectures on Direct Investment}.
 \newblock New Haven, CT:  Yale University Press.
+
+\harvarditem{Kirkland}{2013}{kirkland2013hypothesis}
+Kirkland, Justin~H. 2013.
+\newblock ``Hypothesis testing for group structure in legislative networks.''
+  {\em State Politics \& Policy Quarterly} 13(2):225--243.
 
 \harvarditem{Kostova \harvardand\ Zaheer}{1999}{Kostova_Zaheer:1999}
 Kostova, Tatiana \harvardand\ Srilata Zaheer. 1999.
@@ -267,6 +296,11 @@ Kwok, Chuck C.~Y. \harvardand\ Solomon Tadesse. 2006.
 \newblock ``The MNC as an Agent of Change for Host-Country Institutions: FDI
   and Corruption.'' {\em Journal of International Business Studies}
   37(6):767--785.
+
+\harvarditem{Lake}{2009}{Lake:2009}
+Lake, David~A. 2009.
+\newblock ``Open Economy Politics: A Critical Review.'' {\em The Review of
+  International Organizations} 4(3):219--244.
 
 \harvarditem{Leblang}{2010}{Leblang:2010}
 Leblang, David. 2010.
@@ -322,6 +356,11 @@ Moran, Theodore. 2014.
   International Economics Working Paper} No. 2014-12.
 \newline\harvardurl{\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2534095}}
 
+\harvarditem{Oatley}{2011}{Oatley:2011}
+Oatley, Thomas. 2011.
+\newblock ``The Reductionist Gamble: Open Economy Politics in the Global
+  Economy.'' {\em International Organization} 65(02):311--341.
+
 \harvarditem{OECD}{2016}{OECD}
 OECD. 2016.
 \newblock ``Bilateral Trade in Goods by Industry and End-use (BTDIxE), ISIC
@@ -333,12 +372,6 @@ OECD. 2016.
 Osnago, Alberto, Nadia Rocha \harvardand\ Michele Ruta. 2016.
 \newblock ``Do Deep Trade Agreements Boost Vertical FDI?'' {\em The World Bank
   Economic Review} 30(Supplement\_1):S119--S125.
-
-\harvarditem{Pandya}{2016}{Pandya:2016}
-Pandya, Sonal~S. 2016.
-\newblock ``Political Economy of Foreign Direct Investment: Globalized
-  Production in the Twenty-First Century.'' {\em Annual Review of Political
-  Science} 19:455--475.
 
 \harvarditem{Simmons \harvardand\ Elkins}{2004}{Simmons_Elkins:2004}
 Simmons, Beth~A. \harvardand\ Zachary Elkins. 2004.
@@ -367,6 +400,12 @@ Vernon, Raymond. 1980.
 Veugelers, Reinhilde. 1995.
 \newblock ``Strategic Incentives for Multinational Operations.'' {\em
   Managerial and Decision Economics} 16(1):47--57.
+
+\harvarditem[Ward, Ahlquist \harvardand\ Rozenas]{Ward, Ahlquist \harvardand\
+  Rozenas}{2013}{ward2013gravity}
+Ward, Michael~D, John~S Ahlquist \harvardand\ Arturas Rozenas. 2013.
+\newblock ``Gravity’s rainbow: Dynamic networks models of international
+  commerce.'' {\em Network Science} 1(1):95--118.
 
 \harvarditem{Ward \harvardand\ Hoff}{2007}{ward2007persistent}
 Ward, Michael~D \harvardand\ Peter~D Hoff. 2007.

@@ -1,8 +1,18 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: fdi_draft.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: apsr.bst
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 Database file #1: fdi_reference.bib
+Repeated entry---line 618 of file fdi_reference.bib
+ : @article{ward2013gravity
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 651 of file fdi_reference.bib
+ : @article{cao2014democracies
+ :                            ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1216 of file fdi_reference.bib
  : @book{Caves:1996
  :                 ,
@@ -19,45 +29,45 @@ Repeated entry---line 1663 of file fdi_reference.bib
  : @article{Leblang:2010
  :                      ,
 I'm skipping whatever remains of this entry
-You've used 66 entries,
+You've used 73 entries,
             2874 wiz_defined-function locations,
-            1084 strings with 16356 characters,
-and the built_in function-call counts, 239252 in all, are:
-= -- 38880
-> -- 2705
+            1123 strings with 17566 characters,
+and the built_in function-call counts, 274151 in all, are:
+= -- 44601
+> -- 3179
 < -- 0
-+ -- 17973
-- -- 983
-* -- 20119
-:= -- 48613
-add.period$ -- 270
-call.type$ -- 66
-change.case$ -- 858
-chr.to.int$ -- 65
-cite$ -- 66
-duplicate$ -- 1000
-empty$ -- 2238
-format.name$ -- 1050
-if$ -- 42942
++ -- 20705
+- -- 1146
+* -- 23168
+:= -- 55545
+add.period$ -- 298
+call.type$ -- 73
+change.case$ -- 949
+chr.to.int$ -- 72
+cite$ -- 73
+duplicate$ -- 1103
+empty$ -- 2488
+format.name$ -- 1215
+if$ -- 49220
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 70
-newline$ -- 289
-num.names$ -- 752
-pop$ -- 271
+missing$ -- 76
+newline$ -- 316
+num.names$ -- 842
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 990
+purify$ -- 1095
 quote$ -- 0
-skip$ -- 828
+skip$ -- 927
 stack$ -- 0
-substring$ -- 54469
-swap$ -- 129
-text.length$ -- 924
+substring$ -- 62607
+swap$ -- 143
+text.length$ -- 1022
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 246
+type$ -- 276
 warning$ -- 0
-while$ -- 1529
+while$ -- 1703
 width$ -- 0
-write$ -- 920
-(There were 4 error messages)
+write$ -- 1016
+(There were 6 error messages)

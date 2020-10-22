@@ -21,45 +21,45 @@ Repeated entry---line 651 of file fdi_reference.bib
  : @article{cao2014democracies
  :                            ,
 I'm skipping whatever remains of this entry
-You've used 31 entries,
+You've used 17 entries,
             2874 wiz_defined-function locations,
-            853 strings with 10049 characters,
-and the built_in function-call counts, 138029 in all, are:
-= -- 22679
-> -- 1643
+            764 strings with 7794 characters,
+and the built_in function-call counts, 79157 in all, are:
+= -- 13037
+> -- 958
 < -- 0
-+ -- 10700
-- -- 578
-* -- 11908
-:= -- 27573
-add.period$ -- 125
-call.type$ -- 31
-change.case$ -- 403
-chr.to.int$ -- 31
-cite$ -- 31
-duplicate$ -- 461
-empty$ -- 1056
-format.name$ -- 608
-if$ -- 24806
++ -- 6177
+- -- 335
+* -- 6849
+:= -- 15767
+add.period$ -- 69
+call.type$ -- 17
+change.case$ -- 221
+chr.to.int$ -- 17
+cite$ -- 17
+duplicate$ -- 259
+empty$ -- 564
+format.name$ -- 352
+if$ -- 14232
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 135
-num.names$ -- 362
-pop$ -- 93
+missing$ -- 15
+newline$ -- 79
+num.names$ -- 199
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 465
+purify$ -- 255
 quote$ -- 0
-skip$ -- 398
+skip$ -- 226
 stack$ -- 0
-substring$ -- 32122
-swap$ -- 58
-text.length$ -- 434
+substring$ -- 18460
+swap$ -- 40
+text.length$ -- 238
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
+type$ -- 68
 warning$ -- 0
-while$ -- 736
+while$ -- 405
 width$ -- 0
-write$ -- 435
+write$ -- 245
 (There were 4 error messages)
